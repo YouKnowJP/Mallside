@@ -1,5 +1,9 @@
 # Release and migration QA
 
+## Current gameplay update — 26.0.0
+
+The [v26 QA record](qa-v26.md) covers the new local stories, owned-product collection room, outfit preparation, guestbook, visual refinements and compiled-browser checks. The existing direct GitHub Pages workflow tests and publishes the final main-branch source. Migration records below are historical.
+
 ## Migration cleanup — 25.0.3
 
 Validated on 28 October 2026. The active source and publishing repository is public `YouKnowJP/Mallside`; `Personal-Project` remains a separate private repository for Tilewright and other projects.

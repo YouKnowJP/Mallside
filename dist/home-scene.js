@@ -8,7 +8,7 @@ export function buildCollectionRoom(w,state){
  const mat=(color,roughness=.8)=>{const k=color+':'+roughness;if(!materials.has(k))materials.set(k,w.mat(color,{roughness}));return materials.get(k);};
  const box=(x,y,z,sx,sy,sz,color,roughness=.8)=>{const m=w.mesh(new T.BoxGeometry(sx,sy,sz),mat(color,roughness));m.position.set(x,y,z);return m;};
  w.scene.background=new T.Color(style.wall);box(0,-.5,0,208,1,140,style.wood);
- for(let i=0;i<17;i++)box(-98+i*12,-.01,0,.18,.04,140,'#88725b');
+ for(let i=0;i<17;i++)box(-98+i*12,.025,0,.18,.01,140,'#88725b');
  box(0,47,-48,208,94,3,style.wall);box(-103,47,-4,3,94,90,style.wall);
  box(-26,.035,12,77,.05,49,'#c9c8b3');for(let i=0;i<7;i++){box(-59+i*11,.07,-11,1,.02,3,'#eee8d8');box(-59+i*11,.07,35,1,.02,3,'#eee8d8');}box(0,2,-45,208,4,1.2,'#f0eadc');box(-100,2,-4,1.2,4,90,'#f0eadc');
  box(55,81,-45,31,20,2,style.wood);box(55,81,-43.8,27,16,.3,'#f5efdf');box(51,79,-43.5,9,9,.2,style.accent);box(60,82,-43.4,7,8,.2,'#c49c7a');
@@ -35,5 +35,5 @@ export function buildCollectionRoom(w,state){
 export function collectionRoomCamera(aspect=1){
  const ratio=Math.max(.25,Number.isFinite(aspect)&&aspect>0?aspect:1),target=new T.Vector3(2,30,-4),direction=new T.Vector3(114,87,202).sub(target).normalize(),right=new T.Vector3().crossVectors(new T.Vector3(0,1,0),direction).normalize(),up=new T.Vector3().crossVectors(direction,right),tan=Math.tan(31*Math.PI/360);let distance=230;
  for(const x of [-105,105])for(const y of [0,94])for(const z of [-50,70]){const v=new T.Vector3(x,y,z).sub(target),depth=v.dot(direction);distance=Math.max(distance,depth+Math.abs(v.dot(right))/(tan*ratio)*1.08,depth+Math.abs(v.dot(up))/tan*1.08);}
- const position=target.clone().addScaledVector(direction,distance);return {position:position.toArray(),target:target.toArray(),far:position.length()+250};
+ const position=target.clone().addScaledVector(direction,distance);return {position:position.toArray(),target:target.toArray(),near:2,far:position.length()+250};
 }
