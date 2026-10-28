@@ -1,5 +1,10 @@
 # Changelog
 
+## 25.0.1 — Publication and layout polish
+
+- Aligned local-story action buttons on desktop while retaining stacked mobile cards.
+- Restored the missing generated-files hosting repository, its limited publisher key and the same public play URL; source stays private.
+
 ## 25.0.0 — Local stories and mall atmosphere
 
 - Added three original branching stories, nine optional chapters, overnight continuation and saved outcomes.

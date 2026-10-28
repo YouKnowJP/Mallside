@@ -25,3 +25,12 @@ Publication uses the existing private-source main-branch workflow, which reruns 
 ## Limits
 
 Live tests use Chromium and viewport emulation, not physical Safari/iPhone/iPad/Firefox certification. Geometry remains an original condensed mall adaptation, and character/fabric motion is controlled animation rather than a complete physics simulation. Catalog identities, prices and images were not expanded in this release. Pending tenant research, richer homes and longer stories remain in [the roadmap](../ROADMAP.md).
+
+
+## Publication recovery and v25.0.1 polish
+
+The first v25 check job passed, but the separate public hosting repository was no longer present and the public link returned 404. Restored `YouKnowJP/YouKnowJP.github.io` with a generated-files-only shell, `.nojekyll`, a repository-scoped write deploy key and the existing encrypted secret name. The private source was never made public. Confirmed legacy Pages uses `main` at `/`, reran only the failed publisher with the verified artifact, and verified both the successful publish and Pages jobs plus release commit `a226f134bd4553f830345d4a3f2ce1a23fdccc6c` at the public URL. The browser loaded `app-Z7J5IDO3.js`, all outing photographs and the nine-chapter local-story board with no warnings/errors, preserving the existing Day 1 / $250 public save.
+
+Final public desktop review found that the three introductory story buttons used different vertical positions. The v25.0.1 CSS polish uses a column layout and automatic space above each action on desktop, with the original stacked-card spacing below 1050 pixels. No gameplay logic changed. A fresh main-branch push verifies the ordinary automatic publication path after recovery.
+
+Compiled layout verification measured all three desktop story actions at the same 600-pixel top coordinate, each 44 pixels high. At 390 × 844, all three remained 44 pixels high and document width remained 390 pixels.
