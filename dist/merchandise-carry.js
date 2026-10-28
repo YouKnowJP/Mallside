@@ -3,7 +3,7 @@ import * as T from './vendor/three.module.js';
 import {productAppearance} from './product-appearance.js?v=23.0.0';
 import {physicalProduct} from './merchandise-3d.js?v=23.0.0';
 import {carriedSelections} from './shopping-selection.js?v=23.0.0';
-import {carried,canTry} from './engine.js?v=24.0.0';
+import {carried,canTry} from './engine.js?v=25.0.0';
 
 export function dressPerson(w,g,equipment){
  const top=equipment.top,cut=top&&physicalProduct(top)&&productAppearance(top).garment;
@@ -37,3 +37,6 @@ export function poseCarriedMerchandise(w){
  syncCarriedMerchandise(w);if(w.action)return;const held=w.carryVisual?.userData.attachments||[];if(w.player.userData.ownedHandBag)w.player.userData.limbs[1].rotation.x=-1.22;for(const holder of held)if(holder.visible)w.player.userData.limbs[holder.userData.limbIndex??1].rotation.x=-1.22;updateAttachmentFrames(w.player);
  if(w.pickupPulse){const p=w.pickupPulse,t=w.state.preferences.reducedMotion?1:Math.min(1,(performance.now()-p.start)/600),k=1-Math.pow(1-t,3);p.model.position.lerpVectors(p.from,p.to,k);if(t===1)w.pickupPulse=null;}
 }
+
+// A two-hand activity frees both grips; restore the exact prior visibility on exit.
+export function stowHandhelds(person){const previous=(person.userData.gravityAttachments||[]).map(({holder})=>[holder,holder.visible]);for(const [holder]of previous)holder.visible=false;let restored=false;return ()=>{if(restored)return;restored=true;for(const [holder,visible]of previous)holder.visible=visible;};}

@@ -6,6 +6,8 @@ export function stepToward(position,target,speed,dt){
 }
 export function directionalStep(position,x,y,speed,dt){const length=Math.hypot(x,y);if(!length)return {...position,moved:0};const step=speed*Math.max(0,Math.min(dt,.05));return {x:position.x+x/length*step,y:position.y+y/length*step,moved:step};}
 export function facingFor(dx,dy,previous='down'){if(!dx&&!dy)return previous;return Math.abs(dx)>Math.abs(dy)?dx<0?'left':'right':dy<0?'up':'down';}
+export function headingFor(dx,dy,previous=0){return Number.isFinite(dx)&&Number.isFinite(dy)&&Math.hypot(dx,dy)>.001?Math.atan2(dx,dy):previous;}
+export function turnToward(current,target,dt,reduced=false){if(!Number.isFinite(current)||!Number.isFinite(target))return Number.isFinite(target)?target:0;const delta=Math.atan2(Math.sin(target-current),Math.cos(target-current));return current+delta*(reduced?1:1-Math.exp(-12*Math.max(0,Math.min(.1,dt||0))));}
 export function gaitPose(distance,moving,reduced=false){const phase=moving&&!reduced?distance/8:0;return {step:Math.sin(phase)*7,bob:moving&&!reduced?Math.abs(Math.sin(phase))*2:0,arm:Math.sin(phase)*6};}
 export function nightFrame(elapsed){
  if(elapsed<2.8)return {stage:'street',progress:Math.max(0,elapsed/2.8),label:'Walking home through the evening lights…'};
@@ -13,3 +15,5 @@ export function nightFrame(elapsed){
  if(elapsed<7.5)return {stage:'sleep',progress:(elapsed-5.2)/2.3,label:'Lights out. A little rest for tomorrow…'};
  return {stage:'morning',progress:1,label:'A new shopping day is ready.'};
 }
+
+export function yieldToPlayer(from,next,player,radius=25){const before=Math.hypot(from.x-player.x,from.y-player.y),after=Math.hypot(next.x-player.x,next.y-player.y);return after<radius&&after<=before?{...from}:next;}

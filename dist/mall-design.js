@@ -1,4 +1,4 @@
-import {walkable,onSurface,contains,clearWalk,closestFloor} from './free-navigation.js?v=23.0.0';
+import {walkable,onSurface,contains,clearWalk,closestFloor} from './free-navigation.js?v=25.0.0';
 
 // Original architectural art direction. The real center topology stays in campus-model.
 export const MALL_THEMES={

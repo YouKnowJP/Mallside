@@ -44,7 +44,7 @@ export function solveArmToGrip(g,index,y,z=7.5,x=null){
  }
 }
 function levelFoot(g,leg){const foot=leg.userData.foot;if(!foot)return;foot.rotation.set(-leg.rotation.x-leg.userData.knee.rotation.x,0,0);}
-export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=false,blend=1,kind='',reducedMotion=false,seatHeight=15}={}){
+export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=false,blend=1,kind='',reducedMotion=false,seatHeight=15,attention=g.userData.attention||0}={}){
  const rig=g.userData.rig;if(!rig)return;const elevated=['escalator','bridge','carousel'].includes(kind)?g.position.y:null;const amount=seated?clamp(blend,0,1):0,move=walking&&!reducedMotion&&!seated,phase=((distance/rig.stride)%1+1)%1,reach=rig.stepReach||10,stanceZ=reach-reach*4*(phase%.5),baseY=move?Math.sqrt((rig.upperLeg+rig.lowerLeg)**2-stanceZ**2)+rig.ankleHeight-rig.hipHeight:-.4,seatedY=seatHeight-rig.pelvisBottom;g.position.y=baseY+(seatedY-baseY)*amount;
  for(const [i,leg]of g.userData.limbs.slice(2).entries()){
   let z=0,lift=0,contact=true,cycle=(phase+i*.5)%1;if(move){contact=cycle<.5;const t=contact?cycle*2:(cycle-.5)*2;z=contact?reach-reach*2*t:-reach+reach*2*(t*t*(3-2*t));lift=contact?0:Math.min(3.2,reach*.32)*Math.sin(t*Math.PI);}
@@ -55,5 +55,5 @@ export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=fal
  else for(const arm of g.userData.limbs.slice(0,2))if(arm.userData.elbow)arm.userData.elbow.rotation.x=-.25;
  if(['eat','drink','icecream','tea'].includes(kind)){const sip=(Math.sin(time*3)+1)/2;solveArmToGrip(g,1,36.5+7.2*sip,8-1.8*sip);g.userData.limbs[1].rotation.z=0;}
  if(elevated!==null){g.position.y=elevated;if(kind==='carousel')for(const leg of g.userData.limbs.slice(2)){leg.rotation.x=-1.05;leg.userData.knee.rotation.x=1.2;levelFoot(g,leg);}}
- const idle=reducedMotion?0:Math.sin(time*1.4)*.018;rig.headGroup.rotation.y=move?Math.sin(phase*Math.PI*2)*.018:idle;rig.headGroup.rotation.z=move?Math.sin(phase*Math.PI*2)*.008:0;rig.pose={seated:amount,walking:move,phase,seatHeight,kind};updateHumanFace(g,time,reducedMotion);const grasp=[0,0];if(['eat','drink','icecream','tea'].includes(kind))grasp[1]=.85;for(const entry of g.userData.gravityAttachments||[])if(entry.holder.visible&&amount<.5)grasp[g.userData.limbs.indexOf(entry.limb)]=1;poseHumanHands(g,grasp);
+ if(kind==='wrap')for(let i=0;i<2;i++)solveArmToGrip(g,i,31+(reducedMotion?0:Math.sin(time*2+i)*.6),11);const idle=reducedMotion?0:Math.sin(time*1.1+(g.userData.anatomy?.seed||0))*.045;rig.headGroup.rotation.x=reducedMotion?0:kind==='wrap'?.12:move?0:Math.sin(time*.8)*.012;rig.headGroup.rotation.y=reducedMotion?0:move?Math.sin(phase*Math.PI*2)*.018:idle+clamp(Number.isFinite(attention)?attention:0,-.28,.28);rig.headGroup.rotation.z=move?Math.sin(phase*Math.PI*2)*.008:0;rig.pose={seated:amount,walking:move,phase,seatHeight,kind};updateHumanFace(g,time,reducedMotion);const grasp=[0,0];if(['eat','drink','icecream','tea'].includes(kind))grasp[1]=.85;for(const entry of g.userData.gravityAttachments||[])if(entry.holder.visible&&amount<.5)grasp[g.userData.limbs.indexOf(entry.limb)]=1;poseHumanHands(g,grasp);
 }

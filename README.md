@@ -6,7 +6,11 @@ A shopping-life simulation by **Jackson Pham / YouKnowJP**. Walk through connect
 
 Play directly from the link. Players do not need GitHub, an account, a download, or a payment. All purchases and money inside the game are simulated.
 
-## Latest update · 24.0.0
+## v25 — people, parcels and a more natural mall
+
+Three branching local stories add nine optional multi-day chapters. Wrap a real purchase, deliver Maya’s gift, refill at guest services and save directory route notes. Continuous walking headings, smoother turns, varied adult appearances, changing daylight and layered storefront details improve the 3D scene. See [v25 gameplay](docs/GAMEPLAY-v25.md), [release QA](docs/qa-v25.md) and [remaining work](ROADMAP.md).
+
+## Previous update · 24.0.0
 
 Plan a fresh daily outing from the main menu or Journal: a considered find, a two-piece outfit, a gift hunt or a free window-shopping afternoon. Follow the real-product checklist, keep new purchases within its tax-inclusive allowance, and collect one outing reward each day. Progress survives reloads; returning an unclaimed purchase removes its credit. Named-retailer story goals and requests now recognize actual branches across malls, while location-specific discovery stays tied to the destination.
 

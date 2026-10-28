@@ -2,6 +2,14 @@
 
 Updated 28 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v25
+
+- Three branching local stories with nine optional chapters, fixed choices, new-action evidence, overnight continuation and one-time rewards.
+- Real-purchase gift wrapping and delivery, complimentary water and directory route notes.
+- Continuous player headings, smoother player/NPC turns, conversation spacing, yielding shoppers, diverse adult appearances and restrained head attention.
+- Changing daylight and window illumination, more layered storefront finishes, slatted benches and smoother foliage.
+- New multi-day story-path, gift economy, save and graphics regressions, plus live interaction checks.
+
 ## Completed in v24
 
 - Four daily outing formats built from active real-model catalog records, with photographs, allowances, guided steps and a daily reward.
@@ -12,8 +20,8 @@ Updated 28 October 2026. The game is playable and under active development; this
 
 ## Next gameplay and presentation work
 
-- More local stories and varied multi-day requests, richer conversation and clearer consequences for choices.
-- More tactile service interactions and a more developed home/collection space, including deeper gift presentation.
+- Expand the new local stories with more conversations and longer consequences; add further multi-day requests beyond the three current arcs.
+- Develop the home/collection space and extend the new gift-wrapping and water interactions with more tactile service activities.
 - Continued camera, storefront, lighting, NPC and character/fabric refinement; the current motion is controlled animation rather than complete cloth physics.
 - Additional manual Safari/Firefox and physical phone/tablet testing, broader accessibility verification, and save-recovery improvements.
 

@@ -1,6 +1,8 @@
+import {turnToward} from './motion.js?v=25.0.0';
+import {adultAppearance} from './mall-atmosphere.js?v=25.0.0';
 import {attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=23.0.0';
 import {physicalProduct} from './merchandise-3d.js?v=23.0.0';
-import {applyCharacterPose,solveArmToGrip} from './character-rig.js?v=23.0.0';
+import {applyCharacterPose,solveArmToGrip} from './character-rig.js?v=25.0.0';
 import * as T from './vendor/three.module.js';
 import {createStoreCustomers,updateStoreCustomers,customerActivity} from './store-customers.js?v=23.0.0';
 import {slotForProduct} from './malls.js?v=23.0.0';
@@ -9,7 +11,7 @@ const colors=['#bf8b71','#638a84','#a890ab','#c0ab6d','#7e93b1','#b76e66','#8b9a
 export function buildStoreLife(w,store){
  const sim=createStoreCustomers(w.layout,store.products,w.state.preferences.crowds===false?0:w.width<700?5:8,{reservedRoom:0});w.storeCustomers=sim;
  for(const a of sim.actors){
-  const g=w.person(colors[a.id],{skin:['#bc8e6f','#e0b894','#986b53'][a.id%3],hair:['#3e302a','#72543f','#bda273'][a.id%3]});
+  const g=w.person(colors[a.id],adultAppearance(a.id));
   const left=g.userData.limbs[0],bag=new T.Group();left.userData.grip.add(bag);bag.userData.limbIndex=0;w.box(0,-8,0,9,10,5,'#eee5d3',bag);const handle=w.mesh(new T.TorusGeometry(2.5,.4,4,12,Math.PI),w.mat('#9a7c56'),bag);handle.position.y=-2;g.userData.gravityAttachments??=[];g.userData.gravityAttachments.push({holder:bag,limb:left,anchor:left.userData.grip});
   let item;if(physicalProduct(a.product))item=attachHeldProduct(w,g,a.product,1).holder;else{const right=g.userData.limbs[1];item=new T.Group();item.userData.dynamicMerchandise=true;item.userData.limbIndex=1;right.userData.grip.add(item);w.photo(a.product,0,-8,0,10,15,item);g.userData.gravityAttachments.push({holder:item,limb:right,anchor:right.userData.grip});}
   const label=w.label('',a.x,64,a.y,88);a.visual={g,bag,item,label,original:colors[a.id],caption:''};g.position.set(a.x,0,a.y);
@@ -21,7 +23,7 @@ export function drawStoreLife(w,dt,paused){
  updateStoreCustomers(sim,dt,{paused,reducedMotion:w.state.preferences.reducedMotion,player:w.avatar});
  const near=new Set(sim.actors.filter(a=>a.visible!==false).sort((a,b)=>Math.hypot(a.x-w.avatar.x,a.y-w.avatar.y)-Math.hypot(b.x-w.avatar.x,b.y-w.avatar.y)).slice(0,w.width<700?1:3).map(a=>a.id));
  for(const a of sim.actors){const {g,bag,item,label}=a.visual,active=a.phase==='act'&&!a.moving,trying=a.stage==='try'&&!a.waitingRoom&&active,scanning=a.stage==='pay'&&active,browsing=['browse','compare','demo'].includes(a.stage)&&active;
-  g.visible=a.visible!==false;g.position.set(a.x,0,a.y);if(a.moving)g.rotation.y=a.rotation;else if(scanning)g.rotation.y=Math.PI;else if(trying)g.rotation.y=w.state.preferences.reducedMotion?0:Math.sin(sim.clock*.7)*.45;else if(browsing)g.rotation.y=Math.PI;
+  g.visible=a.visible!==false;g.position.set(a.x,0,a.y);const target=a.moving?a.rotation:scanning||browsing?Math.PI:trying?(w.state.preferences.reducedMotion?0:Math.sin(sim.clock*.7)*.45):g.rotation.y;g.rotation.y=turnToward(g.rotation.y,target,paused?0:dt,w.state.preferences.reducedMotion);g.userData.attention=browsing?.15:0;
   a.gaitDistance=(a.gaitDistance||0)+(a.moving?Math.hypot(a.x-(a.visual.lastX??a.x),a.y-(a.visual.lastY??a.y)):0);a.visual.lastX=a.x;a.visual.lastY=a.y;applyCharacterPose(g,{walking:a.moving,distance:a.gaitDistance,time:sim.clock,reducedMotion:w.state.preferences.reducedMotion});if(trying||browsing||scanning){solveArmToGrip(g,0,31,10);solveArmToGrip(g,1,31,10);}
   bag.visible=a.bag;item.visible=(browsing||trying||scanning)&&!a.bag;updateAttachmentFrames(g);g.userData.torso.material.color.set(trying&&slotForProduct(a.product)==='top'?a.product.color||a.visual.original:a.visual.original);
   const caption=customerActivity(a);if(caption!==a.visual.caption){const tx=label.material.map,c=tx.image.getContext('2d');c.fillStyle='#fffaf0';c.fillRect(0,0,512,112);c.fillStyle='#405a50';c.font='600 39px Arial';c.textAlign='center';c.textBaseline='middle';c.fillText(caption,256,56,480);tx.needsUpdate=true;a.visual.caption=caption;}

@@ -1,4 +1,4 @@
-import {gaitPose} from './motion.js?v=23.0.0';
+import {gaitPose} from './motion.js?v=25.0.0';
 export function paintPerson(c,x,y,{color='#b8ac86',appearance={},equipment={},player=false,moving=false,facing='down',distance=0,reduced=false,label='',labelSize=14,pose='stand',time=0}={}){
  const {step,bob,arm}=gaitPose(distance,moving,reduced),skin=appearance.skin||'#d4a27d',hair=appearance.hair||'#594234',seated=['sit','rest','eat','drink','icecream'].includes(pose),b=seated?0:bob;
  const rect=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y,w,h);};

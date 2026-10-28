@@ -1,5 +1,14 @@
 # Changelog
 
+## 25.0.0 — Local stories and mall atmosphere
+
+- Added three original branching stories, nine optional chapters, overnight continuation and saved outcomes.
+- Added gift wrapping, receipt-backed gift delivery and reimbursement, water recovery/cooldown and directory route notes.
+- Fixed cardinal-only 3D player turns; smoothed player and NPC rotations and added bounded browsing attention.
+- Added deterministic adult appearances, time-of-day lighting and window illumination, layered storefront finishes and bench/plant detail.
+- Preserved the existing rig, product catalog, save version, private source and generated-file deployment.
+
+
 ## 24.0.0 — A day with a plan — 28 October 2026
 
 - Added rotating daily outings with real product photos, tax-inclusive allowances, checklists, route guidance, memories and one reward per day.

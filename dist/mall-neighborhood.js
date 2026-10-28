@@ -1,4 +1,4 @@
-import {onSurface,contains,walkable,closestFloor,clearWalk} from './free-navigation.js?v=23.0.0';
+import {onSurface,contains,walkable,closestFloor,clearWalk} from './free-navigation.js?v=25.0.0';
 const overlap=(a,b)=>a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y;
 export function connectStorefronts(layout){
  const shops=[...layout.rects,...layout.units,...layout.anchors],links=[],publicFloor=[...layout.campus.halls.map(h=>({kind:'hall',a:layout.campus.nodes[Number(h.a)],b:layout.campus.nodes[Number(h.b)],width:h.width})),...layout.campus.courts.map(c=>({...c,kind:'court'}))];

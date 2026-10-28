@@ -1,5 +1,5 @@
-import {freeRoute,freeMove,closestFloor} from './free-navigation.js?v=23.0.0';
-import {stepToward} from './motion.js?v=23.0.0';
+import {freeRoute,freeMove,closestFloor} from './free-navigation.js?v=25.0.0';
+import {stepToward} from './motion.js?v=25.0.0';
 import {slotForProduct} from './malls.js?v=23.0.0';
 
 const initial=['browse','try','queue','pay','compare','try','browse','leave'];

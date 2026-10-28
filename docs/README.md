@@ -31,3 +31,6 @@ Versioned files are retained as historical evidence. Their counts and checks des
 - Catalog provenance: [v4 research](catalog-research-v4.md), [v6 price references](catalog-prices-v6.md), [v7 product links](product-links-v7.md), JSON records alongside them.
 
 Other versioned research and QA files remain alongside these documents. Raw researched images outside the repository are not reproduced merely because an old note mentions a temporary local path.
+
+- [v25 local stories, guest services and atmosphere](GAMEPLAY-v25.md)
+- [v25 automated and live QA](qa-v25.md)
