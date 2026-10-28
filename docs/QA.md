@@ -2,7 +2,7 @@
 
 Scope: preserve the v23 game while importing it into the standalone GitHub repository, document rights and provenance, and publish `dist/` under the `/Mallside/` project path.
 
-The game source, catalog, assets and tests were copied from the clean v23 snapshot recorded in [migration provenance](MIGRATION.md). Gameplay changes are limited to a footer link opening the independent rights/privacy page. No economy or save-format migration is introduced.
+The game source, catalog, assets and tests were copied from the clean v23 snapshot recorded in [migration provenance](MIGRATION.md). UI changes add menu/footer links opening the independent rights/privacy page, with a refreshed entry-module cache key. No economy or save-format migration is introduced.
 
 Release checks validate JavaScript syntax, relative module/HTML/CSS paths, local documentation links, matching repository/shipped notices, file-size limits, and every recorded product-photo hash. The inventory includes 1,934 photo-index records referencing 1,912 files, plus 42 older unindexed images. Those images are explicitly marked as lacking recorded permission; passing a technical check does not establish legal clearance.
 

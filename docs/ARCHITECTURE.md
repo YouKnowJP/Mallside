@@ -14,7 +14,7 @@ Mallside is a buildless static application. `dist/` contains the editable HTML, 
 | Lighter graphics and game illustrations | `world.js`, `sprites.js`, `art.js`, `activity-scene.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and the legal footer, with the v23 gameplay module cache keys retained.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. Its UI entry uses `app.js?v=23.0.1`; unchanged gameplay module cache keys remain v23.0.0.
 
 ## State and saves
 
