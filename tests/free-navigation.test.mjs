@@ -1,0 +1,14 @@
+import{interiorSamples}from'./interior-fixtures.mjs';
+import {mallLayouts,assertCampusTrip} from './campus-assertions.mjs';
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {walkable,freeRoute,freeMove,clearWalk} from '../dist/free-navigation.js';
+import {spatialLayout,interiorLayout} from '../dist/spatial-layout.js';
+import * as E from '../dist/engine.js';
+const nav={bounds:{left:0,top:0,right:400,bottom:400},obstacles:[{x:150,y:100,width:100,height:180}]};
+test('open courts preserve arbitrary endpoints and permit movement in all directions',()=>{const a={x:35,y:35},b={x:113,y:77},r=freeRoute(a,b,nav);assert.deepEqual(r,[a,b]);const moved=freeMove(a,b,nav);assert.ok(Math.hypot(moved.x-b.x,moved.y-b.y)<1e-8);});
+test('routes avoid physical obstacles and every smoothed segment is clear',()=>{const r=freeRoute({x:50,y:200},{x:350,y:200},nav);assert.ok(r.length>2);for(let i=1;i<r.length;i++)assert.ok(clearWalk(r[i-1],r[i],nav));assert.deepEqual(r.at(-1),{x:350,y:200});});
+test('long moves cannot tunnel through fixtures, and diagonal slides remain outside corners',()=>{let p=freeMove({x:50,y:200},{x:350,y:200},nav);assert.ok(p.x<=142);assert.ok(walkable(p,nav));p=freeMove({x:140,y:88},{x:210,y:160},nav);assert.ok(walkable(p,nav));});
+test('a completely separated floor returns no route',()=>{const n={bounds:{left:0,top:0,right:400,bottom:400},obstacles:[{x:190,y:0,width:20,height:400}]};assert.deepEqual(freeRoute({x:50,y:200},{x:350,y:200},n),[]);});
+test('every 3D floor has collision-free routes to shops, activities, locals, landmarks, escalator and exit',()=>{let count=0;for(const mall of E.MALLS){const layouts=mallLayouts(mall);for(let f=0;f<layouts.length;f++){count++;const l=layouts[f],targets=[...l.rects,...l.venues,...l.locals,...l.anchors].map(r=>r.door).concat([l.exit,l.elevator]);for(const q of targets){assert.ok(walkable(q,l.nav),mall.id+f+JSON.stringify(q));assertCampusTrip(mall,layouts,f,l.spawn,f,q);}const obs=l.nav.obstacles;for(let i=0;i<obs.length;i++)for(let j=i+1;j<obs.length;j++){const a=obs[i],b=obs[j];assert.ok(!(a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y),mall.id+' overlap '+JSON.stringify([a,b]));}}}assert.equal(count,23);});
+test('40,000 free movement steps remain in bounds and outside real scene colliders',()=>{let seed=19;for(const mall of E.MALLS){const l=spatialLayout(mall,0,E.STORES);let p=l.spawn;for(let i=0;i<4000;i++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const angle=seed/2**32*Math.PI*2;p=freeMove(p,{x:p.x+Math.cos(angle)*60,y:p.y+Math.sin(angle)*60},l.nav);assert.ok(walkable(p,l.nav));}}});
+test('all shop interior displays and counters are reachable from the entrance',()=>{for(const {l} of interiorSamples()){for(const q of [...l.displays.map(r=>({x:r.x+r.width/2,y:r.y+r.height+20})),...Object.values(l.services),l.exit]){assert.ok(walkable(q,l.nav));assert.ok(freeRoute(l.spawn,q,l.nav).length>=2);}}});

@@ -1,0 +1,50 @@
+{
+  "license": "CC0-1.0",
+  "bodySource": "https://raw.githubusercontent.com/makehumancommunity/makehuman/v1.3.0/makehuman/data/3dobjs/base.obj",
+  "bodySHA256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+  "rigSource": "https://github.com/makehumancommunity/mpfb2/tree/master/src/mpfb/data/rigs/standard",
+  "rigLicenseSource": "https://github.com/makehumancommunity/mpfb2/blob/master/LICENSE.md",
+  "rigSHA256": "b324ddb4b707721c19630bfadb87c3e3b38eed3b6e4590bb3cead43ea918f799",
+  "weightsSHA256": "9f4a773e74ce5ba08415b4f30070338e9f75bae5971b5075b10cd6b9caa58473",
+  "systemPack": "https://files.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+  "licenseSource": "https://github.com/makehumancommunity/makehuman/blob/master/LICENSE.ASSETS.md",
+  "coordinates": "Unmodified OBJ axis convention: +Y up, +Z front, source units. No Blender default_position conversion.",
+  "assets": [
+    {
+      "key": "lightFemale",
+      "originalPath": "skins/young_caucasian_female2/young_lightskinned_female_diffuse2.png",
+      "file": "assets/character/skin-light-female.png",
+      "sha256": "8d1fb3ceedf142fad32a3504eca1feb4539aecca6de66acde1514b9a61fc7ba0"
+    },
+    {
+      "key": "lightMale",
+      "originalPath": "skins/young_caucasian_male2/young_lightskinned_male_diffuse2.png",
+      "file": "assets/character/skin-light-male.png",
+      "sha256": "03efe1f6b0ae52429649dcefc9dcaef6058032f874a251169cc3e2ed473c3874"
+    },
+    {
+      "key": "darkFemale",
+      "originalPath": "skins/young_african_female/young_darkskinned_female_diffuse.png",
+      "file": "assets/character/skin-dark-female.png",
+      "sha256": "96aa4a96b247fc90d371587bb88e6ae3bfc77e83f5126f17e6bbb713aa200470"
+    },
+    {
+      "key": "hairShort",
+      "originalPath": "hair/short01/short01_diffuse.png",
+      "file": "assets/character/hair-short.png",
+      "sha256": "f34a0957184e3d1e911ed59245f874f8d4843f61ee44ff49f43edb4be0196949"
+    },
+    {
+      "key": "hairBob",
+      "originalPath": "hair/bob02/bob02_diffuse.png",
+      "file": "assets/character/hair-bob.png",
+      "sha256": "38c88e6f71631356591f09b1f17a1bb5a99c3bb095b1a29003f1dc3d3e839b0d"
+    },
+    {
+      "key": "eyesBrown",
+      "originalPath": "eyes/materials/brown_eye.png",
+      "file": "assets/character/eyes-brown.png",
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+    }
+  ]
+}

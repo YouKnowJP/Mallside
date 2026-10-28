@@ -1,0 +1,11 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {stepToward,directionalStep,facingFor,gaitPose,nightFrame} from '../dist/motion.js';
+test('click-to-walk reaches the exact destination without overshooting',()=>{let p={x:10,y:10};for(let i=0;i<300;i++){p=stepToward(p,{x:211,y:193},195,1/60);if(p.arrived)break;}assert.equal(p.arrived,true);assert.equal(p.x,211);assert.equal(p.y,193);});
+test('diagonal keyboard walking covers the same distance as cardinal walking',()=>{const origin={x:0,y:0},a=directionalStep(origin,1,0,200,.04),b=directionalStep(origin,1,1,200,.04);assert.ok(Math.abs(Math.hypot(a.x,a.y)-Math.hypot(b.x,b.y))<1e-9);});
+test('walking speed remains consistent at 30 and 60 frames per second',()=>{const walk=fps=>{let p={x:0,y:0};for(let i=0;i<fps;i++)p=directionalStep(p,1,0,195,1/fps);return p.x;};assert.ok(Math.abs(walk(30)-walk(60))<1e-7);});
+test('long background frames are clamped to prevent jumping through the mall',()=>{const p=directionalStep({x:0,y:0},1,0,200,900);assert.equal(p.x,10);});
+test('all four facings follow actual movement, while idle retains last facing',()=>{assert.equal(facingFor(-4,0),'left');assert.equal(facingFor(4,0),'right');assert.equal(facingFor(0,-4),'up');assert.equal(facingFor(0,4),'down');assert.equal(facingFor(0,0,'left'),'left');});
+test('walking arms and feet change pose as distance increases',()=>{assert.notEqual(gaitPose(10,true).step,gaitPose(30,true).step);assert.notEqual(gaitPose(10,true).arm,gaitPose(30,true).arm);});
+test('idle and reduced-motion shoppers have no walking gait',()=>{for(const pose of [gaitPose(100,false),gaitPose(100,true,true)]){assert.equal(pose.step,0);assert.equal(pose.arm,0);assert.equal(pose.bob,0);}});
+test('night sequence visibly includes street, home, sleep, and morning in order',()=>{assert.deepEqual([0,3,6,8].map(t=>nightFrame(t).stage),['street','home','sleep','morning']);for(let t=0;t<8;t+=.1){const frame=nightFrame(t);assert.ok(frame.progress>=0&&frame.progress<=1);assert.ok(frame.label.length>10);}});

@@ -1,0 +1,1951 @@
+[
+  {
+    "merchants": [
+      "Foot Locker"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "Jordan",
+      "adidas",
+      "New Balance",
+      "ASICS",
+      "On",
+      "Timberland",
+      "UGG",
+      "Converse",
+      "Vans",
+      "Puma",
+      "Crocs",
+      "Hoka",
+      "Under Armour",
+      "Lacoste",
+      "Oakley",
+      "Polo Ralph Lauren"
+    ],
+    "source": "https://www.footlocker.com/en/category/brands/",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Champs Sports"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "Jordan",
+      "adidas",
+      "New Balance",
+      "ASICS",
+      "On",
+      "Timberland"
+    ],
+    "source": "https://www.champssports.com/brands",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "JD",
+      "JD Sports"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "Jordan",
+      "adidas",
+      "New Balance"
+    ],
+    "source": "https://www.jdsports.com/about-jd-sports",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Finish Line"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "Jordan",
+      "adidas",
+      "New Balance"
+    ],
+    "source": "https://www.finishline.com/brands",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Kids Foot Locker"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "Jordan",
+      "ASICS",
+      "New Balance",
+      "adidas",
+      "Timberland",
+      "UGG"
+    ],
+    "source": "https://www.kidsfootlocker.com/en/",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Child sizes in source; age/size availability should remain explicit in game.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Journeys",
+      "Journeys Outlet"
+    ],
+    "allowedBrands": [
+      "adidas",
+      "ASICS",
+      "Clarks",
+      "Converse",
+      "Crocs",
+      "Dr. Martens",
+      "Hoka",
+      "New Balance",
+      "Nike",
+      "Puma",
+      "Timberland",
+      "UGG",
+      "Vans"
+    ],
+    "source": "https://www.journeys.com/brands",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Shoe Palace"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "Jordan",
+      "adidas",
+      "New Balance",
+      "ASICS",
+      "Crocs",
+      "Vans",
+      "Converse",
+      "Puma",
+      "On"
+    ],
+    "source": "https://www.shoepalace.com/pages/our-story",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "PacSun",
+      "Pacsun"
+    ],
+    "allowedBrands": [
+      "Vans",
+      "Nike",
+      "adidas",
+      "Converse",
+      "New Balance"
+    ],
+    "source": "https://www.pacsun.com/mens/footwear/",
+    "allowedProductTypes": [
+      "shoes",
+      "sandals"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Zumiez"
+    ],
+    "allowedBrands": [
+      "Vans",
+      "Converse",
+      "adidas",
+      "Nike SB"
+    ],
+    "source": "https://www.zumiez.com/stores/us720",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Nike SB is documented; do not broaden to every unrelated Nike collection solely from this source.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Tillys"
+    ],
+    "allowedBrands": [
+      "Vans",
+      "Converse",
+      "adidas",
+      "Nike",
+      "Nike SB",
+      "New Balance",
+      "The North Face",
+      "Dr. Martens",
+      "Levi's",
+      "Brixton",
+      "Casio",
+      "Crocs",
+      "Diesel",
+      "Nectar Clothing",
+      "Oakley",
+      "OluKai",
+      "Pura Vida",
+      "Quay",
+      "Sanrio",
+      "Stanley",
+      "Steve Madden",
+      "Timberland",
+      "True Religion"
+    ],
+    "source": "https://www.tillys.com/brands/",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Lids",
+      "Lids Outdoor Village",
+      "Lids Locker Room",
+      "Locker Room by Lids"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "adidas",
+      "New Era",
+      "Mitchell & Ness"
+    ],
+    "source": "https://www.lids.com/nike-hats/br-3062+d-39335640+z-92537-1758435921",
+    "allowedProductTypes": [
+      "hat",
+      "shirt",
+      "hoodie",
+      "jacket"
+    ],
+    "condition": null,
+    "note": "Nike cap evidence is direct; broader documented brands also corroborated by https://www.shopwashingtonsquare.com/Directory/Details/609742 and official Del Amo tenant record https://www.simon.com/mall/del-amo-fashion-center/stores/lids-outdoor-village . Prefer headwear and team apparel.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Fanzz"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "adidas",
+      "Reebok",
+      "New Era",
+      "Majestic"
+    ],
+    "source": "https://www.simon.com/mall/brea-mall/stores/fanzz/sporting-goods-athletic-wear",
+    "allowedProductTypes": [
+      "hat",
+      "shirt",
+      "hoodie",
+      "jacket"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-tenant-brand-directory"
+  },
+  {
+    "merchants": [
+      "Sports Treasures"
+    ],
+    "allowedBrands": [
+      "Nike"
+    ],
+    "source": "https://www.sportstreasures.com/collections/nike",
+    "allowedProductTypes": [
+      "shirt",
+      "hat",
+      "hoodie",
+      "jacket"
+    ],
+    "condition": null,
+    "note": "Official site carries licensed team jerseys; preserve sports/team apparel character.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Pro Image Sports"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "adidas",
+      "New Era",
+      "Mitchell & Ness"
+    ],
+    "source": "https://proimageamerica.com/pages/our-brands",
+    "allowedProductTypes": [
+      "shirt",
+      "hat",
+      "hoodie",
+      "jacket"
+    ],
+    "condition": null,
+    "note": "Official franchise retailer; products from its own verified feed are also supplied.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Footwork",
+      "Footwork #2"
+    ],
+    "allowedBrands": [
+      "Jordan",
+      "Fear of God Essentials",
+      "Pop Mart"
+    ],
+    "source": "https://footworkca.com/",
+    "allowedProductTypes": [
+      "shoes",
+      "shirt",
+      "hoodie",
+      "cardgame"
+    ],
+    "condition": null,
+    "note": "Homepage lists Orange and Brea branches and named Jordan/Essentials/Labubu products; direct pictured item records supplied separately. Footwork #2 chain identity is corroborated by official mall tenant page.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "GARYS"
+    ],
+    "allowedBrands": [
+      "Brunello Cucinelli",
+      "Eleventy",
+      "Eton",
+      "Zegna",
+      "Peter Millar",
+      "Faherty",
+      "AG Jeans",
+      "Rag & Bone",
+      "Hugo Boss"
+    ],
+    "source": "https://garysonline.com/pages/copy-of-garys-brands",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Source official brand list and own 240-product USD feed. Brand aliases Eton Shirts/Eton and Ermenegildo Zegna/Zegna are explicit retailer labels.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "TRAFFIC LOS ANGELES"
+    ],
+    "allowedBrands": [
+      "Acne Studios",
+      "Alexander McQueen",
+      "Balmain",
+      "Dolce & Gabbana",
+      "Lanvin",
+      "Maison Margiela",
+      "MM6 Maison Margiela",
+      "Marni",
+      "Thom Browne",
+      "Y-3"
+    ],
+    "source": "https://shoptrafficla.com/pages/brands",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Official page explicitly identifies Beverly Center store. Do not assume the separate TRAFFIK spelling is this retailer without further evidence.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "The Webster"
+    ],
+    "allowedBrands": [
+      "Bottega Veneta",
+      "Gucci",
+      "Saint Laurent",
+      "Miu Miu",
+      "Loewe",
+      "AMIRI",
+      "Balenciaga",
+      "Celine",
+      "Fendi",
+      "Diesel"
+    ],
+    "source": "https://thewebster.com/pages/designers",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Women bags/shoes categories and owner-issued expansion press release additionally corroborate carried designers. No Louis Vuitton inferred.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "FASHIONPHILE",
+      "Fashionphile"
+    ],
+    "allowedBrands": [
+      "Louis Vuitton",
+      "Chanel",
+      "Hermes",
+      "Gucci"
+    ],
+    "source": "https://www.fashionphile.com/collections/handbags",
+    "allowedProductTypes": [
+      "bag",
+      "crossbody",
+      "backpack",
+      "wallet"
+    ],
+    "condition": null,
+    "note": "Resale source; game must identify pieces as resale/reference stock rather than new manufacturer-boutique stock.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Rebag"
+    ],
+    "allowedBrands": [
+      "Dior",
+      "Gucci",
+      "Prada",
+      "David Yurman",
+      "Tiffany & Co."
+    ],
+    "source": "https://www.prnewswire.com/news-releases/rebag-launches-the-rebag-outlet-301365161.html",
+    "allowedProductTypes": [
+      "bag",
+      "crossbody",
+      "backpack",
+      "wallet",
+      "necklace",
+      "bracelet",
+      "ring",
+      "earrings"
+    ],
+    "condition": null,
+    "note": "Issuer Rebag primary press release; catalog describes resale goods, not manufacturer affiliation.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Marshalls"
+    ],
+    "allowedBrands": [
+      "Levi's",
+      "Levis"
+    ],
+    "source": "https://www.marshalls.com/us/store/shop/women-women-clothing-jeans/new-arrivals/_/N-2033406590%2B842114098",
+    "allowedProductTypes": [
+      "pants",
+      "shorts",
+      "shirt",
+      "jacket"
+    ],
+    "condition": null,
+    "note": "Source cached within preceding months; inventory changes frequently. Allow real Levi models with manufacturer model/photo/price rather than asserting exact Marshalls SKU.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "own-retailer-public-product-listing"
+  },
+  {
+    "merchants": [
+      "Marshalls"
+    ],
+    "allowedBrands": [
+      "Hanes"
+    ],
+    "source": "https://www.marshalls.com/us/store/jump/product/4pk-Boxer-Briefs/4000494703?N=73987973+0%2F1000&colorId=NS10012868&pos=1%3A83",
+    "allowedProductTypes": [
+      "shirt",
+      "pants",
+      "shorts",
+      "home",
+      "socks"
+    ],
+    "condition": null,
+    "note": "Do not assert current branch SKU; other real Hanes basics require their own exact model/photo/price reference.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "own-retailer-public-product-listing"
+  },
+  {
+    "merchants": [
+      "Marshalls"
+    ],
+    "allowedBrands": [
+      "Under Armour"
+    ],
+    "source": "https://www.marshalls.com/us/store/jump/product/men-men-clothing-activewear/Drive-Pro-Hybrid-Half-Zip-Top/4000493859?N=3397667707&colorId=NS4154762&pos=1%3A1",
+    "allowedProductTypes": [
+      "shirt",
+      "hoodie",
+      "jacket",
+      "shorts",
+      "pants"
+    ],
+    "condition": null,
+    "note": "Models/branch availability may rotate; genuine carried-brand capsule allowed, no broad category substitution.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "own-retailer-public-product-page"
+  },
+  {
+    "merchants": [
+      "Marshalls"
+    ],
+    "allowedBrands": [
+      "Reebok",
+      "Nautica",
+      "Spyder",
+      "Quiksilver"
+    ],
+    "source": "https://www.marshalls.com/us/store/shop/men-men-clothing-activewear/_/N-3397667707?originalFilterState=3397667707+2351071072",
+    "allowedProductTypes": [
+      "shirt",
+      "pants",
+      "shorts",
+      "hoodie",
+      "jacket"
+    ],
+    "condition": null,
+    "note": "Exact live branch stock is not asserted. Real models used elsewhere still need their own model/photo/price references.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "own-retailer-public-product-listing"
+  },
+  {
+    "merchants": [
+      "Ross",
+      "Ross Dress for Less"
+    ],
+    "allowedBrands": [
+      "Coach",
+      "Nike",
+      "Calvin Klein",
+      "Michael Kors"
+    ],
+    "source": "https://www.linkedin.com/posts/village-of-romeoville_ross-dress-for-less-371-s-weber-held-its-activity-7298397362895368192-6hCC",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Ross corporate own site confirms off-price department/specialty brands and rotating opportunistic buying but does not publish named manufacturer catalog. No Hanes/Levis/Champion/JanSport assignment is authorized by this evidence alone.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-municipal-economic-development-announcement"
+  },
+  {
+    "merchants": [
+      "Chalice Collectibles"
+    ],
+    "allowedBrands": [
+      "Thrilljoy"
+    ],
+    "source": "https://chalicecollectibles.com/products/thrilljoy-pixl-universal-monsters-whole-set-of-12-one-full-display-case-free-shipping",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Retailer itself publishes this manufacturer-branded item.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Chalice Collectibles"
+    ],
+    "allowedBrands": [
+      "Thrilljoy"
+    ],
+    "source": "https://chalicecollectibles.com/products/thrilljoy-pixl-toy-story-whole-set-of-12-one-full-display-case-free-shipping",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Retailer itself publishes this manufacturer-branded item.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Chalice Collectibles"
+    ],
+    "allowedBrands": [
+      "Thrilljoy"
+    ],
+    "source": "https://chalicecollectibles.com/products/thrilljoy-pixl-terrifier-whole-set-of-12-one-full-display-case-free-shipping",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Retailer itself publishes this manufacturer-branded item.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Chrono Toys"
+    ],
+    "allowedBrands": [
+      "Funko"
+    ],
+    "source": "https://chronotoys.com/products/funko-pop-premium-chrono-toys-exclusive-one-piece-monkey-d-luffy-gum-gum-gatling-official-sticker",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Retailer itself publishes this manufacturer-branded item.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Chrono Toys"
+    ],
+    "allowedBrands": [
+      "Funko"
+    ],
+    "source": "https://chronotoys.com/products/unko-pop-chrono-toys-exclusive-one-piece-monkey-d-dragon-chase-bundle",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Retailer itself publishes this manufacturer-branded item.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Chrono Toys"
+    ],
+    "allowedBrands": [
+      "Funko"
+    ],
+    "source": "https://chronotoys.com/products/funko-pop-chrono-toys-exclusive-one-piece-monkey-d-dragon-non-chase",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Retailer itself publishes this manufacturer-branded item.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "BoxLunch"
+    ],
+    "allowedBrands": [
+      "Funko"
+    ],
+    "source": "https://www.boxlunch.com/toys-collectibles/funko/",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Ben Bridge Jewelers"
+    ],
+    "allowedBrands": [
+      "Rolex",
+      "Cartier",
+      "Tudor",
+      "Breitling",
+      "TAG Heuer",
+      "Tissot"
+    ],
+    "source": "https://www.benbridge.com/customer-service-faq.html",
+    "allowedProductTypes": [
+      "watch"
+    ],
+    "condition": null,
+    "note": "Retailer explicitly warns that brand availability differs by branch; simulated game assortment is not a live branch-stock claim.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-list"
+  },
+  {
+    "merchants": [
+      "Bucherer 1888"
+    ],
+    "allowedBrands": [
+      "Rolex",
+      "Patek Philippe",
+      "Breitling",
+      "Cartier",
+      "Hublot",
+      "IWC",
+      "Jaeger-LeCoultre",
+      "Omega",
+      "Panerai",
+      "TAG Heuer",
+      "Tudor"
+    ],
+    "source": "https://www.bucherer.com/us/en/watches-brands-overview",
+    "allowedProductTypes": [
+      "watch"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-list"
+  },
+  {
+    "merchants": [
+      "The 1916 Company"
+    ],
+    "allowedBrands": [
+      "Rolex",
+      "Patek Philippe",
+      "Tudor",
+      "Cartier",
+      "Omega",
+      "Breitling",
+      "IWC",
+      "Panerai",
+      "Bvlgari",
+      "Chanel",
+      "Chopard",
+      "Hublot",
+      "Jaeger-LeCoultre",
+      "Piaget",
+      "TAG Heuer"
+    ],
+    "source": "https://www.the1916company.com/watches/all-brands/",
+    "allowedProductTypes": [
+      "watch"
+    ],
+    "condition": null,
+    "note": "Brands are not all available at every physical branch.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-authorized-new-watch-brand-list"
+  },
+  {
+    "merchants": [
+      "Nordstrom"
+    ],
+    "allowedBrands": [
+      "Kiehl's Since 1851",
+      "La Mer",
+      "Byredo",
+      "Aveda",
+      "Chanel",
+      "Clarins",
+      "Dior",
+      "Diptyque",
+      "Dyson",
+      "Guerlain",
+      "Jo Malone London",
+      "MAC Cosmetics"
+    ],
+    "source": "https://www.nordstrom.com/brands-list/beauty",
+    "allowedProductTypes": [
+      "perfume",
+      "skincare",
+      "lipstick",
+      "makeup",
+      "mascara",
+      "tech",
+      "hairdryer"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Neiman Marcus"
+    ],
+    "allowedBrands": [
+      "Aesop",
+      "Byredo",
+      "Bvlgari",
+      "Cartier",
+      "Clarins",
+      "Dior",
+      "Diptyque",
+      "Dyson",
+      "Fueguia 1833",
+      "Guerlain",
+      "Hermes",
+      "Jo Malone London",
+      "Kiehl's Since 1851"
+    ],
+    "source": "https://www.neimanmarcus.com/c/beauty-shop-by-brand-cat000339",
+    "allowedProductTypes": [
+      "perfume",
+      "skincare",
+      "lipstick",
+      "makeup",
+      "mascara",
+      "tech",
+      "hairdryer"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Neiman Marcus"
+    ],
+    "allowedBrands": [
+      "Prada"
+    ],
+    "source": "https://www.neimanmarcus.com/p/prada-mp-prada-re-edition-2005-re-prod282250687",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Bloomingdale's"
+    ],
+    "allowedBrands": [
+      "Nespresso"
+    ],
+    "source": "https://www.bloomingdales.com/shop/home/coffee-espresso-makers/Brand/Nespresso?id=8173",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Macy's"
+    ],
+    "allowedBrands": [
+      "Nespresso"
+    ],
+    "source": "https://www.macys.com/shop/brands/nespresso?id=70625",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Macy's"
+    ],
+    "allowedBrands": [
+      "Style & Co"
+    ],
+    "source": "https://www.macys.com/shop/product/style-co-womens-printed-short-sleeve-crewneck-tee-macys-exclusive?ID=26684418",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Hallmark"
+    ],
+    "allowedBrands": [
+      "Sanrio"
+    ],
+    "source": "https://www.hallmark.com/hello-kitty/",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Collection identifies Sanrio-branded gifts; many are Hallmark-manufactured licensed designs.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Kevin Jewelers"
+    ],
+    "allowedBrands": [
+      "Rolex"
+    ],
+    "source": "https://kevinjewelers.com/pages/about-us",
+    "allowedProductTypes": [
+      "watch"
+    ],
+    "condition": "Certified pre-owned",
+    "note": "This proof supports pre-owned Rolex only, not new Rolex stock.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-description"
+  },
+  {
+    "merchants": [
+      "Fragrance Outlet"
+    ],
+    "allowedBrands": [
+      "Ariaz"
+    ],
+    "source": "https://www.fragranceoutlet.com/products/vibe-perfume",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Fragrance Outlet"
+    ],
+    "allowedBrands": [
+      "Arabiyat Prestige"
+    ],
+    "source": "https://www.fragranceoutlet.com/products/marwa-cologne",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Fragrance Outlet"
+    ],
+    "allowedBrands": [
+      "Afnan"
+    ],
+    "source": "https://www.fragranceoutlet.com/products/zimaya-mazaaj-rhythm-unisex-fragrance",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Perfumania"
+    ],
+    "allowedBrands": [
+      "Ariaz"
+    ],
+    "source": "https://perfumania.com/products/vibe-perfume",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Perfumania"
+    ],
+    "allowedBrands": [
+      "Arabiyat Prestige"
+    ],
+    "source": "https://perfumania.com/products/marwa-cologne",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Perfumania"
+    ],
+    "allowedBrands": [
+      "Afnan"
+    ],
+    "source": "https://perfumania.com/products/zimaya-mazaaj-rhythm-unisex-fragrance",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "MOIDA"
+    ],
+    "allowedBrands": [
+      "The Crème Shop"
+    ],
+    "source": "https://moidaus.com/products/the-creme-shop-miffy-calming-cloud-hydrogel-under-eye-patches",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "MOIDA"
+    ],
+    "allowedBrands": [
+      "ROUND LAB"
+    ],
+    "source": "https://moidaus.com/products/round-lab-birch-juice-mild-up-uvlock-spf50-50ml",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "MOIDA"
+    ],
+    "allowedBrands": [
+      "Manyo"
+    ],
+    "source": "https://moidaus.com/products/pure-cleansing-oil-200ml",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "The retailer itself publishes this actual branded product.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Target"
+    ],
+    "allowedBrands": [
+      "Amazon",
+      "Apple",
+      "Beats",
+      "Bose",
+      "Google",
+      "HP",
+      "Oura",
+      "Samsung",
+      "Sony",
+      "Roku"
+    ],
+    "source": "https://www.target.com/c/electronics/-/N-5xtg6?lnk=Electronics",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Official electronics department explicitly lists these brands; reference models need not be live branch stock.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-list"
+  },
+  {
+    "merchants": [
+      "JCPenney"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "Levi's",
+      "adidas",
+      "Citizen",
+      "Calvin Klein",
+      "Calphalon"
+    ],
+    "source": "https://www.jcpenney.com/d/brands?cm_re=ZU-_-HOME-_-VN-_-BRANDS-WE-LOVE-_-BRAND+SPOTLIGHT_1",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-list"
+  },
+  {
+    "merchants": [
+      "Video & Audio Center"
+    ],
+    "allowedBrands": [
+      "Amazon",
+      "Belkin",
+      "Bowers & Wilkins",
+      "Canon",
+      "Cuisinart",
+      "Denon",
+      "DJI",
+      "Dyson",
+      "Fitbit",
+      "Google",
+      "GoPro",
+      "JBL",
+      "Klipsch",
+      "LG",
+      "Marantz",
+      "Philips",
+      "Pioneer",
+      "Ring",
+      "Roku",
+      "Samsung",
+      "Segway",
+      "Sennheiser",
+      "Shure"
+    ],
+    "source": "https://videoandaudiocenter.com/brands",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Official retailer states it is an authorized dealer for all listed brands. Do not add Sony or Bose from another retailer's search results.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-list"
+  },
+  {
+    "merchants": [
+      "AT&T"
+    ],
+    "allowedBrands": [
+      "Apple"
+    ],
+    "source": "https://www.att.com/buy/phones/apple-iphone-17.html",
+    "allowedProductTypes": [
+      "phone",
+      "smartphone"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Verizon Wireless"
+    ],
+    "allowedBrands": [
+      "Apple"
+    ],
+    "source": "https://www.verizon.com/smartphones/apple-iphone-17/",
+    "allowedProductTypes": [
+      "phone",
+      "smartphone"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "T-Mobile"
+    ],
+    "allowedBrands": [
+      "Apple"
+    ],
+    "source": "https://www.t-mobile.com/cell-phone/apple-iphone-17",
+    "allowedProductTypes": [
+      "phone",
+      "smartphone"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Nordstrom Rack"
+    ],
+    "allowedBrands": [
+      "Clinique"
+    ],
+    "source": "https://www.nordstromrack.com/shop/brands-shop/beauty/clinique-shop?origin=topnav",
+    "allowedProductTypes": [
+      "perfume",
+      "skincare",
+      "lipstick",
+      "makeup",
+      "mascara",
+      "tech",
+      "hairdryer"
+    ],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Saks OFF 5TH"
+    ],
+    "allowedBrands": [
+      "Ray-Ban",
+      "Prada",
+      "Tory Burch",
+      "True Religion",
+      "Burberry",
+      "Calvin Klein",
+      "Dolce & Gabbana",
+      "Marc Jacobs",
+      "Versace",
+      "Dior",
+      "Levi's",
+      "Vera Wang",
+      "AG",
+      "DKNY",
+      "Gucci",
+      "Fitbit",
+      "7 For All Mankind",
+      "Alice + Olivia",
+      "Balmain",
+      "Rebecca Minkoff",
+      "Clinique",
+      "Roberto Cavalli",
+      "Tommy Hilfiger",
+      "BOSS",
+      "SPANX",
+      "Maison Margiela"
+    ],
+    "source": "https://www.simon.com/mall/sawgrass-mills/stores/saks-off-5th",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "Physical retailer brand list published by its mall owner and checked on this date. SaksOFF5TH.com says its online business has shut down; this evidence is not proof of current online or local-branch SKU inventory. Use as a dated reference assortment.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-owner-retailer-brand-list"
+  },
+  {
+    "merchants": [
+      "The Cosmetics Company Store"
+    ],
+    "allowedBrands": [
+      "Estee Lauder",
+      "Clinique",
+      "MAC Cosmetics"
+    ],
+    "source": "https://www.premiumoutlets.com/outlet/las-vegas-south/stores/the-cosmetics-company-store/news-and-events",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-owner-retailer-description"
+  },
+  {
+    "merchants": [
+      "Swiss Watch Gallery and Fine Jewelry"
+    ],
+    "allowedBrands": [
+      "Tudor",
+      "Cartier",
+      "Tacori",
+      "Omega",
+      "Breitling"
+    ],
+    "source": "https://www.swisswatchgallery.com/",
+    "allowedProductTypes": [
+      "watch"
+    ],
+    "condition": null,
+    "note": "Own site explicitly names Tudor/Cartier/Tacori; Omega and Breitling appear as branded watch department slides. Branch availability varies.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-list"
+  },
+  {
+    "merchants": [
+      "Torre & Co Jewelers"
+    ],
+    "allowedBrands": [
+      "Rolex",
+      "Cartier",
+      "Omega"
+    ],
+    "source": "https://www.shopstonewoodcenter.com/Directory/Details/874694",
+    "allowedProductTypes": [],
+    "condition": "Not stated; check each model",
+    "note": "Official mall owner identifies these brands. Retailer recruiting page also mentions vintage watches; precise model condition must remain explicit.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-owner-retailer-description"
+  },
+  {
+    "merchants": [
+      "Luxury Lab Watches and Jewelry"
+    ],
+    "allowedBrands": [
+      "Tissot",
+      "G-Shock"
+    ],
+    "source": "https://www.simon.com/mall/brea-mall/stores/luxury-lab-watches-and-jewelry",
+    "allowedProductTypes": [
+      "watch"
+    ],
+    "condition": "New authorized-retailer range",
+    "note": "The same official description separately limits Rolex/Cartier/Hublot/Patek Philippe/Audemars Piguet to pre-owned. Do not assign new luxury watches on the strength of this row.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-owner-authorized-retailer-description"
+  },
+  {
+    "merchants": [
+      "Luxury Lab Watches and Jewelry"
+    ],
+    "allowedBrands": [
+      "Rolex",
+      "Cartier",
+      "Hublot",
+      "Patek Philippe",
+      "Audemars Piguet"
+    ],
+    "source": "https://www.simon.com/mall/brea-mall/stores/luxury-lab-watches-and-jewelry",
+    "allowedProductTypes": [
+      "watch"
+    ],
+    "condition": "Pre-owned",
+    "note": "Only pre-owned models are supported for these luxury brands.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-owner-pre-owned-retailer-description"
+  },
+  {
+    "merchants": [
+      "Sephora"
+    ],
+    "allowedBrands": [
+      "The Ordinary"
+    ],
+    "source": "https://www.sephora.com/brand/the-ordinary?sortBy=NEW",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Sephora"
+    ],
+    "allowedBrands": [
+      "Dyson"
+    ],
+    "source": "https://www.sephora.com/brand/dyson/hair-dryers-blow-dryers",
+    "allowedProductTypes": [
+      "hairdryer",
+      "hair-styler",
+      "hair-straightener",
+      "hair-tool"
+    ],
+    "condition": null,
+    "note": "Official source verifies Dyson hair tools only, never vacuum cleaners or air purifiers.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "ULTA Beauty"
+    ],
+    "allowedBrands": [
+      "The Ordinary"
+    ],
+    "source": "https://www.ulta.com/brand/ordinary",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "ULTA Beauty"
+    ],
+    "allowedBrands": [
+      "Clinique"
+    ],
+    "source": "https://www.ulta.com/brand/clinique",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Sunglass Hut"
+    ],
+    "allowedBrands": [
+      "Ray-Ban",
+      "Oakley",
+      "Prada",
+      "Versace"
+    ],
+    "source": "https://www.sunglasshut.com/us/prescription-sunglasses?sub_id=undefined",
+    "allowedProductTypes": [
+      "glasses",
+      "sunglasses"
+    ],
+    "condition": null,
+    "note": "Official retailer list names actual eyewear models from these brands. Eyewear only; no clothing, watches or jewelry.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "LensCrafters"
+    ],
+    "allowedBrands": [
+      "Ray-Ban",
+      "Oakley",
+      "Prada",
+      "Versace",
+      "Gucci",
+      "Burberry",
+      "Coach",
+      "Tom Ford",
+      "Tiffany & Co.",
+      "Swarovski"
+    ],
+    "source": "https://www.lenscrafters.com/lc-us/brands/prescription-eyeglasses%24ray-ban",
+    "allowedProductTypes": [
+      "glasses",
+      "sunglasses"
+    ],
+    "condition": null,
+    "note": "Own retailer eyewear navigation explicitly lists these manufacturers. Frames/eyewear only; no unrelated fashion or jewelry products.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Dick's Sporting Goods"
+    ],
+    "allowedBrands": [
+      "Nike",
+      "adidas",
+      "Brooks",
+      "ASICS",
+      "On",
+      "HOKA"
+    ],
+    "source": "https://www.dickssportinggoods.com/c/mens-footwear",
+    "allowedProductTypes": [
+      "shoes"
+    ],
+    "condition": null,
+    "note": "Official footwear department explicitly names these carried manufacturers. This source supports footwear only.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Bloomingdale's"
+    ],
+    "allowedBrands": [
+      "La Mer"
+    ],
+    "source": "https://www.bloomingdales.com/shop/la-mer?id=17944",
+    "allowedProductTypes": [
+      "skincare",
+      "beauty"
+    ],
+    "condition": null,
+    "note": "Own retailer brand collection explicitly lists La Mer skincare. Real manufacturer model/photo/reference prices may come from their published primary sources.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "Kay Jewelers"
+    ],
+    "allowedBrands": [
+      "Citizen"
+    ],
+    "source": "https://www.kay.com/citizen?icid=MM%3AWATCH%3ACITIZEN",
+    "allowedProductTypes": [
+      "watch"
+    ],
+    "condition": "New",
+    "note": "Official Kay Citizen department publishes actual new Tsuyosa, Promaster and Classic watch collections. No unrelated jewelry is inferred from this evidence.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-brand-collection"
+  },
+  {
+    "merchants": [
+      "J.Sweets"
+    ],
+    "allowedBrands": [
+      "Minamoto Kitchoan"
+    ],
+    "source": "https://jsweetsstore.com/",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Gelson’s"
+    ],
+    "allowedBrands": [
+      "Gelson’s"
+    ],
+    "source": "https://www.gelsons.com/shop/west-edge-room-service",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Gelson’s"
+    ],
+    "allowedBrands": [
+      "S.Pellegrino"
+    ],
+    "source": "https://www.gelsons.com/shop/west-edge-room-service",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Whole Foods Market"
+    ],
+    "allowedBrands": [
+      "365 by Whole Foods Market"
+    ],
+    "source": "https://www.wholefoodsmarket.com/grocery/product/365-by-whole-foods-market-organic-57-cacao-dark-chocolate-3-oz-b074h8kmnb",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Whole Foods Market"
+    ],
+    "allowedBrands": [
+      "365 by Whole Foods Market"
+    ],
+    "source": "https://www.wholefoodsmarket.com/grocery/product/365-by-whole-foods-market-chip-potato-classic-sea-salt-organic-5-ounce-b074h5zhfq",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Mitsuwa Marketplace"
+    ],
+    "allowedBrands": [
+      "Glico Pocky"
+    ],
+    "source": "https://mitsuwa.com/sm",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "J.Sweets"
+    ],
+    "allowedBrands": [
+      "Yoku Moku"
+    ],
+    "source": "https://jsweetsstore.com/products/cigare",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "J.Sweets"
+    ],
+    "allowedBrands": [
+      "Minamoto Kitchoan"
+    ],
+    "source": "https://jsweetsstore.com/products/chestnut-waffle",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Yu Cake"
+    ],
+    "allowedBrands": [
+      "Yu Cake"
+    ],
+    "source": "https://yucakela.com/products/new-matcha-strawberry-dacquoise",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Yu Cake"
+    ],
+    "allowedBrands": [
+      "Yu Cake"
+    ],
+    "source": "https://yucakela.com/products/new-oreo-dacquoise",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Eataly"
+    ],
+    "allowedBrands": [
+      "La Campofilone"
+    ],
+    "source": "https://www.eataly.com/us_en/eataly-pasta",
+    "allowedProductTypes": [],
+    "condition": null,
+    "note": "",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-retailer-product"
+  },
+  {
+    "merchants": [
+      "Sephora"
+    ],
+    "allowedBrands": [
+      "Prada",
+      "Tory Burch",
+      "Burberry",
+      "Tom Ford",
+      "Calvin Klein",
+      "Marc Jacobs",
+      "Versace",
+      "Estee Lauder",
+      "Dior",
+      "DKNY",
+      "Gucci",
+      "Bobbi Brown",
+      "Cartier",
+      "Clinique",
+      "Yves Saint Laurent",
+      "Shiseido",
+      "Issey Miyake",
+      "Maison Margiela",
+      "Kate Spade",
+      "Kenzo",
+      "Hermes",
+      "Hugo Boss",
+      "Miu Miu",
+      "Lancome",
+      "CHANEL",
+      "Fresh",
+      "Giorgio Armani",
+      "Givenchy"
+    ],
+    "source": "https://www.simon.com/mall/brea-mall/stores/sephora",
+    "allowedProductTypes": [
+      "perfume",
+      "skincare",
+      "lipstick",
+      "makeup",
+      "mascara",
+      "hairdryer",
+      "tech"
+    ],
+    "condition": null,
+    "note": "Mall-owner brand list. Limited to beauty and fragrance products; no fashion-house handbags, apparel or fine jewelry inferred. Particular models are simulated reference stock.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-owner-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Macys"
+    ],
+    "allowedBrands": [
+      "Ray-Ban",
+      "Prada",
+      "Tory Burch",
+      "Jordan",
+      "Reebok",
+      "Tommy Bahama",
+      "Burberry",
+      "Tom Ford",
+      "Birkenstock",
+      "Calvin Klein",
+      "Champion",
+      "Converse",
+      "FILA",
+      "Hanes",
+      "Clarks",
+      "Dolce & Gabbana",
+      "Marc Jacobs",
+      "Versace",
+      "Skechers",
+      "Swarovski",
+      "Billabong",
+      "Dickies",
+      "Citizen",
+      "Diesel",
+      "Dior",
+      "Levis",
+      "Fossil",
+      "New Balance",
+      "Under Armour",
+      "DKNY",
+      "Brooks",
+      "Google",
+      "Gucci",
+      "Samsung",
+      "Apple",
+      "Cole Haan",
+      "Nike",
+      "UGG",
+      "7 For All Mankind",
+      "Amazon",
+      "Vans",
+      "ASICS",
+      "Clinique",
+      "Casio",
+      "The North Face",
+      "G-Shock",
+      "Tommy Hilfiger",
+      "Samsonite",
+      "Carters"
+    ],
+    "source": "https://www.simon.com/mall/brea-mall/stores/macys",
+    "allowedProductTypes": [
+      "shirt",
+      "hoodie",
+      "cardigan",
+      "jacket",
+      "pants",
+      "shorts",
+      "shoes",
+      "sandals",
+      "bag",
+      "crossbody",
+      "backpack",
+      "duffel",
+      "wallet",
+      "hat",
+      "belt",
+      "scarf",
+      "sunglasses",
+      "watch",
+      "digitalwatch",
+      "necklace",
+      "bracelet",
+      "ring",
+      "earrings",
+      "perfume",
+      "skincare",
+      "lipstick",
+      "makeup",
+      "mascara",
+      "hairdryer",
+      "tech",
+      "earbuds",
+      "headphones",
+      "speaker",
+      "tracker",
+      "stylus",
+      "mouse",
+      "keyboard",
+      "charger",
+      "cable",
+      "home",
+      "toy",
+      "plush"
+    ],
+    "condition": null,
+    "note": "Published Macy’s Brea brand directory; named reference models do not assert live branch inventory.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-owner-retailer-brand-directory"
+  },
+  {
+    "merchants": [
+      "Nordstrom"
+    ],
+    "allowedBrands": [
+      "Ray-Ban",
+      "TOMS",
+      "Prada",
+      "Tory Burch",
+      "Reebok",
+      "Tommy Bahama",
+      "Roxy",
+      "Teva",
+      "True Religion",
+      "Burberry",
+      "Tom Ford",
+      "Birkenstock",
+      "Calvin Klein",
+      "Converse",
+      "Clarks",
+      "Marc Jacobs",
+      "Versace",
+      "Dior",
+      "Levis",
+      "Fossil",
+      "New Balance",
+      "Under Armour",
+      "DKNY",
+      "Brooks",
+      "Dr. Martens",
+      "Gucci",
+      "Cole Haan",
+      "Nike",
+      "UGG",
+      "7 For All Mankind",
+      "Vans",
+      "ASICS",
+      "Clinique",
+      "Yves Saint Laurent",
+      "Casio",
+      "Shiseido",
+      "The North Face",
+      "G-Shock",
+      "Theory",
+      "adidas",
+      "Kate Spade",
+      "Kenzo",
+      "Marni",
+      "Valentino",
+      "Coach",
+      "GUESS",
+      "Steve Madden",
+      "Free People",
+      "MAC",
+      "Lancome",
+      "CHANEL",
+      "Kendra Scott",
+      "Madewell",
+      "Canada Goose",
+      "David Yurman"
+    ],
+    "source": "https://www.simon.com/mall/the-galleria/stores/nordstrom",
+    "allowedProductTypes": [
+      "shirt",
+      "hoodie",
+      "cardigan",
+      "jacket",
+      "pants",
+      "shorts",
+      "shoes",
+      "sandals",
+      "bag",
+      "crossbody",
+      "backpack",
+      "duffel",
+      "wallet",
+      "hat",
+      "belt",
+      "scarf",
+      "sunglasses",
+      "watch",
+      "digitalwatch",
+      "necklace",
+      "bracelet",
+      "ring",
+      "earrings",
+      "perfume",
+      "skincare",
+      "lipstick",
+      "makeup",
+      "mascara",
+      "hairdryer",
+      "tech"
+    ],
+    "condition": null,
+    "note": "Official mall-owner retailer brand directory from The Galleria. Used as retailer carried-brand evidence, not current local SKU confirmation.",
+    "checkedOn": "2026-10-27",
+    "historical": false,
+    "evidenceType": "official-mall-owner-retailer-brand-directory"
+  }
+]

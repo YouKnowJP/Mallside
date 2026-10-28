@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+.openai/
+.env
+.env.*
+!.env.example
+*.log
+*.tar.gz
+coverage/
+playwright-report/
+test-results/
+.cache/

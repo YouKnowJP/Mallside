@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {blocked,slideMove,planPath,WALK_BOUNDS} from '../dist/navigation.js';
+const fixtures=[{x:289,y:299,width:83,height:49},{x:540,y:280,width:80,height:75},{x:655,y:280,width:105,height:75},{x:820,y:280,width:105,height:75},{x:420,y:255,width:85,height:27},{x:420,y:384,width:85,height:27}];
+test('mall routes avoid fountains and kiosk footprints',()=>{const route=planPath({x:150,y:390},{x:800,y:250},fixtures);assert.ok(route.length>5);for(const p of route)assert.equal(blocked(p,fixtures),false);assert.deepEqual(route.at(-1),{x:800,y:250});});
+test('all six storefront doors are reachable from the center',()=>{for(const x of [200,500,800])for(const y of [250,411])assert.ok(planPath({x:488,y:307},{x,y},fixtures).length>0);});
+test('the home exit is reachable from both ends of the promenade',()=>{for(const start of [{x:80,y:242},{x:500,y:340},{x:80,y:411}]){const route=planPath(start,{x:934,y:411},fixtures);assert.deepEqual(route.at(-1),{x:934,y:411});}});
+test('keyboard movement slides along a counter instead of entering it',()=>{const obstacle=[{x:100,y:270,width:50,height:70}],from={x:90,y:290};const next=slideMove(from,{x:110,y:300},obstacle);assert.equal(blocked(next,obstacle),false);assert.equal(next.x,90);assert.equal(next.y,300);});
+test('keyboard walking stays within the shopping promenade',()=>{const p=slideMove({x:90,y:250},{x:-1000,y:900},[]);assert.equal(p.x,WALK_BOUNDS.left);assert.equal(p.y,WALK_BOUNDS.bottom);});
+test('a fully blocked route returns no path instead of teleporting',()=>{assert.deepEqual(planPath({x:100,y:250},{x:800,y:250},[{x:0,y:0,width:1000,height:1000}]),[]);});

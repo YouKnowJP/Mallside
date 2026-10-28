@@ -1,0 +1,13 @@
+# Mallside v14: connected shopping streets
+
+The v14 pass addresses the open space structurally. Standard concourses narrow from 210 to 120 game units, and the added arcades from 170 to 120. Courts are smaller. The former diagonal links become right-angle galleries so axis-aligned store buildings can actually line both sides. Original landmark nodes and broad floor/zone assignments remain; the geometry is a condensed original game layout, not an as-built plan.
+
+Real directory tenants occupy deeper shop units with almost continuous frontage. Solid wall links join adjacent same-facing shops, and connected retail backs occupy previously bare space behind them. These are parts of the existing stores, not invented tenants. Buildings have wraparound glazing, shared cornices and canopies. Actual entrance portals have recessed doorways, glass panels, handles and lit signs. A mall entrance gate has proximity-operated sliding glass panels. Indoor galleries have connected overhead glazing. South Coast Plaza's west building remains separate, with the Level 2 bridge; its west galleries and the smaller Fashion Island upper gallery gain space for their actual source tenants.
+
+Ambient shoppers increase from six dispersed people to 36 on desktop and 24 when a mall is built in a narrow viewport. Their local routes stop at shopfronts and court areas, with pauses between walks. Offscreen population can move to the next neighborhood as the player explores. People carry bags, use walking motion and can be approached for a short conversation and a suggested stop. Existing crowd and reduced-motion preferences still apply.
+
+Coffee, flower, photo and pop-up counters occupy court pockets. They use the existing real-drink menu and game activities; no fictional branded merchandise is added. Their approaches, benches, shop doors, transfers and exits use the same collision and route system. The Stops drawer lists the nearest added counters. Own-store raster product photos load into nearby window displays where a verified assortment exists. Catalog gaps remain explicitly identified rather than filled with guest products.
+
+Retail signs are mounted to their actual façade planes so nearby cornices do not cut through billboard text. Camera cutaways keep the shopper visible. Portrait framing now searches additional clear angles in the denser floor plan and adjusts the portrait field of view for closer camera positions.
+
+The ten destination palettes and design references from v13 remain. Catalog data, prices, receipts, ownership and career progression are unchanged. Source map floor/broad-zone references remain in the Guide. Geometry, added galleries, counters and building volumes are original game interpretations.

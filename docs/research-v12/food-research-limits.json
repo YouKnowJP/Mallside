@@ -1,0 +1,452 @@
+{
+  "unresolved": [
+    "ABSteak by Chef Akira Back",
+    "Armani/Caffè",
+    "BJ's Restaurant & Brewhouse",
+    "Back Bay Tavern at Whole Foods Market",
+    "Birba",
+    "Bj's Restaurant & Brewhouse",
+    "Blk Dot Coffee",
+    "Bloomingdale's 59th & Lex Cafe",
+    "California Pizza Kitchen",
+    "Caló Kitchen + Tequila",
+    "Capital Grille, The",
+    "Chilim Balam",
+    "Chocolate Bash",
+    "Claim Jumper",
+    "Crust & Crave",
+    "Dizzy Bird",
+    "Earth Bowl Superfoods",
+    "Fat Daddy Chicken",
+    "Flavo",
+    "Fleming's Prime Steakhouse & Wine Bar",
+    "Gengis Khan",
+    "Georgia's Restaurant",
+    "Habana",
+    "Hamada-Ya",
+    "Hamamori Restaurant & Sushi Bar",
+    "Hana Grill",
+    "Handel's Homemade Ice Cream",
+    "Hello Kitty Cafe",
+    "Honey & Butter Macarons",
+    "J&G Fried Chicken",
+    "Javier's",
+    "Joe And The Juice",
+    "Kalbi Social Club",
+    "Let's Boba",
+    "Little Sister",
+    "Lola Cafe",
+    "Lollicup Fresh Tea Express",
+    "Manaao Thai Comfort Food",
+    "Mariposa Restaurant at Neiman Marcus",
+    "Mastro's Ocean Club",
+    "Mendocino Farms",
+    "Misasa",
+    "Miàn",
+    "Mong Q",
+    "Mugimaru + Toritetsu",
+    "Nicolas Eatery",
+    "Nordstrom Ebar",
+    "Nordstrom Marketplace Cafe",
+    "Nori Japan",
+    "North Italia",
+    "Ocean 48",
+    "Onigilly",
+    "Orange Coast Soda Company",
+    "Origami Handroll Bar",
+    "Outback Steakhouse",
+    "Pacific Catch",
+    "Pho Saigon Pearl",
+    "R+D Kitchen",
+    "RH Ocean Grill",
+    "Ramen Nagi",
+    "Red O Taste of Mexico",
+    "Robata Wasa",
+    "Rubio's Fresh Mexican Grill",
+    "Scratch Bakery Cafe",
+    "Seasons 52",
+    "Sessions West Coast Deli",
+    "Subway",
+    "Suki Hana",
+    "Sushi Roku",
+    "Sweets From Heaven",
+    "T.G.I. Friday's",
+    "Tang Bar",
+    "Terrace by Mix Mix",
+    "The Breakfast Factory",
+    "The Dive Oyster Bar",
+    "Uncle Sharkii Poke",
+    "VOX Kitchen & Bar",
+    "Wood Ranch BBQ & Grill",
+    "Yamacho Hasegawa",
+    "Yamari",
+    "Yard House",
+    "Yogurt Bee"
+  ],
+  "limits": [
+    "This is a bounded research asset set, not complete coverage of all missing food merchants. Unresolved merchants must not receive unrelated chain menus.",
+    "All prices are explicit simulated game references unless priceBasis states an observed official price; none is a guaranteed current local quote.",
+    "Official online or manufacturer prices can differ from mall branches; game inventory, stock and sizes are simulated.",
+    "Actual international or historical official photographs are identified in notes; local presentation and current availability can differ.",
+    "Prepared meals and ready-to-drink items can have gameplay effects; packaged coffee beans/capsules require brewing and have no immediate consumption effects.",
+    "Retailers carrying manufacturer brands include retailerBrandEvidence; this documents the brand or model relationship, not current branch stock.",
+    "Interior references distinguish photographed facts from suggested adaptations. Most are brand prototypes, not exact architectural replicas of mall branches.",
+    "The Kahala Frappe asset is an official family photograph containing multiple drinks; the matching caramel drink is in front.",
+    "Dining-experience rows for H&H and Fogo are real restaurant services; their photos show a meat component, not a fixed standalone steak SKU. H&H is an observed lunch-menu reference; Fogo USD price is explicitly simulated."
+  ],
+  "unresolvedDetails": [
+    {
+      "merchant": "ABSteak by Chef Akira Back",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Armani/Caffè",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "BJ's Restaurant & Brewhouse",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Back Bay Tavern at Whole Foods Market",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Birba",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Bj's Restaurant & Brewhouse",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Blk Dot Coffee",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Bloomingdale's 59th & Lex Cafe",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "California Pizza Kitchen",
+      "reason": "Official menu verified through Canada operator and US official linked Olo ordering shell; US site TLS and public menu endpoint access failed. No exact downloadable own-item photo collected before freeze."
+    },
+    {
+      "merchant": "Caló Kitchen + Tequila",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Capital Grille, The",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Chilim Balam",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Chocolate Bash",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Claim Jumper",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Crust & Crave",
+      "reason": "Official tenant information confirmed food categories but not a photographed named product."
+    },
+    {
+      "merchant": "Dizzy Bird",
+      "reason": "Official menu request returned HTTP 403; no cross-chain substitute included."
+    },
+    {
+      "merchant": "Earth Bowl Superfoods",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Fat Daddy Chicken",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Flavo",
+      "reason": "Official site only yielded a cartoon lemon asset, which was rejected because it is not a real product photograph."
+    },
+    {
+      "merchant": "Fleming's Prime Steakhouse & Wine Bar",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Gengis Khan",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Georgia's Restaurant",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Habana",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Hamada-Ya",
+      "reason": "US official site was in maintenance; Japan bakery page did not yield an exact verified local menu photo."
+    },
+    {
+      "merchant": "Hamamori Restaurant & Sushi Bar",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Hana Grill",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Handel's Homemade Ice Cream",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Hello Kitty Cafe",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Honey & Butter Macarons",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "J&G Fried Chicken",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Javier's",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Joe And The Juice",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Kalbi Social Club",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Let's Boba",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Little Sister",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Lola Cafe",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Lollicup Fresh Tea Express",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Manaao Thai Comfort Food",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Mariposa Restaurant at Neiman Marcus",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Mastro's Ocean Club",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Mendocino Farms",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Misasa",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Miàn",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Mong Q",
+      "reason": "Search returned a similarly named MongoQ business; relationship to this mall tenant was unverified, so no menu was reused."
+    },
+    {
+      "merchant": "Mugimaru + Toritetsu",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Nicolas Eatery",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Nordstrom Ebar",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Nordstrom Marketplace Cafe",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Nori Japan",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "North Italia",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Ocean 48",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Onigilly",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Orange Coast Soda Company",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Origami Handroll Bar",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Outback Steakhouse",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Pacific Catch",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Pho Saigon Pearl",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "R+D Kitchen",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "RH Ocean Grill",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Ramen Nagi",
+      "reason": "Excluded: official WordPress menu source contains unrelated casino spam. Authentic-looking bowl/photo fields were not imported because the player-facing source link is unsafe."
+    },
+    {
+      "merchant": "Red O Taste of Mexico",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Robata Wasa",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Rubio's Fresh Mexican Grill",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Scratch Bakery Cafe",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Seasons 52",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Sessions West Coast Deli",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Subway",
+      "reason": "Official US Oven-Roasted Turkey product and matching photo identified; media.subway.com photo host failed DNS/download. No substitute photo imported."
+    },
+    {
+      "merchant": "Suki Hana",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Sushi Roku",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Sweets From Heaven",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "T.G.I. Friday's",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Tang Bar",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Terrace by Mix Mix",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "The Breakfast Factory",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "The Dive Oyster Bar",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Uncle Sharkii Poke",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "VOX Kitchen & Bar",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Wood Ranch BBQ & Grill",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Yamacho Hasegawa",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Yamari",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Yard House",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    },
+    {
+      "merchant": "Yogurt Bee",
+      "reason": "No verified photographed own-menu item collected in this bounded research pass. This is not a claim that the merchant lacks a real menu."
+    }
+  ],
+  "audit": {
+    "productCount": 214,
+    "canonicalMerchantCount": 90,
+    "inputShopLabelCount": 175,
+    "coveredInputShopLabelCount": 90,
+    "unresolvedInputShopLabelCount": 82,
+    "classificationCorrectionCount": 3,
+    "interiorReferenceCount": 10,
+    "allProductImagesLocalAndAtMost512px": true,
+    "allProductPricesPositive": true,
+    "errors": [],
+    "allProductImagesNonempty": true,
+    "ramenNagiExcluded": true
+  },
+  "rejectedProducts": [
+    {
+      "merchant": "Mitsuwa Marketplace",
+      "name": "Sushi Party Tray",
+      "reason": "Removed general-marketplace assignment. Retained only under operator-documented NAGOMI sushi section."
+    },
+    {
+      "merchant": "Ramen Nagi",
+      "reason": "Not imported because current official page contains unrelated spam and lacks a safe player-facing source."
+    }
+  ]
+}

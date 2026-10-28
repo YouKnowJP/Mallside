@@ -1,0 +1,45 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import * as E from '../dist/engine.js';
+
+test('a new career can complete all 24 chapters through ordinary paid actions and sleep income',()=>{
+ const s=E.createState();let guard=0;
+ const sleep=()=>{if(++guard>150)throw Error('Campaign needed too many days');if(s.minutes<1100){if(s.energy<50)E.rest(s);if(s.hunger<50&&s.cash>=1000)E.eat(s,'sandwich');const a=E.calendarToday(s).activity;try{E.enjoyActivity(s,a);}catch{}}E.nextDay(s);};
+ const run=fn=>{for(let i=0;i<20;i++){try{return fn();}catch(error){if(/not found|in order|Finish every|invalid|valid size|current request|Choose a qualifying/.test(error.message))throw error;if(s.minutes>1020||/time before|sold out/.test(error.message))sleep();else if(/hungry/.test(error.message)){if(s.cash>=1000)E.eat(s,'sandwich');else sleep();}else if(/stamina/.test(error.message))E.rest(s);else if(/more|money|arms are full/.test(error.message)){if(E.carried(s).length>0)E.checkPackages(s);else sleep();}else throw error;}}throw Error('Unresolved action');};
+ const enter=id=>{while(E.levelOf(s)<E.storeById(id).tier)discover();const m=E.mallForStore(s,id);run(()=>E.travelMall(s,m.id));run(()=>E.travel(s,E.sectionsOf(s).find(d=>d.stores.includes(id)).id));run(()=>E.visit(s,id));};
+ const inspect=id=>run(()=>E.inspect(s,id));
+ const buy=id=>{const p=E.byId(id);while(E.levelOf(s)<E.storeById(p.store).tier)discover();if(s.cash<E.price(s,p)*1.1)sleep();if(E.carried(s).length>=7)run(()=>E.checkPackages(s));enter(p.store);return run(()=>{E.checkout(s,p.store,[{id,size:E.idealSize(s,p)}]);return s.purchases.at(-1);});};
+ const cheapest=(predicate)=>E.PRODUCTS.filter(predicate).sort((a,b)=>a.price-b.price)[0].id;
+ const discover=()=>{const p=E.PRODUCTS.find(p=>!s.seen.includes(p.id)&&E.storeById(p.store).tier<=E.levelOf(s));if(p){enter(p.store);inspect(p.id);}else{const q=E.PRODUCTS.find(p=>E.storeById(p.store).tier<=E.levelOf(s)&&E.canTry(p)&&!s.tried.includes(p.id+':'+E.idealSize(s,p)));if(q){enter(q.store);run(()=>E.fit(s,q.id,E.idealSize(s,q)));}else{sleep();const a=E.calendarToday(s).activity;run(()=>E.enjoyActivity(s,a));}}};
+ const rank=n=>{while(E.levelOf(s)<n)discover();};
+ const claim=id=>{const m=E.activeMission(s);assert.equal(m?.id,id);assert.ok(E.missionReady(s,m),id+': '+m.steps.filter(([,fn])=>!fn(s)).map(([text])=>text).join(', '));E.claimMission(s,id);};
+ const keepModels=n=>{while(new Set(E.owned(s).map(i=>{const p=E.byId(i.productId);return p.brand+p.name;})).size<n){const identities=new Set(E.owned(s).map(i=>{const p=E.byId(i.productId);return p.brand+p.name;}));buy(cheapest(p=>!identities.has(p.brand+p.name)));}};
+ const activity=id=>{if(s.activityLog.some(a=>a.day===s.day&&a.id===id))return;run(()=>E.enjoyActivity(s,id));};
+ const request=()=>{if(s.activeErrand)E.cancelErrand(s);let brief=E.errandOffers(s).find(b=>!s.errands.some(e=>e.day===s.day&&e.id===b.id));if(!brief){sleep();brief=E.errandOffers(s)[0];}run(()=>E.acceptErrand(s,brief.id));const id=cheapest(p=>E.storeById(p.store).tier<=E.levelOf(s)&&(!brief.types||brief.types.includes(p.type))&&(!brief.stores||brief.stores.includes(p.store))&&E.price(s,p)+Math.round(E.price(s,p)*E.TAX)<=brief.budget);inspect(id);const item=buy(id);if(!s.activeErrand){request();return;}run(()=>E.deliverErrand(s,item.id));};
+ enter('ross');inspect('ross::nike-x9');run(()=>E.fit(s,'ross::nike-x9','M'));buy('ross::nike-x9');claim('first');
+ enter('marshalls');run(()=>E.compare(s,'ross::nike-x9'));claim('detective');
+ run(()=>E.eat(s,'snack'));run(()=>E.rest(s));sleep();claim('care');
+ const top=buy('u-tee');buy('u-bag');run(()=>E.useProduct(s,top.id));claim('essentials');
+ for(const st of ['hm','oldnavy','levis'])enter(st);buy('marshalls::r-jeans');while(s.metrics.inspects<8)discover();claim('street');
+ rank(2);enter('nike');enter('adidas');buy('nike-x8');claim('active');
+ run(()=>E.demo(s,'lego-x1'));buy('lego-x8');if(!s.popupStamps.some(a=>a.day===s.day))run(()=>E.claimPopup(s));claim('weekend');
+ run(()=>E.demo(s,'apple-x2'));run(()=>E.demo(s,'sephora-x1'));run(()=>E.eat(s,'sb-latte'));claim('lifestyle');
+ rank(3);for(const p of E.PRODUCTS.filter(p=>p.store==='nordstrom').sort((a,b)=>a.price-b.price).slice(0,2))buy(p.id);if(s.metrics.healthyDays<1)sleep();claim('signature');
+ rank(4);for(const id of ['coach','longchamp','tory'])enter(id);buy(cheapest(p=>p.store==='coach'));buy(cheapest(p=>p.store==='longchamp'));run(()=>E.compare(s,'marshalls::r-jeans'));run(()=>E.compare(s,'ross::nike-x6'));claim('designer');
+ rank(5);const lv=cheapest(p=>p.store==='lv');inspect(lv);buy(lv);claim('luxury');
+ for(const st of ['gucci','prada']){enter(st);inspect(E.PRODUCTS.find(p=>p.store===st).id);}buy(cheapest(p=>['gucci','prada'].includes(p.store)));claim('houses');
+ rank(9);run(()=>E.appointment(s));buy(cheapest(p=>p.store==='hermes'));claim('orange');while(s.metrics.healthyDays<2)sleep();claim('home');
+ for(const st of E.CORE_STORES)enter(st.id);while(new Set(s.popupStamps.map(a=>a.event)).size<3){if(!s.popupStamps.some(a=>a.day===s.day))run(()=>E.claimPopup(s));else sleep();}for(const d of E.DISTRICTS){run(()=>E.travel(s,d.id));run(()=>E.takePhoto(s));}claim('passport');
+ keepModels(20);while(s.metrics.inspects<40)discover();sleep();
+ // Complete a whole daily set through actual actions, including a client handoff.
+ enter('ross');enter('marshalls');inspect('ross::nike-x9');inspect('marshalls::r-jeans');run(()=>E.fit(s,'ross::nike-x9','M'));request();run(()=>E.eat(s,'snack'));run(()=>E.rest(s));if(!s.popupStamps.some(a=>a.day===s.day))run(()=>E.claimPopup(s));run(()=>E.demo(s,'lego-x1'));activity('bridge');for(const q of E.QUESTS)E.claimDaily(s,q.id);claim('collection');
+ for(const id of ['newbalance','lululemon','alo'])enter(id);activity('bridge');activity('carousel');buy(cheapest(p=>E.storeById(p.store).district==='garden'));claim('garden-life');
+ buy(cheapest(p=>p.store==='muji'));buy(cheapest(p=>p.store==='bathbody'));activity('flowers');claim('small-pleasures');
+ while(s.metrics.errands<3||new Set(s.errands.map(e=>e.id)).size<3)request();if(!s.metrics.packages){buy('ross::nike-x9');run(()=>E.checkPackages(s));}claim('friendly-favors');
+ for(const id of ['artwalk','cinema','tea'])activity(id);while(s.metrics.events<3||s.metrics.sleeps<5)sleep();claim('week-rhythm');
+ for(const st of E.CORE_STORES.filter(st=>st.district==='terrace'))enter(st.id);for(const p of E.PRODUCTS.filter(p=>E.storeById(p.store).district==='terrace').slice(0,10))inspect(p.id);buy(cheapest(p=>E.storeById(p.store).district==='terrace'));claim('maison-tour');
+ for(const p of E.PRODUCTS.filter(p=>['bracelet','ring','necklace','earrings','watch'].includes(p.type)).sort((a,b)=>a.price-b.price).slice(0,2))buy(p.id);activity('artwalk');claim('celebrate');
+ keepModels(35);while(new Set(E.owned(s).map(i=>E.byId(i.productId).brand)).size<15){const brands=new Set(E.owned(s).map(i=>E.byId(i.productId).brand));buy(cheapest(p=>!brands.has(p.brand)));}while(s.metrics.inspects<80)discover();claim('considered-collection');
+ while(s.metrics.errands<12)request();while(s.metrics.events<7)sleep();claim('galleria-life');
+ assert.equal(s.missions.length,24);assert.equal(E.activeMission(s),undefined);assert.ok(s.cash>=0);assert.ok(s.day<150);assert.ok(E.unlockBadges(s).some(b=>b.id==='complete'));
+});

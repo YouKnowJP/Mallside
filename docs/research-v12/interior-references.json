@@ -1,0 +1,760 @@
+[
+  {
+    "brand": "Nike",
+    "source": "https://tvaarchitects.com/project/nike-the-grove/",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "sport",
+    "cues": [
+      "Athlete-focused graphics",
+      "Shoe display walls",
+      "Clear testing and fitting area",
+      "Metal framework and product tables"
+    ],
+    "illustrativePalette": {
+      "floor": "#b9bbb6",
+      "wall": "#e7e7df",
+      "fixture": "#373d3c",
+      "accent": "#dd5d3b"
+    },
+    "scope": "Architect describes the three-storey Grove Field-House project and local-athlete storytelling; industrial palette is an adaptation.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "UNIQLO",
+    "source": "https://www.herzogdemeuron.com/projects/517-uniqlo-tokyo/",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "grid-apparel",
+    "cues": [
+      "Exposed concrete grid",
+      "Wood display vitrines",
+      "Folded clothing color walls",
+      "Open entrances and large central display"
+    ],
+    "illustrativePalette": {
+      "floor": "#d2c0a1",
+      "wall": "#ebe8de",
+      "fixture": "#c39f71",
+      "accent": "#c9282d"
+    },
+    "scope": "Published Tokyo flagship architect project; use the grid-and-color idea without copying its plan.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "Zara",
+    "source": "https://www.inditexpeople.com/us/en/beyond/happening/zara-diagonal-barcelona-vincent-van-duysen",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "minimal-apparel",
+    "cues": [
+      "Neutral clothing rails",
+      "Wood table with branches",
+      "Sculptural plinths",
+      "Quiet gallery vignettes"
+    ],
+    "illustrativePalette": {
+      "floor": "#d8d0bf",
+      "wall": "#eee9df",
+      "fixture": "#ad9271",
+      "accent": "#55564f"
+    },
+    "scope": "Brand-owner account of Diagonal Barcelona includes neutral rack/table imagery and domestic-scale vignettes.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "Anthropologie",
+    "source": "https://www.urbn.com/our-brands/anthropologie/visit-our-stores",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "crafted-lifestyle",
+    "cues": [
+      "Handmade window installation",
+      "Mixed apparel and home vignettes",
+      "Ceramic objects",
+      "Styling and home-design corner"
+    ],
+    "illustrativePalette": {
+      "floor": "#b28e65",
+      "wall": "#e9ddc6",
+      "fixture": "#be9a6a",
+      "accent": "#8c6d79"
+    },
+    "scope": "Owner describes handmade store windows, art installations, ceramics and destination-marketplace styling services.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "Marine Layer",
+    "source": "https://www.oakology.com/commercial-portfolio/marine-layer",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "coastal-apparel",
+    "cues": [
+      "Custom wood cabinetry",
+      "Open shelves and folded stacks",
+      "Relaxed local-store scale",
+      "Simple clothing rails"
+    ],
+    "illustrativePalette": {
+      "floor": "#c39d76",
+      "wall": "#eee7d8",
+      "fixture": "#ad8059",
+      "accent": "#668b8b"
+    },
+    "scope": "Primary custom millwork supplier documents Marine Layer interior projects; coastal palette is an interpretation.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "ALDO",
+    "source": "https://www.apparelgroup.com/en/news/apparel-group-brand-aldo-unveils-new-global-flagship-retail-concept-at-mall-of-the-emirates/",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "shoe-salon",
+    "cues": [
+      "Continuous shoe niches",
+      "Curved furniture",
+      "Rounded handbag podiums",
+      "Light wood and off-white lacquer",
+      "Terrazzo accents"
+    ],
+    "illustrativePalette": {
+      "floor": "#d8cebf",
+      "wall": "#efe6d7",
+      "fixture": "#c6ad8b",
+      "accent": "#cdb7a3"
+    },
+    "scope": "Operator describes the new September2026 Dubai concept; it is inspiration, not a claim all US branches already use it.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "Coach",
+    "source": "https://tapestry.gcs-web.com/node/8976/pdf",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "leather-workshop",
+    "cues": [
+      "Custom cabinetry",
+      "Warm lighting",
+      "Fine wood millwork",
+      "Leather-care and monogram workshop",
+      "Blackened metal details"
+    ],
+    "illustrativePalette": {
+      "floor": "#b49976",
+      "wall": "#dfd4bf",
+      "fixture": "#86684b",
+      "accent": "#343c38"
+    },
+    "scope": "Owner-issued 2016 Coach House release; historical brand vocabulary adapted to a small playable boutique.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "Aritzia",
+    "source": "https://www.aritzia.com/us/en/store?StoreID=aritzia-domain-austin&country=us",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "boutique-lounge",
+    "cues": [
+      "Natural materials",
+      "Custom furniture and art",
+      "Large mirrors",
+      "Well-lit fitting rooms",
+      "Cozy lounge seating"
+    ],
+    "illustrativePalette": {
+      "floor": "#c3b7a2",
+      "wall": "#eee8dc",
+      "fixture": "#a48d70",
+      "accent": "#70806a"
+    },
+    "scope": "Official boutique page describes natural materials, furniture, art, fitting rooms and lounge areas.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "AllSaints",
+    "source": "https://allsaints.hk/zh/pages/allsaints-brand-story",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "industrial-apparel",
+    "cues": [
+      "Vintage sewing-machine feature",
+      "Metal clothing rails",
+      "Dark leather display",
+      "Workshop-like fitting area"
+    ],
+    "illustrativePalette": {
+      "floor": "#8c8275",
+      "wall": "#b1a697",
+      "fixture": "#454643",
+      "accent": "#605247"
+    },
+    "scope": "Official regional brand-story page documents the sewing-machine display tradition; other workshop finishes are interpretation.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "Free People",
+    "source": "https://www.urbn.com/our-brands/free-people/our-business",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "textured-boutique",
+    "cues": [
+      "Natural textured materials",
+      "Handmade decorative elements",
+      "Soft layered apparel rails",
+      "Tactile fitting area"
+    ],
+    "illustrativePalette": {
+      "floor": "#bd9c72",
+      "wall": "#eee0c6",
+      "fixture": "#b48d61",
+      "accent": "#a87973"
+    },
+    "scope": "Owner explicitly describes nature-inspired raw beauty, handmade elements and unexpected textures.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "Apple",
+    "source": "https://www.apple.com/ne/newsroom/2022/07/apple-brompton-road-opens-july-28-in-london/",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "open-tech",
+    "cues": [
+      "Open product demonstration tables",
+      "Warm timber overhead elements",
+      "Light terrazzo surface",
+      "Indoor trees",
+      "Clear sight lines"
+    ],
+    "illustrativePalette": {
+      "floor": "#d8d5c9",
+      "wall": "#f0f0e9",
+      "fixture": "#bc9a73",
+      "accent": "#8d9e85"
+    },
+    "scope": "Official Brompton Road opening account; large-table demo layout and nature cues are condensed for the game.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "brand": "Hermes",
+    "source": "https://www.hermes.cn/cn/en/content/326756-wuxi-opening-2024-cn/",
+    "referenceType": "published-brand-or-design-team-reference",
+    "kind": "mineral-luxury",
+    "cues": [
+      "Beige stucco walls",
+      "Light oak accents",
+      "Curved ceiling forms",
+      "Leather and silk display niches",
+      "Quiet mineral palette"
+    ],
+    "illustrativePalette": {
+      "floor": "#d0c3ae",
+      "wall": "#e9dbc6",
+      "fixture": "#b89b73",
+      "accent": "#c47a3c"
+    },
+    "scope": "Official Wuxi store account documents water/stone inspiration, beige stucco, light oak and curved ceilings. Orange accent is game art direction.",
+    "checkedOn": "2026-10-27",
+    "accuracy": "Original condensed game interior inspired by the documented brand/design vocabulary. Palette hex values are art direction, not measured real-store finishes."
+  },
+  {
+    "merchant": "Hermes",
+    "brand": "Hermes",
+    "source": "https://www.southcoastplaza.com/press-center/press/hermes-opens-a-new-expanded-store-at-the-south-coast-plaza-shopping-center-a-further-expression-of-its-commitment-to-southern-california/",
+    "sources": [
+      "https://www.southcoastplaza.com/press-center/press/hermes-opens-a-new-expanded-store-at-the-south-coast-plaza-shopping-center-a-further-expression-of-its-commitment-to-southern-california/",
+      "https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2022-03/1646405423/Press%20release_Herme%CC%80s%20South%20Coast%20Plaza%20store%20reopening_EN_SC.pdf"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "2022 expanded South Coast Plaza boutique: 7,100 square feet and U-shaped layout by RDAI.",
+      "Earth, clay and terracotta tones; wood partitions and pearly/red marble terrazzo.",
+      "Silks displayed on wood grids at entry; leather, jewelry, home/equestrian areas and bar."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "terracotta",
+        "pearl cream",
+        "warm wood"
+      ],
+      "fixtures": [
+        "U-shaped browsing loop",
+        "slatted wood partitions",
+        "silk grid wall",
+        "leather display island",
+        "small jewelry salon"
+      ],
+      "interaction": [
+        "inspect silk",
+        "try handbag",
+        "seated consultation"
+      ]
+    },
+    "scope": "South Coast Plaza official mall-owner opening report; simplify its documented spatial and material cues for the game."
+  },
+  {
+    "merchant": "Louis Vuitton",
+    "brand": "Louis Vuitton",
+    "source": "https://www.southcoastplaza.com/press-center/press/louis-vuitton-unveils-newly-expanded-costa-mesa-south-coast-plaza-store/",
+    "sources": [
+      "https://www.southcoastplaza.com/press-center/press/louis-vuitton-unveils-newly-expanded-costa-mesa-south-coast-plaza-store/",
+      "https://www.southcoastplaza.com/directory/louis-vuitton/"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Expanded Costa Mesa South Coast Plaza store designed by Peter Marino.",
+      "An in-store atelier allows visitors to see artisans perform repairs.",
+      "Mall directory lists women, men, home, fragrance, personalization and leather-spa services."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "cream",
+        "warm wood",
+        "brass accents"
+      ],
+      "fixtures": [
+        "leather and trunk display",
+        "visible artisan bench",
+        "separate fragrance and home tables"
+      ],
+      "interaction": [
+        "watch repair animation",
+        "inspect leather",
+        "personalization preview"
+      ]
+    },
+    "scope": "South Coast Plaza article verifies atelier and departments; palette and exact layout are original game art direction, not measured reproductions."
+  },
+  {
+    "merchant": "Chanel",
+    "brand": "Chanel",
+    "source": "https://www.chanel.com/us/fashion/services/boutique-south-coast-plaza/",
+    "sources": [
+      "https://www.chanel.com/us/fashion/services/boutique-south-coast-plaza/"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Official South Coast Plaza boutique service page offers fashion-advisor appointments and care/repair services."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "ivory",
+        "black",
+        "muted gold"
+      ],
+      "fixtures": [
+        "handbag consultation counter",
+        "clothing rail",
+        "mirror and fitting salon"
+      ],
+      "interaction": [
+        "try clothing",
+        "equip handbag",
+        "seated advisor appointment"
+      ]
+    },
+    "scope": "Only service features are verified by this page. Monochrome palette, fixtures and room geometry are original game art direction rather than claims about the real branch interior."
+  },
+  {
+    "merchant": "Prada",
+    "brand": "Prada",
+    "source": "https://www.pradagroup.com/en/group/remix-retailstories.html",
+    "sources": [
+      "https://www.pradagroup.com/en/group/remix-retailstories.html",
+      "https://www.pradagroup.com/en/news-media/news-section/prada-inaugurates-a-new-shop-in-mexico-city.html"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Prada retail identity documents light green walls and black-and-white checkered marble floors.",
+      "Official Mexico City store article documents green Aver marble counters/shelves, metal displays and Plexiglas tables."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "pale green",
+        "black",
+        "white"
+      ],
+      "fixtures": [
+        "checkerboard floor",
+        "green display counters",
+        "metal shelves",
+        "transparent table"
+      ],
+      "interaction": [
+        "browse display",
+        "try bag",
+        "fitting mirror"
+      ]
+    },
+    "scope": "Brand/store reference; original game adaptation, not an as-built survey of a particular mall branch."
+  },
+  {
+    "merchant": "Cartier",
+    "brand": "Cartier",
+    "source": "https://www.southcoastplaza.com/press-center/press/cartier-opens-newly-designed-boutique-at-south-coast-plaza/",
+    "sources": [
+      "https://www.southcoastplaza.com/press-center/press/cartier-opens-newly-designed-boutique-at-south-coast-plaza/"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "2024 South Coast Plaza redesign by Moinard Bétaille.",
+      "Design inspiration references Orange County vegetation, coastal waters, desert dunes and cracked earth."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "sand",
+        "warm gold",
+        "coastal blue accent"
+      ],
+      "fixtures": [
+        "jewelry vitrines",
+        "seated consultation desk",
+        "softly curved partitions"
+      ],
+      "interaction": [
+        "inspect jewelry",
+        "try bracelet",
+        "seated watch consultation"
+      ]
+    },
+    "scope": "Official South Coast Plaza design inspiration is retained; game fixtures and compact geometry are adaptations."
+  },
+  {
+    "merchant": "Tiffany & Co.",
+    "brand": "Tiffany & Co.",
+    "source": "https://press.tiffany.com/tiffany-co-unveils-its-newly-redesigned-new-york-city-landmark-at-57th-street-and-fifth-avenue/",
+    "sources": [
+      "https://press.tiffany.com/tiffany-co-unveils-its-newly-redesigned-new-york-city-landmark-at-57th-street-and-fifth-avenue/"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "New York Landmark redesign features jewelry cases below an abstract faceted skylight.",
+      "Official release describes wood parquet, mirrors and video walls."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "pale neutral",
+        "Tiffany blue accent",
+        "warm wood"
+      ],
+      "fixtures": [
+        "glass jewelry counters",
+        "faceted overhead feature",
+        "parquet floor",
+        "seated consultation"
+      ],
+      "interaction": [
+        "inspect ring",
+        "try necklace",
+        "gift consultation"
+      ]
+    },
+    "scope": "New York flagship reference for brand atmosphere, not South Coast Plaza branch geometry."
+  },
+  {
+    "merchant": "Apple",
+    "brand": "Apple",
+    "source": "https://www.apple.com/newsroom/2016/09/apple-to-open-first-store-in-mexico-saturday/",
+    "sources": [
+      "https://www.apple.com/newsroom/2016/09/apple-to-open-first-store-in-mexico-saturday/"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Official Via Santa Fe store release describes terrazzo, quartz walls and oak tables.",
+      "The store is designed around gathering and learning spaces."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "pale stone",
+        "oak",
+        "silver"
+      ],
+      "fixtures": [
+        "open oak demo tables",
+        "device wall",
+        "workshop table"
+      ],
+      "interaction": [
+        "test device",
+        "compare specifications",
+        "attend small workshop"
+      ]
+    },
+    "scope": "Official global store design reference, not a claim every Apple branch uses the same layout."
+  },
+  {
+    "merchant": "Sephora",
+    "brand": "Sephora",
+    "source": "https://www.lvmh.com/en/news-lvmh/sephora-unveils-new-flagship-champs-elysees-store",
+    "sources": [
+      "https://www.lvmh.com/en/news-lvmh/sephora-unveils-new-flagship-champs-elysees-store"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Official 2023 Champs-Élysées flagship release describes signature black-and-white stripes and a central beauty hub.",
+      "Distinct makeup, skincare, fragrance, hair and service areas; rainbow infinity-mirror feature."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "black",
+        "white",
+        "small saturated accents"
+      ],
+      "fixtures": [
+        "striped fascia",
+        "cosmetics counter bays",
+        "central tester hub",
+        "fragrance wall"
+      ],
+      "interaction": [
+        "try makeup shade",
+        "sample fragrance",
+        "compare skincare"
+      ]
+    },
+    "scope": "Official Paris flagship identity/department reference; game footprint is original."
+  },
+  {
+    "merchant": "Aesop",
+    "brand": "Aesop",
+    "source": "https://shop.aesop.com/ch/en/r/aesop-design-district/",
+    "sources": [
+      "https://shop.aesop.com/ch/en/r/aesop-design-district/"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Official Miami Design District store article describes concrete, polished plaster, terrazzo, pale tones, curves/cylinders and curved sinks."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "pale plaster",
+        "concrete grey",
+        "amber bottles"
+      ],
+      "fixtures": [
+        "curved wash basin",
+        "bottle shelving",
+        "rounded tester counter"
+      ],
+      "interaction": [
+        "wash hands",
+        "test hand balm",
+        "inspect fragrance"
+      ]
+    },
+    "scope": "Official Miami store design reference; not a claim that every Aesop branch shares these finishes."
+  },
+  {
+    "merchant": "LEGO",
+    "brand": "LEGO",
+    "source": "https://www.lego.com/en-us/pick-and-build",
+    "sources": [
+      "https://www.lego.com/en-us/pick-and-build",
+      "https://www.lego.com/en-us/stores/store/praha-centrum"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Official Pick & Build page describes in-store Pick a Brick and Build a Minifigure experiences.",
+      "Official store pages list Pick & Build Wall and Build a Minifigure features."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "yellow accent",
+        "white",
+        "bright brick colors"
+      ],
+      "fixtures": [
+        "boxed-set wall",
+        "brick-bin wall",
+        "build table",
+        "minifigure station"
+      ],
+      "interaction": [
+        "pick bricks",
+        "build minifigure",
+        "browse sets"
+      ]
+    },
+    "scope": "Brand/store reference; original game adaptation, not an as-built survey of a particular mall branch."
+  },
+  {
+    "merchant": "Crate & Barrel",
+    "brand": "Crate & Barrel",
+    "source": "https://www.crateandbarrel.com/interior-design/",
+    "sources": [
+      "https://www.crateandbarrel.com/interior-design/"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Official Design Desk offers in-store browsing of furniture, decor and fabric swatches.",
+      "Design appointments include mood boards, product suggestions, 3D room renderings and fabric/finish/size recommendations."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "warm white",
+        "light wood",
+        "soft charcoal"
+      ],
+      "fixtures": [
+        "living-room vignette",
+        "dining display",
+        "swatch board",
+        "design desk"
+      ],
+      "interaction": [
+        "sit on sofa",
+        "compare fabric swatches",
+        "room styling consultation"
+      ]
+    },
+    "scope": "Source verifies displayed product categories and design services. Palette and compact room arrangement are original game art direction."
+  },
+  {
+    "merchant": "West Elm",
+    "brand": "West Elm",
+    "source": "https://www.westelm.co.uk/ideas-inspiration/design-crew",
+    "sources": [
+      "https://www.westelm.co.uk/ideas-inspiration/design-crew"
+    ],
+    "checkedOn": "2026-10-27",
+    "evidenceKind": "official-brand-or-mall-owner-publication",
+    "verifiedCues": [
+      "Official Design Crew page offers in-store appointments and mood boards, recommendations, room plans and estimates.",
+      "The page offers fabric swatch requests for custom upholstery."
+    ],
+    "gameAdaptation": {
+      "palette": [
+        "walnut",
+        "cream",
+        "muted green"
+      ],
+      "fixtures": [
+        "sofa vignette",
+        "lighting display",
+        "fabric sample wall",
+        "Design Crew desk"
+      ],
+      "interaction": [
+        "sit on sofa",
+        "compare upholstery",
+        "plan room"
+      ]
+    },
+    "scope": "Official UK service reference; game palette and room geometry are original art direction, not a measured US mall branch."
+  },
+  {
+    "merchant": "Starbucks",
+    "source": "https://about.starbucks.com/stories/2026/inside-starbucks-chicago-cafe-makeover-softer-seating-local-design-invite-customers-to-stay/",
+    "verifiedCues": [
+      "Warm wood details and softer lounge seating",
+      "Table lamps and plants",
+      "Visible espresso preparation bar"
+    ],
+    "gameSuggestion": "A wood café counter, cream seating, green accents and clustered tables.",
+    "scope": "Official brand redesign account; no measured mall-branch floor plan."
+  },
+  {
+    "merchant": "Panda Express",
+    "source": "https://www.pandaexpress.com/innovation",
+    "supportingDesignSource": "https://www.vanbruntco.com/project/panda-express-dripping-springs/",
+    "verifiedCues": [
+      "The official Innovation Kitchen explicitly tests restaurant design and décor",
+      "Architect documents the Panda Home prototype"
+    ],
+    "gameSuggestion": "Original counter-service room with Panda red/black brand accents, visible serving line and clear tray-pickup point.",
+    "scope": "Brand/prototype references. Serving-line layout is an adaptation, not a measured mall branch."
+  },
+  {
+    "merchant": "Chipotle Mexican Grill",
+    "source": "https://newsroom.chipotle.com/2019-12-19-Chipotle-Debuts-New-Restaurant-Design-To-Support-Its-1-Billion-Digital-Business",
+    "photoURL": "https://mmx.prnewswire.com/media/1057115/Chipotle_interior_redesign.jpg?w=600",
+    "localImage": "/private/tmp/mallside-v12-research-photos/interiors/chipotle-prototype.webp",
+    "verifiedCues": [
+      "Official release: open kitchen sight lines, pickup area and beverage cooler built into serving line",
+      "Observed photo: wood wall panels, pale floors, steel tables, round wood stools, dark exposed ceiling"
+    ],
+    "gameSuggestion": "Linear make line, steel checkout, wood stool tables and separate pickup shelf.",
+    "scope": "Official 2019 prototype photo; stylized original geometry."
+  },
+  {
+    "merchant": "Din Tai Fung",
+    "source": "https://dtf.com/en-us/locations/new-york",
+    "photoURL": "https://dtf-cdn.com/images/production/5ac76b8e0105d8f194c4e50650c9af8e2f3f8308-2500x2500.jpg?auto=format&fit=clip&q=75&w=1920",
+    "localImage": "/private/tmp/mallside-v12-research-photos/interiors/din-tai-fung-newyork.webp",
+    "verifiedCues": [
+      "Observed official photo: dark wood dining tables, wood-framed booths, cream cylindrical lanterns and warm red shelving lights",
+      "Official location page offers private dining rooms"
+    ],
+    "gameSuggestion": "A host podium, sit-down wood tables, bamboo steamers and warm pendant lighting.",
+    "scope": "Official New York reference; not the South Coast Plaza floor plan."
+  },
+  {
+    "merchant": "Jamba",
+    "source": "https://www.jamba.com/menu/smoothies/mango-a-go-go",
+    "verifiedCues": [
+      "Official branded menu and drink photography",
+      "Smoothies and juice are ordered from a product menu"
+    ],
+    "gameSuggestion": "A bright smoothie counter, fruit-color accents, blender station and pickup area.",
+    "scope": "Brand/product reference only. Room layout and fixtures are game-design inferences."
+  },
+  {
+    "merchant": "Cinnabon",
+    "source": "https://www.cinnabon.com/menu",
+    "supportingDesignSource": "https://www.nrn.com/restaurant-technology/cinnabon-president-talks-redesign-and-software",
+    "verifiedCues": [
+      "Official menu identifies Classic Roll and other baked goods",
+      "President interview describes a French-patisserie/home-kitchen influence and enlarged bakery case"
+    ],
+    "gameSuggestion": "A blue-and-cream bakery counter with a glass pastry display, oven zone and roll trays.",
+    "scope": "Brand menu and firsthand design interview; adapted room geometry."
+  },
+  {
+    "merchant": "Auntie Anne's",
+    "source": "https://auntieannes.com.my/about",
+    "verifiedCues": [
+      "Official operator describes an open kitchen with products made in full view of customers"
+    ],
+    "gameSuggestion": "Visible dough-rolling table, oven, pretzel display and lemonade pickup.",
+    "scope": "Official operator reference; colors and room dimensions adapted."
+  },
+  {
+    "merchant": "Chick-fil-A",
+    "source": "https://www.chick-fil-a.com/press-room/announcing-chick-fil-a-hialeah-in-line",
+    "verifiedCues": [
+      "Official in-line design has a waiting area, dedicated pickup window, front counter and dining room"
+    ],
+    "gameSuggestion": "A clear queue, red-accent counter, pickup shelf and compact dining tables.",
+    "scope": "Official Hialeah example; not a particular mall branch."
+  },
+  {
+    "merchant": "Le Shrimp Noodle Bar",
+    "source": "https://www.leshrimpnoodlebar.com/",
+    "photoURL": "https://www.leshrimpnoodlebar.com/images/room-scp.jpg",
+    "localImage": "/private/tmp/mallside-v12-research-photos/interiors/le-shrimp-southcoast.webp",
+    "verifiedCues": [
+      "Official South Coast Plaza photo: long wood communal tables, round stools, booth seating, cream lanterns and large blue wave mural"
+    ],
+    "gameSuggestion": "Warm wood seating and original abstract blue wall graphics; retain host, seating and noodle pickup interactions.",
+    "scope": "Actual South Coast Plaza room photo, with original condensed game geometry. Do not copy the mural artwork verbatim."
+  },
+  {
+    "merchant": "JOEY Newport Beach",
+    "source": "https://joeyrestaurants.com/location/joey-newport-beach",
+    "verifiedCues": [
+      "Official photo description identifies black leather booths, decorative plants and modern art"
+    ],
+    "gameSuggestion": "Dark booths, plants, host stand and sit-down table service.",
+    "scope": "Official branch reference, condensed game layout."
+  }
+]

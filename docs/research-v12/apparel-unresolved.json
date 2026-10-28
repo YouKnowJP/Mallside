@@ -1,0 +1,1521 @@
+[
+  {
+    "merchant": "American Eagle Outfitters",
+    "merchantNames": [
+      "Aerie/American Eagle Outfitters",
+      "American Eagle",
+      "American Eagle Outfitters"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=American+Eagle+Outfitters&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Ann Taylor",
+    "merchantNames": [
+      "Ann Taylor",
+      "Ann Taylor Factory Store"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Ann+Taylor&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "CHAGEE Modern Teahouse",
+    "merchantNames": [
+      "CHAGEE Modern Teahouse"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Champs Sports",
+    "merchantNames": [
+      "Champs Sports"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Chow Tai Fook",
+    "merchantNames": [
+      "Chow Tai Fook"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Claire's",
+    "merchantNames": [
+      "Claire's",
+      "Claire's Boutique",
+      "Claire's Accessories"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Cotton On",
+    "merchantNames": [
+      "Cotton On",
+      "Cotton On Kids",
+      "Cotton On Body"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Cotton+On&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Dick's Sporting Goods",
+    "merchantNames": [
+      "Dick's Sporting Goods"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Fabletics",
+    "merchantNames": [
+      "Fabletics"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Fabletics&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Fanzz",
+    "merchantNames": [
+      "Fanzz"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Foot Locker",
+    "merchantNames": [
+      "Foot Locker"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Forever Truth",
+    "merchantNames": [
+      "Forever Truth"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Garage",
+    "merchantNames": [
+      "Garage",
+      "Temporary Location Garage"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Garage&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Iced Above",
+    "merchantNames": [
+      "Iced Above"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Intimissimi",
+    "merchantNames": [
+      "Intimissimi"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Intimissimi&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "JD",
+    "merchantNames": [
+      "JD"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Journeys",
+    "merchantNames": [
+      "Journeys",
+      "Journeys Outlet"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "LensCrafters",
+    "merchantNames": [
+      "LensCrafters"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "LensCrafters at Macy's",
+    "merchantNames": [
+      "LensCrafters at Macy's"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Lids",
+    "merchantNames": [
+      "Lids",
+      "Lids Locker Room",
+      "Lids Outdoor Village",
+      "Locker Room by Lids"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "maneki neko",
+    "merchantNames": [
+      "maneki neko"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Mango",
+    "merchantNames": [
+      "Mango"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Mango&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Mrs. Fields",
+    "merchantNames": [
+      "Mrs. Fields"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "N Cat",
+    "merchantNames": [
+      "N Cat"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Open Market OC",
+    "merchantNames": [
+      "Open Market OC"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Pacsun",
+    "merchantNames": [
+      "Pacsun"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "PINK",
+    "merchantNames": [
+      "PINK"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=PINK&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "POPDROP",
+    "merchantNames": [
+      "POPDROP"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Purificación García",
+    "merchantNames": [
+      "Purificación García"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Purificaci%C3%B3n+Garc%C3%ADa&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Q",
+    "merchantNames": [
+      "Q"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Royal Blooms Flowers",
+    "merchantNames": [
+      "Royal Blooms Flowers"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "SEOULPOP",
+    "merchantNames": [
+      "SEOULPOP"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Spencer's Gifts",
+    "merchantNames": [
+      "Spencer's Gifts"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Sports Treasures",
+    "merchantNames": [
+      "Sports Treasures"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Sunglass Hut",
+    "merchantNames": [
+      "Sunglass Hut",
+      "Sunglass Hut International",
+      "Sunglass Hut West",
+      "SGH-Sunglass Hut"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Sweet Factory",
+    "merchantNames": [
+      "Sweet Factory"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Taranis",
+    "merchantNames": [
+      "Taranis"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Taranis&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "THE ALLEY",
+    "merchantNames": [
+      "THE ALLEY"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Totally Chi Reflexology",
+    "merchantNames": [
+      "Totally Chi Reflexology"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Unik",
+    "merchantNames": [
+      "Unik"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "Warby Parker",
+    "merchantNames": [
+      "Warby Parker"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Warby+Parker&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Zara",
+    "merchantNames": [
+      "Zara Man"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Zara&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Zumiez",
+    "merchantNames": [
+      "Zumiez"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Aritzia",
+    "merchantNames": [
+      "Aritzia"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Aritzia&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Blue Nile",
+    "merchantNames": [
+      "Blue Nile"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Blue+Nile&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "CALZEDONIA",
+    "merchantNames": [
+      "CALZEDONIA"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=CALZEDONIA&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "DRM-LND",
+    "merchantNames": [
+      "DRM-LND"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Everything But Water",
+    "merchantNames": [
+      "Everything But Water"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "FIGS",
+    "merchantNames": [
+      "FIGS"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=FIGS&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Indochino",
+    "merchantNames": [
+      "Indochino"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Indochino&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Little Posh",
+    "merchantNames": [
+      "Little Posh"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Little+Posh&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Magic & Miracles",
+    "merchantNames": [
+      "Magic & Miracles"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "MAISON MARÉE",
+    "merchantNames": [
+      "MAISON MARÉE"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=MAISON+MAR%C3%89E&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "PacSun",
+    "merchantNames": [
+      "PacSun"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Rhone",
+    "merchantNames": [
+      "Rhone"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Rhone&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Sandro",
+    "merchantNames": [
+      "Sandro"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Sandro&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "SPECS",
+    "merchantNames": [
+      "SPECS"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "SUITSUPPLY",
+    "merchantNames": [
+      "SUITSUPPLY"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "TAG Heuer",
+    "merchantNames": [
+      "TAG Heuer"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Tutu Fun",
+    "merchantNames": [
+      "Tutu Fun"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "U Los Angeles",
+    "merchantNames": [
+      "U Los Angeles"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Vineyard Vines",
+    "merchantNames": [
+      "Vineyard Vines"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Vineyard+Vines&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Zadig & Voltaire",
+    "merchantNames": [
+      "Zadig et Voltaire",
+      "Zadig & Voltaire",
+      "Zadig&Voltaire"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Zadig+%26+Voltaire&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "8586 eightyfiveightysix",
+    "merchantNames": [
+      "8586 eightyfiveightysix"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Alexandra Beverly Hills",
+    "merchantNames": [
+      "Alexandra Beverly Hills"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Ambrosia",
+    "merchantNames": [
+      "Ambrosia"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "CHICJOC",
+    "merchantNames": [
+      "CHICJOC"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=CHICJOC&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Eden Sky",
+    "merchantNames": [
+      "Eden Sky"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Eden+Sky&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Eggslut",
+    "merchantNames": [
+      "Eggslut"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "GLOW OR GO",
+    "merchantNames": [
+      "GLOW OR GO"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "GNC Live Well",
+    "merchantNames": [
+      "GNC Live Well"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Looks For Lease",
+    "merchantNames": [
+      "Looks For Lease"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Maybe Crazy",
+    "merchantNames": [
+      "Maybe Crazy"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "MCM",
+    "merchantNames": [
+      "MCM"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=MCM&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Oakberry",
+    "merchantNames": [
+      "Oakberry"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "POLITIX",
+    "merchantNames": [
+      "POLITIX"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=POLITIX&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Premium Stitches",
+    "merchantNames": [
+      "Premium Stitches"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "SEE",
+    "merchantNames": [
+      "SEE"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "ShopAll Fans",
+    "merchantNames": [
+      "ShopAll Fans"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Sole",
+    "merchantNames": [
+      "Sole"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "SWAINE LONDON",
+    "merchantNames": [
+      "SWAINE LONDON"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Swaine&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "The Webster",
+    "merchantNames": [
+      "The Webster"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Anne Fontaine",
+    "merchantNames": [
+      "Anne Fontaine"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Anne+Fontaine&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Berluti",
+    "merchantNames": [
+      "Berluti"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Berluti&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Celine",
+    "merchantNames": [
+      "Celine"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Celine&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Eres",
+    "merchantNames": [
+      "Eres"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Eres&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Giorgio Armani",
+    "merchantNames": [
+      "Giorgio Armani",
+      "Giorgio Armani at Neiman Marcus",
+      "Armani Outlet"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Giorgio+Armani&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Loro Piana",
+    "merchantNames": [
+      "Loro Piana"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Loro+Piana&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Skims",
+    "merchantNames": [
+      "Skims"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Skims&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Stella McCartney",
+    "merchantNames": [
+      "Stella McCartney"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Stella+McCartney&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Talbots",
+    "merchantNames": [
+      "Talbots"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Talbots&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Christian Louboutin",
+    "merchantNames": [
+      "Christian Louboutin"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Christian+Louboutin&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Delvaux",
+    "merchantNames": [
+      "Delvaux"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Delvaux&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "JD Sports",
+    "merchantNames": [
+      "JD Sports"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Montblanc",
+    "merchantNames": [
+      "Montblanc"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Montblanc&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Moynat",
+    "merchantNames": [
+      "Moynat"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Moynat&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Rimowa",
+    "merchantNames": [
+      "Rimowa"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Rimowa&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "David Yurman",
+    "merchantNames": [
+      "David Yurman"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Tag Heuer",
+    "merchantNames": [
+      "Tag Heuer"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Van Cleef & Arpels",
+    "merchantNames": [
+      "Van Cleef & Arpels"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Abercrombie Kids",
+    "merchantNames": [
+      "Abercrombie Kids"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Abercrombie+Kids&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "BabyGap",
+    "merchantNames": [
+      "BabyGap"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=BabyGap&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Crewcuts by J.Crew",
+    "merchantNames": [
+      "Crewcuts by J.Crew"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Crewcuts+by+J.Crew&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "GapKids",
+    "merchantNames": [
+      "GapKids"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=GapKids&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Kids Atelier",
+    "merchantNames": [
+      "Kids Atelier"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Gentle Monster",
+    "merchantNames": [
+      "Gentle Monster"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Gentle+Monster&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "House of Sun",
+    "merchantNames": [
+      "House of Sun"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Jacques Marie Mage",
+    "merchantNames": [
+      "Jacques Marie Mage"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Optica",
+    "merchantNames": [
+      "Optica"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Vitra Eyewear",
+    "merchantNames": [
+      "Vitra Eyewear"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Tinder Box",
+    "merchantNames": [
+      "Tinder Box"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Café Collegium",
+    "merchantNames": [
+      "Café Collegium"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Ben and Jerrys",
+    "merchantNames": [
+      "Ben and Jerrys"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "J. Pritchard",
+    "merchantNames": [
+      "J. Pritchard"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Brunello Cucinelli Mens at GARYS",
+    "merchantNames": [
+      "Brunello Cucinelli Mens at GARYS"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Peter Millar",
+    "merchantNames": [
+      "Peter Millar"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Peter+Millar&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "BYLT Basics",
+    "merchantNames": [
+      "BYLT Basics"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=BYLT+Basics&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "American Vintage",
+    "merchantNames": [
+      "American Vintage"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=American+Vintage&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Athleta",
+    "merchantNames": [
+      "Athleta"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Athleta&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Stella Laguna Beach",
+    "merchantNames": [
+      "Stella Laguna Beach"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Joe Bananas",
+    "merchantNames": [
+      "Joe Bananas"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Joe+Bananas&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Fitigues",
+    "merchantNames": [
+      "Fitigues"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "The 1916 Company",
+    "merchantNames": [
+      "The 1916 Company"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Chicjoc",
+    "merchantNames": [
+      "Chicjoc"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=CHICJOC&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Rubin&Chapelle",
+    "merchantNames": [
+      "Rubin&Chapelle"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Rubin%26Chapelle&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "DITA Eyewear",
+    "merchantNames": [
+      "DITA Eyewear"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Newport Littles",
+    "merchantNames": [
+      "Newport Littles"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Kiton",
+    "merchantNames": [
+      "Kiton at Neiman Marcus"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Kiton&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Armani Collezioni",
+    "merchantNames": [
+      "Armani Collezioni at Neiman Marcus"
+    ],
+    "reason": "Exact-tag search returned models excluded for condition/category/photo requirements",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Armani+Collezioni&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Fashionphile",
+    "merchantNames": [
+      "Fashionphile"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "CUCINA enoteca",
+    "merchantNames": [
+      "CUCINA enoteca"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Nordstrom Bazille",
+    "merchantNames": [
+      "Nordstrom Bazille"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Boot Barn",
+    "merchantNames": [
+      "Boot Barn"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Dodger Clubhouse",
+    "merchantNames": [
+      "Dodger Clubhouse"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "LOFT",
+    "merchantNames": [
+      "LOFT Outlet"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=LOFT&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Mauya",
+    "merchantNames": [
+      "Mauya"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Movado Company Store",
+    "merchantNames": [
+      "Movado Company Store"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "OshKosh B'gosh",
+    "merchantNames": [
+      "OshKosh B'gosh"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=OshKosh+B%27gosh&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Perfumania",
+    "merchantNames": [
+      "Perfumania"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Vitamin World",
+    "merchantNames": [
+      "Vitamin World Outlet"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Zales The Diamond Store",
+    "merchantNames": [
+      "Zales The Diamond Store Outlet"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Buffalo Wild Wings (BW3)",
+    "merchantNames": [
+      "Buffalo Wild Wings (BW3)"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Carl's Jr.",
+    "merchantNames": [
+      "Carl's Jr."
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Finish Line",
+    "merchantNames": [
+      "Finish Line"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Global Luggage",
+    "merchantNames": [
+      "Global Luggage"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "GNC",
+    "merchantNames": [
+      "GNC"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Market Broiler",
+    "merchantNames": [
+      "Market Broiler"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Noi Noa",
+    "merchantNames": [
+      "Noi Noa"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Noi+Noa&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Royal Blooms",
+    "merchantNames": [
+      "Royal Blooms"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Spencer Gifts",
+    "merchantNames": [
+      "Spencer Gifts"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Tenshoppe",
+    "merchantNames": [
+      "Tenshoppe"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Tillys",
+    "merchantNames": [
+      "Tillys"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Torrid",
+    "merchantNames": [
+      "Torrid"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Torrid&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "528 Design Studio",
+    "merchantNames": [
+      "528 Design Studio"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Alfa Moda",
+    "merchantNames": [
+      "Alfa Moda"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "As Seen On TV",
+    "merchantNames": [
+      "As Seen On TV"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Bazille at Nordstrom",
+    "merchantNames": [
+      "Bazille at Nordstrom"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Belle Forme",
+    "merchantNames": [
+      "Belle Forme"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Belle+Forme&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "BYLT",
+    "merchantNames": [
+      "BYLT"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=BYLT&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Cap City",
+    "merchantNames": [
+      "Cap City"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Creative Joy",
+    "merchantNames": [
+      "Creative Joy"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "French Touch",
+    "merchantNames": [
+      "French Touch"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=French+Touch&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Gabbiano",
+    "merchantNames": [
+      "Gabbiano"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Gabbiano&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Granny Takes A Trip",
+    "merchantNames": [
+      "Granny Takes A Trip"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Intimissimi & Calzedonia",
+    "merchantNames": [
+      "Intimissimi & Calzedonia"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "JCPenney Optical",
+    "merchantNames": [
+      "JCPenney Optical"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "JINS Eyewear",
+    "merchantNames": [
+      "JINS Eyewear"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=JINS&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Joy",
+    "merchantNames": [
+      "Joy"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Kids Foot Locker",
+    "merchantNames": [
+      "Kids Foot Locker"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "La Michoacana",
+    "merchantNames": [
+      "La Michoacana"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Last Chance Store",
+    "merchantNames": [
+      "Last Chance Store"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Local Market Co-Op",
+    "merchantNames": [
+      "Local Market Co-Op"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "LoHo Love & Hope",
+    "merchantNames": [
+      "LoHo Love & Hope"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Mumu Hot Pot Outdoor Village",
+    "merchantNames": [
+      "Mumu Hot Pot Outdoor Village"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "My Western Cut",
+    "merchantNames": [
+      "My Western Cut"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "N. Cat",
+    "merchantNames": [
+      "N. Cat"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Q Outdoor Village",
+    "merchantNames": [
+      "Q Outdoor Village"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Q (South Mall)",
+    "merchantNames": [
+      "Q (South Mall)"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Spencer's",
+    "merchantNames": [
+      "Spencer's"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "The Coral Gables",
+    "merchantNames": [
+      "The Coral Gables"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Traditionz",
+    "merchantNames": [
+      "Traditionz"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "XB",
+    "merchantNames": [
+      "XB"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "ZoomiZoomi",
+    "merchantNames": [
+      "ZoomiZoomi"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "CH Carolina Herrera",
+    "merchantNames": [
+      "CH Carolina Herrera"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=CH+Carolina+Herrera&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Chico's",
+    "merchantNames": [
+      "Chico's Off The Rack"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Chico%27s&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "Golf Apparel Shop",
+    "merchantNames": [
+      "Golf Apparel Shop"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Rebag",
+    "merchantNames": [
+      "Rebag"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Shades In The Desert",
+    "merchantNames": [
+      "Shades In The Desert"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Vilebrequin",
+    "merchantNames": [
+      "Vilebrequin"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Vilebrequin&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "13De Marzo",
+    "merchantNames": [
+      "13De Marzo"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=13De+Marzo&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "The Alley",
+    "merchantNames": [
+      "The Alley"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Cold Stone Creamery",
+    "merchantNames": [
+      "Cold Stone Creamery"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Edikted",
+    "merchantNames": [
+      "Edikted"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Edikted&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "FASHIONPHILE",
+    "merchantNames": [
+      "FASHIONPHILE"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "The French Avenue",
+    "merchantNames": [
+      "The French Avenue"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Indochino at Nordstrom",
+    "merchantNames": [
+      "Indochino at Nordstrom"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Isabelle's Cabinet",
+    "merchantNames": [
+      "Isabelle's Cabinet"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=Isabelle%27s+Cabinet&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  },
+  {
+    "merchant": "La La Land",
+    "merchantNames": [
+      "La La Land"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Nordstrom Café Bistro",
+    "merchantNames": [
+      "Nordstrom Café Bistro"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "Swish Studios",
+    "merchantNames": [
+      "Swish Studios"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "TRAFFIK",
+    "merchantNames": [
+      "TRAFFIK"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "TutuFun",
+    "merchantNames": [
+      "TutuFun"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded search"
+  },
+  {
+    "merchant": "World of Hearing",
+    "merchantNames": [
+      "World of Hearing"
+    ],
+    "reason": "rate-limited; not evidence of product absence"
+  },
+  {
+    "merchant": "COS",
+    "merchantNames": [
+      "COS"
+    ],
+    "reason": "No exact manufacturer brand tag in bounded public retailer search",
+    "sourceSearch": "https://shop.simon.com/search/suggest.json?q=COS&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+  }
+]

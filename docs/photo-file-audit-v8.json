@@ -1,0 +1,4942 @@
+{
+  "checkedOn": "2026-10-26",
+  "listings": 548,
+  "uniqueFiles": 526,
+  "bytes": 8190152,
+  "invalid": [],
+  "small": [],
+  "entries": [
+    {
+      "id": "coach-v4-2",
+      "path": "assets/photos/8a1f7ac94facbe25296e.webp",
+      "exists": true,
+      "bytes": 6650,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-1",
+      "path": "assets/photos/62bf118d4893a7f08206.webp",
+      "exists": true,
+      "bytes": 19476,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-3",
+      "path": "assets/photos/abd7e03be2cf5755c190.webp",
+      "exists": true,
+      "bytes": 23728,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-2",
+      "path": "assets/photos/081f7d5ae59cf96b2e30.webp",
+      "exists": true,
+      "bytes": 28736,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-6",
+      "path": "assets/photos/ebf97975ecbd453b3d6e.webp",
+      "exists": true,
+      "bytes": 14380,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-4",
+      "path": "assets/photos/19df68b25bf2a6b1e53a.webp",
+      "exists": true,
+      "bytes": 13168,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-5",
+      "path": "assets/photos/ded300594221387b4d8e.webp",
+      "exists": true,
+      "bytes": 18928,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-7",
+      "path": "assets/photos/304e4e6b65a416fe26b5.webp",
+      "exists": true,
+      "bytes": 60092,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-8",
+      "path": "assets/photos/ac5742a5cef33974defe.webp",
+      "exists": true,
+      "bytes": 24992,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-9",
+      "path": "assets/photos/7e66054a0e2efcfc8a78.webp",
+      "exists": true,
+      "bytes": 14640,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-10",
+      "path": "assets/photos/56f3c1b74727ef59f99f.webp",
+      "exists": true,
+      "bytes": 69712,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-11",
+      "path": "assets/photos/611df5bf8af7928a427d.webp",
+      "exists": true,
+      "bytes": 30510,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-14",
+      "path": "assets/photos/2c741e71eb59f00b9b4d.webp",
+      "exists": true,
+      "bytes": 15090,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-15",
+      "path": "assets/photos/4b23f2c5e34f0e291da2.webp",
+      "exists": true,
+      "bytes": 12048,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-12",
+      "path": "assets/photos/42877b39ff7515dc536e.webp",
+      "exists": true,
+      "bytes": 73142,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "coach-v4-1",
+      "path": "assets/photos/22e9e57c6ea524979a0c.webp",
+      "exists": true,
+      "bytes": 6078,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-v4-2",
+      "path": "assets/photos/22e9e57c6ea524979a0c.webp",
+      "exists": true,
+      "bytes": 6078,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-v4-3",
+      "path": "assets/photos/0474659a9ce9ba6c64b1.webp",
+      "exists": true,
+      "bytes": 10498,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "zara-v4-13",
+      "path": "assets/photos/86c8b62c5cc202c7c3d8.webp",
+      "exists": true,
+      "bytes": 12614,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "coach-x7",
+      "path": "assets/photos/607dac516f5b7148b104.webp",
+      "exists": true,
+      "bytes": 7076,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x8",
+      "path": "assets/photos/e78bde98868f9095d3c7.webp",
+      "exists": true,
+      "bytes": 12018,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x6",
+      "path": "assets/photos/767235e694a60dcec310.webp",
+      "exists": true,
+      "bytes": 8910,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x1",
+      "path": "assets/photos/61d5f1763c2f46dfbaac.webp",
+      "exists": true,
+      "bytes": 13302,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-x1",
+      "path": "assets/photos/61d5f1763c2f46dfbaac.webp",
+      "exists": true,
+      "bytes": 13302,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x2",
+      "path": "assets/photos/812cd94373f6d5026596.webp",
+      "exists": true,
+      "bytes": 7314,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x3",
+      "path": "assets/photos/e9b35f23e721b513a412.webp",
+      "exists": true,
+      "bytes": 5840,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x4",
+      "path": "assets/photos/aa34276b049188daa18e.webp",
+      "exists": true,
+      "bytes": 6466,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x5",
+      "path": "assets/photos/b57cdc5f44cd114f9f23.webp",
+      "exists": true,
+      "bytes": 11770,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-v4-4",
+      "path": "assets/photos/5dcc14caa198b60ff5f0.webp",
+      "exists": true,
+      "bytes": 5790,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x9",
+      "path": "assets/photos/10ff679a44e48abc6684.webp",
+      "exists": true,
+      "bytes": 5398,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "coach-v4-5",
+      "path": "assets/photos/88995c0cb7369807b187.webp",
+      "exists": true,
+      "bytes": 8434,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "coach-x10",
+      "path": "assets/photos/63adc03189f6a6963290.webp",
+      "exists": true,
+      "bytes": 17772,
+      "width": 512,
+      "height": 659,
+      "valid": true
+    },
+    {
+      "id": "h-scarf",
+      "path": "assets/photos/fde3e1b10dd15b9c0224.webp",
+      "exists": true,
+      "bytes": 27058,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "h-sandal",
+      "path": "assets/photos/ff343a581edaad2ca96d.webp",
+      "exists": true,
+      "bytes": 4064,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "h-bracelet",
+      "path": "assets/photos/f74dcec14c954d87fadd.webp",
+      "exists": true,
+      "bytes": 8976,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "h-scent",
+      "path": "assets/photos/61c532dc8f049050097f.webp",
+      "exists": true,
+      "bytes": 6880,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "h-bag",
+      "path": "assets/photos/2f6e79902a809dd6728f.webp",
+      "exists": true,
+      "bytes": 17668,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-1",
+      "path": "assets/photos/bff5c9f757988547ba72.webp",
+      "exists": true,
+      "bytes": 10298,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-2",
+      "path": "assets/photos/dc177debf82d45dbed22.webp",
+      "exists": true,
+      "bytes": 11812,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-3",
+      "path": "assets/photos/912f01eb1c6af042ed1e.webp",
+      "exists": true,
+      "bytes": 6210,
+      "width": 512,
+      "height": 676,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-4",
+      "path": "assets/photos/8460e4aea26c1be7773d.webp",
+      "exists": true,
+      "bytes": 10432,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-5",
+      "path": "assets/photos/926129ac7957a09abe08.webp",
+      "exists": true,
+      "bytes": 5388,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-6",
+      "path": "assets/photos/74def64647cb30fe7679.webp",
+      "exists": true,
+      "bytes": 10400,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-7",
+      "path": "assets/photos/204686d72aa3708fc56d.webp",
+      "exists": true,
+      "bytes": 6904,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-8",
+      "path": "assets/photos/d7edba97a32fdaccdef6.webp",
+      "exists": true,
+      "bytes": 10806,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-9",
+      "path": "assets/photos/179ddfb643290d8a4c46.webp",
+      "exists": true,
+      "bytes": 14988,
+      "width": 512,
+      "height": 676,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-10",
+      "path": "assets/photos/b2919f8154b471584024.webp",
+      "exists": true,
+      "bytes": 17030,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-11",
+      "path": "assets/photos/44058eaae19617e89e41.webp",
+      "exists": true,
+      "bytes": 5204,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-12",
+      "path": "assets/photos/b0f97c402b21510084e7.webp",
+      "exists": true,
+      "bytes": 15018,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-13",
+      "path": "assets/photos/57c2e0abf58663a2038a.webp",
+      "exists": true,
+      "bytes": 9358,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-14",
+      "path": "assets/photos/f2be0e0a551aa8eb2ea1.webp",
+      "exists": true,
+      "bytes": 4284,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tiffany-v4-15",
+      "path": "assets/photos/305c05555ec6be87bc5d.webp",
+      "exists": true,
+      "bytes": 8408,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-1",
+      "path": "assets/photos/184bcbc69744a65eb77e.webp",
+      "exists": true,
+      "bytes": 6134,
+      "width": 512,
+      "height": 583,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-2",
+      "path": "assets/photos/50a43a04cc6c9163aec4.webp",
+      "exists": true,
+      "bytes": 6512,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-3",
+      "path": "assets/photos/9211c7675a75ee0f482e.webp",
+      "exists": true,
+      "bytes": 7270,
+      "width": 512,
+      "height": 583,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-4",
+      "path": "assets/photos/9adfdc53f83a69606d4a.webp",
+      "exists": true,
+      "bytes": 15904,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-5",
+      "path": "assets/photos/aeac022b489de2a0dce6.webp",
+      "exists": true,
+      "bytes": 3958,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-8",
+      "path": "assets/photos/8dd7fd0dcb1763334a21.webp",
+      "exists": true,
+      "bytes": 23460,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-9",
+      "path": "assets/photos/7f390baf77b76c58d53a.webp",
+      "exists": true,
+      "bytes": 10406,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-10",
+      "path": "assets/photos/d2c16bb5213391b520e3.webp",
+      "exists": true,
+      "bytes": 9986,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-11",
+      "path": "assets/photos/803d78b09f34a0d60781.webp",
+      "exists": true,
+      "bytes": 15714,
+      "width": 512,
+      "height": 582,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-12",
+      "path": "assets/photos/101b71045e9090496c8e.webp",
+      "exists": true,
+      "bytes": 11714,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-13",
+      "path": "assets/photos/6d836a762c8dbfac3aa5.webp",
+      "exists": true,
+      "bytes": 15998,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-14",
+      "path": "assets/photos/812b374bc5c8a8e07aff.webp",
+      "exists": true,
+      "bytes": 8270,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-15",
+      "path": "assets/photos/2b723db9f7b273ce2705.webp",
+      "exists": true,
+      "bytes": 9350,
+      "width": 512,
+      "height": 478,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-1",
+      "path": "assets/photos/38f85753e8d842af2740.webp",
+      "exists": true,
+      "bytes": 16110,
+      "width": 512,
+      "height": 642,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-2",
+      "path": "assets/photos/0ca06525884f0035c8f1.webp",
+      "exists": true,
+      "bytes": 6260,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-3",
+      "path": "assets/photos/5bb1459145198e774ff8.webp",
+      "exists": true,
+      "bytes": 6376,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-4",
+      "path": "assets/photos/7cc0a59b2178d8005b6b.webp",
+      "exists": true,
+      "bytes": 4788,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-5",
+      "path": "assets/photos/f47a2d6e27a5275338b9.webp",
+      "exists": true,
+      "bytes": 5000,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-6",
+      "path": "assets/photos/6795f1aea88a2726097f.webp",
+      "exists": true,
+      "bytes": 3830,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-7",
+      "path": "assets/photos/b700177467fd5f4c12f6.webp",
+      "exists": true,
+      "bytes": 8396,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-8",
+      "path": "assets/photos/f107fb5702f411cecf70.webp",
+      "exists": true,
+      "bytes": 8998,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-9",
+      "path": "assets/photos/18e109e112e32f5aef6c.webp",
+      "exists": true,
+      "bytes": 3750,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-10",
+      "path": "assets/photos/14184943b9688daed66a.webp",
+      "exists": true,
+      "bytes": 4506,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-11",
+      "path": "assets/photos/dd87af3c5c3bd28791e4.webp",
+      "exists": true,
+      "bytes": 7274,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-12",
+      "path": "assets/photos/22537cccea3f6259fcb7.webp",
+      "exists": true,
+      "bytes": 21680,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-13",
+      "path": "assets/photos/ffccda48e6b134b0917f.webp",
+      "exists": true,
+      "bytes": 7204,
+      "width": 512,
+      "height": 835,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-14",
+      "path": "assets/photos/a5de4e32d132b6dae0c8.webp",
+      "exists": true,
+      "bytes": 3638,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ysl-v4-15",
+      "path": "assets/photos/374310b42147987605e6.webp",
+      "exists": true,
+      "bytes": 3750,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-1",
+      "path": "assets/photos/b7a1c8c447e05f738ba7.webp",
+      "exists": true,
+      "bytes": 10386,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-2",
+      "path": "assets/photos/b8b940ace190c93ed5be.webp",
+      "exists": true,
+      "bytes": 6646,
+      "width": 512,
+      "height": 603,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-3",
+      "path": "assets/photos/8aa3bc3e1cdea8d9ae01.webp",
+      "exists": true,
+      "bytes": 10818,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-4",
+      "path": "assets/photos/d091a4feeef79224265a.webp",
+      "exists": true,
+      "bytes": 18110,
+      "width": 512,
+      "height": 707,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-5",
+      "path": "assets/photos/b65cc9757f090c896a24.webp",
+      "exists": true,
+      "bytes": 9824,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-6",
+      "path": "assets/photos/99386a965e7da78aa6c2.webp",
+      "exists": true,
+      "bytes": 11854,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-7",
+      "path": "assets/photos/09d5e7f6611c4267f1ad.webp",
+      "exists": true,
+      "bytes": 22222,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-8",
+      "path": "assets/photos/d65cbd60cbca5026ec1f.webp",
+      "exists": true,
+      "bytes": 14366,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-9",
+      "path": "assets/photos/135cc0c82bc8e6c3143e.webp",
+      "exists": true,
+      "bytes": 20416,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-10",
+      "path": "assets/photos/80d224374cb990bcaa08.webp",
+      "exists": true,
+      "bytes": 13208,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-11",
+      "path": "assets/photos/25273b52a1d9dfa4c519.webp",
+      "exists": true,
+      "bytes": 9336,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-12",
+      "path": "assets/photos/80ba05f2fd5ccd50f060.webp",
+      "exists": true,
+      "bytes": 12050,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-13",
+      "path": "assets/photos/24636d0c9749a2febc61.webp",
+      "exists": true,
+      "bytes": 12446,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-14",
+      "path": "assets/photos/7b8f2d0137cb976913f6.webp",
+      "exists": true,
+      "bytes": 14396,
+      "width": 512,
+      "height": 604,
+      "valid": true
+    },
+    {
+      "id": "bottega-v4-15",
+      "path": "assets/photos/da43eb52ed893e62412d.webp",
+      "exists": true,
+      "bytes": 8900,
+      "width": 512,
+      "height": 603,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-2",
+      "path": "assets/photos/9e101aaedce4225d9f4b.webp",
+      "exists": true,
+      "bytes": 21954,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-3",
+      "path": "assets/photos/bd72da5d824c97a21657.webp",
+      "exists": true,
+      "bytes": 22038,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-5",
+      "path": "assets/photos/531a581e6ec9cb7369c1.webp",
+      "exists": true,
+      "bytes": 15882,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-10",
+      "path": "assets/photos/9fcf44f5617f1c200029.webp",
+      "exists": true,
+      "bytes": 16650,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-11",
+      "path": "assets/photos/efd214f280bc09e32784.webp",
+      "exists": true,
+      "bytes": 6598,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-12",
+      "path": "assets/photos/444e002c40cfef9789c3.webp",
+      "exists": true,
+      "bytes": 4596,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-13",
+      "path": "assets/photos/dffefc59cbf85864bdc8.webp",
+      "exists": true,
+      "bytes": 10452,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-14",
+      "path": "assets/photos/68a42f3bd516c436fe0b.webp",
+      "exists": true,
+      "bytes": 11438,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-15",
+      "path": "assets/photos/e2cfff8088028f70ef91.webp",
+      "exists": true,
+      "bytes": 6330,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-1",
+      "path": "assets/photos/f3b0bfd46639f6aa88d7.webp",
+      "exists": true,
+      "bytes": 15624,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-2",
+      "path": "assets/photos/98835849840c3483394c.webp",
+      "exists": true,
+      "bytes": 8164,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-3",
+      "path": "assets/photos/76eb695e170c7774701b.webp",
+      "exists": true,
+      "bytes": 13992,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-4",
+      "path": "assets/photos/bb6f8bf92a151a429c38.webp",
+      "exists": true,
+      "bytes": 3820,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-5",
+      "path": "assets/photos/ac839d7a50acc6be4888.webp",
+      "exists": true,
+      "bytes": 3824,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-6",
+      "path": "assets/photos/f1ece766b4da68750bf8.webp",
+      "exists": true,
+      "bytes": 8020,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-7",
+      "path": "assets/photos/214612eb3e70de1486e1.webp",
+      "exists": true,
+      "bytes": 12700,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-8",
+      "path": "assets/photos/14f83a5db0ba21009829.webp",
+      "exists": true,
+      "bytes": 18902,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-9",
+      "path": "assets/photos/f03b17d2dfd19d78bf81.webp",
+      "exists": true,
+      "bytes": 15218,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-10",
+      "path": "assets/photos/9b8225af650b48f4381c.webp",
+      "exists": true,
+      "bytes": 13044,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-11",
+      "path": "assets/photos/c57008e330b753827e6d.webp",
+      "exists": true,
+      "bytes": 14670,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-12",
+      "path": "assets/photos/c633ab04e29a4cd8cc09.webp",
+      "exists": true,
+      "bytes": 11686,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-13",
+      "path": "assets/photos/fa05553d141a2fd69219.webp",
+      "exists": true,
+      "bytes": 8752,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-14",
+      "path": "assets/photos/0da0d36e319144020fe3.webp",
+      "exists": true,
+      "bytes": 9608,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "chanel-v4-15",
+      "path": "assets/photos/9f6cac4d701305d2c64a.webp",
+      "exists": true,
+      "bytes": 6700,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "prada-v4-1",
+      "path": "assets/photos/3baef2d32c44a0cf03f3.webp",
+      "exists": true,
+      "bytes": 3764,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-v4-2",
+      "path": "assets/photos/930a33df992325849e8e.webp",
+      "exists": true,
+      "bytes": 6172,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-v4-3",
+      "path": "assets/photos/c6ed62120d0f7eec70af.webp",
+      "exists": true,
+      "bytes": 3936,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-v4-4",
+      "path": "assets/photos/169bf6da3b8324d335fb.webp",
+      "exists": true,
+      "bytes": 4532,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-v4-5",
+      "path": "assets/photos/fccb55f4e44f72788de5.webp",
+      "exists": true,
+      "bytes": 6532,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "hermes-v4-1",
+      "path": "assets/photos/c496dbe7b6eb58dfcc0e.webp",
+      "exists": true,
+      "bytes": 28784,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "hermes-v4-2",
+      "path": "assets/photos/167023ab55bffa164818.webp",
+      "exists": true,
+      "bytes": 30046,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "hermes-v4-3",
+      "path": "assets/photos/277c280474f482a53b26.webp",
+      "exists": true,
+      "bytes": 17276,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "hermes-v4-4",
+      "path": "assets/photos/e38eae53234658a16e58.webp",
+      "exists": true,
+      "bytes": 12388,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "hermes-v4-5",
+      "path": "assets/photos/df81a3108e03f6a280ab.webp",
+      "exists": true,
+      "bytes": 16536,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x1",
+      "path": "assets/photos/9fd4fd70f33f66952307.webp",
+      "exists": true,
+      "bytes": 4410,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x2",
+      "path": "assets/photos/d58c1a49c597df0c2a18.webp",
+      "exists": true,
+      "bytes": 13624,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x3",
+      "path": "assets/photos/70ac0d553c60091a623d.webp",
+      "exists": true,
+      "bytes": 7056,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x4",
+      "path": "assets/photos/26f16cfe0568d806f243.webp",
+      "exists": true,
+      "bytes": 9458,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x5",
+      "path": "assets/photos/cee59214815bc4afd63d.webp",
+      "exists": true,
+      "bytes": 5054,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x6",
+      "path": "assets/photos/69e3755d0e369915c964.webp",
+      "exists": true,
+      "bytes": 11704,
+      "width": 512,
+      "height": 579,
+      "valid": true
+    },
+    {
+      "id": "prada-x7",
+      "path": "assets/photos/9ebd4a6de1e09b60419e.webp",
+      "exists": true,
+      "bytes": 6592,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x8",
+      "path": "assets/photos/e535dc4db216488cdde5.webp",
+      "exists": true,
+      "bytes": 19786,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x9",
+      "path": "assets/photos/d7aa687161852871f3aa.webp",
+      "exists": true,
+      "bytes": 5312,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "prada-x10",
+      "path": "assets/photos/6ba865b857aa04f1c77f.webp",
+      "exists": true,
+      "bytes": 4662,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "hermes-x1",
+      "path": "assets/photos/ee0cd297fc62ced41b98.webp",
+      "exists": true,
+      "bytes": 36548,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "hermes-x2",
+      "path": "assets/photos/6604cf0d0e991668d369.webp",
+      "exists": true,
+      "bytes": 6472,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "hermes-x3",
+      "path": "assets/photos/c18d54e53c9ec61beac0.webp",
+      "exists": true,
+      "bytes": 8524,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "hermes-x4",
+      "path": "assets/photos/ffbcf97224b2530a360a.webp",
+      "exists": true,
+      "bytes": 6180,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "hermes-x5",
+      "path": "assets/photos/697cad373cb72142dddf.webp",
+      "exists": true,
+      "bytes": 13046,
+      "width": 512,
+      "height": 582,
+      "valid": true
+    },
+    {
+      "id": "l-bag",
+      "path": "assets/photos/d0bafa36d170764783c1.webp",
+      "exists": true,
+      "bytes": 12134,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "l-wallet",
+      "path": "assets/photos/c174a2e0da8e4af1694d.webp",
+      "exists": true,
+      "bytes": 21960,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "l-belt",
+      "path": "assets/photos/96bc06429e532fd39f98.webp",
+      "exists": true,
+      "bytes": 9706,
+      "width": 512,
+      "height": 511,
+      "valid": true
+    },
+    {
+      "id": "l-travel",
+      "path": "assets/photos/5553e99136161287399a.webp",
+      "exists": true,
+      "bytes": 13880,
+      "width": 512,
+      "height": 441,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-6",
+      "path": "assets/photos/ed5e0474ecc060df5d8a.webp",
+      "exists": true,
+      "bytes": 3726,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "cartier-v4-7",
+      "path": "assets/photos/166d77ca1d888dc4053a.webp",
+      "exists": true,
+      "bytes": 22186,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-1",
+      "path": "assets/photos/35e2ce8c113801d7a8f6.webp",
+      "exists": true,
+      "bytes": 8220,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-4",
+      "path": "assets/photos/f3bf3c3b88c16c174b23.webp",
+      "exists": true,
+      "bytes": 10390,
+      "width": 512,
+      "height": 583,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-6",
+      "path": "assets/photos/817117b3104dca5521e6.webp",
+      "exists": true,
+      "bytes": 10380,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-7",
+      "path": "assets/photos/efa8871f26c0c2a2b4ff.webp",
+      "exists": true,
+      "bytes": 6730,
+      "width": 512,
+      "height": 554,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-8",
+      "path": "assets/photos/e5c3df59155b6df4802b.webp",
+      "exists": true,
+      "bytes": 11642,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "dior-v4-9",
+      "path": "assets/photos/259680a357ba6dd39943.webp",
+      "exists": true,
+      "bytes": 13056,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "gucci-v4-1",
+      "path": "assets/photos/1da61e77c80fd406512c.webp",
+      "exists": true,
+      "bytes": 16094,
+      "width": 512,
+      "height": 632,
+      "valid": true
+    },
+    {
+      "id": "gucci-v4-3",
+      "path": "assets/photos/4f2aacd53aebc90584ec.webp",
+      "exists": true,
+      "bytes": 14178,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "gucci-v4-4",
+      "path": "assets/photos/95327c25bfbff252ffd3.webp",
+      "exists": true,
+      "bytes": 22322,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "gucci-v4-5",
+      "path": "assets/photos/d63699887fec59328fcf.webp",
+      "exists": true,
+      "bytes": 10806,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lv-v4-1",
+      "path": "assets/photos/a54e2b0ae06a6dcd255d.webp",
+      "exists": true,
+      "bytes": 8768,
+      "width": 512,
+      "height": 489,
+      "valid": true
+    },
+    {
+      "id": "lv-v4-2",
+      "path": "assets/photos/881588b8f66a1a3c77af.webp",
+      "exists": true,
+      "bytes": 23376,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lv-v4-3",
+      "path": "assets/photos/350897cedc60e93ca0f8.webp",
+      "exists": true,
+      "bytes": 14676,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lv-v4-4",
+      "path": "assets/photos/9666609e9f9edbbf2349.webp",
+      "exists": true,
+      "bytes": 27776,
+      "width": 512,
+      "height": 428,
+      "valid": true
+    },
+    {
+      "id": "lv-v4-5",
+      "path": "assets/photos/71ecce08c814a0002766.webp",
+      "exists": true,
+      "bytes": 27980,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-x2",
+      "path": "assets/photos/1e0b168d2b80813037d6.webp",
+      "exists": true,
+      "bytes": 15386,
+      "width": 512,
+      "height": 525,
+      "valid": true
+    },
+    {
+      "id": "gucci-x1",
+      "path": "assets/photos/dec1db682f793caeb479.webp",
+      "exists": true,
+      "bytes": 9960,
+      "width": 512,
+      "height": 570,
+      "valid": true
+    },
+    {
+      "id": "gucci-x2",
+      "path": "assets/photos/c6d611db08f00e9a2121.webp",
+      "exists": true,
+      "bytes": 18190,
+      "width": 512,
+      "height": 579,
+      "valid": true
+    },
+    {
+      "id": "gucci-x3",
+      "path": "assets/photos/edf6695e1f9c5acc1339.webp",
+      "exists": true,
+      "bytes": 19532,
+      "width": 512,
+      "height": 726,
+      "valid": true
+    },
+    {
+      "id": "gucci-x4",
+      "path": "assets/photos/baf3f84fbd2ce2fe6ac7.webp",
+      "exists": true,
+      "bytes": 7948,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "gucci-x5",
+      "path": "assets/photos/3f6f8f0dd42ac463c677.webp",
+      "exists": true,
+      "bytes": 42960,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "gucci-x6",
+      "path": "assets/photos/5e3d7a428129c8353111.webp",
+      "exists": true,
+      "bytes": 33742,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "gucci-x7",
+      "path": "assets/photos/047806172c20873d13bf.webp",
+      "exists": true,
+      "bytes": 26340,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "gucci-x8",
+      "path": "assets/photos/7e9456117f92fa325b0f.webp",
+      "exists": true,
+      "bytes": 6818,
+      "width": 512,
+      "height": 366,
+      "valid": true
+    },
+    {
+      "id": "gucci-x9",
+      "path": "assets/photos/2bf3f57c442f80e21d7d.webp",
+      "exists": true,
+      "bytes": 5224,
+      "width": 512,
+      "height": 786,
+      "valid": true
+    },
+    {
+      "id": "gucci-x10",
+      "path": "assets/photos/42821a3627427be88867.webp",
+      "exists": true,
+      "bytes": 8992,
+      "width": 512,
+      "height": 579,
+      "valid": true
+    },
+    {
+      "id": "lv-x1",
+      "path": "assets/photos/f9f0208ea2fa04dc11c4.webp",
+      "exists": true,
+      "bytes": 15724,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lv-x2",
+      "path": "assets/photos/d443968f0bf15556ce04.webp",
+      "exists": true,
+      "bytes": 23636,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lv-x3",
+      "path": "assets/photos/4172740af5204e906cae.webp",
+      "exists": true,
+      "bytes": 23654,
+      "width": 512,
+      "height": 342,
+      "valid": true
+    },
+    {
+      "id": "lv-x5",
+      "path": "assets/photos/0c6223828f8b500e22b5.webp",
+      "exists": true,
+      "bytes": 23364,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "l-shoes",
+      "path": "assets/photos/daedbe7d83f966935988.webp",
+      "exists": true,
+      "bytes": 8614,
+      "width": 512,
+      "height": 676,
+      "valid": true
+    },
+    {
+      "id": "gucci-v4-2",
+      "path": "assets/photos/2ded4480a9b4cbfbfef7.webp",
+      "exists": true,
+      "bytes": 14328,
+      "width": 512,
+      "height": 675,
+      "valid": true
+    },
+    {
+      "id": "lv-x4",
+      "path": "assets/photos/f330ebd14781c56a9acb.webp",
+      "exists": true,
+      "bytes": 19952,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-1",
+      "path": "assets/photos/b150833e0168d96e6aae.webp",
+      "exists": true,
+      "bytes": 12626,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-2",
+      "path": "assets/photos/fb666af6a01c058eef42.webp",
+      "exists": true,
+      "bytes": 11618,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-3",
+      "path": "assets/photos/46eec763d409018dd3cb.webp",
+      "exists": true,
+      "bytes": 13482,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-4",
+      "path": "assets/photos/4e635253fab3dacb5545.webp",
+      "exists": true,
+      "bytes": 19436,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-5",
+      "path": "assets/photos/092c08bdef8c32b7d790.webp",
+      "exists": true,
+      "bytes": 19090,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-6",
+      "path": "assets/photos/c2d2e906a42ca8a7f9bf.webp",
+      "exists": true,
+      "bytes": 13980,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-7",
+      "path": "assets/photos/547c739aa9fe29a726d3.webp",
+      "exists": true,
+      "bytes": 28358,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-8",
+      "path": "assets/photos/66dd6c497ed992e41931.webp",
+      "exists": true,
+      "bytes": 29416,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-9",
+      "path": "assets/photos/12eb11328cb8a030042d.webp",
+      "exists": true,
+      "bytes": 27368,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-10",
+      "path": "assets/photos/34c939758e2c586c1ea7.webp",
+      "exists": true,
+      "bytes": 38436,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-11",
+      "path": "assets/photos/9c6f5ec9f4a0300a82d4.webp",
+      "exists": true,
+      "bytes": 55674,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-12",
+      "path": "assets/photos/84e41be46e828279a5ea.webp",
+      "exists": true,
+      "bytes": 21278,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-13",
+      "path": "assets/photos/117d612f9829890e4afe.webp",
+      "exists": true,
+      "bytes": 11260,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-14",
+      "path": "assets/photos/a96898964bcf996abf24.webp",
+      "exists": true,
+      "bytes": 22216,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "alo-v4-15",
+      "path": "assets/photos/ac3e3361746ec5d9a1f7.webp",
+      "exists": true,
+      "bytes": 5414,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "nike-v4-1",
+      "path": "assets/photos/9031971523e0ff56f37e.webp",
+      "exists": true,
+      "bytes": 7734,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-v4-2",
+      "path": "assets/photos/020aed0a772704329c11.webp",
+      "exists": true,
+      "bytes": 10000,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-v4-3",
+      "path": "assets/photos/e8265e6137fd5ae8b591.webp",
+      "exists": true,
+      "bytes": 10712,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-v4-4",
+      "path": "assets/photos/aa762f2bc3d602d458d9.webp",
+      "exists": true,
+      "bytes": 10646,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-v4-5",
+      "path": "assets/photos/817274bd20f9ef254561.webp",
+      "exists": true,
+      "bytes": 12344,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x1",
+      "path": "assets/photos/6e3c8b73a024a853bed4.webp",
+      "exists": true,
+      "bytes": 4748,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x2",
+      "path": "assets/photos/71b193ae74b2117b36be.webp",
+      "exists": true,
+      "bytes": 5248,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x3",
+      "path": "assets/photos/52c31cb621eda8bb5878.webp",
+      "exists": true,
+      "bytes": 11156,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x5",
+      "path": "assets/photos/5959580486dfc6ed0acd.webp",
+      "exists": true,
+      "bytes": 9336,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x6",
+      "path": "assets/photos/56252f83bef3c442b58e.webp",
+      "exists": true,
+      "bytes": 8502,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x8",
+      "path": "assets/photos/dd991e392dedb31a3200.webp",
+      "exists": true,
+      "bytes": 7646,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x9",
+      "path": "assets/photos/7d9ede6dc3320627666f.webp",
+      "exists": true,
+      "bytes": 13722,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x10",
+      "path": "assets/photos/42f1bc3174bb81997a1f.webp",
+      "exists": true,
+      "bytes": 8950,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-v5-cap",
+      "path": "assets/photos/7db5d81fa0c9968ab8da.webp",
+      "exists": true,
+      "bytes": 3146,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-v5-crossbody",
+      "path": "assets/photos/79aeaecc20686523018a.webp",
+      "exists": true,
+      "bytes": 27538,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "u-tee",
+      "path": "assets/photos/0b87a7debcfc1011323b.webp",
+      "exists": true,
+      "bytes": 15894,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "u-jacket",
+      "path": "assets/photos/3ad6de914bd4eb5ee2e4.webp",
+      "exists": true,
+      "bytes": 13354,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "u-knit",
+      "path": "assets/photos/4bfe265e00a485ed1e8f.webp",
+      "exists": true,
+      "bytes": 26516,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "u-bag",
+      "path": "assets/photos/f0b27e37c19fd34e0ca9.webp",
+      "exists": true,
+      "bytes": 7260,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-v4-1",
+      "path": "assets/photos/28ca1f1f92a04edbf2a0.webp",
+      "exists": true,
+      "bytes": 3534,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-v4-2",
+      "path": "assets/photos/c722890c54176fabf5a9.webp",
+      "exists": true,
+      "bytes": 24230,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-v4-3",
+      "path": "assets/photos/73be852fddc74165553f.webp",
+      "exists": true,
+      "bytes": 4752,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-v4-4",
+      "path": "assets/photos/bd3b85037f7ad393c9c3.webp",
+      "exists": true,
+      "bytes": 21272,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-v4-5",
+      "path": "assets/photos/abe9171b801460a86ca8.webp",
+      "exists": true,
+      "bytes": 7500,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "adidas-x3",
+      "path": "assets/photos/cd1a3e78f4442bec4f32.webp",
+      "exists": true,
+      "bytes": 7788,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-x4",
+      "path": "assets/photos/df6888fda418a56564d2.webp",
+      "exists": true,
+      "bytes": 4828,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-x6",
+      "path": "assets/photos/c94b5437554dcf098ce9.webp",
+      "exists": true,
+      "bytes": 5148,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-x7",
+      "path": "assets/photos/ae7152af14554b370a74.webp",
+      "exists": true,
+      "bytes": 7440,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-x9",
+      "path": "assets/photos/f34e3eaa634c042b2afe.webp",
+      "exists": true,
+      "bytes": 14962,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-x10",
+      "path": "assets/photos/6a752d97047060e9c6cd.webp",
+      "exists": true,
+      "bytes": 5474,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-9",
+      "path": "assets/photos/d75ec34bf99c9aa8b6a3.webp",
+      "exists": true,
+      "bytes": 11702,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-10",
+      "path": "assets/photos/3192e144349eb137838e.webp",
+      "exists": true,
+      "bytes": 13524,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-13",
+      "path": "assets/photos/ebe6d4cba87fcfe08a34.webp",
+      "exists": true,
+      "bytes": 9774,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-14",
+      "path": "assets/photos/9cb7aff94ef19b4f0436.webp",
+      "exists": true,
+      "bytes": 14430,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-1",
+      "path": "assets/photos/774b1e171d27bb42cce1.webp",
+      "exists": true,
+      "bytes": 6144,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-2",
+      "path": "assets/photos/2e0d61854f189d444b68.webp",
+      "exists": true,
+      "bytes": 8308,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-3",
+      "path": "assets/photos/0cc5b6c54657a2aaf0bc.webp",
+      "exists": true,
+      "bytes": 6934,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-5",
+      "path": "assets/photos/7c64ed3f61e545f89a5a.webp",
+      "exists": true,
+      "bytes": 7516,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-6",
+      "path": "assets/photos/d92f2ac7c047eca294c3.webp",
+      "exists": true,
+      "bytes": 10944,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-7",
+      "path": "assets/photos/02f213388fe5a91f1b3b.webp",
+      "exists": true,
+      "bytes": 9914,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-8",
+      "path": "assets/photos/b334cd891cd4ea609a47.webp",
+      "exists": true,
+      "bytes": 5988,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-9",
+      "path": "assets/photos/f356a7e272884b661f64.webp",
+      "exists": true,
+      "bytes": 9562,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-10",
+      "path": "assets/photos/92a6a112b7450951aa78.webp",
+      "exists": true,
+      "bytes": 8054,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-12",
+      "path": "assets/photos/e50b247dec67bce1344b.webp",
+      "exists": true,
+      "bytes": 8946,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-13",
+      "path": "assets/photos/af20f5b562542ef89de8.webp",
+      "exists": true,
+      "bytes": 8602,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-14",
+      "path": "assets/photos/f34a6ba7f41a9051e0ad.webp",
+      "exists": true,
+      "bytes": 15368,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-15",
+      "path": "assets/photos/2ebb44193df04551e7dc.webp",
+      "exists": true,
+      "bytes": 4718,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-v4-1",
+      "path": "assets/photos/3621f90d4d9a63d7a6a8.webp",
+      "exists": true,
+      "bytes": 7624,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-v4-4",
+      "path": "assets/photos/67bffee13eb9856b4500.webp",
+      "exists": true,
+      "bytes": 6952,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "hm-v4-1",
+      "path": "assets/photos/28ca517c02301a522842.webp",
+      "exists": true,
+      "bytes": 11190,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "hm-v4-2",
+      "path": "assets/photos/0a70d2fde4f7ec7c84aa.webp",
+      "exists": true,
+      "bytes": 10828,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "hm-v4-3",
+      "path": "assets/photos/bc46563acad72a89e0e6.webp",
+      "exists": true,
+      "bytes": 44982,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "hm-v4-4",
+      "path": "assets/photos/527d0ff690634d5ffe4e.webp",
+      "exists": true,
+      "bytes": 4778,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "hm-v4-5",
+      "path": "assets/photos/bc3104b177787de1693b.webp",
+      "exists": true,
+      "bytes": 11666,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "levis-v4-3",
+      "path": "assets/photos/24591495edab8b726931.webp",
+      "exists": true,
+      "bytes": 3802,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-v4-5",
+      "path": "assets/photos/931bee87f10c88c8ebdb.webp",
+      "exists": true,
+      "bytes": 5880,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "marshalls-x3",
+      "path": "assets/photos/f0cf53a6e9afaf490fe5.webp",
+      "exists": true,
+      "bytes": 5944,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x2",
+      "path": "assets/photos/53951a09c77935391636.webp",
+      "exists": true,
+      "bytes": 5390,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x3",
+      "path": "assets/photos/8d6ac64b3e74573dce1a.webp",
+      "exists": true,
+      "bytes": 38944,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x5",
+      "path": "assets/photos/91dab1c3ab029421fba9.webp",
+      "exists": true,
+      "bytes": 18700,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x6",
+      "path": "assets/photos/70022a156feb73c1a64d.webp",
+      "exists": true,
+      "bytes": 10682,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x7",
+      "path": "assets/photos/c73ff83a0ef4820addbe.webp",
+      "exists": true,
+      "bytes": 11542,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x8",
+      "path": "assets/photos/8ab87044de2e83e51ba6.webp",
+      "exists": true,
+      "bytes": 10280,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x9",
+      "path": "assets/photos/09674af620061cff5760.webp",
+      "exists": true,
+      "bytes": 10392,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "hm-x1",
+      "path": "assets/photos/7e3724afe856b7939246.webp",
+      "exists": true,
+      "bytes": 5372,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "hm-x2",
+      "path": "assets/photos/98f8e012b59d1905b298.webp",
+      "exists": true,
+      "bytes": 3530,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "hm-x5",
+      "path": "assets/photos/cb0323bc0f7546616b7f.webp",
+      "exists": true,
+      "bytes": 9442,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "hm-x6",
+      "path": "assets/photos/97509592155334f913e0.webp",
+      "exists": true,
+      "bytes": 9310,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "hm-x7",
+      "path": "assets/photos/8aefa0628959e48e6d48.webp",
+      "exists": true,
+      "bytes": 14028,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "hm-x9",
+      "path": "assets/photos/2ec3f4bb6a6d1e64684c.webp",
+      "exists": true,
+      "bytes": 10036,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "levis-x3",
+      "path": "assets/photos/9889de5da63f40309492.webp",
+      "exists": true,
+      "bytes": 3760,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-x4",
+      "path": "assets/photos/d0b32580945c14cc3a62.webp",
+      "exists": true,
+      "bytes": 4038,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-x5",
+      "path": "assets/photos/e277986f624dbff95465.webp",
+      "exists": true,
+      "bytes": 3462,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-x9",
+      "path": "assets/photos/f2e43d929e5ea1bb3b3e.webp",
+      "exists": true,
+      "bytes": 5900,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "adidas-v4-1",
+      "path": "assets/photos/5ce7ba3ad96b6db4fe85.webp",
+      "exists": true,
+      "bytes": 5974,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-v4-2",
+      "path": "assets/photos/42dfd743a50dc506026a.webp",
+      "exists": true,
+      "bytes": 8126,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-v4-3",
+      "path": "assets/photos/a6379402a32d5ceead26.webp",
+      "exists": true,
+      "bytes": 5810,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-v4-4",
+      "path": "assets/photos/57948dcc0053694b2bbc.webp",
+      "exists": true,
+      "bytes": 7600,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-x1",
+      "path": "assets/photos/59b3f601410ff487bd5e.webp",
+      "exists": true,
+      "bytes": 6204,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-x2",
+      "path": "assets/photos/d0a8b79e3df8594044e1.webp",
+      "exists": true,
+      "bytes": 7302,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "adidas-x8",
+      "path": "assets/photos/c9dac5c21e498adee61b.webp",
+      "exists": true,
+      "bytes": 3948,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-4",
+      "path": "assets/photos/f3110ccf943ff9b026ea.webp",
+      "exists": true,
+      "bytes": 13228,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-v4-2",
+      "path": "assets/photos/f44c8284839cef07be0c.webp",
+      "exists": true,
+      "bytes": 10010,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x1",
+      "path": "assets/photos/3b4c0b967ea833152181.webp",
+      "exists": true,
+      "bytes": 25382,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-x1",
+      "path": "assets/photos/d5b39f03a78a99b200c3.webp",
+      "exists": true,
+      "bytes": 14674,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-x3",
+      "path": "assets/photos/cbc005f5d9618d2e50ce.webp",
+      "exists": true,
+      "bytes": 20142,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-x4",
+      "path": "assets/photos/718becb06d859fbc2aef.webp",
+      "exists": true,
+      "bytes": 15138,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-x5",
+      "path": "assets/photos/fddb0eb1586078a0aeb2.webp",
+      "exists": true,
+      "bytes": 9598,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "r-jeans",
+      "path": "assets/photos/555598e38b9b51569d50.webp",
+      "exists": true,
+      "bytes": 3838,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-x1",
+      "path": "assets/photos/555598e38b9b51569d50.webp",
+      "exists": true,
+      "bytes": 3838,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "n-jeans",
+      "path": "assets/photos/555598e38b9b51569d50.webp",
+      "exists": true,
+      "bytes": 3838,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-x2",
+      "path": "assets/photos/1fe5daa86045200fed28.webp",
+      "exists": true,
+      "bytes": 3510,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-x10",
+      "path": "assets/photos/04a637e91cb7fcba6420.webp",
+      "exists": true,
+      "bytes": 4570,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-x8",
+      "path": "assets/photos/f0cf53a6e9afaf490fe5.webp",
+      "exists": true,
+      "bytes": 5944,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-x3",
+      "path": "assets/photos/f0cf53a6e9afaf490fe5.webp",
+      "exists": true,
+      "bytes": 5944,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "levis-v5-belt",
+      "path": "assets/photos/ffe8d68fe76e46c1177f.webp",
+      "exists": true,
+      "bytes": 2308,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "r-shoes",
+      "path": "assets/photos/df6888fda418a56564d2.webp",
+      "exists": true,
+      "bytes": 4828,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "m-shoes",
+      "path": "assets/photos/df6888fda418a56564d2.webp",
+      "exists": true,
+      "bytes": 4828,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "n-shoes",
+      "path": "assets/photos/59b3f601410ff487bd5e.webp",
+      "exists": true,
+      "bytes": 6204,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "marshalls-x2",
+      "path": "assets/photos/c9dac5c21e498adee61b.webp",
+      "exists": true,
+      "bytes": 3948,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-1",
+      "path": "assets/photos/82f03f517e614167421d.webp",
+      "exists": true,
+      "bytes": 11402,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-2",
+      "path": "assets/photos/7cf03fc68848f8f17387.webp",
+      "exists": true,
+      "bytes": 8022,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-4",
+      "path": "assets/photos/3795070ca849646fe384.webp",
+      "exists": true,
+      "bytes": 8144,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-5",
+      "path": "assets/photos/ba020b89647f34588038.webp",
+      "exists": true,
+      "bytes": 7288,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-8",
+      "path": "assets/photos/1d480df05c353ee89674.webp",
+      "exists": true,
+      "bytes": 10110,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-3",
+      "path": "assets/photos/bb446ac5ab19df146165.webp",
+      "exists": true,
+      "bytes": 8266,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-6",
+      "path": "assets/photos/5b602d6300bf5ba69f25.webp",
+      "exists": true,
+      "bytes": 14608,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-7",
+      "path": "assets/photos/1e4457c80e86914f9cc6.webp",
+      "exists": true,
+      "bytes": 11166,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-12",
+      "path": "assets/photos/bfb99356ee7cd044c239.webp",
+      "exists": true,
+      "bytes": 5402,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-15",
+      "path": "assets/photos/d91f3e610ed636c3f65d.webp",
+      "exists": true,
+      "bytes": 7500,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "levis-v4-1",
+      "path": "assets/photos/b826c0db9f57566dce4f.webp",
+      "exists": true,
+      "bytes": 3988,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "levis-v4-2",
+      "path": "assets/photos/94aa47f5da75d74b1eee.webp",
+      "exists": true,
+      "bytes": 3474,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "levis-v4-4",
+      "path": "assets/photos/385632ad078896559d27.webp",
+      "exists": true,
+      "bytes": 4296,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "levis-x6",
+      "path": "assets/photos/d96d4b351b6c3f873b19.webp",
+      "exists": true,
+      "bytes": 3636,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "levis-x7",
+      "path": "assets/photos/203ae77c3b2231f32a14.webp",
+      "exists": true,
+      "bytes": 3866,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nike-x4",
+      "path": "assets/photos/c4d6b1d3a70f1c9cebb7.webp",
+      "exists": true,
+      "bytes": 11078,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-v4-1",
+      "path": "assets/photos/7cf03fc68848f8f17387.webp",
+      "exists": true,
+      "bytes": 8022,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "hm-x3",
+      "path": "assets/photos/a057f647c3f661480378.webp",
+      "exists": true,
+      "bytes": 8076,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "hm-x10",
+      "path": "assets/photos/ce04c04eaa1af6113635.webp",
+      "exists": true,
+      "bytes": 17224,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "adidas-x5",
+      "path": "assets/photos/2fe7502b93bd495d251b.webp",
+      "exists": true,
+      "bytes": 9392,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-v4-3",
+      "path": "assets/photos/87671f40a4b2fa3bed30.webp",
+      "exists": true,
+      "bytes": 12866,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-v4-5",
+      "path": "assets/photos/f4c2bde70b87063c02d9.webp",
+      "exists": true,
+      "bytes": 10838,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "u-jeans",
+      "path": "assets/photos/d08182aef5b51447c85d.webp",
+      "exists": true,
+      "bytes": 10104,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "uniqlo-x2",
+      "path": "assets/photos/6d6a714b2dea557216ba.webp",
+      "exists": true,
+      "bytes": 8330,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "nike-x7",
+      "path": "assets/photos/db5b4986fbbb906b7177.webp",
+      "exists": true,
+      "bytes": 3144,
+      "width": 512,
+      "height": 272,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x10",
+      "path": "assets/photos/985a11496accb451def4.webp",
+      "exists": true,
+      "bytes": 11292,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "lululemon-v4-11",
+      "path": "assets/photos/a3bbed4e813d3a4f495f.webp",
+      "exists": true,
+      "bytes": 8720,
+      "width": 512,
+      "height": 615,
+      "valid": true
+    },
+    {
+      "id": "newbalance-v4-11",
+      "path": "assets/photos/18c965983ca4d2cb4787.webp",
+      "exists": true,
+      "bytes": 8112,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "hm-x4",
+      "path": "assets/photos/215b8752e8a3ed92df9e.webp",
+      "exists": true,
+      "bytes": 17918,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "hm-x8",
+      "path": "assets/photos/a39b1bc37d1450da4a2e.webp",
+      "exists": true,
+      "bytes": 11006,
+      "width": 512,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "id": "oldnavy-x4",
+      "path": "assets/photos/b6b8019e347baa0b5020.webp",
+      "exists": true,
+      "bytes": 24102,
+      "width": 512,
+      "height": 683,
+      "valid": true
+    },
+    {
+      "id": "adidas-v4-5",
+      "path": "assets/photos/572c50b49f98730f6a6a.webp",
+      "exists": true,
+      "bytes": 7616,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "r-bag",
+      "path": "assets/photos/81036d6b4d24d071b022.webp",
+      "exists": true,
+      "bytes": 21230,
+      "width": 512,
+      "height": 596,
+      "valid": true
+    },
+    {
+      "id": "n-sandal",
+      "path": "assets/photos/1e1f64afcbeaca4d8b4d.webp",
+      "exists": true,
+      "bytes": 15990,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "ross-x3",
+      "path": "assets/photos/d309d1c367638738f700.webp",
+      "exists": true,
+      "bytes": 11676,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "marshalls-x5",
+      "path": "assets/photos/d309d1c367638738f700.webp",
+      "exists": true,
+      "bytes": 11676,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "target-x3",
+      "path": "assets/photos/8eecfe021dfbdb1b110a.webp",
+      "exists": true,
+      "bytes": 17486,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "target-x8",
+      "path": "assets/photos/58ce1bbfe11e82224464.webp",
+      "exists": true,
+      "bytes": 23872,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lego-x2",
+      "path": "assets/photos/1d5d10754f1e55c26db9.webp",
+      "exists": true,
+      "bytes": 29210,
+      "width": 512,
+      "height": 384,
+      "valid": true
+    },
+    {
+      "id": "lego-x3",
+      "path": "assets/photos/c13d0082da707ee4f895.webp",
+      "exists": true,
+      "bytes": 38576,
+      "width": 512,
+      "height": 390,
+      "valid": true
+    },
+    {
+      "id": "lego-x4",
+      "path": "assets/photos/d6d81b5d323c945c32bb.webp",
+      "exists": true,
+      "bytes": 29832,
+      "width": 512,
+      "height": 467,
+      "valid": true
+    },
+    {
+      "id": "lego-x5",
+      "path": "assets/photos/734fc60cb7fc2ac1578d.webp",
+      "exists": true,
+      "bytes": 38192,
+      "width": 512,
+      "height": 411,
+      "valid": true
+    },
+    {
+      "id": "lego-x6",
+      "path": "assets/photos/78ba49a64e50f13a7379.webp",
+      "exists": true,
+      "bytes": 25664,
+      "width": 512,
+      "height": 350,
+      "valid": true
+    },
+    {
+      "id": "sephora-x3",
+      "path": "assets/photos/dc4da710f0271e1df1e8.webp",
+      "exists": true,
+      "bytes": 9336,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-x8",
+      "path": "assets/photos/0ac660d5b604c546333d.webp",
+      "exists": true,
+      "bytes": 6572,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-x10",
+      "path": "assets/photos/9053004add87e0bc79d4.webp",
+      "exists": true,
+      "bytes": 11870,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-x7",
+      "path": "assets/photos/85332c81e5514f20248e.webp",
+      "exists": true,
+      "bytes": 1512,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8783873278142",
+      "path": "assets/photos/33a37cbb88cf5234b72a.webp",
+      "exists": true,
+      "bytes": 9772,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8709562958014",
+      "path": "assets/photos/d3dbf18304e16f9e6498.webp",
+      "exists": true,
+      "bytes": 9754,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8709557223614",
+      "path": "assets/photos/1626d060f308c7b4ec16.webp",
+      "exists": true,
+      "bytes": 7288,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8705461977278",
+      "path": "assets/photos/bcda27089e390a9cfc7d.webp",
+      "exists": true,
+      "bytes": 6538,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8705402699966",
+      "path": "assets/photos/ee09ab7f1436fc3ff484.webp",
+      "exists": true,
+      "bytes": 4940,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8705398800574",
+      "path": "assets/photos/440d943c9f8d7b503d37.webp",
+      "exists": true,
+      "bytes": 5630,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8658123849918",
+      "path": "assets/photos/4a1e9477956e508550a3.webp",
+      "exists": true,
+      "bytes": 6486,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8655905063102",
+      "path": "assets/photos/dd07fc92448b5e8fa5a6.webp",
+      "exists": true,
+      "bytes": 6140,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8642980806846",
+      "path": "assets/photos/2212f670922df9bc13db.webp",
+      "exists": true,
+      "bytes": 7146,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8642973106366",
+      "path": "assets/photos/f96d41fcb6088f14dba5.webp",
+      "exists": true,
+      "bytes": 7778,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8637629759678",
+      "path": "assets/photos/4770349f492362030712.webp",
+      "exists": true,
+      "bytes": 6214,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8638217748670",
+      "path": "assets/photos/9ebc3e30afa5646ec142.webp",
+      "exists": true,
+      "bytes": 18750,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8638217027774",
+      "path": "assets/photos/085ae2d37f126f6339bb.webp",
+      "exists": true,
+      "bytes": 15796,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8638202871998",
+      "path": "assets/photos/508cfd4a652243178697.webp",
+      "exists": true,
+      "bytes": 16672,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-8634909196478",
+      "path": "assets/photos/acbd2856f82771531bfd.webp",
+      "exists": true,
+      "bytes": 7604,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-9079176691902",
+      "path": "assets/photos/7f3070b6655139fed3dd.webp",
+      "exists": true,
+      "bytes": 9156,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v6-9079176560830",
+      "path": "assets/photos/0edf352b9d469323a61d.webp",
+      "exists": true,
+      "bytes": 18894,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-1",
+      "path": "assets/photos/185dbd65859b770b9149.webp",
+      "exists": true,
+      "bytes": 1630,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-2",
+      "path": "assets/photos/e879c67f48041e6071b3.webp",
+      "exists": true,
+      "bytes": 1252,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-3",
+      "path": "assets/photos/b0fd230801692eeae4ac.webp",
+      "exists": true,
+      "bytes": 1602,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-4",
+      "path": "assets/photos/f533ca5f83e8e0fc17b7.webp",
+      "exists": true,
+      "bytes": 1982,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-5",
+      "path": "assets/photos/d15117385842089efd41.webp",
+      "exists": true,
+      "bytes": 8298,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-6",
+      "path": "assets/photos/77b40b8df18a1b6168b2.webp",
+      "exists": true,
+      "bytes": 1366,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-7",
+      "path": "assets/photos/e197aab9b5528cf8a858.webp",
+      "exists": true,
+      "bytes": 3650,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-8",
+      "path": "assets/photos/3408237353dbc3ff8dcb.webp",
+      "exists": true,
+      "bytes": 6774,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-9",
+      "path": "assets/photos/e18d31f6961d450802b2.webp",
+      "exists": true,
+      "bytes": 4140,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-10",
+      "path": "assets/photos/bec77ddcb28e4ddfc269.webp",
+      "exists": true,
+      "bytes": 6350,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-11",
+      "path": "assets/photos/47e0b09ccb187c064f78.webp",
+      "exists": true,
+      "bytes": 4962,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-12",
+      "path": "assets/photos/4eb8d430108ce673dad0.webp",
+      "exists": true,
+      "bytes": 2734,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-13",
+      "path": "assets/photos/fca88512ef82213f5a55.webp",
+      "exists": true,
+      "bytes": 3778,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-14",
+      "path": "assets/photos/1b871bc9728842c3e940.webp",
+      "exists": true,
+      "bytes": 4284,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "muji-v4-15",
+      "path": "assets/photos/0f44c8f2e52e263488ee.webp",
+      "exists": true,
+      "bytes": 3620,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "m-bag",
+      "path": "assets/photos/da4b3bfd7bb153a08ef2.webp",
+      "exists": true,
+      "bytes": 15222,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "n-bag",
+      "path": "assets/photos/b9014a98d61e17edb5b7.webp",
+      "exists": true,
+      "bytes": 16582,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-1",
+      "path": "assets/photos/a5d1ad02e5686169e266.webp",
+      "exists": true,
+      "bytes": 11850,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-2",
+      "path": "assets/photos/1058deb68268bfb6fc08.webp",
+      "exists": true,
+      "bytes": 12734,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-3",
+      "path": "assets/photos/442dadda33545a1f27b2.webp",
+      "exists": true,
+      "bytes": 11104,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-4",
+      "path": "assets/photos/089e64f8b22e6d37acba.webp",
+      "exists": true,
+      "bytes": 11746,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-5",
+      "path": "assets/photos/b9e8e8ca2d71ed281f68.webp",
+      "exists": true,
+      "bytes": 10796,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-6",
+      "path": "assets/photos/7797d94c9b58c8192e33.webp",
+      "exists": true,
+      "bytes": 17816,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-7",
+      "path": "assets/photos/53d4569c44d1a15678cf.webp",
+      "exists": true,
+      "bytes": 12704,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-9",
+      "path": "assets/photos/13dd602eb5e6ef53cb94.webp",
+      "exists": true,
+      "bytes": 15940,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-13",
+      "path": "assets/photos/5b21e6f6be35e82d51d8.webp",
+      "exists": true,
+      "bytes": 10374,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ross-v4-3",
+      "path": "assets/photos/20fbe855b6e1c73d4a20.webp",
+      "exists": true,
+      "bytes": 8776,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "marshalls-v4-4",
+      "path": "assets/photos/20fbe855b6e1c73d4a20.webp",
+      "exists": true,
+      "bytes": 8776,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "target-v4-1",
+      "path": "assets/photos/b5157b82d5cb3891b4ef.webp",
+      "exists": true,
+      "bytes": 55752,
+      "width": 512,
+      "height": 685,
+      "valid": true
+    },
+    {
+      "id": "target-v4-2",
+      "path": "assets/photos/226b47821f0af4ed9746.webp",
+      "exists": true,
+      "bytes": 43922,
+      "width": 512,
+      "height": 865,
+      "valid": true
+    },
+    {
+      "id": "target-v4-3",
+      "path": "assets/photos/ec6ec2bbd25a2c96003a.webp",
+      "exists": true,
+      "bytes": 12974,
+      "width": 512,
+      "height": 769,
+      "valid": true
+    },
+    {
+      "id": "lego-v4-2",
+      "path": "assets/photos/0a72e5ce47594bc20225.webp",
+      "exists": true,
+      "bytes": 60972,
+      "width": 512,
+      "height": 367,
+      "valid": true
+    },
+    {
+      "id": "lego-v4-3",
+      "path": "assets/photos/583b6a2030de8105681e.webp",
+      "exists": true,
+      "bytes": 38674,
+      "width": 512,
+      "height": 702,
+      "valid": true
+    },
+    {
+      "id": "lego-v4-4",
+      "path": "assets/photos/32617f61028ac037f77e.webp",
+      "exists": true,
+      "bytes": 77010,
+      "width": 512,
+      "height": 1039,
+      "valid": true
+    },
+    {
+      "id": "lego-v4-5",
+      "path": "assets/photos/0583427e1b8333f5d956.webp",
+      "exists": true,
+      "bytes": 62856,
+      "width": 512,
+      "height": 995,
+      "valid": true
+    },
+    {
+      "id": "sephora-v4-1",
+      "path": "assets/photos/fb947c4f269f8307b629.webp",
+      "exists": true,
+      "bytes": 18812,
+      "width": 512,
+      "height": 696,
+      "valid": true
+    },
+    {
+      "id": "sephora-v4-3",
+      "path": "assets/photos/5c67f2456974824dc3a2.webp",
+      "exists": true,
+      "bytes": 5012,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-v4-4",
+      "path": "assets/photos/8f925dfc9213b263512f.webp",
+      "exists": true,
+      "bytes": 6310,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-v4-5",
+      "path": "assets/photos/6ea41f2d8b865b99d839.webp",
+      "exists": true,
+      "bytes": 13054,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-v4-1",
+      "path": "assets/photos/5ecff75639b36494806c.webp",
+      "exists": true,
+      "bytes": 968,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-v4-2",
+      "path": "assets/photos/ea801f71c32376288191.webp",
+      "exists": true,
+      "bytes": 1968,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-v4-5",
+      "path": "assets/photos/6c188c7964af0ce05749.webp",
+      "exists": true,
+      "bytes": 6842,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-v4-3",
+      "path": "assets/photos/37aefa6a8886eb08823b.webp",
+      "exists": true,
+      "bytes": 15574,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-v4-5",
+      "path": "assets/photos/23bae08d9776e4ac4e5b.webp",
+      "exists": true,
+      "bytes": 24722,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-v4-1",
+      "path": "assets/photos/23bae08d9776e4ac4e5b.webp",
+      "exists": true,
+      "bytes": 24722,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-v4-2",
+      "path": "assets/photos/4f5cb658c1659421b018.webp",
+      "exists": true,
+      "bytes": 5062,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-v4-3",
+      "path": "assets/photos/4774a4896c1033e6521f.webp",
+      "exists": true,
+      "bytes": 27356,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-v4-4",
+      "path": "assets/photos/5b0ee9671a63c067e22a.webp",
+      "exists": true,
+      "bytes": 18368,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-v4-5",
+      "path": "assets/photos/5ff2a746b761ba5762fb.webp",
+      "exists": true,
+      "bytes": 20952,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-v4-1",
+      "path": "assets/photos/5455ae83fabb134732fe.webp",
+      "exists": true,
+      "bytes": 6052,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-v4-3",
+      "path": "assets/photos/74b6dd9235590a058032.webp",
+      "exists": true,
+      "bytes": 14956,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-v4-4",
+      "path": "assets/photos/3ba1d51ae7e4d7c14bf8.webp",
+      "exists": true,
+      "bytes": 7556,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "marshalls-x1",
+      "path": "assets/photos/0ad31a6be758c4b29113.webp",
+      "exists": true,
+      "bytes": 15734,
+      "width": 512,
+      "height": 538,
+      "valid": true
+    },
+    {
+      "id": "target-x4",
+      "path": "assets/photos/01defcfe3b683954abf2.webp",
+      "exists": true,
+      "bytes": 9836,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "target-x7",
+      "path": "assets/photos/26c3dcb8a99b23c3a41d.webp",
+      "exists": true,
+      "bytes": 44344,
+      "width": 512,
+      "height": 372,
+      "valid": true
+    },
+    {
+      "id": "lego-x1",
+      "path": "assets/photos/b2529e40b3ec9b97d4c6.webp",
+      "exists": true,
+      "bytes": 50598,
+      "width": 512,
+      "height": 679,
+      "valid": true
+    },
+    {
+      "id": "lego-x7",
+      "path": "assets/photos/115b6468515da8d1eb65.webp",
+      "exists": true,
+      "bytes": 36960,
+      "width": 512,
+      "height": 580,
+      "valid": true
+    },
+    {
+      "id": "lego-x8",
+      "path": "assets/photos/26c3dcb8a99b23c3a41d.webp",
+      "exists": true,
+      "bytes": 44344,
+      "width": 512,
+      "height": 372,
+      "valid": true
+    },
+    {
+      "id": "lego-x10",
+      "path": "assets/photos/8afc0423e94ddffcf7d2.webp",
+      "exists": true,
+      "bytes": 37342,
+      "width": 512,
+      "height": 245,
+      "valid": true
+    },
+    {
+      "id": "sephora-x4",
+      "path": "assets/photos/9924b6608463d5d305a1.webp",
+      "exists": true,
+      "bytes": 7060,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-x9",
+      "path": "assets/photos/e8be48f85257361ea79c.webp",
+      "exists": true,
+      "bytes": 11876,
+      "width": 512,
+      "height": 575,
+      "valid": true
+    },
+    {
+      "id": "apple-x1",
+      "path": "assets/photos/56d896308be694d8d6fe.webp",
+      "exists": true,
+      "bytes": 2968,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "apple-x2",
+      "path": "assets/photos/036d3a913d6f808373b8.webp",
+      "exists": true,
+      "bytes": 11254,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x1",
+      "path": "assets/photos/9b5b5d3cecd61345a180.webp",
+      "exists": true,
+      "bytes": 5894,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x3",
+      "path": "assets/photos/b9014a98d61e17edb5b7.webp",
+      "exists": true,
+      "bytes": 16582,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x4",
+      "path": "assets/photos/ee28a375c4ebfa78eba7.webp",
+      "exists": true,
+      "bytes": 6668,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x5",
+      "path": "assets/photos/4f9edc4ca0f979bbfb23.webp",
+      "exists": true,
+      "bytes": 6936,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x6",
+      "path": "assets/photos/0bade5f0a2da53d709e0.webp",
+      "exists": true,
+      "bytes": 18522,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x7",
+      "path": "assets/photos/50399f88d9bcf5e29fff.webp",
+      "exists": true,
+      "bytes": 22310,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x2",
+      "path": "assets/photos/94f1bc0c9d318af65a85.webp",
+      "exists": true,
+      "bytes": 8308,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x4",
+      "path": "assets/photos/19f4e2041fdb16fea1c6.webp",
+      "exists": true,
+      "bytes": 7916,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x6",
+      "path": "assets/photos/5ecc2a1f6143e3e61e50.webp",
+      "exists": true,
+      "bytes": 17242,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x7",
+      "path": "assets/photos/155aaf2f96c3cbcf3099.webp",
+      "exists": true,
+      "bytes": 7410,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x10",
+      "path": "assets/photos/e2d0790616e9a2685387.webp",
+      "exists": true,
+      "bytes": 5534,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-x2",
+      "path": "assets/photos/ee28a375c4ebfa78eba7.webp",
+      "exists": true,
+      "bytes": 6668,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-x4",
+      "path": "assets/photos/155aaf2f96c3cbcf3099.webp",
+      "exists": true,
+      "bytes": 7410,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-x5",
+      "path": "assets/photos/da4b3bfd7bb153a08ef2.webp",
+      "exists": true,
+      "bytes": 15222,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-10331",
+      "path": "assets/photos/51b9317023bbd280cb74.webp",
+      "exists": true,
+      "bytes": 43092,
+      "width": 512,
+      "height": 430,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-40747",
+      "path": "assets/photos/86d2c1b5f8e3821cf055.webp",
+      "exists": true,
+      "bytes": 81060,
+      "width": 512,
+      "height": 740,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-40709",
+      "path": "assets/photos/cf603425ae0dd93e25c2.webp",
+      "exists": true,
+      "bytes": 35392,
+      "width": 512,
+      "height": 388,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-11034",
+      "path": "assets/photos/73e83a377504fb9f3a49.webp",
+      "exists": true,
+      "bytes": 34224,
+      "width": 512,
+      "height": 256,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71453",
+      "path": "assets/photos/2c3e2a4c8af3d204a63a.webp",
+      "exists": true,
+      "bytes": 43780,
+      "width": 512,
+      "height": 468,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-31157",
+      "path": "assets/photos/5cb7aef9aedaf23820f8.webp",
+      "exists": true,
+      "bytes": 60994,
+      "width": 512,
+      "height": 416,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-31149",
+      "path": "assets/photos/ac38afb4c36645d8c166.webp",
+      "exists": true,
+      "bytes": 40202,
+      "width": 512,
+      "height": 481,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-31133",
+      "path": "assets/photos/1eb8898a36f4600a9abe.webp",
+      "exists": true,
+      "bytes": 27298,
+      "width": 512,
+      "height": 441,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-31148",
+      "path": "assets/photos/712a1d5afa506670b4ee.webp",
+      "exists": true,
+      "bytes": 34418,
+      "width": 512,
+      "height": 475,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-31152",
+      "path": "assets/photos/3c077599d47f657dc4eb.webp",
+      "exists": true,
+      "bytes": 42184,
+      "width": 512,
+      "height": 733,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-31158",
+      "path": "assets/photos/0eee4e39929bb29a39e3.webp",
+      "exists": true,
+      "bytes": 52724,
+      "width": 512,
+      "height": 440,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42610",
+      "path": "assets/photos/4600f7e6116ae08be92f.webp",
+      "exists": true,
+      "bytes": 29440,
+      "width": 512,
+      "height": 241,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42633",
+      "path": "assets/photos/3ab3db0622538a179924.webp",
+      "exists": true,
+      "bytes": 31002,
+      "width": 512,
+      "height": 315,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42616",
+      "path": "assets/photos/9831561287402fdd8a2d.webp",
+      "exists": true,
+      "bytes": 44302,
+      "width": 512,
+      "height": 343,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42601",
+      "path": "assets/photos/1d1977c80319979e2dd9.webp",
+      "exists": true,
+      "bytes": 49006,
+      "width": 512,
+      "height": 378,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42609",
+      "path": "assets/photos/93f6bd46126a3a64e46a.webp",
+      "exists": true,
+      "bytes": 34938,
+      "width": 512,
+      "height": 328,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42603",
+      "path": "assets/photos/50a119035d8869fc866a.webp",
+      "exists": true,
+      "bytes": 45528,
+      "width": 512,
+      "height": 365,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42613",
+      "path": "assets/photos/d3947c0c26bd5074d374.webp",
+      "exists": true,
+      "bytes": 34512,
+      "width": 512,
+      "height": 305,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42607",
+      "path": "assets/photos/347d60c8cb0f874545a0.webp",
+      "exists": true,
+      "bytes": 45290,
+      "width": 512,
+      "height": 432,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42632",
+      "path": "assets/photos/84a4b96421992c80e2d1.webp",
+      "exists": true,
+      "bytes": 41060,
+      "width": 512,
+      "height": 322,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-42617",
+      "path": "assets/photos/6e70893eb07cfca19d80.webp",
+      "exists": true,
+      "bytes": 52570,
+      "width": 512,
+      "height": 294,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71472",
+      "path": "assets/photos/32ed254f7faa757a1058.webp",
+      "exists": true,
+      "bytes": 35076,
+      "width": 512,
+      "height": 398,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71471",
+      "path": "assets/photos/a72e0fe882e47570edf2.webp",
+      "exists": true,
+      "bytes": 22196,
+      "width": 512,
+      "height": 215,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71476",
+      "path": "assets/photos/3c1d776c5f6baba1f14c.webp",
+      "exists": true,
+      "bytes": 54258,
+      "width": 512,
+      "height": 365,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71475",
+      "path": "assets/photos/4b1e2a7db4a36716bed2.webp",
+      "exists": true,
+      "bytes": 51516,
+      "width": 512,
+      "height": 472,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-10422",
+      "path": "assets/photos/08233a384cb472331b7c.webp",
+      "exists": true,
+      "bytes": 34772,
+      "width": 512,
+      "height": 489,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-10416",
+      "path": "assets/photos/9a89181c6a2716be43aa.webp",
+      "exists": true,
+      "bytes": 36330,
+      "width": 512,
+      "height": 331,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-10418",
+      "path": "assets/photos/c3c064f65c9b30e71f5f.webp",
+      "exists": true,
+      "bytes": 35950,
+      "width": 512,
+      "height": 351,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-10417",
+      "path": "assets/photos/b392027ed5eb9fc27cb7.webp",
+      "exists": true,
+      "bytes": 31284,
+      "width": 512,
+      "height": 272,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-43237",
+      "path": "assets/photos/735f7ee171a03415ca63.webp",
+      "exists": true,
+      "bytes": 50680,
+      "width": 512,
+      "height": 602,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-40708",
+      "path": "assets/photos/87ee711cbd9793244dfe.webp",
+      "exists": true,
+      "bytes": 59446,
+      "width": 512,
+      "height": 697,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-40674",
+      "path": "assets/photos/d571a908213b88356fbf.webp",
+      "exists": true,
+      "bytes": 35358,
+      "width": 512,
+      "height": 723,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-43239",
+      "path": "assets/photos/aa444099bcbe9c7b1957.webp",
+      "exists": true,
+      "bytes": 32144,
+      "width": 512,
+      "height": 390,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-77047",
+      "path": "assets/photos/f649d1b44f89bc6d2237.webp",
+      "exists": true,
+      "bytes": 31510,
+      "width": 512,
+      "height": 273,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-77049",
+      "path": "assets/photos/d24d970f6bf7c3cdb9eb.webp",
+      "exists": true,
+      "bytes": 43932,
+      "width": 512,
+      "height": 410,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-77048",
+      "path": "assets/photos/77831bdba0355ff5f932.webp",
+      "exists": true,
+      "bytes": 37818,
+      "width": 512,
+      "height": 301,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-77046",
+      "path": "assets/photos/46590777b49946853419.webp",
+      "exists": true,
+      "bytes": 40846,
+      "width": 512,
+      "height": 312,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-21257",
+      "path": "assets/photos/679ed7cfd9c5aee6c90e.webp",
+      "exists": true,
+      "bytes": 44476,
+      "width": 512,
+      "height": 389,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-21251",
+      "path": "assets/photos/07a94825a1094c5851f9.webp",
+      "exists": true,
+      "bytes": 26982,
+      "width": 512,
+      "height": 300,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-21255",
+      "path": "assets/photos/92f340fff927cf35a6e1.webp",
+      "exists": true,
+      "bytes": 27492,
+      "width": 512,
+      "height": 289,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-21254",
+      "path": "assets/photos/bd8589bbc8efadbf0a8f.webp",
+      "exists": true,
+      "bytes": 28928,
+      "width": 512,
+      "height": 240,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71429",
+      "path": "assets/photos/d5245cbabf5353bb6be2.webp",
+      "exists": true,
+      "bytes": 35208,
+      "width": 512,
+      "height": 403,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71431",
+      "path": "assets/photos/c7f09fcda177762d8925.webp",
+      "exists": true,
+      "bytes": 32034,
+      "width": 512,
+      "height": 381,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71430",
+      "path": "assets/photos/6839ef1210ea939a0530.webp",
+      "exists": true,
+      "bytes": 35248,
+      "width": 512,
+      "height": 359,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-71432",
+      "path": "assets/photos/40c8296aa39e5c1e8551.webp",
+      "exists": true,
+      "bytes": 40872,
+      "width": 512,
+      "height": 287,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-76425",
+      "path": "assets/photos/c3050a8cff58c61c2f3d.webp",
+      "exists": true,
+      "bytes": 29840,
+      "width": 512,
+      "height": 325,
+      "valid": true
+    },
+    {
+      "id": "apple-v4-3",
+      "path": "assets/photos/325d2727f601dbd4264e.webp",
+      "exists": true,
+      "bytes": 73550,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-x3",
+      "path": "assets/photos/be4fea77b4eb2d227fad.webp",
+      "exists": true,
+      "bytes": 14268,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-x4",
+      "path": "assets/photos/fdfae5c9670c9a3b70a7.webp",
+      "exists": true,
+      "bytes": 40728,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-x5",
+      "path": "assets/photos/c21d7784f3c1d204674e.webp",
+      "exists": true,
+      "bytes": 23492,
+      "width": 512,
+      "height": 198,
+      "valid": true
+    },
+    {
+      "id": "lego-v4-1",
+      "path": "assets/photos/ab031ed8a05f069f64d3.webp",
+      "exists": true,
+      "bytes": 50484,
+      "width": 512,
+      "height": 743,
+      "valid": true
+    },
+    {
+      "id": "lego-x9",
+      "path": "assets/photos/8ce918e6a0c9b689ea25.webp",
+      "exists": true,
+      "bytes": 17074,
+      "width": 512,
+      "height": 705,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-10941",
+      "path": "assets/photos/fa82b4352995e4a33895.webp",
+      "exists": true,
+      "bytes": 16186,
+      "width": 512,
+      "height": 377,
+      "valid": true
+    },
+    {
+      "id": "lego-v6-40478",
+      "path": "assets/photos/d6af82850387b4e916f9.webp",
+      "exists": true,
+      "bytes": 28890,
+      "width": 512,
+      "height": 646,
+      "valid": true
+    },
+    {
+      "id": "sephora-x1",
+      "path": "assets/photos/15761751af55d32eba24.webp",
+      "exists": true,
+      "bytes": 5186,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-v4-2",
+      "path": "assets/photos/ecae55d5c4b576d84d2f.webp",
+      "exists": true,
+      "bytes": 6172,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-v4-5",
+      "path": "assets/photos/052eef2d250b740fa74f.webp",
+      "exists": true,
+      "bytes": 9886,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x1",
+      "path": "assets/photos/c35ccb463d1176abb286.webp",
+      "exists": true,
+      "bytes": 7684,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x3",
+      "path": "assets/photos/9bdb59b2dd0d3d8f4372.webp",
+      "exists": true,
+      "bytes": 9278,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x5",
+      "path": "assets/photos/4c9b736b2af5bf929e13.webp",
+      "exists": true,
+      "bytes": 11870,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x8",
+      "path": "assets/photos/27dc7159a370f55ed564.webp",
+      "exists": true,
+      "bytes": 6688,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "tory-x9",
+      "path": "assets/photos/c2b9efeecb528e8cbb3a.webp",
+      "exists": true,
+      "bytes": 6032,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-x7",
+      "path": "assets/photos/db01d792a640a9eafc71.webp",
+      "exists": true,
+      "bytes": 23830,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x8",
+      "path": "assets/photos/953f6e7a74f0f9cf25e5.webp",
+      "exists": true,
+      "bytes": 13840,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x9",
+      "path": "assets/photos/b64d7306d9631fe59d36.webp",
+      "exists": true,
+      "bytes": 30048,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "ross-v4-1",
+      "path": "assets/photos/bdbaa5570047517624b3.webp",
+      "exists": true,
+      "bytes": 7368,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "marshalls-v4-3",
+      "path": "assets/photos/bdbaa5570047517624b3.webp",
+      "exists": true,
+      "bytes": 7368,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ross-x2",
+      "path": "assets/photos/331d29bb709fa1e3824a.webp",
+      "exists": true,
+      "bytes": 10116,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ross-v4-2",
+      "path": "assets/photos/840fb15a23b379d3508e.webp",
+      "exists": true,
+      "bytes": 5208,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "marshalls-v4-5",
+      "path": "assets/photos/00617f4307ebbf4cf24a.webp",
+      "exists": true,
+      "bytes": 6126,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "marshalls-v4-1",
+      "path": "assets/photos/b98609457ebea36ad603.webp",
+      "exists": true,
+      "bytes": 5712,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "target-x5",
+      "path": "assets/photos/15b7558ff0b31f5b6916.webp",
+      "exists": true,
+      "bytes": 13920,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-10",
+      "path": "assets/photos/8eb737a109a858f3cb48.webp",
+      "exists": true,
+      "bytes": 14470,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-8",
+      "path": "assets/photos/41778edb8d666db69155.webp",
+      "exists": true,
+      "bytes": 10204,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-14",
+      "path": "assets/photos/b9c225543c1c28226ba1.webp",
+      "exists": true,
+      "bytes": 12086,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-15",
+      "path": "assets/photos/66713fa1690c484670a4.webp",
+      "exists": true,
+      "bytes": 7260,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-12",
+      "path": "assets/photos/925c89eeb7c45c6dc29b.webp",
+      "exists": true,
+      "bytes": 5616,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "nordstrom-v4-4",
+      "path": "assets/photos/76f7cdd22b32409cd1e5.webp",
+      "exists": true,
+      "bytes": 5288,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "target-x2",
+      "path": "assets/photos/1b5f0198177b0d028f00.webp",
+      "exists": true,
+      "bytes": 9408,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-v4-4",
+      "path": "assets/photos/a11c715e02b080affbe8.webp",
+      "exists": true,
+      "bytes": 6322,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x2",
+      "path": "assets/photos/c7fb4e6cd7a3d5aae19e.webp",
+      "exists": true,
+      "bytes": 6574,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "ross-v4-5",
+      "path": "assets/photos/af9ce3a078966ea5befd.webp",
+      "exists": true,
+      "bytes": 8806,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "ross-x4",
+      "path": "assets/photos/61273097508990aca8f1.webp",
+      "exists": true,
+      "bytes": 8826,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "ross-x1",
+      "path": "assets/photos/96ee3a535bba50573e1b.webp",
+      "exists": true,
+      "bytes": 9888,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "r-tee",
+      "path": "assets/photos/554d22780b6090b10865.webp",
+      "exists": true,
+      "bytes": 16174,
+      "width": 512,
+      "height": 650,
+      "valid": true
+    },
+    {
+      "id": "m-watch",
+      "path": "assets/photos/cf8840875fe23f540535.webp",
+      "exists": true,
+      "bytes": 25206,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "ross-x5",
+      "path": "assets/photos/936cbd97a58e3e73c2c3.webp",
+      "exists": true,
+      "bytes": 26544,
+      "width": 512,
+      "height": 614,
+      "valid": true
+    },
+    {
+      "id": "target-v4-4",
+      "path": "assets/photos/5ea2157865372a4a192a.webp",
+      "exists": true,
+      "bytes": 24144,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-x5",
+      "path": "assets/photos/fb5b6a4fd496e21d2070.webp",
+      "exists": true,
+      "bytes": 21556,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "sephora-x6",
+      "path": "assets/photos/3fac6a3cfb702ae15f03.webp",
+      "exists": true,
+      "bytes": 3502,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "target-x6",
+      "path": "assets/photos/79b8c830b0de2a806480.webp",
+      "exists": true,
+      "bytes": 10528,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "target-x9",
+      "path": "assets/photos/d04f9e6ac4ff82c9b3e2.webp",
+      "exists": true,
+      "bytes": 18506,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "target-x10",
+      "path": "assets/photos/5fbff0f0f6e7dbed1cc1.webp",
+      "exists": true,
+      "bytes": 3634,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "apple-x6",
+      "path": "assets/photos/c9ddf6afe04d43b3886a.webp",
+      "exists": true,
+      "bytes": 516,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "apple-x8",
+      "path": "assets/photos/a3e80f315212c1feb5c7.webp",
+      "exists": true,
+      "bytes": 4528,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "apple-x9",
+      "path": "assets/photos/762cf0fe2ef810a90e12.webp",
+      "exists": true,
+      "bytes": 898,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "apple-x10",
+      "path": "assets/photos/e50401c11f131ece6ed1.webp",
+      "exists": true,
+      "bytes": 2522,
+      "width": 512,
+      "height": 269,
+      "valid": true
+    },
+    {
+      "id": "bathbody-v4-11",
+      "path": "assets/photos/da7ffcb5bc59a11e56ae.webp",
+      "exists": true,
+      "bytes": 13782,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "ross-v4-4",
+      "path": "assets/photos/c4e929600653fd200614.webp",
+      "exists": true,
+      "bytes": 9456,
+      "width": 512,
+      "height": 640,
+      "valid": true
+    },
+    {
+      "id": "longchamp-x10",
+      "path": "assets/photos/2d24fee2eb0b2f05ed79.webp",
+      "exists": true,
+      "bytes": 25672,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "r-knit",
+      "path": "assets/photos/e5c4b3ef9bda0b9812dd.webp",
+      "exists": true,
+      "bytes": 10200,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "target-x1",
+      "path": "assets/photos/98e307b3e1221d817b87.webp",
+      "exists": true,
+      "bytes": 21128,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "m-tee",
+      "path": "assets/photos/554d22780b6090b10865.webp",
+      "exists": true,
+      "bytes": 16174,
+      "width": 512,
+      "height": 650,
+      "valid": true
+    },
+    {
+      "id": "m-knit",
+      "path": "assets/photos/e5c4b3ef9bda0b9812dd.webp",
+      "exists": true,
+      "bytes": 10200,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "n-scent",
+      "path": "assets/photos/da0761a6e52e4eef3ba3.webp",
+      "exists": true,
+      "bytes": 13236,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    },
+    {
+      "id": "marshalls-v4-2",
+      "path": "assets/photos/b5d06e7832a0829880f7.webp",
+      "exists": true,
+      "bytes": 10454,
+      "width": 512,
+      "height": 538,
+      "valid": true
+    },
+    {
+      "id": "target-v4-5",
+      "path": "assets/photos/309ff313991899f31bd7.webp",
+      "exists": true,
+      "bytes": 2330,
+      "width": 512,
+      "height": 312,
+      "valid": true
+    },
+    {
+      "id": "marshalls-x4",
+      "path": "assets/photos/ff1af7467aa0663575e4.webp",
+      "exists": true,
+      "bytes": 8464,
+      "width": 512,
+      "height": 526,
+      "valid": true
+    },
+    {
+      "id": "sephora-v4-2",
+      "path": "assets/photos/13055e1ea6fb391d0565.webp",
+      "exists": true,
+      "bytes": 4858,
+      "width": 512,
+      "height": 512,
+      "valid": true
+    }
+  ]
+}

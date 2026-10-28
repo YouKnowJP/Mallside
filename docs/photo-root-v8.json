@@ -1,0 +1,398 @@
+{
+  "entries": [
+    {
+      "ids": [
+        "coach-v4-2"
+      ],
+      "source": "https://www.coach.com/products/upcrafted-pillow-tabby-shoulder-bag-18/CV107.html",
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cv107_lhaee_a0?$desktopProduct$",
+      "description": "Exact archived CV107 Custom Pillow Tabby Shoulder Bag 18, official product gallery.",
+      "path": "assets/photos/8a1f7ac94facbe25296e.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cv107_lhaee_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 7124,
+      "sha256": "8a1f7ac94facbe25296eedddc5df8d14d4a9cbb6782d3548877386156132dbcf",
+      "originalPath": "assets/v8-root/coach-v4-2.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-1"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/2e66/6be4/0db5458d8722/3a8dc386c32c/20120918999-e20/20120918999-e20.jpg?ts=1777019370149&w=560",
+      "source": "https://www.zara.com/us/en/cocoa-sunset-edp-100ml--3-4-fl--oz---p20120918.html",
+      "description": "COCOA SUNSET EDP 100ML (3.4 FL. OZ). — exact official Zara product gallery.",
+      "path": "assets/photos/62bf118d4893a7f08206.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/2e66/6be4/0db5458d8722/3a8dc386c32c/20120918999-e20/20120918999-e20.jpg?ts=1777019370149&w=560",
+      "bytes": 21060,
+      "sha256": "62bf118d4893a7f08206f33ce9af9657657976223ada8914e71ca4e92e064854",
+      "originalPath": "assets/v8-root/zara-v4-1.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-3"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/eaa9/eaa1/721742e18f7f/c7736bbbcf36/20110988999-000-e20/20110988999-000-e20.jpg?ts=1781509540097&w=560",
+      "source": "https://www.zara.com/us/en/fashionably-london-edp-100-ml--3-4-fl--oz---p20110988.html",
+      "description": "FASHIONABLY LONDON EDP 100 ML (3.4 FL. OZ.) — exact official Zara product gallery.",
+      "path": "assets/photos/abd7e03be2cf5755c190.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/eaa9/eaa1/721742e18f7f/c7736bbbcf36/20110988999-000-e20/20110988999-000-e20.jpg?ts=1781509540097&w=560",
+      "bytes": 26506,
+      "sha256": "abd7e03be2cf5755c190f1a198c27cd32900f8a82f1eb3ec6e8fdd8c13d64f19",
+      "originalPath": "assets/v8-root/zara-v4-3.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-2"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/2478/88fa/624f4849a447/f07b5be965c0/20120919999-e20/20120919999-e20.jpg?ts=1777027567153&w=560",
+      "source": "https://www.zara.com/us/en/cocoa-bliss-edp-100-ml--3-4-fl--oz---p20120919.html",
+      "description": "COCOA BLISS EDP 100 ML (3.4 FL. OZ.) — exact official Zara product gallery.",
+      "path": "assets/photos/081f7d5ae59cf96b2e30.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/2478/88fa/624f4849a447/f07b5be965c0/20120919999-e20/20120919999-e20.jpg?ts=1777027567153&w=560",
+      "bytes": 29954,
+      "sha256": "081f7d5ae59cf96b2e30e71f3f92f13e19394c01f14b90c47773656762b6f42a",
+      "originalPath": "assets/v8-root/zara-v4-2.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-6"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/241a/1e11/082943618ebf/c3244bb43cdf/20110822999-e20/20110822999-e20.jpg?ts=1774519878542&w=560",
+      "source": "https://www.zara.com/us/en/energetically-new-york-elixir-parfum-100ml--3-4-fl-oz---p20110822.html",
+      "description": "ENERGETICALLY NEW YORK ELIXIR PARFUM 100ML (3.4 FL.OZ) — exact official Zara product gallery.",
+      "path": "assets/photos/ebf97975ecbd453b3d6e.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/241a/1e11/082943618ebf/c3244bb43cdf/20110822999-e20/20110822999-e20.jpg?ts=1774519878542&w=560",
+      "bytes": 16884,
+      "sha256": "ebf97975ecbd453b3d6ebe6ff1dbec4b07f176424d8004a4d560a878434ccbc2",
+      "originalPath": "assets/v8-root/zara-v4-6.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-4"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/7253/bc1b/2975490d802d/b33d58de7acf/20110820999-e20/20110820999-e20.jpg?ts=1774519833044&w=560",
+      "source": "https://www.zara.com/us/en/fashionably-london-elixir-parfum-100-ml--3-4-fl--oz---p20110820.html",
+      "description": "FASHIONABLY LONDON ELIXIR PARFUM 100 ML (3.4 FL. OZ.) — exact official Zara product gallery.",
+      "path": "assets/photos/19df68b25bf2a6b1e53a.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/7253/bc1b/2975490d802d/b33d58de7acf/20110820999-e20/20110820999-e20.jpg?ts=1774519833044&w=560",
+      "bytes": 15162,
+      "sha256": "19df68b25bf2a6b1e53af9a37c9647afdfb3fd0ee3bd4fb1e522faf99ae6d112",
+      "originalPath": "assets/v8-root/zara-v4-4.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-5"
+      ],
+      "source": "https://www.zara.com/us/en/energetically-new-york-edp-100-ml--3-4-fl--oz---p20110945.html",
+      "imageUrl": "https://static.zara.net/assets/public/853f/6d24/c88d4226a02b/f13a4e41d0e3/20110945999-000-e20/20110945999-000-e20.jpg?ts=1781509461196&w=560",
+      "description": "ENERGETICALLY NEW YORK EDP 100ML (3.4 FL.OZ). — exact official product gallery.",
+      "path": "assets/photos/ded300594221387b4d8e.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/853f/6d24/c88d4226a02b/f13a4e41d0e3/20110945999-000-e20/20110945999-000-e20.jpg?ts=1781509461196&w=560",
+      "bytes": 21572,
+      "sha256": "ded300594221387b4d8e8969a7e5241be6f56049badf41f348a495ccf685ed7d",
+      "originalPath": "assets/v8-root/zara-v4-5.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-7"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/e765/dfbe/6671433b900a/ed0bfdb0d200/20110242999-e20/20110242999-e20.jpg?ts=1774518012862&w=560",
+      "source": "https://www.zara.com/us/en/red-zara-temptation-edp-80ml--2-71-fl--oz--p20110242.html",
+      "description": "RED ZARA TEMPTATION EDP 80 ML (2.71 FL. OZ) — exact official product gallery.",
+      "path": "assets/photos/304e4e6b65a416fe26b5.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/e765/dfbe/6671433b900a/ed0bfdb0d200/20110242999-e20/20110242999-e20.jpg?ts=1774518012862&w=560",
+      "bytes": 63074,
+      "sha256": "304e4e6b65a416fe26b5edf532207bf8402f9c70fa6f7343b7a7d66db3656e96",
+      "originalPath": "assets/v8-root/zara-v4-7.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-8"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/a2c8/890f/6f5d49ba8d89/167487448b48/20110829999-e20/20110829999-e20.jpg?ts=1774517974618&w=560",
+      "source": "https://www.zara.com/us/en/red-zara-temptation-elixir-parfum-80ml--2-71-fl--oz---p20110829.html",
+      "description": "RED ZARA TEMPTATION ELIXIR PARFUM 80 ML (2.71 FL. OZ.) — exact official product gallery.",
+      "path": "assets/photos/ac5742a5cef33974defe.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/a2c8/890f/6f5d49ba8d89/167487448b48/20110829999-e20/20110829999-e20.jpg?ts=1774517974618&w=560",
+      "bytes": 28708,
+      "sha256": "ac5742a5cef33974defe20afdaff05472c0e089f17104364f6bed0762a1300b8",
+      "originalPath": "assets/v8-root/zara-v4-8.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-9"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/0ce7/db54/3a6949e1a766/4ea6303e2d05/20110939999-e22/20110939999-e22.jpg?ts=1787909645130&w=560",
+      "source": "https://www.zara.com/us/en/red-zara-temptation-winter-edp-80ml--2-71-fl--oz---p20110939.html",
+      "description": "RED ZARA TEMPTATION WINTER EDP 80ML (2.71 FL. OZ.) — exact official product gallery.",
+      "path": "assets/photos/7e66054a0e2efcfc8a78.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/0ce7/db54/3a6949e1a766/4ea6303e2d05/20110939999-e22/20110939999-e22.jpg?ts=1787909645130&w=560",
+      "bytes": 15594,
+      "sha256": "7e66054a0e2efcfc8a78e91d39bc86e040e26c80ccdb1a0e54d5a9eeeef51e6c",
+      "originalPath": "assets/v8-root/zara-v4-9.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-10"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/56f5/cc8c/7a2144fb8a49/a511b45048f0/20110603999-e20/20110603999-e20.jpg?ts=1774517692580&w=560",
+      "source": "https://www.zara.com/us/en/red-zara-temptation---vanille-extrait-de-parfum-50ml--1-7-fl--oz---p20110603.html",
+      "description": "RED ZARA TEMPTATION & VANILLE EXTRAIT DE PARFUM 50ML (1.7 FL. OZ). — exact official product gallery.",
+      "path": "assets/photos/56f3c1b74727ef59f99f.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/56f5/cc8c/7a2144fb8a49/a511b45048f0/20110603999-e20/20110603999-e20.jpg?ts=1774517692580&w=560",
+      "bytes": 72832,
+      "sha256": "56f3c1b74727ef59f99f5acb6c5a638abc1f58680a598db988768032927fd10e",
+      "originalPath": "assets/v8-root/zara-v4-10.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-11"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/b9c8/76c0/f4d24c82818a/9ab5aa73b7ff/20110604999-e20/20110604999-e20.jpg?ts=1774517686515&w=560",
+      "source": "https://www.zara.com/us/en/red-zara-temptation-tobacco-extrait-de-parfum-50ml--1-7-fl--oz---p20110604.html",
+      "description": "RED ZARA TEMPTATION TOBACCO EXTRAIT DE PARFUM 50ML (1.7 FL. OZ). — exact official product gallery.",
+      "path": "assets/photos/611df5bf8af7928a427d.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/b9c8/76c0/f4d24c82818a/9ab5aa73b7ff/20110604999-e20/20110604999-e20.jpg?ts=1774517686515&w=560",
+      "bytes": 34836,
+      "sha256": "611df5bf8af7928a427d5ac92d742b00593597a623d0db75b02dbeb6db34e1e3",
+      "originalPath": "assets/v8-root/zara-v4-11.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-14"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/a30c/c0ab/44a14c0dac8b/e3fdc9e50b4e/20130309999-000-e20/20130309999-000-e20.jpg?ts=1789730229593&w=560",
+      "source": "https://www.zara.com/us/en/deep-garden-edp-100-ml--3-4-fl--oz---p20130309.html",
+      "description": "DEEP GARDEN EDP 100 ML (3.4 FL. OZ.) — exact official product gallery.",
+      "path": "assets/photos/2c741e71eb59f00b9b4d.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/a30c/c0ab/44a14c0dac8b/e3fdc9e50b4e/20130309999-000-e20/20130309999-000-e20.jpg?ts=1789730229593&w=560",
+      "bytes": 16446,
+      "sha256": "2c741e71eb59f00b9b4da17b41e6bb1073d810ac2546d164d0af334e6bf6a756",
+      "originalPath": "assets/v8-root/zara-v4-14.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-15"
+      ],
+      "imageUrl": "https://static.zara.net/assets/public/e275/7a52/ad1843fab322/f7b1a2758018/20130300999-e20/20130300999-e20.jpg?ts=1783594488023&w=560",
+      "source": "https://www.zara.com/us/en/nude-bouquet-edp-100-ml--3-4-fl--oz---p20130300.html",
+      "description": "NUDE BOUQUET EDP 100 ML (3.4 FL. OZ.) — exact official product gallery.",
+      "path": "assets/photos/4b23f2c5e34f0e291da2.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/e275/7a52/ad1843fab322/f7b1a2758018/20130300999-e20/20130300999-e20.jpg?ts=1783594488023&w=560",
+      "bytes": 13476,
+      "sha256": "4b23f2c5e34f0e291da2aae4831961239fcfedae5f32b29082cc141899e1c3f4",
+      "originalPath": "assets/v8-root/zara-v4-15.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-12"
+      ],
+      "source": "https://www.zara.com/us/en/red-zara-temptation---sandalwood-extrait-de-parfum-50-ml--1-7-fl--oz---p20110606.html",
+      "imageUrl": "https://static.zara.net/assets/public/9417/90c5/ae014e2db735/18299d0521d3/20110606999-e20/20110606999-e20.jpg?ts=1774517689297&w=560",
+      "description": "RED ZARA TEMPTATION & SANDALWOOD EXTRAIT DE PARFUM 50 ML (1.7 FL. OZ.) — exact official product gallery.",
+      "path": "assets/photos/42877b39ff7515dc536e.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/9417/90c5/ae014e2db735/18299d0521d3/20110606999-e20/20110606999-e20.jpg?ts=1774517689297&w=560",
+      "bytes": 76592,
+      "sha256": "42877b39ff7515dc536e1acaa1ae7f47b6d8ce6e1357969c6c944c2e914f22fd",
+      "originalPath": "assets/v8-root/zara-v4-12.webp"
+    },
+    {
+      "ids": [
+        "coach-v4-1",
+        "nordstrom-v4-2"
+      ],
+      "source": "https://www.coach.com/products/swing-zip-bag/CM565.html",
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cm565_b4ha_a0?$desktopProduct$",
+      "description": "Swing Zip Bag | Bags | Coach — exact official product gallery.",
+      "path": "assets/photos/22e9e57c6ea524979a0c.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cm565_b4ha_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 6378,
+      "sha256": "22e9e57c6ea524979a0cbb00979fb92aee9d27c70557aab3d61ee6d37a403524",
+      "originalPath": "assets/v8-root/coach-v4-1.webp"
+    },
+    {
+      "ids": [
+        "coach-v4-3"
+      ],
+      "source": "https://www.coach.com/products/juliet-shoulder-bag-25/CAD75-LHBLK.html",
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cad75_lhblk_a0?$desktopProduct$",
+      "description": "Juliet Shoulder Bag 25 — exact official product gallery.",
+      "path": "assets/photos/0474659a9ce9ba6c64b1.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cad75_lhblk_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 10778,
+      "sha256": "0474659a9ce9ba6c64b1509a65f3a0884ef9179e7e24b19d2173b958b9a9084f",
+      "originalPath": "assets/v8-root/coach-v4-3.webp"
+    },
+    {
+      "ids": [
+        "zara-v4-13"
+      ],
+      "source": "https://www.zara.com/us/en/lightly-bloom-edp-100-ml--3-4-fl--oz--p20130307.html",
+      "imageUrl": "https://static.zara.net/assets/public/5523/0ec5/b4ba44b689fc/3bca49d73f51/20130307999-000-e20/20130307999-000-e20.jpg?ts=1789730223570&w=560",
+      "description": "LIGHTLY BLOOM EDP 100 ML (3.4 FL. OZ) — exact official product gallery.",
+      "path": "assets/photos/86c8b62c5cc202c7c3d8.webp",
+      "downloadedFrom": "https://static.zara.net/assets/public/5523/0ec5/b4ba44b689fc/3bca49d73f51/20130307999-000-e20/20130307999-000-e20.jpg?ts=1789730223570&w=560",
+      "bytes": 14980,
+      "sha256": "86c8b62c5cc202c7c3d8e2e94306b96d618a93a3e04469cf797adc4cae40687a",
+      "originalPath": "assets/v8-root/zara-v4-13.webp"
+    },
+    {
+      "ids": [
+        "coach-x7"
+      ],
+      "source": "https://www.coach.com/products/chelsea-shoulder-bag-30/CDS58.html?frp=CDS58+B4MPL",
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cds58_b4mpl_a0?$desktopProductTile$",
+      "description": "COACH®,Chelsea Shoulder Bag 30,Leather,Suede,Shoulder Bag,Lined,Brass,Casual,Brown,Front View — exact named official product card.",
+      "path": "assets/photos/607dac516f5b7148b104.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cds58_b4mpl_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 7370,
+      "sha256": "607dac516f5b7148b1046fbe19d5d6304245ef3108eadec1d14ec9085b2c738a",
+      "originalPath": "assets/v8-root/coach-x7.webp"
+    },
+    {
+      "ids": [
+        "coach-x8"
+      ],
+      "source": "https://www.coach.com/products/belted-ergo-shoulder-bag-26-in-signature-jacquard/CEN87.html?frp=CEN87+B4Z38",
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cen87_b4z38_a0?$desktopProductTile$",
+      "description": "COACH®,Belted Ergo Shoulder Bag 26 In Signature Jacquard,Cotton,Recycled Polyester,Polyester,Leather,Shoulder Bag,Metal Mater,,Front View — exact named official product card.",
+      "path": "assets/photos/e78bde98868f9095d3c7.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cen87_b4z38_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 12640,
+      "sha256": "e78bde98868f9095d3c7a899245951a62e4f13fbf9441f057d1dc67a0f8705ac",
+      "originalPath": "assets/v8-root/coach-x8.webp"
+    },
+    {
+      "ids": [
+        "coach-x6"
+      ],
+      "source": "https://www.coach.com/products/soft-tabby-shoulder-bag-20/CFQ98.html?frp=CFQ98+B4%2FBK",
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cfq98_b4bk_a0?$desktopProductTile$",
+      "description": "COACH®,Soft Tabby Shoulder Bag 20,Leather,Crossbody,Shoulder Bag,Metal Material,Metal,Logo,Adjustable,Lined,Compact,Brass,Gol,Black,Front View — exact named official product card.",
+      "path": "assets/photos/767235e694a60dcec310.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cfq98_b4bk_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 9250,
+      "sha256": "767235e694a60dcec31093f514733bffe97314deb3c17f26ce190b572b7c7bbb",
+      "originalPath": "assets/v8-root/coach-x6.webp"
+    },
+    {
+      "ids": [
+        "coach-x1",
+        "nordstrom-x1"
+      ],
+      "source": "https://www.coach.com/products/tabby-shoulder-bag-26/CFQ88.html?frp=CFQ88+B4AYS",
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cfq88_b4ays_a0?$desktopProductTile$",
+      "description": "COACH®,Tabby Shoulder Bag 26,Leather,Crossbody,Logo,Adjustable,Insulated,Gold Metal,Formal,Maroon,Front View — exact named official product card.",
+      "path": "assets/photos/61d5f1763c2f46dfbaac.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cfq88_b4ays_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 13848,
+      "sha256": "61d5f1763c2f46dfbaac92ce76ba00fb018476bc090e6d84f2762348df26e1a6",
+      "originalPath": "assets/v8-root/coach-x1.webp"
+    },
+    {
+      "ids": [
+        "coach-x2"
+      ],
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cfr13_b4ays_a0?$desktopProduct$",
+      "source": "https://www.coach.com/products/brooklyn-shoulder-bag-28/CFR13.html",
+      "description": "Brooklyn Shoulder Bag 28 | Bags | Coach — exact official named model gallery.",
+      "path": "assets/photos/812cd94373f6d5026596.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cfr13_b4ays_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 7692,
+      "sha256": "812cd94373f6d5026596b93521e2062a717ad20c786e37cdcdaa1157e5f01cea",
+      "originalPath": "assets/v8-root/coach-x2.webp"
+    },
+    {
+      "ids": [
+        "coach-x3"
+      ],
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cw636_b4wbr_a0?$desktopProduct$",
+      "source": "https://uk.coach.com/products/brooklyn-shoulder-bag-39/CW636-B4WBR.html",
+      "description": "Brooklyn Shoulder Bag 39 — exact official named model gallery.",
+      "path": "assets/photos/e9b35f23e721b513a412.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cw636_b4wbr_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 6244,
+      "sha256": "e9b35f23e721b513a412d81f371c82a7ece510cf5f0eb15faa07da89809dfda2",
+      "originalPath": "assets/v8-root/coach-x3.webp"
+    },
+    {
+      "ids": [
+        "coach-x4"
+      ],
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/c0638_b4ha_a0?$desktopProduct$",
+      "source": "https://www.coach.com/products/swinger-bag/C0638.html",
+      "description": "Swinger Bag | Bags | Coach — exact official named model gallery.",
+      "path": "assets/photos/aa34276b049188daa18e.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/c0638_b4ha_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 6632,
+      "sha256": "aa34276b049188daa18e1ec9290699212ca8cecde3f52a0968f3a95dc0d8f378",
+      "originalPath": "assets/v8-root/coach-x4.webp"
+    },
+    {
+      "ids": [
+        "coach-x5"
+      ],
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/c0689_v5for_a0?$desktopThumbnail$",
+      "source": "https://www.coach.com/products/willow-tote-bag/C0689-V5FOR.html",
+      "description": "Willow Tote Bag | COACH® — official named model gallery.",
+      "path": "assets/photos/b57cdc5f44cd114f9f23.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/c0689_v5for_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 12522,
+      "sha256": "b57cdc5f44cd114f9f23429c9c2a149536d52745a9bd4b5e997f1b335e7c78b9",
+      "originalPath": "assets/v8-root/coach-x5.webp"
+    },
+    {
+      "ids": [
+        "coach-v4-4"
+      ],
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cw642_lhblk_a0?$desktopProduct$",
+      "source": "https://www.coach.com/products/sac-hobo-hamptons/CW642.html",
+      "description": "Hamptons Hobo Bag | Bags | Coach — official named model gallery.",
+      "path": "assets/photos/5dcc14caa198b60ff5f0.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cw642_lhblk_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 5972,
+      "sha256": "5dcc14caa198b60ff5f0fe0f2b19dc04ae74f6edcc9f53bb636127578582f3d7",
+      "originalPath": "assets/v8-root/coach-v4-4.webp"
+    },
+    {
+      "ids": [
+        "coach-x9"
+      ],
+      "imageUrl": "https://id.coach.com/media/catalog/product/c/m/cm574_b4be_a0_wid_1500_hei_1500.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=270&width=270&canvas=270:270",
+      "source": "https://id.coach.com/rogue-25.html",
+      "description": "Rogue 25 — official named model gallery.",
+      "path": "assets/photos/10ff679a44e48abc6684.webp",
+      "downloadedFrom": "https://id.coach.com/media/catalog/product/c/m/cm574_b4be_a0_wid_1500_hei_1500.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=270&width=270&canvas=270:270",
+      "bytes": 5766,
+      "sha256": "10ff679a44e48abc66843768f0aca96731c5539441f1f923a2a983315a437085",
+      "originalPath": "assets/v8-root/coach-x9.webp"
+    },
+    {
+      "ids": [
+        "coach-v4-5"
+      ],
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cv962_svnii_a0?$desktopProduct$",
+      "source": "https://www.coachoutlet.com/products/rowan-satchel-bag/CV962-SVNII.html",
+      "description": "Rowan Satchel Bag | Bags | Coach — exact official model gallery.",
+      "path": "assets/photos/88995c0cb7369807b187.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cv962_svnii_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 8990,
+      "sha256": "88995c0cb7369807b187b5ae6c8fe0e9c02a6d95bf54b9b930362a298c001212",
+      "originalPath": "assets/v8-root/coach-v4-5.webp"
+    },
+    {
+      "ids": [
+        "coach-x10"
+      ],
+      "imageUrl": "https://coach.scene7.com/is/image/Coach/cp158_lhvra_a0?$desktopProduct$",
+      "source": "https://www.coach.com/products/CP158.html",
+      "description": "Cargo Tote Bag | Bags | Coach — exact official model gallery.",
+      "path": "assets/photos/63adc03189f6a6963290.webp",
+      "downloadedFrom": "https://coach.scene7.com/is/image/Coach/cp158_lhvra_a0?$desktopProduct$&wid=700&hei=900&fit=fit",
+      "bytes": 18452,
+      "sha256": "63adc03189f6a6963290a8d075b0fa04c9ccbe97cfab6d2bacdfd4bba3fa2b5b",
+      "originalPath": "assets/v8-root/coach-x10.webp"
+    }
+  ],
+  "missing": [],
+  "errors": []
+}

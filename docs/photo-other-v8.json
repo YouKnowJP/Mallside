@@ -1,0 +1,2127 @@
+{
+  "checkedOn": "2026-10-26",
+  "entries": [
+    {
+      "id": "r-bag",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0698/7372/9715/files/JS0A4QUEA5Y-FRONT.png?v=1792614623&width=600",
+      "source": "https://www.jansport.com/products/superbreak-plus-js0a4que",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/81036d6b4d24d071b022.webp",
+      "originalPath": "assets/pack.png"
+    },
+    {
+      "id": "n-sandal",
+      "imageUrl": "https://www.birkenstock.com/on/demandware.static/-/Sites-master-catalog-amer/default/dw63c4f9dc/151181/151181.jpg",
+      "source": "https://www.birkenstock.com/us/arizona-birko-flor-nubuck/arizona-core-birkoflornubuck-0-eva-u_650.html",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/1e1f64afcbeaca4d8b4d.webp",
+      "originalPath": "assets/birken.jpg"
+    },
+    {
+      "id": "ross-x3",
+      "imageUrl": "https://media.crocs.com/images/t_standard/products/10001_001_ALT140/crocs",
+      "source": "https://www.crocs.com/p/classic-clog/10001.html",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/d309d1c367638738f700.webp",
+      "originalPath": "assets/ross-x3.png"
+    },
+    {
+      "id": "marshalls-x5",
+      "imageUrl": "https://media.crocs.com/images/t_standard/products/10001_001_ALT140/crocs",
+      "source": "https://www.crocs.com/p/classic-clog/10001.html",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/d309d1c367638738f700.webp",
+      "originalPath": "assets/marshalls-x5.png"
+    },
+    {
+      "id": "target-x3",
+      "imageUrl": "https://nalgene.com/wp-content/uploads/2025/12/nalgene-water-bottles.jpg",
+      "source": "https://nalgene.com/product/32oz-wide-mouth-bottle/",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/8eecfe021dfbdb1b110a.webp",
+      "originalPath": "assets/target-x3.jpg"
+    },
+    {
+      "id": "target-x8",
+      "imageUrl": "https://shop.mattel.com/cdn/shop/files/08ee715e62544e07b86c0db46a38164d52f092a6_11fed6df-804f-4b27-a954-6ec8a3e71e7e.jpg?v=1781708125",
+      "source": "https://shop.mattel.com/products/uno-card-game-42003",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/58ce1bbfe11e82224464.webp",
+      "originalPath": "assets/target-x8.jpg"
+    },
+    {
+      "id": "lego-x2",
+      "imageUrl": "https://www.lego.com/cdn/cs/set/assets/blt4fa1e0206e541309/10281_Prod.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+      "source": "https://www.lego.com/en-us/product/bonsai-tree-10281",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/1d5d10754f1e55c26db9.webp",
+      "originalPath": "assets/lego-x2.jpg"
+    },
+    {
+      "id": "lego-x3",
+      "imageUrl": "https://www.lego.com/cdn/cs/set/assets/bltc4a6c2103a34f22e/10313_alt2.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+      "source": "https://www.lego.com/en-us/product/wildflower-bouquet-10313",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/c13d0082da707ee4f895.webp",
+      "originalPath": "assets/lego-x3.jpg"
+    },
+    {
+      "id": "lego-x4",
+      "imageUrl": "https://www.lego.com/cdn/cs/set/assets/blt65dad1067eb63ecc/10309.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+      "source": "https://www.lego.com/en-us/product/succulents-10309",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/d6d81b5d323c945c32bb.webp",
+      "originalPath": "assets/lego-x4.jpg"
+    },
+    {
+      "id": "lego-x5",
+      "imageUrl": "https://www.lego.com/cdn/cs/set/assets/blt08f4d88d801a4cf8/10328.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+      "source": "https://www.lego.com/en-us/product/bouquet-of-roses-10328",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/734fc60cb7fc2ac1578d.webp",
+      "originalPath": "assets/lego-x5.jpg"
+    },
+    {
+      "id": "lego-x6",
+      "imageUrl": "https://www.lego.com/cdn/cs/set/assets/bltb2f845ffd52a25b0/10329.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+      "source": "https://www.lego.com/en-us/product/tiny-plants-10329",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/78ba49a64e50f13a7379.webp",
+      "originalPath": "assets/lego-x6.jpg"
+    },
+    {
+      "id": "sephora-x3",
+      "imageUrl": "http://soldejaneiro.com/cdn/shop/files/01_SDJ_PPage_DTC_BB_BC_240ML_OVERHEAD_RGB_1452X1452_cb5b3d96-578a-4163-8c34-8c815fc465eb.jpg?v=1788873312",
+      "source": "https://soldejaneiro.com/products/brazilian-bum-bum-cream",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/dc4da710f0271e1df1e8.webp",
+      "originalPath": "assets/sephora-x3.jpg"
+    },
+    {
+      "id": "sephora-x8",
+      "imageUrl": "http://soldejaneiro.com/cdn/shop/files/01_SDJ_PPage_DTC_C62_240ML_OVERHEAD_RGB_1452X1452_222bd1a6-2a46-4d97-9101-d4c20edacc6c.jpg?v=1788866500",
+      "source": "https://soldejaneiro.com/products/brazilian-crush-cheirosa-62-hair-body-fragrance-mist",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/0ac660d5b604c546333d.webp",
+      "originalPath": "assets/sephora-x8.jpg"
+    },
+    {
+      "id": "sephora-x10",
+      "imageUrl": "http://us.laneige.com/cdn/shop/files/LSM_AMS_Infographic_2000x2000_Product_1_1.jpg?v=1782825855&width=1200",
+      "source": "https://us.laneige.com/products/lip-sleeping-mask",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/9053004add87e0bc79d4.webp",
+      "originalPath": "assets/sephora-x10.jpg"
+    },
+    {
+      "id": "apple-x7",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXK53?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1730508286345",
+      "source": "https://www.apple.com/shop/product/mxk53am/a/magic-mouse-usb-c-white-multi-touch-surface",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/85332c81e5514f20248e.webp",
+      "originalPath": "assets/apple-x7.jpg"
+    },
+    {
+      "id": "muji-v6-8783873278142",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076743385_03_org.jpg?v=1777331143&width=600",
+      "source": "https://www.muji.us/products/cotton-wide-tote-bag-eg0eha6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/33a37cbb88cf5234b72a.webp",
+      "originalPath": "assets/muji-v6-8783873278142.jpg"
+    },
+    {
+      "id": "muji-v6-8709562958014",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076742883_02_org.jpg?v=1772475879&width=600",
+      "source": "https://www.muji.us/products/water-repellent-ripstop-shoulder-bag-ef0fwa6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/d3dbf18304e16f9e6498.webp",
+      "originalPath": "assets/muji-v6-8709562958014.jpg"
+    },
+    {
+      "id": "muji-v6-8709557223614",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076742838_01_org.jpg?v=1770941691&width=600",
+      "source": "https://www.muji.us/products/water-repellent-ripstop-backpack-ef0fva6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/1626d060f308c7b4ec16.webp",
+      "originalPath": "assets/muji-v6-8709557223614.jpg"
+    },
+    {
+      "id": "muji-v6-8705461977278",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076743552_05_org.jpg?v=1770427337&width=600",
+      "source": "https://www.muji.us/products/tanned-leather-drawstring-bag-egb70a6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/bcda27089e390a9cfc7d.webp",
+      "originalPath": "assets/muji-v6-8705461977278.jpg"
+    },
+    {
+      "id": "muji-v6-8705402699966",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076743545_06_org.jpg?v=1770426839&width=600",
+      "source": "https://www.muji.us/products/tanned-leather-mini-tote-bag-egb60a6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/ee09ab7f1436fc3ff484.webp",
+      "originalPath": "assets/muji-v6-8705402699966.jpg"
+    },
+    {
+      "id": "muji-v6-8705398800574",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076743460_06_org.jpg?v=1770425425&width=600",
+      "source": "https://www.muji.us/products/tanned-leather-shoulder-bag-egb57a6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/440d943c9f8d7b503d37.webp",
+      "originalPath": "assets/muji-v6-8705398800574.jpg"
+    },
+    {
+      "id": "muji-v6-8658123849918",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076173502_01_org.jpg?v=1767640673&width=600",
+      "source": "https://www.muji.us/products/water-repellent-2-way-shoulder-bag-efd40a6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/4a1e9477956e508550a3.webp",
+      "originalPath": "assets/muji-v6-8658123849918.jpg"
+    },
+    {
+      "id": "muji-v6-8655905063102",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076173496_01_org.jpg?v=1767395757&width=600",
+      "source": "https://www.muji.us/products/water-repellent-shoulder-bag-efd12a6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/dd07fc92448b5e8fa5a6.webp",
+      "originalPath": "assets/muji-v6-8655905063102.jpg"
+    },
+    {
+      "id": "muji-v6-8642980806846",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076173786_02_org_a45c8ff4-7591-4447-932a-37b17bbdf9ff.jpg?v=1776710641&width=600",
+      "source": "https://www.muji.us/products/canvas-wide-tote-bag-egb20a6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/2212f670922df9bc13db.webp",
+      "originalPath": "assets/muji-v6-8642980806846.jpg"
+    },
+    {
+      "id": "muji-v6-8642973106366",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076173731_01_org_7fb699af-a904-4403-96ee-aa1f36795d80.jpg?v=1776710606&width=600",
+      "source": "https://www.muji.us/products/canvas-shoulder-tote-bag-eg0eea6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/f96d41fcb6088f14dba5.webp",
+      "originalPath": "assets/muji-v6-8642973106366.jpg"
+    },
+    {
+      "id": "muji-v6-8637629759678",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076172208_01_org.jpg?v=1766598122&width=600",
+      "source": "https://www.muji.us/products/less-tiring-water-repellent-backpack-ece01a6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/4770349f492362030712.webp",
+      "originalPath": "assets/muji-v6-8637629759678.jpg"
+    },
+    {
+      "id": "muji-v6-8638217748670",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4550512371984_04_org_95e3cd05-fd81-4c47-bc61-a2dd6ad50bec.jpg?v=1762448861&width=600",
+      "source": "https://www.muji.us/products/idee-marche-bag-workers-ydabqa4s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/9ebc3e30afa5646ec142.webp",
+      "originalPath": "assets/muji-v6-8638217748670.jpg"
+    },
+    {
+      "id": "muji-v6-8638217027774",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4550512372097_04_org_71e5ca7e-8706-4f3d-b433-2f1ae17a9a2d.jpg?v=1762448862&width=600",
+      "source": "https://www.muji.us/products/idee-marche-bag-botanical-ydabsa4s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/085ae2d37f126f6339bb.webp",
+      "originalPath": "assets/muji-v6-8638217027774.jpg"
+    },
+    {
+      "id": "muji-v6-8638202871998",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4550512372202_05_org_dca82926-e13d-44c2-8356-53587f7d2460.jpg?v=1762448862&width=600",
+      "source": "https://www.muji.us/products/idee-marche-bag-bowerbird-ydabra4s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/508cfd4a652243178697.webp",
+      "originalPath": "assets/muji-v6-8638202871998.jpg"
+    },
+    {
+      "id": "muji-v6-8634909196478",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4548076173557_01_org_78f60e35-d3f2-4dc9-8d40-5b5d2a385493.jpg?v=1771002489&width=600",
+      "source": "https://www.muji.us/products/less-tiring-water-repellent-toploader-backpack-efe60a6s",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/acbd2856f82771531bfd.webp",
+      "originalPath": "assets/muji-v6-8634909196478.jpg"
+    },
+    {
+      "id": "muji-v6-9079176691902",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4550723504409_org.jpg?v=1792194911&width=600",
+      "source": "https://www.muji.us/products/corduroy-bucket-hat-db0txa6a",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/7f3070b6655139fed3dd.webp",
+      "originalPath": "assets/muji-v6-9079176691902.jpg"
+    },
+    {
+      "id": "muji-v6-9079176560830",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4550723504386_org.jpg?v=1792194908&width=600",
+      "source": "https://www.muji.us/products/corduroy-earmuffs-cap-db0twa6a",
+      "description": "Existing real photo for the same named brand/model.",
+      "path": "assets/photos/0edf352b9d469323a61d.webp",
+      "originalPath": "assets/muji-v6-9079176560830.jpg"
+    },
+    {
+      "id": "muji-v4-1",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4550002796808_org.jpg?v=1762441939",
+      "source": "https://www.muji.us/products/gel-ink-cap-type-ballpoint-pen-0-5mm-8a63",
+      "description": "Official MUJI product data: Gel Ink Cap Type Ballpoint Pen 0.5mm",
+      "path": "assets/photos/185dbd65859b770b9149.webp",
+      "bytes": 29449,
+      "sha256": "185dbd65859b770b914939c0f2f95289324a4a17ae839eede0670632cd230cc2",
+      "originalPath": "assets/v8-other/muji-v4-1.jpg"
+    },
+    {
+      "id": "muji-v4-2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4550344872741_1260_blueblack.webp?v=1753817166",
+      "source": "https://www.muji.us/products/smooth-gel-ink-knock-type-ballpoint-pen-0-3mm",
+      "description": "Official MUJI product data: Smooth Gel Ink Ballpoint Knock Pen 0.3 mm",
+      "path": "assets/photos/e879c67f48041e6071b3.webp",
+      "bytes": 20530,
+      "sha256": "e879c67f48041e6071b3cdf9ea6de26cab750568dca6e03059ccc0ebd11a6731",
+      "originalPath": "assets/v8-other/muji-v4-2.jpg"
+    },
+    {
+      "id": "muji-v4-3",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4549738915430.jpg?v=1762442085",
+      "source": "https://www.muji.us/products/handy-shredder-s915",
+      "description": "Official MUJI product data: Handy Shredder",
+      "path": "assets/photos/b0fd230801692eeae4ac.webp",
+      "bytes": 21832,
+      "sha256": "b0fd230801692eeae4ac5d86daf1ca7a0914be75ebf9c5d284df944c21efb64e",
+      "originalPath": "assets/v8-other/muji-v4-3.jpg"
+    },
+    {
+      "id": "muji-v4-4",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4550182603071_1260.webp?v=1762447107",
+      "source": "https://www.muji.us/products/steel-book-divider",
+      "description": "Official MUJI product data: Steel Book Divider",
+      "path": "assets/photos/f533ca5f83e8e0fc17b7.webp",
+      "bytes": 21019,
+      "sha256": "f533ca5f83e8e0fc17b7cd37e98c333d5c812aa3564578e9a2609994146c0753",
+      "originalPath": "assets/v8-other/muji-v4-4.jpg"
+    },
+    {
+      "id": "muji-v4-5",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4548076369479_1260.jpg?v=1762442034",
+      "source": "https://www.muji.us/products/pencil-sharpener-e3s3",
+      "description": "Official MUJI product data: Pencil Sharpener",
+      "path": "assets/photos/d15117385842089efd41.webp",
+      "bytes": 80855,
+      "sha256": "d15117385842089efd41e55c3ecf25fd58e91942339210c0a802d91311aadd54",
+      "originalPath": "assets/v8-other/muji-v4-5.jpg"
+    },
+    {
+      "id": "muji-v4-6",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4550002553036_org.jpg?v=1762441939",
+      "source": "https://www.muji.us/products/oil-ink-triangle-2-color-ballpoint-pen-with-mechanical-pencil-8a63",
+      "description": "Official MUJI product data: Oil Ink Triangle 2 Color Ballpoint Pen with Mechanical Pencil",
+      "path": "assets/photos/77b40b8df18a1b6168b2.webp",
+      "bytes": 30974,
+      "sha256": "77b40b8df18a1b6168b2c70c49a68fe1011d201dc421fd7b04e4daa2ee85abf2",
+      "originalPath": "assets/v8-other/muji-v4-6.jpg"
+    },
+    {
+      "id": "muji-v4-7",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4550344596593_1260.jpg?v=1666200590",
+      "source": "https://www.muji.us/products/acrylic-tape-dispenser-ndea1a",
+      "description": "Official MUJI product data: Acrylic Tape Dispenser",
+      "path": "assets/photos/e197aab9b5528cf8a858.webp",
+      "bytes": 49753,
+      "sha256": "e197aab9b5528cf8a858ec5ecd53fae520f9682e83ecf0b39aebfa548bb67b0a",
+      "originalPath": "assets/v8-other/muji-v4-7.jpg"
+    },
+    {
+      "id": "muji-v4-8",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/linedringnotebook.jpg?v=1762444882",
+      "source": "https://www.muji.us/products/dark-gray-double-ring-lined-notebook",
+      "description": "Official MUJI product data: Dark Gray Double Ring Lined Notebook",
+      "path": "assets/photos/3408237353dbc3ff8dcb.webp",
+      "bytes": 118313,
+      "sha256": "3408237353dbc3ff8dcb3e2e37145c3b0dcb4d407ed47b845c5a6273f972c3bb",
+      "originalPath": "assets/v8-other/muji-v4-8.jpg"
+    },
+    {
+      "id": "muji-v4-9",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4550182109528_1260.jpg?v=1762444194",
+      "source": "https://www.muji.us/products/bind-ruled-notebook-b5-9s62",
+      "description": "Official MUJI product data: Recycled Paper Lined Notebook B5",
+      "path": "assets/photos/e18d31f6961d450802b2.webp",
+      "bytes": 120394,
+      "sha256": "e18d31f6961d450802b2ff1939716d21ba0c647f28a21e3e68b2621228d08bed",
+      "originalPath": "assets/v8-other/muji-v4-9.jpg"
+    },
+    {
+      "id": "muji-v4-10",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4550182108743_org.jpg?v=1762023794",
+      "source": "https://www.muji.us/products/wirebound-notebook-plain-beige-a6-9s62018",
+      "description": "Official MUJI product data: A6 Wirebound Notebook Plain Beige",
+      "path": "assets/photos/bec77ddcb28e4ddfc269.webp",
+      "bytes": 174699,
+      "sha256": "bec77ddcb28e4ddfc26912b02b167875c0910891d651cbf398dade725e664cf4",
+      "originalPath": "assets/v8-other/muji-v4-10.jpg"
+    },
+    {
+      "id": "muji-v4-11",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/files/4550182110920_org.jpg?v=1762444940",
+      "source": "https://www.muji.us/products/sketchbook-9s68000",
+      "description": "Official MUJI product data: Wire-bound Sketchbook F1 20 Sheets",
+      "path": "assets/photos/47e0b09ccb187c064f78.webp",
+      "bytes": 116543,
+      "sha256": "47e0b09ccb187c064f78ac57703820bb917ef5fb1f24cf5c270d30c0e73cd6ea",
+      "originalPath": "assets/v8-other/muji-v4-11.jpg"
+    },
+    {
+      "id": "muji-v4-12",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4550344596616_1260.jpg?v=1770410052",
+      "source": "https://www.muji.us/products/polypropylene-cable-case-with-stand-ndea1a",
+      "description": "Official MUJI product data: Polypropylene Cable Case with Stand",
+      "path": "assets/photos/4eb8d430108ce673dad0.webp",
+      "bytes": 42462,
+      "sha256": "4eb8d430108ce673dad04ca9f598e51cebf0bd8f1e6408aeea833e05885d907c",
+      "originalPath": "assets/v8-other/muji-v4-12.jpg"
+    },
+    {
+      "id": "muji-v4-13",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4549337308121_org.jpg?v=1762442079",
+      "source": "https://www.muji.us/products/stapler-without-staples-s308",
+      "description": "Official MUJI product data: Stapler without Staples",
+      "path": "assets/photos/fca88512ef82213f5a55.webp",
+      "bytes": 55239,
+      "sha256": "fca88512ef82213f5a55f6286c0fb31d78bfe9eb63f7da566a3bfea8862ab7e3",
+      "originalPath": "assets/v8-other/muji-v4-13.jpg"
+    },
+    {
+      "id": "muji-v4-14",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4934761388281.jpg?v=1762442033",
+      "source": "https://www.muji.us/products/nonslip-cutting-ruler-e2s4",
+      "description": "Official MUJI product data: Nonslip Cutting Ruler",
+      "path": "assets/photos/1b871bc9728842c3e940.webp",
+      "bytes": 12296,
+      "sha256": "1b871bc9728842c3e940b45ea176796111d55091170dd0791604a6e49dea08f8",
+      "originalPath": "assets/v8-other/muji-v4-14.jpg"
+    },
+    {
+      "id": "muji-v4-15",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/8066/3742/products/4548718110865_org.jpg?v=1762442045",
+      "source": "https://www.muji.us/products/stainless-steel-scissors-e5a4",
+      "description": "Official MUJI product data: Stainless Steel Scissors",
+      "path": "assets/photos/0f44c8f2e52e263488ee.webp",
+      "bytes": 71267,
+      "sha256": "0f44c8f2e52e263488ee50ef967138231dcc2ab78c17e38cfbcd40e6a35ab7a4",
+      "originalPath": "assets/v8-other/muji-v4-15.jpg"
+    },
+    {
+      "id": "m-bag",
+      "imageUrl": "https://www.fjallraven.com/4a864c/globalassets/catalogs/fjallraven/f2/f235/f23510/f228/kanken_23510-228_a_main_fjr.jpg?width=624&height=624&rmode=BoxPad&bgcolor=fff&quality=100",
+      "source": "https://www.fjallraven.com/us/en-us/bags-gear/kanken/kanken-bags/kanken/",
+      "description": "Kånken Khaki Dust 16L",
+      "path": "assets/photos/da4b3bfd7bb153a08ef2.webp",
+      "bytes": 35226,
+      "sha256": "da4b3bfd7bb153a08ef2c8f130eff1992c125db39da9584a5e556bbeab3136f4",
+      "originalPath": "assets/v8-other/m-bag.jpg"
+    },
+    {
+      "id": "n-bag",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwbbc4db74/images/DIS/L1626089002_0.png?sw=800&sh=800&sm=fit",
+      "source": "https://www.longchamp.com/us/en/products/handbag-l-L1626089002.html",
+      "description": "Le Pliage Original L Handbag",
+      "path": "assets/photos/b9014a98d61e17edb5b7.webp",
+      "bytes": 341282,
+      "sha256": "b9014a98d61e17edb5b7515c0925301f2adad32e335ebc945191bfa25432ae24",
+      "originalPath": "assets/v8-other/n-bag.png"
+    },
+    {
+      "id": "bathbody-v4-1",
+      "imageUrl": "https://www.bathandbodyworks.com/on/demandware.static/-/Sites-master-catalog/default/dw3d76b7cc/crop/028032522_crop.jpg",
+      "source": "https://www.bathandbodyworks.com/c/top-fragrance-finder/",
+      "description": "Warm Vanilla Sugar Fine Fragrance Mist",
+      "path": "assets/photos/a5d1ad02e5686169e266.webp",
+      "bytes": 59861,
+      "sha256": "a5d1ad02e5686169e266da257b02e08869616ba998e61602d61576b6b315a69b",
+      "originalPath": "assets/v8-other/bathbody-v4-1.jpg"
+    },
+    {
+      "id": "bathbody-v4-2",
+      "imageUrl": "https://www.bathandbodyworks.com/on/demandware.static/-/Sites-master-catalog/default/dw6fdd4fbf/crop/028030610_crop.jpg",
+      "source": "https://www.bathandbodyworks.com/c/top-fragrance-finder/",
+      "description": "Into the Night Fine Fragrance Mist",
+      "path": "assets/photos/1058deb68268bfb6fc08.webp",
+      "bytes": 59349,
+      "sha256": "1058deb68268bfb6fc08f7fcb560022964f5a289eb7d8167bfdb418c0947c112",
+      "originalPath": "assets/v8-other/bathbody-v4-2.jpg"
+    },
+    {
+      "id": "bathbody-v4-3",
+      "imageUrl": "https://www.bathandbodyworks.com/on/demandware.static/-/Sites-master-catalog/default/dw4b0ec043/crop/028034904_crop.jpg",
+      "source": "https://www.bathandbodyworks.com/c/top-fragrance-finder/",
+      "description": "Champagne Toast Fine Fragrance Mist",
+      "path": "assets/photos/442dadda33545a1f27b2.webp",
+      "bytes": 49129,
+      "sha256": "442dadda33545a1f27b27b412361a27c9f5cd915eef6dc40e9ffbb211087e5bb",
+      "originalPath": "assets/v8-other/bathbody-v4-3.jpg"
+    },
+    {
+      "id": "bathbody-v4-4",
+      "imageUrl": "https://www.bathandbodyworks.com/on/demandware.static/-/Sites-master-catalog/default/dwc946f26a/crop/028028909_crop.jpg",
+      "source": "https://www.bathandbodyworks.com/c/top-fragrance-finder/",
+      "description": "In the Stars Fine Fragrance Mist",
+      "path": "assets/photos/089e64f8b22e6d37acba.webp",
+      "bytes": 56209,
+      "sha256": "089e64f8b22e6d37acba9dcce6423bfd9a60de251c8738ef45237d3429621f6f",
+      "originalPath": "assets/v8-other/bathbody-v4-4.jpg"
+    },
+    {
+      "id": "bathbody-v4-5",
+      "imageUrl": "https://www.bathandbodyworks.com/on/demandware.static/-/Sites-master-catalog/default/dw6bab293e/crop/028032521_crop.jpg",
+      "source": "https://www.bathandbodyworks.com/c/top-fragrance-finder/",
+      "description": "Japanese Cherry Blossom Fine Fragrance Mist",
+      "path": "assets/photos/b9e8e8ca2d71ed281f68.webp",
+      "bytes": 51871,
+      "sha256": "b9e8e8ca2d71ed281f685edfd734c0d7564a941d4187459ebe8cb81c14660aa0",
+      "originalPath": "assets/v8-other/bathbody-v4-5.jpg"
+    },
+    {
+      "id": "bathbody-v4-6",
+      "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2f83c607/hires/028032519.jpg?sw=600&q=80&format=auto",
+      "source": "https://www.bathandbodyworks.com/p/warm-vanilla-sugar-ultimate-hydration-body-cream-028032519",
+      "description": "Warm Vanilla Sugar Ultimate Hydration Body Cream — full size; official product photo.",
+      "path": "assets/photos/7797d94c9b58c8192e33.webp",
+      "bytes": 39352,
+      "sha256": "7797d94c9b58c8192e331c67b638260980134edc384c6a737afb2984e40b5422",
+      "originalPath": "assets/v8-other/bathbody-v4-6.jpg"
+    },
+    {
+      "id": "bathbody-v4-7",
+      "imageUrl": "https://www.bathandbodyworks.com/on/demandware.static/-/Sites-master-catalog/default/dw55dda8a2/crop/028033000_crop.jpg",
+      "source": "https://www.bathandbodyworks.com/c/top-fragrance-finder/",
+      "description": "Champagne Toast Ultimate Hydration Body Cream",
+      "path": "assets/photos/53d4569c44d1a15678cf.webp",
+      "bytes": 58237,
+      "sha256": "53d4569c44d1a15678cf93d948aa0e0583553bea479437d6d324b54cd7fb64c3",
+      "originalPath": "assets/v8-other/bathbody-v4-7.jpg"
+    },
+    {
+      "id": "bathbody-v4-9",
+      "imageUrl": "https://www.bathandbodyworks.com/on/demandware.static/-/Sites-master-catalog/default/dwd2939195/crop/028030623_crop.jpg",
+      "source": "https://www.bathandbodyworks.com/c/top-fragrance-finder/",
+      "description": "Into the Night Ultimate Hydration Body Cream",
+      "path": "assets/photos/13dd602eb5e6ef53cb94.webp",
+      "bytes": 63394,
+      "sha256": "13dd602eb5e6ef53cb9405e12494f6d1aeb9b3fdd371acbe1f1b3eda91728cd7",
+      "originalPath": "assets/v8-other/bathbody-v4-9.jpg"
+    },
+    {
+      "id": "bathbody-v4-13",
+      "imageUrl": "https://www.bathandbodyworks.com/on/demandware.static/-/Sites-master-catalog/default/dw2b919aa1/crop/028019404_crop.jpg",
+      "source": "https://www.bathandbodyworks.com/c/top-fragrance-finder/",
+      "description": "Champagne Toast Body Lotion",
+      "path": "assets/photos/5b21e6f6be35e82d51d8.webp",
+      "bytes": 52448,
+      "sha256": "5b21e6f6be35e82d51d8b2899fcf786bfbd84fd4d93da99b4c2cc9d46eb14ced",
+      "originalPath": "assets/v8-other/bathbody-v4-13.jpg"
+    },
+    {
+      "id": "ross-v4-3",
+      "imageUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399781/51/sv01/fnd/PNA/fmt/png/Suede-Classic-Sneakers",
+      "source": "https://us.puma.com/us/en/pd/sneakers-suede-classic/399781",
+      "description": "Suede Classic Sneakers - Chambray Blue-PUMA White",
+      "path": "assets/photos/20fbe855b6e1c73d4a20.webp",
+      "bytes": 123504,
+      "sha256": "20fbe855b6e1c73d4a2033f725bc06ac78a55cc27759630bce87085586721b5a",
+      "originalPath": "assets/v8-other/ross-v4-3.jpg"
+    },
+    {
+      "id": "marshalls-v4-4",
+      "imageUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/399781/51/sv01/fnd/PNA/fmt/png/Suede-Classic-Sneakers",
+      "source": "https://us.puma.com/us/en/pd/sneakers-suede-classic/399781",
+      "description": "Suede Classic Sneakers - Chambray Blue-PUMA White",
+      "path": "assets/photos/20fbe855b6e1c73d4a20.webp",
+      "bytes": 123504,
+      "sha256": "20fbe855b6e1c73d4a2033f725bc06ac78a55cc27759630bce87085586721b5a",
+      "originalPath": "assets/v8-other/marshalls-v4-4.jpg"
+    },
+    {
+      "id": "target-v4-1",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40524_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/sunflowers-40524",
+      "description": "Official LEGO product image for exact set 40524.",
+      "path": "assets/photos/b5157b82d5cb3891b4ef.webp",
+      "bytes": 212138,
+      "sha256": "b5157b82d5cb3891b4ef1217d0adf3f6276e714135fe14f657b4664a49503bec",
+      "originalPath": "assets/v8-other/target-v4-1.png"
+    },
+    {
+      "id": "target-v4-2",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40647_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/lotus-flowers-40647",
+      "description": "Official LEGO product image for exact set 40647.",
+      "path": "assets/photos/226b47821f0af4ed9746.webp",
+      "bytes": 181156,
+      "sha256": "226b47821f0af4ed97467d971fcc200d640de00436d0ade1908c1cc82a921185",
+      "originalPath": "assets/v8-other/target-v4-2.png"
+    },
+    {
+      "id": "target-v4-3",
+      "imageUrl": "https://www.maybelline.com/-/media/project/loreal/brand-sites/mny/americas/us/eye-makeup/mascara/lash-sensational-sky-high-washable-mascara-makeup/update-march-2026/navy-records/update/maybelline-lash-sensational-sky-high-pdp-785-navyrecords-41554103267-packshot-(1).jpg",
+      "source": "https://www.maybelline.com/eye-makeup/mascara/lash-sensational-sky-high-washable-mascara-makeup",
+      "description": "Lash Sensational Sky High® Washable Mascara",
+      "path": "assets/photos/ec6ec2bbd25a2c96003a.webp",
+      "bytes": 15330,
+      "sha256": "ec6ec2bbd25a2c96003a9256f26a0ce9d500879d47053084941edf8a3b9d5ce4",
+      "originalPath": "assets/v8-other/target-v4-3.jpg"
+    },
+    {
+      "id": "lego-v4-2",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10315_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/tranquil-garden-10315",
+      "description": "Official LEGO product image for exact set 10315.",
+      "path": "assets/photos/0a72e5ce47594bc20225.webp",
+      "bytes": 229137,
+      "sha256": "0a72e5ce47594bc2022526b63356bed5ae8dec8504f80a27097815c0b473120b",
+      "originalPath": "assets/v8-other/lego-v4-2.png"
+    },
+    {
+      "id": "lego-v4-3",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10368_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/chrysanthemum-10368",
+      "description": "Official LEGO product image for exact set 10368.",
+      "path": "assets/photos/583b6a2030de8105681e.webp",
+      "bytes": 157854,
+      "sha256": "583b6a2030de8105681eb2849ff9e78e25d95c357f043d09c4b7b426608ac088",
+      "originalPath": "assets/v8-other/lego-v4-3.png"
+    },
+    {
+      "id": "lego-v4-4",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10369_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/plum-blossom-10369",
+      "description": "Official LEGO product image for exact set 10369.",
+      "path": "assets/photos/32617f61028ac037f77e.webp",
+      "bytes": 307462,
+      "sha256": "32617f61028ac037f77e1352bae3dd6645f786dc31ca300108e70cae96dff585",
+      "originalPath": "assets/v8-other/lego-v4-4.png"
+    },
+    {
+      "id": "lego-v4-5",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10344_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/lucky-bamboo-10344",
+      "description": "Official LEGO product image for exact set 10344.",
+      "path": "assets/photos/0583427e1b8333f5d956.webp",
+      "bytes": 323582,
+      "sha256": "0583427e1b8333f5d956529fc145688a7a3d41ea716878f484effce8c9e2e28b",
+      "originalPath": "assets/v8-other/lego-v4-5.png"
+    },
+    {
+      "id": "sephora-v4-1",
+      "imageUrl": "https://supergoop.com/cdn/shop/files/Unseen_PDP_Image_Allure_Seal_2025.png?v=1758030958&width=1200",
+      "source": "https://supergoop.com/products/unseen-sunscreen-spf-50",
+      "description": "Unseen Sunscreen SPF 50",
+      "path": "assets/photos/fb947c4f269f8307b629.webp",
+      "bytes": 613187,
+      "sha256": "fb947c4f269f8307b6299db2e3a3534c6a6ca379a93fa7d6470caf68abea1680",
+      "originalPath": "assets/v8-other/sephora-v4-1.png"
+    },
+    {
+      "id": "sephora-v4-3",
+      "imageUrl": "https://tatcha.com/cdn/shop/files/TheDewySkinCream-pdp-Aug26-Omi-FullSize-MainImage-1200x1200.jpg?v=1788786247&width=480",
+      "source": "https://tatcha.com/products/the-dewy-skin-cream",
+      "description": "The Dewy Skin Cream",
+      "path": "assets/photos/5c67f2456974824dc3a2.webp",
+      "bytes": 12393,
+      "sha256": "5c67f2456974824dc3a2b018106d5080cab47f555a872721d8b78ec95fcfd371",
+      "originalPath": "assets/v8-other/sephora-v4-3.jpg"
+    },
+    {
+      "id": "sephora-v4-4",
+      "imageUrl": "https://tatcha.com/cdn/shop/files/TheWaterCream-pdp-Aug26-Omi-GratitudeSize-MainImage-1200x1200.jpg?v=1788791131&width=1200",
+      "source": "https://tatcha.com/pages/curate-your-own-set?country=US",
+      "description": "Tatcha The Water Cream Gratitude Size aqua jar with gold spoon, front view",
+      "path": "assets/photos/8f925dfc9213b263512f.webp",
+      "bytes": 56759,
+      "sha256": "8f925dfc9213b263512f707ae4581198ffcc955ca9115f074aa00b543cfb16ef",
+      "originalPath": "assets/v8-other/sephora-v4-4.jpg"
+    },
+    {
+      "id": "sephora-v4-5",
+      "imageUrl": "https://images.ctfassets.net/wlke2cbybljx/23p4TKjqpeC3zePOLb2HpY/8f458a41d1c2e7549a59796ad7d658f7/Updated_Settng_Spray.png?w=600&h=600&fit=pad&q=80&fm=png",
+      "source": "https://www.charlottetilbury.com/us/product/airbrush-flawless-setting-spray",
+      "description": "Official Charlotte Tilbury packshot, Airbrush Flawless Setting Spray.",
+      "path": "assets/photos/6ea41f2d8b865b99d839.webp",
+      "bytes": 112840,
+      "sha256": "6ea41f2d8b865b99d839644e7bf0331104885d7e62d67322035181f2fba08215",
+      "originalPath": "assets/v8-other/sephora-v4-5.png"
+    },
+    {
+      "id": "apple-v4-1",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MUWA3?wid=4000&hei=4000&fmt=jpeg&qlt=90&.v=1695933856697",
+      "source": "https://www.apple.com/shop/product/MUWA3AM/A/apple-pencil-usb-c",
+      "description": "Apple Pencil (USB-C)",
+      "path": "assets/photos/5ecff75639b36494806c.webp",
+      "bytes": 467442,
+      "sha256": "5ecff75639b36494806c6a05976d003b815f87184611c046fa4fcf74fb1676d1",
+      "originalPath": "assets/v8-other/apple-v4-1.jpg"
+    },
+    {
+      "id": "apple-v4-2",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXK93?wid=4000&hei=4000&fmt=jpeg&qlt=90&.v=1730508284008",
+      "source": "https://www.apple.com/shop/product/mxk93am/a/magic-trackpad-usb%E2%80%91c-white-multi-touch-surface",
+      "description": "Magic Trackpad (USB‑C) - White Multi-Touch Surface",
+      "path": "assets/photos/ea801f71c32376288191.webp",
+      "bytes": 548732,
+      "sha256": "ea801f71c32376288191f1c91eebf5e81359b81c1fe99f9b4b92dfb0696031a8",
+      "originalPath": "assets/v8-other/apple-v4-2.jpg"
+    },
+    {
+      "id": "apple-v4-5",
+      "imageUrl": "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/studiopro-wireless/global/serp/studiopro-pdp-global-serp-black.jpg",
+      "source": "https://www.beatsbydre.com/headphones/studio-pro-wireless",
+      "description": "Beats Studio Pro",
+      "path": "assets/photos/6c188c7964af0ce05749.webp",
+      "bytes": 112600,
+      "sha256": "6c188c7964af0ce05749a21fcfffa51e0e92810401e632398cb878d74eb2ce89",
+      "originalPath": "assets/v8-other/apple-v4-5.jpg"
+    },
+    {
+      "id": "nordstrom-v4-3",
+      "imageUrl": "https://www.birkenstock.com/dw/image/v2/BLZD_PRD/on/demandware.static/-/Sites-master-catalog-amer/default/dwf765dca2/1030837/1030837.jpg?sw=655&sh=655&sm=fit&q=65",
+      "source": "https://www.birkenstock.com/us/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_49.html",
+      "description": "Boston Soft Footbed Suede Leather",
+      "path": "assets/photos/37aefa6a8886eb08823b.webp",
+      "bytes": 27296,
+      "sha256": "37aefa6a8886eb08823b6f3a8f02877770396a380391fd516b98d70dc6172bdf",
+      "originalPath": "assets/v8-other/nordstrom-v4-3.jpg"
+    },
+    {
+      "id": "nordstrom-v4-5",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwfabf7ae6/images/DIS/10166HSR742_0.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/men/001/bags/001xsa/backpacks/001xsaxsd/",
+      "description": "Le Pliage Energy L Backpack , Cocoa - Recycled canvas",
+      "path": "assets/photos/23bae08d9776e4ac4e5b.webp",
+      "bytes": 91968,
+      "sha256": "23bae08d9776e4ac4e5b67ba3386a6d2c2b8ed39fa7f400b0a091690ffccbe7c",
+      "originalPath": "assets/v8-other/nordstrom-v4-5.png"
+    },
+    {
+      "id": "longchamp-v4-1",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwfabf7ae6/images/DIS/10166HSR742_0.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/men/001/bags/001xsa/backpacks/001xsaxsd/",
+      "description": "Le Pliage Energy L Backpack , Cocoa - Recycled canvas",
+      "path": "assets/photos/23bae08d9776e4ac4e5b.webp",
+      "bytes": 91968,
+      "sha256": "23bae08d9776e4ac4e5b67ba3386a6d2c2b8ed39fa7f400b0a091690ffccbe7c",
+      "originalPath": "assets/v8-other/longchamp-v4-1.png"
+    },
+    {
+      "id": "longchamp-v4-2",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwde79e519/images/DIS/20035080127_1.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/men/001/bags/001xsa/backpacks/001xsaxsd/",
+      "description": "Boxford Backpack , Blue - Recycled canvas",
+      "path": "assets/photos/4f5cb658c1659421b018.webp",
+      "bytes": 42612,
+      "sha256": "4f5cb658c1659421b01845379ad9609d84a52043775591fa41273eb1da174f54",
+      "originalPath": "assets/v8-other/longchamp-v4-2.png"
+    },
+    {
+      "id": "longchamp-v4-3",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdafdc2e2/images/DIS/L1617021047_0.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/men/001/bags/001xsa/backpacks/001xsaxsd/",
+      "description": "Le Foulonné Backpack , Black - Leather",
+      "path": "assets/photos/4774a4896c1033e6521f.webp",
+      "bytes": 141533,
+      "sha256": "4774a4896c1033e6521f54e6c240dd41c0f4ec880b54e6af9fbfe43be2e9fc61",
+      "originalPath": "assets/v8-other/longchamp-v4-3.png"
+    },
+    {
+      "id": "longchamp-v4-4",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwfafb6a0b/images/DIS/10287987P55_0.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/men/001/bags/001xsa/backpacks/001xsaxsd/",
+      "description": "Le Pliage Xtra M Backpack , Turtledove - Leather",
+      "path": "assets/photos/5b0ee9671a63c067e22a.webp",
+      "bytes": 106281,
+      "sha256": "5b0ee9671a63c067e22a9c7cd289fdc055aa0bcbdbec964a46d9538b5bcef00e",
+      "originalPath": "assets/v8-other/longchamp-v4-4.png"
+    },
+    {
+      "id": "longchamp-v4-5",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwf6b3666c/images/DIS/10390HJXM69_0.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/ie/en/bags/xsa/bags-by-collection/xsa-col/?cgid=XSA-COL&page=3&prefn1=LC_DisplayCountries&prefv1=IE%7C",
+      "description": "Le Roseau M Shoulder bag , Lichen - Leather",
+      "path": "assets/photos/5ff2a746b761ba5762fb.webp",
+      "bytes": 69701,
+      "sha256": "5ff2a746b761ba5762fb3c86671df89d40f70e7c3980dae1472579ac0b813e9a",
+      "originalPath": "assets/v8-other/longchamp-v4-5.png"
+    },
+    {
+      "id": "tory-v4-1",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/small-ella-tote-angle.TB_174241_001_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/ella/",
+      "description": "Exact official Tory Burch product data name: Small Ella Tote",
+      "path": "assets/photos/5455ae83fabb134732fe.webp",
+      "bytes": 18211,
+      "sha256": "5455ae83fabb134732fe69d7cde3e5abe2e20cb891054e6c6a347542a2570b75",
+      "originalPath": "assets/v8-other/tory-v4-1.jpg"
+    },
+    {
+      "id": "tory-v4-3",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/ella-printed-tote-angle.TB_191086_020_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/ella/",
+      "description": "Exact official Tory Burch product data name: Ella Printed Tote",
+      "path": "assets/photos/74b6dd9235590a058032.webp",
+      "bytes": 37271,
+      "sha256": "74b6dd9235590a058032e998a29ffe61b3b844d2bea3d1c47f6538111e4af4e8",
+      "originalPath": "assets/v8-other/tory-v4-3.jpg"
+    },
+    {
+      "id": "tory-v4-4",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/ella-nylon-drawstring-tote-angle.TB_189910_001_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/ella/",
+      "description": "Exact official Tory Burch product data name: Ella Nylon Drawstring Tote",
+      "path": "assets/photos/3ba1d51ae7e4d7c14bf8.webp",
+      "bytes": 21478,
+      "sha256": "3ba1d51ae7e4d7c14bf86f17e7f875101c2873d7cc64b438b8e5137f90e6a14b",
+      "originalPath": "assets/v8-other/tory-v4-4.jpg"
+    },
+    {
+      "id": "marshalls-x1",
+      "imageUrl": "https://media.columbia.com/i/columbia/WM3220_400_f",
+      "source": "https://www.columbia.com/p/mens-steens-mountain-2.0-full-zip-fleece-jacket-1476671.html",
+      "description": "Men's Steens Mountain 2.0 Full Zip Fleece Jacket - Deep Marine, Nimbus Grey, S",
+      "path": "assets/photos/0ad31a6be758c4b29113.webp",
+      "bytes": 743317,
+      "sha256": "0ad31a6be758c4b29113eecd7c6544d0715730ebfcf602cfacc3c6e5a64502df",
+      "originalPath": "assets/v8-other/marshalls-x1.jpg"
+    },
+    {
+      "id": "target-x4",
+      "imageUrl": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/moisturizers/moisturizing-cream/moisturizing-cream-12oz-front.jpg?rev=a6959c87b34f4e7c803db48d2effdaec&w=500&hash=151B6476E507AAE717F2D451C7B4BE92",
+      "source": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+      "description": "Moisturizing Cream 12oz FRONT",
+      "path": "assets/photos/01defcfe3b683954abf2.webp",
+      "bytes": 16087,
+      "sha256": "01defcfe3b683954abf2b37e59fb75535ce8e2501d59cf1a09079fbdf9da05eb",
+      "originalPath": "assets/v8-other/target-x4.jpg"
+    },
+    {
+      "id": "target-x7",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40725_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/cherry-blossoms-40725",
+      "description": "Official LEGO product image for exact set 40725.",
+      "path": "assets/photos/26c3dcb8a99b23c3a41d.webp",
+      "bytes": 160576,
+      "sha256": "26c3dcb8a99b23c3a41d46f57f5c01cf20a976045a8cb296750d4e1e42483e91",
+      "originalPath": "assets/v8-other/target-x7.png"
+    },
+    {
+      "id": "lego-x1",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10311_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/orchid-10311",
+      "description": "Official LEGO product image for exact set 10311.",
+      "path": "assets/photos/b2529e40b3ec9b97d4c6.webp",
+      "bytes": 234571,
+      "sha256": "b2529e40b3ec9b97d4c668e3997684d579c0ecc67665b290fe333a46e4c37e3d",
+      "originalPath": "assets/v8-other/lego-x1.png"
+    },
+    {
+      "id": "lego-x7",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10343_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/mini-orchid-10343",
+      "description": "Official LEGO product image for exact set 10343.",
+      "path": "assets/photos/115b6468515da8d1eb65.webp",
+      "bytes": 175964,
+      "sha256": "115b6468515da8d1eb65c6b247cf1cee83daebdaf6fc9066c2f78f15bc5b572a",
+      "originalPath": "assets/v8-other/lego-x7.png"
+    },
+    {
+      "id": "lego-x8",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40725_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/cherry-blossoms-40725",
+      "description": "Official LEGO product image for exact set 40725.",
+      "path": "assets/photos/26c3dcb8a99b23c3a41d.webp",
+      "bytes": 160576,
+      "sha256": "26c3dcb8a99b23c3a41d46f57f5c01cf20a976045a8cb296750d4e1e42483e91",
+      "originalPath": "assets/v8-other/lego-x8.png"
+    },
+    {
+      "id": "lego-x10",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10342_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/product/pretty-pink-flower-bouquet-10342",
+      "description": "Official LEGO product image for exact set 10342.",
+      "path": "assets/photos/8afc0423e94ddffcf7d2.webp",
+      "bytes": 183205,
+      "sha256": "8afc0423e94ddffcf7d20c30d9b20e713cb08399cab5125c6c654d7efb54b629",
+      "originalPath": "assets/v8-other/lego-x10.png"
+    },
+    {
+      "id": "sephora-x4",
+      "imageUrl": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwce8a7cdf/Images/products/The%20Ordinary/rdn-niacinamide-10pct-zinc-1pct-30ml.png?sw=900&sh=900&sm=fit",
+      "source": "https://theordinary.com/en-us/niacinamide-10-zinc-1-serum-100436.html",
+      "description": "Niacinamide 10% + Zinc 1%",
+      "path": "assets/photos/9924b6608463d5d305a1.webp",
+      "bytes": 130440,
+      "sha256": "9924b6608463d5d305a11d79823ecc9c0e8e78c14a835c6b6036a9690e78b493",
+      "originalPath": "assets/v8-other/sephora-x4.png"
+    },
+    {
+      "id": "sephora-x9",
+      "imageUrl": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/hydrating-facial-cleanser/photos/2026/700x785/hfc-atf-1-700x785-v1.jpg?rev=6b7c77cf83ce4faebd7c20d7491af7a2",
+      "source": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+      "description": "Hydrating Facial Cleanser",
+      "path": "assets/photos/e8be48f85257361ea79c.webp",
+      "bytes": 30219,
+      "sha256": "e8be48f85257361ea79ca17ddf58aee8c67c563a7983de11e0b61b1a3c42fe4f",
+      "originalPath": "assets/v8-other/sephora-x9.jpg"
+    },
+    {
+      "id": "apple-x1",
+      "imageUrl": "https://www.apple.com/v/airtag/g/images/meta/og__ck3n0k1jl6j6.png",
+      "source": "https://www.apple.com/airtag/",
+      "description": "AirTag",
+      "path": "assets/photos/56d896308be694d8d6fe.webp",
+      "bytes": 140150,
+      "sha256": "56d896308be694d8d6feea85cd92a25164bc32353ec95425df154e1132b29078",
+      "originalPath": "assets/v8-other/apple-x1.png"
+    },
+    {
+      "id": "apple-x2",
+      "imageUrl": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121203-airpods-4.png",
+      "source": "https://support.apple.com/en-us/121203",
+      "description": "Official Apple AirPods4 tech-specification product photo.",
+      "path": "assets/photos/036d3a913d6f808373b8.webp",
+      "bytes": 215936,
+      "sha256": "036d3a913d6f808373b89f2107bd4f5ade5120c736dd3c09403d363547a1f6bc",
+      "originalPath": "assets/v8-other/apple-x2.png"
+    },
+    {
+      "id": "longchamp-x1",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwfa3000f9/images/DIS/L1621089349_1.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/le-pliage/005/le-pliage-by-collection/005col/le-pliage-original/005col001/",
+      "description": "Le Pliage Original S Handbag , Pebble - Recycled canvas",
+      "path": "assets/photos/9b5b5d3cecd61345a180.webp",
+      "bytes": 50765,
+      "sha256": "9b5b5d3cecd61345a1801d5dd64572761cac182b86b6ad5ac6a6c7ba3bb311c9",
+      "originalPath": "assets/v8-other/longchamp-x1.png"
+    },
+    {
+      "id": "longchamp-x3",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwbbc4db74/images/DIS/L1626089002_0.png?sw=800&sh=800&sm=fit",
+      "source": "https://www.longchamp.com/us/en/products/handbag-l-L1626089002.html",
+      "description": "Le Pliage Original L Handbag",
+      "path": "assets/photos/b9014a98d61e17edb5b7.webp",
+      "bytes": 341282,
+      "sha256": "b9014a98d61e17edb5b7515c0925301f2adad32e335ebc945191bfa25432ae24",
+      "originalPath": "assets/v8-other/longchamp-x3.png"
+    },
+    {
+      "id": "longchamp-x4",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwf8d3a446/images/DIS/L2605089P86_1.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/le-pliage/005/le-pliage-by-collection/005col/le-pliage-original/005col001/",
+      "description": "Le Pliage Original M Tote bag , Fawn - Recycled canvas",
+      "path": "assets/photos/ee28a375c4ebfa78eba7.webp",
+      "bytes": 71970,
+      "sha256": "ee28a375c4ebfa78eba754c560c5c0c8e1d2c8628a45f00bac9c67bb8db52e83",
+      "originalPath": "assets/v8-other/longchamp-x4.png"
+    },
+    {
+      "id": "longchamp-x5",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwfcbae022/images/DIS/L1899089P68_1.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/le-pliage/005/le-pliage-by-collection/005col/le-pliage-original/005col001/",
+      "description": "Le Pliage Original L Tote bag , Navy - Recycled canvas",
+      "path": "assets/photos/4f9edc4ca0f979bbfb23.webp",
+      "bytes": 59388,
+      "sha256": "4f9edc4ca0f979bbfb23dcbedd26e9d03bcf5419d3df1831386b8340432eee69",
+      "originalPath": "assets/v8-other/longchamp-x5.png"
+    },
+    {
+      "id": "longchamp-x6",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dw569be914/images/DIS/10284089001_0.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/le-pliage/005/le-pliage-by-collection/005col/le-pliage-original/005col001/",
+      "description": "Le Pliage Original M Backpack , Black - Recycled canvas",
+      "path": "assets/photos/0bade5f0a2da53d709e0.webp",
+      "bytes": 119327,
+      "sha256": "0bade5f0a2da53d709e023f4ef53f6de40ff7a69f046e410761ee630789c9162",
+      "originalPath": "assets/v8-other/longchamp-x6.png"
+    },
+    {
+      "id": "longchamp-x7",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwf68f9e98/images/DIS/34175089P71_0.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/le-pliage/005/le-pliage-by-collection/005col/le-pliage-original/005col001/",
+      "description": "Le Pliage Original Pouch , Paper - Recycled canvas",
+      "path": "assets/photos/50399f88d9bcf5e29fff.webp",
+      "bytes": 88573,
+      "sha256": "50399f88d9bcf5e29ffff415725dccd95bdbee95ff6f129599ce5f11884cce08",
+      "originalPath": "assets/v8-other/longchamp-x7.png"
+    },
+    {
+      "id": "tory-x2",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/small-kira-diamond-quilt-shoulder-bag-angle.TB_154706_001_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/kira/",
+      "description": "Exact official Tory Burch product data name: Small Kira Diamond Quilt Shoulder Bag",
+      "path": "assets/photos/94f1bc0c9d318af65a85.webp",
+      "bytes": 20532,
+      "sha256": "94f1bc0c9d318af65a8544d6ca1fb5888b613f500a87f42afb59fc4e02a91b33",
+      "originalPath": "assets/v8-other/tory-x2.jpg"
+    },
+    {
+      "id": "tory-x4",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/small-kira-quilt-suede-shoulder-bag-angle.TB_184123_906_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/kira/",
+      "description": "Exact official Tory Burch product data name: Small Kira Quilt Suede Shoulder Bag",
+      "path": "assets/photos/19f4e2041fdb16fea1c6.webp",
+      "bytes": 20469,
+      "sha256": "19f4e2041fdb16fea1c65edbe85645564c45433aaf4a842139906a8645f34749",
+      "originalPath": "assets/v8-other/tory-x4.jpg"
+    },
+    {
+      "id": "tory-x6",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/t-monogram-kira-sport-sandal-angle.TB_155154_430_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/kira/",
+      "description": "Exact official Tory Burch product data name: T Monogram Kira Sport Sandal",
+      "path": "assets/photos/5ecc2a1f6143e3e61e50.webp",
+      "bytes": 36477,
+      "sha256": "5ecc2a1f6143e3e61e502b719d7d0ea79679f672e8053da30c16c99b9d6ea92e",
+      "originalPath": "assets/v8-other/tory-x6.jpg"
+    },
+    {
+      "id": "tory-x7",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/miller-metallic-sandal-angle.TB_170345_700_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/shoes/miller/",
+      "description": "Exact official Tory Burch product data name: Miller Metallic Sandal",
+      "path": "assets/photos/155aaf2f96c3cbcf3099.webp",
+      "bytes": 18270,
+      "sha256": "155aaf2f96c3cbcf3099d72a458a431b15132d3fb497c70738e11167cab12c99",
+      "originalPath": "assets/v8-other/tory-x7.jpg"
+    },
+    {
+      "id": "tory-x10",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/eleanor-espadrille-angle.TB_161758_122_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/eleanor/",
+      "description": "Exact official Tory Burch product data name: Eleanor Espadrille",
+      "path": "assets/photos/e2d0790616e9a2685387.webp",
+      "bytes": 15423,
+      "sha256": "e2d0790616e9a26853878270c613b5d30a47134fdd26d9d93d20c3e1a5fe6d1c",
+      "originalPath": "assets/v8-other/tory-x10.jpg"
+    },
+    {
+      "id": "nordstrom-x2",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwf8d3a446/images/DIS/L2605089P86_1.png?sw=400&sh=400&sm=fit",
+      "source": "https://www.longchamp.com/us/en/le-pliage/005/le-pliage-by-collection/005col/le-pliage-original/005col001/",
+      "description": "Le Pliage Original M Tote bag , Fawn - Recycled canvas",
+      "path": "assets/photos/ee28a375c4ebfa78eba7.webp",
+      "bytes": 71970,
+      "sha256": "ee28a375c4ebfa78eba754c560c5c0c8e1d2c8628a45f00bac9c67bb8db52e83",
+      "originalPath": "assets/v8-other/nordstrom-x2.png"
+    },
+    {
+      "id": "nordstrom-x4",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/miller-metallic-sandal-angle.TB_170345_700_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/shoes/miller/",
+      "description": "Exact official Tory Burch product data name: Miller Metallic Sandal",
+      "path": "assets/photos/155aaf2f96c3cbcf3099.webp",
+      "bytes": 18270,
+      "sha256": "155aaf2f96c3cbcf3099d72a458a431b15132d3fb497c70738e11167cab12c99",
+      "originalPath": "assets/v8-other/nordstrom-x4.jpg"
+    },
+    {
+      "id": "nordstrom-x5",
+      "imageUrl": "https://www.fjallraven.com/4a864c/globalassets/catalogs/fjallraven/f2/f235/f23510/f228/kanken_23510-228_a_main_fjr.jpg?width=624&height=624&rmode=BoxPad&bgcolor=fff&quality=100",
+      "source": "https://www.fjallraven.com/us/en-us/bags-gear/kanken/kanken-bags/kanken/",
+      "description": "Kånken Khaki Dust 16L",
+      "path": "assets/photos/da4b3bfd7bb153a08ef2.webp",
+      "bytes": 35226,
+      "sha256": "da4b3bfd7bb153a08ef2c8f130eff1992c125db39da9584a5e556bbeab3136f4",
+      "originalPath": "assets/v8-other/nordstrom-x5.jpg"
+    },
+    {
+      "id": "lego-v6-10331",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10331_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/10331",
+      "description": "Official LEGO product image for exact set 10331.",
+      "path": "assets/photos/51b9317023bbd280cb74.webp",
+      "bytes": 210226,
+      "sha256": "51b9317023bbd280cb74a84ff8b0d835102fdeb895e47d13238d50a47bb41bcb",
+      "originalPath": "assets/v8-other/lego-v6-10331.png"
+    },
+    {
+      "id": "lego-v6-40747",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40747_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/40747",
+      "description": "Official LEGO product image for exact set 40747.",
+      "path": "assets/photos/86d2c1b5f8e3821cf055.webp",
+      "bytes": 253271,
+      "sha256": "86d2c1b5f8e3821cf055526166b3974ffdf304fbde4df0326b4eb3a199071618",
+      "originalPath": "assets/v8-other/lego-v6-40747.png"
+    },
+    {
+      "id": "lego-v6-40709",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40709_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/40709",
+      "description": "Official LEGO product image for exact set 40709.",
+      "path": "assets/photos/cf603425ae0dd93e25c2.webp",
+      "bytes": 163524,
+      "sha256": "cf603425ae0dd93e25c2be3fcae2102f5851dfdfa94afd8657110d4f25687e4a",
+      "originalPath": "assets/v8-other/lego-v6-40709.png"
+    },
+    {
+      "id": "lego-v6-11034",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/11034_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/11034",
+      "description": "Official LEGO product image for exact set 11034.",
+      "path": "assets/photos/73e83a377504fb9f3a49.webp",
+      "bytes": 142532,
+      "sha256": "73e83a377504fb9f3a49888cc2982ed52c6f569fa6326c12abadd1c084a45340",
+      "originalPath": "assets/v8-other/lego-v6-11034.png"
+    },
+    {
+      "id": "lego-v6-71453",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71453_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71453",
+      "description": "Official LEGO product image for exact set 71453.",
+      "path": "assets/photos/2c3e2a4c8af3d204a63a.webp",
+      "bytes": 185501,
+      "sha256": "2c3e2a4c8af3d204a63a2dd0d9c8308c8942be33ced6b861ffebc8fcae354fa3",
+      "originalPath": "assets/v8-other/lego-v6-71453.png"
+    },
+    {
+      "id": "lego-v6-31157",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/31157_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/31157",
+      "description": "Official LEGO product image for exact set 31157.",
+      "path": "assets/photos/5cb7aef9aedaf23820f8.webp",
+      "bytes": 272381,
+      "sha256": "5cb7aef9aedaf23820f8e5d2cbe98e61c0f3c952212b84363a8da6daf6838eac",
+      "originalPath": "assets/v8-other/lego-v6-31157.png"
+    },
+    {
+      "id": "lego-v6-31149",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/31149_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/31149",
+      "description": "Official LEGO product image for exact set 31149.",
+      "path": "assets/photos/ac38afb4c36645d8c166.webp",
+      "bytes": 226976,
+      "sha256": "ac38afb4c36645d8c166e120c52b36ad01a8c506daab76ac067f9fa1b20306b2",
+      "originalPath": "assets/v8-other/lego-v6-31149.png"
+    },
+    {
+      "id": "lego-v6-31133",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/31133_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/31133",
+      "description": "Official LEGO product image for exact set 31133.",
+      "path": "assets/photos/1eb8898a36f4600a9abe.webp",
+      "bytes": 172020,
+      "sha256": "1eb8898a36f4600a9abe8a7c429c6f48a03ca6dfebb6c4ed2b9e531fff26da7f",
+      "originalPath": "assets/v8-other/lego-v6-31133.png"
+    },
+    {
+      "id": "lego-v6-31148",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/31148_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/31148",
+      "description": "Official LEGO product image for exact set 31148.",
+      "path": "assets/photos/712a1d5afa506670b4ee.webp",
+      "bytes": 256761,
+      "sha256": "712a1d5afa506670b4eed5ffc21dff5cbb7b43dcf466e172913df8eb1f83fa41",
+      "originalPath": "assets/v8-other/lego-v6-31148.png"
+    },
+    {
+      "id": "lego-v6-31152",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/31152_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/31152",
+      "description": "Official LEGO product image for exact set 31152.",
+      "path": "assets/photos/3c077599d47f657dc4eb.webp",
+      "bytes": 302292,
+      "sha256": "3c077599d47f657dc4eb22c04e4a8b88a2935f45f967fd2e7900e0e3011c9fbd",
+      "originalPath": "assets/v8-other/lego-v6-31152.png"
+    },
+    {
+      "id": "lego-v6-31158",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/31158_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/31158",
+      "description": "Official LEGO product image for exact set 31158.",
+      "path": "assets/photos/0eee4e39929bb29a39e3.webp",
+      "bytes": 202840,
+      "sha256": "0eee4e39929bb29a39e3ad771f05fe2d943aeb72213c714a5198c5d9b5e9ab44",
+      "originalPath": "assets/v8-other/lego-v6-31158.png"
+    },
+    {
+      "id": "lego-v6-42610",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42610_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42610",
+      "description": "Official LEGO product image for exact set 42610.",
+      "path": "assets/photos/4600f7e6116ae08be92f.webp",
+      "bytes": 138108,
+      "sha256": "4600f7e6116ae08be92fb70a92a839606b3c4bfbca1be57f305401eb976f5875",
+      "originalPath": "assets/v8-other/lego-v6-42610.png"
+    },
+    {
+      "id": "lego-v6-42633",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42633_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42633",
+      "description": "Official LEGO product image for exact set 42633.",
+      "path": "assets/photos/3ab3db0622538a179924.webp",
+      "bytes": 163441,
+      "sha256": "3ab3db0622538a1799240953764fa34682bd9e9977bdd2fa476f9e9eef13626c",
+      "originalPath": "assets/v8-other/lego-v6-42633.png"
+    },
+    {
+      "id": "lego-v6-42616",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42616_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42616",
+      "description": "Official LEGO product image for exact set 42616.",
+      "path": "assets/photos/9831561287402fdd8a2d.webp",
+      "bytes": 162875,
+      "sha256": "9831561287402fdd8a2daeeb370711d50e48a7312bed865a382a6b726092665f",
+      "originalPath": "assets/v8-other/lego-v6-42616.png"
+    },
+    {
+      "id": "lego-v6-42601",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42601_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42601",
+      "description": "Official LEGO product image for exact set 42601.",
+      "path": "assets/photos/1d1977c80319979e2dd9.webp",
+      "bytes": 228785,
+      "sha256": "1d1977c80319979e2dd91a65468eb9b40d1b4c7381a55ed0513c408a63440aeb",
+      "originalPath": "assets/v8-other/lego-v6-42601.png"
+    },
+    {
+      "id": "lego-v6-42609",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42609_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42609",
+      "description": "Official LEGO product image for exact set 42609.",
+      "path": "assets/photos/93f6bd46126a3a64e46a.webp",
+      "bytes": 157412,
+      "sha256": "93f6bd46126a3a64e46a97b2852cbffad4b7d74030149455c05b3b53a175290b",
+      "originalPath": "assets/v8-other/lego-v6-42609.png"
+    },
+    {
+      "id": "lego-v6-42603",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42603_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42603",
+      "description": "Official LEGO product image for exact set 42603.",
+      "path": "assets/photos/50a119035d8869fc866a.webp",
+      "bytes": 224455,
+      "sha256": "50a119035d8869fc866a541f78fa046903bb2e6709e9ef0b021acf4c9ffdbbb0",
+      "originalPath": "assets/v8-other/lego-v6-42603.png"
+    },
+    {
+      "id": "lego-v6-42613",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42613_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42613",
+      "description": "Official LEGO product image for exact set 42613.",
+      "path": "assets/photos/d3947c0c26bd5074d374.webp",
+      "bytes": 162699,
+      "sha256": "d3947c0c26bd5074d3748a3cb8032fc993fd152cbbdf8bb35bcfcb73d94e8929",
+      "originalPath": "assets/v8-other/lego-v6-42613.png"
+    },
+    {
+      "id": "lego-v6-42607",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42607_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42607",
+      "description": "Official LEGO product image for exact set 42607.",
+      "path": "assets/photos/347d60c8cb0f874545a0.webp",
+      "bytes": 200288,
+      "sha256": "347d60c8cb0f874545a0a8e19cd078a96e164e0a69d15dbff4d0b0d1b0296640",
+      "originalPath": "assets/v8-other/lego-v6-42607.png"
+    },
+    {
+      "id": "lego-v6-42632",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42632_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42632",
+      "description": "Official LEGO product image for exact set 42632.",
+      "path": "assets/photos/84a4b96421992c80e2d1.webp",
+      "bytes": 177863,
+      "sha256": "84a4b96421992c80e2d1cc9a24897159392e113a0bdc45383cabf6f67dc1fe58",
+      "originalPath": "assets/v8-other/lego-v6-42632.png"
+    },
+    {
+      "id": "lego-v6-42617",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42617_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/42617",
+      "description": "Official LEGO product image for exact set 42617.",
+      "path": "assets/photos/6e70893eb07cfca19d80.webp",
+      "bytes": 188222,
+      "sha256": "6e70893eb07cfca19d803600ffcfe78d8ed6b8adfa4e9ecb2cd724bba972909e",
+      "originalPath": "assets/v8-other/lego-v6-42617.png"
+    },
+    {
+      "id": "lego-v6-71472",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71472_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71472",
+      "description": "Official LEGO product image for exact set 71472.",
+      "path": "assets/photos/32ed254f7faa757a1058.webp",
+      "bytes": 140297,
+      "sha256": "32ed254f7faa757a10588c0b4af37682b3274622d3bcbac49646f4a653fdfc8e",
+      "originalPath": "assets/v8-other/lego-v6-71472.png"
+    },
+    {
+      "id": "lego-v6-71471",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71471_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71471",
+      "description": "Official LEGO product image for exact set 71471.",
+      "path": "assets/photos/a72e0fe882e47570edf2.webp",
+      "bytes": 103733,
+      "sha256": "a72e0fe882e47570edf2d64736b0d5f6332c3db78517e6f6b5f409608492589a",
+      "originalPath": "assets/v8-other/lego-v6-71471.png"
+    },
+    {
+      "id": "lego-v6-71476",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71476_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71476",
+      "description": "Official LEGO product image for exact set 71476.",
+      "path": "assets/photos/3c1d776c5f6baba1f14c.webp",
+      "bytes": 197948,
+      "sha256": "3c1d776c5f6baba1f14cfdd07d382083feb863b2fcb642fed360f8968e3b201a",
+      "originalPath": "assets/v8-other/lego-v6-71476.png"
+    },
+    {
+      "id": "lego-v6-71475",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71475_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71475",
+      "description": "Official LEGO product image for exact set 71475.",
+      "path": "assets/photos/4b1e2a7db4a36716bed2.webp",
+      "bytes": 244057,
+      "sha256": "4b1e2a7db4a36716bed2b2497120ec80f2e5087f425acc5c2a93cf5bc52f6e09",
+      "originalPath": "assets/v8-other/lego-v6-71475.png"
+    },
+    {
+      "id": "lego-v6-10422",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10422_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/10422",
+      "description": "Official LEGO product image for exact set 10422.",
+      "path": "assets/photos/08233a384cb472331b7c.webp",
+      "bytes": 165349,
+      "sha256": "08233a384cb472331b7c75c924458b187271f9c0c210204dead9463a62aa76dc",
+      "originalPath": "assets/v8-other/lego-v6-10422.png"
+    },
+    {
+      "id": "lego-v6-10416",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10416_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/10416",
+      "description": "Official LEGO product image for exact set 10416.",
+      "path": "assets/photos/9a89181c6a2716be43aa.webp",
+      "bytes": 169701,
+      "sha256": "9a89181c6a2716be43aaf2ab1274f3f33a8557bb5a96abb6a6a516dbdb1a0c8c",
+      "originalPath": "assets/v8-other/lego-v6-10416.png"
+    },
+    {
+      "id": "lego-v6-10418",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10418_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/10418",
+      "description": "Official LEGO product image for exact set 10418.",
+      "path": "assets/photos/c3c064f65c9b30e71f5f.webp",
+      "bytes": 174412,
+      "sha256": "c3c064f65c9b30e71f5f07e316dca33d487fc300298f9fb14b59153e687fdf41",
+      "originalPath": "assets/v8-other/lego-v6-10418.png"
+    },
+    {
+      "id": "lego-v6-10417",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10417_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/10417",
+      "description": "Official LEGO product image for exact set 10417.",
+      "path": "assets/photos/b392027ed5eb9fc27cb7.webp",
+      "bytes": 148338,
+      "sha256": "b392027ed5eb9fc27cb7e7d253a47bd107069f2be9d6a902f1f19db179625898",
+      "originalPath": "assets/v8-other/lego-v6-10417.png"
+    },
+    {
+      "id": "lego-v6-43237",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/43237_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/43237",
+      "description": "Official LEGO product image for exact set 43237.",
+      "path": "assets/photos/735f7ee171a03415ca63.webp",
+      "bytes": 255615,
+      "sha256": "735f7ee171a03415ca63e88b7b06dc57e33b80f438d0de38d471a4f6d2d0824f",
+      "originalPath": "assets/v8-other/lego-v6-43237.png"
+    },
+    {
+      "id": "lego-v6-40708",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40708_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/40708",
+      "description": "Official LEGO product image for exact set 40708.",
+      "path": "assets/photos/87ee711cbd9793244dfe.webp",
+      "bytes": 330690,
+      "sha256": "87ee711cbd9793244dfe197023e7b7e778acbe627b05bd7283c7edc8928d1a21",
+      "originalPath": "assets/v8-other/lego-v6-40708.png"
+    },
+    {
+      "id": "lego-v6-40674",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40674_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/40674",
+      "description": "Official LEGO product image for exact set 40674.",
+      "path": "assets/photos/d571a908213b88356fbf.webp",
+      "bytes": 342406,
+      "sha256": "d571a908213b88356fbf193df58ba5ea6686cf326df3c0101fe7fe7dab5226b9",
+      "originalPath": "assets/v8-other/lego-v6-40674.png"
+    },
+    {
+      "id": "lego-v6-43239",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/43239_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/43239",
+      "description": "Official LEGO product image for exact set 43239.",
+      "path": "assets/photos/aa444099bcbe9c7b1957.webp",
+      "bytes": 150801,
+      "sha256": "aa444099bcbe9c7b1957b261cfa2cdaa040dbc7a020357e57a0d27e98ddddda4",
+      "originalPath": "assets/v8-other/lego-v6-43239.png"
+    },
+    {
+      "id": "lego-v6-77047",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/77047_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/77047",
+      "description": "Official LEGO product image for exact set 77047.",
+      "path": "assets/photos/f649d1b44f89bc6d2237.webp",
+      "bytes": 136092,
+      "sha256": "f649d1b44f89bc6d22372e156ea60103221f62c25b57b534f5588fa5913f030e",
+      "originalPath": "assets/v8-other/lego-v6-77047.png"
+    },
+    {
+      "id": "lego-v6-77049",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/77049_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/77049",
+      "description": "Official LEGO product image for exact set 77049.",
+      "path": "assets/photos/d24d970f6bf7c3cdb9eb.webp",
+      "bytes": 191975,
+      "sha256": "d24d970f6bf7c3cdb9eb40d8dfdf9678e2c43c7ee16ce98906db387441175fb8",
+      "originalPath": "assets/v8-other/lego-v6-77049.png"
+    },
+    {
+      "id": "lego-v6-77048",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/77048_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/77048",
+      "description": "Official LEGO product image for exact set 77048.",
+      "path": "assets/photos/77831bdba0355ff5f932.webp",
+      "bytes": 161541,
+      "sha256": "77831bdba0355ff5f932d7fbad99ff2ed301e2c761e56dde350d08b107471d2c",
+      "originalPath": "assets/v8-other/lego-v6-77048.png"
+    },
+    {
+      "id": "lego-v6-77046",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/77046_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/77046",
+      "description": "Official LEGO product image for exact set 77046.",
+      "path": "assets/photos/46590777b49946853419.webp",
+      "bytes": 166696,
+      "sha256": "46590777b499468534190ed99fa7e70cc31be7130a9e766bc90352f8e09a6e06",
+      "originalPath": "assets/v8-other/lego-v6-77046.png"
+    },
+    {
+      "id": "lego-v6-21257",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/21257_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/21257",
+      "description": "Official LEGO product image for exact set 21257.",
+      "path": "assets/photos/679ed7cfd9c5aee6c90e.webp",
+      "bytes": 178832,
+      "sha256": "679ed7cfd9c5aee6c90ee912fa6f71a6820da3149072a03393d1a11f125459e8",
+      "originalPath": "assets/v8-other/lego-v6-21257.png"
+    },
+    {
+      "id": "lego-v6-21251",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/21251_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/21251",
+      "description": "Official LEGO product image for exact set 21251.",
+      "path": "assets/photos/07a94825a1094c5851f9.webp",
+      "bytes": 122866,
+      "sha256": "07a94825a1094c5851f9077550e2632aba95ee88c2bb4acc08199467e0f7b688",
+      "originalPath": "assets/v8-other/lego-v6-21251.png"
+    },
+    {
+      "id": "lego-v6-21255",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/21255_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/21255",
+      "description": "Official LEGO product image for exact set 21255.",
+      "path": "assets/photos/92f340fff927cf35a6e1.webp",
+      "bytes": 130002,
+      "sha256": "92f340fff927cf35a6e19598f70a9d6790e9493043a1b3c6ef3c67e416f6b0ce",
+      "originalPath": "assets/v8-other/lego-v6-21255.png"
+    },
+    {
+      "id": "lego-v6-21254",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/21254_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/21254",
+      "description": "Official LEGO product image for exact set 21254.",
+      "path": "assets/photos/bd8589bbc8efadbf0a8f.webp",
+      "bytes": 122866,
+      "sha256": "bd8589bbc8efadbf0a8fed6c676ad36acb4e22e10d49adb5f1cea0b728de4171",
+      "originalPath": "assets/v8-other/lego-v6-21254.png"
+    },
+    {
+      "id": "lego-v6-71429",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71429_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71429",
+      "description": "Official LEGO product image for exact set 71429.",
+      "path": "assets/photos/d5245cbabf5353bb6be2.webp",
+      "bytes": 166675,
+      "sha256": "d5245cbabf5353bb6be27ee1c8c8e8141f89146c9429619688eb9bfa447994da",
+      "originalPath": "assets/v8-other/lego-v6-71429.png"
+    },
+    {
+      "id": "lego-v6-71431",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71431_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71431",
+      "description": "Official LEGO product image for exact set 71431.",
+      "path": "assets/photos/c7f09fcda177762d8925.webp",
+      "bytes": 203479,
+      "sha256": "c7f09fcda177762d89255abe50d2d697628255b85e521484b5ca25c4cf452d62",
+      "originalPath": "assets/v8-other/lego-v6-71431.png"
+    },
+    {
+      "id": "lego-v6-71430",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71430_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71430",
+      "description": "Official LEGO product image for exact set 71430.",
+      "path": "assets/photos/6839ef1210ea939a0530.webp",
+      "bytes": 175991,
+      "sha256": "6839ef1210ea939a053058026ec4aa9b65e8f8fdd37b26948273fccd3460e859",
+      "originalPath": "assets/v8-other/lego-v6-71430.png"
+    },
+    {
+      "id": "lego-v6-71432",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/71432_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/71432",
+      "description": "Official LEGO product image for exact set 71432.",
+      "path": "assets/photos/40c8296aa39e5c1e8551.webp",
+      "bytes": 162236,
+      "sha256": "40c8296aa39e5c1e85515b3e4dee89358c002896fe069c38b058f8d3a77cd10e",
+      "originalPath": "assets/v8-other/lego-v6-71432.png"
+    },
+    {
+      "id": "lego-v6-76425",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/76425_Prod.png?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/76425",
+      "description": "Official LEGO product image for exact set 76425.",
+      "path": "assets/photos/c3050a8cff58c61c2f3d.webp",
+      "bytes": 140890,
+      "sha256": "c3050a8cff58c61c2f3d8915d86f03c56d0233c05bf226882eba3875751ca558",
+      "originalPath": "assets/v8-other/lego-v6-76425.png"
+    },
+    {
+      "id": "apple-v4-3",
+      "imageUrl": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111843_homepod-2gen.png",
+      "source": "https://support.apple.com/en-us/111843",
+      "description": "HomePod (2nd generation) - Tech Specs - Apple Support — official Apple product photo.",
+      "path": "assets/photos/325d2727f601dbd4264e.webp",
+      "bytes": 494911,
+      "sha256": "325d2727f601dbd4264e902aa875b4fd4ebfed6eab4e16564948ab39a2e182a7",
+      "originalPath": "assets/v8-other/apple-v4-3.png"
+    },
+    {
+      "id": "apple-x3",
+      "imageUrl": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111851_sp880-airpods-Pro-2nd-gen.png",
+      "source": "https://support.apple.com/en-us/111851",
+      "description": "AirPods Pro 2 - Tech Specs - Apple Support — official Apple product photo.",
+      "path": "assets/photos/be4fea77b4eb2d227fad.webp",
+      "bytes": 205149,
+      "sha256": "be4fea77b4eb2d227fad6da2e321f22bc5344567cf01606327bd37c4a7f12fcf",
+      "originalPath": "assets/v8-other/apple-x3.png"
+    },
+    {
+      "id": "apple-x4",
+      "imageUrl": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121205-airpods-max.png",
+      "source": "https://support.apple.com/en-us/121205",
+      "description": "AirPods Max 1 (USB-C) - Tech Specs - Apple Support — official Apple product photo.",
+      "path": "assets/photos/fdfae5c9670c9a3b70a7.webp",
+      "bytes": 263009,
+      "sha256": "fdfae5c9670c9a3b70a76a65a2d20f433015088053b6c8da05d032bbf0e898f2",
+      "originalPath": "assets/v8-other/apple-x4.png"
+    },
+    {
+      "id": "apple-x5",
+      "imageUrl": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111914_homepod-mini-colours.png",
+      "source": "https://support.apple.com/en-us/111914",
+      "description": "HomePod mini - Tech Specs - Apple Support — official Apple product photo.",
+      "path": "assets/photos/c21d7784f3c1d204674e.webp",
+      "bytes": 565055,
+      "sha256": "c21d7784f3c1d204674eab01b161aa0b2e241fb618c8ed5d25601348ff558e46",
+      "originalPath": "assets/v8-other/apple-x5.png"
+    },
+    {
+      "id": "lego-v4-1",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10280_Prod.jpg?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/10280",
+      "description": "Official LEGO product photo for exact set 10280",
+      "path": "assets/photos/ab031ed8a05f069f64d3.webp",
+      "bytes": 477603,
+      "sha256": "ab031ed8a05f069f64d3755dbe5daf3012f1d7eb4d828faa798a88d051af8dad",
+      "originalPath": "assets/v8-other/lego-v4-1.jpg"
+    },
+    {
+      "id": "lego-x9",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40460_Prod.jpg?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/40460",
+      "description": "Official LEGO product photo for exact set 40460",
+      "path": "assets/photos/8ce918e6a0c9b689ea25.webp",
+      "bytes": 189300,
+      "sha256": "8ce918e6a0c9b689ea25b756933757d3d71dee6150b43e74d44dfb8b69cc5ba0",
+      "originalPath": "assets/v8-other/lego-x9.jpg"
+    },
+    {
+      "id": "lego-v6-10941",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10941_Prod.jpg?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/10941",
+      "description": "Official LEGO product photo for exact set 10941",
+      "path": "assets/photos/fa82b4352995e4a33895.webp",
+      "bytes": 151668,
+      "sha256": "fa82b4352995e4a338959d793c2150e565adbfe4445567473f0ad1b599a2eb77",
+      "originalPath": "assets/v8-other/lego-v6-10941.jpg"
+    },
+    {
+      "id": "lego-v6-40478",
+      "imageUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/40478_Prod.jpg?format=webply&fit=bounds&quality=80&width=600&height=600",
+      "source": "https://www.lego.com/en-us/service/building-instructions/40478",
+      "description": "Official LEGO product photo for exact set 40478",
+      "path": "assets/photos/d6af82850387b4e916f9.webp",
+      "bytes": 273705,
+      "sha256": "d6af82850387b4e916f911d46b9553525e7214df4585eb027d312c53f2a926d9",
+      "originalPath": "assets/v8-other/lego-v6-40478.jpg"
+    },
+    {
+      "id": "sephora-x1",
+      "imageUrl": "https://www.clinique.com/cdn/shop/files/cl_sku_635906_3000x3000_0.png?format=webp&v=1792935311&width=600",
+      "source": "https://www.clinique.com/product/1605/4772/makeup/lipsticks/almost-lipstick",
+      "description": "Almost Lipstick in Black Honey, Pink Honey and Nude Honey, 1.9 g, Black Honey, Product Shot",
+      "path": "assets/photos/15761751af55d32eba24.webp",
+      "bytes": 45067,
+      "sha256": "15761751af55d32eba24d5339d95814f6a8d6d7c54a79cfcdd4008e1b2e81da1",
+      "originalPath": "assets/v8-other/sephora-x1.png"
+    },
+    {
+      "id": "tory-v4-2",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/ella-tote-angle.TB_174240_001_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/ella/",
+      "description": "Exact official Tory Burch product data name: Ella Tote",
+      "path": "assets/photos/ecae55d5c4b576d84d2f.webp",
+      "bytes": 19025,
+      "sha256": "ecae55d5c4b576d84d2fbe581650c4d26dabdd68f58a6f96c8d91c8d89a705bd",
+      "originalPath": "assets/v8-other/tory-v4-2.jpg"
+    },
+    {
+      "id": "tory-v4-5",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/ella-natuura%E2%84%A2-drawstring-tote-angle.TB_178767_001_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/ella/",
+      "description": "Exact official Tory Burch product data name: Ella natuura™ Drawstring Tote",
+      "path": "assets/photos/052eef2d250b740fa74f.webp",
+      "bytes": 26816,
+      "sha256": "052eef2d250b740fa74f99c068e5b5bc70db262f1165a50ff6142306a269d097",
+      "originalPath": "assets/v8-other/tory-v4-5.jpg"
+    },
+    {
+      "id": "tory-x1",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/mini-kira-turnlock-shoulder-bag-angle.TB_183860_406_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/kira/",
+      "description": "Exact official Tory Burch product data name: Mini Kira Turnlock Shoulder Bag",
+      "path": "assets/photos/c35ccb463d1176abb286.webp",
+      "bytes": 19777,
+      "sha256": "c35ccb463d1176abb2865c754ea98ad930e2df4f42b90431bfc3d66f6b816129",
+      "originalPath": "assets/v8-other/tory-x1.jpg"
+    },
+    {
+      "id": "tory-x3",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/kira-diamond-quilt-shoulder-bag-angle.TB_154704_001_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/kira/",
+      "description": "Exact official Tory Burch product data name: Kira Diamond Quilt Shoulder Bag",
+      "path": "assets/photos/9bdb59b2dd0d3d8f4372.webp",
+      "bytes": 22849,
+      "sha256": "9bdb59b2dd0d3d8f43723d8ccdd792521ebe30bc55fad742b64efa110e3f1dd7",
+      "originalPath": "assets/v8-other/tory-x3.jpg"
+    },
+    {
+      "id": "tory-x5",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/kira-sport-sandal-angle.TB_144328_001_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/kira/",
+      "description": "Exact official Tory Burch product data name: Kira Sport Sandal",
+      "path": "assets/photos/4c9b736b2af5bf929e13.webp",
+      "bytes": 28724,
+      "sha256": "4c9b736b2af5bf929e13922560a762503be3e45648ebe5e295f3afa27117cc2d",
+      "originalPath": "assets/v8-other/tory-x5.jpg"
+    },
+    {
+      "id": "tory-x8",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/miller-jelly-sandal-angle.TB_184868_235_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/shoes/miller/",
+      "description": "Exact official Tory Burch product data name: Miller Jelly Sandal",
+      "path": "assets/photos/27dc7159a370f55ed564.webp",
+      "bytes": 17364,
+      "sha256": "27dc7159a370f55ed56407168876a014b39a26d1809c2dfd849645a94a2b2da9",
+      "originalPath": "assets/v8-other/tory-x8.jpg"
+    },
+    {
+      "id": "tory-x9",
+      "imageUrl": "https://s7.toryburch.com/is/image/ToryBurch/style/mini-eleanor-satchel-angle.TB_154816_001_SLANG.pdp-600x600.jpg",
+      "source": "https://www.toryburch.com/en-us/handbags/eleanor/",
+      "description": "Exact official Tory Burch product data name: Mini Eleanor Satchel",
+      "path": "assets/photos/c2b9efeecb528e8cbb3a.webp",
+      "bytes": 17197,
+      "sha256": "c2b9efeecb528e8cbb3a7e1d4b8ae87b6a1917b13a265cd60576b03e3ed2476f",
+      "originalPath": "assets/v8-other/tory-x9.jpg"
+    },
+    {
+      "id": "sephora-x7",
+      "imageUrl": "https://www.narscosmetics.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_NARS/default/dw30397e11/2025/January/Blush/NARS_SP25_Blush_PDPCrop_Soldier_Swatch_AllureBeautySeal_Orgasm_GLBL.jpg?sw=600&sh=600&sm=fit",
+      "source": "https://www.narscosmetics.com/USA/blush/999NACBLUSH01.html",
+      "description": "Powder Blush, 777 Orgasm",
+      "path": "assets/photos/db01d792a640a9eafc71.webp",
+      "bytes": 57429,
+      "sha256": "db01d792a640a9eafc7105f95d5eb256f52896395a715f14d38d7e0ec862602f",
+      "originalPath": "assets/v8-other/sephora-x7.jpg"
+    },
+    {
+      "id": "longchamp-x8",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dw640e5eca/images/DIS/L1625089001_0.png?sw=600&sh=600&sm=fit&q=100",
+      "source": "https://www.longchamp.com/us/en/products/travel-bag-m-L1625089001.html",
+      "description": "Le Pliage Original Travel bag XL, Black",
+      "path": "assets/photos/953f6e7a74f0f9cf25e5.webp",
+      "bytes": 165486,
+      "sha256": "953f6e7a74f0f9cf25e5cb15b6f22f2dd4069188c347baffd354a77029cc134f",
+      "originalPath": "assets/v8-other/longchamp-x8.png"
+    },
+    {
+      "id": "longchamp-x9",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dw7e7eb12e/images/DIS/L1500987001_0.png?sw=600&sh=600&sm=fit",
+      "source": "https://www.longchamp.com/us/en/products/handbag-xs-L1500987001.html",
+      "description": "Le Pliage Xtra XS Handbag , Black - Leather  - View 1 of 6",
+      "path": "assets/photos/b64d7306d9631fe59d36.webp",
+      "bytes": 304240,
+      "sha256": "b64d7306d9631fe59d3646e348a21fb6b41f96a776eaa9b739fe08c49419c15e",
+      "originalPath": "assets/v8-other/longchamp-x9.png"
+    },
+    {
+      "id": "ross-v4-1",
+      "imageUrl": "https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_550,e_unsharp_mask:100,w_440/dpr_2.0/v1787694849/VN000Z71BW2-HERO/Authentic-Shoe-VANS-HERO.png",
+      "source": "https://www.vans.com/en-us/p/shoes/icons/authentic-5310/authentic-shoe-VN000Z71BW2",
+      "description": "Vans Authentic Shoe — exact product photo extracted from official brand page.",
+      "path": "assets/photos/bdbaa5570047517624b3.webp",
+      "bytes": 38830,
+      "sha256": "bdbaa5570047517624b3709b873158b4919c3e442395988f89df84fc4551b2cd",
+      "originalPath": "assets/v8-other/ross-v4-1.jpg"
+    },
+    {
+      "id": "marshalls-v4-3",
+      "imageUrl": "https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_550,e_unsharp_mask:100,w_440/dpr_2.0/v1787694849/VN000Z71BW2-HERO/Authentic-Shoe-VANS-HERO.png",
+      "source": "https://www.vans.com/en-us/p/shoes/icons/authentic-5310/authentic-shoe-VN000Z71BW2",
+      "description": "Vans Authentic Shoe — exact product photo extracted from official brand page.",
+      "path": "assets/photos/bdbaa5570047517624b3.webp",
+      "bytes": 38830,
+      "sha256": "bdbaa5570047517624b3709b873158b4919c3e442395988f89df84fc4551b2cd",
+      "originalPath": "assets/v8-other/marshalls-v4-3.jpg"
+    },
+    {
+      "id": "ross-x2",
+      "imageUrl": "https://assets.vans.com/images/t_img/c_fill,g_center,f_auto,h_550,e_unsharp_mask:100,w_440/dpr_2.0/v1789597882/VN000D3HFST-HERO/Old-Skool-Shoe-VANS-HERO.png",
+      "source": "https://www.vans.com/en-us/p/shoes/icons/old-skool-5205/old-skool-shoe-VN000D3HFST",
+      "description": "Vans Old Skool Shoe — exact product photo extracted from official brand page.",
+      "path": "assets/photos/331d29bb709fa1e3824a.webp",
+      "bytes": 50650,
+      "sha256": "331d29bb709fa1e3824a63809345de1895ad06499de469e7935e46abec3a2325",
+      "originalPath": "assets/v8-other/ross-x2.jpg"
+    },
+    {
+      "id": "ross-v4-2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0862/7834/0912/files/100008494_SLC_eCom_95342b43-8ddc-449c-afe7-69de90093a85.jpg?v=1775053418&width=600",
+      "source": "https://www.reebok.com/collections/mens-classics/products/reebok-classic-leather-shoes-core-black-core-black-pure-grey-5-107421",
+      "description": "Classic Leather Shoes — exact product photo extracted from official brand page.",
+      "path": "assets/photos/840fb15a23b379d3508e.webp",
+      "bytes": 15945,
+      "sha256": "840fb15a23b379d3508ee63310babcaf05b9d58d9909656129e5b75a8c3989cd",
+      "originalPath": "assets/v8-other/ross-v4-2.jpg"
+    },
+    {
+      "id": "marshalls-v4-5",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0862/7834/0912/files/100279132_SLC_eCom.jpg?v=1788611376&width=600",
+      "source": "https://www.reebok.com/collections/mens-classics/products/reebok-classic-nylon-shoes-chalk-heritagered-midnighttide-172463",
+      "description": "Classic Nylon Shoes — exact product photo extracted from official brand page.",
+      "path": "assets/photos/00617f4307ebbf4cf24a.webp",
+      "bytes": 18601,
+      "sha256": "00617f4307ebbf4cf24a6fe2a2c50c861a1322aefba41cb70cc617832092841c",
+      "originalPath": "assets/v8-other/marshalls-v4-5.jpg"
+    },
+    {
+      "id": "marshalls-v4-1",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0862/7834/0912/files/100259127_SLC_eCom.jpg?v=1776601723&width=600",
+      "source": "https://www.reebok.com/collections/mens-classics/products/reebok-mens-club-c-85-shoes-ftwr-white-blue-gum-100050",
+      "description": "Club C 85 Shoes — exact product photo extracted from official brand page.",
+      "path": "assets/photos/b98609457ebea36ad603.webp",
+      "bytes": 17889,
+      "sha256": "b98609457ebea36ad6039bb9a7d863bf427a2c1f7df330f226f3c03e01443169",
+      "originalPath": "assets/v8-other/marshalls-v4-1.jpg"
+    },
+    {
+      "id": "target-x5",
+      "imageUrl": "https://mcprod.ecom.clxdtc.com/media/catalog/product/n/i/ni-46123_bbd_lip_lbl_balm_beeswax.jpg?optimize=low&fit=bounds&height=600&width=600",
+      "source": "https://www.burtsbees.com/product/beeswax-lip-balm/",
+      "description": "Beeswax Lip Balm — exact product photo extracted from official brand page.",
+      "path": "assets/photos/15b7558ff0b31f5b6916.webp",
+      "bytes": 44590,
+      "sha256": "15b7558ff0b31f5b69169d4a1b733947f920c76a4c778cd410fadd80c000b1be",
+      "originalPath": "assets/v8-other/target-x5.jpg"
+    },
+    {
+      "id": "bathbody-v4-10",
+      "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa48b91fd/hires/028032517.jpg?sw=600&q=80&format=auto",
+      "source": "https://www.bathandbodyworks.com/p/in-the-stars-ultimate-hydration-body-cream-028032517",
+      "description": "In the Stars Ultimate Hydration Body Cream — full size; official product photo.",
+      "path": "assets/photos/8eb737a109a858f3cb48.webp",
+      "bytes": 33300,
+      "sha256": "8eb737a109a858f3cb48976e634746346b0776f3df6c193a4fb1f0fddcf7b040",
+      "originalPath": "assets/v8-other/bathbody-v4-10.jpg"
+    },
+    {
+      "id": "bathbody-v4-8",
+      "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw672d4ecc/hires/028032518.jpg?sw=600&q=80&format=auto",
+      "source": "https://www.bathandbodyworks.com/p/japanese-cherry-blossom-ultimate-hydration-body-cream-028032518",
+      "description": "Japanese Cherry Blossom Ultimate Hydration Body Cream — full size; official product photo.",
+      "path": "assets/photos/41778edb8d666db69155.webp",
+      "bytes": 25089,
+      "sha256": "41778edb8d666db69155a884c0bae3a108ffb33e1b37fa0ded86133813387c64",
+      "originalPath": "assets/v8-other/bathbody-v4-8.jpg"
+    },
+    {
+      "id": "bathbody-v4-14",
+      "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7e8afe26/hires/028011610.jpg?sw=600&q=80&format=auto",
+      "source": "https://www.bathandbodyworks.com/p/warm-vanilla-sugar-body-lotion-028011610",
+      "description": "Warm Vanilla Sugar Body Lotion — full size; official product photo.",
+      "path": "assets/photos/b9c225543c1c28226ba1.webp",
+      "bytes": 29135,
+      "sha256": "b9c225543c1c28226ba10490b3358dec66fe1340686e7dd9386ca68eefad5e2d",
+      "originalPath": "assets/v8-other/bathbody-v4-14.jpg"
+    },
+    {
+      "id": "bathbody-v4-15",
+      "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe9f44dca/hires/028028661.jpg?sw=600&q=80&format=auto",
+      "source": "https://www.bathandbodyworks.com/p/warm-vanilla-sugar-moisturizing-body-wash-028028661",
+      "description": "Warm Vanilla Sugar Moisturizing Body Wash — full size; official product photo.",
+      "path": "assets/photos/66713fa1690c484670a4.webp",
+      "bytes": 20055,
+      "sha256": "66713fa1690c484670a4e4bad0c6eddb7de789c43bf626e98c940eac937b0084",
+      "originalPath": "assets/v8-other/bathbody-v4-15.jpg"
+    },
+    {
+      "id": "bathbody-v4-12",
+      "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfcf862b6/hires/028019408.jpg?sw=600&q=80&format=auto",
+      "source": "https://www.bathandbodyworks.com/p/champagne-toast-body-butter-028019408",
+      "description": "Champagne Toast Body Butter — N/A; official product photo.",
+      "path": "assets/photos/925c89eeb7c45c6dc29b.webp",
+      "bytes": 16843,
+      "sha256": "925c89eeb7c45c6dc29b25dba335f2fda4270d547b09105a5df1f0730396a3a9",
+      "originalPath": "assets/v8-other/bathbody-v4-12.jpg"
+    },
+    {
+      "id": "nordstrom-v4-4",
+      "imageUrl": "https://media.au.ugg.com/cdn-cgi/image/fit=scale-down,f=auto,w=600/products/2abc0cfc-78d8-431d-a6d7-24b2f2240a96/5ab9ec48/1174671-ddcc_1.jpg",
+      "source": "https://au.ugg.com/products/m-tasman-ii-1174671-ddcc-ddcc?ref=O6WtOA",
+      "description": "Tasman II — exact model manufacturer photo.",
+      "path": "assets/photos/76f7cdd22b32409cd1e5.webp",
+      "bytes": 11560,
+      "sha256": "76f7cdd22b32409cd1e5482ccd03c558652d6f6887171e9eb302d51f982352c1",
+      "originalPath": "assets/v8-other/nordstrom-v4-4.jpg"
+    },
+    {
+      "id": "target-x2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0439/2537/3087/products/FreeSip-Three-Quarter-24oz-SS-1080x1080-Very-Very-Dark.png?v=1717000536&width=600",
+      "source": "https://owalalife.com/products/freesip",
+      "description": "Official Owala FreeSip 24oz, Very Very Dark variant; exact24oz image embedded in publicproduct data.",
+      "path": "assets/photos/1b5f0198177b0d028f00.webp",
+      "bytes": 61499,
+      "sha256": "1b5f0198177b0d028f004497b9ba8b2e3cd9021b21e837279a35e5f247a2b4a9",
+      "originalPath": "assets/v8-other/target-x2.png"
+    },
+    {
+      "id": "apple-v4-4",
+      "imageUrl": "https://www.beatsbydre.com/content/dam/beats/web/product/headphones/solo4-wireless/global/og/solo4-global-ogimage.jpg",
+      "source": "https://www.beatsbydre.com/headphones/solo4-wireless",
+      "description": "Beats Solo4 official product image.",
+      "path": "assets/photos/a11c715e02b080affbe8.webp",
+      "bytes": 47332,
+      "sha256": "a11c715e02b080affbe8a684edfe1c0469090221fb64e951e448ab721ddfffe0",
+      "originalPath": "assets/v8-other/apple-v4-4.jpg"
+    },
+    {
+      "id": "longchamp-x2",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/images/DIS/L1623089001_1.png?sw=600&sh=600&sm=fit",
+      "source": "https://www.davidjones.com/product/longchamp-le-pliage-original-m-handbag-26438014",
+      "description": "Longchamp Le Pliage Original M Handbag, legacy style L1623089001; official manufacturer photo, matching named retailer reference.",
+      "path": "assets/photos/c7fb4e6cd7a3d5aae19e.webp",
+      "bytes": 91577,
+      "sha256": "c7fb4e6cd7a3d5aae19e801cd81b30db42f7ec0b2c2218ff2d52d7145bdc037e",
+      "originalPath": "assets/v8-other/longchamp-x2.png"
+    },
+    {
+      "id": "ross-v4-5",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/CPM253FC08_S143_FRONT_2048x2048_3ea835ac-8f79-4df6-8606-06104593ec23.jpg?v=1770196261?width=600",
+      "source": "https://www.champion.com/products/champion-powerblend-crewneck-sweatshirt-classic-script-logo-black",
+      "description": "Official Champion data: Powerblend Crewneck Sweatshirt, Script Logo",
+      "path": "assets/photos/af9ce3a078966ea5befd.webp",
+      "bytes": 176594,
+      "sha256": "af9ce3a078966ea5befd55929430407480f1fbdff93eac6de015d7acbfcc03c2",
+      "originalPath": "assets/v8-other/ross-v4-5.jpg"
+    },
+    {
+      "id": "ross-x4",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/CPM253FC13_S143_FRONT_2048x2048_f041b6ab-2dde-4ec9-8969-b460c376eb07.jpg?v=1770417336?width=600",
+      "source": "https://www.champion.com/products/champion-reverse-weave-crewneck-small-c-black",
+      "description": "Official Champion data: Reverse Weave Crewneck Sweatshirt, C Logo",
+      "path": "assets/photos/61273097508990aca8f1.webp",
+      "bytes": 174905,
+      "sha256": "61273097508990aca8f19b3aaad7698fc20e978f8a999515b1d4ed14303c7654",
+      "originalPath": "assets/v8-other/ross-x4.jpg"
+    },
+    {
+      "id": "ross-x1",
+      "imageUrl": "https://static.nike.com/a/images/t_default/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/toqshuuheqdl3ljzobnc/ALL+STAR+HI+BLACK.png",
+      "source": "https://www.nike.com/t/converse-chuck-taylor-all-star-seasonal-high-top-unisex-shoe-xX439O/M9160-000",
+      "description": "Converse Chuck Taylor All Star High Top, exactcore style M9160-000; officialNike product photo.",
+      "path": "assets/photos/96ee3a535bba50573e1b.webp",
+      "bytes": 155628,
+      "sha256": "96ee3a535bba50573e1b1fc97f13ea1952b4dc3f49401951e328d22284a0ae8b",
+      "originalPath": "assets/v8-other/ross-x1.png"
+    },
+    {
+      "id": "r-tee",
+      "imageUrl": "https://www.hanes.com/images/catalog/catalog/product/H/N/HNS_5180_OxfordGrey_Front.jpg?width=449",
+      "source": "https://www.hanes.com/products/hanes-beefy-t-crewneck-short-sleeve-t-shirt/5180",
+      "description": "Hanes Beefy-T Unisex Short Sleeve T-Shirt #5180 — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/554d22780b6090b10865.webp",
+      "bytes": 25756,
+      "sha256": "554d22780b6090b108652cb45e8c76b8c15915840bebb3f7bc539e02e46a75e0",
+      "originalPath": "assets/v8-other/r-tee.jpg"
+    },
+    {
+      "id": "m-watch",
+      "imageUrl": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/F/F9/F91/F-91W-1/us-assets/F-91W-1_Seq1.png",
+      "source": "https://www.casio.com/us/watches/casio/product.F-91W-1/",
+      "description": "Casio F-91W-1 — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/cf8840875fe23f540535.webp",
+      "bytes": 701126,
+      "sha256": "cf8840875fe23f540535282c1817f3b744464f10a5bbed73e7ac6fffb075b979",
+      "originalPath": "assets/v8-other/m-watch.png"
+    },
+    {
+      "id": "ross-x5",
+      "imageUrl": "https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/A/A1/A16/A168WA-1/us-assets/A168W-1.png.transform/main-visual-sp/image.png",
+      "source": "https://www.casio.com/us/watches/casio/product.A168WA-1/#mainContent",
+      "description": "Casio A168WA-1 — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/936cbd97a58e3e73c2c3.webp",
+      "bytes": 395659,
+      "sha256": "936cbd97a58e3e73c2c3f26789c042a2a8eb7bf24c706c7b29fdaf989de9d04c",
+      "originalPath": "assets/v8-other/ross-x5.png"
+    },
+    {
+      "id": "target-v4-4",
+      "imageUrl": "https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw34da3911/JBL_TUNE_510BT_Product%20Image_Hero_Blue.png?sw=535&sh=535",
+      "source": "https://www.jbl.com/TUNE510BT-.html",
+      "description": "JBL Tune 510BT — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/5ea2157865372a4a192a.webp",
+      "bytes": 149771,
+      "sha256": "5ea2157865372a4a192a549a175310a2547cd794a1ba3ebc34a877f60be7836a",
+      "originalPath": "assets/v8-other/target-v4-4.png"
+    },
+    {
+      "id": "sephora-x5",
+      "imageUrl": "https://www.kiehls.com/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-kiehls-master-catalog/default/dw88a3e0c5/nextgen/skin-care/face-moisturizers/ultra-facial/ultra-facial-cream/2024/D0711324%20-%20KHLS%20-%202.7.24%20-%20Packshot%20Seal%20UFC,%20Better%20Screen,%20and%20Barrier%20Balm%20-%20UFC%20-%20250ml%20-%202400x2400.webp?sw=358&sh=358&sm=cut&sfrm=png&q=70",
+      "source": "https://www.kiehls.com/skincare/face-moisturizers/ultra-facial-cream-with-squalane/622.html",
+      "description": "Kiehl's Ultra Facial Cream with Squalane — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/fb5b6a4fd496e21d2070.webp",
+      "bytes": 11762,
+      "sha256": "fb5b6a4fd496e21d2070ab79f84785a5f9feb2dc9ddce4558222bae74e7307ec",
+      "originalPath": "assets/v8-other/sephora-x5.webp"
+    },
+    {
+      "id": "sephora-x6",
+      "imageUrl": "https://www.lancome-usa.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-lancome-us-master-catalog/default/dw49ff05cd/pdp/00271-LAC/Lancome-Mascara-Lash-Idole-Full-Size-9ml-000-3614273066365-OpenClosed_2400x2400.webp?sw=270&sfrm=jpg&q=70",
+      "source": "https://www.lancome-usa.com/makeup/eye-makeup/mascaras/lash-idole-mascara/00271-LAC.html",
+      "description": "Lash Idôle Mascara — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/3fac6a3cfb702ae15f03.webp",
+      "bytes": 1570,
+      "sha256": "3fac6a3cfb702ae15f03f6d0a65bc4bb4e04ad2eff936f0037b39a883d29292e",
+      "originalPath": "assets/v8-other/sephora-x6.webp"
+    },
+    {
+      "id": "target-x6",
+      "imageUrl": "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw06945770/img/3337875545792/Toleriane-DRM_Allure-2024.webp?sw=320&sh=320&sm=cut&sfrm=jpg&q=70",
+      "source": "https://www.laroche-posay.us/our-products/face/face-moisturizer/toleriane-double-repair-face-moisturizer-3337875545792.html",
+      "description": "Toleriane Double Repair Face Moisturizer — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/79b8c830b0de2a806480.webp",
+      "bytes": 5904,
+      "sha256": "79b8c830b0de2a80648067511965faf376cf525d400a0087058c9fbec049cd94",
+      "correctedSource": "https://www.laroche-posay.us/our-products/face/face-moisturizer/toleriane-double-repair-face-moisturizer-3337875545792.html",
+      "originalPath": "assets/v8-other/target-x6.webp"
+    },
+    {
+      "id": "target-x9",
+      "imageUrl": "https://s7d1.scene7.com/is/image/NewellBrands/244269024_2096134_image_1_r2?wid=400&hei=400",
+      "source": "https://www.sharpie.com/pens/gel-pens/sharpie-s-gel-medium-point-0.7mm/SAP_2096134.html",
+      "description": "Sharpie S-Gel, Medium Point (0.7mm) — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/d04f9e6ac4ff82c9b3e2.webp",
+      "bytes": 37761,
+      "sha256": "d04f9e6ac4ff82c9b3e2483c0e9a1b36458b35ee922f0e7cd6f46d6e6ecd84b3",
+      "originalPath": "assets/v8-other/target-x9.jpg"
+    },
+    {
+      "id": "target-x10",
+      "imageUrl": "https://www.hydroflask.com/media/catalog/product/cache/b2f1ce2dfe10d3d31bf2056bf6e0d10f/w/3/w32cts114_32ozwideflexcap_oat_straighton_1.jpg",
+      "source": "https://www.hydroflask.com/32-oz-wide-mouth-bottle",
+      "description": "Exact Hydro Flask Wide Mouth 32oz Bottle — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/5fbff0f0f6e7dbed1cc1.webp",
+      "bytes": 13541,
+      "sha256": "5fbff0f0f6e7dbed1cc119c429b9adcf3c77eacd0ebc50d176a2ec8978041623",
+      "originalPath": "assets/v8-other/target-x10.jpg"
+    },
+    {
+      "id": "apple-x6",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MX2D3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1713841707336",
+      "source": "https://www.apple.com/shop/product/MX2D3AM/A/apple-pencil-pro",
+      "description": "Buy Apple Pencil Pro - Apple — officialApple product photo.",
+      "path": "assets/photos/c9ddf6afe04d43b3886a.webp",
+      "bytes": 26671,
+      "sha256": "c9ddf6afe04d43b3886adaf3f0e81c3e7ffb0dc2ef474b769d9a900e8bf64214",
+      "originalPath": "assets/v8-other/apple-x6.jpg"
+    },
+    {
+      "id": "apple-x8",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MJLX4?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1785993102206",
+      "source": "https://www.apple.com/shop/product/mjlx4ll/a/magic-keyboard-usb-c-us-english",
+      "description": "Magic Keyboard (USB-C) - US English - Apple — officialApple product photo.",
+      "path": "assets/photos/a3e80f315212c1feb5c7.webp",
+      "bytes": 76847,
+      "sha256": "a3e80f315212c1feb5c76de3a02f5160c1febb1f7ff795902d96e80103f1fcfa",
+      "originalPath": "assets/v8-other/apple-x8.jpg"
+    },
+    {
+      "id": "apple-x9",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MWVV3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1751998599188",
+      "source": "https://www.apple.com/shop/product/MWVV3AM/A/20w-usb-c-power-adapter",
+      "description": "Buy 20W USB-C Power Adapter - Apple — officialApple product photo.",
+      "path": "assets/photos/762cf0fe2ef810a90e12.webp",
+      "bytes": 31611,
+      "sha256": "762cf0fe2ef810a90e12bdc1290231083d10b6c59ee7ed14e9f6f355abac204f",
+      "originalPath": "assets/v8-other/apple-x9.jpg"
+    },
+    {
+      "id": "apple-x10",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MM0A3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1632956386000",
+      "source": "https://www.apple.com/shop/product/MUQ93AM/A/usb-c-to-lightning-cable-1-m",
+      "description": "USB-C to Lightning Cable (1 m) - Apple — officialApple product photo.",
+      "path": "assets/photos/e50401c11f131ece6ed1.webp",
+      "bytes": 54359,
+      "sha256": "e50401c11f131ece6ed1fc6d593b55f12c89032c04ec95a4a01caa2ac5322fda",
+      "originalPath": "assets/v8-other/apple-x10.jpg"
+    },
+    {
+      "id": "bathbody-v4-11",
+      "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbc5683e7/hires/028005124.jpg?sw=600&q=80",
+      "source": "https://www.bathandbodyworks.com/p/a-thousand-wishes-body-scrub-028005124",
+      "description": "A Thousand Wishes Body Scrub7.4oz/210g, exactmanufacturer indexed photo.",
+      "path": "assets/photos/da7ffcb5bc59a11e56ae.webp",
+      "bytes": 33764,
+      "sha256": "da7ffcb5bc59a11e56ae319c0f42a403ec78e0c8f356880fcf03936020272628",
+      "originalPath": "assets/v8-other/bathbody-v4-11.jpg"
+    },
+    {
+      "id": "ross-v4-4",
+      "imageUrl": "https://static.nike.com/a/images/t_default/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/38804191-c6a4-4da1-b605-5bef350f912d/CHUCK+70+HI+BLACK%2FBLACK%2FEGRET.png",
+      "source": "https://www.nike.com/t/converse-chuck-70-high-top-unisex-shoe-D7TWU3j3/162050C-001",
+      "description": "Converse Chuck70CanvasHighTop, style162050C-001. OfficialownerNike photo.",
+      "path": "assets/photos/c4e929600653fd200614.webp",
+      "bytes": 156679,
+      "sha256": "c4e929600653fd200614b545d9fb508762e2af4895be035f87dcdfca8b9b83d4",
+      "originalPath": "assets/v8-other/ross-v4-4.png"
+    },
+    {
+      "id": "longchamp-x10",
+      "imageUrl": "https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwd78acbd7/images/DIS/L1512HSR001_0.png?sw=600&sh=600&sm=fit",
+      "source": "https://www.longchamp.com/us/en/products/crossbody-bag-s-L1512HSR001.html",
+      "description": "Le Pliage Energy S Handbag , Black - Recycled canvas  - View 1 of 6",
+      "path": "assets/photos/2d24fee2eb0b2f05ed79.webp",
+      "bytes": 263846,
+      "sha256": "2d24fee2eb0b2f05ed7973045ee06119fb34e7c25f355a4851dd586b808c280b",
+      "correctedName": "Le Pliage Energy S Handbag",
+      "correctedSource": "https://www.longchamp.com/us/en/products/crossbody-bag-s-L1512HSR001.html",
+      "originalPath": "assets/v8-other/longchamp-x10.png"
+    },
+    {
+      "id": "r-knit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/CPM253FH17_SG40_Front1_2048X2048_974424d5-2333-4732-8d64-48409a433e06.jpg?v=1783677041?width=600",
+      "source": "https://www.champion.com/products/champion-powerblend-full-zip-hoodie-c-logo-navy",
+      "description": "OfficialChampion productdata: Powerblend Full-Zip Hoodie, C Logo",
+      "path": "assets/photos/e5c4b3ef9bda0b9812dd.webp",
+      "bytes": 270184,
+      "sha256": "e5c4b3ef9bda0b9812ddecda7a798ae2ddd5e4b2f99469a4e2ca43c0ba2218b7",
+      "originalPath": "assets/v8-other/r-knit.jpg"
+    },
+    {
+      "id": "target-x1",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0375/3269/6635/files/Web_PNG_Square-TheQuencherH2.0FlowstateTumbler-40OZ-BlueDreamWildFlower-Front.png?v=1782915015?width=600",
+      "source": "https://www.stanley1913.com/products/quencher-h2-0-flowstate-tumbler-40-oz-1-18-l-bts",
+      "description": "OfficialStanley productdata: The Quencher H2.0 FlowState™ Tumbler  | 40 OZ",
+      "path": "assets/photos/98e307b3e1221d817b87.webp",
+      "bytes": 3273418,
+      "sha256": "98e307b3e1221d817b87e445341a9d44c2bdf9b4907908a199485da1f41f46fe",
+      "originalPath": "assets/v8-other/target-x1.png"
+    },
+    {
+      "id": "m-tee",
+      "imageUrl": "https://www.hanes.com/images/catalog/catalog/product/H/N/HNS_5180_OxfordGrey_Front.jpg?width=449",
+      "source": "https://www.hanes.com/products/hanes-beefy-t-crewneck-short-sleeve-t-shirt/5180",
+      "description": "Hanes Beefy-T Unisex Short Sleeve T-Shirt #5180 — exact model photo from primary manufacturer page.",
+      "path": "assets/photos/554d22780b6090b10865.webp",
+      "bytes": 25756,
+      "sha256": "554d22780b6090b108652cb45e8c76b8c15915840bebb3f7bc539e02e46a75e0",
+      "originalPath": "assets/v8-other/r-tee.jpg"
+    },
+    {
+      "id": "m-knit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0665/9001/5680/files/CPM253FH17_SG40_Front1_2048X2048_974424d5-2333-4732-8d64-48409a433e06.jpg?v=1783677041?width=600",
+      "source": "https://www.champion.com/products/champion-powerblend-full-zip-hoodie-c-logo-navy",
+      "description": "OfficialChampion productdata: Powerblend Full-Zip Hoodie, C Logo",
+      "path": "assets/photos/e5c4b3ef9bda0b9812dd.webp",
+      "bytes": 270184,
+      "sha256": "e5c4b3ef9bda0b9812ddecda7a798ae2ddd5e4b2f99469a4e2ca43c0ba2218b7",
+      "originalPath": "assets/v8-other/r-knit.jpg"
+    },
+    {
+      "id": "n-scent",
+      "imageUrl": "https://sdcdn.io/jm/jm_sku_L41501_3000x3000_0S.png?height=700px&width=700px",
+      "source": "https://www.jomalone-sa.com/en/product/wood-sage-sea-salt-cologne",
+      "description": "Wood Sage & Sea Salt Cologne 100.0 ml, official Jo Malone product-shot image83 from product page.",
+      "path": "assets/photos/da0761a6e52e4eef3ba3.webp",
+      "bytes": 13442,
+      "sha256": "da0761a6e52e4eef3ba339b8e66695debb1490a1a641294da1677a62f8c60858",
+      "originalPath": "assets/v8-other/n-scent.webp"
+    },
+    {
+      "id": "marshalls-v4-2",
+      "imageUrl": "https://media.columbia.com/i/columbia/1372111_657_f_om",
+      "source": "https://www.columbia.com/p/womens-benton-springs-full-zip-fleece-jacket-%7C-657-%7C-m-195982164069.html",
+      "description": "Benton Springs Full Zip Fleece Jacket, official Columbia gallery in Eraser Pink, same1372111 named model.",
+      "path": "assets/photos/b5d06e7832a0829880f7.webp",
+      "bytes": 11400,
+      "sha256": "b5d06e7832a0829880f79c7dbfa1bcf620cdb05609e998e97fa6a0a48bd7e971",
+      "originalPath": "assets/v8-other/marshalls-v4-2.webp"
+    },
+    {
+      "id": "target-v4-5",
+      "imageUrl": "https://sony.scene7.com/is/image/sonyglobalsolutions/00-7?wid=800&fmt=jpg&qlt=90",
+      "source": "https://www.sony.co.uk/headphones/products/wh-ch520",
+      "description": "WH-CH520 headphones, black genuine variant, official Sony product gallery image24.",
+      "path": "assets/photos/309ff313991899f31bd7.webp",
+      "bytes": 3410,
+      "sha256": "309ff313991899f31bd7a1190cd5b20d6d5dd7571c5aa77b5037d7aab0bed6e3",
+      "originalPath": "assets/v8-other/target-v4-5.webp"
+    },
+    {
+      "id": "marshalls-x4",
+      "imageUrl": "https://assets-cdn.logoup.com/Alldayshirts_ProductImages/P170_BLACK_Front.jpg",
+      "source": "https://www.alldayshirts.com/hanes-p170-unisex-78-oz-ecosmart-5050-pullover-hooded-sweatshirt",
+      "description": "Hanes P170 EcoSmart Fleece Pullover Hoodie in black, exact-model supplier catalog front packshot. Official Hanes page confirms modelP170; its current image is a placeholder, so documented retailer photograph used.",
+      "path": "assets/photos/ff1af7467aa0663575e4.webp",
+      "bytes": 9146,
+      "sha256": "ff1af7467aa0663575e40c0b47e886bd1191f307ee50c98850881d9717fed186",
+      "originalPath": "assets/v8-other/marshalls-x4.webp"
+    },
+    {
+      "id": "sephora-v4-2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0568/4484/5206/files/Fresh_Soy_Face_Cleanser_5oz__1.jpg?v=1704846464",
+      "source": "https://www.planetbeauty.com/products/fresh-soy-face-cleanser-5oz",
+      "description": "Soy Face Cleanser150ml (5oz), exact real-model packshot from Planet Beauty retailer. Official Fresh product page confirms model and full-size150ml; official CDN blocks downloads, so documented retailer photograph used.",
+      "path": "assets/photos/13055e1ea6fb391d0565.webp",
+      "bytes": 5130,
+      "sha256": "13055e1ea6fb391d0565c9f4c90865218d2c3be9ddd39afa79c515382272d789",
+      "originalPath": "assets/v8-other/sephora-v4-2.webp"
+    }
+  ],
+  "missing": [],
+  "errors": [],
+  "reviewNote": "Reviewed exact models, types, sizes, shades and explicit corrections. Photos are manufacturer assets except notedlegacyLongchampretailerreference."
+}

@@ -1,0 +1,733 @@
+{
+  "checkedOn": "2026-10-27",
+  "products": [
+    {
+      "id": "home-10330419102010",
+      "retailer": "Diptyque",
+      "brand": "Diptyque",
+      "name": "Tempo - Eau de parfum",
+      "type": "perfume",
+      "priceUSD": 260.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-tempo-tempop75cv1",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0991/4784/1850/files/diptyque-tempo-eau-de-parfum-75ml-tempop75c-1.jpg?v=1781571308&width=640",
+      "feedSource": "https://us.diptyqueparis.com/en-us/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-2568e281b999e0b2.webp"
+    },
+    {
+      "id": "home-10330447184186",
+      "retailer": "Diptyque",
+      "brand": "Diptyque",
+      "name": "L'Ombre dans l'Eau - Eau de parfum",
+      "type": "perfume",
+      "priceUSD": 260.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-ombre-dans-eau-ombrep75cv2",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0991/4784/1850/files/diptyque-l-ombre-dans-l-eau-de-parfum-75ml-ombrep75-1_3f087e1a-1c2d-443c-a4b7-02cf82380a5d.jpg?v=1781571387&width=640",
+      "feedSource": "https://us.diptyqueparis.com/en-us/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-c2ac4587a5e9b303.webp"
+    },
+    {
+      "id": "home-10330449871162",
+      "retailer": "Diptyque",
+      "brand": "Diptyque",
+      "name": "Eau Duelle - Eau de parfum",
+      "type": "perfume",
+      "priceUSD": 260.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://us.diptyqueparis.com/en-us/products/eau-de-parfum-eau-duelle-duellep75cv1",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0991/4784/1850/files/diptyque-eau-duelle-eau-de-parfum-DUELLEP75CV1_front.webp?v=1781571407&width=640",
+      "feedSource": "https://us.diptyqueparis.com/en-us/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-f36d40235e886f18.webp"
+    },
+    {
+      "id": "home-14917635866819",
+      "retailer": "MAC Cosmetics",
+      "brand": "MAC Cosmetics",
+      "name": "M·A·C Locked Kiss 24hr Lipstick - Taboo",
+      "type": "lipstick",
+      "priceUSD": 34.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.maccosmetics.com/products/m-a-c-locked-kiss-24hr-lipstick-taboo",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0774/8481/8690/files/mac_sku_NXPW29_1x1_0.png?v=1793043573&width=640",
+      "feedSource": "https://www.maccosmetics.com/products.json?limit=4",
+      "sizes": [
+        "Taboo"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-f3eb74eb3a4d04f9.webp"
+    },
+    {
+      "id": "home-14917633835203",
+      "retailer": "MAC Cosmetics",
+      "brand": "MAC Cosmetics",
+      "name": "Eye Kohl Eyeliner - Phone Number",
+      "type": "makeup",
+      "priceUSD": 24.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.maccosmetics.com/products/eye-kohl-eyeliner-phone-number",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0774/8481/8690/files/mac_sku_M1XG12_1x1_0.png?v=1793043200&width=640",
+      "feedSource": "https://www.maccosmetics.com/products.json?limit=4",
+      "sizes": [
+        "Phone Number"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-f2bfdefaf1b5af93.webp"
+    },
+    {
+      "id": "home-9161000550577",
+      "retailer": "Nature Republic",
+      "brand": "Nature Republic",
+      "name": "BENETUS-LACTO Skin Toner 150ml",
+      "type": "skincare",
+      "priceUSD": 22.5,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://naturerepublicusa.com/products/benetus-2x-lacto-skin-toner-150ml-copy",
+      "imageURL": "https://cdn.shopify.com/s/files/1/1740/1531/files/LACTO_SKIN_TONER.jpg?v=1789604169&width=640",
+      "feedSource": "https://naturerepublicusa.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-968bdb9e61d8667b.webp"
+    },
+    {
+      "id": "home-9161000353969",
+      "retailer": "Nature Republic",
+      "brand": "Nature Republic",
+      "name": "BENETUS-ACNIOME Derma Moisture Cream 50ml",
+      "type": "skincare",
+      "priceUSD": 16.5,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://naturerepublicusa.com/products/benetus-2x-acniome-derma-moisture-cream-50ml-copy",
+      "imageURL": "https://cdn.shopify.com/s/files/1/1740/1531/files/BENETUS_DERMA_MOISTURE_CREAM1.jpg?v=1788917653&width=640",
+      "feedSource": "https://naturerepublicusa.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-bb2d2b198de9afb3.webp"
+    },
+    {
+      "id": "home-9156367384753",
+      "retailer": "Nature Republic",
+      "brand": "Nature Republic",
+      "name": "BENETUS-2X Deep Pure Serum Cleanser 150ml",
+      "type": "skincare",
+      "priceUSD": 26.4,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://naturerepublicusa.com/products/benetus-deep-pure-serum-cleanser-150ml-copy-2",
+      "imageURL": "https://cdn.shopify.com/s/files/1/1740/1531/files/2x_deep_pure_serum_cleanser_093026_ver_1.jpg?v=1790807986&width=640",
+      "feedSource": "https://naturerepublicusa.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-4c170a26491857b6.webp"
+    },
+    {
+      "id": "home-15420050571360",
+      "retailer": "Pixi Beauty",
+      "brand": "Pixi Beauty",
+      "name": "+Hydra LipTreat Complete Collection",
+      "type": "makeup",
+      "priceUSD": 56.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.pixibeauty.com/products/hydra-liptreat-complete-collection",
+      "imageURL": "https://cdn.shopify.com/s/files/1/1463/5858/files/Hydra_LipTreat_All_7_Shades_Roundel_1440x1440_08e3adec-7942-4e78-97d9-aec4c92eba0e.jpg?v=1793053712&width=640",
+      "feedSource": "https://www.pixibeauty.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-4b1fc12e0a7f4d96.webp"
+    },
+    {
+      "id": "home-15420039692384",
+      "retailer": "Pixi Beauty",
+      "brand": "Pixi Beauty",
+      "name": "LipTone Complete Collection",
+      "type": "makeup",
+      "priceUSD": 38.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.pixibeauty.com/products/liptone-complete-collection",
+      "imageURL": "https://cdn.shopify.com/s/files/1/1463/5858/files/LipTone_All_6_Shades_Roundel_1000x1000_fadbba99-478f-48eb-8a87-3421f82eda73.jpg?v=1793051344&width=640",
+      "feedSource": "https://www.pixibeauty.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-1dc98232890d3ad5.webp"
+    },
+    {
+      "id": "home-7579046314080",
+      "retailer": "Pixi Beauty",
+      "brand": "Pixi Beauty",
+      "name": "On-the-Glow BLUSH New Shades Set",
+      "type": "makeup",
+      "priceUSD": 57.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.pixibeauty.com/products/on-the-glow-blush-new-shades-set",
+      "imageURL": "https://cdn.shopify.com/s/files/1/1463/5858/files/Pixi_Colour-PNOV20_OTGBLUSH_NEW-SHADES_04-GF_23d35eaf-6f21-4ff5-8fac-2c1d2356d5f6.jpg?v=1786573787&width=640",
+      "feedSource": "https://www.pixibeauty.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-846c01ca0adedec4.webp"
+    },
+    {
+      "id": "home-8692399931542",
+      "retailer": "Jones Road",
+      "brand": "Jones Road",
+      "name": "The Detail Blending Brush",
+      "type": "makeup",
+      "priceUSD": 32.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.jonesroadbeauty.com/products/the-detail-blending-brush",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0424/9527/9254/files/Detail_Brush_-_1.webp?v=1789152147&width=640",
+      "feedSource": "https://www.jonesroadbeauty.com/products.json?limit=4",
+      "sizes": [
+        "The Detail Blending Brush"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-60dfd503d4389639.webp"
+    },
+    {
+      "id": "home-8675075850390",
+      "retailer": "Jones Road",
+      "brand": "Jones Road",
+      "name": "Wide Awake Brightening Neutralizer",
+      "type": "makeup",
+      "priceUSD": 32.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.jonesroadbeauty.com/products/wide-awake-brightening-neutralizer",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0424/9527/9254/files/ProductName_ShadeName_01_f4031895-2f70-47cb-a22f-4bc7075f7556.webp?v=1788472687&width=640",
+      "feedSource": "https://www.jonesroadbeauty.com/products.json?limit=4",
+      "sizes": [
+        "Fair Pink",
+        "Fair Peach",
+        "Light Peachy Pink",
+        "Light Peach",
+        "Medium Peach",
+        "Medium Peachy Pink",
+        "Dark Apricot",
+        "Dark Peachy Pink",
+        "Deep Peachy Pink"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-e4116cf0bb864429.webp"
+    },
+    {
+      "id": "home-15398295142697",
+      "retailer": "Saje Natural Wellness",
+      "brand": "Saje Natural Wellness",
+      "name": "Aroma Halo & The Joy Drop",
+      "type": "home",
+      "priceUSD": 147.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.saje.com/products/aroma-halo-diffuser-the-joy-drop-diffuser-blend-collection",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0726/1303/6329/files/DUAL_PDP_AromaLight_1_5cfd6fb9-07ef-4df8-ae5b-2f6315bf9c15.png?v=1791931334&width=640",
+      "feedSource": "https://www.saje.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-a4218ce1f4864b63.webp"
+    },
+    {
+      "id": "home-15398252478761",
+      "retailer": "Saje Natural Wellness",
+      "brand": "Saje Natural Wellness",
+      "name": "Aroma Light Celestial Snow & The Joy Drop",
+      "type": "home",
+      "priceUSD": 114.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.saje.com/products/aroma-light-celestial-snow-the-joy-drop-diffuser-blend-collection",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0726/1303/6329/files/DUAL_PDP_HOL26_AromaLight_TheJoyDrop_1_5f9c47d6-ef9c-4111-a0ce-377369d7b434.png?v=1791929485&width=640",
+      "feedSource": "https://www.saje.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-4e00578d41566e71.webp"
+    },
+    {
+      "id": "home-15397619958057",
+      "retailer": "Saje Natural Wellness",
+      "brand": "Saje Natural Wellness",
+      "name": "Vanilla on Vanilla",
+      "type": "home",
+      "priceUSD": 32.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.saje.com/products/vanilla-on-vanilla-sweet-rich-diffuser-blend-set",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0726/1303/6329/files/DUAL_PDP_HOL26_Vanilla-on-Vanilla-DB-Set_PositionA.png?v=1791564003&width=640",
+      "feedSource": "https://www.saje.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-a222dd8b275e369d.webp"
+    },
+    {
+      "id": "home-9288146944131",
+      "retailer": "Gorjana",
+      "brand": "Gorjana",
+      "name": "Pearl Single Stud",
+      "type": "earrings",
+      "priceUSD": 30.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.gorjana.com/products/pearl-single-stud",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0015/3849/0427/files/2610-008-186-G_1_a23567bf-9b68-4108-af4c-7ca82ded0a03.jpg?v=1789564905&width=640",
+      "feedSource": "https://www.gorjana.com/products.json?limit=4",
+      "sizes": [
+        "18K Gold Plated"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-fb00eccf9c85bbf7.webp"
+    },
+    {
+      "id": "home-9288146911363",
+      "retailer": "Gorjana",
+      "brand": "Gorjana",
+      "name": "14K Lab Grown Diamond Solitaire Trio Huggies",
+      "type": "earrings",
+      "priceUSD": 1220.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.gorjana.com/products/lab-grown-diamond-solitaire-trio-huggies",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0015/3849/0427/files/2610-004-185-G_1_6e62e312-c4ab-4c0a-8bfb-0e87427a4451.jpg?v=1789564903&width=640",
+      "feedSource": "https://www.gorjana.com/products.json?limit=4",
+      "sizes": [
+        "14K Solid Gold"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-60fcfd4a242a0ede.webp"
+    },
+    {
+      "id": "home-9288146976899",
+      "retailer": "Gorjana",
+      "brand": "Gorjana",
+      "name": "14K Lab Grown Diamond Mercer Charm",
+      "type": "necklace",
+      "priceUSD": 265.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.gorjana.com/products/lab-grown-diamond-mercer-charm",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0015/3849/0427/files/2610-103-185-G_1_e7f889e5-8495-4367-9424-09af09d84e65.jpg?v=1789564902&width=640",
+      "feedSource": "https://www.gorjana.com/products.json?limit=4",
+      "sizes": [
+        "14K Solid Gold"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-11f482d7c8b3b03b.webp"
+    },
+    {
+      "id": "home-10333177086038",
+      "retailer": "Pura Vida",
+      "brand": "Pura Vida",
+      "name": "Harper Bracelet Charm Gift Set",
+      "type": "bracelet",
+      "priceUSD": 54.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.puravidabracelets.com/products/bracelet-charm-set",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0297/6313/files/Bracelet-1_1.png?v=1791836878&width=640",
+      "feedSource": "https://www.puravidabracelets.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-d409e5a5fdfacd50.webp"
+    },
+    {
+      "id": "home-10333177118806",
+      "retailer": "Pura Vida",
+      "brand": "Pura Vida",
+      "name": "Harper Necklace Charm Gift Set",
+      "type": "necklace",
+      "priceUSD": 58.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.puravidabracelets.com/products/necklace-charm-set",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0297/6313/files/Necklace-3_1.png?v=1791848771&width=640",
+      "feedSource": "https://www.puravidabracelets.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-7f285cd2318e5409.webp"
+    },
+    {
+      "id": "home-7997220028502",
+      "retailer": "Pura Vida",
+      "brand": "Pura Vida",
+      "name": "24 Day Advent Calendar",
+      "type": "home",
+      "priceUSD": 138.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.puravidabracelets.com/products/24-day-advent-calendar-2026",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0297/6313/files/advent-1_1.jpg?v=1791824795&width=640",
+      "feedSource": "https://www.puravidabracelets.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-b6644f1022d62ada.webp"
+    },
+    {
+      "id": "home-10307739615341",
+      "retailer": "Studs",
+      "brand": "Studs",
+      "name": "14K Micro Twinkle Flatback",
+      "type": "earrings",
+      "priceUSD": 95.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://studs.com/products/14k-micro-twinkle",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0248/1166/7565/files/MICRO_SUNRISE_TWINKLE_QUARTER.jpg?v=1790276375&width=640",
+      "feedSource": "https://studs.com/products.json?limit=4",
+      "sizes": [
+        "Gold"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-a17e41a773268a12.webp"
+    },
+    {
+      "id": "home-10307750527085",
+      "retailer": "Studs",
+      "brand": "Studs",
+      "name": "14K Micro X Flatback",
+      "type": "earrings",
+      "priceUSD": 95.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://studs.com/products/14k-micro-x-flatback",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0248/1166/7565/files/X_QUARTER.jpg?v=1790277244&width=640",
+      "feedSource": "https://studs.com/products.json?limit=4",
+      "sizes": [
+        "Gold"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-48bebaaddea4c0f1.webp"
+    },
+    {
+      "id": "home-10307762094189",
+      "retailer": "Studs",
+      "brand": "Studs",
+      "name": "14K Micro Diamond Flatback",
+      "type": "earrings",
+      "priceUSD": 95.0,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://studs.com/products/14k-micro-diamond-flatback",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0248/1166/7565/files/DIAMOND_QUARTER.jpg?v=1790278520&width=640",
+      "feedSource": "https://studs.com/products.json?limit=4",
+      "sizes": [
+        "Gold"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-597b3d6e69dfa8f1.webp"
+    },
+    {
+      "id": "home-8982224568476",
+      "retailer": "Sanrio",
+      "brand": "Sanrio",
+      "name": "Kuromi Mischief Mansion 2026 Halloween Treat Bag",
+      "type": "bag",
+      "priceUSD": 4.99,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.sanrio.com/products/kuromi-mischief-mansion-2026-halloween-treat-bag",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0416/8083/0620/files/744883-Zoom.4.jpg?v=1787166204&width=640",
+      "feedSource": "https://www.sanrio.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-bb6d83fae0497538.webp"
+    },
+    {
+      "id": "home-9010284134556",
+      "retailer": "Sanrio",
+      "brand": "Sanrio",
+      "name": "U*SA*HA*NA Plush ID Badge Holder & Reel",
+      "type": "accessory",
+      "priceUSD": 19.99,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.sanrio.com/products/u-sa-ha-na-plush-id-badge-holder-reel",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0416/8083/0620/files/imgi_11_zz-2506293644_US_--1.jpg?v=1780518868&width=640",
+      "feedSource": "https://www.sanrio.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-82c7a4d008bb3467.webp"
+    },
+    {
+      "id": "home-9010284069020",
+      "retailer": "Sanrio",
+      "brand": "Sanrio",
+      "name": "My Sweet Piano Plush ID Badge Holder & Reel",
+      "type": "accessory",
+      "priceUSD": 19.99,
+      "priceBasis": "Official public US product-feed reference on 2026-10-27; game stock and price may differ.",
+      "source": "https://www.sanrio.com/products/my-sweet-piano-plush-id-badge-holder-reel",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0416/8083/0620/files/imgi_11_zz-2506293644_MP_--1.jpg?v=1780519149&width=640",
+      "feedSource": "https://www.sanrio.com/products.json?limit=4",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-79671730955c20fa.webp"
+    },
+    {
+      "id": "home-ordinary",
+      "retailer": "The Ordinary",
+      "brand": "The Ordinary",
+      "name": "Hyaluronic Acid 2% + B5 (with Ceramides) — 30 ml",
+      "type": "skincare",
+      "priceUSD": 9.9,
+      "priceBasis": "Official US product structured data checked 2026-10-27; game stock is simulated.",
+      "source": "https://theordinary.com/en-us/hyaluronic-acid-2-b5-serum-with-ceramides-100637.html",
+      "imageURL": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw67286abd/Images/products/The%20Ordinary/ord-hyaluronic-acid-2pct-B5-30ml-Clr-Acu.png?sw=900&sh=900&sm=fit",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-cdac9af160303e20.webp"
+    },
+    {
+      "id": "home-kendra",
+      "retailer": "Kendra Scott",
+      "brand": "Kendra Scott",
+      "name": "Elisa Gold Pendant Necklace in Iridescent Drusy",
+      "type": "necklace",
+      "priceUSD": 75.0,
+      "priceBasis": "Official US product structured data checked 2026-10-27; game stock is simulated.",
+      "source": "https://www.kendrascott.com/necklaces/elisa-gold-pendant-necklace-drusy/842177092088.html",
+      "imageURL": "https://res.cloudinary.com/kendra-scott/image/upload/q_auto,f_auto,dpr_1.2/w_500,c_fit/Catalogs/kendrascott/jewelry/signature/2018-sig-updates/elisa-necklace/kendra-scott-elisa-gold-pendant-necklace-in-iridescent-drusy_00_default_lg.jpg",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-352b420a8ed30739.webp"
+    },
+    {
+      "id": "home-shiseido",
+      "retailer": "Shiseido",
+      "brand": "Shiseido",
+      "name": "Eyelash Curler",
+      "type": "makeup",
+      "priceUSD": 29,
+      "priceBasis": "Official US structured-data price checked 2026-10-27.",
+      "source": "https://www.shiseido.com/us/en/eyelash-curler-0729238500969.html",
+      "imageURL": "https://www.shiseido.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_shiseido/default/dwf4389a94/images/Shiseido2024Redesignx2/Makeup/Tools/0729238500969/SHI-SS24_PDP_EyelashCurler_alt-1@2x.jpg?sw=650&sh=650&sm=fit&strip=false",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-8f7cd3da0584943b.webp"
+    },
+    {
+      "id": "home-crate",
+      "retailer": "Crate & Barrel",
+      "brand": "Crate & Barrel",
+      "name": "Direction 9-Oz. Hand-Blown Double Old-Fashioned Glass",
+      "type": "home",
+      "priceUSD": 12.95,
+      "priceBasis": "Official US product-page reference checked 2026-10-27; regular/base price used where variants or promotions differ.",
+      "source": "https://www.crateandbarrel.com/direction-hand-blown-glasses/f14023",
+      "imageURL": "https://cb.scene7.com/is/image/Crate/DirectionDOF9ozSSS22?wid=640&fmt=jpg",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-5cd99df29048c1e7.webp"
+    },
+    {
+      "id": "home-cb2",
+      "retailer": "CB2",
+      "brand": "CB2",
+      "name": "Neat Tasting Glass",
+      "type": "home",
+      "priceUSD": 2.5,
+      "priceBasis": "Official US product-page reference checked 2026-10-27; regular/base price used where variants or promotions differ.",
+      "source": "https://www.cb2.com/neat-tasting-glass/s347606",
+      "imageURL": "https://cb2.scene7.com/is/image/CB2/NeatTastingGlassSHF26?wid=640&fmt=jpg",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-599e7487a19cbb0f.webp"
+    },
+    {
+      "id": "home-williams",
+      "retailer": "Williams Sonoma",
+      "brand": "Williams Sonoma",
+      "name": "Goldtouch Pro Nonstick Half Sheet",
+      "type": "home",
+      "priceUSD": 39.95,
+      "priceBasis": "Official US product-page reference checked 2026-10-27; regular/base price used where variants or promotions differ.",
+      "source": "https://www.williams-sonoma.com/products/ws-goldtouchpro-nc-half-sheet-pan/",
+      "imageURL": "https://assets.wsimgs.com/wsimgs/rk/images/dp/wcm/202641/0035/img31j.jpg",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-f18dfe41c3b7329d.webp"
+    },
+    {
+      "id": "home-westelm",
+      "retailer": "West Elm",
+      "brand": "West Elm",
+      "name": "Sphere & Stem Table Lamp (22-inch)",
+      "type": "home",
+      "priceUSD": 199,
+      "priceBasis": "Official US product-page reference checked 2026-10-27; regular/base price used where variants or promotions differ.",
+      "source": "https://www.westelm.com/products/sphere-stem-table-lamp-w3704/",
+      "imageURL": "https://assets.weimgs.com/weimgs/rk/images/wcm/products/202625/0075/sphere-stem-table-lamp-22-f.jpg",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-59a6ad791cf23f47.webp"
+    },
+    {
+      "id": "home-pottery",
+      "retailer": "Pottery Barn",
+      "brand": "Pottery Barn",
+      "name": "Cambria Handcrafted Stoneware Mugs — Set of 4",
+      "type": "home",
+      "priceUSD": 40,
+      "priceBasis": "Official US product-page reference checked 2026-10-27; regular/base price used where variants or promotions differ.",
+      "source": "https://www.potterybarn.com/products/cambria-stoneware-mug-stone/",
+      "imageURL": "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202625/0010/cambria-handcrafted-stoneware-mugs-set-of-4-j.jpg",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-63e2fe249121f681.webp"
+    },
+    {
+      "id": "home-dyson",
+      "retailer": "Dyson",
+      "brand": "Dyson",
+      "name": "Supersonic Nural Hair Dryer — Ceramic Pink/Rose Gold",
+      "type": "hairdryer",
+      "priceUSD": 449.99,
+      "priceBasis": "Official US product-page reference checked 2026-10-27; regular/base price used where variants or promotions differ.",
+      "source": "https://www.dyson.com/hair-care/hair-dryers/supersonic-nural/ceramic-pink-rose-gold",
+      "imageURL": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/en_US/598973-01.png?fmt=png-alpha&wid=640",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-0adb3b46f6a8ef49.webp"
+    },
+    {
+      "id": "home-aesop-balm",
+      "retailer": "Aesop",
+      "brand": "Aesop",
+      "name": "Resurrection Aromatique Hand Balm — 75 ml",
+      "type": "skincare",
+      "priceUSD": 37,
+      "priceBasis": "Official US product-page reference checked 2026-10-27; regular/base price used where variants or promotions differ.",
+      "source": "https://www.aesop.com/hand-body/hand-washes-balms/resurrection-aromatique-hand-balm/BM06.html",
+      "imageURL": "https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-master-catalog/default/dwaf4467c6/images/products/BM06/ContentEnhancement/Aesop_Hand_Resurrection_Aromatique_Hand_Balm_75mL_Web_Front_A_2000x2000px.webp?bgcolor=fffef2&q=70&sfrm=png&sh=640&sm=cut&sw=640",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-9952829f9b9dd1e2.webp"
+    },
+    {
+      "id": "home-aesop-wash",
+      "retailer": "Aesop",
+      "brand": "Aesop",
+      "name": "Resurrection Aromatique Hand Wash — 500 ml",
+      "type": "skincare",
+      "priceUSD": 49,
+      "priceBasis": "Official US product-page reference checked 2026-10-27; regular/base price used where variants or promotions differ.",
+      "source": "https://www.aesop.com/hand-body/hand-washes-balms/resurrection-aromatique-hand-wash/BT13.html",
+      "imageURL": "https://www.aesop.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-aesop-us-master-catalog/default/dw45c2fc06/images/products/BT13/ContentEnhancement/Aesop_Hand_Resurrection_Aromatique_Hand_Wash_500mL_Web_Front_2000x2000px.webp?bgcolor=fffef2&q=70&sfrm=png&sw=640",
+      "sizes": [
+        "One size"
+      ],
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-284e4c743e3ba258.webp"
+    },
+    {
+      "id": "home-lush",
+      "retailer": "Lush",
+      "brand": "Lush",
+      "name": "Sleepy Body Lotion — 7.4 oz",
+      "type": "skincare",
+      "priceUSD": 30,
+      "priceBasis": "Cached official US 7.4-oz page reference ($30); simulated game price, not a live quote. Checked 2026-10-27.",
+      "source": "https://www.lush.com/us/en_us/p/sleepy-body-lotion/210g",
+      "imageURL": "https://unicorn.lush.com/media/thumbnails/products/Body-2025-Sleepy-Body-Lotion-Hero-02_Digital_-2024-PDP__a9bba587_thumbnail_4.jpg",
+      "sizes": [
+        "One size"
+      ],
+      "variantNote": "Official brand photograph shows Sleepy lotion in use; package-size appearance may vary.",
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-87fbf6ae765a9f16.webp"
+    },
+    {
+      "id": "home-popmart-9299",
+      "retailer": "POP MART",
+      "brand": "POP MART",
+      "name": "CRYBABY Crying Round n Round Series - Vinyl Plush Pendant Blind Box",
+      "type": "plush",
+      "priceUSD": 26.99,
+      "priceBasis": "Official US homepage product data: SKU price in USD cents, published 2026-10-23; reference for simulated game stock.",
+      "source": "https://www.popmart.com/us/products/9299/crybaby-crying-round-n-round-series-vinyl-plush-pendant-blind-box",
+      "imageURL": "https://prod-global-biz.popmart.com/globalAdmin/1792136657828_c7a7a31848f171eee0fc55352f45c1ee.jpg",
+      "sizes": [
+        "One size"
+      ],
+      "variantNote": "Official series image; blind-box character assortment is not a promise of a specific hidden variant.",
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-3236cb5ede69cf17.webp"
+    },
+    {
+      "id": "home-popmart-9300",
+      "retailer": "POP MART",
+      "brand": "POP MART",
+      "name": "CRYBABY Crying Round n Round Series Figures",
+      "type": "collectible",
+      "priceUSD": 19.99,
+      "priceBasis": "Official US homepage product data: SKU price in USD cents, published 2026-10-23; reference for simulated game stock.",
+      "source": "https://www.popmart.com/us/products/9300/crybaby-crying-round-n-round-series-figures",
+      "imageURL": "https://prod-global-biz.popmart.com/globalAdmin/1792138743688_ab85b415edceb8d1f5778235da5f8f9a.jpg",
+      "sizes": [
+        "One size"
+      ],
+      "variantNote": "Official series image; blind-box character assortment is not a promise of a specific hidden variant.",
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-b6879f8a587944ff.webp"
+    },
+    {
+      "id": "home-popmart-9307",
+      "retailer": "POP MART",
+      "brand": "POP MART",
+      "name": "POP BEAN Hello Kitty and Friends Fried Shrimp Series",
+      "type": "collectible",
+      "priceUSD": 4.99,
+      "priceBasis": "Official US homepage product data: SKU price in USD cents, published 2026-10-23; reference for simulated game stock.",
+      "source": "https://www.popmart.com/us/products/9307/pop-bean-hello-kitty-and-friends-fried-shrimp-series",
+      "imageURL": "https://prod-global-biz.popmart.com/globalAdmin/1792140103184_ec5a6bf2888761deddaa3f22be508ac7.jpg",
+      "sizes": [
+        "One size"
+      ],
+      "variantNote": "Official series image; blind-box character assortment is not a promise of a specific hidden variant.",
+      "photoVerifiedRaster": true,
+      "bundledPhoto": "assets/photos/v11-real-0877303f70777358.webp"
+    }
+  ]
+}

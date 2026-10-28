@@ -1,0 +1,209 @@
+{
+  "unresolved": [
+    {
+      "merchant": "Aveda",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Aveda&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Dior",
+      "status": "verified",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Dior&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Fueguia 1833",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 0,
+      "source": "https://shop.simon.com/search/suggest.json?q=Fueguia+1833&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Guerlain",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Guerlain&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Harry Winston",
+      "status": "verified",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Harry+Winston&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Hästens",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=H%C3%A4stens&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Lugano",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Lugano&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Monica Vinader",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Monica+Vinader&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Nespresso",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Nespresso&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Panerai",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Panerai&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Piaget",
+      "status": "verified",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Piaget&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "RH",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=RH&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Tommy Bahama",
+      "status": "verified",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Tommy+Bahama&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "ZO Skin Health",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=ZO+Skin+Health&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Miniso",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Miniso&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Le Creuset",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Le+Creuset&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Therabody",
+      "status": "no-exact-brand-match",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Therabody&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Dyson",
+      "status": "verified",
+      "rawResultCount": 10,
+      "source": "https://shop.simon.com/search/suggest.json?q=Dyson&resources%5Btype%5D=product&resources%5Blimit%5D=10"
+    },
+    {
+      "merchant": "Arhaus",
+      "source": "https://www.arhaus.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 430: <none>",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "Monica Vinader",
+      "source": "https://www.monicavinader.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 403: Forbidden",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "Blue Nile",
+      "source": "https://www.bluenile.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 404: Not Found",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "ZAGG",
+      "source": "https://www.zagg.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 404: Not Found",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "The Container Store",
+      "source": "https://www.containerstore.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 404: Not Found",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "CAMP",
+      "source": "https://camp.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 404: Not Found",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "The Game Chest",
+      "source": "https://www.thegamechest.com",
+      "status": "public-feed-unavailable",
+      "barrier": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1081)>",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "The Shade Store",
+      "source": "https://www.theshadestore.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 404: Not Found",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "Erin Condren",
+      "source": "https://www.erincondren.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 404: Not Found",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "GNC",
+      "source": "https://www.gnc.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 404: Not Found",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "Sleep Number",
+      "source": "https://www.sleepnumber.com",
+      "status": "public-feed-unavailable",
+      "barrier": "HTTP Error 404: Not Found",
+      "note": "This result only concerns the public product-feed endpoint. It does not mean no real products exist or the retailer is closed."
+    },
+    {
+      "merchant": "Harry Winston",
+      "source": "https://www.harrywinston.com/en/products/lily-cluster-by-harry-winston/lily-cluster-diamond-pendant-small-pedpsm1mlc",
+      "status": "photo-download-unavailable",
+      "barrier": "The read operation timed out",
+      "note": "Real model/price/source verified; no placeholder supplied."
+    },
+    {
+      "merchant": "Kay Jewelers",
+      "source": "https://www.kay.com/heart-necklace-sterling-silver-18/p/V-504826809",
+      "status": "photo-download-unavailable",
+      "barrier": "HTTP Error 403: Forbidden",
+      "note": "Real model/price/source verified; no placeholder supplied."
+    }
+  ],
+  "notes": [
+    "Only actual named products with primary seller/manufacturer evidence and actual official photos are included.",
+    "Manufacturer-brand records link the actual source retailer (ShopSimon), not a fabricated brand-site URL. PriceBasis explains reference seller values.",
+    "Pre-owned/refurbished and generic brand-only watch records are excluded from manufacturer-boutique candidates. No unknown brand receives unrelated filler stock.",
+    "Native GBP prices from Jessica McCormack are preserved in nativePrice/currency/priceCurrency; no invented USD amount. Parent may apply a dated reference exchange rate."
+  ]
+}

@@ -1,21 +1,68 @@
-MIT License
+MALLSIDE PROPRIETARY LICENSE
+Version 1.0 — 28 October 2026
 
-Copyright (c) 2026 Jackson Pham
+Copyright (c) 2026 Jackson Pham (YouKnowJP). All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Scope and ownership
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This license applies to the copyrightable Mallside code, writing, original
+artwork, interface, and original selection and arrangement of content owned
+by Jackson Pham (the Owner), except material identified as third-party or
+public-domain material in THIRD_PARTY_NOTICES.md or accompanying notices.
+No ownership is claimed in facts, ideas, game mechanics as such, material
+outside copyright protection, third-party brands, product designs, images,
+or independently licensed components.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Limited permission
+
+The Owner permits individuals to play the Owner's officially hosted game
+for personal, non-commercial enjoyment, including the browser copies
+necessarily made for that purpose. Individuals may download a copy for
+private, non-commercial evaluation and make private modifications for
+that evaluation. Keep all copyright and third-party notices intact.
+This permission does not authorize publishing or distributing those copies
+or modifications, operating another hosted instance, or commercial use.
+
+3. Rights reserved
+
+Except for the limited permission above, applicable mandatory law, and
+independent third-party licenses, no permission is granted to copy, adapt,
+distribute, sublicense, sell, rent, or commercially exploit the protected
+Mallside material. In particular, no permission is granted to:
+
+* sell the game, copies, modified versions, or access to them;
+* monetize a copy or derivative through advertising, subscriptions,
+  sponsorship, paid hosting, in-game payments, or licensing;
+* reuse protected game code, original assets, writing, or original interface
+  expression in another distributed or commercial product; or
+* remove ownership notices or imply the Owner's endorsement.
+
+Obtain the Owner's separate written permission for any such use. Contact
+the YouKnowJP GitHub profile linked in README.md for permission inquiries.
+No trademark license is granted. No registered trademark status is asserted.
+
+4. GitHub and third-party rights
+
+GitHub's applicable terms continue to govern platform-required rights,
+including viewing and forking a public repository on GitHub. Those platform
+rights do not constitute a separate commercial license from the Owner.
+Third-party MIT, CC0, or other licenses remain effective for their respective
+material, and this license does not restrict those independent rights.
+Third-party product photographs are not licensed to others by the Owner.
+
+This license does not revoke valid permissions previously granted for
+material actually covered by an earlier license. The repository's original
+MIT starter commit contained no Mallside game code or assets; see
+docs/MIGRATION.md. This proprietary license accompanies the game import.
+
+5. No warranty; liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE MATERIAL IS PROVIDED "AS IS",
+WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR
+NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE OWNER IS NOT
+LIABLE FOR CLAIMS, DAMAGES, OR OTHER LIABILITY ARISING FROM THE MATERIAL
+OR ITS USE. NOTHING EXCLUDES LIABILITY OR RIGHTS THAT CANNOT LAWFULLY
+BE EXCLUDED.
+
+This is a proprietary, source-available project, not an open-source license.

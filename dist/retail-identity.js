@@ -1,0 +1,32 @@
+import {merchantIdentity} from './merchant-identity.js?v=23.0.0';
+import {brandDesign} from './brand-designs.js?v=23.0.0';
+
+// Text treatments and original game storefronts. These are not licensed logo assets.
+const style=(background,ink,font='sans',tracking=0,caseStyle='upper',facade='gallery')=>({background,ink,font,tracking,caseStyle,facade});
+export const SIGN_STYLES={
+ nike:style('#171b19','#ffffff','sport',2,'upper','sport'),adidas:style('#101512','#ffffff','sans',1,'lower','sport'),
+ apple:style('#eeeFEB','#202421','sans',0,'title','glass'),uniqlo:style('#c91b29','#ffffff','block',0,'upper','grid'),muji:style('#713437','#ffffff','sans',2,'upper','timber'),
+ ross:style('#fafafa','#164f86','round',1,'upper','department'),marshalls:style('#fafafa','#164f70','serif',0,'title','department'),target:style('#f8f8f4','#b51f2b','sans',0,'lower','department'),
+ nordstrom:style('#f8f7f3','#202320','sans',3,'upper','boutique'),nordstromrack:style('#16718a','#ffffff','sans',0,'title','department'),macys:style('#ffffff','#1a1a1a','serif',0,'lower','department'),bloomingdales:style('#171b19','#ffffff','sans',1,'lower','department'),
+ louisvuitton:style('#f3eee1','#2c241e','serif',4,'upper','boutique'),hermes:style('#eee5d1','#3b2d22','serif',3,'upper','timber'),chanel:style('#111413','#ffffff','sans',5,'upper','boutique'),dior:style('#f7f4ed','#252824','serif',0,'title','boutique'),
+ prada:style('#c4d4bd','#182b22','serif',4,'upper','boutique'),gucci:style('#e8ddca','#263e31','serif',4,'upper','boutique'),saintlaurent:style('#171b19','#f7f5eb','sans',3,'upper','boutique'),bottegaveneta:style('#dfd7c2','#294b39','serif',1,'title','boutique'),
+ cartier:style('#7f202c','#fff2d9','script',0,'title','jewelry'),tiffanyco:style('#85ccc5','#153a37','serif',2,'upper','jewelry'),swarovski:style('#f6f3eb','#252a28','serif',2,'upper','jewelry'),pandora:style('#f2ede5','#252a28','sans',2,'upper','jewelry'),
+ coach:style('#201f1b','#f1d7a6','serif',3,'upper','timber'),longchamp:style('#e9e7dc','#1d4a34','serif',1,'upper','boutique'),toryburch:style('#f0e2c6','#513b26','serif',2,'upper','boutique'),katespade:style('#f5f2e9','#21382b','serif',0,'lower','boutique'),
+ zara:style('#efebe2','#1c211d','serif',0,'upper','gallery'),hm:style('#f8f6ee','#b91e2b','script',0,'upper','apparel'),aritzia:style('#eee7da','#2c3029','sans',2,'upper','gallery'),allsaints:style('#353633','#f0e8d7','serif',2,'upper','workshop'),freepeople:style('#ead9c1','#593e32','script',0,'lower','timber'),
+ americaneagle:style('#e9e5d9','#163854','serif',1,'upper','timber'),gap:style('#172c4f','#ffffff','serif',2,'upper','grid'),jcrew:style('#f3ebdb','#1d3b39','serif',1,'upper','timber'),hollister:style('#f0e4d0','#36302a','serif',1,'upper','timber'),abercrombiefitch:style('#eee5d7','#353127','serif',1,'title','timber'),
+ levis:style('#ac2430','#ffffff','block',0,'title','workshop'),lululemon:style('#f4ede0','#822c35','sans',0,'lower','apparel'),alo:style('#ecebe3','#232a24','sans',0,'lower','gallery'),newbalance:style('#f2f1e8','#a42b36','sport',0,'lower','sport'),puma:style('#111614','#ffffff','sport',1,'upper','sport'),vans:style('#f4eddd','#ad2f34','block',1,'upper','sport'),
+ sephora:style('#141716','#ffffff','sans',4,'upper','beauty'),aesop:style('#e0d3ba','#343a2d','serif',0,'title','apothecary'),lush:style('#171b16','#ffffff','block',1,'upper','apothecary'),bathbodyworks:style('#f8f6ed','#254c7b','serif',0,'title','beauty'),mac:style('#101514','#ffffff','sans',2,'upper','beauty'),
+ lego:style('#bd2330','#ffffff','block',0,'upper','toys'),popmart:style('#faf6ed','#b52633','block',1,'upper','toys'),sanrio:style('#f8ede7','#8b3859','round',0,'lower','toys'),
+ starbucks:style('#0b4633','#ffffff','sans',1,'upper','cafe'),pandaexpress:style('#a8232d','#ffffff','sans',0,'upper','cafe'),
+ westelm:style('#f2ebdd','#272e29','sans',0,'lower','home'),cratebarrel:style('#f4efe5','#272e29','sans',0,'title','home'),frette:style('#efe9db','#40362c','serif',4,'upper','home'),barnesnoble:style('#f0e4ca','#244a37','serif',0,'title','library'),tumi:style('#1d2320','#ffffff','sans',3,'upper','boutique'),rimowa:style('#e4e4dc','#303d36','sans',3,'upper','boutique')
+};
+const luminance=hex=>{const s=hex.replace('#',''),rgb=[0,2,4].map(i=>parseInt(s.slice(i,i+2),16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};
+export function signContrast(a,b){const x=luminance(a),y=luminance(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05);}
+export function retailIdentity(store){const key=merchantIdentity(store.name),design=brandDesign(store),chosen=SIGN_STYLES[key]||style(design.wall,design.accent,'sans',1,'title',({department:'department',runway:'apparel',folded:'grid',atelier:'boutique',cafe:'cafe',counter:'cafe',beauty:'beauty',jewelry:'jewelry',library:'library',home:'home',toys:'toys'}[design.layout]||'gallery'));const ink=signContrast(chosen.background,chosen.ink)>=4.5?chosen.ink:luminance(chosen.background)>.25?'#172019':'#fffdf5';let name=store.name;
+ if(chosen.caseStyle==='upper')name=name.toUpperCase();else if(chosen.caseStyle==='lower')name=name.toLowerCase();
+ return {...chosen,ink,name,key,design,source:design.source||store.source||store.products?.[0]?.source||'',branchName:store.name};}
+export function windowAssortment(products,storeId,day,photos){const own=products.filter(p=>p.store===storeId&&photos[p.id]&&!p.archived);if(!own.length)return [];const first=own[((day-1)*2)%own.length],others=own.filter(p=>p.id!==first.id),second=others.find(p=>p.type!==first.type)||others[0];return second?[first,second]:[first];}
+export function drawRetailSign(c,identity,width,height){c.fillStyle=identity.background;c.fillRect(0,0,width,height);c.textAlign='center';c.textBaseline='middle';const fonts={serif:'Georgia',script:'cursive',sport:'Arial',block:'Arial',round:'Trebuchet MS',sans:'Arial'},weight=identity.font==='serif'?'500':'700';let size=Math.min(height*.59,width*.17),name=identity.name;
+ const set=()=>{c.font=(identity.font==='sport'?'italic ':'')+weight+' '+size+'px '+fonts[identity.font];};set();while(c.measureText(name).width+(name.length-1)*identity.tracking>width*.9&&size>12){size--;set();}
+ c.fillStyle=identity.ink;if(identity.tracking){let x=(width-c.measureText(name).width-(name.length-1)*identity.tracking)/2;c.textAlign='left';for(const char of name){c.fillText(char,x,height/2);x+=c.measureText(char).width+identity.tracking;}}else c.fillText(name,width/2,height/2);
+}

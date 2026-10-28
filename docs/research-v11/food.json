@@ -1,0 +1,725 @@
+{
+  "checkedOn": "2026-10-27",
+  "products": [
+    {
+      "id": "food-v11-chick-fil-a-chick-fil-a-chicken-sandwich",
+      "brand": "Chick-fil-A",
+      "name": "Chick-fil-A Chicken Sandwich",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 5.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.chick-fil-a.com/menu/entrees/chick-fil-a-chicken-sandwich",
+      "imageUrl": "https://www.chick-fil-a.com/wp-content/uploads/sites/2/2025/06/Jul19_CFASandwich_desktop800.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 114734,
+      "bundledPhoto": "assets/photos/v11-real-d4f0df1984bc8f03.webp"
+    },
+    {
+      "id": "food-v11-chick-fil-a-spicy-chicken-sandwich",
+      "brand": "Chick-fil-A",
+      "name": "Spicy Chicken Sandwich",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.chick-fil-a.com/menu/entrees/spicy-chicken-sandwich",
+      "imageUrl": "https://www.chick-fil-a.com/wp-content/uploads/sites/2/2025/06/CFASpicySandwich_800.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 394913,
+      "bundledPhoto": "assets/photos/v11-real-87a4a1ad144b06e0.webp"
+    },
+    {
+      "id": "food-v11-chick-fil-a-chick-fil-a-waffle-potato-fries",
+      "brand": "Chick-fil-A",
+      "name": "Chick-fil-A Waffle Potato Fries",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 3.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.chick-fil-a.com/menu/sides/chick-fil-a-waffle-potato-fries",
+      "imageUrl": "https://www.chick-fil-a.com/wp-content/uploads/sites/2/2025/06/Medium_Lowered_1217shoot_800x800.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 440972,
+      "bundledPhoto": "assets/photos/v11-real-1382ebacfc628dae.webp"
+    },
+    {
+      "id": "food-v11-wetzel-s-pretzels-original-pretzel",
+      "brand": "Wetzel's Pretzels",
+      "name": "Original Pretzel",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.29,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.wetzels.com/menu/pretzels/original",
+      "imageUrl": "https://www.wetzels.com/assets/menu/pretzels/original/thumb.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 975950,
+      "bundledPhoto": "assets/photos/v11-real-2857b80034b342fd.webp"
+    },
+    {
+      "id": "food-v11-auntie-anne-s-original-pretzel",
+      "brand": "Auntie Anne's",
+      "name": "Original Pretzel",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.auntieannes.com/menu/classic-pretzels/original-pretzel",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/3sVla46kDGnfy2v02BK1RM/db3dda7f0e71c30bf5e2e31d33b30413/AA_OGPretzel_PDP_746x419.jpg",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 193184,
+      "bundledPhoto": "assets/photos/v11-real-04648ec67e198800.webp"
+    },
+    {
+      "id": "food-v11-auntie-anne-s-cinnamon-sugar-pretzel",
+      "brand": "Auntie Anne's",
+      "name": "Cinnamon Sugar Pretzel",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.auntieannes.com/menu/classic-pretzels/cinnamon-sugar-pretzel",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/6caesVqzcZQwxk59lNJpW2/1025a15b3075702b3dc6f7ce2a8b607b/AA_CSPretzel_PDP_746x419.jpg",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 183839,
+      "bundledPhoto": "assets/photos/v11-real-854681ae93b58f17.webp"
+    },
+    {
+      "id": "food-v11-auntie-anne-s-original-pretzel-nuggets",
+      "brand": "Auntie Anne's",
+      "name": "Original Pretzel Nuggets",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 7.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.auntieannes.com/menu/pretzel-nuggets/original-pretzel-nuggets",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/4OyfDjXXo9RTo7cCuJFeXC/954c982e46c8db157e140e21ac426e72/AA_OGNuggetsCup_PDP_746x419.jpg",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 118087,
+      "bundledPhoto": "assets/photos/v11-real-ff797b44f1ed1b2a.webp"
+    },
+    {
+      "id": "food-v11-auntie-anne-s-original-lemonade",
+      "brand": "Auntie Anne's",
+      "name": "Original Lemonade",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 4.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.auntieannes.com/menu/drinks/original-lemonade",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/35uLCtDqFuc8uvKBXlwpFF/c1e37b0a8b3fd6e4d666312503837073/AA_LemonadeCup_PDP_746x419.jpg",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 107500,
+      "bundledPhoto": "assets/photos/v11-real-f573c5f95c7cd70f.webp"
+    },
+    {
+      "id": "food-v11-jamba-mango-a-go-go",
+      "brand": "Jamba",
+      "name": "Mango-A-Go-Go",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 8.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.jamba.com/menu/smoothies/mango-a-go-go",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/17tqyeqSRWivAi0fPnISiY/25550aa66cca9ea3f3ecf3a5d3e25918/746x600_Mango-a-go-go_OH.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 362925,
+      "bundledPhoto": "assets/photos/v11-real-9b4021349e324488.webp"
+    },
+    {
+      "id": "food-v11-jamba-strawberries-wild",
+      "brand": "Jamba",
+      "name": "Strawberries Wild",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 8.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.jamba.com/menu/smoothies/strawberries-wild",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/7mSTmisf1P0TKbEDfjkjHF/9304fab7f8337c2e3d47371b9867fcd1/746x600_Strawberries_Wild_OH.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 411654,
+      "bundledPhoto": "assets/photos/v11-real-1fd7830449f23ea0.webp"
+    },
+    {
+      "id": "food-v11-jamba-caribbean-passion",
+      "brand": "Jamba",
+      "name": "Caribbean Passion",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 8.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.jamba.com/menu/smoothies/caribbean-passion",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/8v2vMsTRY8f6sngp5sGvd/d7c7d79419dcb99dc2ab7775dfd19a20/746x600_Caribbean_Passion_OH.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 478441,
+      "bundledPhoto": "assets/photos/v11-real-d92c702b1b98263f.webp"
+    },
+    {
+      "id": "food-v11-jamba-orange-dream-machine",
+      "brand": "Jamba",
+      "name": "Orange Dream Machine",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 8.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.jamba.com/menu/smoothies/orange-dream-machine",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/6ni1SBAVpcxIzlMLescuio/a15d0bb83ee1e47848daac06e3d8213d/746x600_Orange_Dream_Machine_OH.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 395790,
+      "bundledPhoto": "assets/photos/v11-real-291065faad6b3a61.webp"
+    },
+    {
+      "id": "food-v11-cinnabon-classic-roll",
+      "brand": "Cinnabon",
+      "name": "Classic Roll",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.cinnabon.com/menu",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/6pokk0CNK7gtNQYZfXU2nF/e046b39c22bd2b1145c91ae77546c98f/CIN-ClassicRoll-PDP-746x419_2x.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 989582,
+      "bundledPhoto": "assets/photos/v11-real-7bb7b4dbee6bb373.webp"
+    },
+    {
+      "id": "food-v11-cinnabon-minibon",
+      "brand": "Cinnabon",
+      "name": "MiniBon",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 4.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.cinnabon.com/menu",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/4WCAwDzzcLXTj1iqVCr19c/e070047f5b8853a0c501bcdd5552804f/CIN-MiniBon-PDP-746x419_2x.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 1581164,
+      "bundledPhoto": "assets/photos/v11-real-5a5ea3adbcb2ee76.webp"
+    },
+    {
+      "id": "food-v11-cinnabon-bonbites",
+      "brand": "Cinnabon",
+      "name": "BonBites",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 4.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.cinnabon.com/menu",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/5XFxtwCzRpwChJI8ge8I0C/f350dfcbe24e490605ddb439edb53204/CIN-BonBites-PDP-746x419_2x.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 1149810,
+      "bundledPhoto": "assets/photos/v11-real-3cf97a900de5a5f9.webp"
+    },
+    {
+      "id": "food-v11-cinnabon-caramel-pecanbon",
+      "brand": "Cinnabon",
+      "name": "Caramel PecanBon",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 7.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.cinnabon.com/menu",
+      "imageUrl": "https://ctfassets.gotofoods.com/zqt8tllj2cy0/7qhPMm8BKsDfaCs963N7pJ/a2472236b081b23b884fe7756887a602/CIN-CaramelPecanBon-PDP-746x419_2x.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 1252207,
+      "bundledPhoto": "assets/photos/v11-real-52a180c5874e76f3.webp"
+    },
+    {
+      "id": "food-v11-starbucks-caff-latte",
+      "brand": "Starbucks",
+      "name": "Caffè Latte",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 5.25,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.starbucks.no/en/espresso-drinks",
+      "imageUrl": "https://www.starbucks.no/sites/starbucks-no-pwa/files/styles/c04_image_text_grid_600x600/public/2024-01/Caffe%20Latte_0.png.webp?h=04d92ac6&itok=v4D2vErC",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Product image from the official Norway menu; US serving presentation may differ.",
+      "imageBytes": 8296,
+      "bundledPhoto": "assets/photos/v11-real-08318f9f5f9c8d32.webp"
+    },
+    {
+      "id": "food-v11-starbucks-iced-caff-latte",
+      "brand": "Starbucks",
+      "name": "Iced Caffè Latte",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 5.25,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.starbucks.no/en/espresso-drinks",
+      "imageUrl": "https://www.starbucks.no/sites/starbucks-no-pwa/files/styles/c04_image_text_grid_600x600/public/2024-01/Iced%20Caffe%20Latte_0.png.webp?h=04d92ac6&itok=EVERUKGo",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Product image from the official Norway menu; US serving presentation may differ.",
+      "imageBytes": 13684,
+      "bundledPhoto": "assets/photos/v11-real-b17ba1672022b488.webp"
+    },
+    {
+      "id": "food-v11-starbucks-caff-mocha",
+      "brand": "Starbucks",
+      "name": "Caffè Mocha",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 5.75,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.starbucks.no/en/espresso-drinks",
+      "imageUrl": "https://www.starbucks.no/sites/starbucks-no-pwa/files/styles/c04_image_text_grid_600x600/public/2024-01/Caffe%20Mocha_0.png.webp?h=04d92ac6&itok=OWYw-REb",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Product image from the official Norway menu; US serving presentation may differ.",
+      "imageBytes": 9806,
+      "bundledPhoto": "assets/photos/v11-real-f99a96f81b8638b2.webp"
+    },
+    {
+      "id": "food-v11-starbucks-caramel-macchiato",
+      "brand": "Starbucks",
+      "name": "Caramel Macchiato",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 5.75,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.starbucks.no/en/espresso-drinks",
+      "imageUrl": "https://www.starbucks.no/sites/starbucks-no-pwa/files/styles/c04_image_text_grid_600x600/public/2024-01/Caramel%20Macchiato_0.png.webp?h=04d92ac6&itok=IwuEGwpE",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Product image from the official Norway menu; US serving presentation may differ.",
+      "imageBytes": 13816,
+      "bundledPhoto": "assets/photos/v11-real-070f2bcc75d04fa5.webp"
+    },
+    {
+      "id": "food-v11-starbucks-cappuccino",
+      "brand": "Starbucks",
+      "name": "Cappuccino",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 5.25,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.starbucks.no/en/espresso-drinks",
+      "imageUrl": "https://www.starbucks.no/sites/starbucks-no-pwa/files/styles/c04_image_text_grid_600x600/public/2024-01/Cappuccino_0.png.webp?h=04d92ac6&itok=_85LupAw",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Product image from the official Norway menu; US serving presentation may differ.",
+      "imageBytes": 9374,
+      "bundledPhoto": "assets/photos/v11-real-d8f871875e97cdf7.webp"
+    },
+    {
+      "id": "food-v11-starbucks-caff-americano",
+      "brand": "Starbucks",
+      "name": "Caffè Americano",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 4.25,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.starbucks.no/en/espresso-drinks",
+      "imageUrl": "https://www.starbucks.no/sites/starbucks-no-pwa/files/styles/c04_image_text_grid_600x600/public/2024-01/Americano_0.png.webp?h=04d92ac6&itok=SZMgkhUE",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Product image from the official Norway menu; US serving presentation may differ.",
+      "imageBytes": 10740,
+      "bundledPhoto": "assets/photos/v11-real-d6f9a034ea14a37f.webp"
+    },
+    {
+      "id": "food-v11-panda-express-the-original-orange-chicken",
+      "brand": "Panda Express",
+      "name": "The Original Orange Chicken",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.25,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "imageUrl": "https://www.pandaexpress.kr/sites/kr/files/styles/product_tab/public/2023-04/Orange%20Chicken.jpg?itok=vswTXkr5",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Official Korea photo depicts the named dish; serving presentation may differ from US restaurants.",
+      "imageBytes": 40226,
+      "bundledPhoto": "assets/photos/v11-real-cd6196ae2cc7a5f4.webp"
+    },
+    {
+      "id": "food-v11-panda-express-kung-pao-chicken",
+      "brand": "Panda Express",
+      "name": "Kung Pao Chicken",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.25,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "imageUrl": "https://www.pandaexpress.kr/sites/kr/files/styles/product_tab/public/2023-04/Kung%20Pao%20Chicken.jpg?itok=LVdPPfMB",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Official Korea photo depicts the named dish; serving presentation may differ from US restaurants.",
+      "imageBytes": 41545,
+      "bundledPhoto": "assets/photos/v11-real-a83458d9869549a8.webp"
+    },
+    {
+      "id": "food-v11-panda-express-grilled-teriyaki-chicken",
+      "brand": "Panda Express",
+      "name": "Grilled Teriyaki Chicken",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.25,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "imageUrl": "https://www.pandaexpress.kr/sites/kr/files/styles/product_tab/public/2023-04/Grilled%20Teriyaki%20Chicken%20or%20Asian%20Chicken.jpg?itok=N1qmzmGu",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Official Korea photo depicts the named dish; serving presentation may differ from US restaurants.",
+      "imageBytes": 37907,
+      "bundledPhoto": "assets/photos/v11-real-e70377c656cc0250.webp"
+    },
+    {
+      "id": "food-v11-panda-express-chow-mein",
+      "brand": "Panda Express",
+      "name": "Chow Mein",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 4.75,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.pandaexpress.com/nutritioninformation",
+      "imageUrl": "https://www.pandaexpress.kr/sites/kr/files/styles/product_tab/public/2023-04/Chow%20Mein.jpg?itok=1Q-A9KpS",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Official Korea photo depicts the named dish; serving presentation may differ from US restaurants.",
+      "imageBytes": 40910,
+      "bundledPhoto": "assets/photos/v11-real-4987a61c7710d477.webp"
+    },
+    {
+      "id": "food-v11-chipotle-mexican-grill-pollo-asado-burrito-bowl",
+      "brand": "Chipotle Mexican Grill",
+      "name": "Pollo Asado Burrito Bowl",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 9.75,
+      "priceBasis": "official restaurant 4599 reference; exact local prices vary",
+      "source": "https://www.chipotle.com/order/build/burrito-bowl?restaurant=4599",
+      "imageUrl": "https://dyn.mktgcdn.com/p/AoomnJ8W6lQ_KkLS1lPx82ai0f1og8tW5-ZQle6WYzE/width=500,height=500",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Official item and image; image sourced from an official New York location page.",
+      "imageBytes": 41413,
+      "bundledPhoto": "assets/photos/v11-real-d5502272c9b6d103.webp"
+    },
+    {
+      "id": "food-v11-chipotle-mexican-grill-pollo-asado-burrito",
+      "brand": "Chipotle Mexican Grill",
+      "name": "Pollo Asado Burrito",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 9.75,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://locations.chipotle.com/ny/new-york/1-new-york-plz/order-delivery",
+      "imageUrl": "https://dyn.mktgcdn.com/p/4aCsb2v5_bg_Acexp8BoLbSIze0pGzDAi8sQS1ditcg/width=500,height=500",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 31925,
+      "bundledPhoto": "assets/photos/v11-real-3a51f374de7d1990.webp"
+    },
+    {
+      "id": "food-v11-h-agen-dazs-vanilla-ice-cream",
+      "brand": "Häagen-Dazs",
+      "name": "Vanilla Ice Cream",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.icecream.com/us/en/brands/haagen-dazs/shops/menu",
+      "imageUrl": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/haagen-dazs/shops/menu/H6-OnlineMenu-448x448-17.webp/_jcr_content/renditions/featurecard.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 110533,
+      "bundledPhoto": "assets/photos/v11-real-466bd001bf97020b.webp"
+    },
+    {
+      "id": "food-v11-h-agen-dazs-strawberry-ice-cream",
+      "brand": "Häagen-Dazs",
+      "name": "Strawberry Ice Cream",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.icecream.com/us/en/brands/haagen-dazs/shops/menu",
+      "imageUrl": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/haagen-dazs/shops/menu/H6-OnlineMenu-448x448-16.webp/_jcr_content/renditions/featurecard.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 117804,
+      "bundledPhoto": "assets/photos/v11-real-c28791cc7fca5290.webp"
+    },
+    {
+      "id": "food-v11-h-agen-dazs-belgian-chocolate-ice-cream",
+      "brand": "Häagen-Dazs",
+      "name": "Belgian Chocolate Ice Cream",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.icecream.com/us/en/brands/haagen-dazs/shops/menu",
+      "imageUrl": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/haagen-dazs/shops/menu/H6-OnlineMenu-448x448-1.webp/_jcr_content/renditions/featurecard.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 119340,
+      "bundledPhoto": "assets/photos/v11-real-eba9bd1031505e43.webp"
+    },
+    {
+      "id": "food-v11-h-agen-dazs-cookies-cream-shake",
+      "brand": "Häagen-Dazs",
+      "name": "Cookies & Cream Shake",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 8.99,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.icecream.com/us/en/brands/haagen-dazs/shops/menu",
+      "imageUrl": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/haagen-dazs/shops/menu/H4-OnlineMenu-448x448-2.webp/_jcr_content/renditions/featurecard.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 303438,
+      "bundledPhoto": "assets/photos/v11-real-af504dcfa42a6e2f.webp"
+    },
+    {
+      "id": "food-v11-din-tai-fung-kurobuta-pork-xiao-long-bao",
+      "brand": "Din Tai Fung",
+      "name": "Kurobuta Pork Xiao Long Bao",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 16.5,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://dtf.com/en-us/menu",
+      "imageUrl": "https://dtf-cdn.com/images/production/858f812f3f4573cf0d005a85a634e6f59712b2fb-2500x2500.png?w=1920&q=75&fit=clip&auto=format",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 2822931,
+      "bundledPhoto": "assets/photos/v11-real-af8e358b51a76a73.webp"
+    },
+    {
+      "id": "food-v11-din-tai-fung-chicken-dumplings",
+      "brand": "Din Tai Fung",
+      "name": "Chicken Dumplings",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 16.0,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://dtf.com/en-us/menu",
+      "imageUrl": "https://dtf-cdn.com/images/production/0856b669bae9e06f15f88aec0b7a7e0e6a13d960-2500x2500.png?w=1920&q=75&fit=clip&auto=format",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 3340010,
+      "bundledPhoto": "assets/photos/v11-real-ca6654cc289005c0.webp"
+    },
+    {
+      "id": "food-v11-din-tai-fung-string-beans-with-garlic",
+      "brand": "Din Tai Fung",
+      "name": "String Beans with Garlic",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 16.0,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://dtf.com/en-us/menu",
+      "imageUrl": "https://dtf-cdn.com/images/production/488de525567f556b104f0265d9b8548461f4f983-2500x2500.png?w=1920&q=75&fit=clip&auto=format",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 7301652,
+      "bundledPhoto": "assets/photos/v11-real-114493aca8f4b493.webp"
+    },
+    {
+      "id": "food-v11-din-tai-fung-chicken-fried-rice",
+      "brand": "Din Tai Fung",
+      "name": "Chicken Fried Rice",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 17.0,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://dtf.com/en-us/menu",
+      "imageUrl": "https://dtf-cdn.com/images/production/c559e23c1ebe524d098a6072d529c2b59f6c5e19-2500x2500.png?w=1920&q=75&fit=clip&auto=format",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 3063356,
+      "bundledPhoto": "assets/photos/v11-real-6062be4ae41c72b7.webp"
+    },
+    {
+      "id": "food-v11-din-tai-fung-chocolate-mochi-xiao-long-bao",
+      "brand": "Din Tai Fung",
+      "name": "Chocolate & Mochi Xiao Long Bao",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 13.5,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://dtf.com/en-us/menu",
+      "imageUrl": "https://dtf-cdn.com/images/production/00361d4a8b002cadcafaeda551a978988ed5faa9-2500x2500.png?w=1920&q=75&fit=clip&auto=format",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 1402612,
+      "bundledPhoto": "assets/photos/v11-real-f6a2ed4f2bfb0a4f.webp"
+    },
+    {
+      "id": "food-v11-din-tai-fung-honey-lemonade",
+      "brand": "Din Tai Fung",
+      "name": "Honey Lemonade",
+      "type": "drink",
+      "category": "drink",
+      "priceUSD": 6.5,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://dtf.com/en-us/menu",
+      "imageUrl": "https://dtf-cdn.com/images/production/3c3a3431c7c5dc225f8e49d9756fdc0297c44e1d-2500x2500.png?w=1920&q=75&fit=clip&auto=format",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "",
+      "imageBytes": 1320191,
+      "bundledPhoto": "assets/photos/v11-real-5185dd43134a9f47.webp"
+    },
+    {
+      "id": "food-v11-yogurtland-plain-tart-frozen-yogurt",
+      "brand": "Yogurtland",
+      "name": "Plain Tart Frozen Yogurt",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 6.0,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.yogurtland.com/flavors/view/139/plain-tart",
+      "imageUrl": "https://www.yogurtland.com/assets/626.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Simulated regular cup; real self-serve charges by weight.",
+      "imageBytes": 424076,
+      "bundledPhoto": "assets/photos/v11-real-1a0b613fa6694adf.webp"
+    },
+    {
+      "id": "food-v11-shake-shack-shackburger",
+      "brand": "Shake Shack",
+      "name": "ShackBurger",
+      "type": "food",
+      "category": "food",
+      "priceUSD": 8.49,
+      "priceBasis": "simulated reference price; not a live quote",
+      "source": "https://www.shakeshack.com.my/shake-menu/shackburger-single/",
+      "imageUrl": "https://www.shakeshack.com.my/wp-content/uploads/2023/10/SSMY-Website-images_ShackBurger-34.png",
+      "sizes": [
+        "Regular"
+      ],
+      "finalSale": true,
+      "notes": "Official Malaysia product photo; US serving presentation may differ.",
+      "imageBytes": 424604,
+      "bundledPhoto": "assets/photos/v11-real-452af3930f9d1124.webp"
+    }
+  ]
+}

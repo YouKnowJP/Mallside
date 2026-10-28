@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible Mallside gameplay or display issue.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not post private save files, passwords or tokens. Use a private channel for security reports; see SECURITY.md."
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      placeholder: "Example: Chrome on Windows, Safari on iPhone"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Game version or page address
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: "Describe the mall, store and action. Include expected and actual behavior."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or other details
+      description: "Remove personal information before attaching anything."
