@@ -18,8 +18,8 @@ const aliases={
  benandjerrys:'benjerrys',somisomisoftservetaiyaki:'somisomi',pfchangschinabistro:'pfchangs',fiveguysburgersandfries:'fiveguys',pressedjuicery:'pressed',
  buildabearworkshop:'buildabear',buildabearxhellokittyandfriendsworkshop:'buildabear',lego:'lego',miniso:'miniso',barnesnoblebooksellers:'barnesnoble',
  bookofflowerlevel:'bookoff',bookoffupperlevel:'bookoff',spencergifts:'spencers',spencersgifts:'spencers',lidslockerroom:'lids',lockerroombylids:'lids',lidsoutdoorvillage:'lids',
- gnclivewell:'gnc',gnclivewell:'gnc',zalesjeweler:'zales',zalesthediamond:'zales',kayjewelers:'kay',kaysjewelers:'kay',kevinjewelers:'kevinjewelers',
- hugoboss:'hugoboss',poloralphlauren:'ralphlauren',poloralphlaurenchildren:'ralphlauren',uspoloassn:'uspoloassn',uspoloassn:'uspoloassn',
+ gnclivewell:'gnc',zalesjeweler:'zales',zalesthediamond:'zales',kayjewelers:'kay',kaysjewelers:'kay',kevinjewelers:'kevinjewelers',
+ hugoboss:'hugoboss',poloralphlauren:'ralphlauren',poloralphlaurenchildren:'ralphlauren',uspoloassn:'uspoloassn',
  northface:'northface',northfacethe:'northface',thenorthface:'northface',the1916companyiwcomega:'the1916company',tudoratthe1916company:'tudor',
  tagheuer:'tagheuer',iwcschaffhausen:'iwc',vancleefarpels:'vancleefarpels',williamssonoma:'williamssonoma',swainelondon:'swaine',
  qsouthmall:'q',qoutdoorvillage:'q',seeseaoutdoorvillage:'seesea',temporarylocationgarage:'garage'

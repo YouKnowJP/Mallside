@@ -43,6 +43,10 @@ Referenced brand names, trademarks, logos, trade dress, product designs and mall
 
 Google receives normal network request information when these remote fonts load. See [privacy information](PRIVACY.md).
 
+## esbuild — development-only MIT compiler
+
+Pinned esbuild 0.28.2 generates the public minified browser artifact. It is a development dependency, not a browser service or the game license. Its own MIT license is retained by npm in `node_modules/esbuild/LICENSE.md` (or `LICENSE`, depending on package layout). Source: https://github.com/evanw/esbuild. The generated application retains the runtime library and graphical-asset notices above.
+
 ## Development tools and GitHub Actions
 
 Node.js, Python, optional photo-research tools and GitHub Actions are installed or run separately; they are not game ownership claims. Actions retain their own licenses. `scripts/README.md` distinguishes the release tools from historical research scripts.

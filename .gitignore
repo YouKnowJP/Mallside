@@ -10,3 +10,6 @@ coverage/
 playwright-report/
 test-results/
 .cache/
+build/
+.public-game/
+.public-host/

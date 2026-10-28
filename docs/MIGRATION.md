@@ -21,3 +21,8 @@ The broad MIT notice of the unrelated parent Personal-Project repository is not 
 `YouKnowJP/Mallside` on `main` is the canonical source for this GitHub release. GitHub Pages publishes the `dist/` directory. The old Sites deployment and local source checkout are retained for continuity; no force push, repository deletion or production-save reset is part of the move.
 
 Saves are local to each hostname. Players moving to GitHub Pages must export a JSON backup at the old address and import it at the new one. Local outfit-photo binaries remain on the old origin. Neither migration nor publication uploads a player's save.
+
+
+## Subsequent privacy and location update
+
+On 28 October 2026, the canonical source repository was made private, and its working clone moved from `Personal-Project/Mallside-GitHub` to `/Users/youknowjp/Documents/Personal PR/Mallside`. The earlier path descriptions above record the import at that time. Current hosting uses only generated browser output in `YouKnowJP/YouKnowJP.github.io`, preserving the same public game URL. See [private hosting](PRIVATE_HOSTING.md).

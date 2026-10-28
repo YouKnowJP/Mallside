@@ -1,8 +1,11 @@
 # Scripts
 
-Normal players need none of these tools. The published app is the already-prepared `dist/` directory.
+Normal players need none of these tools. Local development uses `dist/`; production publishes generated `build/site/Mallside/` files. See `docs/PRIVATE_HOSTING.md`.
 
 ## Supported release commands
+
+- `npm ci`: install the pinned development bundler.
+- `npm run build` and `npm run check:public`: create and verify the generated-only public artifact without source maps.
 
 - `npm run check` / `check-release.mjs`: offline syntax, local static-reference, documentation-link, notice and photo-inventory validation. Uses Node's standard library.
 - `npm run inventory` / `create-asset-inventory.mjs`: rebuilds `docs/ASSET_INVENTORY.json` from the actual runtime photo index and on-disk hashes. Uses Node's standard library. It does not download assets or establish permission.

@@ -9,3 +9,10 @@ Release checks validate JavaScript syntax, relative module/HTML/CSS paths, local
 The imported regression suite passed **274/274** tests on Node.js v26.0.0 (24.9 seconds). Release checks passed for **72 browser modules and 262 local references**, all shipped notices and the current photograph hashes. A high-confidence credential-pattern scan found no matching token/private-key patterns in the imported tree.
 
 The local `/Mallside/` preview returned HTTP 200, rendered the existing 3D save, paused correctly, displayed the product catalog and opened Rights & privacy from the footer. Runtime warning/error logs were empty. The separate legal page exposes the full game terms, independent notices and privacy text. The previous source checkout and its deployed save were not changed. Remote checks and deployment are recorded in GitHub Actions for the published commit. Previous v23 visual/fit coverage and its limits remain in [v23 QA](qa-v23.md). Local checks use Chromium through the in-app browser, not a certification of every physical mobile device or Safari/Firefox.
+
+
+## Private-source publication — 23.0.2
+
+The private clone was relocated to `/Users/youknowjp/Documents/Personal PR/Mallside`. The full regression suite passed 274/274 tests (Node.js v26.0.0, 28.3 seconds). Source release checks passed for 72 browser modules, 265 local references and the photograph/notice inventory. The production build passed its artifact checks: 1,976 public files, one minified ES-module bundle, complete product photographs and licenses, and no source maps, editable module tree, tests, research, Git metadata or anatomical conversion inputs.
+
+The generated-only local preview rendered the existing saved outfit and walking wardrobe preview, with no failed product images and no warning/error console entries. The new source workflow runs these checks on GitHub before copying the verified artifact to the separate public hosting repository. Remote runs and the public `release.json` provide the publication record. The source is private; browser-delivered code/data/images remain inspectable by players.

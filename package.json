@@ -1,19 +1,31 @@
 {
   "name": "mallside",
-  "version": "23.0.1",
+  "version": "23.0.2",
   "private": true,
-  "description": "Mallside — a browser shopping-life simulation by Jackson Pham / YouKnowJP",
+  "description": "Mallside \u2014 a browser shopping-life simulation by Jackson Pham / YouKnowJP",
   "type": "module",
   "author": "Jackson Pham (YouKnowJP)",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://youknowjp.github.io/Mallside/",
-  "repository": { "type": "git", "url": "https://github.com/YouKnowJP/Mallside.git" },
-  "bugs": { "url": "https://github.com/YouKnowJP/Mallside/issues" },
-  "engines": { "node": ">=22" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YouKnowJP/Mallside.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YouKnowJP/Mallside/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "start": "python3 -m http.server 4317 --bind 127.0.0.1 --directory dist",
     "check": "node scripts/check-release.mjs",
     "inventory": "node scripts/create-asset-inventory.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build-public.mjs",
+    "check:public": "node scripts/check-public.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
   }
 }

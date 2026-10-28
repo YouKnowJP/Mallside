@@ -10,7 +10,7 @@ The reservation applies only to copyrightable expression the owner actually owns
 
 ## What it cannot prevent
 
-A public repository permits reading/downloading, and GitHub's terms permit viewing and forking there. A browser must receive game code and assets to play a static game. The proprietary notice expresses the owner's permissions and can support a rights claim where valid; it is not DRM, an enforcement service or a promise that nobody can copy or profit. Keeping future source private can reduce exposure but cannot make delivered browser assets secret. This migration preserves the repository's requested public visibility.
+While a repository is public, it permits reading/downloading, and GitHub's terms permit viewing and forking there. A browser must receive game code and assets to play a static game. The proprietary notice expresses the owner's permissions and can support a rights claim where valid; it is not DRM, an enforcement service or a promise that nobody can copy or profit. Keeping future source private can reduce exposure but cannot make delivered browser assets secret. The source repository was made private on 28 October 2026. Only generated browser files are published; earlier public downloads or forks cannot be recalled.
 
 The original GitHub starter commit had an MIT notice and README only. No game files were present. That history remains intact. The new game import is accompanied by its own license. Existing valid rights in material previously distributed under another license cannot be withdrawn by adding this notice; no such withdrawal is claimed. See [migration provenance](MIGRATION.md).
 
