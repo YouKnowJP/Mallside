@@ -8,7 +8,7 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 ## v25 — people, parcels and a more natural mall
 
-Three branching local stories add nine optional multi-day chapters. Wrap a real purchase, deliver Maya’s gift, refill at guest services and save directory route notes. Continuous walking headings, smoother turns, varied adult appearances, changing daylight and layered storefront details improve the 3D scene. See [v25 gameplay](docs/GAMEPLAY-v25.md), [release QA](docs/qa-v25.md) and [remaining work](ROADMAP.md).
+Three branching local stories add nine optional multi-day chapters. Wrap a real purchase, deliver Maya’s gift, refill at guest services and save directory route notes. Continuous walking headings, smoother turns, varied adult appearances, changing daylight and layered storefront details improve the 3D scene. See [v25 gameplay](docs/GAMEPLAY-v25.md), [gameplay QA](docs/qa-v25.md), [publication QA](docs/QA.md) and [remaining work](ROADMAP.md).
 
 ## Previous update · 24.0.0
 
@@ -57,10 +57,11 @@ npm test
 
 | Path | Contents |
 | --- | --- |
-| `dist/` | Hand-authored browser application and bundled assets; this is the deployable site |
+| `dist/` | Editable browser application and prepared assets for local development |
+| `build/site/Mallside/` | Generated production game; ignored by Git and published by Pages |
 | `tests/` | Node regression tests for the economy, navigation, catalog, characters and scenes |
 | `scripts/` | Release checks, asset inventory and documented research/conversion tools |
-| `docs/` | Player/developer guides, migration record, QA and source research |
+| `docs/` | Current guides, migration record, QA and source research; retired hosting notes in `docs/history/` |
 | `.github/` | CI, GitHub Pages deployment and issue templates |
 
 The public `YouKnowJP/Mallside` repository contains the complete project. A push to `main` runs checks and tests, builds the game and publishes directly to GitHub Pages in this same repository. No second hosting repository or deployment key is needed. `Personal-Project` remains separate for Tilewright and other projects. See [deployment instructions](docs/DEPLOYMENT.md), [architecture](docs/ARCHITECTURE.md), and [the retained game guide](docs/GAME_GUIDE.md).

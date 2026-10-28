@@ -4,12 +4,13 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 
 | Topic | Document |
 | --- | --- |
+| Current stories, services and mall atmosphere | [v25 gameplay](GAMEPLAY-v25.md) |
 | Daily outings and branch-aware progress | [v24 gameplay](GAMEPLAY-v24.md) |
-| Current release checks and remaining work | [v24 QA](qa-v24.md), [roadmap](../ROADMAP.md) |
+| Current validation and remaining work | [Publication QA](QA.md), [v25 gameplay QA](qa-v25.md), [roadmap](../ROADMAP.md) |
 | Gameplay, controls, progression, malls and prior features | [Game guide](GAME_GUIDE.md) |
 | Runtime systems and file ownership | [Architecture](ARCHITECTURE.md) |
 | Local development, CI, publishing and rollback | [Deployment](DEPLOYMENT.md) |
-| Retired private-source hosting arrangement | [Hosting history](PRIVATE_HOSTING.md) |
+| Retired private-source hosting arrangement | [Hosting history](history/HOSTING.md) |
 | GitHub import provenance and starter license | [Migration](MIGRATION.md) |
 | Repository migration validation | [Release QA](QA.md) |
 | Permissions, ownership limits and clearance | [Rights](RIGHTS.md) |
@@ -31,6 +32,3 @@ Versioned files are retained as historical evidence. Their counts and checks des
 - Catalog provenance: [v4 research](catalog-research-v4.md), [v6 price references](catalog-prices-v6.md), [v7 product links](product-links-v7.md), JSON records alongside them.
 
 Other versioned research and QA files remain alongside these documents. Raw researched images outside the repository are not reproduced merely because an old note mentions a temporary local path.
-
-- [v25 local stories, guest services and atmosphere](GAMEPLAY-v25.md)
-- [v25 automated and live QA](qa-v25.md)

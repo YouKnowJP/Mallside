@@ -1,4 +1,24 @@
-# GitHub migration QA — 23.0.1
+# Release and migration QA
+
+## Migration cleanup — 25.0.3
+
+Validated on 28 October 2026. The active source and publishing repository is public `YouKnowJP/Mallside`; `Personal-Project` remains a separate private repository for Tilewright and other projects.
+
+- Restored the missing local `Personal-Project` Git metadata after verifying all 392 tracked files matched remote commit `c1c7534e4641e0385293af004d1c5c7346e0a920`. No tracked project files were overwritten. Its repository catalog check passed for 392 files and 1,503 local references.
+- Confirmed no tracked Mallside paths, Mallside workflow, deployment key or secret remains in `Personal-Project`. Mallside has no deployment keys, required Actions secrets or repository variables; its Pages source is the same-repository workflow.
+- Moved retired hosting notes under `docs/history/`, clarified the chronology in the migration record and changelog, refreshed the current documentation index and distinguished editable `dist/` from generated `build/site/Mallside/`.
+- Removed obsolete publisher workspace rules, two fully merged local branches and four generated `public-game` artifacts from the retired publisher. Source commits, rights notices, current Pages artifacts and player save keys were preserved.
+- Preserved 486 older temporary entries (research, logs, deployment snapshots and scratch directories; about 1,135 MiB) in one owner-only local archive outside both Git checkouts. The archive contains a manifest of original paths, sizes and file counts and is not part of either repository or deployment.
+
+The full game regression suite passed **309/309** tests (33.2 seconds). Release checks passed for **77 browser modules and 295 local references**, including the relocated documentation. The photograph inventory diff changes only its release label; product files and hashes remain unchanged.
+
+A disposable packaging probe retained two legitimate files, filtered seven macOS/Windows metadata paths, and verified that anatomical conversion inputs stay excluded. Five separately injected metadata cases made the artifact checker fail with the expected reason. All probes were removed and the final build verified **1,976 generated files** with all 1,934 photo references, required notices and one minified script. The script is still `app-Z7J5IDO3.js`; gameplay code is unchanged. Finder can recreate ignored metadata in local folders; the build filter and public-artifact check prevent it from being silently included in a release.
+
+Publish this cleanup through the normal tested `main` workflow. The public `release.json` must match the successful source commit before reporting the release live.
+
+## Historical validation records
+
+The records below describe earlier releases and hosting arrangements. Current operating instructions are in `DEPLOYMENT.md`; retired private-source hosting notes are in `history/HOSTING.md`.
 
 Scope: preserve the v23 game while importing it into the standalone GitHub repository, document rights and provenance, and publish `dist/` under the `/Mallside/` project path.
 
@@ -11,14 +31,14 @@ The imported regression suite passed **274/274** tests on Node.js v26.0.0 (24.9 
 The local `/Mallside/` preview returned HTTP 200, rendered the existing 3D save, paused correctly, displayed the product catalog and opened Rights & privacy from the footer. Runtime warning/error logs were empty. The separate legal page exposes the full game terms, independent notices and privacy text. The previous source checkout and its deployed save were not changed. Remote checks and deployment are recorded in GitHub Actions for the published commit. Previous v23 visual/fit coverage and its limits remain in [v23 QA](qa-v23.md). Local checks use Chromium through the in-app browser, not a certification of every physical mobile device or Safari/Firefox.
 
 
-## Private-source publication — 23.0.2
+### Private-source publication — 23.0.2
 
 The private clone was relocated to `/Users/youknowjp/Documents/Personal PR/Mallside`. The full regression suite passed 274/274 tests (Node.js v26.0.0, 28.3 seconds). Source release checks passed for 72 browser modules, 265 local references and the photograph/notice inventory. The production build passed its artifact checks: 1,976 public files, one minified ES-module bundle, complete product photographs and licenses, and no source maps, editable module tree, tests, research, Git metadata or anatomical conversion inputs.
 
 The generated-only local preview rendered the existing saved outfit and walking wardrobe preview, with no failed product images and no warning/error console entries. The new source workflow runs these checks on GitHub before copying the verified artifact to the separate public hosting repository. Remote runs and the public `release.json` provide the publication record. The source is private; browser-delivered code/data/images remain inspectable by players.
 
 
-## Single-repository Pages preparation — 25.0.2
+### Single-repository Pages preparation — 25.0.2
 
 Before changing source visibility, Gitleaks 8.30.1 scanned all seven existing Git commits. Its 39 generic-key findings were reviewed: all were catalog `assetKey` or mall-directory `key` identifiers, with no credential rules otherwise matching. The logs of all six completed source workflows also scanned without findings. This is a bounded scan, not a guarantee about undetectable secrets.
 

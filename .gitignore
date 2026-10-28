@@ -1,4 +1,8 @@
 .DS_Store
+._*
+[Tt]humbs.db
+[Dd]esktop.ini
+__MACOSX/
 node_modules/
 .openai/
 .env
@@ -11,5 +15,3 @@ playwright-report/
 test-results/
 .cache/
 build/
-.public-game/
-.public-host/

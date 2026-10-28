@@ -7,7 +7,7 @@ import {createAssetInventory} from './create-asset-inventory.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url)),dist=resolve(root,'dist');
 const read=p=>readFileSync(resolve(root,p),'utf8');
-const walk=dir=>readdirSync(dir,{withFileTypes:true}).filter(e=>!['.git','node_modules','.openai','build','.public-game','.public-host'].includes(e.name)).flatMap(e=>e.isDirectory()?walk(resolve(dir,e.name)):[resolve(dir,e.name)]);
+const walk=dir=>readdirSync(dir,{withFileTypes:true}).filter(e=>!['.git','node_modules','.openai','build'].includes(e.name)).flatMap(e=>e.isDirectory()?walk(resolve(dir,e.name)):[resolve(dir,e.name)]);
 const files=walk(dist);let references=0;
 function localReference(file,target){
  if(!target||/^(?:[a-z][a-z0-9+.-]*:|#|\/\/)/i.test(target))return;

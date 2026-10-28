@@ -1,5 +1,20 @@
 # Changelog
 
+The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
+
+## 25.0.3 — Migration cleanup — 28 October 2026
+
+- Clarified editable source versus generated production files, updated current documentation links, and moved retired hosting notes into `docs/history/`.
+- Removed obsolete cross-repository workspace rules and fully merged local work branches.
+- Excluded macOS/Windows file-manager metadata from asset packaging and made artifact verification reject it.
+- Kept gameplay, save keys, catalog references, proprietary terms and automatic same-repository Pages publishing unchanged.
+
+## 25.0.2 — Single-repository publishing — 28 October 2026
+
+- Made Mallside source public at the owner's request and replaced the two-repository publisher with direct GitHub Pages deployment.
+- Preserved the play URL and existing browser progress; removed the obsolete publisher credential.
+- Verified two automatic main-branch deployments and updated release metadata and deployment guidance.
+
 ## 25.0.1 — Publication and layout polish
 
 - Aligned local-story action buttons on desktop while retaining stacked mobile cards.

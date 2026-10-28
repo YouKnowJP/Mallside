@@ -1,5 +1,5 @@
 import {build,transform} from 'esbuild';
-import {readFileSync,writeFileSync,readdirSync,mkdirSync,rmSync,cpSync} from 'node:fs';
+import {readFileSync,writeFileSync,mkdirSync,rmSync,cpSync} from 'node:fs';
 import {resolve,basename,relative} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
@@ -24,7 +24,11 @@ for(const name of ['index.html','legal.html']){
  writeFileSync(resolve(output,name),html);
 }
 for(const name of ['icon.svg','LICENSE.txt','THIRD_PARTY_NOTICES.txt','PRIVACY.txt','.nojekyll'])cpSync(resolve(dist,name),resolve(output,name));
-cpSync(resolve(dist,'assets'),resolve(output,'assets'),{recursive:true,filter:p=>!relative(resolve(dist,'assets'),p).replaceAll('\\','/').startsWith('character/source')});
+const isFileManagerMetadata=name=>/^(?:\.DS_Store|Thumbs\.db|desktop\.ini|__MACOSX)$/i.test(name)||name.startsWith('._');
+cpSync(resolve(dist,'assets'),resolve(output,'assets'),{recursive:true,filter:p=>{
+ const path=relative(resolve(dist,'assets'),p).replaceAll('\\','/');
+ return path!=='character/source'&&!path.startsWith('character/source/')&&!path.split('/').some(isFileManagerMetadata);
+}});
 mkdirSync(resolve(output,'vendor'),{recursive:true});cpSync(resolve(dist,'vendor/THREE-LICENSE.txt'),resolve(output,'vendor/THREE-LICENSE.txt'));
 let commit=process.env.GITHUB_SHA;
 if(!commit){try{commit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();}catch{commit='local-preview';}}

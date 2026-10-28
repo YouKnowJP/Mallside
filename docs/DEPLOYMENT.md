@@ -24,7 +24,7 @@ npm run build
 npm run check:public
 ```
 
-The ignored `build/site/Mallside/` directory is the complete production game. It contains one minified, content-hashed application bundle, hashed styles, local photographs and required notices. The artifact checker verifies these dependencies, the release metadata and the absence of source maps and development directories. The source remains available in GitHub independently of the optimized game artifact. `package.json`'s `private: true` prevents accidental npm publication; it does not control GitHub visibility.
+The ignored `build/site/Mallside/` directory is the complete production game. It contains one minified, content-hashed application bundle, hashed styles, local photographs and required notices. The build filters out macOS/Windows file-manager metadata and anatomical conversion inputs. The artifact checker verifies the dependencies, release metadata and the absence of source maps, development directories and file-manager metadata. The source remains available in GitHub independently of the optimized game artifact. `package.json`'s `private: true` prevents accidental npm publication; it does not control GitHub visibility.
 
 ## Automatic publishing
 
@@ -46,6 +46,6 @@ For a content rollback, revert the relevant change on `main` and let the same ch
 
 ## Retired hosting
 
-The earlier generated-files-only `YouKnowJP/YouKnowJP.github.io` host is no longer needed or used for Mallside. The direct deployment was verified before removing the obsolete `MALLSIDE_PAGES_DEPLOY_KEY` source secret. The old hosting repository was unavailable (HTTP 404) at final verification, so no archive or deletion was performed by this migration. No second repository is an update destination. See [the hosting history](PRIVATE_HOSTING.md) and [migration record](MIGRATION.md).
+Mallside's previous cross-repository publisher and its deployment secret have been retired. Current updates use only this repository's Pages workflow. See [hosting history](history/HOSTING.md) and [migration provenance](MIGRATION.md) for the earlier arrangements.
 
 The original Sites deployment is separate and is not updated by this workflow. Do not reintroduce its `.openai/` identity or credentials into this repository. Preserve the proprietary game license and all independent third-party notices.

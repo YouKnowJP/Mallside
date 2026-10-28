@@ -12,6 +12,7 @@ assert.equal(files.filter(p=>p.endsWith('.js')).length,1,'Ship one generated bun
 assert.ok(/^app-[A-Z0-9]+\.js$/.test(release.bundle));
 for(const path of files){
  const name=relative(site,path).replaceAll('\\','/');
+ assert.ok(!/(?:^|\/)(?:\.DS_Store|Thumbs\.db|desktop\.ini|__MACOSX)(?:\/|$)|(?:^|\/)\._/i.test(name),'File-manager metadata in public artifact: '+name);
  assert.ok(!/\.map$|(?:^|\/)(?:tests|docs|scripts|\.git|\.github|node_modules|source)(?:\/|$)/.test(name),'Development material in public artifact: '+name);
  if(/\.html$|\.css$/.test(path))for(const m of readFileSync(path,'utf8').matchAll(/(?:href|src)=["']([^"']+)["']|url\(['"]?([^)'"\s]+)['"]?\)/g)){
   const value=m[1]||m[2];if(/^(?:[a-z]+:|#|\/\/)/i.test(value))continue;
