@@ -6,7 +6,8 @@ import {PRODUCT_PHOTOS}from'../dist/product-photos.js';
 const root=fileURLToPath(new URL('../',import.meta.url)),site=resolve(root,'build/site/Mallside');
 const walk=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(resolve(d,e.name)):[resolve(d,e.name)]);
 const files=walk(site),release=JSON.parse(readFileSync(resolve(site,'release.json'),'utf8'));
-assert.equal(release.sourceVisibility,'private');
+assert.equal(release.sourceVisibility,'public');
+assert.equal(release.sourceRepository,'https://github.com/YouKnowJP/Mallside');
 assert.equal(files.filter(p=>p.endsWith('.js')).length,1,'Ship one generated bundle, not editable source modules');
 assert.ok(/^app-[A-Z0-9]+\.js$/.test(release.bundle));
 for(const path of files){

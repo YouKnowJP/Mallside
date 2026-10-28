@@ -1,6 +1,6 @@
 # Mallside — A Shopping Life
 
-**[Play Mallside in your browser](https://youknowjp.github.io/Mallside/)** · [Report a bug](https://github.com/YouKnowJP/YouKnowJP.github.io/issues) · [Documentation](docs/README.md)
+**[Play Mallside in your browser](https://youknowjp.github.io/Mallside/)** · [Report a bug](https://github.com/YouKnowJP/Mallside/issues) · [Documentation](docs/README.md)
 
 A shopping-life simulation by **Jackson Pham / YouKnowJP**. Walk through connected 3D shopping centers, browse photographed real products, try outfits, carry purchases to checkout, and manage your budget, energy and time before heading home.
 
@@ -37,7 +37,7 @@ Modern desktop and mobile browsers can load the static game. 3D requires WebGL; 
 
 ## Run locally
 
-Source access is restricted to authorized collaborators. Requires Node.js 22+ and Python 3. Run `npm ci` for the pinned production bundler; local development serves the editable `dist/` files.
+Requires Node.js 22+ and Python 3. Source is publicly readable under the proprietary license below. Run `npm ci` for the pinned production bundler; local development serves the editable `dist/` files.
 
 ```sh
 git clone https://github.com/YouKnowJP/Mallside.git
@@ -63,13 +63,13 @@ npm test
 | `docs/` | Player/developer guides, migration record, QA and source research |
 | `.github/` | CI, GitHub Pages deployment and issue templates |
 
-The private `main` branch is the canonical project. GitHub Actions tests and bundles the game, then publishes only generated browser files through a separate public hosting repository. The play URL is unchanged. See [private-source hosting](docs/PRIVATE_HOSTING.md). See [deployment instructions](docs/DEPLOYMENT.md), [architecture](docs/ARCHITECTURE.md), and [the retained game guide](docs/GAME_GUIDE.md).
+The public `YouKnowJP/Mallside` repository contains the complete project. A push to `main` runs checks and tests, builds the game and publishes directly to GitHub Pages in this same repository. No second hosting repository or deployment key is needed. `Personal-Project` remains separate for Tilewright and other projects. See [deployment instructions](docs/DEPLOYMENT.md), [architecture](docs/ARCHITECTURE.md), and [the retained game guide](docs/GAME_GUIDE.md).
 
 ## Rights and permissions
 
 **Copyright © 2026 Jackson Pham (YouKnowJP). All rights reserved for owned, copyrightable Mallside material.**
 
-The [proprietary license](LICENSE) permits personal non-commercial play and private evaluation. It does **not** grant permission to sell, monetize, redistribute or operate another hosted copy of the protected game. The source repository is private. The public game is not a commercial reuse license. Contact [YouKnowJP](https://github.com/YouKnowJP) for written permission.
+The [proprietary license](LICENSE) permits personal non-commercial play and private evaluation. It does **not** grant permission to sell, monetize, redistribute or operate another hosted copy of the protected game. The source is publicly readable and forkable on GitHub; it is not open source or a commercial reuse license. Contact [YouKnowJP](https://github.com/YouKnowJP) for written permission.
 
 Third-party components and public-domain assets retain their own rights: Three.js is MIT, MakeHuman graphical assets are CC0, and brand/product photographs remain their owners' material. Photograph source links are provenance, not proof of permission. No exclusive rights are claimed over those assets. See [third-party notices](THIRD_PARTY_NOTICES.md), [rights and clearance notes](docs/RIGHTS.md), [asset inventory](docs/ASSET_INVENTORY.json), and [privacy information](PRIVACY.md).
 

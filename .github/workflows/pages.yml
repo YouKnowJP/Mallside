@@ -9,6 +9,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: mallside-pages-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -26,52 +30,28 @@ jobs:
       - run: npm test
       - name: Build generated browser files
         run: npm run build
-      - name: Verify public output excludes the source tree
+      - name: Verify the playable artifact and notices
         run: npm run check:public
-      - uses: actions/upload-artifact@v4
+      - name: Upload the game root for project Pages
+        uses: actions/upload-pages-artifact@v4
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
-          name: public-game
-          path: build/site
-          include-hidden-files: true
+          path: build/site/Mallside
           retention-days: 1
 
   publish:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: check
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    concurrency:
-      group: mallside-public-publish
-      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v6
-        with:
-          persist-credentials: false
-      - uses: actions/download-artifact@v4
-        with:
-          name: public-game
-          path: .public-game
-      - name: Check out generated-files hosting repo
-        uses: actions/checkout@v6
-        with:
-          repository: YouKnowJP/YouKnowJP.github.io
-          ref: main
-          ssh-key: ${{ secrets.MALLSIDE_PAGES_DEPLOY_KEY }}
-          path: .public-host
-      - name: Prepare only verified public output
-        run: node scripts/publish-static.mjs .public-game .public-host
-      - name: Publish generated game files
-        working-directory: .public-host
-        env:
-          SOURCE_COMMIT: ${{ github.sha }}
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- Mallside
-          if git diff --cached --quiet; then
-            echo 'Generated game is already current.'
-          else
-            git commit -m "Publish Mallside ${SOURCE_COMMIT}"
-            git push origin HEAD:main
-          fi
+      - uses: actions/configure-pages@v5
+      - name: Publish the tested game
+        id: deployment
+        uses: actions/deploy-pages@v4

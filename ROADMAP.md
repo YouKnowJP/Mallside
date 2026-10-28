@@ -33,4 +33,4 @@ Continue refining each adapted whole-center footprint and interior against prima
 
 ## Release discipline
 
-Keep the canonical source private at `YouKnowJP/Mallside`, working from `/Users/youknowjp/Documents/Personal PR/Mallside`. Validate changes, keep saves compatible, live-test the changed flow and publish generated browser files through the existing main-branch workflow. Preserve the public play URL and third-party notices. Never put source maps, the development tree, private keys or save backups into the public hosting repository.
+Keep all Mallside development and direct GitHub Pages publishing in the public `YouKnowJP/Mallside` repository, working from `/Users/youknowjp/Documents/Personal PR/Mallside`. Keep `Personal-Project` separate for Tilewright and other projects. Validate changes, keep saves compatible, live-test the changed flow and publish the generated game through the main-branch workflow. Preserve the public play URL and third-party notices. Never commit credentials or save backups, or include development directories or source maps in the playable artifact. See [deployment](docs/DEPLOYMENT.md).

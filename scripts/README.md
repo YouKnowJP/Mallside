@@ -1,6 +1,6 @@
 # Scripts
 
-Normal players need none of these tools. Local development uses `dist/`; production publishes generated `build/site/Mallside/` files. See `docs/PRIVATE_HOSTING.md`.
+Normal players need none of these tools. Local development uses `dist/`; production publishes generated `build/site/Mallside/` files. See `docs/DEPLOYMENT.md`.
 
 ## Supported release commands
 

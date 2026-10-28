@@ -26,3 +26,8 @@ Saves are local to each hostname. Players moving to GitHub Pages must export a J
 ## Subsequent privacy and location update
 
 On 28 October 2026, the canonical source repository was made private, and its working clone moved from `Personal-Project/Mallside-GitHub` to `/Users/youknowjp/Documents/Personal PR/Mallside`. The earlier path descriptions above record the import at that time. Current hosting uses only generated browser output in `YouKnowJP/YouKnowJP.github.io`, preserving the same public game URL. See [private hosting](PRIVATE_HOSTING.md).
+
+
+## Single-repository publishing update
+
+On 28 October 2026, the owner chose to make `YouKnowJP/Mallside` public and publish directly from that repository using free GitHub Pages. Version 25.0.2 replaces the cross-repository copy job with the standard Pages artifact and deployment actions. The public play URL and save keys stay the same. The proprietary license and third-party notices are unchanged. `Personal-Project` remains independent for Tilewright and other projects. `Personal-Project` contains no Mallside source on GitHub; the current local clone remains `/Users/youknowjp/Documents/Personal PR/Mallside`. See [deployment](DEPLOYMENT.md).

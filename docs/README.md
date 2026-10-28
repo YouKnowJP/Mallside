@@ -9,7 +9,7 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 | Gameplay, controls, progression, malls and prior features | [Game guide](GAME_GUIDE.md) |
 | Runtime systems and file ownership | [Architecture](ARCHITECTURE.md) |
 | Local development, CI, publishing and rollback | [Deployment](DEPLOYMENT.md) |
-| Private source with automatic public hosting | [Private hosting](PRIVATE_HOSTING.md) |
+| Retired private-source hosting arrangement | [Hosting history](PRIVATE_HOSTING.md) |
 | GitHub import provenance and starter license | [Migration](MIGRATION.md) |
 | Repository migration validation | [Release QA](QA.md) |
 | Permissions, ownership limits and clearance | [Rights](RIGHTS.md) |

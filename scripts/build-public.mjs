@@ -29,6 +29,6 @@ mkdirSync(resolve(output,'vendor'),{recursive:true});cpSync(resolve(dist,'vendor
 let commit=process.env.GITHUB_SHA;
 if(!commit){try{commit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();}catch{commit='local-preview';}}
 const pkg=JSON.parse(readFileSync(resolve(root,'package.json'),'utf8'));
-writeFileSync(resolve(output,'release.json'),JSON.stringify({game:'Mallside',version:pkg.version,sourceCommit:commit,bundle:js,sourceVisibility:'private',publicFiles:'Generated browser game only; no source maps, development modules, tests or source history.'},null,2)+'\n');
+writeFileSync(resolve(output,'release.json'),JSON.stringify({game:'Mallside',version:pkg.version,sourceCommit:commit,bundle:js,sourceVisibility:'public',sourceRepository:'https://github.com/YouKnowJP/Mallside',publicFiles:'Generated game only; editable source and history are available in the Mallside repository.'},null,2)+'\n');
 writeFileSync(resolve(root,'build/esbuild-meta.json'),JSON.stringify(result.metafile,null,2)+'\n');
 console.log(`Generated public game: build/site/Mallside/ (${js})`);
