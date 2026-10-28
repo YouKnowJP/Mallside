@@ -46,6 +46,6 @@ For a content rollback, revert the relevant change on `main` and let the same ch
 
 ## Retired hosting
 
-The earlier generated-files-only `YouKnowJP/YouKnowJP.github.io` host is no longer needed for Mallside. Retire its Pages configuration and publishing key only after this repository's deployment is verified. Its generated history may be retained as an archived backup; it is not an update destination. See [the hosting history](PRIVATE_HOSTING.md) and [migration record](MIGRATION.md).
+The earlier generated-files-only `YouKnowJP/YouKnowJP.github.io` host is no longer needed or used for Mallside. The direct deployment was verified before removing the obsolete `MALLSIDE_PAGES_DEPLOY_KEY` source secret. The old hosting repository was unavailable (HTTP 404) at final verification, so no archive or deletion was performed by this migration. No second repository is an update destination. See [the hosting history](PRIVATE_HOSTING.md) and [migration record](MIGRATION.md).
 
 The original Sites deployment is separate and is not updated by this workflow. Do not reintroduce its `.openai/` identity or credentials into this repository. Preserve the proprietary game license and all independent third-party notices.
