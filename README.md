@@ -6,6 +6,12 @@ A shopping-life simulation by **Jackson Pham / YouKnowJP**. Walk through connect
 
 Play directly from the link. Players do not need GitHub, an account, a download, or a payment. All purchases and money inside the game are simulated.
 
+## Latest update · 24.0.0
+
+Plan a fresh daily outing from the main menu or Journal: a considered find, a two-piece outfit, a gift hunt or a free window-shopping afternoon. Follow the real-product checklist, keep new purchases within its tax-inclusive allowance, and collect one outing reward each day. Progress survives reloads; returning an unclaimed purchase removes its credit. Named-retailer story goals and requests now recognize actual branches across malls, while location-specific discovery stays tied to the destination.
+
+See the [outing guide](docs/GAMEPLAY-v24.md), [release QA](docs/qa-v24.md), and [remaining development work](ROADMAP.md).
+
 ## In the game
 
 - Ten mall destinations with career unlocks and a separate free-shop mode.

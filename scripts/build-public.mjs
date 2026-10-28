@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 const root=fileURLToPath(new URL('../',import.meta.url)),dist=resolve(root,'dist');
 const output=resolve(root,'build/site/Mallside');
-rmSync(resolve(root,'build/site'),{recursive:true,force:true});mkdirSync(output,{recursive:true});
+rmSync(resolve(root,'build/site'),{recursive:true,force:true,maxRetries:3,retryDelay:100});mkdirSync(output,{recursive:true});
 const result=await build({absWorkingDir:root,entryPoints:{app:'dist/app.js'},outdir:output,entryNames:'[name]-[hash]',bundle:true,minify:true,format:'esm',platform:'browser',target:'es2020',sourcemap:false,legalComments:'eof',metafile:true,logLevel:'warning'});
 const entry=Object.entries(result.metafile.outputs).find(([,v])=>v.entryPoint==='dist/app.js');
 if(!entry)throw Error('Missing browser bundle');

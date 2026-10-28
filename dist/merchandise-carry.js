@@ -3,7 +3,7 @@ import * as T from './vendor/three.module.js';
 import {productAppearance} from './product-appearance.js?v=23.0.0';
 import {physicalProduct} from './merchandise-3d.js?v=23.0.0';
 import {carriedSelections} from './shopping-selection.js?v=23.0.0';
-import {carried} from './engine.js?v=23.0.0';
+import {carried,canTry} from './engine.js?v=24.0.0';
 
 export function dressPerson(w,g,equipment){
  const top=equipment.top,cut=top&&physicalProduct(top)&&productAppearance(top).garment;
@@ -31,7 +31,7 @@ export function syncCarriedMerchandise(w,{force=false,pickupId=null}={}){
  w.canvas.dataset.carriedProducts=JSON.stringify(entries.map(i=>({id:i.id,size:i.size,store:i.store})));w.canvas.dataset.carrying3D=String(shown.length);
  const info=document.querySelector('#carried-selection'),put=document.querySelector('[data-action="put-back-held"]'),tryButton=document.querySelector('[data-held-try]');const local=entries.filter(i=>i.store===w.inside),held=local.at(-1);
  if(info)info.textContent=held?'In hand · '+held.product.name+' · '+held.size+' · unpaid':'Pick up clothes and bags from the displays';if(put)put.hidden=!held;
- if(tryButton){tryButton.textContent=held?'Try held':'Try-on';tryButton.setAttribute('aria-label',held?'Try carried item in fitting room':'Walk to fitting room');}
+ if(tryButton){const wearable=held?canTry(held.product):(w.layout?.store?.products||[]).some(canTry);tryButton.textContent=wearable?(held?'Try held':'Try-on'):(held?'Inspect held':'Demos');tryButton.setAttribute('aria-label',wearable?(held?'Try carried item in fitting room':'Walk to fitting room'):(held?'Inspect carried product and demo options':'Walk to product demos'));}
 }
 export function poseCarriedMerchandise(w){
  syncCarriedMerchandise(w);if(w.action)return;const held=w.carryVisual?.userData.attachments||[];if(w.player.userData.ownedHandBag)w.player.userData.limbs[1].rotation.x=-1.22;for(const holder of held)if(holder.visible)w.player.userData.limbs[holder.userData.limbIndex??1].rotation.x=-1.22;updateAttachmentFrames(w.player);

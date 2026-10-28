@@ -4,6 +4,8 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 
 | Topic | Document |
 | --- | --- |
+| Daily outings and branch-aware progress | [v24 gameplay](GAMEPLAY-v24.md) |
+| Current release checks and remaining work | [v24 QA](qa-v24.md), [roadmap](../ROADMAP.md) |
 | Gameplay, controls, progression, malls and prior features | [Game guide](GAME_GUIDE.md) |
 | Runtime systems and file ownership | [Architecture](ARCHITECTURE.md) |
 | Local development, CI, publishing and rollback | [Deployment](DEPLOYMENT.md) |

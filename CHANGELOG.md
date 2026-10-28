@@ -1,5 +1,14 @@
 # Changelog
 
+## 24.0.0 — A day with a plan — 28 October 2026
+
+- Added rotating daily outings with real product photos, tax-inclusive allowances, checklists, route guidance, memories and one reward per day.
+- New purchases, usual sizes, refunds, overnight expiry and backups now drive outing progress.
+- Fixed named-retailer story/request/passport goals across actual mall branches and deduplicated repeated real-model listings.
+- Preserved location-specific evidence, old saves, ownership, appearance and prior rewards.
+- Corrected nonwearable fitting prompts and receipt routing to physical returns desks; clarified real mall level names.
+- Retained private source and automatic generated-only public publishing.
+
 ## 23.0.2 — Private source and automatic public builds — 28 October 2026
 
 - Made the canonical game repository private and moved the local clone to `/Users/youknowjp/Documents/Personal PR/Mallside`.
