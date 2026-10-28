@@ -5,7 +5,7 @@ Normal players need none of these tools. Local development uses `dist/`; product
 ## Supported release commands
 
 - `npm ci`: install the pinned development bundler.
-- `npm run build` and `npm run check:public`: create and verify the generated game artifact without source maps, development files or file-manager metadata. For an isolated local preview, `npm run check:public -- /absolute/path/to/game` verifies the same rules against a copied artifact; CI retains the default output path.
+- `npm run build` and `npm run check:public`: create and verify the generated game artifact without source maps, development files or file-manager metadata. Verification also enforces matching license/permissions notices, the retained ownership banner and official-play/license metadata. For an isolated local preview, `npm run check:public -- /absolute/path/to/game` verifies the same rules against a copied artifact; CI retains the default output path.
 
 - `npm run check` / `check-release.mjs`: offline syntax, local static-reference, documentation-link, notice and photo-inventory validation. Uses Node's standard library.
 - `npm run inventory` / `create-asset-inventory.mjs`: rebuilds `docs/ASSET_INVENTORY.json` from the actual runtime photo index and on-disk hashes. Uses Node's standard library. It does not download assets or establish permission.

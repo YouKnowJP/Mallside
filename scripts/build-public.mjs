@@ -7,7 +7,7 @@ import {execFileSync} from 'node:child_process';
 const root=fileURLToPath(new URL('../',import.meta.url)),dist=resolve(root,'dist');
 const output=resolve(root,'build/site/Mallside');
 rmSync(resolve(root,'build/site'),{recursive:true,force:true,maxRetries:3,retryDelay:100});mkdirSync(output,{recursive:true});
-const result=await build({absWorkingDir:root,entryPoints:{app:'dist/app.js'},outdir:output,entryNames:'[name]-[hash]',bundle:true,minify:true,format:'esm',platform:'browser',target:'es2020',sourcemap:false,legalComments:'eof',metafile:true,logLevel:'warning'});
+const result=await build({absWorkingDir:root,entryPoints:{app:'dist/app.js'},outdir:output,entryNames:'[name]-[hash]',bundle:true,minify:true,format:'esm',platform:'browser',target:'es2020',sourcemap:false,legalComments:'eof',banner:{js:'/*! Mallside original material: Copyright (c) 2026 Jackson Pham (YouKnowJP). Commercial redistribution requires written permission. Full terms: LICENSE.txt. Independently licensed components retain their own terms. */'},metafile:true,logLevel:'warning'});
 const entry=Object.entries(result.metafile.outputs).find(([,v])=>v.entryPoint==='dist/app.js');
 if(!entry)throw Error('Missing browser bundle');
 const js=basename(entry[0]);
@@ -23,7 +23,7 @@ for(const name of ['index.html','legal.html']){
  html=html.replace(/href=(["'])(styles\.css|life-styles\.css|legal\.css)(?:\?[^"']*)?\1/g,(_,quote,name)=>'href='+quote+cssNames[name]+quote);
  writeFileSync(resolve(output,name),html);
 }
-for(const name of ['icon.svg','LICENSE.txt','THIRD_PARTY_NOTICES.txt','PRIVACY.txt','.nojekyll'])cpSync(resolve(dist,name),resolve(output,name));
+for(const name of ['icon.svg','LICENSE.txt','PERMISSIONS.txt','THIRD_PARTY_NOTICES.txt','PRIVACY.txt','.nojekyll'])cpSync(resolve(dist,name),resolve(output,name));
 const isFileManagerMetadata=name=>/^(?:\.DS_Store|Thumbs\.db|desktop\.ini|__MACOSX)$/i.test(name)||name.startsWith('._');
 cpSync(resolve(dist,'assets'),resolve(output,'assets'),{recursive:true,filter:p=>{
  const path=relative(resolve(dist,'assets'),p).replaceAll('\\','/');
@@ -33,6 +33,6 @@ mkdirSync(resolve(output,'vendor'),{recursive:true});cpSync(resolve(dist,'vendor
 let commit=process.env.GITHUB_SHA;
 if(!commit){try{commit=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();}catch{commit='local-preview';}}
 const pkg=JSON.parse(readFileSync(resolve(root,'package.json'),'utf8'));
-writeFileSync(resolve(output,'release.json'),JSON.stringify({game:'Mallside',version:pkg.version,sourceCommit:commit,bundle:js,sourceVisibility:'public',sourceRepository:'https://github.com/YouKnowJP/Mallside',publicFiles:'Generated game only; editable source and history are available in the Mallside repository.'},null,2)+'\n');
+writeFileSync(resolve(output,'release.json'),JSON.stringify({game:'Mallside',version:pkg.version,sourceCommit:commit,bundle:js,sourceVisibility:'public',license:'LicenseRef-Mallside-Proprietary',licenseVersion:'1.1',licenseUrl:'LICENSE.txt',permissionsUrl:'PERMISSIONS.txt',officialPlayUrl:'https://youknowjp.github.io/Mallside/',sourceRepository:'https://github.com/YouKnowJP/Mallside',publicFiles:'Generated game only; editable source and history are available in the Mallside repository.'},null,2)+'\n');
 writeFileSync(resolve(root,'build/esbuild-meta.json'),JSON.stringify(result.metafile,null,2)+'\n');
 console.log(`Generated public game: build/site/Mallside/ (${js})`);

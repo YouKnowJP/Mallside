@@ -14,6 +14,7 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 | Retired private-source hosting arrangement | [Hosting history](history/HOSTING.md) |
 | GitHub import provenance and starter license | [Migration](MIGRATION.md) |
 | Repository migration validation | [Release QA](QA.md) |
+| Free play, sharing and commercial-use examples | [Permissions guide](../PERMISSIONS.md) |
 | Permissions, ownership limits and clearance | [Rights](RIGHTS.md) |
 | Source URLs and hashes for product photographs | [Asset inventory](ASSET_INVENTORY.json) |
 | Proprietary game terms | [License](../LICENSE) |

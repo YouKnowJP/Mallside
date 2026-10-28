@@ -34,13 +34,13 @@ jobs:
         run: npm run check:public
       - name: Upload the game root for project Pages
         uses: actions/upload-pages-artifact@v4
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: github.repository == 'YouKnowJP/Mallside' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           path: build/site/Mallside
           retention-days: 1
 
   publish:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.repository == 'YouKnowJP/Mallside' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: check
     permissions:
       pages: write

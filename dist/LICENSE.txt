@@ -1,7 +1,9 @@
 MALLSIDE PROPRIETARY LICENSE
-Version 1.0 — 28 October 2026
+Version 1.1 - 28 October 2026
 
 Copyright (c) 2026 Jackson Pham (YouKnowJP). All rights reserved.
+Official game: https://youknowjp.github.io/Mallside/
+Official source: https://github.com/YouKnowJP/Mallside
 
 1. Scope and ownership
 
@@ -11,51 +13,82 @@ by Jackson Pham (the Owner), except material identified as third-party or
 public-domain material in THIRD_PARTY_NOTICES.md or accompanying notices.
 No ownership is claimed in facts, ideas, game mechanics as such, material
 outside copyright protection, third-party brands, product designs, images,
-or independently licensed components.
+or independently licensed components. This license reserves only rights
+the Owner actually holds.
 
-2. Limited permission
+2. Free play and private evaluation
 
-The Owner permits individuals to play the Owner's officially hosted game
-for personal, non-commercial enjoyment, including the browser copies
-necessarily made for that purpose. Individuals may download a copy for
-private, non-commercial evaluation and make private modifications for
-that evaluation. Keep all copyright and third-party notices intact.
-This permission does not authorize publishing or distributing those copies
-or modifications, operating another hosted instance, or commercial use.
+Individuals may play the Owner's officially hosted game free of charge for
+personal, non-commercial enjoyment, including the browser copies necessarily
+made for that purpose. Sharing the official play link is welcome. No account,
+payment, purchase, or subscription is required by the official game.
 
-3. Rights reserved
+Individuals may download a copy for private, non-commercial evaluation and
+make private modifications for that evaluation. Keep all copyright,
+license, attribution, and third-party notices intact. This permission does
+not authorize publishing or distributing copies or modifications, operating
+another hosted instance, or commercial use. GitHub platform rights are
+addressed separately in section 5.
 
-Except for the limited permission above, applicable mandatory law, and
-independent third-party licenses, no permission is granted to copy, adapt,
-distribute, sublicense, sell, rent, or commercially exploit the protected
-Mallside material. In particular, no permission is granted to:
+3. Sharing gameplay
 
-* sell the game, copies, modified versions, or access to them;
+The Owner permits non-commercial screenshots, gameplay recordings, reviews,
+and tutorials featuring protected Mallside material. Identify Mallside and
+link to the official game where reasonably practicable. This permission
+covers media of gameplay, not distribution of the game, source, asset packs,
+or a playable copy. It does not grant rights in independently owned music,
+photographs, trademarks, or other third-party material. Other uses require
+separate written permission unless independently permitted by law.
+
+4. Copies, redistribution and commercial exploitation
+
+Except for the permissions above, applicable mandatory law, and independent
+third-party licenses, no permission is granted to copy, adapt, distribute,
+sublicense, sell, rent, or commercially exploit protected Mallside material.
+In particular, without the Owner's separate written permission, do not:
+
+* sell, rent, license, bundle, or charge for the game, copies, modified
+  versions, ports, or access to them;
+* publish, redistribute, mirror, or operate another hosted playable copy,
+  including a free, rebranded, translated, or modified copy;
 * monetize a copy or derivative through advertising, subscriptions,
-  sponsorship, paid hosting, in-game payments, or licensing;
+  sponsorship, donations tied to that copy, in-game payments, paid hosting,
+  app-store distribution, or another commercial arrangement;
 * reuse protected game code, original assets, writing, or original interface
   expression in another distributed or commercial product; or
-* remove ownership notices or imply the Owner's endorsement.
+* remove ownership/license notices or present a copy as official or endorsed.
 
-Obtain the Owner's separate written permission for any such use. Contact
-the YouKnowJP GitHub profile linked in README.md for permission inquiries.
-No trademark license is granted. No registered trademark status is asserted.
+Changing the name, giving credit, making changes, or providing free access
+does not by itself grant redistribution or commercial permission. These
+restrictions concern protected Mallside material, not independently created
+games that merely use similar ideas or mechanics.
 
-4. GitHub and third-party rights
+Permission inquiries: https://github.com/YouKnowJP/Mallside/issues
+Describe the proposed use and obtain explicit written permission from the
+Owner before proceeding. Silence, public access, or an unreviewed pull
+request is not permission. No trademark license is granted, and no registered
+trademark status is asserted.
+
+5. GitHub, third-party rights and prior permissions
 
 GitHub's applicable terms continue to govern platform-required rights,
 including viewing and forking a public repository on GitHub. Those platform
-rights do not constitute a separate commercial license from the Owner.
+rights do not constitute a separate redistribution, hosting, or commercial
+license from the Owner outside that grant. Public source access is not an
+open-source license.
+
 Third-party MIT, CC0, or other licenses remain effective for their respective
 material, and this license does not restrict those independent rights.
 Third-party product photographs are not licensed to others by the Owner.
+Mandatory legal exceptions remain available; this license does not override
+them or expand copyright to unprotectable material.
 
 This license does not revoke valid permissions previously granted for
 material actually covered by an earlier license. The repository's original
 MIT starter commit contained no Mallside game code or assets; see
-docs/MIGRATION.md. This proprietary license accompanies the game import.
+docs/MIGRATION.md. The proprietary license accompanied the game import.
 
-5. No warranty; liability
+6. No warranty; liability
 
 TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE MATERIAL IS PROVIDED "AS IS",
 WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES

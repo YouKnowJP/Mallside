@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 26.0.1 — Free play and public-source permissions — 28 October 2026
+
+- Clarified the proprietary license for free personal play, private evaluation, sharing gameplay and restrictions on rehosts, rebranding and monetized redistribution.
+- Added a readable permissions guide to the repository and playable artifact, preserving GitHub platform rights, prior grants and independent third-party licenses.
+- Retained an ownership notice in generated JavaScript and added license/official-play metadata, enforced by release checks.
+- Limited the provided Pages publisher to the canonical repository to avoid accidental publication from an unchanged fork.
+- Corrected the player-facing feedback link and kept the public game, account-free play, saves and automatic publication intact.
+
 ## 26.0.0 — A room, a rhythm, a few familiar faces — 28 October 2026
 
 - Added Noor and Jules, six optional multi-day local missions and six friendship chapters.

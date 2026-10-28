@@ -7,6 +7,11 @@ const root=fileURLToPath(new URL('../',import.meta.url)),site=resolve(root,proce
 const walk=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(resolve(d,e.name)):[resolve(d,e.name)]);
 const files=walk(site),release=JSON.parse(readFileSync(resolve(site,'release.json'),'utf8'));
 assert.equal(release.sourceVisibility,'public');
+assert.equal(release.license,'LicenseRef-Mallside-Proprietary');
+assert.equal(release.licenseVersion,'1.1');
+assert.equal(release.licenseUrl,'LICENSE.txt');
+assert.equal(release.permissionsUrl,'PERMISSIONS.txt');
+assert.equal(release.officialPlayUrl,'https://youknowjp.github.io/Mallside/');
 assert.equal(release.sourceRepository,'https://github.com/YouKnowJP/Mallside');
 assert.equal(files.filter(p=>p.endsWith('.js')).length,1,'Ship one generated bundle, not editable source modules');
 assert.ok(/^app-[A-Z0-9]+\.js$/.test(release.bundle));
@@ -21,6 +26,8 @@ for(const path of files){
  }
 }
 for(const p of Object.values(PRODUCT_PHOTOS))assert.ok(existsSync(resolve(site,p.path)),'Missing photographed product: '+p.path);
-assert.ok(!readFileSync(resolve(site,release.bundle),'utf8').includes('sourceMappingURL='));
-for(const [source,dest]of [['LICENSE','LICENSE.txt'],['THIRD_PARTY_NOTICES.md','THIRD_PARTY_NOTICES.txt'],['PRIVACY.md','PRIVACY.txt']])assert.equal(readFileSync(resolve(root,source),'utf8'),readFileSync(resolve(site,dest),'utf8'));
+const bundle=readFileSync(resolve(site,release.bundle),'utf8');
+assert.ok(bundle.startsWith('/*! Mallside original material: Copyright (c) 2026 Jackson Pham (YouKnowJP).'),'Missing generated-game ownership notice');
+assert.ok(!bundle.includes('sourceMappingURL='));
+for(const [source,dest]of [['LICENSE','LICENSE.txt'],['PERMISSIONS.md','PERMISSIONS.txt'],['THIRD_PARTY_NOTICES.md','THIRD_PARTY_NOTICES.txt'],['PRIVACY.md','PRIVACY.txt']])assert.equal(readFileSync(resolve(root,source),'utf8'),readFileSync(resolve(site,dest),'utf8'));
 console.log(`Public artifact verified: ${files.length} files; one minified bundle, all catalog photos and required notices; no source maps or development tree.`);

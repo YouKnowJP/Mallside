@@ -1,6 +1,14 @@
 # Release and migration QA
 
-## Current gameplay update — 26.0.0
+## Free-play permissions update — 26.0.1
+
+Clarified the proprietary license and added the repository/shipped permissions guide while preserving GitHub platform rights, prior valid grants and independently licensed material. Added a retained ownership banner and license/official-play metadata to production output, aligned player-facing notices and corrected the retired feedback URL. The provided workflow only uploads/deploys Pages from the canonical repository; fork checks remain available. Gameplay, catalog/photo hashes, save keys and hosting visibility remain unchanged.
+
+Source checks passed for all 80 browser modules, local references and matching notices. The isolated production candidate passed artifact verification for 1,977 files, all 1,934 photo references and one generated script. Four injected cases (altered license, altered permissions guide, missing bundle banner and incorrect official URL) were rejected, and the restored candidate passed.
+
+The generated rights page was reviewed at 390 × 844 with no horizontal overflow; the guide link opened and ASCII text avoids charset ambiguity on static text responses. Returning to the game and continuing a fresh local career opened the 3D Orange mall without an account, payment or new consent gate. Console warning/error logs were empty. The normal main-branch workflow reruns the full regression suite before publication. These checks establish notice consistency and playability, not legal enforceability, complete ownership or technical copy prevention.
+
+## Previous gameplay update — 26.0.0
 
 The [v26 QA record](qa-v26.md) covers the new local stories, owned-product collection room, outfit preparation, guestbook, visual refinements and compiled-browser checks. The existing direct GitHub Pages workflow tests and publishes the final main-branch source. Migration records below are historical.
 

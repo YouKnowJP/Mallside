@@ -1,6 +1,6 @@
 # Contributing to Mallside
 
-Mallside is a proprietary, source-available game maintained by [YouKnowJP](https://github.com/YouKnowJP). Public source access does not grant commercial reuse rights. Read [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) first.
+Mallside is a proprietary, source-available game maintained by [YouKnowJP](https://github.com/YouKnowJP). Public source access does not grant commercial reuse rights. Read the [permissions guide](PERMISSIONS.md), [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) first. A GitHub fork or submitted pull request does not authorize a public game host, commercial distribution or relicensing of existing Mallside material.
 
 Bug reports and gameplay feedback are welcome through GitHub Issues. Include the browser/device, game version, clear reproduction steps, expected result and actual result. Screenshots help; remove private information. Do not upload a complete save unless the maintainer requests a safe, reviewed example.
 

@@ -6,6 +6,8 @@ A shopping-life simulation by **Jackson Pham / YouKnowJP**. Walk through connect
 
 Play directly from the link. Players do not need GitHub, an account, a download, or a payment. All purchases and money inside the game are simulated.
 
+**Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
+
 ## v26 — a room, a rhythm, a few familiar faces
 
 Meet Noor and Jules in six new multi-day local missions, with six further friendship chapters. Arrange kept real-product models in a furnished 3D collection room, choose its finish, prepare tomorrow’s outfit and leave a local guestbook memory at concierge. Window-browsing pauses, actual-distance gait, starter-shirt detail and distinct material finishes refine the people and mall. See [v26 gameplay](docs/GAMEPLAY-v26.md), [design references](docs/design-research-v26.md), [release QA](docs/qa-v26.md) and [remaining work](ROADMAP.md).
@@ -74,7 +76,7 @@ The public `YouKnowJP/Mallside` repository contains the complete project. A push
 
 **Copyright © 2026 Jackson Pham (YouKnowJP). All rights reserved for owned, copyrightable Mallside material.**
 
-The [proprietary license](LICENSE) permits personal non-commercial play and private evaluation. It does **not** grant permission to sell, monetize, redistribute or operate another hosted copy of the protected game. The source is publicly readable and forkable on GitHub; it is not open source or a commercial reuse license. Contact [YouKnowJP](https://github.com/YouKnowJP) for written permission.
+The [proprietary license](LICENSE) permits free personal non-commercial play, private evaluation and non-commercial gameplay media. It does **not** grant permission to sell, monetize, redistribute or operate another hosted copy of the protected game, including rebranded copies, ad-supported clones or free mirrors. The source is publicly readable and forkable on GitHub; it is not open source or a commercial reuse license. See [permissions and examples](PERMISSIONS.md), or [request written permission](https://github.com/YouKnowJP/Mallside/issues).
 
 Third-party components and public-domain assets retain their own rights: Three.js is MIT, MakeHuman graphical assets are CC0, and brand/product photographs remain their owners' material. Photograph source links are provenance, not proof of permission. No exclusive rights are claimed over those assets. See [third-party notices](THIRD_PARTY_NOTICES.md), [rights and clearance notes](docs/RIGHTS.md), [asset inventory](docs/ASSET_INVENTORY.json), and [privacy information](PRIVACY.md).
 

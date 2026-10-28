@@ -1,0 +1,33 @@
+name: Permission or rights inquiry
+description: Ask about licensing or report a suspected unauthorized Mallside copy.
+title: "Permission / rights: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Mallside is free to play at https://youknowjp.github.io/Mallside/.
+        Read the permissions guide and LICENSE before requesting reuse.
+        This issue is public: do not include private contracts, contact details, saves or credentials.
+        Submitting a request is not permission; obtain explicit written authorization from YouKnowJP.
+  - type: dropdown
+    id: purpose
+    attributes:
+      label: Purpose
+      options:
+        - Request permission
+        - Ask what the existing license allows
+        - Report a suspected unauthorized copy
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Intended use or report
+      description: Describe the material, intended distribution, hosting and any monetization; for a report, provide public URLs and the material you believe was copied.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Relevant public links
+      description: Optional project, page, repository or release links. Do not post private documents.

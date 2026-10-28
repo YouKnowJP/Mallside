@@ -31,7 +31,7 @@ for(const file of files){
 for(const file of walk(root).filter(p=>extname(p)==='.md'&&!p.startsWith(dist))){
  for(const match of readFileSync(file,'utf8').matchAll(/\[[^\]]*\]\(([^\s)]+)\)/g))localReference(file,match[1]);
 }
-for(const [source,shipped] of [['LICENSE','dist/LICENSE.txt'],['THIRD_PARTY_NOTICES.md','dist/THIRD_PARTY_NOTICES.txt'],['PRIVACY.md','dist/PRIVACY.txt']]){
+for(const [source,shipped] of [['LICENSE','dist/LICENSE.txt'],['PERMISSIONS.md','dist/PERMISSIONS.txt'],['THIRD_PARTY_NOTICES.md','dist/THIRD_PARTY_NOTICES.txt'],['PRIVACY.md','dist/PRIVACY.txt']]){
  assert.equal(read(source),read(shipped),'Shipped notice differs from '+source);
 }
 assert.ok(read('dist/index.html').includes('href="legal.html"'),'Missing player-facing rights link');
