@@ -63,7 +63,7 @@ test('diverse garment cuts retain finite fitted geometry through walking, sittin
 
 test('seated knee bends keep the soles level and above the floor, and reset after standing',()=>{
  const p=physical.find(p=>p.type==='pants'),w=fixture({bottom:p}),g=w.player;
- for(const state of [{phase:0},{phase:1.2},{seated:true,phase:2,kind:'rest'},{phase:0}]){pose(g,state);for(const leg of g.userData.limbs.slice(2)){const {knee,shoe}=leg.userData;assert.ok(knee&&shoe,'two-segment leg references are missing');assert.ok(new T.Box3().setFromObject(shoe).min.y>=-.05,'shoe enters floor');assertLevel(shoe,'shoe');if(state.seated)assert.ok(knee.rotation.x>.5,'seated knee remains straight');else if(!state.phase)assert.ok(Math.abs(knee.rotation.x)<.01,'standing knee remains bent');else assert.ok(knee.rotation.x>=0&&knee.rotation.x<2,'walk knee exceeds natural range');}}
+ for(const state of [{phase:0},{phase:1.2},{seated:true,phase:2,kind:'rest'},{phase:0}]){pose(g,state);for(const leg of g.userData.limbs.slice(2)){const {knee,shoe}=leg.userData;assert.ok(knee&&shoe,'two-segment leg references are missing');assert.ok(new T.Box3().setFromObject(shoe).min.y>=-.05,'shoe enters floor');if(leg.userData.contact)assertLevel(shoe,'planted shoe');else {const up=new T.Vector3(0,1,0).applyQuaternion(shoe.getWorldQuaternion(new T.Quaternion()));assert.ok(up.angleTo(new T.Vector3(0,1,0))<=.131,'swing shoe exceeds bounded ankle roll');}if(state.seated)assert.ok(knee.rotation.x>.5,'seated knee remains straight');else if(!state.phase)assert.ok(Math.abs(knee.rotation.x)<.01,'standing knee remains bent');else assert.ok(knee.rotation.x>=0&&knee.rotation.x<2,'walk knee exceeds natural range');}}
  release(w);
 });
 

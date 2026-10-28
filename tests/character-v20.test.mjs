@@ -38,7 +38,7 @@ function checkBones(g,label){
   const {knee,foot,upperLength,lowerLength}=leg.userData;
   near(at(leg).distanceTo(at(knee)),upperLength,1e-5,label+' thigh '+i);
   near(at(knee).distanceTo(at(foot)),lowerLength,1e-5,label+' shin '+i);
-  level(foot,label+' foot '+i);
+  if(leg.userData.contact)level(foot,label+' planted foot '+i);else {const up=new T.Vector3(0,1,0).applyQuaternion(foot.getWorldQuaternion(new T.Quaternion()));assert.ok(up.angleTo(new T.Vector3(0,1,0))<=.131,label+' swing foot tilt exceeds the natural ankle roll');}
  }
  g.traverse(o=>assert.ok(o.matrixWorld.elements.every(Number.isFinite),label+' contains an invalid transform'));
 }

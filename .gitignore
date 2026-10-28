@@ -15,3 +15,5 @@ playwright-report/
 test-results/
 .cache/
 build/
+
+.playwright-mcp/

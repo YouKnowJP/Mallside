@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v26 — a room, a rhythm, a few familiar faces
+## v27 — a neighborhood to come back to
+
+Continue all five local stories through ten new chapters, help match lost-property claims and keep a community invitation. Walk between stops in your collection room, rearrange kept finds and take an evening pause. Stone grain, storefront layers and more natural airborne steps refine the 3D mall and characters. Existing saves and earlier rewards carry forward. See [v27 gameplay](docs/GAMEPLAY-v27.md), [release QA](docs/qa-v27.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v26 — a room, a rhythm, a few familiar faces
 
 Meet Noor and Jules in six new multi-day local missions, with six further friendship chapters. Arrange kept real-product models in a furnished 3D collection room, choose its finish, prepare tomorrow’s outfit and leave a local guestbook memory at concierge. Window-browsing pauses, actual-distance gait, starter-shirt detail and distinct material finishes refine the people and mall. See [v26 gameplay](docs/GAMEPLAY-v26.md), [design references](docs/design-research-v26.md), [release QA](docs/qa-v26.md) and [remaining work](ROADMAP.md).
 

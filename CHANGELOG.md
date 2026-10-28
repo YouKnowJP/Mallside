@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 27.0.0 — A neighborhood to come back to — 28 October 2026
+
+- Extended every local story from three to five chapters, adding ten follow-ups that retain original choices, completed history and one-time rewards.
+- Added community invitations, a rotating lost-property matching activity and a bounded daily home routine, with atomic costs and reload-safe daily limits.
+- Added walking between furniture-safe room stops and saved shelf reordering; corrected repeated room-renderer creation inside the owned-item list.
+- Refined stone grain, indoor/outdoor floor finishes, layered storefront panes, entrance soffits, shoulder movement, head counter-motion and airborne ankle roll.
+- Kept save version 6, both game modes, catalog identities, photographs, original prices and third-party terms; clarified unavailable walking controls in lighter graphics.
+
 ## 26.0.1 — Free play and public-source permissions — 28 October 2026
 
 - Clarified the proprietary license for free personal play, private evaluation, sharing gameplay and restrictions on rehosts, rebranding and monetized redistribution.

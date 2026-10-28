@@ -38,9 +38,15 @@ export function createMallGroundCanvas(l,createCanvas=()=>document.createElement
  for(const p of l.environment.edgePlanting){g.fillStyle='#536d5129';g.beginPath();g.ellipse(p.x+34,p.y+38,37,23,0,0,7);g.fill();}
  return canvas;
 }
+// A deterministic, small texture adds stone grain without external assets or extra draw calls.
+export function stoneDetailTexture(width=1200,height=900){
+ const size=64,data=new Uint8Array(size*size*4);let seed=2701;
+ for(let i=0;i<size*size;i++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const value=220+(seed>>>24)%31;data.set([value,value,value,255],i*4);}
+ const texture=new T.DataTexture(data,size,size,T.RGBAFormat);texture.wrapS=texture.wrapT=T.RepeatWrapping;texture.repeat.set(Math.max(1,width/80),Math.max(1,height/80));texture.magFilter=T.LinearFilter;texture.minFilter=T.LinearMipmapLinearFilter;texture.generateMipmaps=true;texture.needsUpdate=true;return texture;
+}
 export function buildMallGround(w,l){
  const c=l.campus,theme=themeFor(l.family),canvas=createMallGroundCanvas(l);
- const texture=new T.CanvasTexture(canvas);texture.colorSpace=T.SRGBColorSpace;texture.anisotropy=4;w.resources.add(texture);const material=w.mat('#ffffff',{map:texture,roughness:.9}),floor=w.mesh(new T.PlaneGeometry(c.width,c.height),material);floor.rotation.x=-Math.PI/2;floor.position.set(c.width/2,-.5,c.height/2);floor.castShadow=false;
+ const texture=new T.CanvasTexture(canvas);texture.colorSpace=T.SRGBColorSpace;texture.anisotropy=4;w.resources.add(texture);const grain=stoneDetailTexture(c.width,c.height);w.resources.add(grain);const material=w.mat('#ffffff',{map:texture,roughness:c.outdoor?.94:.76,roughnessMap:grain,bumpMap:grain,bumpScale:c.outdoor?.22:.1}),floor=w.mesh(new T.PlaneGeometry(c.width,c.height),material);floor.rotation.x=-Math.PI/2;floor.position.set(c.width/2,-.5,c.height/2);floor.castShadow=false;
  // The playable footprint has thickness, rather than floating as a white ribbon.
  const base=new Details(w);for(const h of c.halls){const a=c.nodes[Number(h.a)],b=c.nodes[Number(h.b)],length=Math.hypot(b.x-a.x,b.y-a.y),angle=Math.atan2(b.x-a.x,b.y-a.y);base.box((a.x+b.x)/2,-5,(a.y+b.y)/2,h.width+310,8,length,theme.stone,angle);}base.flush();
  w.scene.background=new T.Color(theme.sky);w.sceneFog=new T.Fog(theme.sky,1350,4200);w.scene.fog=w.sceneFog;
@@ -74,6 +80,7 @@ export function buildStorefronts(w,units,theme){
   local(0,72,depth/2+6,width-4,27,6,identity.background);b.light(f.x+f.front.x*(depth/2+5),55,f.z+f.front.y*(depth/2+5),width-12,2,2,'#e2c58a',f.turn);
   // Layered joinery, sill and display lighting remain inside the existing envelope.
   for(const sign of [-1,1]){const pane=Math.max(9,(width-42)/2),px=sign*(22+pane/2);local(px,6,depth/2-3,pane,3,18,design.fixture);local(px,11,depth/2+3,pane,1.5,2,theme.trim);local(px,43,depth/2+3,1,50,2,'#a3b5ae');b.light(f.x+f.right.x*px+f.front.x*(depth/2-7),58,f.z+f.right.y*px+f.front.y*(depth/2-7),pane-2,1.4,5,'#efd8b1',f.turn);}
+  for(const sign of [-1,1]){const px=sign*Math.max(23,width*.29);local(px,37,depth/2+3.8,1,38,1,'#f0f3e9','glass');local(px+sign*3,37,depth/2+3.8,.65,38,1,'#d6e6e0','glass');}local(0,61,depth/2-3,24,1.4,12,'#485c52');
   local(0,4,depth/2+7,24,1.5,5,'#bac1b7');local(0,7,depth/2+5,23,1,1,'#d3c4a0');
   local(0,89,depth/2+5,width+5,4,13,theme.stone);
   if(outdoor)b.roof(f.x,height+2,f.z,width+3,5,depth+3,theme.roof,f.turn);else local(0,height+2,0,width+3,5,depth+3,theme.stone);
@@ -132,7 +139,7 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
- const count=b.flush();w.canvas.dataset.environmentRevision='26';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
+ const count=b.flush();w.canvas.dataset.environmentRevision='27';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 
 export function buildAnchor(w,a,theme){

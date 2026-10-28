@@ -2,6 +2,14 @@
 
 Updated 28 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v27
+
+- Ten follow-up local chapters extend all five stories to five chapters each, with original choices, history, next-day waits and previously collected rewards preserved.
+- Concierge community invitations and daily lost-property claim matching add no-purchase errands and new chapter evidence.
+- Furniture-safe walking stops in the collection room, saved shelf reordering and an optional daily evening pause advance the home routine.
+- Procedural stone grain, indoor/outdoor floor finishes, storefront pane and soffit detail, shoulder movement, head counter-motion and airborne ankle roll refine presentation.
+- Corrected repeated room-renderer creation in the owned-item list and clarified 2D movement availability.
+
 ## Completed in v26
 
 - Noor and Jules add six multi-day local missions and six friendship chapters, retaining the previous completed stories and choices.
@@ -28,8 +36,8 @@ Updated 28 October 2026. The game is playable and under active development; this
 
 ## Next gameplay and presentation work
 
-- Expand the five local stories with more conversations, longer consequences and more varied errands beyond the current three-chapter arcs.
-- Develop the furnished collection room into a walkable home with more meaningful collection arrangements; expand the concierge activities and homeward routine.
+- Continue developing consequences beyond the five-chapter local arcs, including more varied shared activities and conversations tied to later visits.
+- Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
 - Continued camera, storefront, lighting, NPC and character/fabric refinement; the current motion is controlled animation rather than complete cloth physics.
 - Additional manual Safari/Firefox and physical phone/tablet testing, broader accessibility verification, and save-recovery improvements.
 

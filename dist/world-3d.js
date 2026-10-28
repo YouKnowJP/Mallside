@@ -1,5 +1,5 @@
 import {daylightAt,adultAppearance} from './mall-atmosphere.js?v=26.0.0';
-import {createShopper,applyCharacterPose} from './character-rig.js?v=26.0.0';
+import {createShopper,applyCharacterPose} from './character-rig.js?v=27.0.0';
 import {updateAttachmentFrames,updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=26.0.0';
 import {buildWindowDisplay,buildSignatureInterior} from './retail-scenes.js?v=23.0.0';
 import {buildStoreFitout} from './store-fitout.js?v=26.0.0';
@@ -7,9 +7,9 @@ import {buildStoreLife,drawStoreLife} from './store-life.js?v=26.0.0';
 import {productAppearance} from './product-appearance.js?v=23.0.0';
 import {physicalProduct,placeMerchandise} from './merchandise-3d.js?v=23.0.0';
 import {dressPerson,syncCarriedMerchandise,poseCarriedMerchandise,stowHandhelds} from './merchandise-carry.js?v=26.0.0';
-import {brandSign} from './mall-environment.js?v=26.0.0';
+import {brandSign} from './mall-environment.js?v=27.0.0';
 import {shopperPlan,fixtureStop} from './mall-neighborhood.js?v=26.0.0';
-import {buildMallGround,buildStorefronts,buildPublicRealm,buildAnchor,buildRetailConnections,buildMallEntrance} from './mall-environment.js?v=26.0.0';
+import {buildMallGround,buildStorefronts,buildPublicRealm,buildAnchor,buildRetailConnections,buildMallEntrance} from './mall-environment.js?v=27.0.0';
 import {themeFor,facadeFrame,cameraCutaway,overviewFraming} from './mall-design.js?v=23.0.0';
 import {buildInteriorArchitecture,buildProductFixture} from './interior-art.js?v=23.0.0';
 import {onSurface} from './free-navigation.js?v=25.0.0';
@@ -18,7 +18,7 @@ import * as T from './vendor/three.module.js';
 import {MallWorld} from './world.js?v=26.0.0';
 import {spatialLayout,interiorLayout} from './spatial-layout.js?v=26.0.0';
 import {walkable,closestFloor,freeRoute,freeMove,clearWalk,personStop} from './free-navigation.js?v=25.0.0';
-import {isServiceStore,serviceMenu,STORES,PRODUCTS,CLOSE,mallOf,equippedLook,slotForProduct,money,price,savedBags} from './engine.js?v=26.0.0';
+import {isServiceStore,serviceMenu,STORES,PRODUCTS,CLOSE,mallOf,equippedLook,slotForProduct,money,price,savedBags} from './engine.js?v=27.0.0';
 import {PRODUCT_PHOTOS} from './product-photos.js?v=23.0.0';
 import {windowSelection,LOCALS} from './mall-life.js?v=26.0.0';
 import {stepToward,facingFor,turnToward,yieldToPlayer} from './motion.js?v=25.0.0';
@@ -68,7 +68,7 @@ export class MallWorld3D extends MallWorld{
   else{
    const color={coffee:'#769b85',food:'#c68966',popup:'#cfab63',flowers:'#8aa47d',services:'#5e8584',photo:'#b599b4',cinema:'#5f7587'}[v.id];obj=this.box(x,19,z,v.width,38,v.height,color||'#9ca88c');this.box(x,40,z,v.width+8,5,v.height+8,'#f9efd9');
    if(['coffee','food'].includes(v.id)){for(let i=0;i<2;i++){const tx=x-27+i*54;this.cyl(tx,50,z,9,17,'#eee2c2');this.cyl(tx,60,z,11,3,'#6f5844');}this.bench(x,z+v.height/2+35);}
-   if(v.id==='services'){this.box(x,48,z,20,12,16,'#728c76');this.box(x,54.2,z,2,.4,16.2,'#ead8ae');this.box(x,54.4,z,20.2,.4,2,'#ead8ae');const refill=this.box(x+v.width/2-12,35,z,16,32,19,'#708a87');this.box(x+v.width/2-12,52,z+4,12,6,7,'#c8d7d1');this.cyl(x+v.width/2-12,43,z+11,2,2,'#92b6bb');this.tag(refill,'amenity:water',v.door);this.tag(this.label('Water · free',x+v.width/2-12,62,z,55),'amenity:water',v.door);this.tag(this.label('Gift wrapping',x-20,60,z,62),'amenity:wrap',v.door);}
+   if(v.id==='services'){const board=this.box(x-35,53,z-6,27,24,2,'#b49368');this.box(x-35,53,z-4.8,23,20,.4,'#f1ead4');for(const dx of [-5,5])this.box(x-35+dx,53,z-4.4,7,12,.2,dx<0?'#c6d9bd':'#dbc4a8');this.tag(board,'amenity:notice',v.door);this.tag(this.label('Community board',x-35,72,z-6,65),'amenity:notice',v.door);const tray=this.box(x+10,45,z+10,18,5,12,'#9c8261');this.box(x+10,48,z+10,12,1,8,'#f1ead4');this.tag(tray,'amenity:property',v.door);this.box(x,48,z,20,12,16,'#728c76');this.box(x,54.2,z,2,.4,16.2,'#ead8ae');this.box(x,54.4,z,20.2,.4,2,'#ead8ae');const refill=this.box(x+v.width/2-12,35,z,16,32,19,'#708a87');this.box(x+v.width/2-12,52,z+4,12,6,7,'#c8d7d1');this.cyl(x+v.width/2-12,43,z+11,2,2,'#92b6bb');this.tag(refill,'amenity:water',v.door);this.tag(this.label('Water · free',x+v.width/2-12,62,z,55),'amenity:water',v.door);this.tag(this.label('Gift wrapping',x-20,60,z,62),'amenity:wrap',v.door);}
    if(v.id==='flowers')for(let i=0;i<8;i++)this.ball(x-38+i*11,49,z,8,['#e4afaa','#e7cf87','#b8a3bd'][i%3]);
    this.tag(this.label(VENUE_LABELS[v.id]||v.id,x,75,z,110),'venue:'+v.id,v.door);
   }this.tag(obj,'venue:'+v.id,v.door);

@@ -26,22 +26,24 @@ function finishTasks(s,id){let gift=null;for(const t of E.localStory(s,id).tasks
  else if(t.type==='talk')E.chatTopic(s,id,E.LOCAL_TOPICS[id][0].id);
  else if(t.type==='rest')E.rest(s);
  else if(t.type==='photo')E.takePhoto(s);
- else if(t.type==='amenity'){if(t.values[0]==='guestbook')E.signGuestbook(s,'curious','people');else E.useAmenity(s,t.values[0]);}
+ else if(t.type==='amenity'){if(t.values[0]==='guestbook')E.signGuestbook(s,'curious','people');else if(t.values[0]==='notice')E.readCommunityNotice(s,'garden');else if(t.values[0]==='property')E.helpLostProperty(s,E.lostPropertyCase(s.day).id);else E.useAmenity(s,t.values[0]);}
  else if(t.type==='look'){keptLook(s);E.saveLook(s,'Tomorrow, together');}
  else if(t.type==='plan'){keptLook(s);E.prepareTomorrow(s);}
  else if(t.type==='display'){keptLook(s);E.pinDisplay(s,Object.values(s.equipment)[0]);}
+ else if(t.type==='home')E.unwindAtHome(s);
+ else if(t.type==='arrange'){keptLook(s);for(const id of Object.values(s.equipment).slice(0,2))E.pinDisplay(s,id);E.moveDisplay(s,s.displayItems[0],1);}
  else if(t.type==='activity')experience(s,t.values[0]);
  else if(t.type==='gift'){const p=giftProduct(s,E.localStory(s,id).record.choice==='style');E.inspect(s,p.id);gift=buy(s,p);E.wrapGift(s,gift.id,'rose');}
  }return gift;}
 
-test('all six story paths finish nine chapter types through ordinary actions across three mornings',()=>{
- for(const definition of E.LOCAL_STORIES)for(const choice of definition.choices){let s=fresh();for(let stage=0;stage<3;stage++){
+test('all ten story paths finish five chapters through ordinary actions across five mornings',()=>{
+ for(const definition of E.LOCAL_STORIES)for(const choice of definition.choices){let s=fresh();for(let stage=0;stage<E.LOCAL_STORY_CHAPTERS;stage++){
   E.beginLocalStory(s,definition.id,stage===0?choice.id:undefined);assert.equal(E.localStory(s,definition.id).stage,stage);
   const gift=finishTasks(s,definition.id),v=E.localStory(s,definition.id);assert.ok(v.ready,definition.id+' '+choice.id+' '+stage);
   const before=s.cash,level=E.levelOf(s),result=E.claimLocalChapter(s,definition.id,gift?.id),bonus=E.LEVELS.slice(level+1,E.levelOf(s)+1).reduce((n,l)=>n+l.bonus*100,0);assert.equal(s.cash,before+result.cash+result.reimbursement+bonus);assert.throws(()=>E.claimLocalChapter(s,definition.id,gift?.id));
   if(gift){assert.equal(gift.deliveredTo,'Maya');assert.equal(E.returnEligibility(s,gift).ok,false);assert.equal(E.owned(s).some(i=>i.id===gift.id),false);assert.equal(result.reimbursement,gift.total+200);}
-  if(stage<2){assert.ok(E.localStory(s,definition.id).waiting);assert.throws(()=>E.beginLocalStory(s,definition.id));E.nextDay(s);s=E.validateImport(JSON.stringify(s));assert.equal(E.localStory(s,definition.id).stage,stage+1);}
- }assert.ok(E.localStory(s,definition.id).complete);assert.equal(s.localStories[0].history.length,3);assert.throws(()=>E.beginLocalStory(s,definition.id,choice.id));}
+  if(stage<E.LOCAL_STORY_CHAPTERS-1){assert.ok(E.localStory(s,definition.id).waiting);assert.throws(()=>E.beginLocalStory(s,definition.id));E.nextDay(s);s=E.validateImport(JSON.stringify(s));assert.equal(E.localStory(s,definition.id).stage,stage+1);}
+ }assert.ok(E.localStory(s,definition.id).complete);assert.equal(s.localStories[0].history.length,E.LOCAL_STORY_CHAPTERS);assert.throws(()=>E.beginLocalStory(s,definition.id,choice.id));}
 });
 
 test('a chapter counts new distinct models, preserves partial steps overnight and keeps location evidence local',()=>{
@@ -84,7 +86,7 @@ test('all ten malls can begin the local stories without changing existing catalo
 });
 
 test('local cards escape names and expose explicit task, wrapping fee and next-day feedback',()=>{
- const s=fresh(),esc=x=>String(x).replaceAll('<','&lt;'),ctx={E,esc,picture:p=>'<img alt="'+p.id+'">'};assert.match(communityBoard(s,ctx),/15 OPTIONAL MISSIONS/);E.beginLocalStory(s,'sam','practical');assert.match(localChapterCard(s,'sam',ctx),/Follow this chapter/);assert.match(localChapterCard(s,'sam',ctx),/0 \/ 1/);assert.match(wrappingDesk(s,ctx,'sage'),/not refundable/);
+ const s=fresh(),esc=x=>String(x).replaceAll('<','&lt;'),ctx={E,esc,picture:p=>'<img alt="'+p.id+'">'};assert.match(communityBoard(s,ctx),/25 OPTIONAL MISSIONS/);E.beginLocalStory(s,'sam','practical');assert.match(localChapterCard(s,'sam',ctx),/Follow this chapter/);assert.match(localChapterCard(s,'sam',ctx),/0 \/ 1/);assert.match(wrappingDesk(s,ctx,'sage'),/not refundable/);
 });
 
 test('continuous heading follows diagonals, stays put at rest and turns the shortest way across wraparound',()=>{

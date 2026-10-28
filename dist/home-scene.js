@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {ROOM_STYLES} from './home-life.js?v=26.0.0';
-import {owned,byId} from './engine.js?v=26.0.0';
+import {owned,byId} from './engine.js?v=27.0.0';
 import {placeMerchandise} from './merchandise-3d.js?v=23.0.0';
 // A small original room; every displayed product is an owned catalog purchase.
 export function buildCollectionRoom(w,state){
@@ -37,3 +37,7 @@ export function collectionRoomCamera(aspect=1){
  for(const x of [-105,105])for(const y of [0,94])for(const z of [-50,70]){const v=new T.Vector3(x,y,z).sub(target),depth=v.dot(direction);distance=Math.max(distance,depth+Math.abs(v.dot(right))/(tan*ratio)*1.08,depth+Math.abs(v.dot(up))/tan*1.08);}
  const position=target.clone().addScaledVector(direction,distance);return {position:position.toArray(),target:target.toArray(),near:2,far:position.length()+250};
 }
+
+// Furniture-safe paths share the open rug, rather than cutting through the desk or shelves.
+export const HOME_STOPS={window:{x:-48,z:-27,label:'At the window'},shelf:{x:34,z:10,label:'Beside your kept finds'},door:{x:-28,z:48,label:'At the doorway'},center:{x:-28,z:8,label:'Back on the rug'}};
+export function homeWalkRoute(id){const p=HOME_STOPS[id];return p?[{...HOME_STOPS.center},{...p}]:[];}

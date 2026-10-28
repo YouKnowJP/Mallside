@@ -1,5 +1,6 @@
 // Original, optional local stories. Evidence comes from completed engine actions;
 // an unfinished chapter survives sleep, travel and a save reload.
+export const LOCAL_STORY_CHAPTERS=5;
 export const LOCAL_STORIES = [
  {id:'maya',name:'A gift with a reason',person:'Maya',emoji:'🎁',intro:'Help Maya choose a gift, then come back to see how it went.',choices:[{id:'useful',name:'Something useful',text:'A real home, beauty, hobby or technology find.'},{id:'style',name:'A little personal style',text:'A real wearable or accessory in its usual size.'}]},
  {id:'eli',name:'The afternoon club',person:'Eli',emoji:'🌿',intro:'Build a tradition around the places between the shops.',choices:[{id:'quiet',name:'The quieter corners',text:'Gardens, art and a flower workshop.'},{id:'play',name:'A little more playful',text:'Carousel horses and a cinema afternoon.'}]},
@@ -18,6 +19,10 @@ function chapter(id,stage,choice){
  const route=task('directory','Save a route note at a mall directory','amenity',1,['directory'],{kind:'directory',id:'directory'});
  const water=task('water','Use the complimentary water station','amenity',1,['water']);
  const activity=(id,label)=>task(id,label,'activity',1,[id],{kind:'venue',id:{artwalk:'art',tea:'lounge'}[id]||id});
+ const notice=task('notice','Choose a community notice at guest services','amenity',1,['notice']);
+ const property=task('property','Match the lost-property claim card at concierge','amenity',1,['property']);
+ const unwind=task('unwind','Unwind in your collection room · 8 min','home',1,['unwind'],{kind:'view',id:'collections'});
+ const arrange=task('arrange','Swap two kept finds on your room shelf','arrange',1,null,{kind:'view',id:'collections'});
  const books={
   maya:[
    {title:'Listen before choosing',text:choice==='style'?'“Something they can wear often would mean more than a grand gesture. Let’s look carefully first.”':'“They love an ordinary thing that makes the day easier. Let’s read a few labels before deciding.”',tasks:[labels(2),hello('maya')],cash:1200,xp:35},
@@ -45,7 +50,29 @@ function chapter(id,stage,choice){
    {title:'Pass the route along',text:'“Make one more loop through three shops, save a route note and tell me what you found. That’s a regular’s welcome.”',tasks:[shops(3),route,hello('sam')],cash:2500,xp:65}
   ]
  };
- return books[id]?.[stage]||null;
+ const followups={
+  maya:[
+   {title:'Good things find their way back',text:choice==='style'?'“They wore it on an ordinary Tuesday. That is the best sort of thank-you. Someone else has lost a favorite thing—shall we help concierge match the claim?”':'“Your useful little gift is part of their day now. Let’s help someone find the thing they already miss.”',tasks:[property,water,hello('maya')],cash:2200,xp:65},
+   {title:'A welcome, passed on',text:'“A gift started with paying attention. Choose a community notice, share a small memory, and let yourself have a quiet evening.”',tasks:[notice,task('guestbook','Leave a new concierge guestbook memory','amenity',1,['guestbook']),unwind,hello('maya')],cash:3200,xp:90}
+  ],
+  eli:[
+   {title:'An invitation without a shopping list',text:choice==='quiet'?'“The quieter club has room for one more. Read a community notice and find the garden again.”':'“The afternoon club is still going. Pick a community notice and make time for another carousel turn.”',tasks:[notice,activity(choice==='quiet'?'bridge':'carousel',choice==='quiet'?'Observe the garden bridge':'Take a carousel ride'),hello('eli')],cash:2200,xp:65},
+   {title:'Leave the afternoon better',text:'“A lost favorite back in the right hands, a little water, and a restful evening. That is an afternoon worth repeating.”',tasks:[property,water,unwind,hello('eli')],cash:3200,xp:90}
+  ],
+  noor:[
+   {title:'The order that feels like you',text:choice==='expressive'?'“Your shelf can tell its own story. Put two kept finds on it, swap their places, then give yourself a quiet moment.”':'“Put two kept finds on the shelf and swap their places. Something you already own can feel fresh when you see it differently.”',tasks:[arrange,unwind,hello('noor')],cash:2200,xp:70},
+   {title:'Enough for an ordinary morning',text:'“We made room for what you keep. Choose a community invitation, help someone keep a favorite of their own, and come tell me how the week felt.”',tasks:[notice,property,hello('noor')],cash:3400,xp:95}
+  ],
+  jules:[
+   {title:'The welcome becomes a habit',text:choice==='green'?'“The green route is on the board now. Choose a notice, read the directory and leave a page for whoever comes next.”':'“The playful route has a few followers. Choose a notice, read the directory and leave a friendly page.”',tasks:[notice,route,task('guestbook','Leave today’s concierge guestbook memory','amenity',1,['guestbook'])],cash:2200,xp:65},
+   {title:'Someone else’s way home',text:'“A welcome is in the little things. Help match a lost favorite, refill your water, and leave enough time to unwind at home. Tell me before you go.”',tasks:[property,water,hello('jules'),unwind],cash:3200,xp:90}
+  ],
+  sam:[
+   {title:'A regular lends a hand',text:choice==='slow'?'“There is time for someone else’s errand too. The claim card has every detail; then we can take that scenic bench break.”':'“One more useful stop: the claim card at concierge. Check every detail, then take a seat.”',tasks:[property,rest,hello('sam')],cash:2200,xp:65},
+   {title:'A route worth coming back to',text:'“You know the stops. Pick an invitation from the board, save a fresh route note, and make your evening as considered as your afternoon.”',tasks:[notice,route,unwind,hello('sam')],cash:3200,xp:90}
+  ]
+ };
+ return stage<3?books[id]?.[stage]||null:followups[id]?.[stage-3]||null;
 }
 export function createCommunityStories(ctx){
  const record=(s,id)=>s.localStories?.find(v=>v.id===id);
@@ -57,13 +84,13 @@ export function createCommunityStories(ctx){
   });
  }
  function status(s,id){
-  const d=definition(id);if(!d)return null;const r=record(s,id),stage=r?.stage||0,complete=stage===3,c=complete?null:chapter(id,stage,r?.choice||d.choices[0].id);
+  const d=definition(id);if(!d)return null;const r=record(s,id),stage=r?.stage||0,complete=stage===LOCAL_STORY_CHAPTERS,c=complete?null:chapter(id,stage,r?.choice||d.choices[0].id);
   const tasks=(c?.tasks||[]).map(t=>({...t,count:t.type==='gift'?Math.min(1,giftCandidates(s).length):Math.min(t.target,r?.progress?.[t.id]?.length||0)}));
   return {...d,record:r,chapter:c,stage,complete,active:!!r?.active,waiting:!!r&&!r.active&&!complete&&s.day<r.readyDay,ready:!!r?.active&&tasks.every(t=>t.count>=t.target),tasks,done:tasks.filter(t=>t.count>=t.target).length,total:tasks.length};
  }
  function start(s,id,choice){
   const d=definition(id);if(!d)throw Error('Local story not found.');let r=record(s,id);
-  if(r?.stage===3)throw Error('This local story is complete.');if(r?.active)throw Error('This chapter is already underway.');
+  if(r?.stage===LOCAL_STORY_CHAPTERS)throw Error('This local story is complete.');if(r?.active)throw Error('This chapter is already underway.');
   if(r&&s.day<r.readyDay)throw Error('Come back tomorrow for the next chapter.');
   if(!r){if(!d.choices.some(c=>c.id===choice))throw Error('Choose a direction for this story.');r={id,choice,stage:0,readyDay:s.day,history:[]};s.localStories.push(r);}
   Object.assign(r,{active:true,startedDay:s.day,mallId:s.mallId,after:s.purchases.length,progress:{}});s.communityFocus=id;s.outingFocus=false;return status(s,id);
@@ -77,14 +104,14 @@ export function createCommunityStories(ctx){
   // Validate everything before consuming an item or advancing the saved chapter.
   ctx.canAct(s,3,0,{care:true});ctx.advance(s,3);if(gift){gift.delivered=true;gift.deliveredTo='Maya';}
   r.history.push({stage:r.stage,day:s.day,mallId:s.mallId,title:v.chapter.title,...gift?{productId:gift.productId,wrap:gift.giftWrap.style}:{}});r.stage++;r.active=false;r.progress={};r.readyDay=s.day+1;if(s.communityFocus===id)s.communityFocus=null;
-  return {title:v.chapter.title,xp:v.chapter.xp,cash:v.chapter.cash,reimbursement,complete:r.stage===3};
+  return {title:v.chapter.title,xp:v.chapter.xp,cash:v.chapter.cash,reimbursement,complete:r.stage===LOCAL_STORY_CHAPTERS};
  }
  function next(s){const v=status(s,s.communityFocus);if(!v?.active)return null;const base={chapter:'LOCAL',person:v.person,title:v.chapter.title,step:v.done,steps:v.total};if(v.ready)return {...base,kind:'local',id:v.id,label:'Share this chapter with '+v.person};const t=v.tasks.find(t=>t.count<t.target);return {...base,...t.route,label:t.label};}
  function normalize(s){
   const source=Array.isArray(s.localStories)?s.localStories:[];s.localStories=[];
-  for(const d of LOCAL_STORIES){const r=source.find(v=>v?.id===d.id);if(!r||!d.choices.some(c=>c.id===r.choice)||!Number.isInteger(r.stage)||r.stage<0||r.stage>3||!Array.isArray(r.history)||r.history.length!==r.stage)continue;
+  for(const d of LOCAL_STORIES){const r=source.find(v=>v?.id===d.id);if(!r||!d.choices.some(c=>c.id===r.choice)||!Number.isInteger(r.stage)||r.stage<0||r.stage>LOCAL_STORY_CHAPTERS||!Array.isArray(r.history)||r.history.length!==r.stage)continue;
    const history=r.history.filter((h,i)=>h&&h.stage===i&&Number.isSafeInteger(h.day)&&h.day>0&&h.day<=s.day&&ctx.mallById(h.mallId));if(history.length!==r.stage)continue;
-   const active=r.active===true&&r.stage<3&&Number.isSafeInteger(r.startedDay)&&r.startedDay>0&&r.startedDay<=s.day&&ctx.mallById(r.mallId)&&Number.isSafeInteger(r.after)&&r.after>=0&&r.after<=s.purchases.length;
+   const active=r.active===true&&r.stage<LOCAL_STORY_CHAPTERS&&Number.isSafeInteger(r.startedDay)&&r.startedDay>0&&r.startedDay<=s.day&&ctx.mallById(r.mallId)&&Number.isSafeInteger(r.after)&&r.after>=0&&r.after<=s.purchases.length;
    const progress={};for(const t of chapter(d.id,r.stage,r.choice)?.tasks||[]){progress[t.id]=[...new Set((Array.isArray(r.progress?.[t.id])?r.progress[t.id]:[]).filter(v=>typeof v==='string'&&v.length>0&&v.length<240))].slice(0,t.target);}
    s.localStories.push({id:d.id,choice:r.choice,stage:r.stage,active:!!active,startedDay:active?r.startedDay:s.day,mallId:active?r.mallId:s.mallId,after:active?r.after:s.purchases.length,readyDay:Number.isSafeInteger(r.readyDay)?Math.max(1,Math.min(s.day+1,r.readyDay)):s.day,progress,history:history.map(h=>({stage:h.stage,day:h.day,mallId:h.mallId,title:chapter(d.id,h.stage,r.choice).title,...ctx.byId(h.productId)?{productId:h.productId,wrap:['sage','rose','midnight'].includes(h.wrap)?h.wrap:'sage'}:{}}))});
   }
