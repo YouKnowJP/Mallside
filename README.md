@@ -12,6 +12,8 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 Continue all five local stories through ten new chapters, help match lost-property claims and keep a community invitation. Walk between stops in your collection room, rearrange kept finds and take an evening pause. Stone grain, storefront layers and more natural airborne steps refine the 3D mall and characters. Existing saves and earlier rewards carry forward. See [v27 gameplay](docs/GAMEPLAY-v27.md), [release QA](docs/qa-v27.md) and [remaining work](ROADMAP.md).
 
+The 27.0.1 validation release passed native Safari 26.6.2 and Firefox 159.0 gameplay checks. See the [browser QA matrix](docs/qa-v27-browsers.md) and [repeatable runner](scripts/README.md).
+
 ## Previous update · v26 — a room, a rhythm, a few familiar faces
 
 Meet Noor and Jules in six new multi-day local missions, with six further friendship chapters. Arrange kept real-product models in a furnished 3D collection room, choose its finish, prepare tomorrow’s outfit and leave a local guestbook memory at concierge. Window-browsing pauses, actual-distance gait, starter-shirt detail and distinct material finishes refine the people and mall. See [v26 gameplay](docs/GAMEPLAY-v26.md), [design references](docs/design-research-v26.md), [release QA](docs/qa-v26.md) and [remaining work](ROADMAP.md).
@@ -43,7 +45,7 @@ Use WASD or arrow keys to walk, or tap open floor and use the on-screen controls
 
 Progress is stored in this browser. Career and free shop have separate saves. Use **Player & options → Export backup** before changing devices, clearing browser data, or moving from the old game address. Import that JSON backup at the new address. Browser storage is separated by website origin; saves do not transfer automatically. Outfit-photo binaries remain in the original browser and are not included in the JSON backup.
 
-Modern desktop and mobile browsers can load the static game. 3D requires WebGL; the game offers a 2D fallback. Previous live QA covered Chromium at desktop, phone and tablet sizes, not physical certification of every browser/device.
+Modern desktop and mobile browsers can load the static game. 3D requires WebGL; the game offers a 2D fallback. Live QA covers desktop Safari 26.6.2, Firefox 159.0 (native headless flow checks) and Chromium, including resized phone/tablet layouts. Physical mobile devices and every browser/GPU combination are not certified; see the [browser QA](docs/qa-v27-browsers.md).
 
 ## Run locally
 

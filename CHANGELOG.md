@@ -2,6 +2,12 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 27.0.1 — Native Safari and Firefox validation — 28 October 2026
+
+- Verified eleven compiled-game flow checks in Safari 26.6.2 and Firefox 159.0, including WebGL walking, all room stops, migrated local stories, daily actions, next-morning reloads and original portrait persistence.
+- Added a reusable localhost-only W3C WebDriver runner with native pointer/key input, error capture, Safari screenshot handling and ignored QA reports.
+- Recorded responsive desktop-browser measurements and retained physical mobile-device testing as an explicit limit. No game-code defects were reproduced; application behavior, saves, catalog and photographs are unchanged.
+
 ## 27.0.0 — A neighborhood to come back to — 28 October 2026
 
 - Extended every local story from three to five chapters, adding ten follow-ups that retain original choices, completed history and one-time rewards.

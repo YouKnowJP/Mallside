@@ -28,4 +28,4 @@ The source run exposed a stale menu mission count and inactive 2D walking contro
 
 ## Limits
 
-Browser checks use emulated desktop, phone and tablet dimensions. They do not certify physical devices, Safari or Firefox. Room motion uses named walking stops; it is not unrestricted home navigation. Character fabric remains controlled deformation rather than full cloth physics. The roadmap remains open for those larger improvements.
+The original v27 release used emulated desktop, phone and tablet dimensions. The follow-up [v27.0.1 native Safari/Firefox validation](qa-v27-browsers.md) completes that desktop-browser matrix; physical mobile devices remain untested. Room motion uses named walking stops; it is not unrestricted home navigation. Character fabric remains controlled deformation rather than full cloth physics. The roadmap remains open for those larger improvements.

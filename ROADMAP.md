@@ -2,6 +2,10 @@
 
 Updated 28 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Browser validation in v27.0.1
+
+- Native Safari 26.6.2 and Firefox 159.0 each passed eleven compiled-game flow checks covering WebGL, room movement, daily actions, story continuation, reloads and original portrait storage. No game-code defects were reproduced. See [browser QA](docs/qa-v27-browsers.md).
+
 ## Completed in v27
 
 - Ten follow-up local chapters extend all five stories to five chapters each, with original choices, history, next-day waits and previously collected rewards preserved.
@@ -39,7 +43,7 @@ Updated 28 October 2026. The game is playable and under active development; this
 - Continue developing consequences beyond the five-chapter local arcs, including more varied shared activities and conversations tied to later visits.
 - Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
 - Continued camera, storefront, lighting, NPC and character/fabric refinement; the current motion is controlled animation rather than complete cloth physics.
-- Additional manual Safari/Firefox and physical phone/tablet testing, broader accessibility verification, and save-recovery improvements.
+- Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, broader accessibility verification, and save-recovery improvements. The desktop Safari/Firefox matrix is complete for the recorded versions.
 
 ## Catalog and mall fidelity
 
