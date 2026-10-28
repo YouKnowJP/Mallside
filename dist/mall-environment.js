@@ -1,3 +1,4 @@
+import {surfaceFinish} from './mall-atmosphere.js?v=26.0.0';
 import {retailIdentity,drawRetailSign} from './retail-identity.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
 import {themeFor,facadeFrame} from './mall-design.js?v=23.0.0';
@@ -5,14 +6,14 @@ import {brandDesign} from './brand-designs.js?v=23.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
 class Details{
- constructor(w){this.w=w;this.parts={box:[],roof:[],light:[],glass:[],cylinder:[],foliage:[]};this.owner=null;}
- box(x,y,z,width,height,depth,color,rotation=0){this.parts.box.push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
+ constructor(w){this.w=w;this.parts={box:[],timber:[],metal:[],roof:[],light:[],glass:[],cylinder:[],foliage:[]};this.owner=null;}
+ box(x,y,z,width,height,depth,color,rotation=0,finish='box'){this.parts[finish].push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
  glass(x,y,z,width,height,depth,color,rotation=0){this.parts.glass.push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
  roof(x,y,z,width,height,depth,color,rotation=0){this.parts.roof.push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
  light(x,y,z,width,height,depth,color,rotation=0){this.parts.light.push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
  cylinder(x,y,z,radius,height,color){this.parts.cylinder.push({x,y,z,sx:radius,sy:height,sz:radius,color,rotation:0,owner:this.owner});}
  leaf(x,y,z,radius,color,sx=1,sy=1,sz=1,rotation=0){this.parts.foliage.push({x,y,z,sx:radius*sx,sy:radius*sy,sz:radius*sz,color,rotation,owner:this.owner});}
- flush(){let count=0;const w=this.w,dummy=new T.Object3D();for(const [kind,parts]of Object.entries(this.parts)){if(!parts.length)continue;const geometry=['box','roof','light','glass'].includes(kind)?new T.BoxGeometry(1,1,1):kind==='cylinder'?new T.CylinderGeometry(1,1,1,12):new T.SphereGeometry(1,12,8),material=w.mat('#ffffff',{roughness:kind==='foliage'?.94:.72,...kind==='glass'?{transparent:true,opacity:.1,depthWrite:false}:kind==='roof'?{map:roofTexture(w)}:kind==='light'?{emissive:'#b59046',emissiveIntensity:.6}:{}}),mesh=new T.InstancedMesh(geometry,material,parts.length);if(kind==='light')w.windowMaterials?.add(material);w.resources.add(geometry);mesh.castShadow=true;mesh.receiveShadow=true;for(let i=0;i<parts.length;i++){const p=parts[i];dummy.position.set(p.x,p.y,p.z);dummy.rotation.set(0,p.rotation,0);dummy.scale.set(p.sx,p.sy,p.sz);dummy.updateMatrix();mesh.setMatrixAt(i,dummy.matrix);mesh.setColorAt(i,new T.Color(p.color));}mesh.instanceMatrix.needsUpdate=true;mesh.computeBoundingSphere();if(parts[0].owner){mesh.userData.instanceUnits=parts.map(p=>p.owner);if(!parts[0].owner.structure)w.clickables.push(mesh);parts.forEach((p,index)=>{let entry=w.cutawayAssets.get(p.owner.id);if(!entry){entry={unit:p.owner,parts:[],objects:[],cut:false};w.cutawayAssets.set(p.owner.id,entry);}entry.parts.push({mesh,index,p});});}w.scene.add(mesh);count+=parts.length;}return count;}
+ flush(){let count=0;const w=this.w,dummy=new T.Object3D();for(const [kind,parts]of Object.entries(this.parts)){if(!parts.length)continue;const geometry=['box','timber','metal','roof','light','glass'].includes(kind)?new T.BoxGeometry(1,1,1):kind==='cylinder'?new T.CylinderGeometry(1,1,1,12):new T.SphereGeometry(1,12,8),material=w.mat('#ffffff',{...surfaceFinish(kind),...kind==='glass'?{transparent:true,opacity:.1,depthWrite:false}:kind==='roof'?{map:roofTexture(w)}:kind==='light'?{emissive:'#b59046',emissiveIntensity:.6}:{}}),mesh=new T.InstancedMesh(geometry,material,parts.length);if(kind==='light')w.windowMaterials?.add(material);w.resources.add(geometry);mesh.castShadow=kind!=='glass';mesh.receiveShadow=true;for(let i=0;i<parts.length;i++){const p=parts[i];dummy.position.set(p.x,p.y,p.z);dummy.rotation.set(0,p.rotation,0);dummy.scale.set(p.sx,p.sy,p.sz);dummy.updateMatrix();mesh.setMatrixAt(i,dummy.matrix);mesh.setColorAt(i,new T.Color(p.color));}mesh.instanceMatrix.needsUpdate=true;mesh.computeBoundingSphere();if(parts[0].owner){mesh.userData.instanceUnits=parts.map(p=>p.owner);if(!parts[0].owner.structure)w.clickables.push(mesh);parts.forEach((p,index)=>{let entry=w.cutawayAssets.get(p.owner.id);if(!entry){entry={unit:p.owner,parts:[],objects:[],cut:false};w.cutawayAssets.set(p.owner.id,entry);}entry.parts.push({mesh,index,p});});}w.scene.add(mesh);count+=parts.length;}return count;}
 }
 function facadeLabel(w,text,x,y,z,width,color,bg,rotation=0,height=18){const sprite=w.label(text,x,y,z,width,color,bg),material=new T.MeshBasicMaterial({map:sprite.material.map});w.resources.add(material);const sign=w.mesh(new T.PlaneGeometry(width,height),material);sign.position.copy(sprite.position);sign.rotation.y=rotation;sign.castShadow=false;sprite.removeFromParent();return sign;}
 export function brandSign(w,store,x,y,z,width,height=22,rotation=0){const identity=retailIdentity(store),c=document.createElement('canvas');c.width=1024;c.height=224;drawRetailSign(c.getContext('2d'),identity,c.width,c.height);const texture=new T.CanvasTexture(c);texture.colorSpace=T.SRGBColorSpace;texture.anisotropy=4;w.resources.add(texture);const material=new T.MeshBasicMaterial({map:texture});w.resources.add(material);const sign=w.mesh(new T.PlaneGeometry(width,height),material);sign.position.set(x,y,z);sign.rotation.y=rotation;sign.castShadow=false;sign.userData.brandIdentity=identity.key;return sign;}
@@ -57,7 +58,7 @@ export function buildStorefronts(w,units,theme){
  const b=new Details(w),outdoor=w.layout.campus.outdoor;
  for(const [index,u]of units.entries()){
   const f=facadeFrame(u),width=f.width,depth=f.depth,design=brandDesign(u),identity=retailIdentity(u),accent=design.referenceKind==='brand-reference'?design.accent:index%3===0?theme.accent:theme.trim,height=outdoor?99:108;
-  const local=(x,y,z,sx,sy,sz,color)=>b.box(f.x+f.right.x*x+f.front.x*z,y,f.z+f.right.y*x+f.front.y*z,sx,sy,sz,color,f.turn);b.owner=u;
+  const local=(x,y,z,sx,sy,sz,color,finish='box')=>b.box(f.x+f.right.x*x+f.front.x*z,y,f.z+f.right.y*x+f.front.y*z,sx,sy,sz,color,f.turn,finish);b.owner=u;
   local(0,2,0,width,4,depth,theme.stone);
   // Recessed, correctly oriented glazing and a clear central entrance.
   local(0,height/2,-10,width,height,Math.max(20,depth-20),design.referenceKind==='brand-reference'?design.wall:theme.wall);
@@ -67,7 +68,7 @@ export function buildStorefronts(w,units,theme){
    local(sign*(width/2-4),height/2,depth/2+3,7,height,10,identity.facade==='glass'?'#d2d8d2':design.referenceKind==='brand-reference'?design.fixture:theme.stone);
    local(sign*13,34,depth/2+3,2,55,4,theme.trim);
    local(sign*(width/2-17),28,depth/2-19,19,34,1,design.wall);
-   local(sign*4,30,depth/2+5,1,9,1,'#d4b983');
+   local(sign*4,30,depth/2+5,1,9,1,'#d4b983','metal');
   }
   for(const sign of [-1,1]){local(sign*(width/2+1),58,0,2,15,depth-22,'#9fb2a8');local(sign*(width/2+3),47,0,4,3,depth-12,theme.stone);}
   local(0,72,depth/2+6,width-4,27,6,identity.background);b.light(f.x+f.front.x*(depth/2+5),55,f.z+f.front.y*(depth/2+5),width-12,2,2,'#e2c58a',f.turn);
@@ -96,8 +97,8 @@ export function buildPublicRealm(w,l,theme){
  for(const p of portals.flatMap(p=>[-1,1].map(sign=>({x:p.x+Math.cos(p.angle)*sign*p.width/2,y:p.y-Math.sin(p.angle)*sign*p.width/2,height:p.height})))){b.box(p.x,4,p.y,22,8,22,theme.stone);b.box(p.x,p.height/2,p.y,9,p.height,9,theme.wall);b.box(p.x,p.height-3,p.y,19,6,19,theme.trim);}
  for(const p of d.fixtures){const x=p.x+p.width/2,z=p.y+p.height/2;
   if(p.kind==='bench'){
-   const a=p.rotation,rx=Math.cos(a),rz=-Math.sin(a),fx=Math.sin(a),fz=Math.cos(a);b.box(x,12,z,64,5,22,'#987752',a);b.box(x-fx*9,24,z-fz*9,64,21,4,'#b2946c',a);for(const side of [-1,1]){b.box(x+rx*23,6,z+rz*23,5,12,18,theme.trim,a);b.box(x+rx*30,19,z+rz*30,3,9,19,theme.trim,a);}
-   for(const slat of [-7,0,7])b.box(x+fx*slat,14.7,z+fz*slat,63,.5,1.4,'#6f583f',a);for(const rail of [19,26,33])b.box(x-fx*11,rail,z-fz*11,62,1,1,'#967653',a);
+   const a=p.rotation,rx=Math.cos(a),rz=-Math.sin(a),fx=Math.sin(a),fz=Math.cos(a);b.box(x,12,z,64,5,22,'#987752',a,'timber');b.box(x-fx*9,24,z-fz*9,64,21,4,'#b2946c',a,'timber');for(const side of [-1,1]){b.box(x+rx*23,6,z+rz*23,5,12,18,theme.trim,a,'metal');b.box(x+rx*30,19,z+rz*30,3,9,19,theme.trim,a,'metal');}
+   for(const slat of [-7,0,7])b.box(x+fx*slat,14.7,z+fz*slat,63,.5,1.4,'#6f583f',a,'timber');for(const rail of [19,26,33])b.box(x-fx*11,rail,z-fz*11,62,1,1,'#967653',a,'timber');
    const hit=w.box(x,17,z,p.width,26,p.height,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'bench:'+p.id,p.approach);
   }else if(p.kind==='kiosk'){
    const accent={coffee:'#54766a',photo:'#9d8798',flowers:'#789262',popup:'#bd8c62'}[p.venue];
@@ -131,11 +132,11 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
- const count=b.flush();w.canvas.dataset.environmentRevision='25';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
+ const count=b.flush();w.canvas.dataset.environmentRevision='26';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 
 export function buildAnchor(w,a,theme){
- const b=new Details(w),f=facadeFrame(a),height=131,local=(x,y,z,sx,sy,sz,color)=>b.box(f.x+f.right.x*x+f.front.x*z,y,f.z+f.right.y*x+f.front.y*z,sx,sy,sz,color,f.turn);
+ const b=new Details(w),f=facadeFrame(a),height=131,local=(x,y,z,sx,sy,sz,color,finish='box')=>b.box(f.x+f.right.x*x+f.front.x*z,y,f.z+f.right.y*x+f.front.y*z,sx,sy,sz,color,f.turn);
  b.owner=a;local(0,height/2,0,f.width,height,f.depth,theme.wall);local(0,2,0,f.width+8,4,f.depth+8,theme.stone);local(0,height+3,0,f.width+8,7,f.depth+8,theme.stone);local(0,42,f.depth/2+3,f.width-28,72,4,'#869f99');
  for(let x=-f.width/2+10;x<f.width/2;x+=34)local(x,48,f.depth/2+7,7,96,12,theme.stone);
  for(const sign of [-1,1]){local(sign*(f.width/2+2),65,0,3,49,f.depth-25,'#8ca49c');for(let z=-f.depth/2+16;z<f.depth/2;z+=37)local(sign*(f.width/2+4),67,z,5,76,6,theme.stone);local(sign*(f.width/2+4),101,0,7,6,f.depth,theme.trim);}

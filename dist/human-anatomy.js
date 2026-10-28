@@ -38,7 +38,7 @@ export function addHumanAnatomy(w,g,appearance,materials){
  float skinValue=clamp(pow(max(.001,skinLuminance)/${refLum.toFixed(6)},.65),.55,1.3);
  vec3 skinVariation=clamp(sampledDiffuseColor.rgb/max(.001,skinLuminance)/vec3(${refChroma}),vec3(.65),vec3(1.35));
  diffuseColor.rgb=diffuse*skinValue*mix(vec3(1.),skinVariation,.55);
- #endif`);};skin.customProgramCacheKey=()=>('mallside-skin-v23-'+(appearance.faceStyle||'natural'));skin.map=skinMap;skin.bumpMap=skinMap;skin.bumpScale=.008;skin.roughness=.68;skin.needsUpdate=true;
+ #endif`);};skin.customProgramCacheKey=()=>('mallside-skin-v23-'+(appearance.faceStyle||'natural'));skin.map=skinMap;skin.bumpMap=skinMap;skin.bumpScale=.007;skin.roughness=.62;skin.needsUpdate=true;
  const hair=w.mat(appearance.hair||'#594234',{map:texture(w,appearance.hairStyle==='bob'?HUMAN_TEXTURES.hairBob:HUMAN_TEXTURES.hairShort),alphaTest:.45,side:T.DoubleSide,roughness:.64}),eyes=new T.MeshPhysicalMaterial({map:texture(w,HUMAN_TEXTURES.eyesBrown),roughness:.16,clearcoat:1,clearcoatRoughness:.07});w.resources.add(eyes);const hairTarget=new T.Color(appearance.hair||'#594234'),hairReference=new T.Color(appearance.hairStyle==='bob'?'#7e9bb6':'#272727');hair.color.setRGB(hairTarget.r/hairReference.r,hairTarget.g/hairReference.g,hairTarget.b/hairReference.b);
  const meshes=new Map();for(const [name,original]of map){if(name==='bob')continue;const geo=name==='hair'&&appearance.hairStyle==='bob'?map.get('bob'):original;const mat=name==='hair'?hair:name==='eyes'?eyes:name==='torso'?base:name==='pelvis'||name.startsWith('thigh')||name.startsWith('calf')?pants:skin,m=new T.SkinnedMesh(geo,mat);m.name='human:'+name;m.castShadow=m.receiveShadow=true;m.frustumCulled=false;m.userData={role:'anatomy',part:name};g.add(m);m.bind(skeleton,new T.Matrix4());meshes.set(name,m);}
  g.userData.torso=meshes.get('torso');g.userData.pelvis=meshes.get('pelvis');g.userData.head=meshes.get('head');
@@ -53,3 +53,18 @@ export function updateHumanFace(g,time=0,reducedMotion=false){const a=g.userData
 // Keep the exposed distal arm, and remove skin triangles hidden under a sleeve.
 // The overlap beneath the cuff avoids both a shoulder poke-through and a visible cut seam.
 export function maskSleevedSkin(w,g,arm,length){const m=arm.userData.upper;if(!m?.isSkinnedMesh)return;g.updateMatrixWorld(true);const source=m.geometry,indices=[],cut=arm.position.y-length+.55;for(let i=0;i<source.index.count;i+=3){const tri=[source.index.getX(i),source.index.getX(i+1),source.index.getX(i+2)];if(tri.some(n=>m.getVertexPosition(n,new T.Vector3()).y<=cut))indices.push(...tri);}const used=[...new Set(indices)],remap=new Map(used.map((n,i)=>[n,i])),geo=new T.BufferGeometry();for(const [key,a]of Object.entries(source.attributes)){const array=new a.array.constructor(used.length*a.itemSize);used.forEach((n,i)=>array.set(a.array.subarray(n*a.itemSize,(n+1)*a.itemSize),i*a.itemSize));geo.setAttribute(key,new T.BufferAttribute(array,a.itemSize,a.normalized));}geo.setIndex(indices.map(n=>remap.get(n)));w.resources.add(geo);m.geometry=geo;}
+
+// Starter clothing is a character layer, never a catalog or sale item.
+// Reuse the same skinned arm surface; material groups add sleeves without duplicate bodies.
+const starterSleeves=new Map();
+export function addStarterClothing(w,g,material){
+ const anatomy=g.userData.anatomy;if(!anatomy)return;
+ for(const side of ['l','r']){const mesh=anatomy.meshes.get('upper_'+side);if(!mesh)return;let geo=starterSleeves.get(side);
+  if(!geo){geo=mesh.geometry.clone();const b=source.get('upperarm_'+side),a=v(b.head),direction=v(b.tail).sub(a),length=direction.lengthSq(),p=geo.attributes.position,indices=geo.index.array,sleeve=[],skin=[];
+   for(let i=0;i<indices.length;i+=3){const tri=[indices[i],indices[i+1],indices[i+2]],isSleeve=tri.every(j=>new T.Vector3(p.getX(j),p.getY(j),p.getZ(j)).sub(a).dot(direction)/length<.57);(isSleeve?sleeve:skin).push(...tri);}
+   geo.setIndex([...sleeve,...skin]);geo.clearGroups();geo.addGroup(0,sleeve.length,1);geo.addGroup(sleeve.length,skin.length,0);starterSleeves.set(side,geo);
+  }
+  w.resources.add(geo);w.humanSharedResources.add(geo);mesh.geometry=geo;mesh.material=[mesh.material,material];mesh.userData.starterSleeve=true;
+ }
+ const color=material.color.clone().multiplyScalar(.82),collar=w.mesh(new T.TorusGeometry(1.82,.14,6,28),w.mat(color,{roughness:.94}),g);collar.rotation.x=Math.PI/2;collar.position.set(0,43.25,0);collar.scale.y=.77;collar.name='starter-collar';
+}

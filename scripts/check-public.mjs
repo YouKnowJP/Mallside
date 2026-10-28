@@ -3,7 +3,7 @@ import {readFileSync,readdirSync,existsSync} from 'node:fs';
 import {resolve,dirname,relative} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {PRODUCT_PHOTOS}from'../dist/product-photos.js';
-const root=fileURLToPath(new URL('../',import.meta.url)),site=resolve(root,'build/site/Mallside');
+const root=fileURLToPath(new URL('../',import.meta.url)),site=resolve(root,process.argv[2]||'build/site/Mallside');
 const walk=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(resolve(d,e.name)):[resolve(d,e.name)]);
 const files=walk(site),release=JSON.parse(readFileSync(resolve(site,'release.json'),'utf8'));
 assert.equal(release.sourceVisibility,'public');

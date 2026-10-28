@@ -1,0 +1,64 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import * as E from '../dist/engine.js';
+import * as T from '../dist/vendor/three.module.js';
+import {spatialLayout} from '../dist/spatial-layout.js';
+import {walkable,personStop} from '../dist/free-navigation.js';
+import {shopperPlan} from '../dist/mall-neighborhood.js';
+import {MallWorld3D} from '../dist/world-3d.js';
+import {createShopper,applyCharacterPose} from '../dist/character-rig.js';
+import {dressPerson} from '../dist/merchandise-carry.js';
+import {surfaceFinish} from '../dist/mall-atmosphere.js';
+import {buildCollectionRoom,collectionRoomCamera} from '../dist/home-scene.js';
+import {collectionStudioHTML,guestbookHTML} from '../dist/home-ui.js';
+const fresh=()=>{const s=E.createState();s.cash=1000000;return s;};
+function outfit(s){const slots=new Set();for(const p of E.PRODUCTS){const slot=E.slotForProduct(p);if(!E.canTry(p)||!E.SLOT_NAMES[slot]||slots.has(slot)||E.storeById(p.store).tier>E.levelOf(s))continue;E.checkout(s,p.store,[{id:p.id,size:E.idealSize(s,p)}]);E.wear(s,s.purchases.at(-1).id);slots.add(slot);if(slots.size===2)return;}throw Error('No two-slot test outfit');}
+function owner(){return {scene:new T.Scene(),resources:new Set(),textures:new Map(),mat(color,options={}){const m=new T.MeshStandardMaterial({color,...options});this.resources.add(m);return m;},mesh(geo,mat,parent=this.scene){this.resources.add(geo);const m=new T.Mesh(geo,mat);parent.add(m);return m;}};}
+
+test('outfit preparation uses two kept slots once, carries across sleep/reload and applies without a second charge',()=>{
+ let s=fresh();outfit(s);const cash=s.cash,minutes=s.minutes,xp=s.xp,p=E.prepareTomorrow(s);assert.equal(s.minutes,minutes+5);assert.equal(s.cash,cash);assert.equal(s.xp,xp);assert.equal(p.forDay,s.day+1);const repeat=structuredClone(s);assert.throws(()=>E.prepareTomorrow(s),/already/);assert.deepEqual(s,repeat);
+ E.nextDay(s);s=E.validateImport(JSON.stringify(s));const expected=Object.fromEntries(p.items.map(v=>[v.slot,v.id]));s.equipment={};const before=[s.cash,s.minutes,s.xp];E.applyPreparedOutfit(s);assert.deepEqual(s.equipment,expected);assert.deepEqual([s.cash,s.minutes,s.xp],before);
+});
+test('preparation and applying an unavailable plan fail atomically for late, checked, wrapped and wrong-size pieces',()=>{
+ for(const mode of ['late','checked','wrapped','size']){const s=fresh();outfit(s);const item=s.purchases[0];if(mode==='late')s.minutes=E.CLOSE-4;if(mode==='checked')item.checked=true;if(mode==='wrapped')item.giftWrap={style:'sage',fee:200,day:s.day};if(mode==='size')item.size='not-my-size';const before=structuredClone(s);assert.throws(()=>E.prepareTomorrow(s));assert.deepEqual(s,before,mode);}
+ const s=fresh();outfit(s);const plan=E.prepareTomorrow(s);E.nextDay(s);s.purchases.find(i=>i.id===plan.items[1].id).checked=true;s.equipment={};const before=structuredClone(s);assert.throws(()=>E.applyPreparedOutfit(s),/unavailable/);assert.deepEqual(s,before);
+});
+test('guestbook choices, time cost and once-a-day credit are enforced across malls and reloads',()=>{
+ let s=fresh();const start=s.minutes,xp=s.xp,cash=s.cash;E.signGuestbook(s,'curious','garden');assert.equal(s.minutes,start+5);assert.equal(s.xp,xp+10);assert.equal(s.cash,cash);s=E.validateImport(JSON.stringify(s));s.mallId='southcoast';let before=structuredClone(s);assert.throws(()=>E.signGuestbook(s,'inspired','find'),/today/);assert.deepEqual(s,before);
+ E.nextDay(s);s.minutes=E.CLOSE-4;before=structuredClone(s);assert.throws(()=>E.signGuestbook(s,'curious','people'),/time/);assert.deepEqual(s,before);s.minutes=600;assert.throws(()=>E.signGuestbook(s,'<script>','find'));E.signGuestbook(s,'inspired','find');assert.equal(s.guestbook.length,2);
+});
+test('old saves default optional room fields, malformed memories are discarded without changing ownership or wallet',()=>{
+ let s=fresh();outfit(s);const cash=s.cash,ids=s.purchases.map(i=>i.id);delete s.roomStyle;delete s.guestbook;delete s.outfitPlans;s=E.validateImport(JSON.stringify(s));assert.equal(s.roomStyle,'sage');assert.deepEqual(s.guestbook,[]);assert.deepEqual(s.outfitPlans,[]);
+ s.roomStyle='malformed';s.guestbook=[{day:1,mallId:s.mallId,mood:'curious',highlight:'garden'},{day:1,mallId:s.mallId,mood:'inspired',highlight:'find'},{day:999,mallId:s.mallId,mood:'curious',highlight:'people'}];s.outfitPlans=[{day:1,forDay:2,mallId:s.mallId,items:[{slot:'top',id:'missing',productId:'missing'},{slot:'bag',id:'missing',productId:'missing'}]}];s=E.validateImport(JSON.stringify(s));assert.equal(s.guestbook.length,1);assert.equal(s.outfitPlans.length,0);assert.equal(s.cash,cash);assert.deepEqual(s.purchases.map(i=>i.id),ids);
+});
+test('Noor needs new look and plan evidence; the previous three local stories and their completed rewards survive',()=>{
+ const s=fresh();outfit(s);E.saveLook(s,'Before the chapter');E.prepareTomorrow(s);s.localStories.push({id:'noor',choice:'quiet',stage:1,readyDay:1,active:false,history:[{stage:0,day:1,mallId:s.mallId}]});E.beginLocalStory(s,'noor');assert.equal(E.localStory(s,'noor').done,0);E.saveLook(s,'A new combination');assert.equal(E.localStory(s,'noor').tasks[0].count,1);E.nextDay(s);E.prepareTomorrow(s);E.chatTopic(s,'noor','wardrobe');assert.ok(E.localStory(s,'noor').ready);
+ const legacy=fresh();legacy.localStories=['maya','eli','sam'].map(id=>({id,choice:E.LOCAL_STORIES.find(v=>v.id===id).choices[0].id,stage:3,readyDay:2,active:false,history:[0,1,2].map(stage=>({stage,day:1,mallId:legacy.mallId}))}));const restored=E.validateImport(JSON.stringify(legacy));for(const id of ['maya','eli','sam'])assert.ok(E.localStory(restored,id).complete);assert.equal(E.LOCAL_STORIES.length,5);
+});
+test('all five regulars have reachable conversation stops and usable topics on every destination floor',()=>{
+ for(const mall of E.MALLS){const l=spatialLayout(mall,0,E.STORES);assert.equal(l.locals.length,5);for(const n of l.locals){assert.ok(walkable(n,l.nav));assert.ok(personStop(n,l.spawn,l.nav),mall.id+':'+n.id);assert.ok(E.LOCAL_TOPICS[n.id].length>=2);assert.equal(E.FRIEND_STORIES[n.id].length,3);}}
+});
+test('ambient shop targets retain navigable doors plus the actual window facing point',()=>{
+ const l=spatialLayout(E.MALLS[0],0,E.STORES),actors=shopperPlan(l,12);assert.equal(actors.length,12);const stops=actors.flatMap(a=>a.targets.filter(t=>t.face));assert.ok(stops.length>0);for(const t of stops){assert.ok(walkable(t,l.nav));const shop=[...l.rects,...l.units].find(v=>v.id===t.storeId);assert.equal(t.face.x,shop.x+shop.width/2);assert.equal(t.face.y,shop.y+shop.height/2);}
+});
+test('a yielded shopper accumulates only real movement and an idle window browser turns toward its display',()=>{
+ const previous=globalThis.document;globalThis.document={hidden:false,querySelector:()=>null};try{const l=spatialLayout(E.MALLS[0],0,E.STORES),g=new T.Group(),point=l.spawn,now=performance.now();g.position.set(point.x,0,point.y);g.userData={actor:{id:'probe',speed:50,dwell:5,targets:[point]},route:[{x:point.x+1,y:point.y}],routeIndex:0,gaitDistance:7};const w={inside:null,state:E.createState(),peopleLast:now-50,layout:l,avatar:{x:point.x+1,y:point.y},localActors:[],npcs:[g],t:1,canvas:{dataset:{}},overview:false};MallWorld3D.prototype.updatePeople.call(w);assert.equal(g.userData.gaitDistance,7);
+ g.userData.route=[];g.userData.pauseUntil=performance.now()+10000;g.userData.browseTarget={x:point.x+100,y:point.y};w.peopleLast=performance.now()-50;MallWorld3D.prototype.updatePeople.call(w);assert.ok(g.rotation.y>0&&g.rotation.y<Math.PI/2);assert.equal(w.canvas.dataset.browsingShoppers,'1');}finally{globalThis.document=previous;}
+});
+test('room scene displays only available owned catalog models and registers its small geometry/material set',()=>{
+ const s=fresh();outfit(s);E.pinDisplay(s,s.purchases[0].id);E.pinDisplay(s,s.purchases[1].id);s.purchases[1].checked=true;const w=owner();w.player=new T.Group();w.bench=new T.Group();const room=buildCollectionRoom(w,s);assert.deepEqual(room.products,[s.purchases[0].productId]);assert.equal(w.roomProductCount,1);let models=0;w.scene.traverse(o=>{if(o.userData.roomPurchase)models++;});assert.equal(models,1);assert.ok(w.resources.size<300);for(const o of w.scene.children)assert.ok(Number.isFinite(o.position.x));
+});
+test('starter sleeves are skinned character layers and owned tops replace them; writing and seating remain finite',()=>{
+ const w=owner(),g=createShopper(w,'#789283',{}, {},dressPerson);assert.ok(g.userData.anatomy.meshes.get('upper_l').userData.starterSleeve);assert.ok(g.userData.anatomy.meshes.get('upper_r').geometry.groups[0].count>0);for(const kind of ['write','prepare','browse','rest',''])for(const t of [0,.7,2,4]){applyCharacterPose(g,{kind,time:t,seated:kind==='rest'});g.traverse(o=>{assert.ok([o.position.x,o.position.y,o.position.z,o.quaternion.w].every(Number.isFinite));});}applyCharacterPose(g,{kind:'write',time:3,reducedMotion:true});assert.equal(g.userData.rig.headGroup.rotation.x,0);
+ const top=E.PRODUCTS.find(p=>E.slotForProduct(p)==='top'&&E.canTry(p)),dressed=createShopper(w,'#789283',{}, {top},dressPerson);assert.equal(dressed.userData.anatomy.meshes.get('upper_l').userData.starterSleeve,undefined);
+});
+test('room and concierge UI expose costs, named controls, fallbacks and persistent choices',()=>{
+ const s=fresh(),ctx={E,esc:v=>String(v).replaceAll('<','&lt;'),picture:p=>'<img alt="'+p.id+'">'};assert.match(collectionStudioHTML(s,ctx),/5 game minutes/);assert.match(collectionStudioHTML(s,ctx),/Collection room camera/);assert.match(guestbookHTML(s,ctx),/once each day/);E.signGuestbook(s,'unhurried','people');assert.match(guestbookHTML(s,ctx),/Unhurried/);assert.doesNotMatch(guestbookHTML(s,ctx),/data-action="guestbook-sign"/);
+ for(const kind of ['timber','metal','glass','foliage','roof','box']){const f=surfaceFinish(kind);assert.ok(f.roughness>=0&&f.roughness<=1);assert.ok(f.metalness>=0&&f.metalness<=1);}assert.ok(surfaceFinish('metal').roughness<surfaceFinish('timber').roughness);
+});
+
+test('fitting-room exit clears stale route feedback and new navigation cannot replace its reserved return path',()=>{let called=0,message='';const w={destination:{fittingExit:true},path:[{x:1,y:2}],playerFittingRoom:0,fittingExitPending:()=>called++,hint:text=>message=text};MallWorld3D.prototype.arrive.call(w);assert.equal(called,1);assert.equal(w.playerFittingRoom,undefined);assert.equal(w.fittingExitPending,null);assert.equal(w.destination,null);assert.deepEqual(w.path,[]);assert.match(message,/Back on the shop floor/);w.fittingExitPending=()=>{};w.path=[{x:7,y:8}];MallWorld3D.prototype.navigate.call(w,{x:10,y:10},{interaction:'checkout:ross'});assert.deepEqual(w.path,[{x:7,y:8}]);assert.match(message,/Finish returning/);});
+
+test('one owned purchase moves between shelf and outfit without a second visual copy, including saved and prepared looks',()=>{let s=fresh();outfit(s);const id=Object.values(s.equipment)[0],look=E.saveLook(s,'A kept look');E.pinDisplay(s,id);assert.ok(s.displayItems.includes(id));assert.ok(!Object.values(s.equipment).includes(id));E.applyLook(s,look.id);assert.ok(!s.displayItems.includes(id));assert.ok(Object.values(s.equipment).includes(id));E.prepareTomorrow(s);E.pinDisplay(s,id);E.nextDay(s);s=E.validateImport(JSON.stringify(s));E.applyPreparedOutfit(s);assert.ok(!s.displayItems.includes(id));assert.ok(Object.values(s.equipment).includes(id));const held={...s.equipment},slot=E.slotForProduct(E.byId(s.purchases[0].productId)),p=E.PRODUCTS.find(p=>E.canTry(p)&&E.slotForProduct(p)===slot&&p.id!==s.purchases[0].productId&&E.storeById(p.store).tier<=E.levelOf(s));E.checkout(s,p.store,[{id:p.id,size:E.idealSize(s,p)}]);const unopened=s.purchases.at(-1);E.openAndDisplay(s,unopened.id);assert.deepEqual(s.equipment,held);assert.ok(s.displayItems.includes(unopened.id));});
+
+test('whole-room framing keeps all room corners visible and inside the far plane on phones, tablets and desktop',()=>{for(const aspect of [.65,1,1.4,2.9]){const spec=collectionRoomCamera(aspect),camera=new T.PerspectiveCamera(31,aspect,.1,spec.far);camera.position.fromArray(spec.position);camera.lookAt(new T.Vector3(...spec.target));camera.updateMatrixWorld(true);for(const x of [-105,105])for(const y of [0,94])for(const z of [-50,70]){const point=new T.Vector3(x,y,z).project(camera);assert.ok(Math.abs(point.x)<=1&&Math.abs(point.y)<=1,'Room outside camera at '+aspect);assert.ok(point.z>-1&&point.z<1,'Room clipped at '+aspect);}}});

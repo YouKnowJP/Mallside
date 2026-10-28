@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 26.0.0 — A room, a rhythm, a few familiar faces — 28 October 2026
+
+- Added Noor and Jules, six optional multi-day local missions and six friendship chapters.
+- Added a furnished 3D collection room with owned-product shelf models, saved finishes and room/outfit/face cameras.
+- Added next-day outfit preparation/application and a local concierge guestbook with atomic costs and daily reward limits.
+- Improved actual-window shopper pauses and gaze, actual-distance gait, starter-shirt sleeve/collar detail and seated gestures.
+- Added distinct instanced material responses and clearer fitting-room return feedback; retained product references, save keys and ownership rules.
+- Updated privacy information for public source and the new local planning/memory fields.
+
 ## 25.0.3 — Migration cleanup — 28 October 2026
 
 - Clarified editable source versus generated production files, updated current documentation links, and moved retired hosting notes into `docs/history/`.

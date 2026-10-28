@@ -4,7 +4,8 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 
 | Topic | Document |
 | --- | --- |
-| Current stories, services and mall atmosphere | [v25 gameplay](GAMEPLAY-v25.md) |
+| Current stories, collection room and concierge activities | [v26 gameplay](GAMEPLAY-v26.md) |
+| Original local stories and guest services | [v25 gameplay](GAMEPLAY-v25.md) |
 | Daily outings and branch-aware progress | [v24 gameplay](GAMEPLAY-v24.md) |
 | Current validation and remaining work | [Publication QA](QA.md), [v25 gameplay QA](qa-v25.md), [roadmap](../ROADMAP.md) |
 | Gameplay, controls, progression, malls and prior features | [Game guide](GAME_GUIDE.md) |

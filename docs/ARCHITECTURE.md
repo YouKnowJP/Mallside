@@ -5,16 +5,16 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Area | Main modules |
 | --- | --- |
 | Page structure, controls and view lifecycle | `index.html`, `app.js`, `styles.css`, `life-styles.css` |
-| State, economy, needs, progression, inventory and persistence normalization | `engine.js`, `mall-life.js`, `community-stories.js`, `trip-planner.js`, `journey.js` |
+| State, economy, needs, progression, inventory and persistence normalization | `engine.js`, `mall-life.js`, `community-stories.js`, `home-life.js`, `trip-planner.js`, `journey.js` |
 | Store/product identity, branch stock and provenance | `catalog.js`, `playable-stores.js`, `retailer-evidence-v12.js`, `store-product-seeds.js`, `product-photos.js` |
 | Destination footprints and free navigation | `malls.js`, `campus-layout.js`, `campus-model.js`, `campus-routing.js`, `map-navigation.js` |
 | 3D scene and store activity | `world-3d.js`, `shop-interiors.js`, `store-fitout.js`, `store-life.js`, `store-customers.js` |
-| Character anatomy, motion and dressing room | `human-anatomy.js`, `human-model-data.js`, `character-rig.js`, `character-studio.js` |
+| Character anatomy, motion and dressing room | `human-anatomy.js`, `human-model-data.js`, `character-rig.js`, `character-studio.js`, `home-scene.js`, `home-ui.js` |
 | Physical merchandise and fit | `merchandise-3d.js`, `merchandise-fit.js`, `merchandise-garments.js`, `merchandise-bags.js`, reference rules |
 | Lighter graphics and game illustrations | `world.js`, `sprites.js`, `art.js`, `activity-scene.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The v25 UI entry uses `app.js?v=25.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The v26 UI entry uses `app.js?v=26.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -33,3 +33,5 @@ The character is retargeted from CC0 source geometry. Fabric posing and constrai
 `product-photos.js` is the runtime index; the older `assets.json` is a retained historical subset. Do not treat the older JSON as the full current catalog. Catalog branch IDs can reuse one real model and photo. `docs/ASSET_INVENTORY.json` records photo provenance and hashes without asserting copyright clearance. Updating a product/photo requires both identity verification and a rights review.
 
 No backend, database credentials or payment integrations are required. The browser fetches local modules/images and remote Google Fonts, and opens external product references only when a player follows a link.
+
+The collection room reuses the studio renderer and the exact owned-product models. Starter sleeves use shared indexed material groups, without duplicating anatomical meshes or modifying the garment fit envelope. Prepared outfits and guestbook pages are bounded optional version-6 save records; applying a planned look validates every purchase before changing equipment. The room and guestbook have no separate backend.

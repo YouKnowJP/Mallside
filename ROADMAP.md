@@ -2,6 +2,14 @@
 
 Updated 28 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v26
+
+- Noor and Jules add six multi-day local missions and six friendship chapters, retaining the previous completed stories and choices.
+- Furnished 3D collection room, real owned-product shelf models, three saved room finishes and close-up pose/camera controls with the lighter fallback retained.
+- Receipt-backed kept-outfit preparation, next-day application and a persistent local concierge guestbook with bounded daily rewards.
+- Window-facing shopper pauses, actual-distance gait, conversation attention, shared starter-shirt sleeves/collar and gentle seated gestures.
+- Distinct instanced architectural material responses, preserved clothing fit, and clearer fitting-room return feedback.
+
 ## Completed in v25
 
 - Three branching local stories with nine optional chapters, fixed choices, new-action evidence, overnight continuation and one-time rewards.
@@ -20,8 +28,8 @@ Updated 28 October 2026. The game is playable and under active development; this
 
 ## Next gameplay and presentation work
 
-- Expand the new local stories with more conversations and longer consequences; add further multi-day requests beyond the three current arcs.
-- Develop the home/collection space and extend the new gift-wrapping and water interactions with more tactile service activities.
+- Expand the five local stories with more conversations, longer consequences and more varied errands beyond the current three-chapter arcs.
+- Develop the furnished collection room into a walkable home with more meaningful collection arrangements; expand the concierge activities and homeward routine.
 - Continued camera, storefront, lighting, NPC and character/fabric refinement; the current motion is controlled animation rather than complete cloth physics.
 - Additional manual Safari/Firefox and physical phone/tablet testing, broader accessibility verification, and save-recovery improvements.
 

@@ -6,7 +6,11 @@ A shopping-life simulation by **Jackson Pham / YouKnowJP**. Walk through connect
 
 Play directly from the link. Players do not need GitHub, an account, a download, or a payment. All purchases and money inside the game are simulated.
 
-## v25 — people, parcels and a more natural mall
+## v26 — a room, a rhythm, a few familiar faces
+
+Meet Noor and Jules in six new multi-day local missions, with six further friendship chapters. Arrange kept real-product models in a furnished 3D collection room, choose its finish, prepare tomorrow’s outfit and leave a local guestbook memory at concierge. Window-browsing pauses, actual-distance gait, starter-shirt detail and distinct material finishes refine the people and mall. See [v26 gameplay](docs/GAMEPLAY-v26.md), [design references](docs/design-research-v26.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v25 — people, parcels and a more natural mall
 
 Three branching local stories add nine optional multi-day chapters. Wrap a real purchase, deliver Maya’s gift, refill at guest services and save directory route notes. Continuous walking headings, smoother turns, varied adult appearances, changing daylight and layered storefront details improve the 3D scene. See [v25 gameplay](docs/GAMEPLAY-v25.md), [gameplay QA](docs/qa-v25.md), [publication QA](docs/QA.md) and [remaining work](ROADMAP.md).
 

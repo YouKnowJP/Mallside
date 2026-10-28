@@ -16,13 +16,20 @@ const localProducts=s=>E.PRODUCTS.filter(p=>E.storeById(p.store).mallId===s.mall
 const buy=(s,p,size=E.idealSize(s,p))=>{E.checkout(s,p.store,[{id:p.id,size}]);return s.purchases.at(-1);};
 const giftProduct=(s,style=false)=>E.PRODUCTS.find(p=>E.storeById(p.store).tier<=E.levelOf(s)&&!['food','drink'].includes(p.type)&&E.canTry(p)===style&&p.audience!=='child'&&E.price(s,p)+Math.round(E.price(s,p)*E.TAX)<=15000&&!p.finalSale);
 function experience(s,id){const spec=E.experienceSpec(s,id),choices={bridge:{details:spec.garden},artwalk:{order:spec.art},flowers:{stems:spec.flower.recipe},tea:{base:spec.tea.base,temperature:spec.tea.temperature,minutes:spec.tea.minutes},cinema:{film:spec.film.id,seat:2,scenes:[0,1,2]},carousel:{horse:2}};E.completeExperience(s,id,choices[id]);}
+function keptLook(s){
+ if(Object.keys(s.equipment).length>=2)return;
+ const slots=new Set();for(const p of localProducts(s)){const slot=E.slotForProduct(p);if(!E.canTry(p)||!E.SLOT_NAMES[slot]||slots.has(slot))continue;const item=buy(s,p);E.wear(s,item.id);slots.add(slot);if(slots.size===2)break;}
+}
 function finishTasks(s,id){let gift=null;for(const t of E.localStory(s,id).tasks){
  if(t.type==='inspect'){const seen=new Set();for(const p of localProducts(s)){const key=E.modelKey(p);if(seen.has(key))continue;E.inspect(s,p.id);seen.add(key);if(seen.size===t.target)break;}}
  else if(t.type==='visit')for(const st of E.STORES.filter(st=>st.mallId===s.mallId&&st.tier<=E.levelOf(s)).slice(0,t.target))E.visit(s,st.id);
  else if(t.type==='talk')E.chatTopic(s,id,E.LOCAL_TOPICS[id][0].id);
  else if(t.type==='rest')E.rest(s);
  else if(t.type==='photo')E.takePhoto(s);
- else if(t.type==='amenity')E.useAmenity(s,t.values[0]);
+ else if(t.type==='amenity'){if(t.values[0]==='guestbook')E.signGuestbook(s,'curious','people');else E.useAmenity(s,t.values[0]);}
+ else if(t.type==='look'){keptLook(s);E.saveLook(s,'Tomorrow, together');}
+ else if(t.type==='plan'){keptLook(s);E.prepareTomorrow(s);}
+ else if(t.type==='display'){keptLook(s);E.pinDisplay(s,Object.values(s.equipment)[0]);}
  else if(t.type==='activity')experience(s,t.values[0]);
  else if(t.type==='gift'){const p=giftProduct(s,E.localStory(s,id).record.choice==='style');E.inspect(s,p.id);gift=buy(s,p);E.wrapGift(s,gift.id,'rose');}
  }return gift;}
@@ -77,7 +84,7 @@ test('all ten malls can begin the local stories without changing existing catalo
 });
 
 test('local cards escape names and expose explicit task, wrapping fee and next-day feedback',()=>{
- const s=fresh(),esc=x=>String(x).replaceAll('<','&lt;'),ctx={E,esc,picture:p=>'<img alt="'+p.id+'">'};assert.match(communityBoard(s,ctx),/NINE OPTIONAL MISSIONS/);E.beginLocalStory(s,'sam','practical');assert.match(localChapterCard(s,'sam',ctx),/Follow this chapter/);assert.match(localChapterCard(s,'sam',ctx),/0 \/ 1/);assert.match(wrappingDesk(s,ctx,'sage'),/not refundable/);
+ const s=fresh(),esc=x=>String(x).replaceAll('<','&lt;'),ctx={E,esc,picture:p=>'<img alt="'+p.id+'">'};assert.match(communityBoard(s,ctx),/15 OPTIONAL MISSIONS/);E.beginLocalStory(s,'sam','practical');assert.match(localChapterCard(s,'sam',ctx),/Follow this chapter/);assert.match(localChapterCard(s,'sam',ctx),/0 \/ 1/);assert.match(wrappingDesk(s,ctx,'sage'),/not refundable/);
 });
 
 test('continuous heading follows diagonals, stays put at rest and turns the shortest way across wraparound',()=>{

@@ -1,8 +1,8 @@
 import {turnToward} from './motion.js?v=25.0.0';
-import {adultAppearance} from './mall-atmosphere.js?v=25.0.0';
-import {attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=23.0.0';
+import {adultAppearance} from './mall-atmosphere.js?v=26.0.0';
+import {attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=26.0.0';
 import {physicalProduct} from './merchandise-3d.js?v=23.0.0';
-import {applyCharacterPose,solveArmToGrip} from './character-rig.js?v=25.0.0';
+import {applyCharacterPose,solveArmToGrip} from './character-rig.js?v=26.0.0';
 import * as T from './vendor/three.module.js';
 import {createStoreCustomers,updateStoreCustomers,customerActivity} from './store-customers.js?v=23.0.0';
 import {slotForProduct} from './malls.js?v=23.0.0';
