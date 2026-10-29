@@ -1,6 +1,6 @@
 {
   "name": "mallside",
-  "version": "28.0.1",
+  "version": "29.0.0",
   "private": true,
   "description": "Mallside \u2014 a browser shopping-life simulation by Jackson Pham / YouKnowJP",
   "type": "module",

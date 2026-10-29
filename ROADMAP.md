@@ -2,6 +2,14 @@
 
 Updated 28 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v29
+
+- Tap-to-step and hold-to-walk controls, explicit Stop, larger targets and a separate control rail; portrait/tablet/landscape layouts retain usable movement controls.
+- Canvas-scoped keyboard input, safe pointer cancellation/capture loss, multi-touch guards and input cleanup on focus/visibility changes.
+- Skip link, current-page navigation, inert dialog backgrounds, drawer focus return, consistent Tab loops and preserved browser shortcuts.
+- Stronger UI text contrast and clearer locked-achievement labels; compact clock pause/resume and expanded small-screen shop directories/interiors.
+- Touch-capable Chromium emulation, 320–844px layouts, larger text, short form viewports, selected axe-core audits and regression tests. See [v29 QA](docs/qa-v29.md). Physical devices and manual screen-reader certification remain open.
+
 ## Completed in v28
 
 - Separate last-known-good local backups for career and free shop, with validated writes and unchanged primary save keys/schema.

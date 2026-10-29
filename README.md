@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v28 — a safer shopping life
+## v29 — easier to play by touch and keyboard
+
+Tap a direction to step, hold to walk, or use the new Stop button. Larger walking controls sit below the map; Map & camera contains floor, zoom and fullscreen tools. Keyboard movement stays with the focused canvas, drawers return focus to their opener, and dialogs keep the background inactive. Stronger text contrast, a full-width clock pause control and more room for small-screen directories improve everyday play. Existing saves remain compatible. See [controls and accessibility](docs/GAMEPLAY-v29.md), [release QA](docs/qa-v29.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v28 — a safer shopping life
 
 Each mode now keeps a separate last-known-good backup. Unreadable saves open a paused recovery screen with a reviewed restore, raw-data download, JSON import and a confirmed fresh start. Storage failures show a persistent warning; another tab’s changes pause stale saving. Existing saves keep their keys and version-6 format, with earlier migrations retained. See [save recovery](docs/GAMEPLAY-v28.md), [release QA](docs/qa-v28.md) and [remaining work](ROADMAP.md).
 

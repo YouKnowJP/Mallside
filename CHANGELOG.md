@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 29.0.0 — Touch, keyboard and small-screen access — 28 October 2026
+
+- Added tap-to-step, hold-to-walk and Stop controls outside the map overlay, with larger targets and collapsible map/camera tools.
+- Confined walking keys to map focus, preserved modified browser shortcuts, and stopped stale pointer/key input on cancellation, capture loss, blur and hidden tabs.
+- Added skip navigation, current-page labels, dialog background isolation, drawer focus restoration and camera-tool Escape behavior.
+- Improved UI text contrast, locked-achievement status labels, the clock pause/resume target, short form viewports and narrow shop-directory/interior layouts.
+- Added nine input regressions and exercised native touch events in Chromium mobile emulation, keyboard paths, portrait/tablet/landscape layouts, larger text and selected automated accessibility rules. Save schema 6, economy, purchases and photo assets are retained.
+
 ## 28.0.1 — Native recovery testing and Safari keyboard fix — 28 October 2026
 
 - Fixed Safari skipping the recovery import-review button when tabbing from the JSON textarea. Dialogs now advance and wrap focus explicitly for Tab and Shift-Tab.

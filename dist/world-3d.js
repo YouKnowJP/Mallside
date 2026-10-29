@@ -15,7 +15,7 @@ import {buildInteriorArchitecture,buildProductFixture} from './interior-art.js?v
 import {onSurface} from './free-navigation.js?v=25.0.0';
 import {shopProfile,departmentOf,displaySelection,displayPoint} from './shop-interiors.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
-import {MallWorld} from './world.js?v=26.0.0';
+import {MallWorld} from './world.js?v=29.0.0';
 import {spatialLayout,interiorLayout} from './spatial-layout.js?v=26.0.0';
 import {walkable,closestFloor,freeRoute,freeMove,clearWalk,personStop} from './free-navigation.js?v=25.0.0';
 import {isServiceStore,serviceMenu,STORES,PRODUCTS,CLOSE,mallOf,equippedLook,slotForProduct,money,price,savedBags} from './engine.js?v=27.0.0';
