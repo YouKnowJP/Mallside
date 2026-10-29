@@ -2,7 +2,7 @@ import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=3
 import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
 import {retailIdentity,drawRetailSign} from './retail-identity.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
-import {themeFor,facadeFrame} from './mall-design.js?v=34.0.0';
+import {themeFor,facadeFrame} from './mall-design.js?v=35.0.0';
 import {brandDesign} from './brand-designs.js?v=23.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
@@ -53,6 +53,7 @@ export function buildMallGround(w,l){
  const c=l.campus,theme=themeFor(l.family),canvas=createMallGroundCanvas(l);
  const texture=new T.CanvasTexture(canvas);texture.colorSpace=T.SRGBColorSpace;texture.anisotropy=4;w.resources.add(texture);const grain=stoneDetailTexture(c.width,c.height);w.resources.add(grain);const material=w.mat('#ffffff',{map:texture,roughness:c.outdoor?.75:.4,envMapIntensity:c.outdoor?.45:.85,roughnessMap:grain,bumpMap:grain,bumpScale:c.outdoor?.22:.1}),floor=w.mesh(new T.PlaneGeometry(c.width,c.height),material);floor.rotation.x=-Math.PI/2;floor.position.set(c.width/2,-.5,c.height/2);floor.castShadow=false;
  // The playable footprint has thickness, rather than floating as a white ribbon.
+ if(c.outdoor&&(w.state.floor||0)===0){const ground=w.mesh(new T.PlaneGeometry(c.width+600,c.height+600),w.mat('#9aab88',{roughness:1,map:surfaceTexture(w,'stone')}));ground.rotation.x=-Math.PI/2;ground.position.set(c.width/2,-9.3,c.height/2);ground.castShadow=false;ground.userData.role='landscape-ground';}
  const base=new Details(w);for(const h of c.halls){const a=c.nodes[Number(h.a)],b=c.nodes[Number(h.b)],length=Math.hypot(b.x-a.x,b.y-a.y),angle=Math.atan2(b.x-a.x,b.y-a.y);base.box((a.x+b.x)/2,-5,(a.y+b.y)/2,h.width+310,8,length,theme.stone,angle);}base.flush();
  w.scene.background=new T.Color(theme.sky);w.sceneFog=new T.Fog(theme.sky,1350,4200);w.scene.fog=w.sceneFog;
  return theme;
@@ -137,6 +138,10 @@ export function buildPublicRealm(w,l,theme){
    if(p.amenity==='water'){b.box(x,38,z-6,20,12,6,'#647b78');b.box(x,32,z+3,18,2,16,'#bac8c1');for(const dx of [-5,5]){b.cylinder(x+dx,34,z+2,1,4,'#d1dbd3');b.box(x+dx,37,z,2,2,5,'#abc8c3');}b.cylinder(x+8,38,z+6,2,7,'#f5eedc');b.box(x,47,z-6,14,3,2,'#a0c7c5');}
    else{for(const dx of [-9,9])b.box(x+dx,42,z-6,2,48,2,theme.trim);b.box(x,51,z-6,25,27,3,'#567369');for(let i=0;i<3;i++)b.box(x-7+i*7,51+(i%2)*3,z-3.9,6,12,1,['#ead3a3','#f3e9ce','#d4c4d9'][i]);b.box(x,66,z-6,29,3,7,theme.trim);}
    const key='amenity:'+p.amenity,hit=w.box(x,31,z,26,64,24,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(p.amenity==='water'?'Free water ↗':'Community board ↗',x,80,z,78,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:130,directory:true});
+   }else if(p.kind==='art'){
+   b.box(x,3,z,29,6,29,theme.stone);b.box(x,7,z,23,2,23,theme.trim);
+   for(const [i,color]of ['#b38860','#5e8b80'].entries()){const ring=w.mesh(new T.TorusGeometry(11,2.5,6,28),w.mat(color,{roughness:.36,metalness:.5}));ring.position.set(x+(i?3:-3),23,z);ring.rotation.set(.25,i?-.7:.7,i?.3:-.3);w.tag(ring,'art:'+p.id,p.approach);}
+   const label=w.label('Sculpture alcove ↗',x,65,z,95,theme.accent);w.tag(label,'art:'+p.id,p.approach);w.nearLabels.push({object:label,x,z,radius:160,directory:true});
   }else if(p.kind==='commons'){
    b.box(x,13,z,26,26,26,theme.stone);b.box(x,27,z,30,2,30,theme.trim);
    if(p.activity==='garden'){b.box(x,29,z,25,3,25,'#6f7957');for(const [dx,dz]of [[-6,5],[6,5],[0,-6]]){b.leaf(x+dx,39,z+dz,9,theme.plant,.7,1,.7);b.leaf(x+dx,46,z+dz,4,theme.flowers);}}
@@ -176,7 +181,7 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
- const count=b.flush();w.canvas.dataset.environmentRevision='34';w.canvas.dataset.waystationCount=String(d.fixtures.filter(f=>f.amenity).length);w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
+ const count=b.flush();w.canvas.dataset.environmentRevision='35';w.canvas.dataset.artAlcoves=String(d.fixtures.filter(f=>f.kind==='art').length);w.canvas.dataset.waystationCount=String(d.fixtures.filter(f=>f.amenity).length);w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 
 export function buildAnchor(w,a,theme){

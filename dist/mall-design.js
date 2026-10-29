@@ -61,6 +61,13 @@ export function furnishCampus(layout){
    if(!r.approach){fixtures.pop();layout.nav.obstacles.pop();continue;}r.id='waystation-'+amenity;r.amenity=amenity;protectedPoints.push(r.approach);placed=true;break;
   }if(placed)break;}
  }
+ for(const n of [...c.courts].reverse()){
+  let placed=false;for(const radius of [100,80,60,115])for(let i=0;i<24&&!placed;i++){
+   const angle=i*Math.PI/12,x=n.x+Math.cos(angle)*radius,y=n.y+Math.sin(angle)*radius,r=add('art',x,y,30,30,0,n.id);if(!r)continue;
+   r.approach=[{x,y:y+38},{x:x+38,y},{x,y:y-38},{x:x-38,y}].find(p=>walkable(p,layout.nav,10)&&clearWalk(closestFloor(n,layout.nav),p,layout.nav,10));
+   if(!r.approach){fixtures.pop();layout.nav.obstacles.pop();continue;}r.id='art-alcove';protectedPoints.push(r.approach);placed=true;break;
+  }if(placed)break;
+ }
  for(const [i,n]of c.courts.entries()){
   const venue=['coffee','photo','flowers','popup'][i%4];if(!layout.venues.some(v=>v.id===venue))continue;
   for(const [dx,dy]of [[-46,46],[46,-46],[46,46],[-46,-46]]){

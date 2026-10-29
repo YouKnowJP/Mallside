@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {ROOM_STYLES} from './home-life.js?v=26.0.0';
-import {owned,byId} from './engine.js?v=34.0.0';
+import {owned,byId} from './engine.js?v=35.0.0';
 import {placeMerchandise} from './merchandise-3d.js?v=23.0.0';
 // A small original room; every displayed product is an owned catalog purchase.
 export function buildCollectionRoom(w,state){

@@ -166,3 +166,18 @@ html{scroll-behavior:auto}
 .shop-finder-quick{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.shop-finder-quick .button{flex:1;white-space:normal;padding:10px}.shop-finder-quick [aria-pressed=true]{background:#3e6253;color:#fff9e8;border-color:#3e6253}
 /* Keep shop exits reachable while long collections and guides scroll. */
 .store-exit-strip{position:sticky;bottom:0;z-index:5}.store-exit-strip .button{min-height:44px}
+
+/* v35: small original dining rooms and a readable discovery sketchbook. */
+.dining-intro{padding:8px 0 22px;border-bottom:1px solid var(--line,#d8d9cb)}
+.dining-intro h3{font-size:clamp(24px,4vw,34px);margin:8px 0 12px}
+.dining-menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0}
+.dining-menu article{display:flex;flex-direction:column;align-items:flex-start;padding:20px;border:1px solid #d9d7c8;border-radius:18px;background:#fbf6e9}
+.dining-menu h3{font-size:19px;line-height:1.3;margin:10px 0}
+.dining-menu p{font-size:13px;line-height:1.6;flex:1}
+.dining-menu .button{white-space:normal;min-height:44px}
+.meal-symbol{display:grid;place-items:center;width:62px;height:62px;border-radius:50%;color:#4e6c5d;background:#e0e7d5;font-size:36px}
+.sculpture-illustration{display:flex;justify-content:center;align-items:center;height:145px;margin-bottom:20px;border-radius:16px;background:linear-gradient(160deg,#e9eadb,#cfddcf)}
+.sculpture-illustration i{display:block;width:57px;height:103px;border:13px solid #b38860;border-radius:50%;transform:rotate(-24deg);box-shadow:9px 12px 15px #334e4320}
+.sculpture-illustration i+i{margin-left:-17px;border-color:#5e8b80;transform:rotate(27deg)}
+.art-note{padding:18px 0;border-bottom:1px solid #d8d9cb}
+@media(max-width:620px){.dining-menu{grid-template-columns:1fr}.dining-menu article{padding:18px}.dining-menu .meal-symbol{width:46px;height:46px;font-size:28px}.dining-room .service-links{flex-wrap:wrap}.dining-room .service-links .button{flex:1 1 150px}}

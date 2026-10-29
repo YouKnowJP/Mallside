@@ -1,5 +1,5 @@
 import {closestFloor} from './free-navigation.js?v=25.0.0';
-import {themeFor} from './mall-design.js?v=34.0.0';
+import {themeFor} from './mall-design.js?v=35.0.0';
 import {surfaceTexture} from './scene-finish.js?v=33.0.0';
 import * as T from './vendor/three.module.js';
 

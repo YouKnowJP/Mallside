@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 35.0.0 — Dining rooms and quiet discoveries — 29 October 2026
+
+- Add clearly labeled original game dining at all 249 food branches, including 91 research-only locations, with reviewed costs, charges on arrival, route cancellation, lightweight-mode support and bounded saved visit history.
+- Furnish research-only dining rooms with timber tables, chairs, place settings and planting; make visible guide/dining tables solid and remove invisible stock fixtures from shops without products.
+- Add 23 reachable original sculpture alcoves, mapped sketch interactions and a saved per-floor notebook with daily limits and first-visit-only XP; add landscaped ground below outdoor sites.
+- Repair legacy research-shop returns so receipts reach the actual desk and preserve the existing refund checks; clarify dining, collection and return options while retaining pinned exits.
+- Ease semantic character gestures, reuse static hand solutions and keep nearby ambient visitors in their seats.
+- Keep save keys/schema 6, catalog evidence and existing product identities compatible. See [v35 QA](docs/qa-v35.md) for final validation and cleanup.
+
 ## 34.0.0 — Useful corners and shop guides — 29 October 2026
 
 - Add 46 reachable water and community notice waystations across all 23 floors, with original physical detail, map destinations and illustrated fallback symbols; retain existing cooldown/reward limits and discovery activities.

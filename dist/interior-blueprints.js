@@ -32,13 +32,15 @@ export function makeInteriorPlan(store,plan,visibleCount=Math.min(6,store.count|
  // Real walls bound two enterable fitting cubicles. The doorways remain open in navigation.
  const fittingWalls=[{x:fitting.x,y:fitting.y,width:140,height:5},...[0,68,136].map(dx=>({x:fitting.x+dx,y:fitting.y,width:4,height:90}))];
  const fittingRooms=[34,104].map((dx,i)=>({id:i,x:fitting.x+dx,y:fitting.y+48,wait:{x:fitting.x+dx,y:258}}));
- const stockFixtures=visibleCount?[-1,1].flatMap(side=>[275,410,550].map((y,i)=>({id:'wall-'+side+'-'+i,kind:'wall',side,x:side<0?198:974,y,width:28,height:i===2?60:90}))):[];
+ // Auxiliary stock fixtures are only rendered when this shop has product stock.
+ const noProductStock=!store.count;
+ const stockFixtures=visibleCount&&!noProductStock?[-1,1].flatMap(side=>[275,410,550].map((y,i)=>({id:'wall-'+side+'-'+i,kind:'wall',side,x:side<0?198:974,y,width:28,height:i===2?60:90}))):[];
  const fixtures=[...displays.slice(0,visibleCount),checkout,returns,...fittingWalls,rail,...seating,...decor,...stockFixtures];
  const services={checkout:{x:checkout.x+checkout.width/2,y:734},returns:{x:returns.x+returns.width/2,y:734},fitting:{x:fitting.x+fitting.width/2,y:246},associate:{x:mirrored?745:445,y:630}};
  // Extra double-sided rails/islands fill the gaps between display columns, never their approaches.
  const overlaps=(a,b,pad=16)=>a.x<b.x+b.width+pad&&a.x+a.width>b.x-pad&&a.y<b.y+b.height+pad&&a.y+a.height>b.y-pad;
- for(const x of [432,714]){const r={id:'island-'+x,kind:'island',x,y:325,width:52,height:160};if(!fixtures.some(f=>overlaps(r,f)))stockFixtures.push(r),fixtures.push(r);}
- if(visibleCount){const r={id:'front-edit',kind:'feature',x:525,y:612,width:150,height:45};if(!fixtures.some(f=>overlaps(r,f)))stockFixtures.push(r),fixtures.push(r);}
+ for(const x of noProductStock?[]:[432,714]){const r={id:'island-'+x,kind:'island',x,y:325,width:52,height:160};if(!fixtures.some(f=>overlaps(r,f)))stockFixtures.push(r),fixtures.push(r);}
+ if(visibleCount&&!noProductStock){const r={id:'front-edit',kind:'feature',x:525,y:612,width:150,height:45};if(!fixtures.some(f=>overlaps(r,f)))stockFixtures.push(r),fixtures.push(r);}
  const nav={bounds:{left:190,top:110,right:1010,bottom:790},obstacles:fixtures},spawn={x:600,y:735};
  stockFixtures.forEach(r=>r.approach=r.kind==='wall'?{x:r.side<0?r.x+r.width+20:r.x-20,y:r.y+r.height/2}:{x:r.x+r.width/2,y:r.y+r.height+20});
  const queue=[0,1,2].map(i=>({x:services.checkout.x+(mirrored?1:-1)*(55+i*45),y:744}));

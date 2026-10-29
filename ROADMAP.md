@@ -2,6 +2,14 @@
 
 Updated 29 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v35
+
+- Original, clearly labeled game dining at 249 food branches, including 91 research-only locations; furnished tables, reviewed charges on arrival, cancellation, lightweight-mode support and compatible visit history.
+- Reachable original sculpture alcoves on all 23 floors, mapped observations and a saved sketchbook with bounded daily/first-visit rewards; landscaped ground beneath outdoor sites.
+- Repair research-shop legacy returns, match guide/dining table collision to visible furniture, and clarify dining versus researched-product controls.
+- Ease character gesture transitions, cache static hand solutions and retain nearby ambient visitors’ seats.
+- See [v35 gameplay](docs/GAMEPLAY-v35.md) and [v35 QA](docs/qa-v35.md).
+
 ## Completed in v34
 
 - Water refill and community notice waystations on all 23 floors: 46 reachable, mapped physical interactions using the existing safe cooldown/reward rules.
@@ -97,12 +105,12 @@ Updated 29 October 2026. The game is playable and under active development; this
 
 - Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
 - Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
-- Continued camera, storefront, lighting, NPC and character/fabric refinement, including high-neck and sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
+- Continued camera, storefront, lighting, NPC spacing around compact courts and character/fabric refinement, including high-neck and sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
 - Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, and broader accessibility verification. The desktop Safari/Firefox matrix is complete for the recorded versions.
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,015 stocked identities, 133 service identities and 450 identities awaiting catalog research**. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,015 stocked identities, 133 service identities and 450 identities awaiting catalog research**. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

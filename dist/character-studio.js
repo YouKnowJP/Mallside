@@ -1,13 +1,13 @@
 import {installReflection} from './scene-finish.js?v=33.0.0';
 import {patchAmbientLighting} from './render-compat.js?v=31.0.0';
-import {buildCollectionRoom,collectionRoomCamera,homeWalkRoute} from './home-scene.js?v=34.0.0';
+import {buildCollectionRoom,collectionRoomCamera,homeWalkRoute} from './home-scene.js?v=35.0.0';
 import {turnToward} from './motion.js?v=34.0.0';
-import {stowHandhelds} from './merchandise-carry.js?v=34.0.0';
+import {stowHandhelds} from './merchandise-carry.js?v=35.0.0';
 import * as T from './vendor/three.module.js';
-import {createShopper} from './character-rig.js?v=34.0.0';
-import {dressPerson} from './merchandise-carry.js?v=34.0.0';
-import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=34.0.0';
-import {equippedLook} from './engine.js?v=34.0.0';
+import {createShopper} from './character-rig.js?v=35.0.0';
+import {dressPerson} from './merchandise-carry.js?v=35.0.0';
+import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=35.0.0';
+import {equippedLook} from './engine.js?v=35.0.0';
 
 // The dressing room uses the same rig, products and pose solver as the mall.
 patchAmbientLighting(T.ShaderChunk);

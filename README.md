@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v34 — useful corners and shop guides
+## v35 — dining rooms and quiet discoveries
+
+Original game dining makes all 249 food locations useful, including 91 research-only branches. Furnished dining rooms, 23 sculpture alcoves and a persistent sketchbook give quiet areas more to do. Research-shop returns now reach the proper desk, table collision matches the furniture, and character gestures ease smoothly while nearby visitors keep their seats. Existing saves remain compatible. See [v35 gameplay](docs/GAMEPLAY-v35.md), [release QA](docs/qa-v35.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v34 — useful corners and shop guides
 
 Water refill stations and community noticeboards add 46 reachable stops across all 23 public floors. Seated visitors, original information galleries and more varied character gestures make the quiet areas more useful. Research-only shops now offer an associate route, verified alternatives and a saved-shop list instead of empty fitting/checkout options. Walking poses ease smoothly while input release still stops movement immediately. Existing saves remain compatible. See [v34 gameplay](docs/GAMEPLAY-v34.md), [release QA](docs/qa-v34.md) and [remaining work](ROADMAP.md).
 

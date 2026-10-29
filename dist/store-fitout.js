@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {productAppearance} from './product-appearance.js?v=23.0.0';
-import {slotForProduct,money,price} from './engine.js?v=34.0.0';
+import {slotForProduct,money,price} from './engine.js?v=35.0.0';
 import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=23.0.0';
 
 const clothes=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);

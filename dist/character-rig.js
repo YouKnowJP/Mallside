@@ -40,11 +40,16 @@ export function retargetLimbGroup(group,{x=.5,y=1,z=.55}={}){group.traverse(o=>{
 
 export function solveTwoBone(down,forward,upper,lower,reverse=false){const r=clamp(Math.hypot(down,forward),.05,upper+lower-.0001),theta=Math.atan2(forward,down),alpha=Math.acos(clamp((upper*upper+r*r-lower*lower)/(2*upper*r),-1,1)),bend=Math.PI-Math.acos(clamp((upper*upper+lower*lower-r*r)/(2*upper*lower),-1,1));return {upper:-theta+(reverse?alpha:-alpha),lower:reverse?-bend:bend};}
 export function solveArmToGrip(g,index,y,z=7.5,x=null){
- const arm=g.userData.limbs[index],a=arm.userData;if(!a.elbow)return;const desired=new T.Vector3(x??arm.position.x,y,z),wrist=desired.clone(),origin=arm.position.clone(),total=a.upperLength+a.lowerLength;
+ const arm=g.userData.limbs[index],a=arm.userData;if(!a.elbow)return;
+ // The solve is root-local. Static hands reuse an exact target solution across root movement.
+ const signature=[x??arm.position.x,y,z,...arm.position,...arm.scale,...a.elbow.position,...a.elbow.scale,...a.hand.position,...a.hand.quaternion,...a.hand.scale,...a.grip.position,...a.grip.quaternion,...a.grip.scale,a.upperLength,a.lowerLength].join(',');
+ if(a.gripSolution?.signature===signature){arm.quaternion.copy(a.gripSolution.upper);a.elbow.quaternion.copy(a.gripSolution.lower);a.gripCacheHits=(a.gripCacheHits||0)+1;return;}
+ const desired=new T.Vector3(x??arm.position.x,y,z),wrist=desired.clone(),origin=arm.position.clone(),total=a.upperLength+a.lowerLength;
  for(let pass=0;pass<4;pass++){
   const d=wrist.clone().sub(origin),r=Math.max(.05,Math.min(total-.001,d.length()));d.normalize();const along=(a.upperLength*a.upperLength-a.lowerLength*a.lowerLength+r*r)/(2*r),height=Math.sqrt(Math.max(0,a.upperLength*a.upperLength-along*along)),bend=new T.Vector3(0,-1,0).addScaledVector(d,d.y);if(bend.lengthSq()<.001)bend.set(0,0,-1);bend.normalize();const elbow=origin.clone().addScaledVector(d,along).addScaledVector(bend,height),end=origin.clone().addScaledVector(d,r),q1=new T.Quaternion().setFromUnitVectors(new T.Vector3(0,-1,0),elbow.clone().sub(origin).normalize()),q2=new T.Quaternion().setFromUnitVectors(new T.Vector3(0,-1,0),end.sub(elbow).normalize());arm.quaternion.copy(q1);a.elbow.quaternion.copy(q1.clone().invert().multiply(q2));
   g.updateMatrixWorld(true);const actual=g.worldToLocal(a.grip.getWorldPosition(new T.Vector3()));wrist.add(desired.clone().sub(actual));
  }
+ a.gripSolution={signature,upper:arm.quaternion.clone(),lower:a.elbow.quaternion.clone()};
 }
 function levelFoot(g,leg){const foot=leg.userData.foot;if(!foot)return;foot.rotation.set(-leg.rotation.x-leg.userData.knee.rotation.x,0,0);}
 export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=false,blend=1,kind='',reducedMotion=false,seatHeight=15,attention=g.userData.attention||0,delta=0}={}){
@@ -61,4 +66,9 @@ export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=fal
  if(elevated!==null){g.position.y=elevated;if(kind==='carousel')for(const leg of g.userData.limbs.slice(2)){leg.rotation.x=-1.05;leg.userData.knee.rotation.x=1.2;levelFoot(g,leg);}}
  if(['write','prepare'].includes(kind))for(let i=0;i<2;i++)solveArmToGrip(g,i,31.5+(i&& !reducedMotion?Math.sin(time*4)*.3:0),11);
  if(kind==='wrap')for(let i=0;i<2;i++)solveArmToGrip(g,i,31+(reducedMotion?0:Math.sin(time*2+i)*.6),11);const idle=reducedMotion?0:Math.sin(time*1.1+(g.userData.anatomy?.seed||0))*.045;rig.headGroup.rotation.x=reducedMotion?0:['wrap','write','prepare'].includes(kind)?.12:move?0:Math.sin(time*.8)*.012;rig.headGroup.rotation.y=reducedMotion?0:move?Math.sin(phase*Math.PI*2)*.018:idle+clamp(Number.isFinite(attention)?attention:0,-.28,.28);rig.headGroup.rotation.z=move?-Math.sin(phase*Math.PI*2)*.018*weight:0;if(!reducedMotion&&['browse','compare','pay'].includes(kind))rig.headGroup.rotation.x=.10+Math.sin(time*.7)*.018;else if(!reducedMotion&&['talk','greet'].includes(kind))rig.headGroup.rotation.x=Math.sin(time*1.4)*.025;rig.pose={seated:amount,walking:move,gaitWeight:weight,phase,seatHeight,kind};updateHumanFace(g,time,reducedMotion);const grasp=[0,0];if(['eat','drink','icecream','tea'].includes(kind))grasp[1]=.85;if(kind==='write')grasp[1]=.3;for(const entry of g.userData.gravityAttachments||[])if(entry.holder.visible&&amount<.5)grasp[g.userData.limbs.indexOf(entry.limb)]=1;poseHumanHands(g,grasp);
+ // Ease semantic gesture changes from the last rendered pose, without delaying walking input.
+ const semantic=(seated?'seated:':'')+(kind|| (walking?'walk':'idle')),arms=g.userData.limbs.slice(0,2),joints=arms.flatMap(a=>[a,a.userData.elbow]);
+ if(delta>0&&!reducedMotion){if(rig.lastSemantic!==semantic){rig.gestureFrom=rig.lastArms?.map(q=>q.clone());rig.gestureTime=0;}if(rig.gestureFrom){rig.gestureTime+=Math.min(.1,delta);const t=Math.min(1,rig.gestureTime/.28),ease=t*t*(3-2*t);joints.forEach((j,i)=>j.quaternion.copy(rig.gestureFrom[i].clone().slerp(j.quaternion,ease)));if(t===1)rig.gestureFrom=null;}}
+ else rig.gestureFrom=null;
+ rig.lastSemantic=semantic;rig.lastArms=joints.map(j=>j.quaternion.clone());
 }
