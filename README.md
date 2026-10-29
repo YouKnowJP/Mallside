@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v30 — an afternoon with a familiar face
+## v31 — a clearer shopping day
+
+A larger play scene, searchable stocked-shop finder, persistent shopping guide and explicit Browse, Bag and Exit actions make the shopping loop easier to follow. The game menu brings missions, memories, purchases, receipts, destinations and saves together. Interactive map destinations, safer shop transitions, smoother walking/camera movement and a viewport-filling fullscreen layout improve exploration; gallery lighting, hanging planting and actual floor diagrams add detail. Existing saves remain compatible. See [v31 gameplay](docs/GAMEPLAY-v31.md), [release QA](docs/qa-v31.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v30 — an afternoon with a familiar face
 
 Return after a local story’s five chapters for ten shared activities across Maya, Eli, Noor, Jules and Sam. Choose the details of a card, a listening club, a color palette or a welcoming route, with replies that remember your earlier story path. Partial choices survive sleep and travel, and the Journal keeps your latest shared afternoons. Activities require no purchase; one shared memory per day grants 20 XP. Existing saves stay compatible. See [shared afternoons](docs/GAMEPLAY-v30.md), [release QA](docs/qa-v30.md) and [remaining work](ROADMAP.md).
 

@@ -97,7 +97,13 @@ export function buildStorefronts(w,units,theme){
  }
  b.owner=null;return b.flush();
 }
-function directoryTexture(w,theme){const c=document.createElement('canvas');c.width=128;c.height=192;const g=c.getContext('2d');g.fillStyle='#f1ebd9';g.fillRect(0,0,128,192);g.fillStyle=theme.accent;g.fillRect(0,0,128,31);g.fillStyle='#fff7df';g.font='bold 11px Arial';g.textAlign='center';g.fillText('MALL DIRECTORY',64,20);g.strokeStyle=theme.inlay;g.lineWidth=9;g.beginPath();g.moveTo(26,63);g.lineTo(97,63);g.lineTo(97,142);g.lineTo(26,142);g.closePath();g.moveTo(26,100);g.lineTo(97,100);g.stroke();g.fillStyle=theme.accent;for(const [x,y]of [[26,63],[97,100],[26,142]]){g.beginPath();g.arc(x,y,7,0,7);g.fill();}g.fillStyle='#c17d53';g.beginPath();g.arc(64,100,5,0,7);g.fill();g.fillStyle=theme.accent;g.font='9px Arial';g.fillText('YOU ARE HERE',64,174);const t=new T.CanvasTexture(c);t.colorSpace=T.SRGBColorSpace;w.resources.add(t);return t;}
+function directoryTexture(w,theme,l,position){
+ const c=document.createElement('canvas');c.width=256;c.height=384;const g=c.getContext('2d');g.fillStyle='#f1ebd9';g.fillRect(0,0,256,384);g.fillStyle=theme.accent;g.fillRect(0,0,256,48);g.fillStyle='#fff7df';g.font='bold 18px Arial';g.textAlign='center';g.fillText('CENTER DIRECTORY',128,31);
+ const k=Math.min(224/l.width,260/l.height),ox=(256-l.width*k)/2,oy=65+(260-l.height*k)/2;g.save();g.translate(ox,oy);g.scale(k,k);g.strokeStyle='#b0bda8';g.lineCap='round';
+ for(const h of l.campus.halls){const a=l.campus.nodes[Number(h.a)],b=l.campus.nodes[Number(h.b)];g.lineWidth=h.width;g.beginPath();g.moveTo(a.x,a.y);g.lineTo(b.x,b.y);g.stroke();}
+ for(const r of [...l.rects,...l.units]){g.fillStyle=r.color||theme.accent;g.fillRect(r.x,r.y,r.width,r.height);}
+ g.fillStyle='#a5482a';g.beginPath();g.arc(position.x,position.y,6/k,0,7);g.fill();g.restore();g.fillStyle=theme.accent;g.font='bold 15px Arial';g.fillText('YOU ARE HERE',128,352);g.font='13px Arial';g.fillText(l.plan.levels[l.campus.floor]||'Current floor',128,373);const t=new T.CanvasTexture(c);t.colorSpace=T.SRGBColorSpace;w.resources.add(t);return t;
+}
 export function buildPublicRealm(w,l,theme){
  const d=l.environment,b=new Details(w),mainCourt=l.campus.courts.find(n=>/Jewel|Atrium/.test(n.label))||l.campus.courts.reduce((a,n)=>Math.hypot(a.x-l.spawn.x,a.y-l.spawn.y)<Math.hypot(n.x-l.spawn.x,n.y-l.spawn.y)?a:n),portals=d.portals.filter(p=>l.campus.outdoor||Math.hypot(p.x-mainCourt.x,p.y-mainCourt.y)>190);w.waterFeatures=[];
  for(const p of d.edgePlanting){const x=p.x+p.width/2,z=p.y+p.height/2;if(p.kind==='garden'){b.box(x,4,z,p.width,8,p.height,theme.stone);b.box(x,8,z,p.width-8,1,p.height-8,'#687850');for(const dx of [-23,0,23])for(const dz of [-17,17]){b.leaf(x+dx,18,z+dz,15,theme.plant,1,.65,.8);b.leaf(x+dx+3,25,z+dz-3,4,theme.flowers);}plant(b,x, z,theme,false,true);}else{plant(b,x,z,theme,p.palm);b.box(x,3,z,63,6,63,theme.stone);}}
@@ -120,7 +126,16 @@ export function buildPublicRealm(w,l,theme){
    b.cylinder(x,5,z,17,10,theme.stone);b.cylinder(x,10.4,z,14,1,'#7baaa5');b.cylinder(x,15,z,4,9,theme.trim);const jet=w.mesh(new T.CylinderGeometry(.9,1.3,19,6),w.mat('#c5e7df',{transparent:true,opacity:.65,depthWrite:false}));jet.position.set(x,26,z);jet.castShadow=false;w.waterFeatures.push({mesh:jet,y:26});
   }else if(p.kind==='directory'){
    b.box(x,26,z,13,50,8,theme.trim);b.box(x,53,z,25,6,12,theme.stone);
-   const panel=w.mesh(new T.PlaneGeometry(22,33),w.mat('#ffffff',{map:directoryTexture(w,theme),roughness:.8}));panel.position.set(x,34,z+4.4);panel.castShadow=false;w.tag(panel,'directory:'+p.node,p.approach);w.tag(w.label('Directory ↗',x,66,z,56,theme.accent),'directory:'+p.node,p.approach);w.nearLabels.push({object:w.scene.children.at(-1),x,z,radius:125,directory:true});
+   const panel=w.mesh(new T.PlaneGeometry(22,33),w.mat('#ffffff',{map:directoryTexture(w,theme,l,{x,y:z}),roughness:.8}));panel.position.set(x,34,z+4.4);panel.castShadow=false;w.tag(panel,'directory:'+p.node,p.approach);w.tag(w.label('Directory ↗',x,66,z,56,theme.accent),'directory:'+p.node,p.approach);w.nearLabels.push({object:w.scene.children.at(-1),x,z,radius:125,directory:true});
+  }
+ }
+ // Repeated gallery lighting and planted hanging baskets add detail above
+ // head height without narrowing the collision-tested walking lanes.
+ for(const h of l.campus.halls){const a=l.campus.nodes[Number(h.a)],z=l.campus.nodes[Number(h.b)],length=Math.hypot(z.x-a.x,z.y-a.y),angle=Math.atan2(z.x-a.x,z.y-a.y);
+  for(let distance=210;distance<length-90;distance+=310){const f=distance/length,x=a.x+(z.x-a.x)*f,y=a.y+(z.y-a.y)*f;
+   b.box(x,113,y,h.width+40,1.2,1.2,theme.trim,angle,'metal');
+   for(const offset of [-32,0,32]){const xx=x+Math.cos(angle)*offset,zz=y-Math.sin(angle)*offset;b.cylinder(xx,108,zz,1,10,theme.trim);b.light(xx,101,zz,8,6,8,'#f4d8a5');}
+   if(l.campus.outdoor)for(const side of [-1,1]){const xx=x+Math.cos(angle)*side*(h.width/2+10),zz=y-Math.sin(angle)*side*(h.width/2+10);b.cylinder(xx,101,zz,7,9,theme.stone);b.leaf(xx,105,zz,10,theme.plant,1,.5,1);for(const offset of [-5,5])b.leaf(xx+offset,101,zz+4,4,theme.flowers);}
   }
  }
  // Every canopy and arch has a matching pair of columns outside the walking lanes.
@@ -139,7 +154,7 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
- const count=b.flush();w.canvas.dataset.environmentRevision='27';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
+ const count=b.flush();w.canvas.dataset.environmentRevision='31';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 
 export function buildAnchor(w,a,theme){

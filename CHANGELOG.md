@@ -2,6 +2,18 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 31.0.0 — A clearer shopping day — 28 October 2026
+
+- Rebuild Explore around a larger scene, compact time/wallet bar, persistent shopping guide, searchable shop/floor/availability finder and a unified game menu.
+- Add explicit shop browsing/exits, a grouped unpaid-bag review and clearer size/checkout steps; keep researched and unfinished merchandise distinguishable.
+- Cancel stale interior and floor-transfer routes, avoid recording portal jumps as walking, and route court-map selections through the mall graph after leaving a shop.
+- Add interactive storefront/court map links, floor markers, correct inside-shop player position and actual floor diagrams on physical directory panels.
+- Add time-based walking acceleration, immediate release, camera/look-target smoothing, overhead gallery lighting and hanging planting.
+- Make expanded gameplay fill the viewport, preserve an explicit exit and provide mobile camera tools through Menu; fix inherited short-landscape and clipped-search-drawer layouts.
+- Fix a Safari navigation/focus race caused by animated document scrolling moving click targets, defer canvas resize work and keep optional web fonts from blocking startup.
+- Work around Safari’s ambient-light shader linker failure with a guarded, equivalent shader expression.
+- Add eleven movement/lifecycle/map/resize/render regressions and repeatable native shared-activity/shopping QA. Preserve save schema 6 and existing real-product assets.
+
 ## 30.0.0 — Shared afternoons — 28 October 2026
 
 - Continue all five completed local stories with ten original, alternating shared conversation activities and dialogue that recalls the original story choices and the last retained visit.

@@ -2,6 +2,13 @@
 
 Updated 28 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v31
+
+- Reworked play interface, a stocked-shop finder, clear browsing/size/bag/checkout guidance, explicit exits and a game menu for the major systems.
+- Fixed stale shop/floor routes, interior-to-court routing and portal stride jumps; smoother input and camera response, viewport-filling expanded play and usable short-screen search drawers.
+- Interactive map destinations, floor/player markers, real current-floor directory diagrams, overhead lighting and hanging planting.
+- Eleven new regressions and native shared-activity/shopping validation; see [v31 QA](docs/qa-v31.md).
+
 ## Completed in v30
 
 - Ten shared conversation activities continue the five completed local arcs, with original-choice callbacks, later-visit recollections and two activities per friend.
@@ -61,6 +68,9 @@ Updated 28 October 2026. The game is playable and under active development; this
 - New regressions plus the existing full-campaign, catalog, route, character and store tests.
 
 ## Next gameplay and presentation work
+
+- Continue auditing less-used service, fitting, return and travel combinations across every destination; the core entry/browse/fitting/checkout/exit loop now has native browser coverage, not a claim that every option is finished.
+- Refine map geometry and visual density at individual centers; keep incomplete collections visibly marked and complete them only with verified product evidence.
 
 - Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
 - Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.

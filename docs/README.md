@@ -4,6 +4,7 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 
 | Topic | Document |
 | --- | --- |
+| Shopping interface, shop transitions, movement and fullscreen | [v31 guide](GAMEPLAY-v31.md), [v31 QA](qa-v31.md) |
 | Shared activities after the local story arcs | [v30 guide](GAMEPLAY-v30.md), [v30 QA](qa-v30.md) |
 | Touch, keyboard navigation and small-screen layouts | [v29 guide](GAMEPLAY-v29.md), [v29 QA](qa-v29.md) |
 | Save backups, damaged-save recovery and failure handling | [v28 save recovery](GAMEPLAY-v28.md), [v28 QA](qa-v28.md), [native recovery QA](qa-v28-browsers.md) |

@@ -1,6 +1,6 @@
 {
   "name": "mallside",
-  "version": "30.0.0",
+  "version": "31.0.0",
   "private": true,
   "description": "Mallside \u2014 a browser shopping-life simulation by Jackson Pham / YouKnowJP",
   "type": "module",
@@ -25,7 +25,8 @@
     "build": "node scripts/build-public.mjs",
     "check:public": "node scripts/check-public.mjs",
     "test:browser": "node scripts/browser-qa.mjs",
-    "test:recovery": "node scripts/save-recovery-browser-qa.mjs"
+    "test:recovery": "node scripts/save-recovery-browser-qa.mjs",
+    "test:gameplay": "node scripts/gameplay-browser-qa.mjs"
   },
   "devDependencies": {
     "esbuild": "0.28.2"

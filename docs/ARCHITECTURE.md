@@ -15,7 +15,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=30.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=31.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -49,3 +49,14 @@ The v29 `input-controls.js` module owns directional-pad press/release timing and
 
 
 The v30 companion modules own ten original conversation activities after completed local stories. `companion-content.js` contains prompts, answer responses and original-choice callbacks; `companion-life.js` validates a single optional active visit and the latest 30 completed memories; `companion-ui.js` renders invitations, saved choices and rereadable replies. Normalization runs after local stories so invalid optional companion data cannot invalidate older valid progress. Finishing checks the original mall, both answers, the shared daily limit and closing time before advancing time, granting XP or recording a memory. It uses the existing daily friendship bond and level-up functions. Choices alone grant no time, money or rewards. No catalog props, photo assets, primary save keys or backup format change.
+
+
+The v31 play shell separates the scene, movement rail and shopping sidebar. `play-ui.js` renders filtered real-store destinations, shopping guidance and interactive map links. Drawers live outside the canvas container so short landscape scenes cannot clip their scrollable results. Store transition callbacks refresh the guide without replacing controls every frame. Shop exits and manual route cancellation discard pending multi-floor steps; court-map routes leave interiors before using campus coordinates. Frame movement ignores coordinate jumps when the layout changes. `walkingStep` integrates exponential acceleration independently of refresh rate with immediate release; camera position and look target use time-based damping. Expanded play fixes the shell to the viewport and retains native fullscreen detection and a visible exit. The unified menu provides all major pages and compact-screen camera controls. New gallery details use shared instanced geometry and locally generated floor diagrams; no remote or newly sourced product imagery is introduced.
+
+Document scrolling is immediate during view changes and focus reveal. This prevents queued smooth-scroll animations from moving a control after a navigation or scroll-to-focus operation, observed with native Safari input on the long Journal page. Player/camera smoothing is handled independently in the world math.
+
+`canvas-size.js` coalesces ResizeObserver notifications into the next animation frame. World destruction disconnects the observer and cancels pending work, preventing Safari layout-feedback notifications when the canvas backing store changes during a resize.
+
+The primary stylesheet has no remote font import. The app appends an optional print-media font stylesheet after initialization and enables it only when loaded, so local interface startup and default fonts do not depend on the font service responding.
+
+`render-compat.js` guards and inlines r180’s identity ambient-light call in the shared shader chunk before mall/studio rendering. It avoids an observed Safari Metal address-space linker error without changing the lighting equation. It is idempotent and refuses an unrecognized helper body, so a future library upgrade cannot silently receive the same rewrite. Vendored library files remain unchanged.

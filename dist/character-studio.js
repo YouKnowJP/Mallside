@@ -1,3 +1,4 @@
+import {patchAmbientLighting} from './render-compat.js?v=31.0.0';
 import {buildCollectionRoom,collectionRoomCamera,homeWalkRoute} from './home-scene.js?v=27.0.0';
 import {turnToward} from './motion.js?v=25.0.0';
 import {stowHandhelds} from './merchandise-carry.js?v=26.0.0';
@@ -8,6 +9,7 @@ import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=26
 import {equippedLook} from './engine.js?v=27.0.0';
 
 // The dressing room uses the same rig, products and pose solver as the mall.
+patchAmbientLighting(T.ShaderChunk);
 export class CharacterStudio{
  constructor(canvas,state,{facing='down',pose='stand',focus='body',setting='studio'}={}){
   this.canvas=canvas;this.state=state;this.setting=setting;this.resources=new Set();this.textures=new Map();this.scene=new T.Scene();this.scene.background=new T.Color('#e8e3d6');this.renderer=new T.WebGLRenderer({canvas,antialias:true,powerPreference:'low-power'});this.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.6));this.renderer.outputColorSpace=T.SRGBColorSpace;this.renderer.toneMapping=T.ACESFilmicToneMapping;this.renderer.shadowMap.enabled=true;this.renderer.shadowMap.type=T.PCFSoftShadowMap;this.camera=new T.PerspectiveCamera(31,1,.1,300);this.scene.add(new T.HemisphereLight('#fff6e8','#b6b3aa',1.25));const key=new T.DirectionalLight('#fff2de',1.2);key.position.set(-25,65,40);key.castShadow=true;key.shadow.mapSize.set(1024,1024);Object.assign(key.shadow.camera,{left:-35,right:35,top:60,bottom:-20,near:1,far:150});key.shadow.bias=-.0003;this.scene.add(key);const fill=new T.DirectionalLight('#deebf2',.65);fill.position.set(30,35,20);this.scene.add(fill);
