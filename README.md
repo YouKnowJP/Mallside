@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v27 — a neighborhood to come back to
+## v28 — a safer shopping life
+
+Each mode now keeps a separate last-known-good backup. Unreadable saves open a paused recovery screen with a reviewed restore, raw-data download, JSON import and a confirmed fresh start. Storage failures show a persistent warning; another tab’s changes pause stale saving. Existing saves keep their keys and version-6 format, with earlier migrations retained. See [save recovery](docs/GAMEPLAY-v28.md), [release QA](docs/qa-v28.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v27 — a neighborhood to come back to
 
 Continue all five local stories through ten new chapters, help match lost-property claims and keep a community invitation. Walk between stops in your collection room, rearrange kept finds and take an evening pause. Stone grain, storefront layers and more natural airborne steps refine the 3D mall and characters. Existing saves and earlier rewards carry forward. See [v27 gameplay](docs/GAMEPLAY-v27.md), [release QA](docs/qa-v27.md) and [remaining work](ROADMAP.md).
 
@@ -43,7 +47,7 @@ Mall geometry and stock are adapted for play. Catalog references do not promise 
 
 Use WASD or arrow keys to walk, or tap open floor and use the on-screen controls. Enter shops, select products, choose a size, and use the fitting room or checkout. The main menu contains help and player options.
 
-Progress is stored in this browser. Career and free shop have separate saves. Use **Player & options → Export backup** before changing devices, clearing browser data, or moving from the old game address. Import that JSON backup at the new address. Browser storage is separated by website origin; saves do not transfer automatically. Outfit-photo binaries remain in the original browser and are not included in the JSON backup.
+Progress is stored in this browser. Career and free shop have separate saves. Use **Player & options → Save & recovery → Download current progress** before changing devices, clearing browser data, or moving from the old game address. Import that JSON backup at the new address. Browser storage is separated by website origin; saves do not transfer automatically. Outfit-photo binaries remain in the original browser and are not included in the JSON backup.
 
 Modern desktop and mobile browsers can load the static game. 3D requires WebGL; the game offers a 2D fallback. Live QA covers desktop Safari 26.6.2, Firefox 159.0 (native headless flow checks) and Chromium, including resized phone/tablet layouts. Physical mobile devices and every browser/GPU combination are not certified; see the [browser QA](docs/qa-v27-browsers.md).
 

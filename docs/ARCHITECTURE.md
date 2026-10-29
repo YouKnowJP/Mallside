@@ -12,13 +12,20 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Character anatomy, motion and dressing room | `human-anatomy.js`, `human-model-data.js`, `character-rig.js`, `character-studio.js`, `home-scene.js`, `home-ui.js` |
 | Physical merchandise and fit | `merchandise-3d.js`, `merchandise-fit.js`, `merchandise-garments.js`, `merchandise-bags.js`, reference rules |
 | Lighter graphics and game illustrations | `world.js`, `sprites.js`, `art.js`, `activity-scene.js` |
+| Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The v27 UI entry uses `app.js?v=27.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The v28 UI entry uses `app.js?v=28.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
 The UI owns a normalized engine state and remembers unpaid selections before saving. Browser local storage holds career and free-shop saves separately. Returns use game receipts and game rules; no real merchandise purchase or refund occurs. State changes should go through the engine functions and maintain their tested invariants. A paid purchase should not be duplicated by reloading, and ambient NPC shopping must not alter player money or stock.
+
+Primary keys remain `mallside-career` and `mallside-free`, containing the original version-6 JSON. `engine.parseSave` validates critical progression before using the existing migrations (versions 1–6); strict normalization throws instead of returning a new game. The original permissive `loadState` API remains available to existing callers. Optional appearance and later feature fields retain their established normalization.
+
+`save-storage.js` reads both slots before any write. A valid existing primary seeds a missing/unusable backup without changing primary bytes. Normal writes first capture the prior validated primary in the mode’s `-backup` envelope (format/version/mode/time/raw JSON/FNV-1a checksum), then write the next primary. Unchanged snapshots do not rotate backups. A failed backup write leaves the primary untouched; a failed primary write leaves a usable prior copy. The checksum detects accidental backup changes, not malicious edits. No multi-key transaction is claimed.
+
+Unreadable or missing-with-backup primaries block autosaves; the app displays an exclusive paused recovery view. Explicit replacements recheck the reviewed raw primary and backup before committing. Healthy pre-restore progress becomes an undo backup; damaged primary data never replaces a good backup. Save attempts compare the loaded primary with current storage, and storage events pause a stale tab. This is best-effort conflict protection, not cross-tab transactional synchronization. First-time empty modes can start normally, while retrying recovery after data disappears still requires explicit fresh-start confirmation.
 
 Portrait binaries live separately in IndexedDB. JSON save exports preserve game state but do not contain those image binaries. A new hosting origin starts with separate storage; use reviewed JSON export/import to move progression. Never add automatic uploading of saves without an explicit product decision and privacy review.
 

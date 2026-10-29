@@ -4,10 +4,11 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 
 | Topic | Document |
 | --- | --- |
-| Current stories, collection room and concierge activities | [v27 gameplay](GAMEPLAY-v27.md) |
+| Save backups, damaged-save recovery and failure handling | [v28 save recovery](GAMEPLAY-v28.md), [v28 QA](qa-v28.md) |
+| Stories, collection room and concierge activities | [v27 gameplay](GAMEPLAY-v27.md) |
 | Original local stories and guest services | [v25 gameplay](GAMEPLAY-v25.md) |
 | Daily outings and branch-aware progress | [v24 gameplay](GAMEPLAY-v24.md) |
-| Current validation and remaining work | [Publication QA](QA.md), [v27 gameplay QA](qa-v27.md), [Safari/Firefox QA](qa-v27-browsers.md), [roadmap](../ROADMAP.md) |
+| Current validation and remaining work | [Publication QA](QA.md), [v28 recovery QA](qa-v28.md), [v27 gameplay QA](qa-v27.md), [Safari/Firefox QA](qa-v27-browsers.md), [roadmap](../ROADMAP.md) |
 | Gameplay, controls, progression, malls and prior features | [Game guide](GAME_GUIDE.md) |
 | Runtime systems and file ownership | [Architecture](ARCHITECTURE.md) |
 | Local development, CI, publishing and rollback | [Deployment](DEPLOYMENT.md) |

@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 28.0.0 — Save recovery — 28 October 2026
+
+- Keep one previous validated local save per mode, captured before replacing the primary; check backup integrity and retain the original JSON save keys and schema.
+- Stop silent fresh-game fallback from overwriting damaged saves. Recovery pauses gameplay and autosaving until a reviewed restore/import or confirmed fresh start, with downloads of stored data and a separate-mode escape.
+- Add manual backup review/download in Player & options, persistent failed-save warnings, retries and stale-tab protection.
+- Preserve automatic migration of versions 1–6 and reviewed import of versions 2–6; protect receipts, progression, daily rewards and night-transition idempotence.
+- Add 25 storage/compatibility regressions and test the compiled recovery flows, storage failures, keyboard focus and responsive layout in Chromium. Safari/Firefox’s prior gameplay checks remain recorded separately.
+
 ## 27.0.1 — Native Safari and Firefox validation — 28 October 2026
 
 - Verified eleven compiled-game flow checks in Safari 26.6.2 and Firefox 159.0, including WebGL walking, all room stops, migrated local stories, daily actions, next-morning reloads and original portrait persistence.

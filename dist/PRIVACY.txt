@@ -4,9 +4,11 @@ Updated 28 October 2026. Maintainer: [Jackson Pham / YouKnowJP](https://github.c
 
 ## Game data on your device
 
-The static game has no account, payment processor, advertising integration or gameplay server. Purchases use fictional game money. Player names, appearance choices, inventory, progression, settings, receipts, room finishes, prepared-outfit plans, guestbook mood/highlight choices, community invitation selections, lost-property activity completions and daily home routines are stored in your browser's local storage (`mallside-career`, `mallside-free` and `mallside-mode`). Outfit-photo images are stored in the browser's IndexedDB database `mallside-portraits`.
+The static game has no account, payment processor, advertising integration or gameplay server. Purchases use fictional game money. Player names, appearance choices, inventory, progression, settings, receipts, room finishes, prepared-outfit plans, guestbook mood/highlight choices, community invitation selections, lost-property activity completions and daily home routines are stored in your browser's local storage (`mallside-career`, `mallside-free`, `mallside-career-backup`, `mallside-free-backup` and `mallside-mode`). Outfit-photo images are stored in the browser's IndexedDB database `mallside-portraits`.
 
-The game does not send those saves or outfit photos to a gameplay backend. Exporting a backup downloads JSON to your device; importing reads the file you choose. Outfit-photo binaries are not included in the JSON backup. An exported save can include a name you entered, so review it before posting it publicly.
+The game does not send those saves or outfit photos to a gameplay backend. Exporting a backup downloads JSON to your device; importing reads the JSON text you paste. Outfit-photo binaries are not included in the JSON backup. An exported save can include a name you entered, so review it before posting it publicly.
+
+Each mode keeps one previous validated save as a last-known-good backup in the same browser storage. The backup includes the same player information and a local capture time. Recovery downloads can also contain unreadable stored data. These backups do not upload or synchronize progress and cannot survive clearing the site’s data.
 
 Browser storage can be unavailable, cleared, evicted or isolated in private browsing. Back up progress using Player & options. To remove stored game data, use your browser's controls to clear this site's local storage and IndexedDB; this also removes progress and local outfit photos. Saves are specific to each website origin and browser profile.
 
