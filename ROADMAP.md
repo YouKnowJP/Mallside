@@ -2,6 +2,12 @@
 
 Updated 28 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v30
+
+- Ten shared conversation activities continue the five completed local arcs, with original-choice callbacks, later-visit recollections and two activities per friend.
+- Saved partial choices across sleep/travel/reload, original-mall continuation, one shared-memory reward per day and a Journal memory book retaining 30 afternoons.
+- Compatible version-6 saves, atomic finishing costs, daily-limit and malformed-record regressions, plus compiled touch/keyboard and responsive checks. See [v30 QA](docs/qa-v30.md).
+
 ## Completed in v29
 
 - Tap-to-step and hold-to-walk controls, explicit Stop, larger targets and a separate control rail; portrait/tablet/landscape layouts retain usable movement controls.
@@ -56,7 +62,7 @@ Updated 28 October 2026. The game is playable and under active development; this
 
 ## Next gameplay and presentation work
 
-- Continue developing consequences beyond the five-chapter local arcs, including more varied shared activities and conversations tied to later visits.
+- Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
 - Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
 - Continued camera, storefront, lighting, NPC and character/fabric refinement; the current motion is controlled animation rather than complete cloth physics.
 - Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, and broader accessibility verification. The desktop Safari/Firefox matrix is complete for the recorded versions.

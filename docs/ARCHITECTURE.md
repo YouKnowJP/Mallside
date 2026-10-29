@@ -5,7 +5,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Area | Main modules |
 | --- | --- |
 | Page structure, controls and view lifecycle | `index.html`, `app.js`, `styles.css`, `life-styles.css` |
-| State, economy, needs, progression, inventory and persistence normalization | `engine.js`, `mall-life.js`, `community-stories.js`, `neighborhood-life.js`, `home-life.js`, `trip-planner.js`, `journey.js` |
+| State, economy, needs, progression, inventory and persistence normalization | `engine.js`, `mall-life.js`, `community-stories.js`, `companion-life.js`, `neighborhood-life.js`, `home-life.js`, `trip-planner.js`, `journey.js` |
 | Store/product identity, branch stock and provenance | `catalog.js`, `playable-stores.js`, `retailer-evidence-v12.js`, `store-product-seeds.js`, `product-photos.js` |
 | Destination footprints and free navigation | `malls.js`, `campus-layout.js`, `campus-model.js`, `campus-routing.js`, `map-navigation.js` |
 | 3D scene and store activity | `world-3d.js`, `shop-interiors.js`, `store-fitout.js`, `store-life.js`, `store-customers.js` |
@@ -15,7 +15,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The v28 UI entry uses `app.js?v=29.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=30.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -46,3 +46,6 @@ The collection room reuses the studio renderer and the exact owned-product model
 The v27 neighborhood module owns bounded daily notice/property/home records. Validation happens before advancing time or granting XP; activity props never enter purchases. Five local chapters retain the original first three history records. The room studio moves through named furniture-safe paths without changing mall position, and shelf order stays in the existing display ID array. Floor detail uses a disposable 64×64 procedural texture with no external assets.
 
 The v29 `input-controls.js` module owns directional-pad press/release timing and cleanup. Short presses step through the same collision resolver; holds use the existing continuous movement path. Pointer IDs prevent a second finger from ending an active gesture, and cancel/lost-capture/blur/hidden events stop without a step. World keyboard movement requires canvas focus and rejects modified/composing events. Views dispose their pad listeners before replacing DOM. Keyboard focus is revealed above/below fixed navigation without smooth-scroll delays; pointer input keeps its normal scrolling behavior. Dialogs and journey overlays share background inertness, including the skip link; map drawers remain nonmodal with explicit focus return. Responsive controls live beside/below the canvas rather than obscuring it.
+
+
+The v30 companion modules own ten original conversation activities after completed local stories. `companion-content.js` contains prompts, answer responses and original-choice callbacks; `companion-life.js` validates a single optional active visit and the latest 30 completed memories; `companion-ui.js` renders invitations, saved choices and rereadable replies. Normalization runs after local stories so invalid optional companion data cannot invalidate older valid progress. Finishing checks the original mall, both answers, the shared daily limit and closing time before advancing time, granting XP or recording a memory. It uses the existing daily friendship bond and level-up functions. Choices alone grant no time, money or rewards. No catalog props, photo assets, primary save keys or backup format change.

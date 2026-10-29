@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 30.0.0 — Shared afternoons — 28 October 2026
+
+- Continue all five completed local stories with ten original, alternating shared conversation activities and dialogue that recalls the original story choices and the last retained visit.
+- Save each choice immediately, resume after reload/sleep/travel, return to the original mall and keep the latest 30 memories in the Journal.
+- Validate activity choices and finishing costs before mutation; allow one shared-memory reward per day across friends and malls, with no purchase requirement or direct cash payout.
+- Add touch and keyboard dialogs, explicit time/reward feedback, next-question focus and short-screen focus reveal; retain version-6 saves and earlier chapter rewards.
+- Add ten gameplay/compatibility regressions and compiled-game browser checks; see [v30 QA](docs/qa-v30.md).
+
 ## 29.0.0 — Touch, keyboard and small-screen access — 28 October 2026
 
 - Added tap-to-step, hold-to-walk and Stop controls outside the map overlay, with larger targets and collapsible map/camera tools.

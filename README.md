@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v29 — easier to play by touch and keyboard
+## v30 — an afternoon with a familiar face
+
+Return after a local story’s five chapters for ten shared activities across Maya, Eli, Noor, Jules and Sam. Choose the details of a card, a listening club, a color palette or a welcoming route, with replies that remember your earlier story path. Partial choices survive sleep and travel, and the Journal keeps your latest shared afternoons. Activities require no purchase; one shared memory per day grants 20 XP. Existing saves stay compatible. See [shared afternoons](docs/GAMEPLAY-v30.md), [release QA](docs/qa-v30.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v29 — easier to play by touch and keyboard
 
 Tap a direction to step, hold to walk, or use the new Stop button. Larger walking controls sit below the map; Map & camera contains floor, zoom and fullscreen tools. Keyboard movement stays with the focused canvas, drawers return focus to their opener, and dialogs keep the background inactive. Stronger text contrast, a full-width clock pause control and more room for small-screen directories improve everyday play. Existing saves remain compatible. See [controls and accessibility](docs/GAMEPLAY-v29.md), [release QA](docs/qa-v29.md) and [remaining work](ROADMAP.md).
 

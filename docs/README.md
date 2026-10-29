@@ -4,12 +4,13 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 
 | Topic | Document |
 | --- | --- |
+| Shared activities after the local story arcs | [v30 guide](GAMEPLAY-v30.md), [v30 QA](qa-v30.md) |
 | Touch, keyboard navigation and small-screen layouts | [v29 guide](GAMEPLAY-v29.md), [v29 QA](qa-v29.md) |
 | Save backups, damaged-save recovery and failure handling | [v28 save recovery](GAMEPLAY-v28.md), [v28 QA](qa-v28.md), [native recovery QA](qa-v28-browsers.md) |
 | Stories, collection room and concierge activities | [v27 gameplay](GAMEPLAY-v27.md) |
 | Original local stories and guest services | [v25 gameplay](GAMEPLAY-v25.md) |
 | Daily outings and branch-aware progress | [v24 gameplay](GAMEPLAY-v24.md) |
-| Current validation and remaining work | [Publication QA](QA.md), [v28 recovery QA](qa-v28.md), [v27 gameplay QA](qa-v27.md), [Safari/Firefox QA](qa-v27-browsers.md), [roadmap](../ROADMAP.md) |
+| Current validation and remaining work | [v30 QA](qa-v30.md), [Publication QA](QA.md), [v28 recovery QA](qa-v28.md), [v27 gameplay QA](qa-v27.md), [Safari/Firefox QA](qa-v27-browsers.md), [roadmap](../ROADMAP.md) |
 | Gameplay, controls, progression, malls and prior features | [Game guide](GAME_GUIDE.md) |
 | Runtime systems and file ownership | [Architecture](ARCHITECTURE.md) |
 | Local development, CI, publishing and rollback | [Deployment](DEPLOYMENT.md) |
