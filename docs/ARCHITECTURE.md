@@ -8,14 +8,14 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | State, economy, needs, progression, inventory and persistence normalization | `engine.js`, `mall-life.js`, `community-stories.js`, `companion-life.js`, `neighborhood-life.js`, `home-life.js`, `trip-planner.js`, `journey.js` |
 | Store/product identity, branch stock and provenance | `catalog.js`, `playable-stores.js`, `retailer-evidence-v12.js`, `store-product-seeds.js`, `product-photos.js` |
 | Destination footprints and free navigation | `malls.js`, `campus-layout.js`, `campus-model.js`, `campus-routing.js`, `map-navigation.js` |
-| 3D scene and store activity | `world-3d.js`, `shop-interiors.js`, `store-fitout.js`, `store-life.js`, `store-customers.js` |
+| 3D scene and store activity | `world-3d.js`, `shop-interiors.js`, `store-fitout.js`, `store-life.js`, `store-customers.js`, `scene-finish.js` |
 | Character anatomy, motion and dressing room | `human-anatomy.js`, `human-model-data.js`, `character-rig.js`, `character-studio.js`, `home-scene.js`, `home-ui.js` |
 | Physical merchandise and fit | `merchandise-3d.js`, `merchandise-fit.js`, `merchandise-garments.js`, `merchandise-bags.js`, reference rules |
 | Lighter graphics and game illustrations | `world.js`, `sprites.js`, `art.js`, `activity-scene.js` |
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=31.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=33.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -60,3 +60,9 @@ Document scrolling is immediate during view changes and focus reveal. This preve
 The primary stylesheet has no remote font import. The app appends an optional print-media font stylesheet after initialization and enables it only when loaded, so local interface startup and default fonts do not depend on the font service responding.
 
 `render-compat.js` guards and inlines r180’s identity ambient-light call in the shared shader chunk before mall/studio rendering. It avoids an observed Safari Metal address-space linker error without changing the lighting equation. It is idempotent and refuses an unrecognized helper body, so a future library upgrade cannot silently receive the same rewrite. Vendored library files remain unchanged.
+
+## v33 rendering and presentation
+
+`scene-finish.js` owns original HDR environment pixels/PMREM lighting, cached color and data textures, shared architectural bevels, camera composition and instanced route/contact accents. Environment render targets and finish textures belong to the scene; person teardown retains shared textures. Removed actors are pruned from contact tracking. Texture orientation and color/data spaces have numerical regressions.
+
+Camera mode, guide visibility and incidental activity captions are normalized optional preferences in schema 6. World cutaways ease toward their target height; the close shop view includes a nonnavigable exterior floor/threshold and keeps the player in frame. Route samples follow existing waypoint segments and clear when the route ends. Starter clothing uses shared original shells and masked arm skin; researched retail garments retain their existing fitting path.

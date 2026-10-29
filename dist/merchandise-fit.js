@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
-import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=26.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=27.0.0';
+import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=33.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=33.0.0';
 import {productAppearance} from './product-appearance.js?v=23.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=23.0.0';
@@ -140,7 +140,7 @@ export function updateAttachmentFrames(g){const adult=!!g.userData.rig,amount=g.
 // A preview owns its rig/garment resources; cached shelf/bag meshes remain shared.
 export function releasePersonResources(w,person){
  const collect=object=>{const found=new Set();object.traverse(o=>{if(!o.isMesh)return;found.add(o.geometry);for(const m of Array.isArray(o.material)?o.material:[o.material]){found.add(m);for(const key of ['map','bumpMap','roughnessMap'])if(m[key])found.add(m[key]);if(m.userData.detailTexture)found.add(m.userData.detailTexture);}});return found;};
- const shared=new Set(w.humanSharedResources||[]);for(const model of w.merchandiseCache?.values()||[])for(const r of collect(model))shared.add(r);
+ const shared=new Set([...(w.humanSharedResources||[]),...(w.finishTextures?.values()||[])]);for(const model of w.merchandiseCache?.values()||[])for(const r of collect(model))shared.add(r);
  person.userData.anatomy?.skeleton.dispose();
  for(const r of collect(person))if(!shared.has(r)){w.resources.delete(r);r.dispose();}
 }

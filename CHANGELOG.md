@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 33.0.0 — Light, texture and a closer view — 29 October 2026
+
+- Add original filtered HDR environment lighting to malls and the collection room, distinct material responses, shared procedural grain and soft character contact shadows.
+- Refine architectural edges, roof relief, palm fronds, fountain ripples and shop entrance context while preserving collision and tenant geometry.
+- Add saved closer/raised camera presets, smoother cutaways, visible route markers, quieter contextual overlays, a direct View control and an optional shopping guide/activity captions.
+- Correct closer shop framing and replace painted starter tops with original shirt/sleeve/collar geometry; fit subtle eyebrows to the anatomical head.
+- Preserve version-6 saves, backup keys, real-product provenance and the existing economy. Protect shared finish textures during outfit/actor disposal and prune removed contact-shadow actors.
+- Record primary-source design research and repeatable rendering, compatibility and gameplay validation in [v33 research](docs/design-research-v33.md) and [v33 QA](docs/qa-v33.md).
+
 ## 32.0.0 — More life between the shops — 29 October 2026
 
 - Add 69 reachable mosaic tables, reading shelves and garden studies across all 23 public floors, with original activities, compatible saved notebooks and one-time discovery trails.

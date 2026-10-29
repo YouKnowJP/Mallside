@@ -1,3 +1,5 @@
+import {themeFor} from './mall-design.js?v=32.0.0';
+import {surfaceTexture} from './scene-finish.js?v=33.0.0';
 import * as T from './vendor/three.module.js';
 
 export function interiorFloor(world,style){
@@ -15,11 +17,16 @@ export function interiorFloor(world,style){
   c.strokeStyle='#65736222';for(let x=0;x<=512;x+=128){c.beginPath();c.moveTo(x,0);c.lineTo(x,512);c.stroke();c.beginPath();c.moveTo(0,x);c.lineTo(512,x);c.stroke();}
  }
  const texture=new T.CanvasTexture(canvas);texture.colorSpace=T.SRGBColorSpace;texture.wrapS=texture.wrapT=T.RepeatWrapping;texture.repeat.set(3.2,2.7);world.resources.add(texture);
- world.box(600,-3,450,840,6,690,world.mat('#ffffff',{map:texture,roughness:.9}));
+ world.box(600,-3,450,840,6,690,world.mat('#ffffff',{map:texture,roughness:['wood','parquet'].includes(style.pattern)?.57:style.pattern==='concrete'?.8:.42,bumpMap:surfaceTexture(world,'stone',true),bumpScale:.06,envMapIntensity:.8}));
 }
 
 export function buildInteriorArchitecture(w,style,layout){
+ // A visible mall-side threshold grounds the cutaway shop in its surrounding concourse.
+ const theme=themeFor(w.state?.mallId),apron=w.box(600,-4,850,1600,6,1200,w.mat(theme.floor,{roughness:.64,bumpMap:surfaceTexture(w,'stone',true),bumpScale:.045}));apron.castShadow=false;
  interiorFloor(w,style);
+ for(const x of [360,840]){const pane=w.box(x,20,793,275,40,2,w.mat('#a9c5bf',{transparent:true,opacity:.15,roughness:.2,metalness:.1,envMapIntensity:1.25,depthWrite:false}));pane.castShadow=false;w.box(x,2,794,280,3,4,style.trim);for(const dx of [-138,138])w.box(x+dx,23,794,3,46,4,style.trim);}
+ w.box(600,.1,783,90,.3,18,style.trim);
+
  w.box(600,52,112,840,104,7,style.wall);for(const x of [192,1008]){w.box(x,19,450,5,38,680,style.wall);w.box(x,64,265,5,128,310,style.wall);w.box(x,39,450,7,3,680,style.trim);}
  w.box(600,8,119,826,8,4,style.trim);w.box(600,100,117,830,4,4,style.trim);
  // Low display-wall details preserve the view into the game room.

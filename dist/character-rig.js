@@ -1,4 +1,5 @@
-import {addHumanAnatomy,addStarterClothing,poseHumanHands,updateHumanFace} from './human-anatomy.js?v=26.0.0';
+import {surfaceTexture} from './scene-finish.js?v=33.0.0';
+import {addHumanAnatomy,addStarterClothing,poseHumanHands,updateHumanFace} from './human-anatomy.js?v=33.0.0';
 import * as T from './vendor/three.module.js';
 
 export const CHARACTER={height:52,hipHeight:25,shoulderHeight:40.8,upperLeg:12,lowerLeg:11,upperArm:7.7,forearm:7.1,stride:40,pelvisBottom:21.2,ankleHeight:1.6};
@@ -14,7 +15,8 @@ export function retargetBodyPoint(x,y,z,profile=null,ease=1){const yy=bodyY(y),s
 function loft(rings,segments=32){const p=[],uv=[],idx=[];for(let r=0;r<rings.length;r++){const [y,x,z]=rings[r];for(let i=0;i<=segments;i++){const a=i/segments*Math.PI*2;p.push(Math.cos(a)*x,y,Math.sin(a)*z);uv.push(i/segments,r/(rings.length-1));if(r<rings.length-1&&i<segments){const k=r*(segments+1)+i;idx.push(k,k+segments+1,k+1,k+1,k+segments+1,k+segments+2);}}}const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(p,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.setIndex(idx);g.computeVertexNormals();return g;}
 export function createShopper(w,color,appearance={},equipment={},dress){
  appearance={...appearance,hairStyle:appearance.hairStyle||((parseInt(String(color).slice(-2),16)||0)%3===0?'bob':'short'),faceStyle:appearance.faceStyle||((parseInt(String(color).slice(-2),16)||0)%2?'defined':'natural')};
- const g=new T.Group(),skin=w.mat(appearance.skin||'#d4a27d',{roughness:.68}),base=w.mat(equipment.top?.color||color,{roughness:.92}),pants=w.mat(equipment.bottom?.color||'#526775',{roughness:.94}),shoeMat=w.mat(equipment.shoes?.color||'#e7e2d8');
+ const fabric=w.finishTextures?{bumpMap:surfaceTexture(w,'fabric',true),bumpScale:.018}:{};
+ const g=new T.Group(),skin=w.mat(appearance.skin||'#d4a27d',{roughness:.68,envMapIntensity:.4}),base=w.mat(equipment.top?.color||color,{roughness:.92,...fabric}),pants=w.mat(equipment.bottom?.color||'#526775',{roughness:.94,...fabric}),shoeMat=w.mat(equipment.shoes?.color||'#e7e2d8');
  const mesh=(geo,mat,parent=g,x=0,y=0,z=0)=>{const m=w.mesh(geo,mat,parent);m.position.set(x,y,z);return m;},ellipse=(x,y,z,sx,sy,sz,mat,parent=g)=>{const m=mesh(new T.SphereGeometry(1,20,14),mat,parent,x,y,z);m.scale.set(sx,sy,sz);return m;};
  const headGroup=new T.Bone();headGroup.position.y=46.7;g.add(headGroup);const limbs=[];
  for(const sign of [-1,1]){const arm=new T.Bone();arm.position.set(sign*6.5,40.8,0);g.add(arm);const elbow=new T.Bone();elbow.position.y=-7.7;arm.add(elbow);const hand=new T.Bone();hand.position.y=-7.1;elbow.add(hand);const grip=new T.Group();grip.position.set(0,-2.4,.5);hand.add(grip);arm.userData={elbow,hand,grip,upperLength:7.7,lowerLength:7.1};limbs.push(arm);}
@@ -26,7 +28,7 @@ export function createShopper(w,color,appearance={},equipment={},dress){
  if(equipment.jewelry?.type==='sunglasses'){for(const x of [-.96,.96])ellipse(x,.97,3.47,.80,.48,.16,w.mat('#35433e'),headGroup);mesh(new T.BoxGeometry(.5,.11,.12),w.mat('#bda073'),headGroup,0,.98,3.55);}else if(equipment.jewelry)ellipse(0,38,3.5,.4,.6,.15,w.mat('#c6a76b'));
  if(equipment.watch){const band=mesh(new T.TorusGeometry(.99,.16,6,16),w.mat(equipment.watch.color),limbs[1].userData.hand,0,.45,0);band.rotation.x=Math.PI/2;}
  if(equipment.bag&&!equipment.bag.type)ellipse(9.5,28,0,3.4,4,1.7,w.mat(equipment.bag.color||'#ab815c'));
- dress?.(w,g,equipment);w.scene.add(g);applyCharacterPose(g,{});return g;
+ dress?.(w,g,equipment);w.contactActors?.push(g);w.scene.add(g);applyCharacterPose(g,{});return g;
 }
 
 export function retargetGarmentGroup(g,group){

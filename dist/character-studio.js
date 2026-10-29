@@ -1,18 +1,19 @@
+import {installReflection} from './scene-finish.js?v=33.0.0';
 import {patchAmbientLighting} from './render-compat.js?v=31.0.0';
 import {buildCollectionRoom,collectionRoomCamera,homeWalkRoute} from './home-scene.js?v=27.0.0';
 import {turnToward} from './motion.js?v=25.0.0';
 import {stowHandhelds} from './merchandise-carry.js?v=26.0.0';
 import * as T from './vendor/three.module.js';
-import {createShopper} from './character-rig.js?v=27.0.0';
+import {createShopper} from './character-rig.js?v=33.0.0';
 import {dressPerson} from './merchandise-carry.js?v=26.0.0';
-import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=26.0.0';
-import {equippedLook} from './engine.js?v=32.0.0';
+import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=33.0.0';
+import {equippedLook} from './engine.js?v=33.0.0';
 
 // The dressing room uses the same rig, products and pose solver as the mall.
 patchAmbientLighting(T.ShaderChunk);
 export class CharacterStudio{
  constructor(canvas,state,{facing='down',pose='stand',focus='body',setting='studio'}={}){
-  this.canvas=canvas;this.state=state;this.setting=setting;this.resources=new Set();this.textures=new Map();this.scene=new T.Scene();this.scene.background=new T.Color('#e8e3d6');this.renderer=new T.WebGLRenderer({canvas,antialias:true,powerPreference:'low-power'});this.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.6));this.renderer.outputColorSpace=T.SRGBColorSpace;this.renderer.toneMapping=T.ACESFilmicToneMapping;this.renderer.shadowMap.enabled=true;this.renderer.shadowMap.type=T.PCFSoftShadowMap;this.camera=new T.PerspectiveCamera(31,1,.1,300);this.scene.add(new T.HemisphereLight('#fff6e8','#b6b3aa',1.25));const key=new T.DirectionalLight('#fff2de',1.2);key.position.set(-25,65,40);key.castShadow=true;key.shadow.mapSize.set(1024,1024);Object.assign(key.shadow.camera,{left:-35,right:35,top:60,bottom:-20,near:1,far:150});key.shadow.bias=-.0003;this.scene.add(key);const fill=new T.DirectionalLight('#deebf2',.65);fill.position.set(30,35,20);this.scene.add(fill);
+  this.canvas=canvas;this.state=state;this.setting=setting;this.resources=new Set();this.textures=new Map();this.scene=new T.Scene();this.scene.background=new T.Color('#e8e3d6');this.renderer=new T.WebGLRenderer({canvas,antialias:true,powerPreference:'low-power'});this.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.6));this.renderer.outputColorSpace=T.SRGBColorSpace;this.renderer.toneMapping=T.ACESFilmicToneMapping;this.renderer.shadowMap.enabled=true;this.renderer.shadowMap.type=T.PCFSoftShadowMap;this.camera=new T.PerspectiveCamera(31,1,.1,300);this.scene.add(new T.HemisphereLight('#fff6e8','#b6b3aa',.7));const key=new T.DirectionalLight('#fff2de',1.8);key.position.set(-25,65,40);key.castShadow=true;key.shadow.mapSize.set(1024,1024);Object.assign(key.shadow.camera,{left:-35,right:35,top:60,bottom:-20,near:1,far:150});key.shadow.bias=-.0003;this.scene.add(key);const fill=new T.DirectionalLight('#deebf2',.65);fill.position.set(30,35,20);this.scene.add(fill);installReflection(this,true);this.canvas.dataset.visualRevision='33';
   const floor=this.mesh(new T.CircleGeometry(65,64),this.mat('#e0d8c4'));floor.rotation.x=-Math.PI/2;floor.position.y=-.04;floor.receiveShadow=true;this.bench=new T.Group();this.scene.add(this.bench);this.box(0,12,-1,80,6,24,'#a28160',this.bench);this.box(0,26,-11,80,22,3,'#b79772',this.bench);for(const x of [-32,32])this.box(x,6,-1,3,12,20,'#5f6d61',this.bench);this.bench.visible=false;
   this.facing=facing;this.pose=pose;this.focus=focus;this.rotation={down:0,left:-Math.PI/2,right:Math.PI/2,up:Math.PI}[facing]||0;this.sit=pose==='sit'?1:0;this.clock=0;this.alive=true;this.camera.position.set(0,32,116);this.rebuild();if(setting==='home'){floor.visible=false;buildCollectionRoom(this,state);}this.resize();if(setting==='home'&&focus==='room')this.camera.position.fromArray(this.roomCamera.position);this.observer=new ResizeObserver(()=>this.resize());this.observer.observe(canvas);this.frame=requestAnimationFrame(t=>this.draw(t));
  }

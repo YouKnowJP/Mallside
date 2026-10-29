@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v32 — more life between the shops
+## v33 — a more polished shopping scene
+
+Filtered environment lighting, softer contact shadows, distinct material finishes and finer architectural/landscape details give the mall more depth. A closer camera, quieter overlays, visible walking routes and an optional shopping guide improve the view. Proper starter shirts, cleaner collars and brows refine the characters and collection-room close-ups. Existing saves remain compatible. See [v33 gameplay](docs/GAMEPLAY-v33.md), [design research](docs/design-research-v33.md), [release QA](docs/qa-v33.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v32 — more life between the shops
 
 Discover mosaic tables, reading shelves and garden studies across all 23 floor views, with a saved three-stop trail for each mall. The map now lists public activities, rest spots and interactive floor connections. Wider compact courts, stone inlays and shaded seating add detail; clearer service/demos/research guidance and automatic routing from a saved bag to checkout repair confusing shop options. Existing saves stay compatible. See [v32 gameplay](docs/GAMEPLAY-v32.md), [release QA](docs/qa-v32.md) and [remaining work](ROADMAP.md).
 

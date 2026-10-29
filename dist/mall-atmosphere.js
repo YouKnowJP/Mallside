@@ -21,4 +21,4 @@ const PEOPLE=[
 export function adultAppearance(index=0){return {...PEOPLE[((Math.trunc(index)||0)%PEOPLE.length+PEOPLE.length)%PEOPLE.length]};}
 
 // A fixed set of surface responses; detail remains instanced rather than per-store materials.
-export function surfaceFinish(kind){return {...({timber:{roughness:.64,metalness:0},metal:{roughness:.32,metalness:.6},glass:{roughness:.15,metalness:.08},foliage:{roughness:.96,metalness:0},roof:{roughness:.87,metalness:0},light:{roughness:.5,metalness:0}}[kind]||{roughness:.84,metalness:0})};}
+export function surfaceFinish(kind){return {...({timber:{roughness:.57,metalness:0},metal:{roughness:.27,metalness:.62},glass:{roughness:.15,metalness:.08},foliage:{roughness:.96,metalness:0},roof:{roughness:.87,metalness:0},light:{roughness:.5,metalness:0}}[kind]||{roughness:.73,metalness:0})};}

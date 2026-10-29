@@ -1,8 +1,8 @@
 import {turnToward} from './motion.js?v=25.0.0';
-import {adultAppearance} from './mall-atmosphere.js?v=26.0.0';
-import {attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=26.0.0';
+import {adultAppearance} from './mall-atmosphere.js?v=33.0.0';
+import {attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=33.0.0';
 import {physicalProduct} from './merchandise-3d.js?v=23.0.0';
-import {applyCharacterPose,solveArmToGrip} from './character-rig.js?v=27.0.0';
+import {applyCharacterPose,solveArmToGrip} from './character-rig.js?v=33.0.0';
 import * as T from './vendor/three.module.js';
 import {createStoreCustomers,updateStoreCustomers,customerActivity} from './store-customers.js?v=23.0.0';
 import {slotForProduct} from './malls.js?v=23.0.0';
@@ -27,7 +27,7 @@ export function drawStoreLife(w,dt,paused){
   a.gaitDistance=(a.gaitDistance||0)+(a.moving?Math.hypot(a.x-(a.visual.lastX??a.x),a.y-(a.visual.lastY??a.y)):0);a.visual.lastX=a.x;a.visual.lastY=a.y;applyCharacterPose(g,{walking:a.moving,distance:a.gaitDistance,time:sim.clock,reducedMotion:w.state.preferences.reducedMotion});if(trying||browsing||scanning){solveArmToGrip(g,0,31,10);solveArmToGrip(g,1,31,10);}
   bag.visible=a.bag;item.visible=(browsing||trying||scanning)&&!a.bag;updateAttachmentFrames(g);g.userData.torso.material.color.set(trying&&slotForProduct(a.product)==='top'?a.product.color||a.visual.original:a.visual.original);
   const caption=customerActivity(a);if(caption!==a.visual.caption){const tx=label.material.map,c=tx.image.getContext('2d');c.fillStyle='#fffaf0';c.fillRect(0,0,512,112);c.fillStyle='#405a50';c.font='600 39px Arial';c.textAlign='center';c.textBaseline='middle';c.fillText(caption,256,56,480);tx.needsUpdate=true;a.visual.caption=caption;}
-  label.position.set(a.x,66,a.y);label.visible=g.visible&&near.has(a.id)&&Math.hypot(a.x-w.avatar.x,a.y-w.avatar.y)<285;
+  label.position.set(a.x,66,a.y);label.visible=w.state.preferences.activityCaptions===true&&g.visible&&near.has(a.id)&&Math.hypot(a.x-w.avatar.x,a.y-w.avatar.y)<285;
  }
  for(const c of w.fittingCurtains||[]){const occupant=sim.actors.find(a=>a.room===c.room&&a.phase==='act'),player=w.playerFittingRoom===c.room,closed=!!occupant||player;const width=closed?43:10;c.mesh.scale.x+=(width/10-c.mesh.scale.x)*(w.state.preferences.reducedMotion?1:.15);c.mesh.position.x=c.x+(closed?0:-23);c.mesh.visible=!player;}
  for(const staff of w.storeStaff){const paying=sim.actors.some(a=>a.stage==='pay'&&a.phase==='act');staff.mesh.userData.limbs[0].rotation.x=staff.kind==='checkout'&&paying?-.7:0;staff.mesh.userData.limbs[1].rotation.x=staff.kind==='checkout'&&paying?-.7+(w.state.preferences.reducedMotion?0:Math.sin(sim.clock*3)*.15):0;}

@@ -2,6 +2,13 @@
 
 Updated 29 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v33
+
+- Filtered environment illumination in malls and the collection room, differentiated surface response, procedural grain, architectural bevels, roof relief, finer palms, fountain ripples and soft contact shadows.
+- Saved closer/raised views, corrected shop framing/thresholds, smoother cutaways, path-following route markers, quieter overlays and an optional shopping guide/activity captions.
+- Physical starter shirts with sleeves/collars, cleaner neck transitions and anatomical-head brows; shared texture ownership and removed-actor cleanup.
+- See [v33 research](docs/design-research-v33.md) and [v33 QA](docs/qa-v33.md) for evidence and testing limits.
+
 ## Completed in v32
 
 - Three original public-space activities on every floor: 69 physical stops with reachable approaches, saved discovery notebooks and per-mall trails.
