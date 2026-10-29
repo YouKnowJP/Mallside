@@ -1,4 +1,5 @@
-import {themeFor} from './mall-design.js?v=32.0.0';
+import {closestFloor} from './free-navigation.js?v=25.0.0';
+import {themeFor} from './mall-design.js?v=34.0.0';
 import {surfaceTexture} from './scene-finish.js?v=33.0.0';
 import * as T from './vendor/three.module.js';
 
@@ -69,4 +70,15 @@ export function buildProductFixture(w,p,r,profile){
  else if(profile.layout==='atelier'||kind==='boutique'){w.box(x,17,z,r.width-8,34,r.height-6,wood);w.box(x,36,z,r.width,4,r.height,trim);height=40;}
  else{w.box(x,15,z,r.width,30,r.height,wood);for(const dx of [-38,38])w.box(x+dx,10,z,4,20,45,trim);height=32;}
  return height;
+}
+
+// Research-only shops have a useful original information gallery, never invented stock.
+export function buildCollectionGallery(w,store,style,layout){
+ const names=['Collection status','Find stocked shops','Save this shop','Collection notes','Plan your next stop','Meet the associate'];
+ for(const [i,r]of layout.displays.entries()){const x=r.x+r.width/2,z=r.y+r.height/2,point=closestFloor({x,y:r.y+r.height+25},layout.nav);w.box(x,15,z,r.width-8,30,r.height-8,style.fixture);w.box(x,31,z,r.width-4,2,r.height-4,style.trim);
+  const board=w.box(x,51,z-10,52,34,3,['#d6e2d6','#e6d2bc','#d9d3e3'][i%3]);for(const dx of [-23,23])w.box(x+dx,42,z-11,2,24,2,style.trim);w.box(x,49,z-7.9,32,2,1,style.accent);for(let line=0;line<3;line++)w.box(x,44-line*4,z-7.9,32-line*5,1,1,style.trim);
+  for(let book=0;book<3;book++){w.box(x-16+book*13,34+book*.6,z+12,11,3,16,[style.accent,style.trim,style.wall][book]);w.box(x-16+book*13,34.3+book*.6,z+12.5,10,1,14,'#e8dfc7');}
+  if(i%2===0){w.cyl(x+30,38,z+7,5,10,style.trim);w.ball(x+30,49,z+7,7,'#668b69');w.ball(x+27,54,z+7,5,'#83a279');}
+  const key=i%3===1?'shopfinder:'+store.id:i===5?'associate:'+store.id:'rack:'+store.id,label=w.label(names[i%names.length],x,77,z,96);w.tag(board,key,point);w.tag(label,key,point);w.interiorStops.push({point,id:key,name:names[i%names.length],label:'Explore this collection guide'});
+ }w.canvas.dataset.collectionGuideDisplays=String(layout.displays.length);
 }

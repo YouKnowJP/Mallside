@@ -1,6 +1,10 @@
 # Release and migration QA
 
-## Current release — v33
+## Current release — v34
+
+See [v34 QA](qa-v34.md) for 411 regressions, 31 distinct native gameplay checks per browser, targeted retries and the responsive exit-footer follow-up. Firefox test files were removed and Safari automation was restored off. Earlier records below describe their respective releases.
+
+## Earlier release — v33
 
 See [v33 QA](qa-v33.md) for 403 passing regressions, compiled touch/layout checks and all 28 native gameplay checks each in Safari 26.6.2 and Firefox 159.0. Both native suites recorded zero game/console errors. Temporary Firefox files were removed and Safari automation was restored off. Earlier migration records below describe their respective releases.
 

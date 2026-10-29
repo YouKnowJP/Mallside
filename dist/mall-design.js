@@ -52,6 +52,15 @@ export function furnishCampus(layout){
    r.id='commons-'+activity;r.activity=activity;protectedPoints.push(r.approach);placed=true;break;
   }if(placed)break;}
  }
+ // Small, reachable waystations put useful services into the quieter courts.
+ for(const [index,amenity]of ['water','notice'].entries()){
+  const courts=c.courts.slice(index).concat(c.courts.slice(0,index));let placed=false;
+  for(const n of courts){for(const radius of [88,104,68])for(let i=0;i<20&&!placed;i++){
+   const angle=(i+index*.5)*Math.PI/10,x=n.x+Math.cos(angle)*radius,y=n.y+Math.sin(angle)*radius,r=add('waystation',x,y,22,20,0,n.id);if(!r)continue;
+   r.approach=[{x,y:y+32},{x:x+32,y},{x,y:y-32},{x:x-32,y}].find(p=>walkable(p,layout.nav,10)&&clearWalk(closestFloor(n,layout.nav),p,layout.nav,10));
+   if(!r.approach){fixtures.pop();layout.nav.obstacles.pop();continue;}r.id='waystation-'+amenity;r.amenity=amenity;protectedPoints.push(r.approach);placed=true;break;
+  }if(placed)break;}
+ }
  for(const [i,n]of c.courts.entries()){
   const venue=['coffee','photo','flowers','popup'][i%4];if(!layout.venues.some(v=>v.id===venue))continue;
   for(const [dx,dy]of [[-46,46],[46,-46],[46,46],[-46,-46]]){

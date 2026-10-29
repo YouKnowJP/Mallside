@@ -1,13 +1,13 @@
 import {installReflection} from './scene-finish.js?v=33.0.0';
 import {patchAmbientLighting} from './render-compat.js?v=31.0.0';
-import {buildCollectionRoom,collectionRoomCamera,homeWalkRoute} from './home-scene.js?v=27.0.0';
-import {turnToward} from './motion.js?v=25.0.0';
-import {stowHandhelds} from './merchandise-carry.js?v=26.0.0';
+import {buildCollectionRoom,collectionRoomCamera,homeWalkRoute} from './home-scene.js?v=34.0.0';
+import {turnToward} from './motion.js?v=34.0.0';
+import {stowHandhelds} from './merchandise-carry.js?v=34.0.0';
 import * as T from './vendor/three.module.js';
-import {createShopper} from './character-rig.js?v=33.0.0';
-import {dressPerson} from './merchandise-carry.js?v=26.0.0';
-import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=33.0.0';
-import {equippedLook} from './engine.js?v=33.0.0';
+import {createShopper} from './character-rig.js?v=34.0.0';
+import {dressPerson} from './merchandise-carry.js?v=34.0.0';
+import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=34.0.0';
+import {equippedLook} from './engine.js?v=34.0.0';
 
 // The dressing room uses the same rig, products and pose solver as the mall.
 patchAmbientLighting(T.ShaderChunk);
@@ -29,7 +29,7 @@ export class CharacterStudio{
  walkHomeTo(id){if(this.setting!=='home')return;const path=homeWalkRoute(id);if(!path.length)return;this.pose='stand';this.focus='room';this.homePath=path;this.homeDistance=this.homeDistance||0;const status=document.querySelector('#room-walk-status');if(status)status.textContent=this.state.preferences.reducedMotion?path.at(-1).label:'Walking through your room…';if(this.state.preferences.reducedMotion){const p=path.at(-1);this.player.position.set(p.x,0,p.z);this.homePath=[];}}
  stepHome(dt){if(!this.homePath?.length)return false;const p=this.homePath[0],dx=p.x-this.player.position.x,dz=p.z-this.player.position.z,distance=Math.hypot(dx,dz),step=Math.min(distance,Math.max(0,Math.min(.05,dt))*38);if(distance>.001){this.player.position.x+=dx/distance*step;this.player.position.z+=dz/distance*step;this.homeDistance+=step;this.rotation=turnToward(this.rotation,Math.atan2(dx,dz),dt,this.state.preferences.reducedMotion);}if(distance<=step+.001){this.homePath.shift();if(!this.homePath.length){const status=document.querySelector('#room-walk-status');if(status)status.textContent=p.label;}}return step>0;}
  draw(now){if(!this.alive||!this.canvas.isConnected)return;const dt=this.last?Math.min(.05,(now-this.last)/1000):0;this.last=now;this.clock+=dt;const signature=JSON.stringify([this.state.appearance,this.state.equipment]);if(signature!==this.signature)this.rebuild();const reduced=this.state.preferences.reducedMotion,target={down:0,left:-Math.PI/2,right:Math.PI/2,up:Math.PI}[this.facing]||0;if(!this.homePath?.length)this.rotation=turnToward(this.rotation,target,dt,reduced);this.sit+=(Number(this.pose==='sit')-this.sit)*(reduced?1:1-Math.exp(-10*dt));if(this.sit<.001)this.sit=0;if(this.sit>.999)this.sit=1;if(this.moment&&this.clock>=this.moment.until){this.restoreMoment?.();this.restoreMoment=null;this.moment=null;}const homeWalking=this.stepHome(dt);this.player.rotation.y=this.rotation;this.bench.rotation.y=this.rotation;this.bench.visible=this.sit>.01;
-  updateOutfitPose(this.player,{walking:homeWalking||this.pose==='walk',distance:homeWalking?this.homeDistance:this.clock*38,time:this.clock,seated:this.sit>0,blend:this.sit,kind:this.moment?.kind||(this.sit?'rest':''),reducedMotion:reduced});
+  updateOutfitPose(this.player,{walking:homeWalking||this.pose==='walk',distance:homeWalking?this.homeDistance:this.clock*38,time:this.clock,seated:this.sit>0,blend:this.sit,kind:this.moment?.kind||(this.sit?'rest':''),delta:dt,reducedMotion:reduced});
   const room=this.setting==='home'&&this.focus==='room',offset=this.setting==='home'?this.player.position.x:0,face=this.focus==='face',p=face?new T.Vector3(0,this.player.position.y+47.5,25):new T.Vector3(0,32,116),look=face?new T.Vector3(0,this.player.position.y+47.5,0):new T.Vector3(0,26,0);p.x+=offset;look.x+=offset;if(this.setting==='home'){p.z+=this.player.position.z;look.z+=this.player.position.z;this.bench.position.x=this.player.position.x;this.bench.position.z=this.player.position.z;}if(room){p.fromArray(this.roomCamera.position);look.fromArray(this.roomCamera.target);}if(reduced)this.camera.position.copy(p);else this.camera.position.lerp(p,1-Math.exp(-10*dt));this.camera.lookAt(look);this.player.updateMatrixWorld(true);this.renderer.render(this.scene,this.camera);this.frames=(this.frames||0)+1;if(now-(this.telemetryAt||0)>400){this.telemetryAt=now;for(const [key,value]of Object.entries({characterModel:'MakeHuman HM08',previewPose:homeWalking?'walking':this.pose,roomX:this.player.position.x.toFixed(1),roomZ:this.player.position.z.toFixed(1),previewFocus:this.focus,roomStyle:this.roomStyle||'',roomProducts:String(this.roomProductCount||0),frame:String(this.frames)}))if(this.canvas.dataset[key]!==value)this.canvas.dataset[key]=value;}this.frame=requestAnimationFrame(t=>this.draw(t));
  }
  destroy(){this.restoreMoment?.();this.alive=false;cancelAnimationFrame(this.frame);this.observer?.disconnect();this.player?.userData.anatomy?.skeleton.dispose();for(const r of this.resources)r.dispose?.();this.resources.clear();this.renderer.dispose();this.renderer.forceContextLoss();}

@@ -27,3 +27,6 @@ export function nightFrame(elapsed){
 }
 
 export function yieldToPlayer(from,next,player,radius=25){const before=Math.hypot(from.x-player.x,from.y-player.y),after=Math.hypot(next.x-player.x,next.y-player.y);return after<radius&&after<=before?{...from}:next;}
+
+// Pose easing is separate from locomotion: releasing input still stops the avatar immediately.
+export function locomotionWeight(previous,walking,dt,reduced=false){if(reduced)return 0;const target=walking?1:0;if(!(dt>0))return target;const value=target+(Math.max(0,Math.min(1,Number.isFinite(previous)?previous:0))-target)*Math.exp(-12*Math.min(.1,dt));return Math.abs(value-target)<.001?target:value;}

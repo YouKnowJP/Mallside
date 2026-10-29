@@ -2,6 +2,14 @@
 
 Updated 29 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v34
+
+- Water refill and community notice waystations on all 23 floors: 46 reachable, mapped physical interactions using the existing safe cooldown/reward rules.
+- Research-only information galleries, physical associate routes, real stocked alternatives and a saved-shop list/filter; remove misleading empty-product controls and unify map/physical fixture dispatch.
+- Seated readers/resting visitors, eased walking poses and varied browse/compare/pay/conversation gestures, with reduced-motion and crowd preferences retained.
+- Restore a persistent, pinned shop-exit footer; verify compact layout/hit targets and all 31 distinct native checks per browser, with compatible saves and completed browser cleanup.
+- See [v34 gameplay](docs/GAMEPLAY-v34.md) and [v34 QA](docs/qa-v34.md).
+
 ## Completed in v33
 
 - Filtered environment illumination in malls and the collection room, differentiated surface response, procedural grain, architectural bevels, roof relief, finer palms, fountain ripples and soft contact shadows.

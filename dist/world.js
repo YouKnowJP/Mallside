@@ -1,20 +1,20 @@
 import {observeCanvasSize} from './canvas-size.js?v=31.0.0';
 import {canUseMapKeys} from './input-controls.js?v=29.0.0';
-import {fixtureStop} from './mall-neighborhood.js?v=32.0.0';
+import {fixtureStop} from './mall-neighborhood.js?v=34.0.0';
 import {campusTrip} from './campus-routing.js?v=26.0.0';
 import {zoneOf} from './campus-model.js?v=23.0.0';
 import {storeFloor} from './map-layout.js?v=26.0.0';
 import {PRODUCT_PHOTOS} from './product-photos.js?v=23.0.0';
 import {windowSelection} from './mall-life.js?v=26.0.0';
 import {walkable,freeMove,freeRoute,closestFloor,personStop} from './free-navigation.js?v=25.0.0';
-import {paintMallGround,paintFacade,paintVenue,paintPublicFixture,VENUE_LABELS} from './mall-art.js?v=32.0.0';
+import {paintMallGround,paintFacade,paintVenue,paintPublicFixture,VENUE_LABELS} from './mall-art.js?v=34.0.0';
 import {LOCALS} from './mall-life.js?v=26.0.0';
-import {paintPerson} from './sprites.js?v=23.0.0';
-import {STORES,PRODUCTS,VENUES,mallOf,CLOSE,equippedLook} from './engine.js?v=33.0.0';
+import {paintPerson} from './sprites.js?v=34.0.0';
+import {STORES,PRODUCTS,VENUES,mallOf,CLOSE,equippedLook} from './engine.js?v=34.0.0';
 import {layoutFor} from './map-layout.js?v=26.0.0';
 import {pointAt,MAP_WIDTH,MAP_HEIGHT} from './mall-plans.js?v=23.0.0';
 import {mapRoute,moveOnMap,projectToMap,onCorridor} from './map-navigation.js?v=23.0.0';
-import {stepToward,directionalStep,facingFor,headingFor,walkingStep} from './motion.js?v=31.0.0';
+import {stepToward,directionalStep,facingFor,headingFor,walkingStep} from './motion.js?v=34.0.0';
 export const worldLayout=state=>layoutFor(mallOf(state),state.floor||0,STORES);
 export class MallWorld{
  constructor(canvas,state,onEnter,onMove,renderer='2d'){Object.assign(this,{canvas,state,onEnter,onMove,ctx:renderer==='2d'?canvas.getContext('2d'):null,alive:true,keys:new Set(),t:0,last:0,distance:0,facing:'down',heading:0,frameDt:0,moving:false,path:[],destination:null,exitCallback:null,touchDirection:null,touchVector:null,dragOrigin:null,overview:false,zoom:1.2,lastNearby:null});this.photoCache=new Map();this.layout=worldLayout(state);const p=state.mapPosition?.mallId===state.mallId&&state.mapPosition.floor===(state.floor||0)?state.mapPosition:this.layout.spawn;this.avatar=walkable(p,this.layout.nav)?{x:p.x,y:p.y}:closestFloor(p,this.layout.nav);this.keyDown=e=>this.key(e);this.keyUp=e=>this.keys.delete(e.key.toLowerCase());this.blur=()=>this.clearInput();this.visibility=()=>{if(document.hidden)this.clearInput();};window.addEventListener('keydown',this.keyDown);window.addEventListener('keyup',this.keyUp);window.addEventListener('blur',this.blur);document.addEventListener('visibilitychange',this.visibility);canvas.addEventListener('blur',this.blur);canvas.addEventListener('pointerdown',e=>this.pointerDown(e));canvas.addEventListener('pointermove',e=>this.pointerMove(e));canvas.addEventListener('pointerup',e=>this.pointerUp(e));canvas.addEventListener('pointercancel',e=>this.cancelPointer(e));canvas.addEventListener('lostpointercapture',e=>this.cancelPointer(e));this.observer=observeCanvasSize(canvas,()=>this.resize());this.resize();this.zoom=this.width<600?5:3;this.overview=!state.mapPosition&&this.width>=800;requestAnimationFrame(t=>this.frame(t));}

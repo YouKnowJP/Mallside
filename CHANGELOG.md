@@ -2,6 +2,16 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 34.0.0 — Useful corners and shop guides — 29 October 2026
+
+- Add 46 reachable water and community notice waystations across all 23 floors, with original physical detail, map destinations and illustrated fallback symbols; retain existing cooldown/reward limits and discovery activities.
+- Add bounded seated readers/resting visitors controlled by crowd preferences, gait easing with immediate input release, and distinct browse/compare/pay/conversation gestures.
+- Replace research-only empty product screens with original information galleries, associate routes, verified stocked alternatives and compatible saved-shop lists/filtering.
+- Route pending-shop counter/fitting controls to information/help, and make map amenities use the same interaction resolver as physical fixture clicks.
+- Restore the shared shop exit footer, pin it within long dialogs and retain a 44px touch target; verify the narrow layout in Chromium, native Firefox and native Safari.
+- Validate 411 regressions and 31 distinct gameplay checks per browser, with targeted repeats and zero captured game/console errors; remove temporary Firefox files and restore Safari automation off.
+- Keep schema-6 saves, backup keys, existing catalog provenance and economy intact. See [v34 QA](docs/qa-v34.md) for validation and device limits.
+
 ## 33.0.0 — Light, texture and a closer view — 29 October 2026
 
 - Add original filtered HDR environment lighting to malls and the collection room, distinct material responses, shared procedural grain and soft character contact shadows.

@@ -2,7 +2,7 @@ import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=3
 import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
 import {retailIdentity,drawRetailSign} from './retail-identity.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
-import {themeFor,facadeFrame} from './mall-design.js?v=32.0.0';
+import {themeFor,facadeFrame} from './mall-design.js?v=34.0.0';
 import {brandDesign} from './brand-designs.js?v=23.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
@@ -132,6 +132,11 @@ export function buildPublicRealm(w,l,theme){
    else if(p.venue==='photo'){b.box(x,40,z,15,10,9,'#4e6060');b.cylinder(x,47,z,3,3,theme.stone);}
    else for(const dx of [-10,0,10])b.box(x+dx,35,z,7,9,7,['#819b87','#c39a76','#b4a079'][(dx+10)/10]);
    const hit=w.box(x,25,z,40,52,34,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'venue:'+p.venue,p.approach);
+  }else if(p.kind==='waystation'){
+   b.box(x,2,z,30,4,28,theme.trim);b.box(x,18,z,22,32,20,theme.stone);
+   if(p.amenity==='water'){b.box(x,38,z-6,20,12,6,'#647b78');b.box(x,32,z+3,18,2,16,'#bac8c1');for(const dx of [-5,5]){b.cylinder(x+dx,34,z+2,1,4,'#d1dbd3');b.box(x+dx,37,z,2,2,5,'#abc8c3');}b.cylinder(x+8,38,z+6,2,7,'#f5eedc');b.box(x,47,z-6,14,3,2,'#a0c7c5');}
+   else{for(const dx of [-9,9])b.box(x+dx,42,z-6,2,48,2,theme.trim);b.box(x,51,z-6,25,27,3,'#567369');for(let i=0;i<3;i++)b.box(x-7+i*7,51+(i%2)*3,z-3.9,6,12,1,['#ead3a3','#f3e9ce','#d4c4d9'][i]);b.box(x,66,z-6,29,3,7,theme.trim);}
+   const key='amenity:'+p.amenity,hit=w.box(x,31,z,26,64,24,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(p.amenity==='water'?'Free water ↗':'Community board ↗',x,80,z,78,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:130,directory:true});
   }else if(p.kind==='commons'){
    b.box(x,13,z,26,26,26,theme.stone);b.box(x,27,z,30,2,30,theme.trim);
    if(p.activity==='garden'){b.box(x,29,z,25,3,25,'#6f7957');for(const [dx,dz]of [[-6,5],[6,5],[0,-6]]){b.leaf(x+dx,39,z+dz,9,theme.plant,.7,1,.7);b.leaf(x+dx,46,z+dz,4,theme.flowers);}}
@@ -171,7 +176,7 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
- const count=b.flush();w.canvas.dataset.environmentRevision='32';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
+ const count=b.flush();w.canvas.dataset.environmentRevision='34';w.canvas.dataset.waystationCount=String(d.fixtures.filter(f=>f.amenity).length);w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 
 export function buildAnchor(w,a,theme){
