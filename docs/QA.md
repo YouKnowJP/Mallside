@@ -1,5 +1,9 @@
 # Release and migration QA
 
+## Current release — v33
+
+See [v33 QA](qa-v33.md) for 403 passing regressions, compiled touch/layout checks and all 28 native gameplay checks each in Safari 26.6.2 and Firefox 159.0. Both native suites recorded zero game/console errors. Temporary Firefox files were removed and Safari automation was restored off. Earlier migration records below describe their respective releases.
+
 ## Free-play permissions update — 26.0.1
 
 Clarified the proprietary license and added the repository/shipped permissions guide while preserving GitHub platform rights, prior valid grants and independently licensed material. Added a retained ownership banner and license/official-play metadata to production output, aligned player-facing notices and corrected the retired feedback URL. The provided workflow only uploads/deploys Pages from the canonical repository; fork checks remain available. Gameplay, catalog/photo hashes, save keys and hosting visibility remain unchanged.

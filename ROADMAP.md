@@ -7,6 +7,7 @@ Updated 29 October 2026. The game is playable and under active development; this
 - Filtered environment illumination in malls and the collection room, differentiated surface response, procedural grain, architectural bevels, roof relief, finer palms, fountain ripples and soft contact shadows.
 - Saved closer/raised views, corrected shop framing/thresholds, smoother cutaways, path-following route markers, quieter overlays and an optional shopping guide/activity captions.
 - Physical starter shirts with sleeves/collars, cleaner neck transitions and anatomical-head brows; shared texture ownership and removed-actor cleanup.
+- Pass 403 regressions and 28 native Safari/Firefox checks per browser; verify compact touch layouts and complete test-browser cleanup.
 - See [v33 research](docs/design-research-v33.md) and [v33 QA](docs/qa-v33.md) for evidence and testing limits.
 
 ## Completed in v32
@@ -88,7 +89,7 @@ Updated 29 October 2026. The game is playable and under active development; this
 
 - Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
 - Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
-- Continued camera, storefront, lighting, NPC and character/fabric refinement; the current motion is controlled animation rather than complete cloth physics.
+- Continued camera, storefront, lighting, NPC and character/fabric refinement, including high-neck and sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
 - Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, and broader accessibility verification. The desktop Safari/Firefox matrix is complete for the recorded versions.
 
 ## Catalog and mall fidelity

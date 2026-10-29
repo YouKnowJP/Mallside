@@ -9,6 +9,7 @@ The newest entry describes the current setup. Older entries record the hosting a
 - Add saved closer/raised camera presets, smoother cutaways, visible route markers, quieter contextual overlays, a direct View control and an optional shopping guide/activity captions.
 - Correct closer shop framing and replace painted starter tops with original shirt/sleeve/collar geometry; fit subtle eyebrows to the anatomical head.
 - Preserve version-6 saves, backup keys, real-product provenance and the existing economy. Protect shared finish textures during outfit/actor disposal and prune removed contact-shadow actors.
+- Pass 403 Node regressions, compact Chromium touch checks and all 28 native gameplay checks each in Safari 26.6.2 and Firefox 159.0, with zero captured game/console errors; remove temporary Firefox files and restore Safari automation off.
 - Record primary-source design research and repeatable rendering, compatibility and gameplay validation in [v33 research](docs/design-research-v33.md) and [v33 QA](docs/qa-v33.md).
 
 ## 32.0.0 — More life between the shops — 29 October 2026
