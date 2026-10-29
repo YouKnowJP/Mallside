@@ -12,6 +12,8 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 Each mode now keeps a separate last-known-good backup. Unreadable saves open a paused recovery screen with a reviewed restore, raw-data download, JSON import and a confirmed fresh start. Storage failures show a persistent warning; another tab’s changes pause stale saving. Existing saves keep their keys and version-6 format, with earlier migrations retained. See [save recovery](docs/GAMEPLAY-v28.md), [release QA](docs/qa-v28.md) and [remaining work](ROADMAP.md).
 
+The 28.0.1 patch fixes Safari’s recovery-dialog Tab navigation. All 17 native recovery checks passed in Safari 26.6.2 and Firefox 159.0; see [native recovery QA](docs/qa-v28-browsers.md).
+
 ## Previous update · v27 — a neighborhood to come back to
 
 Continue all five local stories through ten new chapters, help match lost-property claims and keep a community invitation. Walk between stops in your collection room, rearrange kept finds and take an evening pause. Stone grain, storefront layers and more natural airborne steps refine the 3D mall and characters. Existing saves and earlier rewards carry forward. See [v27 gameplay](docs/GAMEPLAY-v27.md), [release QA](docs/qa-v27.md) and [remaining work](ROADMAP.md).

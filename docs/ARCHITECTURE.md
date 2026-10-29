@@ -15,7 +15,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The v28 UI entry uses `app.js?v=28.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The v28 UI entry uses `app.js?v=28.0.1`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 

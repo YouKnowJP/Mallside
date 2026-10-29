@@ -38,7 +38,7 @@ Isolated localhost test data was used; public player saves were not injected or 
 
 Desktop and phone-sized recovery screenshots were inspected for clipped text and controls. Resizing a desktop browser is not physical mobile-device certification.
 
-Safari and Firefox’s v27.0.1 gameplay matrix is recorded in [browser QA](qa-v27-browsers.md). Native Safari automation remains disabled and the temporary Firefox installation remains removed; this new recovery flow was not rerun in those native browsers. Physical iOS/Android and broader assistive-technology testing remain roadmap work.
+Safari and Firefox’s v27.0.1 gameplay matrix is recorded in [browser QA](qa-v27-browsers.md). The initial 28.0.0 checks above used Chromium. The [28.0.1 native matrix](qa-v28-browsers.md) now covers all recovery flows in Safari and Firefox, including the Safari keyboard fix. Safari automation was turned off and the temporary Firefox installation removed after those checks. Physical iOS/Android and broader assistive-technology testing remain roadmap work.
 
 ## Release gates
 

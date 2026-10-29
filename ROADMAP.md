@@ -8,6 +8,7 @@ Updated 28 October 2026. The game is playable and under active development; this
 - A paused recovery screen for damaged or missing saves, reviewed restore/import, exact stored-data downloads and confirmed fresh starts.
 - Persistent storage-failure warnings, safe retries and protection from a stale tab overwriting newer progress.
 - Compatibility, failure-injection, restore/reward regressions and compiled Chromium recovery checks. See [v28 QA](docs/qa-v28.md).
+- Native Safari/Firefox recovery validation in v28.0.1: 17 checks each, with Safari’s dialog Tab navigation fixed. See [native recovery QA](docs/qa-v28-browsers.md).
 
 ## Browser validation in v27.0.1
 

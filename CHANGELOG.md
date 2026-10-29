@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 28.0.1 — Native recovery testing and Safari keyboard fix — 28 October 2026
+
+- Fixed Safari skipping the recovery import-review button when tabbing from the JSON textarea. Dialogs now advance and wrap focus explicitly for Tab and Shift-Tab.
+- Passed 17 native recovery checks each in Safari 26.6.2 and Firefox 159.0, including both modes, real cross-tab conflicts, failed writes, exact download payloads and once-only night income.
+- Added a reusable localhost-only recovery runner and documented browser measurements, specific navigation-cancelled font warnings and temporary-browser cleanup.
+- Kept save schema 6, existing primary/backup formats, game progress and catalog assets unchanged.
+
 ## 28.0.0 — Save recovery — 28 October 2026
 
 - Keep one previous validated local save per mode, captured before replacing the primary; check backup integrity and retain the original JSON save keys and schema.

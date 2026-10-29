@@ -25,6 +25,14 @@ These commands create disposable sessions and synthetic saves and refuse non-loc
 
 The runner handles Safari's native scrolling/click timing and falls back from element screenshots to its supported whole-window screenshot API. See [recorded native-browser QA](../docs/qa-v27-browsers.md).
 
+## Native save-recovery QA
+
+After the same build/server/driver setup, run `npm run test:recovery -- --browser=safari --driver=http://127.0.0.1:4444`, or select Firefox with `--browser=firefox --driver=http://127.0.0.1:4445 --binary=/absolute/path/to/firefox --headless=true`.
+
+[The recovery runner](save-recovery-browser-qa.mjs) always creates its own disposable WebDriver session and refuses non-local endpoints. It seeds synthetic career/free-shop saves, checks versions 1–6, failed writes, damaged/missing saves, reviewed replacements, mode isolation, real cross-tab conflicts, night-transition idempotence, keyboard focus and responsive recovery layout. Download checks capture the actual generated Blob payload before the operating-system save step, avoiding files in a personal Downloads folder. Error capture, screenshots, browser capabilities and reports go to ignored `build/qa/`.
+
+Enable Safari automation only for the authorized test run, and turn it off afterward. If Firefox was downloaded solely for testing, stop its sessions/driver, unmount its disk image and remove its temporary app, archive, profiles, logs and QA artifacts. Preserve pre-existing browser profiles and unrelated projects’ files. Neither runner installs a browser or changes Safari security settings.
+
 ## Historical research tools
 
 The remaining Python download, expansion, assembly and optimization scripts are retained as research provenance for earlier catalog schemas. They are **not** part of installation, CI, deployment or the supported release process. Some expect old JSON fields, research inputs in temporary directories, Pillow or a machine-specific `cwebp` executable. Do not run them blindly against the current catalog. Review their input/output schema and rights before adapting them. Existing prepared assets are sufficient to run and test the game without network access.
