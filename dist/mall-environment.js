@@ -1,7 +1,7 @@
 import {surfaceFinish} from './mall-atmosphere.js?v=26.0.0';
 import {retailIdentity,drawRetailSign} from './retail-identity.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
-import {themeFor,facadeFrame} from './mall-design.js?v=23.0.0';
+import {themeFor,facadeFrame} from './mall-design.js?v=32.0.0';
 import {brandDesign} from './brand-designs.js?v=23.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
@@ -108,10 +108,16 @@ export function buildPublicRealm(w,l,theme){
  const d=l.environment,b=new Details(w),mainCourt=l.campus.courts.find(n=>/Jewel|Atrium/.test(n.label))||l.campus.courts.reduce((a,n)=>Math.hypot(a.x-l.spawn.x,a.y-l.spawn.y)<Math.hypot(n.x-l.spawn.x,n.y-l.spawn.y)?a:n),portals=d.portals.filter(p=>l.campus.outdoor||Math.hypot(p.x-mainCourt.x,p.y-mainCourt.y)>190);w.waterFeatures=[];
  for(const p of d.edgePlanting){const x=p.x+p.width/2,z=p.y+p.height/2;if(p.kind==='garden'){b.box(x,4,z,p.width,8,p.height,theme.stone);b.box(x,8,z,p.width-8,1,p.height-8,'#687850');for(const dx of [-23,0,23])for(const dz of [-17,17]){b.leaf(x+dx,18,z+dz,15,theme.plant,1,.65,.8);b.leaf(x+dx+3,25,z+dz-3,4,theme.flowers);}plant(b,x, z,theme,false,true);}else{plant(b,x,z,theme,p.palm);b.box(x,3,z,63,6,63,theme.stone);}}
  for(const p of portals.flatMap(p=>[-1,1].map(sign=>({x:p.x+Math.cos(p.angle)*sign*p.width/2,y:p.y-Math.sin(p.angle)*sign*p.width/2,height:p.height})))){b.box(p.x,4,p.y,22,8,22,theme.stone);b.box(p.x,p.height/2,p.y,9,p.height,9,theme.wall);b.box(p.x,p.height-3,p.y,19,6,19,theme.trim);}
+ // Original stone inlays articulate the broad courts without adding obstacles.
+ for(const [i,n]of l.campus.courts.entries()){
+  const rim=w.mesh(new T.RingGeometry(29,31,32),w.mat(theme.inlay,{roughness:.95}));rim.rotation.x=-Math.PI/2;rim.position.set(n.x,.22,n.y);rim.castShadow=false;
+  for(let j=0;j<4;j++){const angle=j*Math.PI/2,x=n.x+Math.cos(angle)*17,z=n.y+Math.sin(angle)*17;b.box(x,.3,z,8,.25,8,j%2?theme.stone:theme.inlay,Math.PI/4);}
+ }
  for(const p of d.fixtures){const x=p.x+p.width/2,z=p.y+p.height/2;
   if(p.kind==='bench'){
    const a=p.rotation,rx=Math.cos(a),rz=-Math.sin(a),fx=Math.sin(a),fz=Math.cos(a);b.box(x,12,z,64,5,22,'#987752',a,'timber');b.box(x-fx*9,24,z-fz*9,64,21,4,'#b2946c',a,'timber');for(const side of [-1,1]){b.box(x+rx*23,6,z+rz*23,5,12,18,theme.trim,a,'metal');b.box(x+rx*30,19,z+rz*30,3,9,19,theme.trim,a,'metal');}
    for(const slat of [-7,0,7])b.box(x+fx*slat,14.7,z+fz*slat,63,.5,1.4,'#6f583f',a,'timber');for(const rail of [19,26,33])b.box(x-fx*11,rail,z-fz*11,62,1,1,'#967653',a,'timber');
+   if(l.campus.outdoor){const a=p.rotation,px=x-Math.sin(a)*8,pz=z-Math.cos(a)*8;b.cylinder(px,49,pz,1.6,72,theme.trim);const shade=w.mesh(new T.ConeGeometry(43,12,8),w.mat(theme.wall));shade.position.set(px,91,pz);shade.castShadow=true;}
    const hit=w.box(x,17,z,p.width,26,p.height,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'bench:'+p.id,p.approach);
   }else if(p.kind==='kiosk'){
    const accent={coffee:'#54766a',photo:'#9d8798',flowers:'#789262',popup:'#bd8c62'}[p.venue];
@@ -121,6 +127,12 @@ export function buildPublicRealm(w,l,theme){
    else if(p.venue==='photo'){b.box(x,40,z,15,10,9,'#4e6060');b.cylinder(x,47,z,3,3,theme.stone);}
    else for(const dx of [-10,0,10])b.box(x+dx,35,z,7,9,7,['#819b87','#c39a76','#b4a079'][(dx+10)/10]);
    const hit=w.box(x,25,z,40,52,34,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'venue:'+p.venue,p.approach);
+  }else if(p.kind==='commons'){
+   b.box(x,13,z,26,26,26,theme.stone);b.box(x,27,z,30,2,30,theme.trim);
+   if(p.activity==='garden'){b.box(x,29,z,25,3,25,'#6f7957');for(const [dx,dz]of [[-6,5],[6,5],[0,-6]]){b.leaf(x+dx,39,z+dz,9,theme.plant,.7,1,.7);b.leaf(x+dx,46,z+dz,4,theme.flowers);}}
+   else if(p.activity==='reading'){b.box(x,43,z-9,27,29,5,theme.trim);b.box(x,30,z,27,3,24,theme.wall);b.box(x,55,z,29,3,25,theme.wall);for(let i=0;i<5;i++)b.box(x-10+i*5,42,z-5,4,20,11,['#b87d68','#719685','#d4b465','#879bb0','#a28ba4'][i]);}
+   else for(let i=0;i<3;i++){b.box(x-9+i*9,29,z,8,2,20,['#bf805f','#698f83','#d1b46e'][i]);b.box(x-9+i*9,30.2,z,1,.3,12,'#fff1d3');b.box(x-9+i*9,30.3,z-5,5,.3,1,'#fff1d3');}
+   const names={mosaic:'Mosaic table',reading:'Reading shelf',garden:'Garden study'},key='commons:'+p.activity,hit=w.box(x,30,z,30,62,30,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(names[p.activity]+' ↗',x,76,z,82,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:150,directory:true});
   }else if(p.kind==='planter')plant(b,x,z,theme,false,true);
   else if(p.kind==='fountain'){
    b.cylinder(x,5,z,17,10,theme.stone);b.cylinder(x,10.4,z,14,1,'#7baaa5');b.cylinder(x,15,z,4,9,theme.trim);const jet=w.mesh(new T.CylinderGeometry(.9,1.3,19,6),w.mat('#c5e7df',{transparent:true,opacity:.65,depthWrite:false}));jet.position.set(x,26,z);jet.castShadow=false;w.waterFeatures.push({mesh:jet,y:26});
@@ -154,7 +166,7 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
- const count=b.flush();w.canvas.dataset.environmentRevision='31';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
+ const count=b.flush();w.canvas.dataset.environmentRevision='32';w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 
 export function buildAnchor(w,a,theme){

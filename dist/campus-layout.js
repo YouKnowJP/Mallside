@@ -1,12 +1,14 @@
-import {connectStorefronts,fillRetailBacks,connectedGalleries} from './mall-neighborhood.js?v=26.0.0';
-import {furnishCampus,completeRetailWings} from './mall-design.js?v=23.0.0';
+import {connectStorefronts,fillRetailBacks,connectedGalleries} from './mall-neighborhood.js?v=32.0.0';
+import {furnishCampus,completeRetailWings} from './mall-design.js?v=32.0.0';
 import {campusPlan,gameStoreFloor,matchingTenant,tenantFloor,normalizeName} from './campus-model.js?v=23.0.0';
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {FLOORPLANS} from './mall-plans.js?v=23.0.0';
 import {closestFloor,walkable} from './free-navigation.js?v=25.0.0';
 import {LOCALS} from './mall-life.js?v=26.0.0';
 const overlap=(a,b,p=2)=>a.x<b.x+b.width+p&&a.x+a.width+p>b.x&&a.y<b.y+b.height+p&&a.y+a.height+p>b.y;
-export function campusLayout(mall,floor=0,stores=[]){const campus=connectedGalleries(completeRetailWings(campusPlan(mall,floor),(CENTER_DIRECTORIES[mall.id]?.tenants||[]).filter(t=>tenantFloor(mall.id,t)===floor).length)),plan=FLOORPLANS[mall.id],used=[],bounds={left:30,top:30,right:campus.width-30,bottom:campus.height-30},surfaces=[...campus.halls.map(e=>({kind:'hall',a:campus.nodes[Number(e.a)],b:campus.nodes[Number(e.b)],width:e.width})),...campus.courts.map(n=>({kind:'court',x:n.x,y:n.y,radius:n.radius}))],nav={bounds,obstacles:used,surfaces,gridStep:20},slots=[];
+// Compact upper and street-level courts need room for both seating and public activities.
+const publicCourts=c=>{if(c.courts.length<=5)for(const n of c.courts)n.radius=Math.max(n.radius,130);return c;};
+export function campusLayout(mall,floor=0,stores=[]){const campus=publicCourts(connectedGalleries(completeRetailWings(campusPlan(mall,floor),(CENTER_DIRECTORIES[mall.id]?.tenants||[]).filter(t=>tenantFloor(mall.id,t)===floor).length))),plan=FLOORPLANS[mall.id],used=[],bounds={left:30,top:30,right:campus.width-30,bottom:campus.height-30},surfaces=[...campus.halls.map(e=>({kind:'hall',a:campus.nodes[Number(e.a)],b:campus.nodes[Number(e.b)],width:e.width})),...campus.courts.map(n=>({kind:'court',x:n.x,y:n.y,radius:n.radius}))],nav={bounds,obstacles:used,surfaces,gridStep:20},slots=[];
  const publicClear=r=>!campus.courts.some(n=>Math.hypot(n.x-Math.max(r.x,Math.min(r.x+r.width,n.x)),n.y-Math.max(r.y,Math.min(r.y+r.height,n.y)))<n.radius+10)&&!campus.halls.some(e=>{const a=campus.nodes[Number(e.a)],b=campus.nodes[Number(e.b)],pad=e.width/2+10,dx=b.x-a.x,dy=b.y-a.y;let lo=0,hi=1;for(const [v,q]of [[-dx,a.x-r.x+pad],[dx,r.x+r.width+pad-a.x],[-dy,a.y-r.y+pad],[dy,r.y+r.height+pad-a.y]]){if(Math.abs(v)<1e-9){if(q<0)return false;}else if(v<0)lo=Math.max(lo,q/v);else hi=Math.min(hi,q/v);if(lo>hi)return false;}return true;});
  used.push(...campus.escalators);
  const fits=r=>r.x>35&&r.y>35&&r.x+r.width<campus.width-35&&r.y+r.height<campus.height-35&&!used.some(v=>overlap(r,v));

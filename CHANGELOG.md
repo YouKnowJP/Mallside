@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 32.0.0 — More life between the shops — 29 October 2026
+
+- Add 69 reachable mosaic tables, reading shelves and garden studies across all 23 public floors, with original activities, compatible saved notebooks and one-time discovery trails.
+- Spread the stops between courts; widen compact public courts, preserve seating, add stone inlays and shaded outdoor benches, and render the discoveries in 3D and 2D.
+- Add map destinations for activities, venues, benches, kiosks and directories; make floor connectors interactive and clarify stocked, service and research-only storefronts.
+- Continue saved-bag checkout routes into the correct shop counter; align service guidance, labels and exits with bookings; keep cinema use inside its service interior and require branch-local refunds.
+- Route nonwearable/child collections to demos, remove misleading fitting guidance, update discovery counts live and repair keyboard access to dialog details.
+- Validate all physical discovery approaches, save/reward invariants, changed compiled browser flows and compact touch layouts. See [v32 QA](docs/qa-v32.md) for the scope and remaining browser/device checks.
+
 ## 31.0.0 — A clearer shopping day — 28 October 2026
 
 - Rebuild Explore around a larger scene, compact time/wallet bar, persistent shopping guide, searchable shop/floor/availability finder and a unified game menu.

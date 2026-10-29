@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v31 — a clearer shopping day
+## v32 — more life between the shops
+
+Discover mosaic tables, reading shelves and garden studies across all 23 floor views, with a saved three-stop trail for each mall. The map now lists public activities, rest spots and interactive floor connections. Wider compact courts, stone inlays and shaded seating add detail; clearer service/demos/research guidance and automatic routing from a saved bag to checkout repair confusing shop options. Existing saves stay compatible. See [v32 gameplay](docs/GAMEPLAY-v32.md), [release QA](docs/qa-v32.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v31 — a clearer shopping day
 
 A larger play scene, searchable stocked-shop finder, persistent shopping guide and explicit Browse, Bag and Exit actions make the shopping loop easier to follow. The game menu brings missions, memories, purchases, receipts, destinations and saves together. Interactive map destinations, safer shop transitions, smoother walking/camera movement and a viewport-filling fullscreen layout improve exploration; gallery lighting, hanging planting and actual floor diagrams add detail. Existing saves remain compatible. See [v31 gameplay](docs/GAMEPLAY-v31.md), [release QA](docs/qa-v31.md) and [remaining work](ROADMAP.md).
 

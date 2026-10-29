@@ -1,6 +1,13 @@
 # Mallside development roadmap
 
-Updated 28 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+Updated 29 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+
+## Completed in v32
+
+- Three original public-space activities on every floor: 69 physical stops with reachable approaches, saved discovery notebooks and per-mall trails.
+- More useful maps with public-stop/rest lists, interactive floor connections and clear research/service/stocked status; wider compact courts, retained seating and richer court details.
+- Automatic saved-bag routes to checkout, corrected service guidance and exits, branch-local booking refunds, useful nonwearable demos and keyboard access to dialog details.
+- Full regression and compiled Chromium/touch checks; native Safari/Firefox revalidation remains separate from the historical v31 matrix. See [v32 QA](docs/qa-v32.md).
 
 ## Completed in v31
 

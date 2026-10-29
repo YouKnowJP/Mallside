@@ -1,3 +1,4 @@
+import {COMMONS} from './commons.js?v=32.0.0';
 import {onSurface,contains,walkable,closestFloor,clearWalk} from './free-navigation.js?v=25.0.0';
 const overlap=(a,b)=>a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y;
 export function connectStorefronts(layout){
@@ -24,7 +25,7 @@ export function fillRetailBacks(layout){
  }delete layout.nav.grid;return blocks;
 }
 export const FIXTURE_STOPS={coffee:{name:'Coffee kiosk',label:'Choose a real drink'},photo:{name:'Outfit photo spot',label:'Take a portrait'},flowers:{name:'Flower cart',label:'Make a bouquet'},popup:{name:'Pop-up counter',label:'See today’s offer'}};
-export function fixtureStop(f){return f.venue?{id:'venue:'+f.venue,...FIXTURE_STOPS[f.venue]}:f.kind==='bench'?{id:'bench:'+f.id,name:'Garden bench',label:'Sit & rest'}:{id:'directory:'+f.node,name:'Mall directory',label:'Find a shop'};}
+export function fixtureStop(f){return f.activity?{id:'commons:'+f.activity,name:COMMONS[f.activity].name,label:COMMONS[f.activity].verb}:f.venue?{id:'venue:'+f.venue,...FIXTURE_STOPS[f.venue]}:f.kind==='bench'?{id:'bench:'+f.id,name:'Garden bench',label:'Sit & rest'}:{id:'directory:'+f.node,name:'Mall directory',label:'Find a shop'};}
 export function shopperPlan(layout,count=32){
  const shops=[...layout.rects,...layout.units].sort((a,b)=>Math.hypot(a.door.x-layout.spawn.x,a.door.y-layout.spawn.y)-Math.hypot(b.door.x-layout.spawn.x,b.door.y-layout.spawn.y)),points=shops.slice(0,Math.max(24,count)).map(u=>u.door);const actors=[];
  for(let i=0;i<count;i++){

@@ -20,7 +20,7 @@ test('all four shopfront orientations use the physical entrance face and correct
 test('new seating and directory approaches are reachable across all 23 public floor views',()=>{
  let seats=0,directories=0;
  for(const mall of MALLS){const layouts=mallLayouts(mall);for(const [floor,l] of layouts.entries()){
-  assert.equal(l.environment.revision,14);
+  assert.equal(l.environment.revision,15);
   assert.deepEqual(l.environment.theme,themeFor(mall));
   for(const f of l.environment.fixtures){
    assert.ok(l.nav.obstacles.includes(f),'visible furniture must be a real collider');

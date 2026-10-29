@@ -3,7 +3,7 @@ import * as T from './vendor/three.module.js';
 import {productAppearance} from './product-appearance.js?v=23.0.0';
 import {physicalProduct} from './merchandise-3d.js?v=23.0.0';
 import {carriedSelections} from './shopping-selection.js?v=26.0.0';
-import {carried,canTry} from './engine.js?v=27.0.0';
+import {carried,canTry} from './engine.js?v=32.0.0';
 
 export function dressPerson(w,g,equipment){
  const top=equipment.top,cut=top&&physicalProduct(top)&&productAppearance(top).garment;

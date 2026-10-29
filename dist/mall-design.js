@@ -38,6 +38,20 @@ export function furnishCampus(layout){
  const accessSpines=[...c.halls.map(h=>({a:c.nodes[Number(h.a)],b:c.nodes[Number(h.b)]})),...layout.nav.surfaces.filter(s=>s.kind==='hall'&&s.width<100)];
  const clearSpine=r=>accessSpines.every(h=>distanceToSegment({x:r.x+r.width/2,y:r.y+r.height/2},h.a,h.b)>Math.max(r.width,r.height)/2+23);
  const add=(kind,x,y,width,height,rotation=0,node=null)=>{const r={id:kind+'-'+fixtures.length,kind,x:x-width/2,y:y-height/2,width,height,rotation,node};if(!available(r)||!allOnFloor(r)||!clearSpine(r))return null;fixtures.push(r);layout.nav.obstacles.push(r);return r;};
+ const placeBench=n=>{for(const [dx,dy,rotation]of [[-58,-58,Math.PI/4],[58,-58,-Math.PI/4],[58,58,-Math.PI*3/4],[-58,58,Math.PI*3/4],[0,-72,0],[72,0,-Math.PI/2],[0,72,Math.PI],[-72,0,Math.PI/2]]){const bw=Math.abs(Math.cos(rotation))*64+Math.abs(Math.sin(rotation))*22,bh=Math.abs(Math.sin(rotation))*64+Math.abs(Math.cos(rotation))*22,r=add('bench',n.x+dx,n.y+dy,bw,bh,rotation,n.id);if(r){r.seat={x:n.x+dx,y:n.y+dy,rotation};const approach={x:r.seat.x+Math.sin(rotation)*30,y:r.seat.y+Math.cos(rotation)*30};if(walkable(approach,layout.nav,10)&&clearWalk(closestFloor(n,layout.nav),approach,layout.nav,10)){r.approach=approach;protectedPoints.push(approach);return r;}else{fixtures.pop();layout.nav.obstacles.pop();}}}return null;};
+ // Reserve an accessible resting spot before activity tables on compact floors.
+ for(const n of c.courts)if(placeBench(n))break;
+ // Small commons tables occupy court edges, with a separately tested approach.
+ // One of each activity on every public floor gives quieter wings a reason to visit.
+ for(const [index,activity]of ['mosaic','reading','garden'].entries()){
+  const offset=Math.floor(index*c.courts.length/3),courts=c.courts.slice(offset).concat(c.courts.slice(0,offset));let placed=false;
+  for(const n of courts){for(const [dx,dy]of [[-53,-53],[53,53],[-53,53],[53,-53],[0,-72],[72,0],[0,72],[-72,0]]){
+   const r=add('commons',n.x+dx,n.y+dy,26,26,0,n.id);if(!r)continue;
+   r.approach=[{x:n.x+dx,y:n.y+dy+32},{x:n.x+dx,y:n.y+dy-32},{x:n.x+dx+32,y:n.y+dy},{x:n.x+dx-32,y:n.y+dy}].find(p=>walkable(p,layout.nav,10)&&clearWalk(closestFloor(n,layout.nav),p,layout.nav,10));
+   if(!r.approach){fixtures.pop();layout.nav.obstacles.pop();continue;}
+   r.id='commons-'+activity;r.activity=activity;protectedPoints.push(r.approach);placed=true;break;
+  }if(placed)break;}
+ }
  for(const [i,n]of c.courts.entries()){
   const venue=['coffee','photo','flowers','popup'][i%4];if(!layout.venues.some(v=>v.id===venue))continue;
   for(const [dx,dy]of [[-46,46],[46,-46],[46,46],[-46,-46]]){
@@ -48,7 +62,7 @@ export function furnishCampus(layout){
  }
  for(const [i,n]of c.courts.entries()){
   // Furnish the edges of a court; the central walking spine and all store approaches stay clear.
-  const seats=[];for(const [dx,dy,rotation]of [[-58,-58,Math.PI/4],[58,-58,-Math.PI/4],[58,58,-Math.PI*3/4],[-58,58,Math.PI*3/4],[0,-72,0],[72,0,-Math.PI/2],[0,72,Math.PI],[-72,0,Math.PI/2]]){const bw=Math.abs(Math.cos(rotation))*64+Math.abs(Math.sin(rotation))*22,bh=Math.abs(Math.sin(rotation))*64+Math.abs(Math.cos(rotation))*22,r=add('bench',n.x+dx,n.y+dy,bw,bh,rotation,n.id);if(r){r.seat={x:n.x+dx,y:n.y+dy,rotation};const approach={x:r.seat.x+Math.sin(rotation)*30,y:r.seat.y+Math.cos(rotation)*30};if(walkable(approach,layout.nav,10)&&clearWalk(closestFloor(n,layout.nav),approach,layout.nav,10)){r.approach=approach;protectedPoints.push(approach);seats.push(r);}else{fixtures.pop();layout.nav.obstacles.pop();}}if(seats.length>=2)break;}
+  for(let seat=fixtures.filter(f=>f.kind==='bench'&&f.node===n.id).length;seat<2;seat++)if(!placeBench(n))break;
   for(const [dx,dy]of [[-52,-53],[52,53],[52,-53],[-52,53]]){if(add(i%3===0?'fountain':'planter',n.x+dx,n.y+dy,32,32,0,n.id))break;}
   if(i%2===0)for(const [dx,dy]of [[48,-54],[-48,54],[-48,-54],[48,54]]){const r=add('directory',n.x+dx,n.y+dy,14,14,0,n.id);if(r){r.approach=[{x:r.x+7,y:r.y+30},{x:r.x+30,y:r.y+7},{x:r.x+7,y:r.y-16},{x:r.x-16,y:r.y+7}].find(p=>walkable(p,layout.nav,10)&&clearWalk(closestFloor(n,layout.nav),p,layout.nav,10));if(!r.approach){fixtures.pop();layout.nav.obstacles.pop();}else protectedPoints.push(r.approach);break;}}
  }
@@ -63,7 +77,7 @@ export function furnishCampus(layout){
  }
  for(let y=180;y<c.height-140&&edgePlanting.length<52;y+=170)for(let x=180;x<c.width-140&&edgePlanting.length<52;x+=170){if((Math.round(x/170)+Math.round(y/170))%3)continue;const r={x:x-42,y:y-36,width:84,height:72};if(offFloor(r)&&c.halls.some(h=>distanceToSegment({x,y},c.nodes[Number(h.a)],c.nodes[Number(h.b)])<370)&&!edgePlanting.some(p=>Math.hypot(p.x-r.x,p.y-r.y)<110))edgePlanting.push({...r,kind:'garden',variation:Math.round(x+y)%4});}
  delete layout.nav.grid;
- return {revision:14,theme,fixtures,edgePlanting,colonnades,portals,seating:fixtures.filter(f=>f.kind==='bench'),courts:c.courts};
+ return {revision:15,theme,fixtures,edgePlanting,colonnades,portals,seating:fixtures.filter(f=>f.kind==='bench'),courts:c.courts};
 }
 
 // Camera-facing buildings lower into a floor-plan cutaway when they hide the shopper.

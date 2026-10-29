@@ -6,7 +6,7 @@ import * as T from './vendor/three.module.js';
 import {createShopper} from './character-rig.js?v=27.0.0';
 import {dressPerson} from './merchandise-carry.js?v=26.0.0';
 import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=26.0.0';
-import {equippedLook} from './engine.js?v=27.0.0';
+import {equippedLook} from './engine.js?v=32.0.0';
 
 // The dressing room uses the same rig, products and pose solver as the mall.
 patchAmbientLighting(T.ShaderChunk);
