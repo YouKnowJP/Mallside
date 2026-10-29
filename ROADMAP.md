@@ -7,7 +7,7 @@ Updated 29 October 2026. The game is playable and under active development; this
 - Three original public-space activities on every floor: 69 physical stops with reachable approaches, saved discovery notebooks and per-mall trails.
 - More useful maps with public-stop/rest lists, interactive floor connections and clear research/service/stocked status; wider compact courts, retained seating and richer court details.
 - Automatic saved-bag routes to checkout, corrected service guidance and exits, branch-local booking refunds, useful nonwearable demos and keyboard access to dialog details.
-- Full regression and compiled Chromium/touch checks; native Safari/Firefox revalidation remains separate from the historical v31 matrix. See [v32 QA](docs/qa-v32.md).
+- Full regression, compiled Chromium/touch checks and 25 distinct native Safari/Firefox gameplay checks per browser, with zero captured game/console errors. See [v32 QA](docs/qa-v32.md) for input modes and remaining physical-device/screen-reader work.
 
 ## Completed in v31
 

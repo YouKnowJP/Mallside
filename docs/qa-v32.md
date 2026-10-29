@@ -24,7 +24,22 @@ Desktop Chromium used native pointer and keyboard actions in disposable contexts
 
 The first full regression run caught a compact-floor seating regression. Reserving seating and enlarging compact courts fixed it; all three activities and at least one resting spot are now checked on each floor. Browser testing also caught stale discovery counts and inaccessible details in the dialog focus loop; both were fixed and repeated successfully.
 
-This release's new browser checks use Chromium and touch emulation. The native Safari/Firefox matrix documented in [v31 QA](qa-v31.md) remains historical; it was not rerun for v32. Physical mobile devices and manual screen-reader certification remain open. Safari automation was not enabled, and no temporary Firefox installation was created.
+## Native Safari and Firefox follow-up
+
+Native validation on 29 October 2026 passed the seven new v32 scenarios and the existing shared-activity/shopping suite. Both browsers covered **25 distinct checks with zero captured game exceptions, console errors or resource warnings**. Safari completed all 25 in one final run. Firefox completed the 18-check core run and eight-check v32 run, with their final error-capture check repeated in both runs.
+
+| Browser | Native mode | Passed | Measured CSS viewports |
+| --- | --- | --- | --- |
+| Safari 26.6.2 | Visible SafariDriver window; native keyboard activation | 25/25 | 390×729, 768×729, 1400×729 |
+| Firefox 159.0 / geckodriver 0.37.1 | Headless native Firefox; pointer clicks and keyboard | 25 distinct checks across 18/18 + 8/8 runs | 500×759, 768×939, 1400×915 |
+
+The new cases cover the three-stop discovery trail and exact 40 XP outcome, keyboard mosaic controls, saved choices/reload/repeat limits, saved-bag routing into checkout and a full purchase refund, service booking/refund/cinema use/exit, nonwearable demos and research-only shop guidance, cross-floor rooftop discoveries and floor connectors, map details keyboard navigation, and the illustrated fallback/compact activity layouts. The existing suite also repeats all ten shared activities, 3D shop entry/exit/reentry, walking and stopping, fitting/carrying/paying, interior-to-map routing, fullscreen, shop search, dialog containment and game-menu access.
+
+Safari's early walking attempts stopped when its automated window became hidden or its protection dialog paused the session. These attempts were not counted as passes. Re-selecting the existing window through the standard WebDriver switch-window command restored visibility and movement. The runner now restores the actual test window, requires visibility before advancing a wait condition, excludes hidden time from the gameplay timeout and bounds the overall wait. It can also reuse a resumed Safari session. No game visibility override or error exclusion was introduced. The final run recorded visible windows throughout setup and all checks passed. No additional gameplay code fix was needed.
+
+Safari still uses native Enter activation because of the earlier driver pointer-delivery limitation documented in [v31 QA](qa-v31.md). Firefox uses native pointer activation. These desktop checks and Chromium touch emulation do not certify physical mobile devices or manual screen-reader behavior.
+
+After testing, all disposable sessions, drivers and the preview server were stopped. The temporary Firefox app, installer, geckodriver/archive, disposable profile root and 11 Firefox QA artifacts were removed. Four test-created Firefox crash/telemetry files were removed against a recorded baseline; pre-existing directories and data were preserved. Safari's **Allow remote automation** checkbox was visibly verified **off (0)**. Its original local-file restrictions were also verified restored.
 
 ## Publication
 

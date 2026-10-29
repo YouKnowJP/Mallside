@@ -9,6 +9,7 @@ The newest entry describes the current setup. Older entries record the hosting a
 - Add map destinations for activities, venues, benches, kiosks and directories; make floor connectors interactive and clarify stocked, service and research-only storefronts.
 - Continue saved-bag checkout routes into the correct shop counter; align service guidance, labels and exits with bookings; keep cinema use inside its service interior and require branch-local refunds.
 - Route nonwearable/child collections to demos, remove misleading fitting guidance, update discovery counts live and repair keyboard access to dialog details.
+- Complete native Safari/Firefox follow-up coverage: 25 distinct gameplay checks per browser, zero captured game/console errors, reliable Safari window restoration and verified test cleanup. No additional gameplay defect was found.
 - Validate all physical discovery approaches, save/reward invariants, changed compiled browser flows and compact touch layouts. See [v32 QA](docs/qa-v32.md) for the scope and remaining browser/device checks.
 
 ## 31.0.0 — A clearer shopping day — 28 October 2026
