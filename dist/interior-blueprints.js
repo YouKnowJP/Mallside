@@ -27,7 +27,7 @@ export function makeInteriorPlan(store,plan,visibleCount=Math.min(6,store.count|
  const mirrored=['perimeter','coastal','atelier','jewelry'].includes(design.layout)&&design.variation%2===1;
  const checkout={x:mirrored?230:820,y:650,width:150,height:60},returns={x:mirrored?830:230,y:650,width:120,height:60};
  const fitting={x:mirrored?815:225,y:135,width:140,height:90},rail={x:mirrored?255:690,y:145,width:220,height:55};
- const lounge=['food','service','visitor','entertainment','auto','gallery'].includes(store.businessKind),seating=lounge?[{x:554,y:615,width:92,height:30}]:[];
+ const lounge=store.catalogStatus==='pending'||['food','service','visitor','entertainment','auto','gallery'].includes(store.businessKind),seating=lounge?[{x:554,y:615,width:92,height:30}]:[];
  const decor=/niches|silk|velvet|shelf|fold|book|rack|screen|sink|trunks|menu|coffee|bakery|citrus|steel-counter|room-scenes|shoe|sneaker|travel/.test(design.feature)?[{x:mirrored?500:390,y:115,width:280,height:48}]:[];
  // Real walls bound two enterable fitting cubicles. The doorways remain open in navigation.
  const fittingWalls=[{x:fitting.x,y:fitting.y,width:140,height:5},...[0,68,136].map(dx=>({x:fitting.x+dx,y:fitting.y,width:4,height:90}))];

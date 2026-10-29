@@ -2,6 +2,15 @@
 
 Updated 29 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v36
+
+- Original planning lounges in the remaining 359 research-only retail shops, with category-specific workbenches/studies, original map and ledger props, functional planning stations and reachable resting benches.
+- Budgeted three-item shortlists of verified local products, tax-inclusive estimates, explicit non-spending saves, a 16-plan notebook and routes to actual product shops; retain real catalog status and compatible saves.
+- Correct planner scroll/focus during updates and retain persistent compact exits.
+- Space ambient shoppers across walkable courts, add bounded avoidance and gentler approaches, ease head glances and sitting transitions, and correct bench contact in malls and studios.
+- Add cushion/seam and planter gravel detail within existing public furniture footprints.
+- See [v36 gameplay](docs/GAMEPLAY-v36.md) and [v36 QA](docs/qa-v36.md).
+
 ## Completed in v35
 
 - Original, clearly labeled game dining at 249 food branches, including 91 research-only locations; furnished tables, reviewed charges on arrival, cancellation, lightweight-mode support and compatible visit history.
@@ -105,7 +114,7 @@ Updated 29 October 2026. The game is playable and under active development; this
 
 - Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
 - Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
-- Continued camera, storefront, lighting, NPC spacing around compact courts and character/fabric refinement, including high-neck and sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
+- Continued camera, storefront, lighting, NPC behavior in long visits and character/fabric refinement, including high-neck and sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
 - Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, and broader accessibility verification. The desktop Safari/Firefox matrix is complete for the recorded versions.
 
 ## Catalog and mall fidelity

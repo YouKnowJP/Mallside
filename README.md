@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v35 — dining rooms and quiet discoveries
+## v36 — planning lounges and more natural movement
+
+All 359 research-only retail shops now have themed planning lounges, useful benches and budgeted shortlists of real finds at their actual shops. Save up to three picks per plan and walk directly to inspect them. Better crowd spacing, small avoidance steps, eased glances and more natural sitting make the mall feel less mechanical. Existing saves remain compatible. See [v36 gameplay](docs/GAMEPLAY-v36.md), [release QA](docs/qa-v36.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v35 — dining rooms and quiet discoveries
 
 Original game dining makes all 249 food locations useful, including 91 research-only branches. Furnished dining rooms, 23 sculpture alcoves and a persistent sketchbook give quiet areas more to do. Research-shop returns now reach the proper desk, table collision matches the furniture, and character gestures ease smoothly while nearby visitors keep their seats. Existing saves remain compatible. See [v35 gameplay](docs/GAMEPLAY-v35.md), [release QA](docs/qa-v35.md) and [remaining work](ROADMAP.md).
 

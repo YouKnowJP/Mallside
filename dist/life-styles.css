@@ -181,3 +181,33 @@ html{scroll-behavior:auto}
 .sculpture-illustration i+i{margin-left:-17px;border-color:#5e8b80;transform:rotate(27deg)}
 .art-note{padding:18px 0;border-bottom:1px solid #d8d9cb}
 @media(max-width:620px){.dining-menu{grid-template-columns:1fr}.dining-menu article{padding:18px}.dining-menu .meal-symbol{width:46px;height:46px;font-size:28px}.dining-room .service-links{flex-wrap:wrap}.dining-room .service-links .button{flex:1 1 150px}}
+
+/* v36: original shopping lounges and budgeted shortlists. */
+.planning-invitation{padding:22px;margin:20px 0;border-radius:18px;background:#e3e9d7;border:1px solid #c2cfb7}
+.planning-invitation .button{margin:4px 8px 4px 0}
+.planner-intro h3{font-size:clamp(24px,4vw,34px);margin:10px 0}
+.planner-settings{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0}
+.planner-settings fieldset{border:1px solid #cbd1bf;border-radius:14px;padding:15px;min-width:0}
+.planner-settings legend{font-weight:700;padding:0 6px}
+.planner-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.planner-buttons [aria-pressed=true]{background:#385e50;color:#fff7e6;border-color:#385e50}
+.plan-shortlist{border:1px solid #bdc9af;border-radius:16px;padding:20px;background:#eef0e1}
+.plan-tally{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#345e45}
+.plan-tally.over-budget{color:#9c4427}
+.plan-shortlist article{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid #cbd3bd}
+.plan-shortlist small,.plan-notebook small{display:block;line-height:1.6;margin-top:5px}
+.planner-search{margin:25px 0 18px}
+.planner-search label{display:block;font-weight:700;margin-bottom:8px}
+.planner-search>div{display:flex;gap:8px}
+.planner-search input{min-width:0;flex:1;padding:12px;border:1px solid #bdc9af;border-radius:10px;background:#fffbed;color:#294d40;font:inherit}
+.planner-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:16px 0}
+.planner-products article{display:flex;flex-direction:column;padding:16px;border:1px solid #d2d5c2;border-radius:16px;background:#fcf7eb}
+.planner-products .product-art{height:145px;margin-bottom:14px}
+.planner-products h3{font-size:16px;line-height:1.45;flex:1;margin:10px 0}
+.planner-products small{font-size:10px;letter-spacing:.08em;color:#4f705d}
+.planner-products p{font-size:12px}
+.plan-notebook article{padding:20px 0;border-bottom:1px solid #ced4c1}
+.planner-products .button,.planning-invitation .button,.plan-shortlist .button{white-space:normal;min-height:44px}
+.plan-route{display:grid;gap:8px;margin-top:16px}
+@media(max-width:660px){.planner-settings{grid-template-columns:1fr}.planner-products{grid-template-columns:repeat(2,minmax(0,1fr))}.plan-shortlist{padding:15px}.plan-shortlist article{align-items:flex-start;flex-wrap:wrap}.planner-buttons .button{padding:10px 12px;font-size:12px}}
+@media(max-width:410px){.planner-products{grid-template-columns:1fr}.planner-products .product-art{height:165px}.plan-shortlist .service-links{flex-wrap:wrap}.planner-search>div{flex-wrap:wrap}.planner-search input{flex-basis:170px}}

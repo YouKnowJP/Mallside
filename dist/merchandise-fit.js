@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=33.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=35.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=36.0.0';
 import {productAppearance} from './product-appearance.js?v=23.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=23.0.0';

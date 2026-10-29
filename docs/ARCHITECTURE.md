@@ -15,7 +15,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=35.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=36.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -80,3 +80,9 @@ Camera mode, guide visibility and incidental activity captions are normalized op
 `district-life.js` supplies original dining menus, bounded dining history and one sketch per mall floor/day. The engine injects existing economy/time/recovery functions; no catalog stock or merchant evidence changes. `district-ui.js` renders review screens and the sketchbook. A dining route carries its store/meal ID in the destination, so cancellation, scene teardown or reload cannot leave a pending paid order. The controller validates the actual branch interior (or the branch door in lightweight mode) at arrival before charging. `mall-design.js` reserves each sculpture’s footprint and approach before additional furniture; map and physical stops share `fixtureStop`.
 
 Character hand IK caches the solved quaternions only when the root-local target and full local chain inputs match. Semantic arm transitions blend from the previous rendered pose; reduced-motion callers retain exact immediate poses. Ambient visitors only relocate while outside the nearby seating region.
+
+## Shopping lounges and ambient motion (v36)
+
+`shopping-plans.js` keeps optional bounded shortlists, validates real local product identities and estimates current per-line game tax. It never charges, reserves inventory or alters catalog status. `shopping-plan-ui.js` renders drafts, explicit saves and actual-shop routes. The controller preserves focus/scroll across updates and discards unsaved draft edits on reopening. `planning-lounge.js` fills the existing six display footprints with original planning props and tags stations for category, budget and route views; a reserved bench uses existing rest rules.
+
+`ambient-motion.js` supplies deterministic spaced spawn searches, bounded navigation-aware sidesteps, arrival speed and smooth sitting/bench targets. `character-rig.js` eases head orientation while reduced-motion and delta-zero callers keep exact poses. Scene telemetry records initial crowd clearance and seated blend for repeatable native checks.

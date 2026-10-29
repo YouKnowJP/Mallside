@@ -1,3 +1,4 @@
+import {spacedCrowdPoint} from './ambient-motion.js?v=36.0.0';
 import {COMMONS} from './commons.js?v=32.0.0';
 import {onSurface,contains,walkable,closestFloor,clearWalk} from './free-navigation.js?v=25.0.0';
 const overlap=(a,b)=>a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y;
@@ -29,7 +30,7 @@ export function fixtureStop(f){return f.kind==='art'?{id:'art:'+f.id,name:'Sculp
 export function shopperPlan(layout,count=32){
  const shops=[...layout.rects,...layout.units].sort((a,b)=>Math.hypot(a.door.x-layout.spawn.x,a.door.y-layout.spawn.y)-Math.hypot(b.door.x-layout.spawn.x,b.door.y-layout.spawn.y)),points=shops.slice(0,Math.max(24,count)).map(u=>u.door);const actors=[];
  for(let i=0;i<count;i++){
-  const courts=layout.campus.nodes.filter(n=>Math.hypot(n.x-layout.spawn.x,n.y-layout.spawn.y)<650),n=i>=24?(courts[(i-24)%courts.length]||layout.spawn):(points[i%points.length]||layout.spawn),a=i*2.399963,r=i>=24?58:9,p=closestFloor({x:n.x+Math.cos(a)*r,y:n.y+Math.sin(a)*r},layout.nav);if(!p)continue;
+  const courts=[...layout.campus.courts].sort((a,b)=>Math.hypot(a.x-layout.spawn.x,a.y-layout.spawn.y)-Math.hypot(b.x-layout.spawn.x,b.y-layout.spawn.y)).slice(0,4),n=i>=24?(courts[(i-24)%courts.length]||layout.spawn):(points[i%points.length]||layout.spawn),a=i*2.399963,r=i>=24?75+(i%3)*28:9;let p=spacedCrowdPoint(n,a,r,actors,layout.spawn,layout.nav);if(!p)for(const court of layout.campus.courts){p=spacedCrowdPoint(court,a,75,actors,layout.spawn,layout.nav);if(p)break;}if(!p)continue;
   const targets=(i>=24?[]:shops).map(u=>({...u.door,storeId:u.id,face:{x:u.x+u.width/2,y:u.y+u.height/2}})).filter(q=>Math.hypot(q.x-p.x,q.y-p.y)<320&&clearWalk(p,q,layout.nav)).sort((a,b)=>Math.hypot(a.x-p.x,a.y-p.y)-Math.hypot(b.x-p.x,b.y-p.y)).slice(i%3,6+i%3);
   for(const angle of [a+1,a+2.4,a+4]){const q={x:p.x+Math.cos(angle)*65,y:p.y+Math.sin(angle)*65};if(walkable(q,layout.nav)&&clearWalk(p,q,layout.nav))targets.push(q);}
   if(!targets.length)targets.push({...p});actors.push({id:'shopper-'+i,x:p.x,y:p.y,targets,speed:34+i%6*5,dwell:2+i%5,look:i%6});

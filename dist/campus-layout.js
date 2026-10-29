@@ -1,4 +1,4 @@
-import {connectStorefronts,fillRetailBacks,connectedGalleries} from './mall-neighborhood.js?v=35.0.0';
+import {connectStorefronts,fillRetailBacks,connectedGalleries} from './mall-neighborhood.js?v=36.0.0';
 import {furnishCampus,completeRetailWings} from './mall-design.js?v=35.0.0';
 import {campusPlan,gameStoreFloor,matchingTenant,tenantFloor,normalizeName} from './campus-model.js?v=23.0.0';
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';

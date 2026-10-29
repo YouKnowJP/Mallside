@@ -60,7 +60,7 @@ export function buildMallGround(w,l){
 }
 function plant(b,x,z,theme,palm=false,small=false){
  b.cylinder(x,6,z,small?12:23,12,theme.stone);b.cylinder(x,12.5,z,small?10:20,2,'#5a5844');
- if(small){b.leaf(x,23,z,14,theme.plant,1,.65,1);for(let i=0;i<4;i++)b.leaf(x+Math.cos(i*1.6)*8,30,z+Math.sin(i*1.6)*8,4,theme.flowers);return;}
+ if(small){for(let i=0;i<7;i++){const a=i*2.4;b.leaf(x+Math.cos(a)*8,14,z+Math.sin(a)*8,2.1,'#b9ae92',1,.45,.7);}b.leaf(x,23,z,14,theme.plant,1,.65,1);for(let i=0;i<4;i++)b.leaf(x+Math.cos(i*1.6)*8,30,z+Math.sin(i*1.6)*8,4,theme.flowers);return;}
  b.cylinder(x,palm?43:32,z,palm?3:4,palm?74:52,'#8a7658');
  if(palm){for(let y=15;y<78;y+=6)b.cylinder(x,y,z,3.35,.65,'#a18b69');for(let i=0;i<11;i++){const a=i*Math.PI*2/11;b.frond(x,81+(i%3)*2,z,37+i%3*4,12,i%2?theme.plant:'#73906a',-a);}}
  else{b.leaf(x,65,z,25,theme.plant,1,.82,1);b.leaf(x-13,57,z+5,18,'#7b9a70');b.leaf(x+11,69,z-3,17,'#698d65');for(let i=0;i<5;i++){const a=i*2.4;b.leaf(x+Math.cos(a)*20,58+i%3*8,z+Math.sin(a)*18,10,i%2?theme.plant:'#86a477',1,.7,1);}}
@@ -124,6 +124,7 @@ export function buildPublicRealm(w,l,theme){
    const a=p.rotation,rx=Math.cos(a),rz=-Math.sin(a),fx=Math.sin(a),fz=Math.cos(a);b.box(x,12,z,64,5,22,'#987752',a,'timber');b.box(x-fx*9,24,z-fz*9,64,21,4,'#b2946c',a,'timber');for(const side of [-1,1]){b.box(x+rx*23,6,z+rz*23,5,12,18,theme.trim,a,'metal');b.box(x+rx*30,19,z+rz*30,3,9,19,theme.trim,a,'metal');}
    for(const slat of [-7,0,7])b.box(x+fx*slat,14.7,z+fz*slat,63,.5,1.4,'#6f583f',a,'timber');for(const rail of [19,26,33])b.box(x-fx*11,rail,z-fz*11,62,1,1,'#967653',a,'timber');
    if(l.campus.outdoor){const a=p.rotation,px=x-Math.sin(a)*8,pz=z-Math.cos(a)*8;b.cylinder(px,49,pz,1.6,72,theme.trim);const shade=w.mesh(new T.ConeGeometry(43,12,8),w.mat(theme.wall));shade.position.set(px,91,pz);shade.castShadow=true;}
+   for(const side of [-1,1]){const cx=x+rx*side*15,cz=z+rz*side*15;b.box(cx,16.1,cz,27,2.4,17,'#a6b39a',a);for(const seam of [-7,7])b.box(cx+fx*seam,17.35,cz+fz*seam,25,.2,.35,'#d4ddc7',a);}
    const hit=w.box(x,17,z,p.width,26,p.height,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'bench:'+p.id,p.approach);
   }else if(p.kind==='kiosk'){
    const accent={coffee:'#54766a',photo:'#9d8798',flowers:'#789262',popup:'#bd8c62'}[p.venue];
@@ -181,7 +182,7 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
- const count=b.flush();w.canvas.dataset.environmentRevision='35';w.canvas.dataset.artAlcoves=String(d.fixtures.filter(f=>f.kind==='art').length);w.canvas.dataset.waystationCount=String(d.fixtures.filter(f=>f.amenity).length);w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
+ const count=b.flush();w.canvas.dataset.environmentRevision='36';w.canvas.dataset.artAlcoves=String(d.fixtures.filter(f=>f.kind==='art').length);w.canvas.dataset.waystationCount=String(d.fixtures.filter(f=>f.amenity).length);w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 
 export function buildAnchor(w,a,theme){

@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 36.0.0 — Planning lounges and natural movement — 29 October 2026
+
+- Furnish 359 research-only retail locations as original planning lounges with textile, abstract light-study or workshop details, budget/map stations and usable resting benches.
+- Add compatible, bounded shopping shortlists: three verified local finds, current game prices and tax, explicit saves, category/search tools and routes to each product’s actual shop; no charge or reservation while planning.
+- Preserve keyboard focus and scroll through edits, support lightweight graphics, and retain pinned 44px shop exits.
+- Improve crowd spacing and avoidance, arrival speed, head glances, sitting curves and bench contact; add public cushion/seam and planter gravel details.
+- Keep real product catalogs and schema-6 save keys intact. See [v36 QA](docs/qa-v36.md) for validation and cleanup.
+
 ## 35.0.0 — Dining rooms and quiet discoveries — 29 October 2026
 
 - Add clearly labeled original game dining at all 249 food branches, including 91 research-only locations, with reviewed costs, charges on arrival, route cancellation, lightweight-mode support and bounded saved visit history.
