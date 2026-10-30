@@ -1,7 +1,7 @@
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {MALLS} from './malls.js?v=23.0.0';
 import {matchingTenant,gameStoreFloor,tenantFloor,normalizeName} from './campus-model.js?v=23.0.0';
-import {STORE_PRODUCT_SEEDS} from './store-product-seeds.js?v=39.0.0';
+import {STORE_PRODUCT_SEEDS} from './store-product-seeds.js?v=40.0.0';
 import {RETAILER_BRAND_EVIDENCE} from './retailer-evidence-v12.js?v=23.0.0';
 import {merchantIdentity,storeAudience,isDepartmentMerchant} from './merchant-identity.js?v=23.0.0';
 export const brandFamily=merchantIdentity;
@@ -22,7 +22,7 @@ const categories={
  shoes:/shoe|foot|sneaker|Vans|Converse|Crocs|Dr. Martens|UGG|HOKA|Hoka|On$|New Balance|ASICS|adidas|Adidas|Nike|NIKE|Puma|PUMA|Skechers|Clarks|Ecco|OluKai|Rothy|Sole$|Finish Line|Journeys|Champs|JD |^JD$|Taranis|Tinder Box|Christian Louboutin|Gianvito|Manolo|Roger Vivier|Stuart Weitzman|Steve Madden|Allen Edmonds|Cole Haan/i,
  bags:/bags|luggage|TUMI|Tumi|Samsonite|Rimowa|Kipling|CALPAK|Calpak|MZ Wallace|Topologie|Global Luggage|Moynat|Delvaux|Swaine|SWAINE|Rebag|FASHIONPHILE|Fashionphile|Coach|Longchamp|Kate Spade|kate spade|Tory Burch|Michael Kors|Marc Jacobs|Furla|Bally|MCM|Loewe|Celine|Gucci|Louis Vuitton|LOUIS|Prada|Hermès|Chloé|Fendi|Bottega|Dior|Chanel|Saint Laurent/i
 };
-export function businessKind(name){if(/^(?:Pottery Barn|Voluspa|U\.?S\.? Polo)/i.test(name))return /Pottery/i.test(name)?'home':/Voluspa/i.test(name)?'beauty':'apparel';if(/World of Hearing|Totally Chi Reflexology/i.test(name))return 'service';if (/^(?:CHAGEE|HEYTEA|Nespresso|See.s Candies|Sugarfina|Läderach)/i.test(name))return 'food';if (/^(?:Brioni|Alo Yoga|Beyond Yoga|Beauty Creations)/i.test(name))return /Beauty Creations/i.test(name)?'beauty':'apparel';for(const [kind,re] of Object.entries(categories))if(re.test(name))return kind;return 'apparel';}
+export function businessKind(name){if(/^Cotton On$/i.test(name))return 'apparel';if(/^(?:Pottery Barn|Voluspa|U\.?S\.? Polo)/i.test(name))return /Pottery/i.test(name)?'home':/Voluspa/i.test(name)?'beauty':'apparel';if(/World of Hearing|Totally Chi Reflexology/i.test(name))return 'service';if (/^(?:CHAGEE|HEYTEA|Nespresso|See.s Candies|Sugarfina|Läderach)/i.test(name))return 'food';if (/^(?:Brioni|Alo Yoga|Beyond Yoga|Beauty Creations)/i.test(name))return /Beauty Creations/i.test(name)?'beauty':'apparel';for(const [kind,re] of Object.entries(categories))if(re.test(name))return kind;return 'apparel';}
 
 const colors=['#789384','#a78369','#748d9a','#a58a9e','#998d67'];
 const hash=s=>[...s].reduce((n,c)=>(n*31+c.charCodeAt(0))>>>0,7);
@@ -69,6 +69,7 @@ export function installPlayableStores(stores,products,photos){
   if(selected.some(({p})=>p.id.startsWith('v37-real-')))st.collectionEdition=37;
   if(selected.some(({p})=>p.id.startsWith('v38-book-')))st.collectionEdition=38;
   if(selected.some(({p})=>p.id.startsWith('v39-real-')))st.collectionEdition=39;
+  if(selected.some(({p})=>p.id.startsWith('v40-real-')))st.collectionEdition=40;
   for(const {p,evidence}of selected){const pid=p.store===st.id?p.id:st.id+'::'+p.id,q={...p,id:pid,store:st.id,modelId:p.modelId||p.id,finalSale:p.finalSale||['food','drink'].includes(p.type),assortmentBasis:evidence.kind==='own-brand'?'brand-models':'documented-retailer',associationEvidence:evidence,observedPriceDate:p.referencePriceVerified?p.referenceCheckedOn:p.observedPriceDate||(/official|published/i.test(p.priceBasis||'')&&!/simulated reference|cached/i.test(p.priceBasis||'')?p.checkedOn:undefined)};if(p.store!==st.id){const factor={ross:.4,marshalls:.65,nordstromrack:.6,saksoff5th:.55}[merchantIdentity(st.name)];if(factor){q.price=Math.max(100,Math.round(p.price*factor));q.gamePriceBasis='Original off-price game discount applied to the model reference, not a real store quote.';}}delete q.photo;products.push(q);photos[pid]=photos[p.id];}
   st.catalogStatus=selected.length?'verified':'pending';st.assortmentBasis='verified-brand-reference';st.sub=selected.length?'REAL PRODUCT COLLECTION':'CATALOG RESEARCH IN PROGRESS';st.greeting=selected.length?'Browse this store’s real products and documented carried brands. Every label links to its source. Game prices, stock, fit and return policies are simulated.':'Welcome inside. This store’s verified photographed catalog is still being researched. Earlier purchases can still be returned here under their original game terms.';
  }

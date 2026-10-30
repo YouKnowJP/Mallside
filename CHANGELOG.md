@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 40.0.0 — Textile studios and connected discoveries — 30 October 2026
+
+- Stock eight unfinished Cotton On/Aritzia locations with eight verified selected-color references and 32 merchant-scoped listings; preserve all 8,698 earlier product IDs.
+- Retain exact W/L and 2XS/2XL labels, source promotions and dated availability; correct Cotton On’s apparel category and support source waist/inseam labels through fitting, receipts and returns.
+- Furnish original denim/jersey studios with source swatches, folded/seamed stacks, planning tools, mirror trim and preserved resting benches/routes.
+- Detail all 46 water/notice waystations inside their existing colliders; add direct routes to real public discoveries with saved per-floor status and matching 2D symbols.
+- Ease fitting turns, checkout reaches, idle arms, close-up camera transitions and entrance doors; fix cropped-top body intersections and starter-shirt/denim waistband poke-throughs.
+- Preserve schema-6 saves and map revision 10. See [v40 QA](docs/qa-v40.md).
+
 ## 39.0.0 — Optical studios and garden finishes — 30 October 2026
 
 - Verify nine exact color variants and stock five Warby Parker/two Rhone locations with 33 branch listings, preserving all earlier product IDs.

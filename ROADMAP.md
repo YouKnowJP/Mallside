@@ -2,6 +2,14 @@
 
 Updated 30 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v40
+
+- Stock eight unfinished Cotton On/Aritzia locations with eight official selected-color references, exact source sizes/photos and dated USD offers; retain every v39 active product ID.
+- Add original denim/jersey studio detail, source-size/price notes and compatible W/L sizing; preserve the comparison, rest, fitting, payment and return routes.
+- Furnish all 46 water/notice waystations within their colliders and link them to actual public discoveries with saved status and existing campus routes.
+- Replace repeated fitting spins with eased turns, refine checkout/idle motion, damp close-up camera handoffs and correct cropped-shirt/waistband clipping.
+- See [v40 gameplay](docs/GAMEPLAY-v40.md), [source evidence](docs/research-v40/catalog-evidence.json) and [v40 QA](docs/qa-v40.md).
+
 ## Completed in v39
 
 - Stock seven unfinished Warby Parker/Rhone identities using nine official selected-color variants, exact source widths/sizes/photos and qualified USD offers.
@@ -137,12 +145,12 @@ Updated 30 October 2026. The game is playable and under active development; this
 
 - Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
 - Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
-- Continued camera, storefront, lighting, NPC behavior in long visits and character/fabric refinement, including high-neck and sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
+- Continued camera, storefront, lighting, NPC behavior in long visits and character/fabric refinement, including original starter-trouser waist seams visible with cropped tops, and high-neck/sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
 - Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, and broader accessibility verification. The desktop Safari/Firefox matrix is complete for the recorded versions.
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,039 stocked identities, 133 service identities and 426 identities awaiting catalog research**. The remaining 335 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,047 stocked identities, 133 service identities and 418 identities awaiting catalog research**. The remaining 327 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

@@ -1,4 +1,4 @@
-import {retailIdentity,windowAssortment} from './retail-identity.js?v=23.0.0';
+import {retailIdentity,windowAssortment} from './retail-identity.js?v=40.0.0';
 import {facadeFrame} from './mall-design.js?v=35.0.0';
 import * as T from './vendor/three.module.js';
 

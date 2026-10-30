@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "39.0.0",
+  "release": "40.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1965,
-  "uniqueRuntimePhotoFiles": 1943,
+  "runtimePhotoEntries": 1973,
+  "uniqueRuntimePhotoFiles": 1951,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19357,6 +19357,86 @@
       "source": "https://rhone.com/products/mens-commuter-polo?variant=47943597424832",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/CommuterPolo-BusinessWhite-103169-105_0895.jpg?v=1776194164",
       "description": "Commuter® Polo in Business White — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v40-real-1786828eeedb956ddece",
+      "path": "assets/photos/v40-real-1786828eeedb956ddece.webp",
+      "sha256": "d2a925a75e3884bbdf741ff005ea6a9607a542caaff1e8d0b9d51b3a6d518ee7",
+      "source": "https://cottonon.com/US/loose-straight-jean/3613049-15.html",
+      "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dwee24e176/3613049/3613049-15-2.jpg?sw=640&sh=960&sm=fit",
+      "description": "Loose Straight Jean in River Blue — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v40-real-1bc3e7664e5a6c3a942b",
+      "path": "assets/photos/v40-real-1bc3e7664e5a6c3a942b.webp",
+      "sha256": "eaaa81ea15b4c606fe1c69e2b440e1ef8ad10969814f467b4a381bbd9ea08d55",
+      "source": "https://www.aritzia.com/us/en/product/homestretch%E2%84%A2-smooth-solo-longsleeve/128654.html?color=14396",
+      "imageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_jpg,dpr_auto,w_1920/f26_a01_128654_14396_on_a",
+      "description": "HomeStretch™ Smooth Solo Longsleeve in Bright White — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v40-real-6107def2ebc31926335a",
+      "path": "assets/photos/v40-real-6107def2ebc31926335a.webp",
+      "sha256": "7e5ec14c8c678629d56f4d2c31e3eb2c156ffb28bc2d0296e590dab979738227",
+      "source": "https://cottonon.com/US/box-fit-t-shirt/3611849-13.html",
+      "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dwc6c9906b/3611849/3611849-13-2.jpg?sw=640&sh=960&sm=fit",
+      "description": "Box Fit T-Shirt in Black — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v40-real-7c3952013206f53ba6e2",
+      "path": "assets/photos/v40-real-7c3952013206f53ba6e2.webp",
+      "sha256": "cc6d0d0a91e8a18df3f0891991b1a40b0faf94c6798671c8021ac99b73de5b00",
+      "source": "https://www.aritzia.com/us/en/product/homestretch%E2%84%A2-smooth-tune-t-shirt/128655.html?color=14396",
+      "imageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_jpg,dpr_auto,w_1920/f26_a01_128655_14396_on_a",
+      "description": "HomeStretch™ Smooth Tune T-Shirt in Bright White — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v40-real-84c5047f9194d7c60253",
+      "path": "assets/photos/v40-real-84c5047f9194d7c60253.webp",
+      "sha256": "b86ac85b6d19ad3f403576a427aa1504ca6959a35a398875c068fe104a31bbad",
+      "source": "https://www.aritzia.com/us/en/product/homestretch%E2%84%A2-smooth-tune-t-shirt/128655.html?color=1274",
+      "imageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_jpg,dpr_auto,w_1920/f26_a01_128655_1274_on_a",
+      "description": "HomeStretch™ Smooth Tune T-Shirt in Black — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v40-real-a8bdd45ca47b12ef7f51",
+      "path": "assets/photos/v40-real-a8bdd45ca47b12ef7f51.webp",
+      "sha256": "41b13216a5ea38064f0e8db922e6e5afdde223dc55e20e4efd936ecb0e466a72",
+      "source": "https://www.aritzia.com/us/en/product/homestretch%E2%84%A2-smooth-solo-longsleeve/128654.html?color=1274",
+      "imageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_jpg,dpr_auto,w_1920/f26_a01_128654_1274_on_a",
+      "description": "HomeStretch™ Smooth Solo Longsleeve in Black — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v40-real-a99afdf8f9934981c875",
+      "path": "assets/photos/v40-real-a99afdf8f9934981c875.webp",
+      "sha256": "7f6518db9d39490b4888ee058dcefbee3106ee443d1ac1e6e68fbba9f1fd9f72",
+      "source": "https://cottonon.com/US/loose-straight-jean/3613049-14.html",
+      "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dw69757a47/3613049/3613049-14-2.jpg?sw=640&sh=960&sm=fit",
+      "description": "Loose Straight Jean in Roan Black — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v40-real-b844c765c2a9842fb731",
+      "path": "assets/photos/v40-real-b844c765c2a9842fb731.webp",
+      "sha256": "548792984d17d3a462f0d0b92245731c7efeb511a5ed482bd630bdf49c25815e",
+      "source": "https://cottonon.com/US/box-fit-t-shirt/3611849-02.html",
+      "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dwf9522b10/3611849/3611849-02-2.jpg?sw=640&sh=960&sm=fit",
+      "description": "Box Fit T-Shirt in White — exact source photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

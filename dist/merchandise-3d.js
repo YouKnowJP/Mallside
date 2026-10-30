@@ -1,4 +1,4 @@
-import {productAppearance} from './product-appearance.js?v=39.0.0';
+import {productAppearance} from './product-appearance.js?v=40.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {addReferenceDetails,addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 import * as T from './vendor/three.module.js';

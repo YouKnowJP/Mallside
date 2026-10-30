@@ -1,0 +1,536 @@
+{
+  "checkedOn": "2026-10-30",
+  "method": "Official selected-color product records and live source size menus. Cotton On offers were read from the visible price, not stale analytics. Aritzia combines Product JSON-LD with the opened size menu. All photographs were visually reviewed. Game inventory is independent of online availability.",
+  "previousCatalog": {
+    "count": 8698,
+    "sortedProductIdsSHA256": "54ed4ee7794f6727cf6e63204747b3c29d1a9d18449f0611295730089c86d852"
+  },
+  "products": [
+    {
+      "merchant": "Cotton On",
+      "key": "cottonon",
+      "source": "https://cottonon.com/US/box-fit-t-shirt/3611849-02.html",
+      "name": "Box Fit T-Shirt",
+      "color": "White",
+      "sku": "3611849-02",
+      "priceUSD": 20.0,
+      "standardPriceUSD": 29.99,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dwf9522b10/3611849/3611849-02-2.jpg?sw=640&sh=960&sm=fit",
+      "pageSHA256": "e3b4ca3d06d44821a3d94368e9523d0847904fe7acb55d0dc201448ffdc86665",
+      "offerText": "standard price $29.99, sale price $20, save 33%",
+      "sizingSystem": "alpha",
+      "type": "shirt",
+      "id": "v40-real-b844c765c2a9842fb731",
+      "photoPath": "assets/photos/v40-real-b844c765c2a9842fb731.webp",
+      "sourceImageSize": [
+        640,
+        960
+      ],
+      "photoSHA256": "548792984d17d3a462f0d0b92245731c7efeb511a5ed482bd630bdf49c25815e",
+      "sourceImageSHA256": "c8ca57ed500f83cc7b94bf9ab5bf5048d447819126d7d93fc31bac77f86c4617",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "relaxed",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.4,
+          0.36,
+          0.64,
+          0.61
+        ]
+      },
+      "sampledColor": "#f1f1f1",
+      "sourceOfferNote": "Published online offer $20.00 USD; standard reference $29.99 USD. The online promotion is not a branch quote."
+    },
+    {
+      "merchant": "Cotton On",
+      "key": "cotton-black",
+      "source": "https://cottonon.com/US/box-fit-t-shirt/3611849-13.html",
+      "name": "Box Fit T-Shirt",
+      "color": "Black",
+      "sku": "3611849-13",
+      "priceUSD": 20.0,
+      "standardPriceUSD": 29.99,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dwc6c9906b/3611849/3611849-13-2.jpg?sw=640&sh=960&sm=fit",
+      "pageSHA256": "294d56a3943b00201623c72a59dc88e46e4e6c6554d3be2ae4c80d0c161b1bd8",
+      "offerText": "standard price $29.99, sale price $20, save 33%",
+      "sizingSystem": "alpha",
+      "type": "shirt",
+      "id": "v40-real-6107def2ebc31926335a",
+      "photoPath": "assets/photos/v40-real-6107def2ebc31926335a.webp",
+      "sourceImageSize": [
+        640,
+        960
+      ],
+      "photoSHA256": "7e5ec14c8c678629d56f4d2c31e3eb2c156ffb28bc2d0296e590dab979738227",
+      "sourceImageSHA256": "a5cbc9f346b61082af987c5f77aba4a895e6f8eae8a2102af68fac30a959fb35",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "relaxed",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.41,
+          0.34,
+          0.61,
+          0.61
+        ]
+      },
+      "sampledColor": "#1c2023",
+      "sourceOfferNote": "Published online offer $20.00 USD; standard reference $29.99 USD. The online promotion is not a branch quote."
+    },
+    {
+      "merchant": "Cotton On",
+      "key": "cotton-jeans-black",
+      "source": "https://cottonon.com/US/loose-straight-jean/3613049-14.html",
+      "name": "Loose Straight Jean",
+      "color": "Roan Black",
+      "sku": "3613049-14",
+      "priceUSD": 69.99,
+      "standardPriceUSD": 69.99,
+      "sizes": [
+        "W26L32",
+        "W28L32",
+        "W30L32",
+        "W32L32",
+        "W34L32"
+      ],
+      "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dw69757a47/3613049/3613049-14-2.jpg?sw=640&sh=960&sm=fit",
+      "pageSHA256": "0fd97567cf2cb99e4678a8ca58ce6a0629b15b2853478f7ec31933e32bc7209f",
+      "offerText": "standard price $69.99",
+      "sizingSystem": "waist-inseam",
+      "type": "pants",
+      "id": "v40-real-a99afdf8f9934981c875",
+      "photoPath": "assets/photos/v40-real-a99afdf8f9934981c875.webp",
+      "sourceImageSize": [
+        640,
+        960
+      ],
+      "photoSHA256": "7f6518db9d39490b4888ee058dcefbee3106ee443d1ac1e6e68fbba9f1fd9f72",
+      "sourceImageSHA256": "609e14d89830a3e080d03d9ae7007fd076e2f51f8cc6e6c3447cb5818cc6db0f",
+      "construction": {
+        "kind": "pants",
+        "sleeve": "none",
+        "neckline": "crew",
+        "fit": "relaxed",
+        "closure": "zip",
+        "fabric": "denim",
+        "length": "maxi",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.46,
+          0.56,
+          0.5,
+          0.79
+        ],
+        "leg": "straight",
+        "pockets": 5,
+        "coverage": "bottom"
+      },
+      "sampledColor": "#101210",
+      "sourceOfferNote": "Published selected-color USD reference; live branch inventory is not asserted."
+    },
+    {
+      "merchant": "Cotton On",
+      "key": "cotton-jeans-blue",
+      "source": "https://cottonon.com/US/loose-straight-jean/3613049-15.html",
+      "name": "Loose Straight Jean",
+      "color": "River Blue",
+      "sku": "3613049-15",
+      "priceUSD": 25.0,
+      "standardPriceUSD": 69.99,
+      "sizes": [
+        "W28L30",
+        "W28L32",
+        "W30L32",
+        "W32L32",
+        "W34L32"
+      ],
+      "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dwee24e176/3613049/3613049-15-2.jpg?sw=640&sh=960&sm=fit",
+      "pageSHA256": "36a8976ca327eca5fee6891362f0d6967a1147b33998c632052ab6038a8ee290",
+      "offerText": "standard price $69.99, sale price $25, save 64%",
+      "sizingSystem": "waist-inseam",
+      "type": "pants",
+      "id": "v40-real-1786828eeedb956ddece",
+      "photoPath": "assets/photos/v40-real-1786828eeedb956ddece.webp",
+      "sourceImageSize": [
+        640,
+        960
+      ],
+      "photoSHA256": "d2a925a75e3884bbdf741ff005ea6a9607a542caaff1e8d0b9d51b3a6d518ee7",
+      "sourceImageSHA256": "653befa0e5c3d1ca39f1a659aed3663f1bb967ede8c92bc515a43f788ad61230",
+      "construction": {
+        "kind": "pants",
+        "sleeve": "none",
+        "neckline": "crew",
+        "fit": "relaxed",
+        "closure": "zip",
+        "fabric": "denim",
+        "length": "maxi",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.46,
+          0.56,
+          0.5,
+          0.78
+        ],
+        "leg": "straight",
+        "pockets": 5,
+        "coverage": "bottom"
+      },
+      "sampledColor": "#7a97a2",
+      "sourceOfferNote": "Published online offer $25.00 USD; standard reference $69.99 USD. The online promotion is not a branch quote."
+    },
+    {
+      "merchant": "Aritzia",
+      "source": "https://www.aritzia.com/us/en/product/homestretch%E2%84%A2-smooth-tune-t-shirt/128655.html?color=14396",
+      "name": "HomeStretch™ Smooth Tune T-Shirt",
+      "color": "Bright White",
+      "sku": "128655-14396",
+      "priceUSD": 28.0,
+      "standardPriceUSD": 28.0,
+      "sizes": [
+        "2XS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "imageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_jpg,dpr_auto,w_1920/f26_a01_128655_14396_on_a",
+      "sourceAvailability": "InStock",
+      "sourceJSONSHA256": "82a211c9ad5aea34ff9694346472946f03c81da2341a987ac9e1bc230ecaa77c",
+      "sizingSystem": "alpha",
+      "type": "shirt",
+      "sizeAvailability": [
+        {
+          "size": "2XS",
+          "onlineAvailable": true
+        },
+        {
+          "size": "XS",
+          "onlineAvailable": false
+        },
+        {
+          "size": "S",
+          "onlineAvailable": true
+        },
+        {
+          "size": "M",
+          "onlineAvailable": false
+        },
+        {
+          "size": "L",
+          "onlineAvailable": true
+        },
+        {
+          "size": "XL",
+          "onlineAvailable": true
+        },
+        {
+          "size": "2XL",
+          "onlineAvailable": true
+        }
+      ],
+      "canonicalImageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_auto,dpr_auto,w_1920/f26_a01_128655_14396_on_a",
+      "id": "v40-real-7c3952013206f53ba6e2",
+      "photoPath": "assets/photos/v40-real-7c3952013206f53ba6e2.webp",
+      "sourceImageSize": [
+        1920,
+        2800
+      ],
+      "photoSHA256": "cc6d0d0a91e8a18df3f0891991b1a40b0faf94c6798671c8021ac99b73de5b00",
+      "sourceImageSHA256": "5b05635efd9be535dde7d087601f62a60a6b1941334dd8337e6ab381566b6a72",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "slim",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.44,
+          0.28,
+          0.56,
+          0.38
+        ]
+      },
+      "sampledColor": "#e5e5e9",
+      "sourceOfferNote": "Published selected-color USD reference; live branch inventory is not asserted."
+    },
+    {
+      "merchant": "Aritzia",
+      "source": "https://www.aritzia.com/us/en/product/homestretch%E2%84%A2-smooth-tune-t-shirt/128655.html?color=1274",
+      "name": "HomeStretch™ Smooth Tune T-Shirt",
+      "color": "Black",
+      "sku": "128655-1274",
+      "priceUSD": 28.0,
+      "standardPriceUSD": 28.0,
+      "sizes": [
+        "2XS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "imageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_jpg,dpr_auto,w_1920/f26_a01_128655_1274_on_a",
+      "sourceAvailability": "InStock",
+      "sourceJSONSHA256": "9a59d1b1ab37f5e7242a2ff39ba5abbdd7600cacec9ee4321dee30e779cb50d5",
+      "sizingSystem": "alpha",
+      "type": "shirt",
+      "sizeAvailability": [
+        {
+          "size": "2XS",
+          "onlineAvailable": true
+        },
+        {
+          "size": "XS",
+          "onlineAvailable": true
+        },
+        {
+          "size": "S",
+          "onlineAvailable": true
+        },
+        {
+          "size": "M",
+          "onlineAvailable": true
+        },
+        {
+          "size": "L",
+          "onlineAvailable": true
+        },
+        {
+          "size": "XL",
+          "onlineAvailable": true
+        },
+        {
+          "size": "2XL",
+          "onlineAvailable": true
+        }
+      ],
+      "canonicalImageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_auto,dpr_auto,w_1920/f26_a01_128655_1274_on_a",
+      "id": "v40-real-84c5047f9194d7c60253",
+      "photoPath": "assets/photos/v40-real-84c5047f9194d7c60253.webp",
+      "sourceImageSize": [
+        1920,
+        2800
+      ],
+      "photoSHA256": "b86ac85b6d19ad3f403576a427aa1504ca6959a35a398875c068fe104a31bbad",
+      "sourceImageSHA256": "c020a9601d77fdd506d4cff95a01713414c9348fce044f4dfcbc5f967c54101a",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "slim",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.45,
+          0.25,
+          0.57,
+          0.3
+        ]
+      },
+      "sampledColor": "#1b1a1c",
+      "sourceOfferNote": "Published selected-color USD reference; live branch inventory is not asserted."
+    },
+    {
+      "merchant": "Aritzia",
+      "source": "https://www.aritzia.com/us/en/product/homestretch%E2%84%A2-smooth-solo-longsleeve/128654.html?color=14396",
+      "name": "HomeStretch™ Smooth Solo Longsleeve",
+      "color": "Bright White",
+      "sku": "128654-14396",
+      "priceUSD": 38.0,
+      "standardPriceUSD": 38.0,
+      "sizes": [
+        "2XS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "imageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_jpg,dpr_auto,w_1920/f26_a01_128654_14396_on_a",
+      "sourceAvailability": "OutOfStock",
+      "sourceJSONSHA256": "79788abb0856d04f1a503d49ee218668dfec99fbd511e34c6e6ac6ee52c4d43e",
+      "sizingSystem": "alpha",
+      "type": "shirt",
+      "sizeAvailability": [
+        {
+          "size": "2XS",
+          "onlineAvailable": false
+        },
+        {
+          "size": "XS",
+          "onlineAvailable": true
+        },
+        {
+          "size": "S",
+          "onlineAvailable": false
+        },
+        {
+          "size": "M",
+          "onlineAvailable": false
+        },
+        {
+          "size": "L",
+          "onlineAvailable": true
+        },
+        {
+          "size": "XL",
+          "onlineAvailable": true
+        },
+        {
+          "size": "2XL",
+          "onlineAvailable": true
+        }
+      ],
+      "canonicalImageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_auto,dpr_auto,w_1920/f26_a01_128654_14396_on_a",
+      "id": "v40-real-1bc3e7664e5a6c3a942b",
+      "photoPath": "assets/photos/v40-real-1bc3e7664e5a6c3a942b.webp",
+      "sourceImageSize": [
+        1920,
+        2800
+      ],
+      "photoSHA256": "eaaa81ea15b4c606fe1c69e2b440e1ef8ad10969814f467b4a381bbd9ea08d55",
+      "sourceImageSHA256": "d1b3ae8f3e03c9894f560ee251e413e356d40780530987ea73c933fc8a6b276e",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "long",
+        "neckline": "crew",
+        "fit": "slim",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "cropped",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.43,
+          0.29,
+          0.56,
+          0.37
+        ]
+      },
+      "sampledColor": "#e4e3e8",
+      "sourceOfferNote": "Published selected-color USD reference; live branch inventory is not asserted."
+    },
+    {
+      "merchant": "Aritzia",
+      "source": "https://www.aritzia.com/us/en/product/homestretch%E2%84%A2-smooth-solo-longsleeve/128654.html?color=1274",
+      "name": "HomeStretch™ Smooth Solo Longsleeve",
+      "color": "Black",
+      "sku": "128654-1274",
+      "priceUSD": 38.0,
+      "standardPriceUSD": 38.0,
+      "sizes": [
+        "2XS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
+      "imageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_jpg,dpr_auto,w_1920/f26_a01_128654_1274_on_a",
+      "sourceAvailability": "OutOfStock",
+      "sourceJSONSHA256": "fc0c867011fe69d444ca238cb111f0f7c0b478ebc2bcf2c6f8fe84d2ef5e7a67",
+      "sizingSystem": "alpha",
+      "type": "shirt",
+      "sizeAvailability": [
+        {
+          "size": "2XS",
+          "onlineAvailable": false
+        },
+        {
+          "size": "XS",
+          "onlineAvailable": false
+        },
+        {
+          "size": "S",
+          "onlineAvailable": false
+        },
+        {
+          "size": "M",
+          "onlineAvailable": false
+        },
+        {
+          "size": "L",
+          "onlineAvailable": true
+        },
+        {
+          "size": "XL",
+          "onlineAvailable": true
+        },
+        {
+          "size": "2XL",
+          "onlineAvailable": true
+        }
+      ],
+      "canonicalImageUrl": "https://assets.aritzia.com/image/upload/q_auto,f_auto,dpr_auto,w_1920/f26_a01_128654_1274_on_a",
+      "id": "v40-real-a8bdd45ca47b12ef7f51",
+      "photoPath": "assets/photos/v40-real-a8bdd45ca47b12ef7f51.webp",
+      "sourceImageSize": [
+        1920,
+        2800
+      ],
+      "photoSHA256": "41b13216a5ea38064f0e8db922e6e5afdde223dc55e20e4efd936ecb0e466a72",
+      "sourceImageSHA256": "e241b0408ab34ef3169d85ed96df679ef74727105030dcc46249fe1ca8a76027",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "long",
+        "neckline": "crew",
+        "fit": "slim",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "cropped",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.45,
+          0.27,
+          0.56,
+          0.34
+        ]
+      },
+      "sampledColor": "#1a1a1c",
+      "sourceOfferNote": "Published selected-color USD reference; live branch inventory is not asserted."
+    }
+  ]
+}

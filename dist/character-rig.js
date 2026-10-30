@@ -1,9 +1,10 @@
+import {checkoutGesture} from './fitting-motion.js?v=40.0.0';
 import {createFrameModel} from './eyewear-model.js?v=39.0.0';
 import {frameGesture} from './eyewear-tools.js?v=39.0.0';
 import {readingGesture} from './book-tools.js?v=38.0.0';
 import {locomotionWeight} from './motion.js?v=34.0.0';
 import {surfaceTexture} from './scene-finish.js?v=33.0.0';
-import {addHumanAnatomy,addStarterClothing,poseHumanHands,updateHumanFace} from './human-anatomy.js?v=39.0.0';
+import {addHumanAnatomy,addStarterClothing,poseHumanHands,updateHumanFace} from './human-anatomy.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
 
 export const CHARACTER={height:52,hipHeight:25,shoulderHeight:40.8,upperLeg:12,lowerLeg:11,upperArm:7.7,forearm:7.1,stride:40,pelvisBottom:21.2,ankleHeight:1.6};
@@ -65,7 +66,8 @@ export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=fal
  }
  if(!kind||kind==='walk'||kind==='rest'||kind==='try'||['browse','compare','pay','talk','greet'].includes(kind))for(const [i,arm]of g.userData.limbs.slice(0,2).entries()){const swing=move?Math.sin(phase*Math.PI*2)*(i?1:-1)*.28*weight:0;arm.rotation.x=swing-.035;arm.rotation.y=move?Math.sin(phase*Math.PI*2)*.025*(i?1:-1):0;arm.rotation.z=(i?1:-1)*.075;arm.userData.elbow.rotation.x=move?-.17-Math.max(0,-swing)*.4:-.10;if(amount){const occupied=(g.userData.gravityAttachments||[]).some(e=>e.holder.visible&&e.limb===arm),gesture=reducedMotion||occupied?0:Math.sin(time*.7)*.18;solveArmToGrip(g,i,29+gesture,7.5+gesture);}}
  else for(const arm of g.userData.limbs.slice(0,2))if(arm.userData.elbow)arm.userData.elbow.rotation.x=-.25;
- if(!move&&['browse','compare','pay','talk','greet'].includes(kind)){const gesture=reducedMotion?0:Math.sin(time*(kind==='pay'?2.1:1.3)+(g.userData.anatomy?.seed||0));if(kind==='browse'||kind==='compare'){solveArmToGrip(g,0,30.5,9);solveArmToGrip(g,1,33+gesture*.7,10.5);}else if(kind==='pay'){solveArmToGrip(g,0,29,7);solveArmToGrip(g,1,31.5+gesture*.35,13);}else{solveArmToGrip(g,1,kind==='greet'?38:30,8+gesture);g.userData.limbs[0].rotation.x=-.10;}}
+ if(!move&&['browse','compare','pay','talk','greet'].includes(kind)){const gesture=reducedMotion?0:Math.sin(time*(kind==='pay'?2.1:1.3)+(g.userData.anatomy?.seed||0));if(kind==='browse'||kind==='compare'){solveArmToGrip(g,0,30.5,9);solveArmToGrip(g,1,33+gesture*.7,10.5);}else if(kind==='pay'){const tap=checkoutGesture(time,reducedMotion);solveArmToGrip(g,0,29,7);solveArmToGrip(g,1,31.5+tap*.8,12.5+tap*1.2);g.userData.limbs[1].userData.hand.rotation.x=-tap*.12;}else{solveArmToGrip(g,1,kind==='greet'?38:30,8+gesture);g.userData.limbs[0].rotation.x=-.10;}}
+ if(!move&&!amount&&!kind&&!reducedMotion){const breath=Math.sin(time*1.15+(g.userData.anatomy?.seed||0));for(const arm of g.userData.limbs.slice(0,2))if(!(g.userData.gravityAttachments||[]).some(e=>e.holder.visible&&e.limb===arm)){arm.rotation.x+=breath*.009;arm.userData.elbow.rotation.x+=breath*.008;}}
  if(kind==='framefit'){const r=frameGesture(time,reducedMotion);for(let i=0;i<2;i++)solveArmToGrip(g,i,28.4+16.5*r,8-4.3*r,(i?1:-1)*(6.5-3.1*r));}
  if(kind==='read'){const r=readingGesture(time,reducedMotion).reach;solveArmToGrip(g,0,31.5,10.5);solveArmToGrip(g,1,31.8+r*.8,10.5,6.5-r*4);}
  if(carrying&&(move||!kind)){solveArmToGrip(g,1,28.5,7);}

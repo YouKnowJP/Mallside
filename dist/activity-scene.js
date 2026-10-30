@@ -1,6 +1,6 @@
-import {PRODUCT_PHOTOS} from './product-photos.js?v=39.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=40.0.0';
 import {paintPerson} from './sprites.js?v=34.0.0';
-import {equippedLook,slotForProduct} from './engine.js?v=39.0.0';
+import {equippedLook,slotForProduct} from './engine.js?v=40.0.0';
 // A presentation only: the engine applies the action once before this scene starts.
 export class ActivityScene{
  constructor(canvas,state,kind,done){Object.assign(this,{canvas,state,kind,done,elapsed:0,last:0,alive:true});this.ctx=canvas.getContext('2d');requestAnimationFrame(t=>this.frame(t));}

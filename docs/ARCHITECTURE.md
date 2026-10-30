@@ -115,3 +115,11 @@ Book previews reuse existing demo records and costs. For books with ISBN metadat
 `garden-details.js` builds original planting strictly inside each public study's existing footprint. Its small stem rotations use world time and become static for reduced motion; clearing the scene drops their references. No navigation geometry, reward rules or persistent state changes.
 
 Opaque upper garments densify shell rings before retargeting so interpolation follows the hips. Clearance includes the anatomical neckline/trapezius surface and uses a broader shoulder section. Skin masks keep their existing cuff behavior. Ray-based regressions verify back coverage and prevent visible neckline skin through the opaque polo.
+
+## Textile studios and connected public stops (v40)
+
+`store-product-additions-v40.js` adds merchant-scoped exact color references. The opened retailer size menus and dated price/availability evidence remain in `research-v40/`. `verified-sizing.js` accepts original W/L labels alongside earlier X-separated labels; fitting scales normalize alpha aliases and W/L waists without rewriting purchase strings. Edition-40 desks share reserved furniture and routes; `textile-studio.js` keeps added original props on those fixtures.
+
+`waystation-details.js` supplies instanced 3D furnishings and matching 2D drawings within the existing 22×20 footprint. `waystation-guide.js` lists actual current-floor discoveries, reuses `center-stop` routing and reads existing notebook entries. It creates no save fields or rewards. Campus-trip regressions cover destinations that require floor connections.
+
+`fitting-motion.js` defines bounded smooth turns and terminal reaches, plus shared camera position/focal damping and an angular-rate limit on close-up handoffs. Reduced motion is static. `garment-clearance.js` caches tangent-plane bounds from the actual torso/pelvis/neckline sections so opaque cropped tops clear visible skin without masking the exposed waist. Starter hems include overlap over trouser waistbands. Save schema 6 and map revision 10 remain unchanged.

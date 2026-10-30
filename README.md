@@ -8,9 +8,9 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v39 — optical studios and garden finishes
+## v40 — textile studios and connected discoveries
 
-Nine source-verified apparel/frame variants stock seven unfinished shops, with width-aware comparisons, modeled eyewear, framed fitting stations and preserved planning/rest corners. A closer, steadier frame preview uses eased hand movements; public garden studies gain original flower/stone detail and gentle motion. Existing product IDs and saves remain compatible. See [v39 gameplay](docs/GAMEPLAY-v39.md), [release QA](docs/qa-v39.md) and [remaining work](ROADMAP.md).
+Eight verified selected-color references stock eight unfinished Cotton On/Aritzia shops, with exact W/L and alpha size labels, clear online-price notes and furnished denim/jersey studios. Detailed water and notice waystations link to real nearby discoveries and remember completed visits. Fitting turns, checkout gestures and close-up camera transitions are calmer; opaque cropped tops and starter-shirt waist coverage are corrected. Existing product IDs and saves remain compatible. See [v40 gameplay](docs/GAMEPLAY-v40.md), [release QA](docs/qa-v40.md), [source evidence](docs/research-v40/catalog-evidence.json) and the [roadmap](ROADMAP.md).
 
 ## Previous update · v38 — bookshops and reading corners
 

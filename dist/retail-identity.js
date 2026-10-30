@@ -1,5 +1,5 @@
 import {merchantIdentity} from './merchant-identity.js?v=23.0.0';
-import {brandDesign} from './brand-designs.js?v=23.0.0';
+import {brandDesign} from './brand-designs.js?v=40.0.0';
 
 // Text treatments and original game storefronts. These are not licensed logo assets.
 const style=(background,ink,font='sans',tracking=0,caseStyle='upper',facade='gallery')=>({background,ink,font,tracking,caseStyle,facade});

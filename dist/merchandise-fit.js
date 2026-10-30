@@ -1,12 +1,13 @@
+import {bodySectionRadius} from './garment-clearance.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
-import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=39.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=39.0.0';
-import {productAppearance} from './product-appearance.js?v=39.0.0';
+import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=40.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=40.0.0';
+import {productAppearance} from './product-appearance.js?v=40.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
-import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=39.0.0';
+import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=40.0.0';
 import {addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 
-export function fitScaleForSize(size,usual){const sizes=['XS','S','M','L','XL'],a=sizes.indexOf(size),b=sizes.indexOf(usual);if(a>=0&&b>=0)return 1+(a-b)*.035;const n=Number(size),u=Number(usual);return n&&u?Math.max(.9,Math.min(1.1,Math.sqrt(n/u))):1;}
+export function fitScaleForSize(size,usual){const canonical=v=>({XXS:'2XS',XXL:'2XL',XXXL:'3XL','2X':'2XL','3X':'3XL'}[v]||v),sizes=['2XS','XS','S','M','L','XL','2XL','3XL'],a=sizes.indexOf(canonical(size)),b=sizes.indexOf(canonical(usual));if(a>=0&&b>=0)return 1+(a-b)*.035;const n=Number(size)||Number(/^W(\d+)L\d+$/.exec(size)?.[1]),u=Number(usual)||Number(/^W(\d+)L\d+$/.exec(usual)?.[1]);return n&&u?Math.max(.9,Math.min(1.1,Math.sqrt(n/u))):1;}
 export function trackMerchandise(w,object){object.traverse(o=>{if(!o.isMesh)return;w.resources.add(o.geometry);for(const m of Array.isArray(o.material)?o.material:[o.material]){w.resources.add(m);for(const k of ['map','bumpMap','roughnessMap'])if(m[k])w.resources.add(m[k]);if(m.userData.detailTexture)w.resources.add(m.userData.detailTexture);}});return object;}
 function mesh(parent,geo,mat,x=0,y=0,z=0){const m=new T.Mesh(geo,mat);m.position.set(x,y,z);m.castShadow=m.receiveShadow=true;parent.add(m);return m;}
 function ribbon(parent,points,width,mat,linear=false){return mesh(parent,strapGeometry(points,width,.14,{linear}),mat);}
@@ -70,7 +71,7 @@ export function attachWornGarment(w,g,p,slot){
   if(cut.coverage==='full'){if(cut.kind==='dress')bottoms(true);else if(cut.kind==='jumpsuit'||cut.setBottom)bottoms();else{skinLegs(g);if(g.userData.anatomy)g.userData.pelvis.visible=false;mesh(group,new T.CylinderGeometry(7.7,4.1,4.5,24),plain,0,14.8,0).scale.z=.75;}}
  }
  addGarmentBrand(group,a,p,{worn:true});retargetGarmentGroup(g,group);
- if(g.userData.anatomy&&cut.coverage==='upper'&&cut.sleeve!=='none'&&!cut.sheer&&cut.length!=='cropped')for(const body of group.children.filter(o=>o.userData.role==='shirt-shell')){const pos=body.geometry.attributes.position,env=g.userData.anatomy.envelope;for(let i=0;i<pos.count;i++){const y=pos.getY(i),profile=env[Math.max(0,Math.min(env.length-1,Math.round((y-20)*2)))];if(!profile)continue;const padding=(y<28?.5:y>39?.4:.22)*ease,x=pos.getX(i),z=pos.getZ(i),power=y>39&&y<42.5?4:2,r=(Math.abs(x/(profile[0]+padding))**power+Math.abs(z/((z>=0?profile[1]:profile[2])+padding))**power)**(1/power);if(r>1e-6&&r<1){pos.setX(i,x/r);pos.setZ(i,z/r);}}pos.needsUpdate=true;body.geometry.computeVertexNormals();body.geometry.computeBoundingSphere();}
+ if(g.userData.anatomy&&cut.coverage==='upper'&&cut.sleeve!=='none'&&!cut.sheer)for(const body of group.children.filter(o=>o.userData.role==='shirt-shell')){const pos=body.geometry.attributes.position,env=g.userData.anatomy.envelope;for(let i=0;i<pos.count;i++){const y=pos.getY(i),profile=env[Math.max(0,Math.min(env.length-1,Math.round((y-20)*2)))];if(!profile)continue;const padding=(y<28?.5:y>39?.4:.22)*ease,x=pos.getX(i),z=pos.getZ(i),power=y>39&&y<42.5?4:2,r=(Math.abs(x/(profile[0]+padding))**power+Math.abs(z/((z>=0?profile[1]:profile[2])+padding))**power)**(1/power);if(r>1e-6&&r<1){pos.setX(i,x/r);pos.setZ(i,z/r);}if(cut.length==='cropped'){const xx=pos.getX(i),zz=pos.getZ(i),length=Math.hypot(xx,zz),needed=bodySectionRadius(g,y,xx,zz)+.22;if(length>1e-6&&length<needed){pos.setX(i,xx*needed/length);pos.setZ(i,zz*needed/length);}}}pos.needsUpdate=true;body.geometry.computeVertexNormals();body.geometry.computeBoundingSphere();}
  return trackMerchandise(w,group);
 }
 
