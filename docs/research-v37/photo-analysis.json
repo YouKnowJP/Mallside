@@ -1,0 +1,585 @@
+{
+  "method": "Existing read-only palette and surface analyzers applied only to the 14 new photos. Body-only sample regions and construction reviewed against a contact sheet; no legacy snapshots rewritten.",
+  "palettes": {
+    "assets/photos/v37-real-0417a09327a87ea91cd1.webp": {
+      "color": "#171717",
+      "confidence": 0.507,
+      "sha256": "113f1594947ca9df"
+    },
+    "assets/photos/v37-real-be7edcf1ba0722eb53f3.webp": {
+      "color": "#21232a",
+      "confidence": 0.541,
+      "sha256": "b6b0be31018aaae5"
+    },
+    "assets/photos/v37-real-cd2808650b94a694a24c.webp": {
+      "color": "#101010",
+      "confidence": 1.0,
+      "sha256": "031e18a2a5832f39"
+    },
+    "assets/photos/v37-real-626f381aad658663d34a.webp": {
+      "color": "#292929",
+      "confidence": 1.0,
+      "sha256": "7a5ee737bbe8fa53"
+    },
+    "assets/photos/v37-real-ee9fdd943eeaea41e5b8.webp": {
+      "color": "#1c1a1e",
+      "confidence": 0.656,
+      "sha256": "974faf23d6bf4c9c"
+    },
+    "assets/photos/v37-real-ed7f43220dabfc76053c.webp": {
+      "color": "#1f2d42",
+      "confidence": 0.332,
+      "sha256": "275a1e81d775f238"
+    },
+    "assets/photos/v37-real-bacf135ebf19bd59ee48.webp": {
+      "color": "#b6b6b5",
+      "confidence": 0.597,
+      "sha256": "8e390fc52788f3b4"
+    },
+    "assets/photos/v37-real-97de58ff2216b6f998f3.webp": {
+      "color": "#312d2a",
+      "confidence": 0.399,
+      "sha256": "1f0c8ec3fd5d1b76"
+    },
+    "assets/photos/v37-real-dffeb1f8a86c1f8b5e98.webp": {
+      "color": "#bcbab7",
+      "confidence": 0.413,
+      "sha256": "ce464077e8ad1ac7"
+    },
+    "assets/photos/v37-real-f3edb7e563f873b8ecd8.webp": {
+      "color": "#bababa",
+      "confidence": 0.89,
+      "sha256": "f413134bac923148"
+    },
+    "assets/photos/v37-real-edc9a3f21079c3cb73f8.webp": {
+      "color": "#b9b6b4",
+      "confidence": 0.577,
+      "sha256": "ae1851bdc87213a9"
+    },
+    "assets/photos/v37-real-f94e71e2bd3b6fdee88a.webp": {
+      "color": "#2d4559",
+      "confidence": 0.243,
+      "sha256": "605b427415146bf4"
+    },
+    "assets/photos/v37-real-a43e5cdac3fd534a2d7a.webp": {
+      "color": "#211e21",
+      "confidence": 0.797,
+      "sha256": "655d9f152df9d0bc"
+    },
+    "assets/photos/v37-real-6fe23b5808c6b6f6c74f.webp": {
+      "color": "#e2dfd6",
+      "confidence": 1.0,
+      "sha256": "7562d0bec503b550"
+    }
+  },
+  "surfaces": {
+    "assets/photos/v37-real-0417a09327a87ea91cd1.webp": {
+      "sha256": "113f1594947ca9df",
+      "aspect": 0.783,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.832,
+        1.069,
+        0.614,
+        0.624,
+        0.614
+      ],
+      "region": [
+        0.38,
+        0.3,
+        0.61,
+        0.68
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-be7edcf1ba0722eb53f3.webp": {
+      "sha256": "b6b0be31018aaae5",
+      "aspect": 0.763,
+      "shapeEvidence": "on-model-catalog-profile",
+      "widths": [
+        0.622,
+        0.304,
+        0.504,
+        0.496,
+        0.726
+      ],
+      "region": [
+        0.4,
+        0.32,
+        0.59,
+        0.55
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-cd2808650b94a694a24c.webp": {
+      "sha256": "031e18a2a5832f39",
+      "aspect": 0.894,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.729,
+        0.915,
+        1.0,
+        0.847,
+        0.729
+      ],
+      "region": [
+        0.41,
+        0.25,
+        0.62,
+        0.63
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-626f381aad658663d34a.webp": {
+      "sha256": "7a5ee737bbe8fa53",
+      "aspect": 0.725,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.766,
+        0.919,
+        0.559,
+        0.568,
+        0.541
+      ],
+      "region": [
+        0.38,
+        0.31,
+        0.62,
+        0.64
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-ee9fdd943eeaea41e5b8.webp": {
+      "sha256": "974faf23d6bf4c9c",
+      "aspect": 0.488,
+      "shapeEvidence": "on-model-catalog-profile",
+      "widths": [
+        0.296,
+        0.667,
+        0.901,
+        0.975,
+        0.84
+      ],
+      "region": [
+        0.42,
+        0.29,
+        0.61,
+        0.52
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-ed7f43220dabfc76053c.webp": {
+      "sha256": "275a1e81d775f238",
+      "aspect": 0.611,
+      "shapeEvidence": "on-model-catalog-profile",
+      "widths": [
+        0.944,
+        0.579,
+        0.43,
+        0.411,
+        0.308
+      ],
+      "region": [
+        0.4,
+        0.25,
+        0.49,
+        0.69
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-bacf135ebf19bd59ee48.webp": {
+      "sha256": "8e390fc52788f3b4",
+      "aspect": 0.758,
+      "shapeEvidence": "on-model-catalog-profile",
+      "widths": [
+        0.8,
+        0.77,
+        0.311,
+        0.296,
+        0.37
+      ],
+      "region": [
+        0.38,
+        0.15,
+        0.51,
+        0.36
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-97de58ff2216b6f998f3.webp": {
+      "sha256": "1f0c8ec3fd5d1b76",
+      "aspect": 0.455,
+      "shapeEvidence": "on-model-catalog-profile",
+      "widths": [
+        0.387,
+        0.787,
+        0.933,
+        0.92,
+        0.987
+      ],
+      "region": [
+        0.42,
+        0.33,
+        0.59,
+        0.54
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-dffeb1f8a86c1f8b5e98.webp": {
+      "sha256": "ce464077e8ad1ac7",
+      "aspect": 0.64,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.89,
+        0.932,
+        0.986,
+        0.904,
+        0.767
+      ],
+      "region": [
+        0.35,
+        0.37,
+        0.6,
+        0.68
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-f3edb7e563f873b8ecd8.webp": {
+      "sha256": "f413134bac923148",
+      "aspect": 0.294,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.971,
+        0.971,
+        0.914,
+        0.8,
+        0.8
+      ],
+      "region": [
+        0.34,
+        0.3,
+        0.44,
+        0.69
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.4109,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-edc9a3f21079c3cb73f8.webp": {
+      "sha256": "ae1851bdc87213a9",
+      "aspect": 0.325,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.927,
+        0.976,
+        0.878,
+        0.78,
+        0.756
+      ],
+      "region": [
+        0.37,
+        0.3,
+        0.46,
+        0.68
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-f94e71e2bd3b6fdee88a.webp": {
+      "sha256": "605b427415146bf4",
+      "aspect": 0.424,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.9,
+        0.914,
+        0.929,
+        0.943,
+        0.914
+      ],
+      "region": [
+        0.34,
+        0.32,
+        0.43,
+        0.72
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-a43e5cdac3fd534a2d7a.webp": {
+      "sha256": "655d9f152df9d0bc",
+      "aspect": 0.944,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.602,
+        0.78,
+        0.881,
+        0.932,
+        0.932
+      ],
+      "region": [
+        0.39,
+        0.3,
+        0.61,
+        0.62
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    },
+    "assets/photos/v37-real-6fe23b5808c6b6f6c74f.webp": {
+      "sha256": "7562d0bec503b550",
+      "aspect": 0.904,
+      "shapeEvidence": "foreground-estimate",
+      "widths": [
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.283
+      ],
+      "region": [
+        0.37,
+        0.31,
+        0.62,
+        0.66
+      ],
+      "regionReviewed": true,
+      "backgroundFraction": 0.0,
+      "size": [
+        32,
+        40
+      ]
+    }
+  },
+  "construction": {
+    "assets/photos/v37-real-0417a09327a87ea91cd1.webp": {
+      "kind": "tee",
+      "sleeve": "short",
+      "neckline": "crew",
+      "fit": "slim",
+      "onModel": false,
+      "photoRegion": [
+        0.38,
+        0.3,
+        0.61,
+        0.68
+      ]
+    },
+    "assets/photos/v37-real-be7edcf1ba0722eb53f3.webp": {
+      "kind": "tee",
+      "sleeve": "short",
+      "neckline": "crew",
+      "onModel": true,
+      "photoRegion": [
+        0.4,
+        0.32,
+        0.59,
+        0.55
+      ]
+    },
+    "assets/photos/v37-real-cd2808650b94a694a24c.webp": {
+      "kind": "tee",
+      "sleeve": "long",
+      "neckline": "crew",
+      "fit": "slim",
+      "onModel": false,
+      "photoRegion": [
+        0.41,
+        0.25,
+        0.62,
+        0.63
+      ]
+    },
+    "assets/photos/v37-real-626f381aad658663d34a.webp": {
+      "kind": "tee",
+      "sleeve": "short",
+      "neckline": "crew",
+      "closure": "none",
+      "onModel": false,
+      "photoRegion": [
+        0.38,
+        0.31,
+        0.62,
+        0.64
+      ]
+    },
+    "assets/photos/v37-real-ee9fdd943eeaea41e5b8.webp": {
+      "kind": "polo",
+      "sleeve": "short",
+      "neckline": "collared",
+      "onModel": true,
+      "photoRegion": [
+        0.42,
+        0.29,
+        0.61,
+        0.52
+      ]
+    },
+    "assets/photos/v37-real-ed7f43220dabfc76053c.webp": {
+      "kind": "pants",
+      "fit": "slim",
+      "leg": "taper",
+      "onModel": true,
+      "photoRegion": [
+        0.4,
+        0.25,
+        0.49,
+        0.69
+      ]
+    },
+    "assets/photos/v37-real-bacf135ebf19bd59ee48.webp": {
+      "kind": "shorts",
+      "onModel": true,
+      "photoRegion": [
+        0.38,
+        0.15,
+        0.51,
+        0.36
+      ]
+    },
+    "assets/photos/v37-real-97de58ff2216b6f998f3.webp": {
+      "kind": "tee",
+      "fit": "relaxed",
+      "onModel": true,
+      "photoRegion": [
+        0.42,
+        0.33,
+        0.59,
+        0.54
+      ]
+    },
+    "assets/photos/v37-real-dffeb1f8a86c1f8b5e98.webp": {
+      "kind": "tank",
+      "sleeve": "none",
+      "neckline": "scoop",
+      "straps": "wide",
+      "ribbing": true,
+      "onModel": false,
+      "photoRegion": [
+        0.35,
+        0.37,
+        0.6,
+        0.68
+      ]
+    },
+    "assets/photos/v37-real-f3edb7e563f873b8ecd8.webp": {
+      "kind": "pants",
+      "leg": "flare",
+      "fit": "flare",
+      "onModel": false,
+      "photoRegion": [
+        0.34,
+        0.3,
+        0.44,
+        0.69
+      ]
+    },
+    "assets/photos/v37-real-edc9a3f21079c3cb73f8.webp": {
+      "kind": "pants",
+      "leg": "legging",
+      "fit": "slim",
+      "ribbing": true,
+      "onModel": false,
+      "photoRegion": [
+        0.37,
+        0.3,
+        0.46,
+        0.68
+      ]
+    },
+    "assets/photos/v37-real-f94e71e2bd3b6fdee88a.webp": {
+      "kind": "pants",
+      "leg": "straight",
+      "onModel": false,
+      "photoRegion": [
+        0.34,
+        0.32,
+        0.43,
+        0.72
+      ]
+    },
+    "assets/photos/v37-real-a43e5cdac3fd534a2d7a.webp": {
+      "kind": "jacket",
+      "fit": "relaxed",
+      "pockets": 2,
+      "onModel": false,
+      "photoRegion": [
+        0.39,
+        0.3,
+        0.61,
+        0.62
+      ]
+    },
+    "assets/photos/v37-real-6fe23b5808c6b6f6c74f.webp": {
+      "kind": "tee",
+      "fit": "relaxed",
+      "fabric": "cotton",
+      "onModel": false,
+      "photoRegion": [
+        0.37,
+        0.31,
+        0.62,
+        0.66
+      ]
+    }
+  }
+}

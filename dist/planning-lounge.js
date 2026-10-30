@@ -1,4 +1,4 @@
-import {displayPoint} from './shop-interiors.js?v=36.0.0';
+import {displayPoint} from './shop-interiors.js?v=37.0.0';
 import {surfaceTexture} from './scene-finish.js?v=33.0.0';
 
 // All props are original planning materials, never merchant merchandise or purchasable samples.
@@ -18,8 +18,23 @@ export function buildPlanningLounge(w,st,style,layout){
   if(i===0||i===5){const label=w.label(names[i]+' ↗',x,83,z,112,style.accent);w.tag(label,key,p);}
   w.interiorStops.push({point:p,id:key,name:names[i],label:i===5?'Advice & original planning activities':i===4?'Verified shops in this center':'Plan verified finds at their actual shops'});
  }
- w.bench(600,630);const seat={x:600,y:675},benchKey='lounge-bench:'+st.id,benchHit=w.box(600,18,630,88,32,24,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));benchHit.castShadow=false;w.tag(benchHit,benchKey,seat);w.interiorStops.push({point:seat,id:benchKey,name:'Lounge bench',label:'Rest 30 min · free · recover stamina'});
+ buildLoungeBench(w,st);
  // Existing partition footprints become a small planning studio with a framed reflective panel.
  const f=layout.fitting,x=f.x+f.width/2;w.box(x,48,f.y+5,86,84,2,style.trim);w.box(x,48,f.y+7,80,78,1,w.mat('#b9cac5',{metalness:.5,roughness:.18}));
  w.canvas.dataset.collectionGuideDisplays=String(layout.displays.length);w.canvas.dataset.planningLounge=group;
+}
+
+export function buildLoungeBench(w,st){
+ w.bench(600,630);const seat={x:600,y:675},benchKey='lounge-bench:'+st.id,benchHit=w.box(600,18,630,88,32,24,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));benchHit.castShadow=false;w.tag(benchHit,benchKey,seat);w.interiorStops.push({point:seat,id:benchKey,name:'Lounge bench',label:'Rest 30 min · free · recover stamina'});
+}
+
+// An original material/source desk and rest corner accompany newly verified collections.
+export function buildCollectionStudio(w,st,style){
+ const timber=w.mat(style.fixture,{map:surfaceTexture(w,'timber'),roughness:.8}),paper=w.mat('#f5eddb',{roughness:.95}),items=st.products.filter(p=>p.modelId?.startsWith('v37-real-')).slice(0,3);
+ w.box(600,29,147,120,5,44,timber);for(const x of [550,650])w.box(x,13,147,4,26,34,style.trim);
+ for(const [i,p]of items.entries()){const x=563+i*36;w.box(x,33+i*.4,150,28,3,24,w.mat(p.color,{bumpMap:surfaceTexture(w,'fabric',true),bumpScale:.025}));w.box(x,35+i*.4,153,13,.3,10,paper);}
+ w.box(600,60,130,102,47,3,style.trim);w.box(600,60,132,96,41,1,paper);for(const x of [570,600,630])w.box(x,60,133,22,28,.5,style.accent);
+ w.cyl(649,42,137,3,25,style.trim);w.cyl(649,57,137,10,9,'#dfcfaa');
+ const key='collection:'+st.id,point={x:600,y:210},hit=w.box(600,51,147,120,55,45,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,point);const label=w.label('Collection desk ↗',600,98,140,140,style.accent);w.tag(label,key,point);w.interiorStops.push({point,id:key,name:'Collection desk',label:'Compare source colors, fabrics, sizes & prices'});
+ buildLoungeBench(w,st);w.canvas.dataset.collectionStudio=String(items.length);
 }

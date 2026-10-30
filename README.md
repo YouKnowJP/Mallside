@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v36 — planning lounges and more natural movement
+## v37 — verified collections and useful shop studios
+
+Fourteen official-source products bring merchandise to eleven formerly empty shops. Twelve collection desks offer source-color, fabric, size and price comparisons, with budget shortlists and preserved rest benches. Continuous item carrying, steadier arms and responsive staff greetings improve shopping scenes. Existing saves remain compatible. See [v37 gameplay](docs/GAMEPLAY-v37.md), [release QA](docs/qa-v37.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v36 — planning lounges and more natural movement
 
 All 359 research-only retail shops now have themed planning lounges, useful benches and budgeted shortlists of real finds at their actual shops. Save up to three picks per plan and walk directly to inspect them. Better crowd spacing, small avoidance steps, eased glances and more natural sitting make the mall feel less mechanical. Existing saves remain compatible. See [v36 gameplay](docs/GAMEPLAY-v36.md), [release QA](docs/qa-v36.md) and [remaining work](ROADMAP.md).
 

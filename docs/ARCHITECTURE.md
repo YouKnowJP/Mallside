@@ -86,3 +86,12 @@ Character hand IK caches the solved quaternions only when the root-local target 
 `shopping-plans.js` keeps optional bounded shortlists, validates real local product identities and estimates current per-line game tax. It never charges, reserves inventory or alters catalog status. `shopping-plan-ui.js` renders drafts, explicit saves and actual-shop routes. The controller preserves focus/scroll across updates and discards unsaved draft edits on reopening. `planning-lounge.js` fills the existing six display footprints with original planning props and tags stations for category, budget and route views; a reserved bench uses existing rest rules.
 
 `ambient-motion.js` supplies deterministic spaced spawn searches, bounded navigation-aware sidesteps, arrival speed and smooth sitting/bench targets. `character-rig.js` eases head orientation while reduced-motion and delta-zero callers keep exact poses. Scene telemetry records initial crowd clearance and seated blend for repeatable native checks.
+
+
+## Verified collection studios (v37)
+
+`store-product-additions-v37.js` extends the seed pipeline without rewriting old listings. Official offer/size/image facts and reviewed body regions live in `research-v37`. Additive palette/surface modules retain old snapshots. Catalog installation marks only branches actually receiving these models with `collectionEdition: 37`; the normal association checks still apply.
+
+`collection-guide.js` supplies branch-local comparison selection, accessible source cards and desk/bench predicates. The interior blueprint reserves the physical desk and bench before adding stock fixtures; `planning-lounge.js` builds their matching geometry. The controller keeps comparison choices ephemeral and reuses the existing inspect/fit/checkout and explicit-save shortlist flows. Newly stocked planners no longer claim their catalog is still in research. `verified-sizing.js` matches explicit source formats while leaving legacy sizing behavior intact.
+
+Ambient customers retain `hasItem` until payment hands it to a bag or a fresh arrival clears it. Store rendering preserves the held product through routes and passes a carrying pose to the shared rig. `staff-motion.js` bounds greeting duration/cooldown and selects nearby attention targets. Wrist targets reset before IK; semantic transitions also ease wrist joints, preserving repeatable reduced-motion poses.

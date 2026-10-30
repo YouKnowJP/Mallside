@@ -13,7 +13,7 @@ export function createStoreCustomers(layout,products,count=8,{reservedRoom=null}
   const choice=sim.wearable?sim.tryProducts:own,actor={id:i,x:layout.spawn.x,y:layout.spawn.y,stage:'browse',phase:'act',route:[],time:0,visits:0,purchases:0,room:null,bag:false,product:choice[i*3%choice.length],speed:60+i%3*5,rotation:0,moving:false};
   sim.actors.push(actor);begin(sim,actor,initial[i]);
   // A newly entered store is already busy. Later transitions always follow a physical route.
-  actor.x=actor.target.x;actor.y=actor.target.y;actor.route=[];actor.phase=['queue'].includes(actor.stage)?'wait':'act';actor.time=i*.3;actor.bag=actor.stage==='leave';
+  actor.x=actor.target.x;actor.y=actor.target.y;actor.route=[];actor.phase=['queue'].includes(actor.stage)?'wait':'act';actor.time=i*.3;actor.bag=actor.stage==='leave';actor.hasItem=!['arrive','leave'].includes(actor.stage);
  }
  return sim;
 }
@@ -32,8 +32,8 @@ function begin(sim,a,stage){
  }
  else if(stage==='queue'){if(sim.queue.length>=sim.layout.queue.length){begin(sim,a,'compare');return;}sim.queue.push(a.id);a.queueIndex=sim.queue.length-1;target(sim,a,sim.layout.queue[a.queueIndex]);}
  else if(stage==='pay'){if(sim.register!==null){begin(sim,a,'queue');return;}sim.register=a.id;target(sim,a,sim.layout.services.checkout);}
- else if(stage==='leave'){target(sim,a,sim.layout.exit);}
- else if(stage==='arrive'){a.bag=false;a.visible=false;a.route=[];a.phase='act';a.target={...sim.layout.spawn};}
+ else if(stage==='leave'){if(a.bag)a.hasItem=false;target(sim,a,sim.layout.exit);}
+ else if(stage==='arrive'){a.hasItem=false;a.bag=false;a.visible=false;a.route=[];a.phase='act';a.target={...sim.layout.spawn};}
 }
 export function updateStoreCustomers(sim,seconds,{paused=false,reducedMotion=false,player=null}={}){
  if(paused||reducedMotion)return;
@@ -54,6 +54,8 @@ export function updateStoreCustomers(sim,seconds,{paused=false,reducedMotion=fal
    continue;
   }
   if(a.stage==='try'&&a.waitingRoom||a.stage==='queue')continue;
+  if(a.stage==='browse'&&a.phase==='act')a.hasItem=true;
+  if(a.bag)a.hasItem=false;
   a.time+=dt;
   if(a.stage==='browse'&&a.time>=6+a.id%4)begin(sim,a,'compare');
   else if(a.stage==='compare'&&a.time>=4+a.id%3)begin(sim,a,'try');

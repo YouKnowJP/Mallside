@@ -2,6 +2,13 @@
 
 Updated 29 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v37
+
+- Source-verify fourteen models from American Eagle, BYLT Basics and SKIMS; add real stock to eleven formerly pending shop identities with exact colors, prices, sizes and photographs.
+- Twelve furnished collection desks support free two-product comparisons, source detail, physical inspection/fitting, budget plans and preserved bench rest. Existing notes remain compatible when a shop gains stock.
+- Correct source size matching and photographed garment construction; retain selected items through ambient shopping routes, steady carrying arms and add eased staff attention/greetings.
+- See [v37 gameplay](docs/GAMEPLAY-v37.md), [catalog evidence](docs/research-v37/catalog-evidence.json) and [v37 QA](docs/qa-v37.md).
+
 ## Completed in v36
 
 - Original planning lounges in the remaining 359 research-only retail shops, with category-specific workbenches/studies, original map and ledger props, functional planning stations and reachable resting benches.
@@ -119,7 +126,7 @@ Updated 29 October 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,015 stocked identities, 133 service identities and 450 identities awaiting catalog research**. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,026 stocked identities, 133 service identities and 439 identities awaiting catalog research**. The remaining 348 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

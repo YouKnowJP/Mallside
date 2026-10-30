@@ -1,7 +1,22 @@
-import {PRODUCT_PHOTOS} from './product-photos.js?v=23.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=37.0.0';
 
 // Photograph-reviewed exceptions preserve product identity; no retailer/category logo is invented.
 export const GARMENT_PHOTO_OVERRIDES={
+ "assets/photos/v37-real-0417a09327a87ea91cd1.webp":{"kind":"tee","sleeve":"short","neckline":"crew","fit":"slim","onModel":false,"photoRegion":[0.38,0.3,0.61,0.68]},
+ "assets/photos/v37-real-be7edcf1ba0722eb53f3.webp":{"kind":"tee","sleeve":"short","neckline":"crew","onModel":true,"photoRegion":[0.4,0.32,0.59,0.55]},
+ "assets/photos/v37-real-cd2808650b94a694a24c.webp":{"kind":"tee","sleeve":"long","neckline":"crew","fit":"slim","onModel":false,"photoRegion":[0.41,0.25,0.62,0.63]},
+ "assets/photos/v37-real-626f381aad658663d34a.webp":{"kind":"tee","sleeve":"short","neckline":"crew","closure":"none","onModel":false,"photoRegion":[0.38,0.31,0.62,0.64]},
+ "assets/photos/v37-real-ee9fdd943eeaea41e5b8.webp":{"kind":"polo","sleeve":"short","neckline":"collared","onModel":true,"photoRegion":[0.42,0.29,0.61,0.52]},
+ "assets/photos/v37-real-ed7f43220dabfc76053c.webp":{"kind":"pants","fit":"slim","leg":"taper","onModel":true,"photoRegion":[0.4,0.25,0.49,0.69]},
+ "assets/photos/v37-real-bacf135ebf19bd59ee48.webp":{"kind":"shorts","onModel":true,"photoRegion":[0.38,0.15,0.51,0.36]},
+ "assets/photos/v37-real-97de58ff2216b6f998f3.webp":{"kind":"tee","fit":"relaxed","onModel":true,"photoRegion":[0.42,0.33,0.59,0.54]},
+ "assets/photos/v37-real-dffeb1f8a86c1f8b5e98.webp":{"kind":"tank","sleeve":"none","neckline":"scoop","straps":"wide","ribbing":true,"onModel":false,"photoRegion":[0.35,0.37,0.6,0.68]},
+ "assets/photos/v37-real-f3edb7e563f873b8ecd8.webp":{"kind":"pants","leg":"flare","fit":"flare","onModel":false,"photoRegion":[0.34,0.3,0.44,0.69]},
+ "assets/photos/v37-real-edc9a3f21079c3cb73f8.webp":{"kind":"pants","leg":"legging","fit":"slim","ribbing":true,"onModel":false,"photoRegion":[0.37,0.3,0.46,0.68]},
+ "assets/photos/v37-real-f94e71e2bd3b6fdee88a.webp":{"kind":"pants","leg":"straight","onModel":false,"photoRegion":[0.34,0.32,0.43,0.72]},
+ "assets/photos/v37-real-a43e5cdac3fd534a2d7a.webp":{"kind":"jacket","fit":"relaxed","pockets":2,"onModel":false,"photoRegion":[0.39,0.3,0.61,0.62]},
+ "assets/photos/v37-real-6fe23b5808c6b6f6c74f.webp":{"kind":"tee","fit":"relaxed","fabric":"cotton","onModel":false,"photoRegion":[0.37,0.31,0.62,0.66]},
+
  'assets/photos/v11-real-cb6de8dd60311698.webp':{kind:'dress',sleeve:'none',neckline:'scoop',length:'maxi',fit:'flare',fabric:'cotton',straps:'spaghetti',photoRegion:[0.42,0.41,0.57,0.84],onModel:true,photoView:'front',photoRegionPart:'skirt-panel'},
  'assets/photos/v11-real-965fdb574e116f14.webp':{kind:'tee',sleeve:'short',neckline:'crew',length:'hip',fit:'slim',fabric:'cotton'},
  'assets/photos/v11-real-d39130eb641c484b.webp':{kind:'shirt',sleeve:'long',neckline:'collared',length:'hip',fit:'flare',fabric:'cotton',closure:'buttons',pattern:'stripe',pockets:1,hem:'peplum',photoRegion:[0.38,0.21,0.58,0.43],onModel:true,photoView:'front',photoRegionPart:'body'},

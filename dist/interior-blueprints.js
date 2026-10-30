@@ -1,3 +1,4 @@
+import {hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=37.0.0';
 import {brandDesign} from './brand-designs.js?v=23.0.0';
 
 // Six display stations keep every model reachable; their arrangement and furnishings vary by brand.
@@ -27,7 +28,7 @@ export function makeInteriorPlan(store,plan,visibleCount=Math.min(6,store.count|
  const mirrored=['perimeter','coastal','atelier','jewelry'].includes(design.layout)&&design.variation%2===1;
  const checkout={x:mirrored?230:820,y:650,width:150,height:60},returns={x:mirrored?830:230,y:650,width:120,height:60};
  const fitting={x:mirrored?815:225,y:135,width:140,height:90},rail={x:mirrored?255:690,y:145,width:220,height:55};
- const lounge=store.catalogStatus==='pending'||['food','service','visitor','entertainment','auto','gallery'].includes(store.businessKind),seating=lounge?[{x:554,y:615,width:92,height:30}]:[];
+ const lounge=hasLoungeBench(store)||store.catalogStatus==='pending'||['food','service','visitor','entertainment','auto','gallery'].includes(store.businessKind),seating=lounge?[{x:554,y:615,width:92,height:30}]:[];
  const decor=/niches|silk|velvet|shelf|fold|book|rack|screen|sink|trunks|menu|coffee|bakery|citrus|steel-counter|room-scenes|shoe|sneaker|travel/.test(design.feature)?[{x:mirrored?500:390,y:115,width:280,height:48}]:[];
  // Real walls bound two enterable fitting cubicles. The doorways remain open in navigation.
  const fittingWalls=[{x:fitting.x,y:fitting.y,width:140,height:5},...[0,68,136].map(dx=>({x:fitting.x+dx,y:fitting.y,width:4,height:90}))];
@@ -35,7 +36,8 @@ export function makeInteriorPlan(store,plan,visibleCount=Math.min(6,store.count|
  // Auxiliary stock fixtures are only rendered when this shop has product stock.
  const noProductStock=!store.count;
  const stockFixtures=visibleCount&&!noProductStock?[-1,1].flatMap(side=>[275,410,550].map((y,i)=>({id:'wall-'+side+'-'+i,kind:'wall',side,x:side<0?198:974,y,width:28,height:i===2?60:90}))):[];
- const fixtures=[...displays.slice(0,visibleCount),checkout,returns,...fittingWalls,rail,...seating,...decor,...stockFixtures];
+ const collectionDesk=hasCollectionDesk(store)?[{x:540,y:125,width:120,height:45}]:[];
+ const fixtures=[...collectionDesk,...displays.slice(0,visibleCount),checkout,returns,...fittingWalls,rail,...seating,...decor,...stockFixtures];
  const services={checkout:{x:checkout.x+checkout.width/2,y:734},returns:{x:returns.x+returns.width/2,y:734},fitting:{x:fitting.x+fitting.width/2,y:246},associate:{x:mirrored?745:445,y:630}};
  // Extra double-sided rails/islands fill the gaps between display columns, never their approaches.
  const overlaps=(a,b,pad=16)=>a.x<b.x+b.width+pad&&a.x+a.width>b.x-pad&&a.y<b.y+b.height+pad&&a.y+a.height>b.y-pad;

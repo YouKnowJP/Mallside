@@ -211,3 +211,11 @@ html{scroll-behavior:auto}
 .plan-route{display:grid;gap:8px;margin-top:16px}
 @media(max-width:660px){.planner-settings{grid-template-columns:1fr}.planner-products{grid-template-columns:repeat(2,minmax(0,1fr))}.plan-shortlist{padding:15px}.plan-shortlist article{align-items:flex-start;flex-wrap:wrap}.planner-buttons .button{padding:10px 12px;font-size:12px}}
 @media(max-width:410px){.planner-products{grid-template-columns:1fr}.planner-products .product-art{height:165px}.plan-shortlist .service-links{flex-wrap:wrap}.planner-search>div{flex-wrap:wrap}.planner-search input{flex-basis:170px}}
+
+/* v37: source comparison cards stay readable in small shop dialogs. */
+.collection-products,.collection-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.collection-card{padding:16px;border:1px solid #d6d6c6;border-radius:16px;background:#fffaf0;min-width:0;overflow-wrap:anywhere}.collection-card .product-art{height:180px}.collection-card h3{font-size:1rem}.collection-card dl{font-size:.85rem}.collection-card dt{font-weight:700;margin-top:12px}.collection-card dd{margin:4px 0}.collection-card .button{margin-top:10px;min-height:44px}.collection-card>a{display:inline-block;min-height:44px;padding-top:10px}.collection-tools{display:flex;flex-wrap:wrap;gap:8px}.collection-tally{padding:12px;border-radius:10px;background:#e8efde;font-weight:700}.collection-comparison{margin-bottom:12px}.collection-desk section{scroll-margin-top:16px}@media(max-width:560px){.collection-products,.collection-comparison{grid-template-columns:1fr}.collection-card .product-art{height:150px}}
+
+.store-info-bar{flex-wrap:wrap}.store-info-bar .button{max-width:100%;min-height:44px}
+
+/* Keep both shopping actions in one pinned footer, without one covering the other. */
+.store-footer{position:sticky;bottom:0;z-index:5}.store-footer .store-exit-strip,.store-footer .cart-dock{position:static}.store-footer .cart-dock{flex-wrap:wrap}

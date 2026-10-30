@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 37.0.0 — Verified collections and shop studios — 29 October 2026
+
+- Add fourteen source-verified American Eagle, BYLT Basics and SKIMS models with official selected-color photographs, USD prices and exact size labels; stock eleven previously empty identities.
+- Furnish twelve original collection desks with free two-product comparison, source details, actual-product inspection/fitting routes, budget shortlists and preserved resting benches.
+- Keep old notes working when a research shop gains merchandise, add a comparison jump control and retain lightweight-mode access. Fix compact shop-header overflow and combine Exit/checkout in one pinned footer to prevent overlap.
+- Match explicit source sizing systems, add reviewed photograph/construction metadata, retain held items through shopper routes, steady carrying arms and ease staff greetings/attention.
+- Preserve schema-6 saves, map revision 10, existing product IDs and third-party notices. See [v37 QA](docs/qa-v37.md).
+
 ## 36.0.0 — Planning lounges and natural movement — 29 October 2026
 
 - Furnish 359 research-only retail locations as original planning lounges with textile, abstract light-study or workshop details, budget/map stations and usable resting benches.
