@@ -1,3 +1,6 @@
+import {isPlanningStore} from './shopping-plans.js?v=36.0.0';
+// Newly stocked studios retain the original creative studies saved before their catalogs arrived.
+export const supportsMaterialStudy=st=>isPlanningStore(st)||st?.collectionEdition===42;
 // Original Mallside design exercises. These samples are never merchant stock.
 export const STUDY_PALETTES=[
  {id:'earth',name:'Earth & linen',colors:['#ac7456','#dfca9e','#718374'],labels:['Clay','Linen','Sage']},
@@ -9,7 +12,7 @@ export const studioGroup=st=>['apparel','shoes','bags'].includes(st.businessKind
 export const validStudy=d=>!!d&&STUDY_PALETTES.some(p=>p.id===d.palette)&&STUDY_FINISHES.some(f=>f.id===d.finish);
 export function studyFor(s,store){const saved=(s.materialStudies||[]).find(n=>n.store===store);return saved?{...saved}:{store,palette:'earth',finish:'textured',day:s.day};}
 export function createStudioStudies({storeById,mallOf,isPlanningStore}){
- function normalize(s){const notes=new Map();for(const n of Array.isArray(s.materialStudies)?s.materialStudies:[]){if(!validStudy(n)||!isPlanningStore(storeById(n.store))||!Number.isSafeInteger(n.day)||n.day<1||n.day>s.day)continue;notes.set(n.store,{store:n.store,palette:n.palette,finish:n.finish,day:n.day});}s.materialStudies=[...notes.values()];}
- function save(s,draft){const st=storeById(draft?.store);if(!isPlanningStore(st)||!mallOf(s).sections.some(d=>d.stores.includes(st.id))||!validStudy(draft))throw Error('Choose a material study at an unfinished shop in this center.');const note={store:st.id,palette:draft.palette,finish:draft.finish,day:s.day},index=s.materialStudies.findIndex(n=>n.store===st.id);if(index<0)s.materialStudies.push(note);else s.materialStudies[index]=note;return {...note};}
+ function normalize(s){const notes=new Map();for(const n of Array.isArray(s.materialStudies)?s.materialStudies:[]){if(!validStudy(n)||!supportsMaterialStudy(storeById(n.store))||!Number.isSafeInteger(n.day)||n.day<1||n.day>s.day)continue;notes.set(n.store,{store:n.store,palette:n.palette,finish:n.finish,day:n.day});}s.materialStudies=[...notes.values()];}
+ function save(s,draft){const st=storeById(draft?.store);if(!supportsMaterialStudy(st)||!mallOf(s).sections.some(d=>d.stores.includes(st.id))||!validStudy(draft))throw Error('Choose a material study at a supported shop in this center.');const note={store:st.id,palette:draft.palette,finish:draft.finish,day:s.day},index=s.materialStudies.findIndex(n=>n.store===st.id);if(index<0)s.materialStudies.push(note);else s.materialStudies[index]=note;return {...note};}
  return {normalize,save};
 }

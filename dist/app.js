@@ -1,11 +1,11 @@
-import {STUDY_PALETTES,STUDY_FINISHES,studyFor} from './studio-study.js?v=41.0.0';
-import {studioStudyHTML} from './studio-study-ui.js?v=41.0.0';
-import {displayPoint} from './shop-interiors.js?v=40.0.0';
-import {apparelFactsHTML} from './apparel-facts.js?v=40.0.0';
+import {STUDY_PALETTES,STUDY_FINISHES,studyFor} from './studio-study.js?v=42.0.0';
+import {studioStudyHTML} from './studio-study-ui.js?v=42.0.0';
+import {displayPoint} from './shop-interiors.js?v=42.0.0';
+import {apparelFactsHTML} from './apparel-facts.js?v=42.0.0';
 import {nearbyDiscoveryHTML} from './waystation-guide.js?v=40.0.0';
 import {frameFactsHTML} from './eyewear-tools.js?v=39.0.0';
 import {isBookProduct,bookFactsHTML,bookshopGuideHTML} from './book-tools.js?v=38.0.0';
-import {collectionGuideHTML,collectionSelection,hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=40.0.0';
+import {collectionGuideHTML,collectionSelection,hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=42.0.0';
 import {shoppingPlanHTML,shoppingPlanNotebook} from './shopping-plan-ui.js?v=37.0.0';
 import {diningRoom,sculptureAlcove,artNotebook} from './district-ui.js?v=35.0.0';
 import {fixtureStop} from './mall-neighborhood.js?v=36.0.0';
@@ -18,27 +18,27 @@ import {communityNoticeHTML,lostPropertyHTML,homeRoutineHTML} from './neighborho
 import {communityBoard,localChapterCard,wrappingDesk} from './community-ui.js?v=30.0.0';
 import {outingBoard} from './outing-ui.js?v=24.0.0';
 import {collectionStudioHTML,guestbookHTML,guestbookMemories} from './home-ui.js?v=27.0.0';
-import {CharacterStudio} from './character-studio.js?v=41.0.0';
-import {physicalProduct} from './merchandise-3d.js?v=40.0.0';
-import {validatePickup,putBackSelection} from './shopping-selection.js?v=41.0.0';
+import {CharacterStudio} from './character-studio.js?v=42.0.0';
+import {physicalProduct} from './merchandise-3d.js?v=42.0.0';
+import {validatePickup,putBackSelection} from './shopping-selection.js?v=42.0.0';
 import {brandDesign} from './brand-designs.js?v=40.0.0';
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {tenantFloor,zoneOf} from './campus-model.js?v=23.0.0';
 import {storePortrait,loadPortrait,deletePortrait} from './portrait-store.js?v=23.0.0';
-import {spatialLayout} from './spatial-layout.js?v=40.0.0';
-import {MallWorld3D} from './world-3d.js?v=41.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=40.0.0';
+import {spatialLayout} from './spatial-layout.js?v=42.0.0';
+import {MallWorld3D} from './world-3d.js?v=42.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=42.0.0';
 import {sourceLabel} from './catalog-links-v7.js?v=23.0.0';
 import {windowSelection} from './mall-life.js?v=26.0.0';
 import {layoutFor} from './map-layout.js?v=36.0.0';
 import {paintPerson} from './sprites.js?v=34.0.0';
-import {ActivityScene} from './activity-scene.js?v=41.0.0';
-import {HomeJourney} from './journey.js?v=41.0.0';
-import * as E from './engine.js?v=41.0.0';
+import {ActivityScene} from './activity-scene.js?v=42.0.0';
+import {HomeJourney} from './journey.js?v=42.0.0';
+import * as E from './engine.js?v=42.0.0';
 import {createSaveStorage} from './save-storage.js?v=28.0.0';
 import {recoveryHTML,backupSummary,saveSummary,modeLabel} from './save-recovery-ui.js?v=28.0.0';
 import {icon} from './art.js?v=23.0.0';
-import {MallWorld} from './world.js?v=41.0.0';
+import {MallWorld} from './world.js?v=42.0.0';
 import {bindWalkPad} from './input-controls.js?v=29.0.0';
 const $=q=>document.querySelector(q), $$=q=>[...document.querySelectorAll(q)];
 const storage={get(k){try{return localStorage.getItem(k);}catch{return null;}},set(k,v){try{localStorage.setItem(k,v);return true;}catch{return false;}}};
@@ -183,7 +183,7 @@ let collectionPicks=[];
 function openCollectionDesk(id,keep=false){const st=E.storeById(id);if(!hasCollectionDesk(st)||(world instanceof MallWorld3D?world.inside!==id:store!==id))return;store=id;if(!keep)collectionPicks=[];const previous=modalType==='collection-desk'?$('.modal'):null,top=previous?.scrollTop||0,action=document.activeElement?.dataset.action,pick=document.activeElement?.dataset.id;modal('The collection desk.',st.name+' · Compare & plan',collectionGuideHTML(s,st,collectionPicks,{E,esc:escapeHTML,picture}),{type:'collection-desk',footer:`<div class="store-exit-strip"><button class="button secondary" data-action="leave-shop">Exit shop → Mall</button><button class="button secondary" data-action="collection-review" ${collectionPicks.length===2?'':'disabled'}>${collectionPicks.length===2?'Review comparison ↑':'Choose two to compare'}</button></div>`});if(previous){const dialog=$('.modal');dialog.scrollTop=top;const buttons=[...dialog.querySelectorAll('[data-action]')],target=buttons.find(b=>b.dataset.action===action&&b.dataset.id===pick&&!b.disabled)||dialog.querySelector('[data-action=collection-clear]')||dialog.querySelector('.close-button');target?.focus({preventScroll:true});target?.scrollIntoView({block:'nearest',behavior:'instant'});}}
 function openShoppingPlan(id){if(!E.storeById(id))return;shoppingDraft=E.shoppingPlanDraft(s,id);planningQuery='';planningLimit=12;renderShoppingPlan();}
 function renderShoppingPlan(origin=null){if(!shoppingDraft)return;const previous=modalType==='shopping-plan'?$('.modal'):null,top=previous?.scrollTop||0,active=origin||(previous?.contains(document.activeElement)?document.activeElement:null),search=!!active?.closest('#plan-search-form'),action=active?.dataset.action,id=active?.dataset.id;modal('Your shopping plan.',E.storeById(shoppingDraft.store).name+' · Shopping desk',shoppingPlanHTML(s,shoppingDraft,planningQuery,planningLimit,{E,esc:escapeHTML,picture}),{type:'shopping-plan',footer:'<div class="store-exit-strip"><button class="button secondary" data-action="leave-shop">Exit shop → Mall</button><span>Review · save · walk to the actual shop</span></div>'});if(previous){const dialog=$('.modal');dialog.scrollTop=top;let target=[...dialog.querySelectorAll('[data-action]')].find(b=>b.dataset.action===action&&b.dataset.id===id&&!b.disabled);if(!target&&action==='plan-add')target=dialog.querySelector(shoppingDraft.items.length>=3?'[data-action=plan-save]':'[data-action=plan-add]:not(:disabled)');if(!target&&action==='plan-remove')target=dialog.querySelector('[data-action=plan-remove]')||dialog.querySelector('[data-action=plan-save]');if(!target&&action==='plan-save')target=dialog.querySelector('[data-action=plan-walk]');target??=dialog.querySelector(search?'#plan-query':'.close-button');target?.focus({preventScroll:true});target?.scrollIntoView({block:'nearest',behavior:'instant'});}}
-function openMaterialStudy(id){const st=E.storeById(id);if(!E.isPlanningStore(st)||(world instanceof MallWorld3D?world.inside!==id:store!==id))return;store=id;studioDraft=studyFor(s,id);renderMaterialStudy();}
+function openMaterialStudy(id){const st=E.storeById(id);if(!E.supportsMaterialStudy(st)||(world instanceof MallWorld3D?world.inside!==id:store!==id))return;store=id;studioDraft=studyFor(s,id);renderMaterialStudy();}
 function renderMaterialStudy(origin=null){const st=E.storeById(studioDraft?.store);if(!st)return;const previous=modalType==='material-study'?$('.modal'):null,top=previous?.scrollTop||0,action=origin?.dataset.action,id=origin?.dataset.id;if(world)world.studioPreview={...studioDraft};modal('A material study.',escapeHTML(st.name)+' · Original design exercise',studioStudyHTML(s,st,studioDraft,{esc:escapeHTML}),{type:'material-study',footer:'<div class="store-exit-strip"><button class="button secondary" data-action="leave-shop">Exit shop → Mall</button><button class="button orange" data-action="studio-save">Save study · free</button></div>'});if(previous){$('.modal').scrollTop=top;[...$('.modal').querySelectorAll('[data-action]')].find(b=>b.dataset.action===action&&b.dataset.id===id)?.focus({preventScroll:true});}}
 function openPlanNotebook(){modal('My shopping shortlists.',s.shoppingPlans.length+'/16 saved plans',shoppingPlanNotebook(s,{E,esc:escapeHTML}),{type:'plan-notebook'});}
 function renderPendingStore(st){modal(st.name,'Collection guide · '+E.mallOf(s).name,pendingCollection(s,st,{E,esc:escapeHTML}),{type:'store',footer:'<div class="store-exit-strip"><button class="button secondary" data-action="leave-shop">Exit shop → Mall</button><span>Explore · save this shop · find a stocked collection</span></div>'});}
@@ -288,7 +288,7 @@ const actions={
  'collection-review':()=>{const target=$('#collection-comparison');target?.scrollIntoView({block:'start',behavior:'instant'});target?.focus({preventScroll:true});},
  'collection-clear':()=>{collectionPicks=[];openCollectionDesk(store,true);},
  'lounge-rest':()=>{if(!world?.inside||!hasLoungeBench(E.storeById(world.inside)))return;closeModal();world.navigate({x:600,y:675},{interaction:'lounge-bench:'+world.inside});focusMap();},
- 'studio-open':b=>{const id=b.dataset.id||world?.inside||store;if(!E.isPlanningStore(E.storeById(id)))return;if(world instanceof MallWorld3D&&world.inside===id){closeModal();world.navigate(displayPoint(world.layout.displays[1]),{interaction:'study:'+id});focusMap();}else openMaterialStudy(id);},
+ 'studio-open':b=>{const id=b.dataset.id||world?.inside||store;if(!E.supportsMaterialStudy(E.storeById(id)))return;if(world instanceof MallWorld3D&&world.inside===id){closeModal();world.navigate(E.isPlanningStore(E.storeById(id))?displayPoint(world.layout.displays[1]):{x:600,y:210},{interaction:'study:'+id});focusMap();}else openMaterialStudy(id);},
  'studio-palette':b=>{if(studioDraft&&STUDY_PALETTES.some(p=>p.id===b.dataset.id)){studioDraft.palette=b.dataset.id;renderMaterialStudy(b);}},
  'studio-finish':b=>{if(studioDraft&&STUDY_FINISHES.some(f=>f.id===b.dataset.id)){studioDraft.finish=b.dataset.id;renderMaterialStudy(b);}},
  'studio-save':b=>{if(studioDraft&&perform(()=>E.saveMaterialStudy(s,studioDraft)).ok){renderMaterialStudy(b);}},

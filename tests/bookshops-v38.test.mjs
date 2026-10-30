@@ -25,7 +25,7 @@ test('eight verified physical editions keep their exact ISBN, format, USD offer 
  assert.equal(validISBN('9781984898457'),false);assert.equal(validISBN('2940176764017'),false);assert.equal(isBookProduct({...editions[0],bookFormat:'EBook'}),false);
 });
 test('six formerly pending bookshops receive only their own documented editions; existing collections remain available',()=>{
- assert.equal(shops.length,6);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1047);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,418);assert.equal(E.STORES.filter(E.isPlanningStore).length,327);assert.equal(E.STORES.filter(hasCollectionDesk).length,33);
+ assert.equal(shops.length,6);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1052);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,413);assert.equal(E.STORES.filter(E.isPlanningStore).length,322);assert.equal(E.STORES.filter(hasCollectionDesk).length,38);
  for(const st of shops){assert.equal(st.count,8);assert.equal(st.businessKind,'books');assert.ok(hasCollectionDesk(st));assert.equal(collectionProducts(st).length,8);for(const p of st.products){assert.ok(isBookProduct(p));assert.equal(p.store,st.id);assert.equal(p.associationEvidence.kind,'retailer-product');assert.equal(p.associationEvidence.source,p.source);}}
  assert.ok(E.PRODUCTS.filter(p=>p.bookISBN).every(p=>shops.some(st=>st.id===p.store)));
 });

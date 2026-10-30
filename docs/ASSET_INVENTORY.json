@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "41.0.0",
+  "release": "42.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1973,
-  "uniqueRuntimePhotoFiles": 1951,
+  "runtimePhotoEntries": 1979,
+  "uniqueRuntimePhotoFiles": 1957,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19437,6 +19437,66 @@
       "source": "https://cottonon.com/US/box-fit-t-shirt/3611849-02.html",
       "imageUrl": "https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-men/default/dwf9522b10/3611849/3611849-02-2.jpg?sw=640&sh=960&sm=fit",
       "description": "Box Fit T-Shirt in White — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v42-real-4e88d69fba9df1ef8b78",
+      "path": "assets/photos/v42-real-4e88d69fba9df1ef8b78.webp",
+      "sha256": "e9271e08e27bdb044a7d2ff4548c9c7fbab2931f5596cd1cf4e56d6300abbd8e",
+      "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/ribbed--knit-t-shirt/37077771/32/00",
+      "imageUrl": "https://media.mango.com/is/image/punto/37077771-32-002?wid=1024",
+      "description": "Ribbed Knit T-Shirt in Chocolate — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v42-real-6d4f8f5686801fb26477",
+      "path": "assets/photos/v42-real-6d4f8f5686801fb26477.webp",
+      "sha256": "7255e6f21be35d191133eeb419333fe8cd54c5469779c3aae73eec89c07588a7",
+      "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/100-extra-soft-cotton-regular-fit-t-shirt/37016000/56/00",
+      "imageUrl": "https://media.mango.com/is/image/punto/37016000-56-002?wid=1024",
+      "description": "100% Extra Soft Cotton Regular Fit T-Shirt in Navy — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v42-real-7754356ce4251254b332",
+      "path": "assets/photos/v42-real-7754356ce4251254b332.webp",
+      "sha256": "8505aff5b2a22a1e1f5880e99d72dcd3c677c4e67a9181f77bd0175a6f48a544",
+      "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/ribbed--knit-t-shirt/37077771/01/00",
+      "imageUrl": "https://media.mango.com/is/image/punto/37077771-01-002?wid=1024",
+      "description": "Ribbed Knit T-Shirt in White — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v42-real-816761269443a008ba9e",
+      "path": "assets/photos/v42-real-816761269443a008ba9e.webp",
+      "sha256": "773887edf5a331c60d23d5c1e59f5f908ba7194b2b21345dbb4998f879fd2542",
+      "source": "https://www.cos.com/en-us/men/menswear/tshirts/relaxed-fit/product/interlock-cotton-crew-neck-t-shirt-white-1283191026",
+      "imageUrl": "https://media.cos.com/assets/001/ad/e5/ade5f65e7bc6944e987fa7aa22e667ad3731c201_xxl-1.jpg?imwidth=1200",
+      "description": "Interlock Cotton Crew-Neck T-Shirt in White — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v42-real-d30bb9fd3c43388bc2d1",
+      "path": "assets/photos/v42-real-d30bb9fd3c43388bc2d1.webp",
+      "sha256": "49d76223d379fc3c0797fff0bdb60bf6c004d0402b8c5354272e191d50c5ef71",
+      "source": "https://www.cos.com/en-us/men/menswear/tshirts/relaxed-fit/product/interlock-cotton-crew-neck-t-shirt-black-1283191027",
+      "imageUrl": "https://media.cos.com/assets/001/dc/3c/dc3c6449ab2d6a3b25573675679389619dc3b877_xxl-1.jpg?imwidth=1200",
+      "description": "Interlock Cotton Crew-Neck T-Shirt in Black — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v42-real-d6c3270bd8a4544d37a5",
+      "path": "assets/photos/v42-real-d6c3270bd8a4544d37a5.webp",
+      "sha256": "9181279d054aef0d3a7ced7ff66a05c0efb4ef37a47388947bf52d42f4a61d7d",
+      "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/100-extra-soft-cotton-regular-fit-t-shirt/37016000/01/00",
+      "imageUrl": "https://media.mango.com/is/image/punto/37016000-01-002?wid=1024",
+      "description": "100% Extra Soft Cotton Regular Fit T-Shirt in White — exact source photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

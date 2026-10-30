@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v41 — working studios and courtyard mosaics
+## v42 — knit showrooms and reading shelves
+
+Six verified COS/Mango color variants stock five unfinished locations, with exact source sizes and qualified USD references. Furnished material desks retain studies saved before the collection arrived. Detailed reading shelves remember each floor's saved story, and continuous foot/pelvis curves smooth walking transitions. Existing purchases and saves remain compatible. See [v42 gameplay](docs/GAMEPLAY-v42.md), [source evidence](docs/research-v42/catalog-evidence.json), [release QA](docs/qa-v42.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v41 — working studios and courtyard mosaics
 
 All 327 unfinished planning shops gain richer original workbenches and a hands-on material study: compare named palettes and finishes, preview them on the physical desk, and save a study for your next visit. All 23 mosaic tables now turn with their controls and remember saved arrangements. Fitting curtains ease by elapsed time, and room changes release procedural finish textures. Existing saves and product collections stay compatible. See [v41 gameplay](docs/GAMEPLAY-v41.md), [release QA](docs/qa-v41.md) and the [roadmap](ROADMAP.md).
 

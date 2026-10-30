@@ -1,5 +1,5 @@
 import {benchSeatTarget} from './ambient-motion.js?v=36.0.0';
-import {applyCharacterPose} from './character-rig.js?v=41.0.0';
+import {applyCharacterPose} from './character-rig.js?v=42.0.0';
 import {adultAppearance} from './mall-atmosphere.js?v=33.0.0';
 
 // Original ambient visitors; the book is scenery, not a catalog item.

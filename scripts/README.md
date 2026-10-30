@@ -57,4 +57,6 @@ For Firefox, `--headless=true` runs the actual browser without depending on desk
 
 Exact clock-cost assertions read the displayed game clock. Walking clock ticks can precede the next local-storage autosave, so a saved timestamp is not a reliable baseline for a paused product dialog. Purchase/refund/save assertions still inspect the stored state.
 
-The v41 matrix contains 52 gameplay scenarios plus strict error capture. `--match=v41` isolates physical material studies, native-keyboard courtyard mosaics, and compact studio search/controls/exit flows. Full release validation still runs every scenario.
+The v42 matrix contains 55 gameplay scenarios plus strict error capture. `--match=v41` isolates physical material studies, native-keyboard courtyard mosaics, and compact studio search/controls/exit flows. Full release validation still runs every scenario.
+
+`--match=v42` isolates the new COS/Mango studio transactions and the reading-bookmark/compact-study paths. Full release validation runs every scenario.

@@ -1,6 +1,6 @@
 import {paintMosaicStudy} from './mosaic-details.js?v=41.0.0';
 import {paintWaystation} from './waystation-details.js?v=40.0.0';
-import {createMallGroundCanvas} from './mall-environment.js?v=41.0.0';
+import {createMallGroundCanvas} from './mall-environment.js?v=42.0.0';
 import {themeFor} from './mall-design.js?v=35.0.0';
 // Code-native mall scenery: architecture, activities and animation, never fictional merchandise.
 export const VENUE_LABELS={rest:'Garden benches',coffee:'Coffee terrace',food:'Food hall',popup:'Pop-up pavilion',services:'Guest services',photo:'Photo spot',bridge:'Garden bridge',carousel:'Carousel',flowers:'Flower studio',cinema:'Cinema',art:'Sculpture court',lounge:'Tea terrace'};

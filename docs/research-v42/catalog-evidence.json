@@ -1,0 +1,300 @@
+{
+  "checkedOn": "2026-10-30",
+  "method": "Live official selected-color product pages read through Firecrawl after direct requests were denied; exact source size menus and USD metadata/visible offers. SourceMarkdownSHA256 fingerprints the retrieved page text, not raw HTML. Every source photograph was visually reviewed. Game inventory is independent of online availability.",
+  "products": [
+    {
+      "key": "cos-white",
+      "merchant": "COS",
+      "source": "https://www.cos.com/en-us/men/menswear/tshirts/relaxed-fit/product/interlock-cotton-crew-neck-t-shirt-white-1283191026",
+      "name": "Interlock Cotton Crew-Neck T-Shirt",
+      "color": "White",
+      "sku": "1283191026",
+      "priceUSD": 49,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "imageUrl": "https://media.cos.com/assets/001/ad/e5/ade5f65e7bc6944e987fa7aa22e667ad3731c201_xxl-1.jpg?imwidth=1200",
+      "sourceAvailability": "in stock",
+      "sourceOfferNote": "Published USD reference. The source excludes this item from offers; branch inventory is not asserted.",
+      "observations": "Visible source menu XS/S/M/L/XL; metadata says in stock.",
+      "knit": false,
+      "id": "v42-real-816761269443a008ba9e",
+      "photoPath": "assets/photos/v42-real-816761269443a008ba9e.webp",
+      "sourceImageSHA256": "407328a99b63043f8765f98b968dc806a89fdc7e1f0553b7b21edce809c70186",
+      "sourceMarkdownSHA256": "6a25e5a0b7dd3b55080de8ca2979c0b0e93c010f3c8ea90f668db3fee580fe92",
+      "photoSHA256": "773887edf5a331c60d23d5c1e59f5f908ba7194b2b21345dbb4998f879fd2542",
+      "sourceImageSize": [
+        1260,
+        1890
+      ],
+      "sampledColor": "#eff0f2",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "relaxed",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.42,
+          0.32,
+          0.6,
+          0.43
+        ]
+      }
+    },
+    {
+      "key": "cos-black",
+      "merchant": "COS",
+      "source": "https://www.cos.com/en-us/men/menswear/tshirts/relaxed-fit/product/interlock-cotton-crew-neck-t-shirt-black-1283191027",
+      "name": "Interlock Cotton Crew-Neck T-Shirt",
+      "color": "Black",
+      "sku": "1283191027",
+      "priceUSD": 49,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "imageUrl": "https://media.cos.com/assets/001/dc/3c/dc3c6449ab2d6a3b25573675679389619dc3b877_xxl-1.jpg?imwidth=1200",
+      "sourceAvailability": "in stock",
+      "sourceOfferNote": "Published USD reference. The source excludes this item from offers; branch inventory is not asserted.",
+      "observations": "Visible source menu XS/S/M/L/XL; metadata says in stock.",
+      "knit": false,
+      "id": "v42-real-d30bb9fd3c43388bc2d1",
+      "photoPath": "assets/photos/v42-real-d30bb9fd3c43388bc2d1.webp",
+      "sourceImageSHA256": "45128522a49aeca4111603725abb33987f56f74478ea8a53492cb2bbea23245a",
+      "sourceMarkdownSHA256": "d93c0cd227e49f96cec2bc5e71d843c47c536a118fc758e677c8be5fed87ec2d",
+      "photoSHA256": "49d76223d379fc3c0797fff0bdb60bf6c004d0402b8c5354272e191d50c5ef71",
+      "sourceImageSize": [
+        1260,
+        1890
+      ],
+      "sampledColor": "#252525",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "relaxed",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.42,
+          0.32,
+          0.6,
+          0.43
+        ]
+      }
+    },
+    {
+      "key": "mango-white",
+      "merchant": "Mango",
+      "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/100-extra-soft-cotton-regular-fit-t-shirt/37016000/01/00",
+      "name": "100% Extra Soft Cotton Regular Fit T-Shirt",
+      "color": "White",
+      "sku": "37016000-01",
+      "priceUSD": 59.99,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "imageUrl": "https://media.mango.com/is/image/punto/37016000-01-002?wid=1024",
+      "sourceAvailability": null,
+      "sourceOfferNote": "Published USD reference before the advertised MNG30 code. No conditional discount is applied; branch inventory is not asserted.",
+      "observations": "Visible XS–XXL menu; XXL marked unavailable and XL showed estimated delivery.",
+      "knit": false,
+      "id": "v42-real-d6c3270bd8a4544d37a5",
+      "photoPath": "assets/photos/v42-real-d6c3270bd8a4544d37a5.webp",
+      "sourceImageSHA256": "658f1a03ca324ed43918ef72cf7ce61437a14cfc43e1572249ddad3399dbc98d",
+      "sourceMarkdownSHA256": "cc1d64eb2dba1f6e1be39c42dcff1f48e3490cfac425410f4475d55e9323f6ef",
+      "photoSHA256": "9181279d054aef0d3a7ced7ff66a05c0efb4ef37a47388947bf52d42f4a61d7d",
+      "sourceImageSize": [
+        1024,
+        1433
+      ],
+      "sampledColor": "#e9e9e9",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "regular",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.42,
+          0.28,
+          0.59,
+          0.42
+        ]
+      }
+    },
+    {
+      "key": "mango-navy",
+      "merchant": "Mango",
+      "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/100-extra-soft-cotton-regular-fit-t-shirt/37016000/56/00",
+      "name": "100% Extra Soft Cotton Regular Fit T-Shirt",
+      "color": "Navy",
+      "sku": "37016000-56",
+      "priceUSD": 59.99,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "imageUrl": "https://media.mango.com/is/image/punto/37016000-56-002?wid=1024",
+      "sourceAvailability": null,
+      "sourceOfferNote": "Published USD reference before the advertised MNG30 code. No conditional discount is applied; branch inventory is not asserted.",
+      "observations": "Visible source size menu; some options may show delivery estimates. Game quantities are simulated.",
+      "knit": false,
+      "id": "v42-real-6d4f8f5686801fb26477",
+      "photoPath": "assets/photos/v42-real-6d4f8f5686801fb26477.webp",
+      "sourceImageSHA256": "2e596d043292dc0284b403b8d2309bc58440548393dd3965135f95a88e76ec4f",
+      "sourceMarkdownSHA256": "e8f2e20d9de15f8d8fc0151daa94b1645e042697b59f16c58ab5a10cdf521373",
+      "photoSHA256": "7255e6f21be35d191133eeb419333fe8cd54c5469779c3aae73eec89c07588a7",
+      "sourceImageSize": [
+        1024,
+        1433
+      ],
+      "sampledColor": "#262c3c",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "regular",
+        "closure": "none",
+        "fabric": "cotton",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.42,
+          0.28,
+          0.59,
+          0.42
+        ]
+      }
+    },
+    {
+      "key": "mango-knit-white",
+      "merchant": "Mango",
+      "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/ribbed--knit-t-shirt/37077771/01/00",
+      "name": "Ribbed Knit T-Shirt",
+      "color": "White",
+      "sku": "37077771-01",
+      "priceUSD": 59.99,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "imageUrl": "https://media.mango.com/is/image/punto/37077771-01-002?wid=1024",
+      "sourceAvailability": null,
+      "sourceOfferNote": "Published USD reference before the advertised MNG30 code. No conditional discount is applied; branch inventory is not asserted.",
+      "observations": "Visible source size menu; some options may show delivery estimates. Game quantities are simulated.",
+      "knit": true,
+      "id": "v42-real-7754356ce4251254b332",
+      "photoPath": "assets/photos/v42-real-7754356ce4251254b332.webp",
+      "sourceImageSHA256": "4fde4c54e9156aeeb9cb6c283a8a5bbdf19aac64d816872508d9696c83e2dcf1",
+      "sourceMarkdownSHA256": "26ed5cd474fe2bb8585edc9c28f4c9ec4aa057a2a04065c6cfb48e56dc60a1b2",
+      "photoSHA256": "8505aff5b2a22a1e1f5880e99d72dcd3c677c4e67a9181f77bd0175a6f48a544",
+      "sourceImageSize": [
+        1024,
+        1433
+      ],
+      "sampledColor": "#e1e1df",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "regular",
+        "closure": "none",
+        "fabric": "knit",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.42,
+          0.28,
+          0.59,
+          0.42
+        ]
+      }
+    },
+    {
+      "key": "mango-chocolate",
+      "merchant": "Mango",
+      "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/ribbed--knit-t-shirt/37077771/32/00",
+      "name": "Ribbed Knit T-Shirt",
+      "color": "Chocolate",
+      "sku": "37077771-32",
+      "priceUSD": 59.99,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "imageUrl": "https://media.mango.com/is/image/punto/37077771-32-002?wid=1024",
+      "sourceAvailability": null,
+      "sourceOfferNote": "Published USD reference before the advertised MNG30 code. No conditional discount is applied; branch inventory is not asserted.",
+      "observations": "Visible source size menu; some options may show delivery estimates. Game quantities are simulated.",
+      "knit": true,
+      "id": "v42-real-4e88d69fba9df1ef8b78",
+      "photoPath": "assets/photos/v42-real-4e88d69fba9df1ef8b78.webp",
+      "sourceImageSHA256": "0fac7a091dd3af8b2ae2ae3fbfd0d59589c189b4d8ccaf9f30ec1e0c4f006424",
+      "sourceMarkdownSHA256": "4f526097e484d3aaa77e41b144154ecd80cf59c39cac43214f86ec9bc2b421f8",
+      "photoSHA256": "e9271e08e27bdb044a7d2ff4548c9c7fbab2931f5596cd1cf4e56d6300abbd8e",
+      "sourceImageSize": [
+        1024,
+        1433
+      ],
+      "sampledColor": "#392a22",
+      "construction": {
+        "kind": "tee",
+        "sleeve": "short",
+        "neckline": "crew",
+        "fit": "regular",
+        "closure": "none",
+        "fabric": "knit",
+        "length": "hip",
+        "onModel": true,
+        "photoView": "front",
+        "photoRegion": [
+          0.42,
+          0.28,
+          0.59,
+          0.42
+        ]
+      }
+    }
+  ],
+  "previousCatalog": {
+    "count": 8730,
+    "sortedProductIdsSHA256": "38c3a9f9ab0bcd334a5dae8874821c8cb26b84fcde3c65374f7a3297ebc7470c"
+  }
+}

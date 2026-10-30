@@ -26,8 +26,8 @@ test('nine source variants preserve exact colors, widths/sizes, USD offers and s
  const premium=frames.find(p=>p.colorName==='Jet Black with Polished Gold');assert.equal(premium.priceUSD,175);assert.deepEqual(premium.sizes,['Wide']);
 });
 test('seven formerly pending studios gain only their own merchant stock and all 8665 earlier active product IDs remain intact',()=>{
- assert.equal(shops.length,7);assert.equal(shops.reduce((n,s)=>n+s.count,0),33);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1047);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,418);assert.equal(E.STORES.filter(E.isPlanningStore).length,327);assert.equal(E.STORES.filter(hasCollectionDesk).length,33);
- const older=E.PRODUCTS.filter(p=>!/^v(?:39|40)-real-/.test(p.modelId||'')).map(p=>p.id).sort();assert.equal(older.length,facts.previousCatalog.count);assert.equal(createHash('sha256').update(older.join('\n')).digest('hex'),facts.previousCatalog.sortedProductIdsSHA256);
+ assert.equal(shops.length,7);assert.equal(shops.reduce((n,s)=>n+s.count,0),33);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1052);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,413);assert.equal(E.STORES.filter(E.isPlanningStore).length,322);assert.equal(E.STORES.filter(hasCollectionDesk).length,38);
+ const older=E.PRODUCTS.filter(p=>!/^v(?:39|40|42)-real-/.test(p.modelId||'')).map(p=>p.id).sort();assert.equal(older.length,facts.previousCatalog.count);assert.equal(createHash('sha256').update(older.join('\n')).digest('hex'),facts.previousCatalog.sortedProductIdsSHA256);
  for(const st of shops){assert.ok(hasCollectionDesk(st));assert.equal(collectionProducts(st).length,st.count);for(const p of st.products){assert.equal(p.brand,st.name);assert.equal(p.store,st.id);assert.ok(p.modelId.startsWith('v39-real-'));}}
  assert.ok(E.PRODUCTS.filter(p=>p.modelId?.startsWith('v39-real-')).every(p=>shops.some(st=>st.id===p.store)));
 });

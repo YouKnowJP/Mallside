@@ -15,7 +15,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=36.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=42.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -127,3 +127,10 @@ Opaque upper garments densify shell rings before retargeting so interpolation fo
 ### Material studies and physical mosaics (v41)
 
 `studio-study.js` validates optional per-shop original creative notes without changing the economy. `studio-study-ui.js` supplies named keyboard/touch controls; `studio-details.js` builds reserved-footprint workbenches and updates existing sample materials for a draft or saved note. `mosaic-details.js` shares mall/floor-scoped arrangement state between actual rotating 3D tiles and 2D drawing. Modal transitions clear transient previews; saved discovery rules stay in `commons.js`. Room teardown clears procedural finish caches before the next scene allocates its own tracked textures.
+
+
+## Knit collections and retained studies (v42)
+
+`store-product-additions-v42.js` adds exact COS/Mango references. Reviewed palette, garment and surface additions are isolated versioned modules; earlier records remain untouched. Five shops gain `collectionEdition=42`, collection desks and original `knit-studio.js` detail on reserved fixtures. `supportsMaterialStudy` admits planning shops and these newly stocked studios, preserving v41 notes and zero-cost study transactions. The controller routes their study interaction to the existing collection desk; pending-shop studies retain their original station.
+
+`reading-details.js` keeps all book joinery inside each reading-shelf collider and updates a physical bookmark from the existing `commonsNotes` record for the actual mall/floor. It allocates no new resources during updates and clears its scene references on teardown. `gait-motion.js` supplies continuous foot and pelvis curves to the existing distance-based rig, leaving navigation/input and grounded two-bone solving authoritative.

@@ -1,3 +1,4 @@
+import {footArc,gaitHeight} from './gait-motion.js?v=42.0.0';
 import {checkoutGesture} from './fitting-motion.js?v=41.0.0';
 import {createFrameModel} from './eyewear-model.js?v=39.0.0';
 import {frameGesture} from './eyewear-tools.js?v=39.0.0';
@@ -57,10 +58,10 @@ export function solveArmToGrip(g,index,y,z=7.5,x=null){
 }
 function levelFoot(g,leg){const foot=leg.userData.foot;if(!foot)return;foot.rotation.set(-leg.rotation.x-leg.userData.knee.rotation.x,0,0);}
 export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=false,blend=1,kind='',reducedMotion=false,seatHeight=15,attention=g.userData.attention||0,delta=0,carrying=false}={}){
- const rig=g.userData.rig;if(!rig)return;const priorHead=rig.headGroup.quaternion.clone();const elevated=['escalator','bridge','carousel'].includes(kind)?g.position.y:null;const amount=seated?clamp(blend,0,1):0;rig.gaitWeight=locomotionWeight(rig.gaitWeight,walking&&!seated,delta,reducedMotion);const weight=rig.gaitWeight,move=weight>0&&!reducedMotion&&!seated,phase=((distance/rig.stride)%1+1)%1,reach=(rig.stepReach||10)*weight,stanceZ=reach-reach*4*(phase%.5),baseY=move?Math.sqrt((rig.upperLeg+rig.lowerLeg)**2-stanceZ**2)+rig.ankleHeight-rig.hipHeight:-.4,seatedY=seatHeight-rig.pelvisBottom;g.position.y=baseY+(seatedY-baseY)*amount;
+ const rig=g.userData.rig;if(!rig)return;const priorHead=rig.headGroup.quaternion.clone();const elevated=['escalator','bridge','carousel'].includes(kind)?g.position.y:null;const amount=seated?clamp(blend,0,1):0;rig.gaitWeight=locomotionWeight(rig.gaitWeight,walking&&!seated,delta,reducedMotion);const weight=rig.gaitWeight,move=weight>0&&!reducedMotion&&!seated,phase=((distance/rig.stride)%1+1)%1,reach=(rig.stepReach||10)*weight,baseY=move?gaitHeight(phase,reach,rig):-.4,seatedY=seatHeight-rig.pelvisBottom;g.position.y=baseY+(seatedY-baseY)*amount;
  for(const [i,arm]of g.userData.limbs.slice(0,2).entries()){const hand=arm.userData.hand;hand.rotation.set(0,0,0);if(i===1&&kind==='greet'&&!reducedMotion)hand.rotation.z=Math.sin(time*5)*.14;}
  for(const [i,leg]of g.userData.limbs.slice(2).entries()){
-  let z=0,lift=0,contact=true,cycle=(phase+i*.5)%1;if(move){contact=cycle<.5;const t=contact?cycle*2:(cycle-.5)*2;z=contact?reach-reach*2*t:-reach+reach*2*(t*t*(3-2*t));lift=contact?0:Math.min(3.2,reach*.32)*Math.sin(t*Math.PI);}
+  let z=0,lift=0,contact=true,cycle=(phase+i*.5)%1;if(move){const foot=footArc(cycle,reach);contact=foot.contact;z=foot.z;lift=foot.lift;}
   const hipY=25+g.position.y,targetY=rig.ankleHeight+lift,seatDrop=25+seatedY-rig.ankleHeight-rig.lowerLeg,seatZ=Math.sqrt(Math.max(0,rig.upperLeg**2-seatDrop**2));z=z*(1-amount)+seatZ*amount;
   const angles=solveTwoBone(hipY-targetY,z,rig.upperLeg,rig.lowerLeg);leg.rotation.x=angles.upper;leg.rotation.z=0;leg.userData.knee.rotation.x=angles.lower;leg.userData.contact=contact||amount>0;leg.userData.target={y:targetY,z};levelFoot(g,leg);if(move&&!contact)leg.userData.foot.rotation.x+=Math.sin((cycle-.5)*Math.PI*2)*Math.min(.13,lift*.045);
  }

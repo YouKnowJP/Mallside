@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 42.0.0 — Knit showrooms and reading shelves — 30 October 2026
+
+- Stock two COS and three Mango shops with six official selected-color references and sixteen merchant-scoped listings; preserve all 8,730 prior active product IDs.
+- Furnish original knit studios, retain exact source size/offer notes, and preserve saved material studies when a planning shop gains stock.
+- Detail all 23 public reading shelves and connect physical bookmarks to the actual saved mall-floor story.
+- Smooth foot velocity at toe-off/touchdown and pelvis support changes while retaining grounded contacts, immediate input release and static reduced motion.
+- Keep schema-6 saves, map revision 10, previous purchases and shortlists compatible. See [v42 QA](docs/qa-v42.md).
+
 ## 41.0.0 — Working studios and courtyard mosaics — 30 October 2026
 
 - Detail all 327 unfinished planning interiors with workbench joinery, tools and distinct textile/light/workshop galleries inside existing fixtures.
