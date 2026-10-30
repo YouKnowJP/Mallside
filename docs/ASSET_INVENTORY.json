@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "38.0.0",
+  "release": "39.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1956,
-  "uniqueRuntimePhotoFiles": 1934,
+  "runtimePhotoEntries": 1965,
+  "uniqueRuntimePhotoFiles": 1943,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19267,6 +19267,96 @@
       "source": "https://www.barnesandnoble.com/w/the-art-thief-michael-finkel/1142363800?ean=9781984898456",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9781984898456_p0.jpg?v=1764998452",
       "description": "The Art Thief: A True Story of Love, Crime, and a Dangerous Obsession — exact Paperback cover, ISBN 9781984898456.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-11725aa5296f9d010575",
+      "path": "assets/photos/v39-real-11725aa5296f9d010575.webp",
+      "sha256": "738a6698cc0c08bceff29ba12a4eeb70f261762a35257bba0188cf9833587125",
+      "source": "https://www.warbyparker.com/sunglasses/percey/striped-sassafras",
+      "imageUrl": "https://i.warbycdn.com/s/c/8be71454548071a63f6a20335012bcfde19a913a",
+      "description": "Percey Sunglasses in Striped Sassafras — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-40aae990e3f28cd803d9",
+      "path": "assets/photos/v39-real-40aae990e3f28cd803d9.webp",
+      "sha256": "3712f1be6f5755bdb49d773cb839d024056ddd0d71075bcc644e9b1e641e1b23",
+      "source": "https://www.warbyparker.com/sunglasses/haskell/crystal",
+      "imageUrl": "https://i.warbycdn.com/s/c/6bff1767b6240958d713aac9e4c7efa93086eb67",
+      "description": "Haskell Sunglasses in Crystal — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-58a271cc1bc9af34fe52",
+      "path": "assets/photos/v39-real-58a271cc1bc9af34fe52.webp",
+      "sha256": "c391985f3d484f60f95bcb80c5265a8cfd3b98b79e2f9cbb52bc830cec58cec0",
+      "source": "https://www.warbyparker.com/sunglasses/durand/whiskey-tortoise",
+      "imageUrl": "https://i.warbycdn.com/s/c/874cf7e5fa239b6aa9f85e40e0e762d7cdc4da56",
+      "description": "Durand Sunglasses in Whiskey Tortoise — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-68c4b9b01af83168a25d",
+      "path": "assets/photos/v39-real-68c4b9b01af83168a25d.webp",
+      "sha256": "b1e6a62bc560fe6fd876d38880d78eb996fe2ebbdc9835e8a9bf669acc7dd165",
+      "source": "https://rhone.com/products/mens-5-pursuit-short-unlined?variant=44184833818816",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/5_-PursuitShort-Unlined-Black_108.jpg?v=1736523258",
+      "description": "Pursuit Short - Unlined - 5\" in Black — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-81dc0f258bddbacd5b06",
+      "path": "assets/photos/v39-real-81dc0f258bddbacd5b06.webp",
+      "sha256": "ce76d53bf783fb51231c92a7fb3b266e8d639d64bc34b5a1216e5569d13da097",
+      "source": "https://rhone.com/products/mens-reign-short-sleeve?variant=43239974404288",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/ReignShortSleeve-Black-100305-001_3750.jpg?v=1786539618",
+      "description": "Reign Tee in Black — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-8f6f0b714909b40e39a2",
+      "path": "assets/photos/v39-real-8f6f0b714909b40e39a2.webp",
+      "sha256": "dfd3b056fb4d428ccdfd764258d24ba0da4db698b57f48a290238f23dbec3097",
+      "source": "https://www.warbyparker.com/sunglasses/durand/jet-black-with-polished-gold?w=wide",
+      "imageUrl": "https://i.warbycdn.com/s/c/e3a46319bf5a6c737864f2ee563fd649655bb24e",
+      "description": "Durand Sunglasses in Jet Black with Polished Gold — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-a5e3ece138b0a6a0da86",
+      "path": "assets/photos/v39-real-a5e3ece138b0a6a0da86.webp",
+      "sha256": "af7b91d061844b82775cc6cd7d278ba93c2326fe7db082a58fd9adf568746c35",
+      "source": "https://rhone.com/products/mens-reign-short-sleeve?variant=48906807705792",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/ReignShortSleeve-Evergreen-WS-100305-391_49.jpg?v=1791829287",
+      "description": "Reign Tee in Evergreen — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-c02e536611c81e90b3a0",
+      "path": "assets/photos/v39-real-c02e536611c81e90b3a0.webp",
+      "sha256": "3c0974bbd622c2a71070a53a25a7822f9052bac4162043e5c85b06aeed7a59f6",
+      "source": "https://www.warbyparker.com/sunglasses/durand/rose-water?w=medium",
+      "imageUrl": "https://i.warbycdn.com/s/c/6e153261a7c49e20c0b232393e54bdd597bddd3b",
+      "description": "Durand Sunglasses in Rose Water — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v39-real-c678c7554f7339197f9a",
+      "path": "assets/photos/v39-real-c678c7554f7339197f9a.webp",
+      "sha256": "e5df7fcc56742b768103b29b0114f0a7e1fbb0c20e60d62054770da8a13dec1a",
+      "source": "https://rhone.com/products/mens-commuter-polo?variant=47943597424832",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/CommuterPolo-BusinessWhite-103169-105_0895.jpg?v=1776194164",
+      "description": "Commuter® Polo in Business White — exact source photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

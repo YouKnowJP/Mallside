@@ -222,3 +222,5 @@ html{scroll-behavior:auto}
 
 /* v38: physical-edition facts and public reading routes. */
 .book-facts{display:grid;grid-template-columns:minmax(80px,.5fr) minmax(0,1fr);gap:7px 14px;padding:14px;background:#e9edde;border-radius:12px;font-size:.9rem}.book-facts dt{font-weight:700}.book-facts dd{margin:0;overflow-wrap:anywhere}.bookshop-rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.bookshop-rows article{min-width:0;border:1px solid #cbd3c0;padding:14px;border-radius:12px;background:#fffaf0}.bookshop-rows p{overflow-wrap:anywhere}.bookshop-guide details{margin-top:18px}.bookshop-guide summary{padding:12px 0;min-height:44px}.bookshop-guide .button{min-height:44px}@media(max-width:560px){.bookshop-rows{grid-template-columns:1fr}}
+
+.frame-facts{display:grid;grid-template-columns:minmax(7rem,.8fr) minmax(0,1.4fr);gap:.4rem .7rem;padding:1rem;background:#f4f1e7;border-radius:12px}.frame-facts dt{font-weight:700}.frame-facts dd{margin:0;overflow-wrap:anywhere}@media(max-width:480px){.frame-facts{grid-template-columns:1fr}.frame-facts dd{margin-bottom:.4rem}}

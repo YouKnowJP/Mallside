@@ -1,7 +1,8 @@
-import {PRODUCT_PHOTOS} from './product-photos.js?v=38.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=39.0.0';
 
 // Photograph-reviewed exceptions preserve product identity; no retailer/category logo is invented.
 export const GARMENT_PHOTO_OVERRIDES={
+"assets/photos/v39-real-a5e3ece138b0a6a0da86.webp":{"kind": "tee", "sleeve": "short", "neckline": "crew", "fit": "slim", "closure": "none", "onModel": true, "photoRegion": [0.42, 0.34, 0.6, 0.57], "photoView": "front"},"assets/photos/v39-real-81dc0f258bddbacd5b06.webp":{"kind": "tee", "sleeve": "short", "neckline": "crew", "fit": "slim", "closure": "none", "onModel": true, "photoRegion": [0.4, 0.31, 0.59, 0.55], "photoView": "front"},"assets/photos/v39-real-c678c7554f7339197f9a.webp":{"kind": "polo", "sleeve": "short", "neckline": "collared", "fit": "slim", "closure": "buttons", "onModel": true, "photoRegion": [0.44, 0.26, 0.6, 0.38], "photoView": "front"},"assets/photos/v39-real-68c4b9b01af83168a25d.webp":{"kind": "shorts", "sleeve": "none", "neckline": "crew", "fit": "regular", "closure": "drawstring", "onModel": true, "photoRegion": [0.39, 0.31, 0.59, 0.52], "photoView": "front"},
  "assets/photos/v37-real-0417a09327a87ea91cd1.webp":{"kind":"tee","sleeve":"short","neckline":"crew","fit":"slim","onModel":false,"photoRegion":[0.38,0.3,0.61,0.68]},
  "assets/photos/v37-real-be7edcf1ba0722eb53f3.webp":{"kind":"tee","sleeve":"short","neckline":"crew","onModel":true,"photoRegion":[0.4,0.32,0.59,0.55]},
  "assets/photos/v37-real-cd2808650b94a694a24c.webp":{"kind":"tee","sleeve":"long","neckline":"crew","fit":"slim","onModel":false,"photoRegion":[0.41,0.25,0.62,0.63]},

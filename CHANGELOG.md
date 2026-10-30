@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 39.0.0 — Optical studios and garden finishes — 30 October 2026
+
+- Verify nine exact color variants and stock five Warby Parker/two Rhone locations with 33 branch listings, preserving all earlier product IDs.
+- Keep source width and starting-price differences explicit, including the $175 Wide-only Durand variant; retain compatible shortlists and merchant-scoped collections.
+- Add modeled frame contours/temples, acetate/crystal/gradient finishes, optical display stands/trays and a stable close-up with eased two-hand fitting and held-item restoration.
+- Correct opaque garment shoulder/hip clipping with continuous fitted shells and the actual neckline skin bounds; preserve the source photograph and size identities.
+- Detail all 23 public garden studies with bounded original planting and reduced-motion-safe sway. Preserve save schema 6/map revision 10. See [v39 QA](docs/qa-v39.md).
+
 ## 38.0.0 — Bookshops and reading corners — 29 October 2026
 
 - Verify eight physical editions against official ISBN/format/USD-price/cover records and stock six formerly pending Barnes & Noble identities.

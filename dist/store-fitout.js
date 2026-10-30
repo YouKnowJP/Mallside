@@ -1,7 +1,7 @@
 import * as T from './vendor/three.module.js';
-import {productAppearance} from './product-appearance.js?v=38.0.0';
-import {slotForProduct,money,price} from './engine.js?v=38.0.0';
-import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=38.0.0';
+import {productAppearance} from './product-appearance.js?v=39.0.0';
+import {slotForProduct,money,price} from './engine.js?v=39.0.0';
+import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=39.0.0';
 
 const clothes=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);
@@ -67,7 +67,7 @@ export function buildStoreFitout(w,store,profile,layout,selection){
   w.box(room.x,13,fitting.y+20,32,6,18,profile.fixture);
   if(changing){const curtain=new T.Group();curtain.position.set(room.x-23,0,fitting.y+88);w.scene.add(curtain);const shade='#'+new T.Color(profile.fixture).multiplyScalar(.88).getHexString();for(let i=0;i<8;i++)w.box(-4.4+i*1.25,42,i%2?.8:0,1.3,77,1.5,i%2?profile.fixture:shade,curtain);w.fittingCurtains.push({mesh:curtain,room:room.id,x:room.x});for(let dx=-28;dx<=28;dx+=7)w.cyl(room.x+dx,84,fitting.y+87,.7,5,profile.trim);}
   else{w.box(room.x,27,fitting.y+23,42,5,25,profile.fixture);}
-  w.label(changing?'ROOM '+(room.id+1):(wearable?'STYLE ':store.collectionEdition===38?'EDITIONS ':'CONSULT ')+(room.id+1),room.x,94,fitting.y+20,60,profile.accent,profile.wall);
+  w.label(changing?'ROOM '+(room.id+1):(own.some(p=>p.frameProfile)?'FRAMES ':wearable?'STYLE ':store.collectionEdition===38?'EDITIONS ':'CONSULT ')+(room.id+1),room.x,94,fitting.y+20,60,profile.accent,profile.wall);
  }
  for(const dx of [0,68,136])w.box(fitting.x+dx+2,changing?42:19,fitting.y+45,4,changing?84:38,90,profile.wall);
  if(changing)w.box(fitX,87,fitting.y+87,140,3,4,profile.trim);

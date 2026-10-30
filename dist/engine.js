@@ -15,7 +15,7 @@ import {createCompanionLife} from './companion-life.js?v=30.0.0';
 export {COMPANION_ACTIVITIES} from './companion-content.js?v=30.0.0';
 import {createOutingPlanner} from './trip-planner.js?v=24.0.0';
 import {merchantIdentity} from './merchant-identity.js?v=23.0.0';
-import {isServiceStore} from './playable-stores.js?v=38.0.0';
+import {isServiceStore} from './playable-stores.js?v=39.0.0';
 import {serviceMenu} from './store-services.js?v=23.0.0';
 export {isServiceStore,serviceMenu};
 import {STYLE_BRIEFS,LOCAL_TOPICS,FRIEND_STORIES,FLOWER_STEMS,FLOWER_BRIEFS,TEA_RECIPES,CINEMA_SHORTS,PHOTO_FRAMES,PHOTO_POSES} from './life-content.js?v=26.0.0';
@@ -28,7 +28,7 @@ import {MALLS,mallById,storeUnlock,SLOT_NAMES,slotForProduct} from './malls.js?v
 export {MALLS,mallById,SLOT_NAMES,slotForProduct};
 import {ACTIVITIES,CALENDAR,ERRANDS} from './experiences.js?v=23.0.0';
 export {ACTIVITIES,CALENDAR,ERRANDS};
-import {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore,ARCHIVED_PRODUCTS} from './catalog.js?v=38.0.0';
+import {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore,ARCHIVED_PRODUCTS} from './catalog.js?v=39.0.0';
 export {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore};
 export const TAX=.0825, OPEN=600, CLOSE=1200;
 STORES.forEach(st=>st.tier=storeUnlock(st.id));
@@ -92,8 +92,8 @@ export function claimDaily(s,id){const q=QUESTS.find(q=>q.id===id);if(!q)throw E
 export function visit(s,id){if(!storeById(id))throw Error('Store not found.');act(s,5,3);if(!s.visits.includes(id)){s.visits.push(id);addXP(s,15);}if(!s.daily.visit.includes(id))s.relationships[id]=Math.min(5,(s.relationships[id]||0)+1);progress(s,'visit',id);communityStories.event(s,'visit',id);return true;}
 export function inspect(s,id){const p=byId(id);if(!p)throw Error('Product not found.');act(s,3,2);if(!s.seen.includes(id)){s.seen.push(id);addXP(s,8);s.metrics.inspects++;}progress(s,'inspect',id);communityStories.event(s,'inspect',id);return true;}
 export function compare(s,id){const p=byId(id);if(!p)throw Error('Product not found.');const matches=PRODUCTS.filter(q=>q.brand===p.brand&&q.name===p.name&&q.id!==id);if(!matches.length)throw Error('There is no matching product elsewhere in the mall.');act(s,4,1);const identity=p.brand+' · '+p.name;if(!s.compared.includes(identity)&&!s.compared.includes(p.name)){s.compared.push(identity);addXP(s,12);}return matches;}
-export function idealSize(s,p){if(p.sizes.length===1)return p.sizes[0];const sourceSize=referenceSize(s,p);if(sourceSize)return sourceSize;const candidate=['shoes','sandals'].includes(p.type)?s.shoeSize:p.type==='pants'?s.waist:p.type==='belt'?'90 cm':p.type==='bracelet'?(p.sizes.includes('PM')?'PM':'M'):p.type==='ring'?(s.ringSize||'7'):s.size;if(p.sizes.includes(candidate))return candidate;const numeric=['pants','shoes','sandals','belt','ring'].includes(p.type)&&Number.isFinite(Number(candidate))?p.sizes.find(size=>Number.parseFloat(size)===Number(candidate)):null;return numeric||p.sizes[Math.floor(p.sizes.length/2)];}
-export function fit(s,id,size){const p=byId(id);if(!p||!p.sizes.includes(size))throw Error('Choose an available size.');if(!canTry(p))throw Error('Use the product demo for this type of product.');if(stock(s,id,size)<=0)throw Error('That size is sold out.');act(s,10,7);const key=id+':'+size;if(!s.tried.includes(key)){s.tried.push(key);addXP(s,12);}const fits=size===idealSize(s,p);if(fits){progress(s,'try',id);s.metrics.fits++;}return {fits,text:p.sizes.length===1?'Easy to carry and comfortable to wear.':fits?'A comfortable fit. You can move freely.':'This fit feels off. Try your usual size: '+idealSize(s,p)+'.'};}
+export function idealSize(s,p){if(p.sizes.length===1)return p.sizes[0];if(p.frameProfile)return p.sizes.includes('Medium')?'Medium':p.sizes[0];const sourceSize=referenceSize(s,p);if(sourceSize)return sourceSize;const candidate=['shoes','sandals'].includes(p.type)?s.shoeSize:p.type==='pants'?s.waist:p.type==='belt'?'90 cm':p.type==='bracelet'?(p.sizes.includes('PM')?'PM':'M'):p.type==='ring'?(s.ringSize||'7'):s.size;if(p.sizes.includes(candidate))return candidate;const numeric=['pants','shoes','sandals','belt','ring'].includes(p.type)&&Number.isFinite(Number(candidate))?p.sizes.find(size=>Number.parseFloat(size)===Number(candidate)):null;return numeric||p.sizes[Math.floor(p.sizes.length/2)];}
+export function fit(s,id,size){const p=byId(id);if(!p||!p.sizes.includes(size))throw Error('Choose an available size.');if(!canTry(p))throw Error('Use the product demo for this type of product.');if(stock(s,id,size)<=0)throw Error('That size is sold out.');act(s,10,7);const key=id+':'+size;if(!s.tried.includes(key)){s.tried.push(key);addXP(s,12);}const fits=size===idealSize(s,p);if(fits){progress(s,'try',id);s.metrics.fits++;}return {fits,text:p.frameProfile?'Virtual styling preview in '+size+' width. Game fit is simulated; compare the source photograph before choosing.':p.sizes.length===1?'Easy to carry and comfortable to wear.':fits?'A comfortable fit. You can move freely.':'This fit feels off. Try your usual size: '+idealSize(s,p)+'.'};}
 export function checkout(s,storeId,cart){
  const st=storeById(storeId);if(!st)throw Error('Store not found.');if(levelOf(s)<st.tier)throw Error(`Unlock Level ${st.tier+1}: ${LEVELS[st.tier].name} to buy here.`);
  if(!Array.isArray(cart))throw Error('Your bag is invalid.');if(carried(s).length+cart.length>8)throw Error('Your arms are full. Leave today’s purchases at guest services before buying more.');

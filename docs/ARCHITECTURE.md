@@ -104,3 +104,14 @@ Ambient customers retain `hasItem` until payment hands it to a bag or a fresh ar
 `book-tools.js` supplies ISBN validation, injected-engine edition/finder HTML and bounded reading motion. `book-model.js` builds low-poly volumes with the exact source cover and original neutral page/back/spine geometry. World texture/resource ownership remains shared. Temporary reading pages contain original marks, never book excerpts. Reading uses the same pose transition system, synchronized elapsed time and explicit prop/held-item teardown.
 
 Book previews reuse existing demo records and costs. For books with ISBN metadata, XP is once per ISBN across branches; branch records remain available for existing progress/save normalization. Public finder routes reuse existing shop/travel actions. No new persistent state or save-schema bump is needed.
+
+
+## Optical studios and inset garden detail (v39)
+
+`store-product-additions-v39.js` adds exact selected-color apparel/frame records. `merchantOnly` scopes these references to their named merchants, retaining all earlier active IDs instead of reshuffling other stores. Edition-39 studios share the existing desk and bench reservations. Frames expose source widths and a qualified starting-price reference; existing save fields store their ordinary string sizes.
+
+`eyewear-model.js` builds separate rim/lens/temple geometry and local generated acetate/gradient textures. The same adapted shape is placed on displays and attached to the anatomical head. World/person resource ownership handles disposal without sharing per-person frame textures. `eyewear-tools.js` provides factual UI and bounded fitting timing. The usual try action drives a close, steady camera and synchronized semantic pose, stows held items and clears transient telemetry at completion.
+
+`garden-details.js` builds original planting strictly inside each public study's existing footprint. Its small stem rotations use world time and become static for reduced motion; clearing the scene drops their references. No navigation geometry, reward rules or persistent state changes.
+
+Opaque upper garments densify shell rings before retargeting so interpolation follows the hips. Clearance includes the anatomical neckline/trapezius surface and uses a broader shoulder section. Skin masks keep their existing cuff behavior. Ray-based regressions verify back coverage and prevent visible neckline skin through the opaque polo.

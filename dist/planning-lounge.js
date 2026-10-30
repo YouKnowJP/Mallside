@@ -1,5 +1,5 @@
 import {isBookProduct} from './book-tools.js?v=38.0.0';
-import {displayPoint} from './shop-interiors.js?v=38.0.0';
+import {displayPoint} from './shop-interiors.js?v=39.0.0';
 import {surfaceTexture} from './scene-finish.js?v=33.0.0';
 
 // All props are original planning materials, never merchant merchandise or purchasable samples.
@@ -31,11 +31,11 @@ export function buildLoungeBench(w,st){
 
 // An original material/source desk and rest corner accompany newly verified collections.
 export function buildCollectionStudio(w,st,style){
- const timber=w.mat(style.fixture,{map:surfaceTexture(w,'timber'),roughness:.8}),paper=w.mat('#f5eddb',{roughness:.95}),items=st.products.filter(p=>/^v(?:37-real|38-book)-/.test(p.modelId||'')).slice(0,3);
+ const timber=w.mat(style.fixture,{map:surfaceTexture(w,'timber'),roughness:.8}),paper=w.mat('#f5eddb',{roughness:.95}),items=st.products.filter(p=>/^v(?:37-real|38-book|39-real)-/.test(p.modelId||'')).slice(0,3);
  w.box(600,29,147,120,5,44,timber);for(const x of [550,650])w.box(x,13,147,4,26,34,style.trim);
- for(const [i,p]of items.entries()){const x=563+i*36;if(isBookProduct(p)){const book=w.photo(p,x,47,149,23,31);book.rotation.y=(i-1)*.08;continue;}w.box(x,33+i*.4,150,28,3,24,w.mat(p.color,{bumpMap:surfaceTexture(w,'fabric',true),bumpScale:.025}));w.box(x,35+i*.4,153,13,.3,10,paper);}
+ for(const [i,p]of items.entries()){const x=563+i*36;if(p.frameProfile){w.box(x,33,150,27,3,22,style.trim);const frame=w.photo(p,x,40,149,23,31);frame.rotation.y=(i-1)*.12;continue;}if(isBookProduct(p)){const book=w.photo(p,x,47,149,23,31);book.rotation.y=(i-1)*.08;continue;}w.box(x,33+i*.4,150,28,3,24,w.mat(p.color,{bumpMap:surfaceTexture(w,'fabric',true),bumpScale:.025}));w.box(x,35+i*.4,153,13,.3,10,paper);}
  w.box(600,60,130,102,47,3,style.trim);w.box(600,60,132,96,41,1,paper);for(const x of [570,600,630])w.box(x,60,133,22,28,.5,style.accent);
  w.cyl(649,42,137,3,25,style.trim);w.cyl(649,57,137,10,9,'#dfcfaa');
- const key='collection:'+st.id,point={x:600,y:210},hit=w.box(600,51,147,120,55,45,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,point);const label=w.label('Collection desk ↗',600,98,140,140,style.accent);w.tag(label,key,point);w.interiorStops.push({point,id:key,name:'Collection desk',label:st.collectionEdition===38?'Compare physical editions, ISBNs & prices':'Compare source colors, fabrics, sizes & prices'});
- buildLoungeBench(w,st);if(st.collectionEdition===38){for(let i=0;i<3;i++)w.box(630,17+i*2,630,17,1.5,11,['#547d75','#c39a66','#8e7086'][i]);w.box(626,23,631,9,.2,6,'#f2ead8');w.canvas.dataset.bookshopStudio='38';}w.canvas.dataset.collectionStudio=String(items.length);
+ const key='collection:'+st.id,point={x:600,y:210},hit=w.box(600,51,147,120,55,45,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,point);const label=w.label('Collection desk ↗',600,98,140,140,style.accent);w.tag(label,key,point);w.interiorStops.push({point,id:key,name:'Collection desk',label:st.collectionEdition===38?'Compare physical editions, ISBNs & prices':st.products.some(p=>p.frameProfile)?'Compare frame colors, widths & source prices':'Compare source colors, fabrics, sizes & prices'});
+ buildLoungeBench(w,st);if(st.collectionEdition===38){for(let i=0;i<3;i++)w.box(630,17+i*2,630,17,1.5,11,['#547d75','#c39a66','#8e7086'][i]);w.box(626,23,631,9,.2,6,'#f2ead8');w.canvas.dataset.bookshopStudio='38';}if(st.collectionEdition===39)w.canvas.dataset.verifiedStudio=st.businessKind==='eyewear'?'frames':'apparel';w.canvas.dataset.collectionStudio=String(items.length);
 }

@@ -1,0 +1,358 @@
+{
+  "checkedOn": "2026-10-29",
+  "method": "Official rendered retailer ProductGroup JSON-LD: match exact color, SKU or width variant, USD offer and photograph. Width/lens customization is distinguished from a starting offer. Only factual metadata retained.",
+  "limitations": "No real branch availability asserted. Stock, fitting and returns are game rules. Sources establish provenance, not new image permissions. Eyewear is a virtual styling reference, with no prescription flow.",
+  "products": [
+    {
+      "merchant": "Rhone",
+      "name": "Reign Tee",
+      "color": "Evergreen",
+      "type": "shirt",
+      "source": "https://rhone.com/products/mens-reign-short-sleeve?variant=48906807705792",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/ReignShortSleeve-Evergreen-WS-100305-391_49.jpg?v=1791829287",
+      "sku": "100305-391-S",
+      "groupId": "8708716560576",
+      "priceUSD": 68,
+      "priceHighUSD": 68,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "groupHash": "d9338d6bc1a98ede3f44fa9e4b1f0e4a518eea7eb1a55f126cba0923354a187d",
+      "priceKind": "selected-color USD offer",
+      "id": "v39-real-a5e3ece138b0a6a0da86",
+      "rawImageSHA256": "e52bc24cb9c42ba33517fb84fb33332e6fc6fe8771b32be3a393d2506c739e38",
+      "sourceImageDimensions": [
+        2500,
+        3125
+      ],
+      "photoPath": "assets/photos/v39-real-a5e3ece138b0a6a0da86.webp",
+      "photoSHA256": "af7b91d061844b82775cc6cd7d278ba93c2326fe7db082a58fd9adf568746c35"
+    },
+    {
+      "merchant": "Rhone",
+      "name": "Reign Tee",
+      "color": "Black",
+      "type": "shirt",
+      "source": "https://rhone.com/products/mens-reign-short-sleeve?variant=43239974404288",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/ReignShortSleeve-Black-100305-001_3750.jpg?v=1786539618",
+      "sku": "100305-001-XS",
+      "groupId": "8708716560576",
+      "priceUSD": 68,
+      "priceHighUSD": 68,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "groupHash": "d9338d6bc1a98ede3f44fa9e4b1f0e4a518eea7eb1a55f126cba0923354a187d",
+      "priceKind": "selected-color USD offer",
+      "id": "v39-real-81dc0f258bddbacd5b06",
+      "rawImageSHA256": "eb2ab4428217ada83c399bfe148368a54eb1e1239d1108b1754e512688cedf64",
+      "sourceImageDimensions": [
+        2500,
+        3125
+      ],
+      "photoPath": "assets/photos/v39-real-81dc0f258bddbacd5b06.webp",
+      "photoSHA256": "ce76d53bf783fb51231c92a7fb3b266e8d639d64bc34b5a1216e5569d13da097"
+    },
+    {
+      "merchant": "Rhone",
+      "name": "Commuter\u00ae Polo",
+      "color": "Business White",
+      "type": "shirt",
+      "source": "https://rhone.com/products/mens-commuter-polo?variant=47943597424832",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/CommuterPolo-BusinessWhite-103169-105_0895.jpg?v=1776194164",
+      "sku": "103169-105-S",
+      "groupId": "8708718297280",
+      "priceUSD": 118,
+      "priceHighUSD": 118,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "groupHash": "49b2af460bf6f70083cd98f636617d6a6e09c249d17e942ac53123c0945c42d7",
+      "priceKind": "selected-color USD offer",
+      "id": "v39-real-c678c7554f7339197f9a",
+      "rawImageSHA256": "7671e44d2539877a336b3e7a21460e7f1abcd07452ff2ca2d94c0b9fd31e06d8",
+      "sourceImageDimensions": [
+        2500,
+        3125
+      ],
+      "photoPath": "assets/photos/v39-real-c678c7554f7339197f9a.webp",
+      "photoSHA256": "e5df7fcc56742b768103b29b0114f0a7e1fbb0c20e60d62054770da8a13dec1a"
+    },
+    {
+      "merchant": "Rhone",
+      "name": "Pursuit Short - Unlined - 5\"",
+      "color": "Black",
+      "type": "shorts",
+      "source": "https://rhone.com/products/mens-5-pursuit-short-unlined?variant=44184833818816",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0249/7784/files/5_-PursuitShort-Unlined-Black_108.jpg?v=1736523258",
+      "sku": "101716-001-S",
+      "groupId": "8580339040448",
+      "priceUSD": 74,
+      "priceHighUSD": 74,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "groupHash": "98e398681588d15847170f2fd97d1304c74a75c39458a1bc75530165db198c51",
+      "priceKind": "selected-color USD offer",
+      "id": "v39-real-68c4b9b01af83168a25d",
+      "rawImageSHA256": "ef0efa0b632d4ef0179bc0901ee0d8c34db3ae0430234b0e4e41bc3707b20d01",
+      "sourceImageDimensions": [
+        3040,
+        3800
+      ],
+      "photoPath": "assets/photos/v39-real-68c4b9b01af83168a25d.webp",
+      "photoSHA256": "b1e6a62bc560fe6fd876d38880d78eb996fe2ebbdc9835e8a9bf669acc7dd165"
+    },
+    {
+      "merchant": "Warby Parker",
+      "name": "Durand Sunglasses",
+      "color": "Whiskey Tortoise",
+      "type": "sunglasses",
+      "source": "https://www.warbyparker.com/sunglasses/durand/whiskey-tortoise",
+      "imageUrl": "https://i.warbycdn.com/s/c/874cf7e5fa239b6aa9f85e40e0e762d7cdc4da56",
+      "groupId": "/sunglasses/durand/whiskey-tortoise",
+      "priceUSD": 95,
+      "sizes": [
+        "Narrow",
+        "Medium",
+        "Wide",
+        "Extra Wide"
+      ],
+      "material": "Cellulose Acetate",
+      "groupHash": "36492402cb52f6b6e14da684f766965fd95801ef1b2eba970e349a04c8396a42",
+      "priceKind": "published starting USD offer; real lens customization changes the price",
+      "widthOffers": [
+        {
+          "size": "narrow",
+          "url": "https://www.warbyparker.com/sunglasses/durand/whiskey-tortoise?w=narrow",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "size": "medium",
+          "url": "https://www.warbyparker.com/sunglasses/durand/whiskey-tortoise?w=medium",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "size": "wide",
+          "url": "https://www.warbyparker.com/sunglasses/durand/whiskey-tortoise?w=wide",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "size": "extra-wide",
+          "url": "https://www.warbyparker.com/sunglasses/durand/whiskey-tortoise?w=extra-wide",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "id": "v39-real-58a271cc1bc9af34fe52",
+      "rawImageSHA256": "535f8677b1e5596a3936a82a799493c34351ec1cc6b1edf4bc61e7c6016405ea",
+      "sourceImageDimensions": [
+        3500,
+        1686
+      ],
+      "photoPath": "assets/photos/v39-real-58a271cc1bc9af34fe52.webp",
+      "photoSHA256": "c391985f3d484f60f95bcb80c5265a8cfd3b98b79e2f9cbb52bc830cec58cec0"
+    },
+    {
+      "merchant": "Warby Parker",
+      "name": "Percey Sunglasses",
+      "color": "Striped Sassafras",
+      "type": "sunglasses",
+      "source": "https://www.warbyparker.com/sunglasses/percey/striped-sassafras",
+      "imageUrl": "https://i.warbycdn.com/s/c/8be71454548071a63f6a20335012bcfde19a913a",
+      "groupId": "/sunglasses/percey/striped-sassafras",
+      "priceUSD": 95,
+      "sizes": [
+        "Medium",
+        "Wide"
+      ],
+      "material": "Cellulose Acetate",
+      "groupHash": "83e85a4ff14c09b2519eae110dc0108f6d1f723294c9f70d9ab5c9df997b6706",
+      "priceKind": "published starting USD offer; real lens customization changes the price",
+      "widthOffers": [
+        {
+          "size": "medium",
+          "url": "https://www.warbyparker.com/sunglasses/percey/striped-sassafras?w=medium",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "size": "wide",
+          "url": "https://www.warbyparker.com/sunglasses/percey/striped-sassafras?w=wide",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "id": "v39-real-11725aa5296f9d010575",
+      "rawImageSHA256": "ef2e449489a08432e202e90ffa1229aba54d66c2e959c73605fe6dc80d04c9e4",
+      "sourceImageDimensions": [
+        3500,
+        1700
+      ],
+      "photoPath": "assets/photos/v39-real-11725aa5296f9d010575.webp",
+      "photoSHA256": "738a6698cc0c08bceff29ba12a4eeb70f261762a35257bba0188cf9833587125"
+    },
+    {
+      "merchant": "Warby Parker",
+      "name": "Haskell Sunglasses",
+      "color": "Crystal",
+      "type": "sunglasses",
+      "source": "https://www.warbyparker.com/sunglasses/haskell/crystal",
+      "imageUrl": "https://i.warbycdn.com/s/c/6bff1767b6240958d713aac9e4c7efa93086eb67",
+      "groupId": "/sunglasses/haskell/crystal",
+      "priceUSD": 95,
+      "sizes": [
+        "Medium",
+        "Wide"
+      ],
+      "material": "Cellulose Acetate",
+      "groupHash": "68b77eea0917b86a9e45a090fbb85b37ff8d9605ed071285db295f90d725f6fb",
+      "priceKind": "published starting USD offer; real lens customization changes the price",
+      "widthOffers": [
+        {
+          "size": "medium",
+          "url": "https://www.warbyparker.com/sunglasses/haskell/crystal?w=medium",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "size": "wide",
+          "url": "https://www.warbyparker.com/sunglasses/haskell/crystal?w=wide",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "id": "v39-real-40aae990e3f28cd803d9",
+      "rawImageSHA256": "f148d16d94a9fd3dd5539cf04048c1a10de933060a9cf2fd024184053acdf7c4",
+      "sourceImageDimensions": [
+        3500,
+        1816
+      ],
+      "photoPath": "assets/photos/v39-real-40aae990e3f28cd803d9.webp",
+      "photoSHA256": "3712f1be6f5755bdb49d773cb839d024056ddd0d71075bcc644e9b1e641e1b23"
+    },
+    {
+      "merchant": "Warby Parker",
+      "name": "Durand Sunglasses",
+      "color": "Jet Black with Polished Gold",
+      "type": "sunglasses",
+      "source": "https://www.warbyparker.com/sunglasses/durand/jet-black-with-polished-gold?w=wide",
+      "imageUrl": "https://i.warbycdn.com/s/c/e3a46319bf5a6c737864f2ee563fd649655bb24e",
+      "groupId": "/sunglasses/durand/jet-black-with-polished-gold",
+      "priceUSD": 175,
+      "sizes": [
+        "Wide"
+      ],
+      "material": "Cellulose Acetate",
+      "groupHash": "647c2b3f29de1f16fbf0aa9e75efe5fc9f0a7e9d2ea5de20e5639631e0c8f8cb",
+      "priceKind": "published starting USD offer; real lens customization changes the price",
+      "widthOffers": [
+        {
+          "size": "wide",
+          "url": "https://www.warbyparker.com/sunglasses/durand/jet-black-with-polished-gold?w=wide",
+          "currency": "USD",
+          "price": 175,
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "id": "v39-real-8f6f0b714909b40e39a2",
+      "rawImageSHA256": "a25e22f3dc57ab0d2514dca798229b44925b1c0646f73e6e6d5335847874708c",
+      "sourceImageDimensions": [
+        3500,
+        1781
+      ],
+      "photoPath": "assets/photos/v39-real-8f6f0b714909b40e39a2.webp",
+      "photoSHA256": "dfd3b056fb4d428ccdfd764258d24ba0da4db698b57f48a290238f23dbec3097"
+    },
+    {
+      "merchant": "Warby Parker",
+      "name": "Durand Sunglasses",
+      "color": "Rose Water",
+      "type": "sunglasses",
+      "source": "https://www.warbyparker.com/sunglasses/durand/rose-water?w=medium",
+      "imageUrl": "https://i.warbycdn.com/s/c/6e153261a7c49e20c0b232393e54bdd597bddd3b",
+      "groupId": "/sunglasses/durand/rose-water",
+      "priceUSD": 95,
+      "sizes": [
+        "Narrow",
+        "Medium",
+        "Wide",
+        "Extra Wide"
+      ],
+      "material": "Cellulose Acetate",
+      "groupHash": "b3e91ca014f7d2a23f6eb718c0eed2afbfb957eeb5aeb1816bfde8fecc601637",
+      "priceKind": "published starting USD offer; real lens customization changes the price",
+      "widthOffers": [
+        {
+          "size": "narrow",
+          "url": "https://www.warbyparker.com/sunglasses/durand/rose-water?w=narrow",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "size": "medium",
+          "url": "https://www.warbyparker.com/sunglasses/durand/rose-water?w=medium",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "size": "wide",
+          "url": "https://www.warbyparker.com/sunglasses/durand/rose-water?w=wide",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "size": "extra-wide",
+          "url": "https://www.warbyparker.com/sunglasses/durand/rose-water?w=extra-wide",
+          "currency": "USD",
+          "price": 95,
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "id": "v39-real-c02e536611c81e90b3a0",
+      "rawImageSHA256": "27a7f1eb687375007fd0646dc8c2c62a6cce9653c2ff8f760d8dd78a5bb4a889",
+      "sourceImageDimensions": [
+        3500,
+        1740
+      ],
+      "photoPath": "assets/photos/v39-real-c02e536611c81e90b3a0.webp",
+      "photoSHA256": "3c0974bbd622c2a71070a53a25a7822f9052bac4162043e5c85b06aeed7a59f6"
+    }
+  ],
+  "previousCatalog": {
+    "version": "38.0.0",
+    "count": 8665,
+    "sortedProductIdsSHA256": "89bf1d681907c04c9f2bb12ded28720a02ebd22c20e55630592a68790e55f970"
+  }
+}

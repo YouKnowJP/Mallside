@@ -1,6 +1,14 @@
 # Mallside development roadmap
 
-Updated 29 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+Updated 30 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+
+## Completed in v39
+
+- Stock seven unfinished Warby Parker/Rhone identities using nine official selected-color variants, exact source widths/sizes/photos and qualified USD offers.
+- Add solid source-reviewed frame shapes/finishes, optical comparison trays, preserved planning/rest corners and clearer width/starting-price controls.
+- Add a steady frame close-up, eased temple adjustment, held-item restoration and static reduced motion; retain every v38 active product ID and compatible notes.
+- Detail all 23 public garden studies with inset flowers, stems and stones plus restrained motion, preserving routes and original activities.
+- See [v39 gameplay](docs/GAMEPLAY-v39.md), [source evidence](docs/research-v39/catalog-evidence.json) and [v39 QA](docs/qa-v39.md).
 
 ## Completed in v38
 
@@ -134,7 +142,7 @@ Updated 29 October 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,032 stocked identities, 133 service identities and 433 identities awaiting catalog research**. The remaining 342 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,039 stocked identities, 133 service identities and 426 identities awaiting catalog research**. The remaining 335 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

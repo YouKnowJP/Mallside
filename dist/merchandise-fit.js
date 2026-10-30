@@ -1,9 +1,9 @@
 import * as T from './vendor/three.module.js';
-import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=33.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=38.0.0';
-import {productAppearance} from './product-appearance.js?v=38.0.0';
+import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=39.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=39.0.0';
+import {productAppearance} from './product-appearance.js?v=39.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
-import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=38.0.0';
+import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=39.0.0';
 import {addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 
 export function fitScaleForSize(size,usual){const sizes=['XS','S','M','L','XL'],a=sizes.indexOf(size),b=sizes.indexOf(usual);if(a>=0&&b>=0)return 1+(a-b)*.035;const n=Number(size),u=Number(usual);return n&&u?Math.max(.9,Math.min(1.1,Math.sqrt(n/u))):1;}
@@ -16,7 +16,8 @@ function shirtShell(cut,ease=1){
  const rings=[[bottom,7.7,5.8],[bottom+(top-bottom)*.15,cut.fit==='slim'?7.5:8.3,5.9],[27,cut.fit==='slim'?7.5:8.5,6],[31.2,8,5.9],[top,bare?7.4:3.6,bare?5.5:3.8]],pos=[],uv=[],idx=[],groups=[],n=32;
  if(cut.kind==='bra')rings.splice(2,2);else if(!bare&&top>33.5){rings.push([32.4,7.2,5.4],[33.4,5.5,4.6]);}
  rings.sort((a,b)=>a[0]-b[0]);
- rings.forEach(([y,w,d],r)=>{for(let i=0;i<=n;i++){const theta=i/n*Math.PI*2,front=Math.max(0,Math.sin(theta)),neckWeight=Math.max(0,Math.min(1,(y-31.2)/Math.max(.1,top-31.2))),neckDip=(cut.neckline==='v'?front*3.2:cut.neckline==='scoop'?front*1.7:0)*neckWeight;pos.push(Math.cos(theta)*w*ease,y-25-neckDip,Math.sin(theta)*d*ease);uv.push((Math.cos(theta)+1)/2,(y-bottom)/(top-bottom));if(r<rings.length-1&&i<n){const k=r*(n+1)+i,start=idx.length;idx.push(k,k+n+1,k+1,k+1,k+n+1,k+n+2);groups.push([start,6,Math.sin((i+.5)/n*Math.PI*2)>0?0:1]);}}});
+ const dense=[];for(let r=0;r<rings.length-1;r++){const a=rings[r],b=rings[r+1],steps=Math.max(1,Math.ceil((b[0]-a[0])/.65));for(let j=0;j<steps;j++){const t=j/steps;dense.push(a.map((v,k)=>v+(b[k]-v)*t));}}dense.push(rings.at(-1));rings.splice(0,rings.length,...dense);
+ rings.forEach(([y,w,d],r)=>{for(let i=0;i<=n;i++){const theta=i/n*Math.PI*2,front=Math.max(0,Math.sin(theta)),neckWeight=Math.max(0,Math.min(1,(y-31.2)/Math.max(.1,top-31.2))),neckDip=(cut.neckline==='v'?front*3.2:cut.neckline==='scoop'?front*1.7:0)*neckWeight;const power=1-.35*Math.max(0,Math.min(1,(y-30.7)/1.2,(34.3-y)/1.1)),c=Math.cos(theta),sn=Math.sin(theta);pos.push(Math.sign(c)*Math.abs(c)**power*w*ease,y-25-neckDip,Math.sign(sn)*Math.abs(sn)**power*d*ease);uv.push((Math.cos(theta)+1)/2,(y-bottom)/(top-bottom));if(r<rings.length-1&&i<n){const k=r*(n+1)+i,start=idx.length;idx.push(k,k+n+1,k+1,k+1,k+n+1,k+n+2);groups.push([start,6,Math.sin((i+.5)/n*Math.PI*2)>0?0:1]);}}});
  const geo=new T.BufferGeometry();geo.setAttribute('position',new T.Float32BufferAttribute(pos,3));geo.setAttribute('uv',new T.Float32BufferAttribute(uv,2));const front=[],back=[];for(const [start,count,material]of groups)(material?back:front).push(...idx.slice(start,start+count));geo.setIndex([...front,...back]);geo.addGroup(0,front.length,0);geo.addGroup(front.length,back.length,1);geo.computeVertexNormals();return geo;
 }
 function poseCloth(g,object){g.userData.poseCloth??=[];g.userData.poseCloth.push({object,rest:object.geometry?new Float32Array(object.geometry.attributes.position.array):null});}
@@ -43,7 +44,7 @@ export function attachWornGarment(w,g,p,slot){
  if(cut.coverage==='bottom')bottoms(cut.kind==='skirt');
  else{
   g.userData.torso.visible=['tank','bra','swim'].includes(cut.kind)||cut.sleeve==='none'||cut.length==='cropped';if(g.userData.torso.visible)g.userData.torso.material=g.userData.head.material;
-  const body=mesh(group,shirtShell(cut,ease),[material,plain],0,25,0);if(['thigh','maxi'].includes(cut.length)&&!['dress','jumpsuit'].includes(cut.kind))poseCloth(g,body);
+  const body=mesh(group,shirtShell(cut,ease),[material,plain],0,25,0);body.userData.role='shirt-shell';if(['thigh','maxi'].includes(cut.length)&&!['dress','jumpsuit'].includes(cut.kind))poseCloth(g,body);
   if(cut.sleeve!=='none'){
    for(const [i,limb]of g.userData.limbs.slice(0,2).entries()){
     const sleeve=new T.Group();sleeve.userData={productId:p.id,role:'sleeve',side:i};limb.add(sleeve);const adult=!!g.userData.rig,long=cut.sleeve==='long',length=adult?(long?7.8:cut.sleeve==='puff'?4.4:4.0):(long?15.7:7.6),r=(cut.sleeve==='puff'?4.65:3.85)*ease*(adult?.47:1),cuff=(cut.sleeve==='puff'?3.45:3.65)*ease*(adult?.47:1);
@@ -68,7 +69,9 @@ export function attachWornGarment(w,g,p,slot){
   if(cut.quilted)for(let y=19;y<32;y+=3.6){const rib=mesh(group,new T.TorusGeometry(8.3,.2,5,32),trim,0,y,0);rib.rotation.x=Math.PI/2;rib.scale.y=.73;}
   if(cut.coverage==='full'){if(cut.kind==='dress')bottoms(true);else if(cut.kind==='jumpsuit'||cut.setBottom)bottoms();else{skinLegs(g);if(g.userData.anatomy)g.userData.pelvis.visible=false;mesh(group,new T.CylinderGeometry(7.7,4.1,4.5,24),plain,0,14.8,0).scale.z=.75;}}
  }
- addGarmentBrand(group,a,p,{worn:true});retargetGarmentGroup(g,group);return trackMerchandise(w,group);
+ addGarmentBrand(group,a,p,{worn:true});retargetGarmentGroup(g,group);
+ if(g.userData.anatomy&&cut.coverage==='upper'&&cut.sleeve!=='none'&&!cut.sheer&&cut.length!=='cropped')for(const body of group.children.filter(o=>o.userData.role==='shirt-shell')){const pos=body.geometry.attributes.position,env=g.userData.anatomy.envelope;for(let i=0;i<pos.count;i++){const y=pos.getY(i),profile=env[Math.max(0,Math.min(env.length-1,Math.round((y-20)*2)))];if(!profile)continue;const padding=(y<28?.5:y>39?.4:.22)*ease,x=pos.getX(i),z=pos.getZ(i),power=y>39&&y<42.5?4:2,r=(Math.abs(x/(profile[0]+padding))**power+Math.abs(z/((z>=0?profile[1]:profile[2])+padding))**power)**(1/power);if(r>1e-6&&r<1){pos.setX(i,x/r);pos.setZ(i,z/r);}}pos.needsUpdate=true;body.geometry.computeVertexNormals();body.geometry.computeBoundingSphere();}
+ return trackMerchandise(w,group);
 }
 
 export function attachHeldProduct(w,g,p,limbIndex=1,{offset=0}={}){
@@ -135,7 +138,7 @@ export function updateAttachmentFrames(g){const adult=!!g.userData.rig,amount=g.
   if(!adult&&model&&holder.visible){const limit=-Math.acos(Math.max(0,Math.min(1,(limb.position.y-height-1.5)/18)));limb.rotation.x=Math.min(limb.rotation.x,limit);}
   g.updateMatrixWorld(true);const rootQ=g.getWorldQuaternion(new T.Quaternion()),parentQ=anchor.getWorldQuaternion(new T.Quaternion());holder.quaternion.copy(parentQ.invert().multiply(rootQ));
  }
-}const grasp=[0,0];if(['eat','drink','icecream','tea'].includes(g.userData.rig?.pose.kind))grasp[1]=.85;for(const e of g.userData.gravityAttachments||[])if(e.holder.visible&&!e.holder.userData.parked)grasp[g.userData.limbs.indexOf(e.limb)]=1;poseHumanHands(g,grasp);}
+}const grasp=[0,0];if(['eat','drink','icecream','tea'].includes(g.userData.rig?.pose.kind))grasp[1]=.85;if(g.userData.rig?.pose.kind==='framefit')grasp.fill(.32);for(const e of g.userData.gravityAttachments||[])if(e.holder.visible&&!e.holder.userData.parked)grasp[g.userData.limbs.indexOf(e.limb)]=1;poseHumanHands(g,grasp);}
 
 // A preview owns its rig/garment resources; cached shelf/bag meshes remain shared.
 export function releasePersonResources(w,person){

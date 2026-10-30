@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v38 — bookshops and reading corners
+## v39 — optical studios and garden finishes
+
+Nine source-verified apparel/frame variants stock seven unfinished shops, with width-aware comparisons, modeled eyewear, framed fitting stations and preserved planning/rest corners. A closer, steadier frame preview uses eased hand movements; public garden studies gain original flower/stone detail and gentle motion. Existing product IDs and saves remain compatible. See [v39 gameplay](docs/GAMEPLAY-v39.md), [release QA](docs/qa-v39.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v38 — bookshops and reading corners
 
 Eight verified physical editions stock six unfinished bookshops, with solid cover-matched books, edition desks, comparison tools and preserved rest corners. Public reading shelves connect to actual stocked shops. Gentle page-turning and reading poses add a quieter shopping interaction; existing saves remain compatible. See [v38 gameplay](docs/GAMEPLAY-v38.md), [release QA](docs/qa-v38.md) and [remaining work](ROADMAP.md).
 

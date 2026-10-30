@@ -1,3 +1,4 @@
+import {buildGardenStudy} from './garden-details.js?v=39.0.0';
 import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=33.0.0';
 import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
 import {retailIdentity,drawRetailSign} from './retail-identity.js?v=23.0.0';
@@ -145,7 +146,7 @@ export function buildPublicRealm(w,l,theme){
    const label=w.label('Sculpture alcove ↗',x,65,z,95,theme.accent);w.tag(label,'art:'+p.id,p.approach);w.nearLabels.push({object:label,x,z,radius:160,directory:true});
   }else if(p.kind==='commons'){
    b.box(x,13,z,26,26,26,theme.stone);b.box(x,27,z,30,2,30,theme.trim);
-   if(p.activity==='garden'){b.box(x,29,z,25,3,25,'#6f7957');for(const [dx,dz]of [[-6,5],[6,5],[0,-6]]){b.leaf(x+dx,39,z+dz,9,theme.plant,.7,1,.7);b.leaf(x+dx,46,z+dz,4,theme.flowers);}}
+   if(p.activity==='garden'){b.box(x,29,z,25,3,25,'#6f7957');buildGardenStudy(w,x,z,theme);}
    else if(p.activity==='reading'){b.box(x,43,z-9,27,29,5,theme.trim);b.box(x,30,z,27,3,24,theme.wall);b.box(x,55,z,29,3,25,theme.wall);for(let i=0;i<5;i++)b.box(x-10+i*5,42,z-5,4,20,11,['#b87d68','#719685','#d4b465','#879bb0','#a28ba4'][i]);for(const dx of [-12,12])b.box(x+dx,43,z-4,1,23,14,theme.accent);b.box(x+3,32,z+7,14,.5,12,'#f3ebd8');b.box(x+5,32.4,z+7,2,.2,9,theme.accent);}
    else for(let i=0;i<3;i++){b.box(x-9+i*9,29,z,8,2,20,['#bf805f','#698f83','#d1b46e'][i]);b.box(x-9+i*9,30.2,z,1,.3,12,'#fff1d3');b.box(x-9+i*9,30.3,z-5,5,.3,1,'#fff1d3');}
    const names={mosaic:'Mosaic table',reading:'Reading shelf',garden:'Garden study'},key='commons:'+p.activity,hit=w.box(x,30,z,30,62,30,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(names[p.activity]+' ↗',x,76,z,82,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:150,directory:true});
@@ -182,7 +183,7 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
- const count=b.flush();w.canvas.dataset.environmentRevision='38';w.canvas.dataset.artAlcoves=String(d.fixtures.filter(f=>f.kind==='art').length);w.canvas.dataset.waystationCount=String(d.fixtures.filter(f=>f.amenity).length);w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
+ const count=b.flush();w.canvas.dataset.environmentRevision='39';w.canvas.dataset.gardenStudies=String((w.gardenSprigs||[]).length/4);w.canvas.dataset.artAlcoves=String(d.fixtures.filter(f=>f.kind==='art').length);w.canvas.dataset.waystationCount=String(d.fixtures.filter(f=>f.amenity).length);w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 
 export function buildAnchor(w,a,theme){

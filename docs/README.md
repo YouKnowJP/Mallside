@@ -4,6 +4,7 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 
 | Topic | Document |
 | --- | --- |
+| Optical/apparel studios, frame fitting and garden finishes | [v39 guide](GAMEPLAY-v39.md), [source evidence](research-v39/catalog-evidence.json), [v39 QA](qa-v39.md) |
 | Physical book editions, reading corners and bookshop routes | [v38 guide](GAMEPLAY-v38.md), [edition evidence](research-v38/book-evidence.json), [v38 QA](qa-v38.md) |
 | Verified products, collection comparisons, shop studios and carried-item animation | [v37 guide](GAMEPLAY-v37.md), [source evidence](research-v37/catalog-evidence.json), [v37 QA](qa-v37.md) |
 | Planning lounges, budgeted shortlists, crowd spacing and sitting | [v36 guide](GAMEPLAY-v36.md), [v36 QA](qa-v36.md) |
@@ -18,7 +19,7 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 | Stories, collection room and concierge activities | [v27 gameplay](GAMEPLAY-v27.md) |
 | Original local stories and guest services | [v25 gameplay](GAMEPLAY-v25.md) |
 | Daily outings and branch-aware progress | [v24 gameplay](GAMEPLAY-v24.md) |
-| Current validation and remaining work | [v38 QA](qa-v38.md), [v37 QA](qa-v37.md), [v36 QA](qa-v36.md), [v35 QA](qa-v35.md), [v34 QA](qa-v34.md), [v33 QA](qa-v33.md), [v32 QA](qa-v32.md), [v30 QA](qa-v30.md), [Publication QA](QA.md), [v28 recovery QA](qa-v28.md), [v27 gameplay QA](qa-v27.md), [Safari/Firefox QA](qa-v27-browsers.md), [roadmap](../ROADMAP.md) |
+| Current validation and remaining work | [v39 QA](qa-v39.md), [v38 QA](qa-v38.md), [v37 QA](qa-v37.md), [v36 QA](qa-v36.md), [v35 QA](qa-v35.md), [v34 QA](qa-v34.md), [v33 QA](qa-v33.md), [v32 QA](qa-v32.md), [v30 QA](qa-v30.md), [Publication QA](QA.md), [v28 recovery QA](qa-v28.md), [v27 gameplay QA](qa-v27.md), [Safari/Firefox QA](qa-v27-browsers.md), [roadmap](../ROADMAP.md) |
 | Gameplay, controls, progression, malls and prior features | [Game guide](GAME_GUIDE.md) |
 | Runtime systems and file ownership | [Architecture](ARCHITECTURE.md) |
 | Local development, CI, publishing and rollback | [Deployment](DEPLOYMENT.md) |
