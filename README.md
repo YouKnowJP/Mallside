@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v37 — verified collections and useful shop studios
+## v38 — bookshops and reading corners
+
+Eight verified physical editions stock six unfinished bookshops, with solid cover-matched books, edition desks, comparison tools and preserved rest corners. Public reading shelves connect to actual stocked shops. Gentle page-turning and reading poses add a quieter shopping interaction; existing saves remain compatible. See [v38 gameplay](docs/GAMEPLAY-v38.md), [release QA](docs/qa-v38.md) and [remaining work](ROADMAP.md).
+
+## Previous update · v37 — verified collections and useful shop studios
 
 Fourteen official-source products bring merchandise to eleven formerly empty shops. Twelve collection desks offer source-color, fabric, size and price comparisons, with budget shortlists and preserved rest benches. Continuous item carrying, steadier arms and responsive staff greetings improve shopping scenes. Existing saves remain compatible. See [v37 gameplay](docs/GAMEPLAY-v37.md), [release QA](docs/qa-v37.md) and [remaining work](ROADMAP.md).
 

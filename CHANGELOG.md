@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 38.0.0 — Bookshops and reading corners — 29 October 2026
+
+- Verify eight physical editions against official ISBN/format/USD-price/cover records and stock six formerly pending Barnes & Noble identities.
+- Add solid source-cover book models, furnished edition desks, shelf/bench detail, edition comparisons and physical-format product controls; preserve old plans and original game return terms.
+- Link public reading shelves to verified bookshops, with current-center priority and rank-aware routes to other centers.
+- Add eased page-turning, matching hand motions and static reduced-motion reading; preview rewards apply once per ISBN across branches without altering tags or stock.
+- Add reproducible native scenario listing and isolated-session matrix tooling. Preserve schema-6 saves and map revision 10. See [v38 QA](docs/qa-v38.md).
+
 ## 37.0.0 — Verified collections and shop studios — 29 October 2026
 
 - Add fourteen source-verified American Eagle, BYLT Basics and SKIMS models with official selected-color photographs, USD prices and exact size labels; stock eleven previously empty identities.

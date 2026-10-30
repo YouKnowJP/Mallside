@@ -1,4 +1,4 @@
-import {PRODUCT_PHOTOS} from './product-photos.js?v=37.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=38.0.0';
 
 // Photograph-reviewed exceptions preserve product identity; no retailer/category logo is invented.
 export const GARMENT_PHOTO_OVERRIDES={

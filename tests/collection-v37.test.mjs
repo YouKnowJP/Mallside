@@ -13,7 +13,7 @@ import {walkable,freeRoute,clearWalk} from '../dist/free-navigation.js';
 import {createStoreCustomers,updateStoreCustomers} from '../dist/store-customers.js';
 import {createShopper,applyCharacterPose} from '../dist/character-rig.js';
 import {staffGesture,staffTarget} from '../dist/staff-motion.js';
-const esc=v=>String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),picture=p=>`<span>${esc(p.name)}</span>`,shops=E.STORES.filter(hasCollectionDesk);
+const esc=v=>String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),picture=p=>`<span>${esc(p.name)}</span>`,shops=E.STORES.filter(st=>st.collectionEdition===37&&hasCollectionDesk(st));
 const state=()=>Object.assign(E.createState(),{sandbox:true,cash:10000000});
 
 test('14 actual official products retain exact selected-color USD offers, size labels and matching photographs',()=>{
@@ -21,7 +21,7 @@ test('14 actual official products retain exact selected-color USD offers, size l
  for(const p of additions){const f=facts.find(f=>f.id===p.id);assert.equal(p.source,f.source);assert.equal(p.priceUSD,f.priceUSD);assert.equal(p.referenceAmount,f.priceUSD);assert.equal(p.referenceCurrency,'USD');assert.equal(p.referenceCheckedOn,'2026-10-29');assert.equal(p.colorName,f.colorName);assert.deepEqual(p.sizes,f.sizes);assert.equal(p.photo.imageUrl,f.imageUrl);assert.equal(p.photo.source,p.source);assert.match(p.priceBasis,/live branch inventory is not asserted/);assert.ok(p.referencePriceVerified);assert.match(new URL(p.source).hostname,/^(?:www\.)?(?:ae\.com|byltbasics\.com|skims\.com)$/);const data=readFileSync(new URL('../dist/'+p.photo.path,import.meta.url));assert.equal(data.toString('ascii',0,4),'RIFF');assert.equal(data.toString('ascii',8,12),'WEBP');assert.ok(data.length>5000);}
 });
 test('11 formerly empty shops gain real stock; 12 collection desks keep every item at its actual merchant',()=>{
- assert.equal(shops.length,12);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1026);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,439);assert.equal(E.STORES.filter(E.isPlanningStore).length,348);
+ assert.equal(shops.length,12);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1032);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,433);assert.equal(E.STORES.filter(E.isPlanningStore).length,342);
  for(const st of shops){const products=collectionProducts(st);assert.ok(products.length>=3);for(const p of products){assert.equal(p.store,st.id);assert.ok(p.associationEvidence);assert.equal(p.source,additions.find(a=>a.id===p.modelId).source);assert.equal(PRODUCT_PHOTOS[p.id].source,p.source);}}
  assert.ok(E.STORES.filter(s=>/Cotton On|Warby Parker/.test(s.name)).every(s=>!hasCollectionDesk(s)));assert.deepEqual(collectionProducts(E.storeById('nike')),[]);
 });

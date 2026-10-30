@@ -1,3 +1,4 @@
+import {hasCollectionDesk} from '../dist/collection-guide.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import * as E from '../dist/engine.js';
@@ -39,11 +40,11 @@ test('map destinations expose public stops and interactive floor connections wit
  const a=commonsActivity(s,'mosaic',[0,1,2],{E,esc});assert.ok(a.includes('Turn tile 1, currently up'));assert.ok(a.includes('Save the mosaic discovery'));assert.ok(commonsNotebook(s,{E,esc}).includes('Still to discover'));
 });
 test('shop guide adapts to service, stocked nonwearable and research-only branches',()=>{
- const s=E.createState();for(const st of E.STORES){const html=shoppingGuide(s,st.id,{E,esc});assert.ok(html.includes('Exit '+esc(st.name)));if(E.isServiceStore(st)){assert.ok(html.includes('Enjoy or refund'));assert.ok(!html.includes('Choose your size'));}else if(!st.count&&st.businessKind==='food'){assert.ok(html.includes('original Mallside game meal'));assert.ok(html.includes('dining-open'));}else if(!st.count){assert.ok(html.includes('collection is still being researched'));assert.ok(!html.includes('Choose your size'));}else if(!st.products.some(E.canTry)){assert.ok(html.includes('Explore a demo'));}}
+ const s=E.createState();for(const st of E.STORES){const html=shoppingGuide(s,st.id,{E,esc});assert.ok(html.includes('Exit '+esc(st.name)));if(E.isServiceStore(st)){assert.ok(html.includes('Enjoy or refund'));assert.ok(!html.includes('Choose your size'));}else if(!st.count&&st.businessKind==='food'){assert.ok(html.includes('original Mallside game meal'));assert.ok(html.includes('dining-open'));}else if(!st.count){assert.ok(html.includes('collection is still being researched'));assert.ok(!html.includes('Choose your size'));}else if(!st.products.some(E.canTry)){assert.ok(html.includes(st.businessKind==='books'?'Browse an edition':'Explore a demo'));}}
 });
 test('service refunds require the original mall and preserve the booking until the player returns',()=>{
  const st=E.STORES.find(E.isServiceStore),s=E.createState();s.sandbox=true;s.mallId=st.mallId;const b=E.bookStoreService(s,st.id,E.serviceMenu(st)[0].id);s.mallId=E.MALLS.find(m=>m.id!==st.mallId).id;const before=structuredClone(s);assert.throws(()=>E.refundStoreService(s,b.id,st.id),/original branch/);assert.deepEqual(s,before);s.mallId=st.mallId;E.refundStoreService(s,b.id,st.id);assert.equal(b.refunded,true);
 });
 test('nonwearable and child collections route to product browsing instead of an empty fitting studio',()=>{
- for(const st of E.STORES.filter(st=>st.count&&!st.products.some(E.canTry))){const w={inside:st.id,layout:{services:{fitting:{x:4,y:5}}},navigate(point,action){this.action=action;}};assert.equal(MallWorld3D.prototype.goToShopService.call(w,'fitting'),true);assert.deepEqual(w.action,{interaction:'rack:'+st.id});}
+ for(const st of E.STORES.filter(st=>st.count&&!st.products.some(E.canTry))){const w={inside:st.id,layout:{services:{fitting:{x:4,y:5}}},navigate(point,action){this.action=action;}};assert.equal(MallWorld3D.prototype.goToShopService.call(w,'fitting'),true);assert.deepEqual(w.action,{interaction:(st.businessKind==='books'&&hasCollectionDesk(st)?'collection:':'rack:')+st.id});}
 });

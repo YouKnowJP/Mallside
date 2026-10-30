@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "37.0.0",
+  "release": "38.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1948,
-  "uniqueRuntimePhotoFiles": 1926,
+  "runtimePhotoEntries": 1956,
+  "uniqueRuntimePhotoFiles": 1934,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19187,6 +19187,86 @@
       "source": "https://www.ae.com/us/en/p/men/jeans/straight-leg-jeans/ae-original-straight-jean/0111_7240_909",
       "imageUrl": "https://s7d2.scene7.com/is/image/aeo/0111_7240_909_f",
       "description": "American Eagle AE Original Straight Jean — official Medium Tinted product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v38-book-9780316381994",
+      "path": "assets/photos/v38-book-9780316381994.webp",
+      "sha256": "f41abfa4a48b5babd947fec0fd984832d5a2ec89a78b79b3ca6664df95c0fb5c",
+      "source": "https://www.barnesandnoble.com/w/the-wild-robot-peter-brown/1122451135?ean=9780316381994",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9780316381994_p0.jpg?v=1769011038",
+      "description": "The Wild Robot (Wild Robot Series #1) — exact Hardcover cover, ISBN 9780316381994.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v38-book-9780525657323",
+      "path": "assets/photos/v38-book-9780525657323.webp",
+      "sha256": "4abb25c2114f54e1d88bf639a6a82961a10a58d6c0b078af8e122912e3d5e158",
+      "source": "https://www.barnesandnoble.com/w/the-art-thief-michael-finkel/1142363800?ean=9780525657323",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9780525657323_p0.jpg?v=1765089534",
+      "description": "The Art Thief: A True Story of Love, Crime, and a Dangerous Obsession — exact Hardcover cover, ISBN 9780525657323.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v38-book-9780593652886",
+      "path": "assets/photos/v38-book-9780593652886.webp",
+      "sha256": "54fdd18b792917dcd1081dbcf9f6e0f7002b0ce05ca2e555b6be5692cdaecaf1",
+      "source": "https://www.barnesandnoble.com/w/the-creative-act-rick-rubin/1141404747?ean=9780593652886",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9780593652886_p0.jpg?v=1768961698",
+      "description": "The Creative Act: A Way of Being — exact Hardcover cover, ISBN 9780593652886.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v38-book-9781250236210",
+      "path": "assets/photos/v38-book-9781250236210.webp",
+      "sha256": "c9de75b0706f814c1a09e3653d3e772fab6dcb3c2f74e07cfd798e35a5c351ff",
+      "source": "https://www.barnesandnoble.com/w/a-psalm-for-the-wild-built-becky-chambers/1145694670?ean=9781250236210",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9781250236210_p0.jpg?v=1765210222",
+      "description": "A Psalm for the Wild-Built: A Monk and Robot Book — exact Hardcover cover, ISBN 9781250236210.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v38-book-9781419773280",
+      "path": "assets/photos/v38-book-9781419773280.webp",
+      "sha256": "2bc491e849175abd43adc6d262bc8bd08b5c0d4559b85f7774e558e011e36476",
+      "source": "https://www.barnesandnoble.com/w/the-art-of-dreamworks-the-wild-robot-jerry-schmitz/1145181545?ean=9781419773280",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9781419773280_p0.jpg?v=1768991335",
+      "description": "The Art of DreamWorks The Wild Robot — exact Hardcover cover, ISBN 9781419773280.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v38-book-9781571313560",
+      "path": "assets/photos/v38-book-9781571313560.webp",
+      "sha256": "6eccefaa9a6ad1b71faa46d0fcdcee02321595fad84acca38aa6e417fd249a16",
+      "source": "https://www.barnesandnoble.com/w/braiding-sweetgrass-robin-wall-kimmerer/1114828102?ean=9781571313560",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9781571313560_p0.jpg?v=1765709382",
+      "description": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants — exact Paperback cover, ISBN 9781571313560.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v38-book-9781635577808",
+      "path": "assets/photos/v38-book-9781635577808.webp",
+      "sha256": "868c06bde3cb48586dbef739451c3e0ce844a754663022738bbe0ca7869e4e54",
+      "source": "https://www.barnesandnoble.com/w/piranesi-susanna-clarke/1134016335?ean=9781635577808",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9781635577808_p0.jpg?v=1769042256",
+      "description": "Piranesi (Women's Prize for Fiction Winner) — exact Paperback cover, ISBN 9781635577808.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v38-book-9781984898456",
+      "path": "assets/photos/v38-book-9781984898456.webp",
+      "sha256": "782ada8b9f5b6e4d8713aa3c328f50c852d6d10694bab0801b2fc691f0e81436",
+      "source": "https://www.barnesandnoble.com/w/the-art-thief-michael-finkel/1142363800?ean=9781984898456",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9781984898456_p0.jpg?v=1764998452",
+      "description": "The Art Thief: A True Story of Love, Crime, and a Dangerous Obsession — exact Paperback cover, ISBN 9781984898456.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

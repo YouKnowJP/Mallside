@@ -2,6 +2,14 @@
 
 Updated 29 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v38
+
+- Verify eight physical book editions with exact ISBNs, formats, USD offers and covers; stock six unfinished bookshop identities.
+- Furnish edition desks, solid books, book stacks and preserved benches; add accurate edition controls, comparisons and browsing without copying book text.
+- Add detail to public reading shelves and rank-aware routes to actual stocked bookshops, while preserving original stories and discovery rewards.
+- Ease page turns, synchronized hand/reading poses and transitions; keep reduced motion static and preview rewards once per ISBN across branches.
+- See [v38 gameplay](docs/GAMEPLAY-v38.md), [edition evidence](docs/research-v38/book-evidence.json) and [v38 QA](docs/qa-v38.md).
+
 ## Completed in v37
 
 - Source-verify fourteen models from American Eagle, BYLT Basics and SKIMS; add real stock to eleven formerly pending shop identities with exact colors, prices, sizes and photographs.
@@ -126,7 +134,7 @@ Updated 29 October 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,026 stocked identities, 133 service identities and 439 identities awaiting catalog research**. The remaining 348 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,032 stocked identities, 133 service identities and 433 identities awaiting catalog research**. The remaining 342 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

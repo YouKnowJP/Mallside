@@ -95,3 +95,12 @@ Character hand IK caches the solved quaternions only when the root-local target 
 `collection-guide.js` supplies branch-local comparison selection, accessible source cards and desk/bench predicates. The interior blueprint reserves the physical desk and bench before adding stock fixtures; `planning-lounge.js` builds their matching geometry. The controller keeps comparison choices ephemeral and reuses the existing inspect/fit/checkout and explicit-save shortlist flows. Newly stocked planners no longer claim their catalog is still in research. `verified-sizing.js` matches explicit source formats while leaving legacy sizing behavior intact.
 
 Ambient customers retain `hasItem` until payment hands it to a bag or a fresh arrival clears it. Store rendering preserves the held product through routes and passes a carrying pose to the shared rig. `staff-motion.js` bounds greeting duration/cooldown and selects nearby attention targets. Wrist targets reset before IK; semantic transitions also ease wrist joints, preserving repeatable reduced-motion poses.
+
+
+## Physical editions and reading (v38)
+
+`store-product-additions-v38.js` adds exact retailer physical-edition variants. Each model uses a distinct ISBN identity and includes its format in its name, preventing paperback/hardcover deduplication. The normal explicit retailer association rules stock only the documented merchant branches. Edition-38 shops share the collection desk/bench predicates, while prior collection models remain available.
+
+`book-tools.js` supplies ISBN validation, injected-engine edition/finder HTML and bounded reading motion. `book-model.js` builds low-poly volumes with the exact source cover and original neutral page/back/spine geometry. World texture/resource ownership remains shared. Temporary reading pages contain original marks, never book excerpts. Reading uses the same pose transition system, synchronized elapsed time and explicit prop/held-item teardown.
+
+Book previews reuse existing demo records and costs. For books with ISBN metadata, XP is once per ISBN across branches; branch records remain available for existing progress/save normalization. Public finder routes reuse existing shop/travel actions. No new persistent state or save-schema bump is needed.
