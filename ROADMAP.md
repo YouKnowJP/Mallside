@@ -2,6 +2,14 @@
 
 Updated 30 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v41
+
+- Add richer workbench construction and three distinct material galleries to all 327 remaining planning interiors, preserving their pending catalog status and existing routes.
+- Add a free original material-study interaction with physical palette/finish previews, optional per-shop saved notes and clear cancellation/exit controls.
+- Connect detailed physical and 2D mosaic tables to actual controls and saved per-floor arrangements on all 23 floors.
+- Ease fitting curtains by elapsed time and release procedural finish caches between rooms; preserve existing saves, catalogs and economy rules.
+- See [v41 gameplay](docs/GAMEPLAY-v41.md) and [v41 QA](docs/qa-v41.md).
+
 ## Completed in v40
 
 - Stock eight unfinished Cotton On/Aritzia locations with eight official selected-color references, exact source sizes/photos and dated USD offers; retain every v39 active product ID.

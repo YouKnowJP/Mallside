@@ -123,3 +123,7 @@ Opaque upper garments densify shell rings before retargeting so interpolation fo
 `waystation-details.js` supplies instanced 3D furnishings and matching 2D drawings within the existing 22×20 footprint. `waystation-guide.js` lists actual current-floor discoveries, reuses `center-stop` routing and reads existing notebook entries. It creates no save fields or rewards. Campus-trip regressions cover destinations that require floor connections.
 
 `fitting-motion.js` defines bounded smooth turns and terminal reaches, plus shared camera position/focal damping and an angular-rate limit on close-up handoffs. Reduced motion is static. `garment-clearance.js` caches tangent-plane bounds from the actual torso/pelvis/neckline sections so opaque cropped tops clear visible skin without masking the exposed waist. Starter hems include overlap over trouser waistbands. Save schema 6 and map revision 10 remain unchanged.
+
+### Material studies and physical mosaics (v41)
+
+`studio-study.js` validates optional per-shop original creative notes without changing the economy. `studio-study-ui.js` supplies named keyboard/touch controls; `studio-details.js` builds reserved-footprint workbenches and updates existing sample materials for a draft or saved note. `mosaic-details.js` shares mall/floor-scoped arrangement state between actual rotating 3D tiles and 2D drawing. Modal transitions clear transient previews; saved discovery rules stay in `commons.js`. Room teardown clears procedural finish caches before the next scene allocates its own tracked textures.

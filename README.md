@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v40 — textile studios and connected discoveries
+## v41 — working studios and courtyard mosaics
+
+All 327 unfinished planning shops gain richer original workbenches and a hands-on material study: compare named palettes and finishes, preview them on the physical desk, and save a study for your next visit. All 23 mosaic tables now turn with their controls and remember saved arrangements. Fitting curtains ease by elapsed time, and room changes release procedural finish textures. Existing saves and product collections stay compatible. See [v41 gameplay](docs/GAMEPLAY-v41.md), [release QA](docs/qa-v41.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v40 — textile studios and connected discoveries
 
 Eight verified selected-color references stock eight unfinished Cotton On/Aritzia shops, with exact W/L and alpha size labels, clear online-price notes and furnished denim/jersey studios. Detailed water and notice waystations link to real nearby discoveries and remember completed visits. Fitting turns, checkout gestures and close-up camera transitions are calmer; opaque cropped tops and starter-shirt waist coverage are corrected. Existing product IDs and saves remain compatible. See [v40 gameplay](docs/GAMEPLAY-v40.md), [release QA](docs/qa-v40.md), [source evidence](docs/research-v40/catalog-evidence.json) and the [roadmap](ROADMAP.md).
 

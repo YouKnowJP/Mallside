@@ -1,3 +1,4 @@
+import {buildMosaicStudy} from './mosaic-details.js?v=41.0.0';
 import {buildWaystationDetails} from './waystation-details.js?v=40.0.0';
 import {buildGardenStudy} from './garden-details.js?v=39.0.0';
 import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=33.0.0';
@@ -147,7 +148,7 @@ export function buildPublicRealm(w,l,theme){
    b.box(x,13,z,26,26,26,theme.stone);b.box(x,27,z,30,2,30,theme.trim);
    if(p.activity==='garden'){b.box(x,29,z,25,3,25,'#6f7957');buildGardenStudy(w,x,z,theme);}
    else if(p.activity==='reading'){b.box(x,43,z-9,27,29,5,theme.trim);b.box(x,30,z,27,3,24,theme.wall);b.box(x,55,z,29,3,25,theme.wall);for(let i=0;i<5;i++)b.box(x-10+i*5,42,z-5,4,20,11,['#b87d68','#719685','#d4b465','#879bb0','#a28ba4'][i]);for(const dx of [-12,12])b.box(x+dx,43,z-4,1,23,14,theme.accent);b.box(x+3,32,z+7,14,.5,12,'#f3ebd8');b.box(x+5,32.4,z+7,2,.2,9,theme.accent);}
-   else for(let i=0;i<3;i++){b.box(x-9+i*9,29,z,8,2,20,['#bf805f','#698f83','#d1b46e'][i]);b.box(x-9+i*9,30.2,z,1,.3,12,'#fff1d3');b.box(x-9+i*9,30.3,z-5,5,.3,1,'#fff1d3');}
+   else buildMosaicStudy(w,x,z,theme);
    const names={mosaic:'Mosaic table',reading:'Reading shelf',garden:'Garden study'},key='commons:'+p.activity,hit=w.box(x,30,z,30,62,30,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(names[p.activity]+' ↗',x,76,z,82,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:150,directory:true});
   }else if(p.kind==='planter')plant(b,x,z,theme,false,true);
   else if(p.kind==='fountain'){

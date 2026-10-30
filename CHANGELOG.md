@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 41.0.0 — Working studios and courtyard mosaics — 30 October 2026
+
+- Detail all 327 unfinished planning interiors with workbench joinery, tools and distinct textile/light/workshop galleries inside existing fixtures.
+- Add original material studies with named palettes and surface finishes, physical previews, non-spending saved notes, preview cancellation and compact shop exits.
+- Detail all 23 mosaic tables and connect their physical/2D arrow arrangements to native controls, saved discoveries and correct mall-floor state.
+- Make fitting-curtain width/position easing time-based; release procedural texture caches between rooms.
+- Keep all 8,730 listings, source photographs, economy rules, schema-6 saves and map revision 10 compatible. See [v41 QA](docs/qa-v41.md).
+
 ## 40.0.0 — Textile studios and connected discoveries — 30 October 2026
 
 - Stock eight unfinished Cotton On/Aritzia locations with eight verified selected-color references and 32 merchant-scoped listings; preserve all 8,698 earlier product IDs.

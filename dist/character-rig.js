@@ -1,4 +1,4 @@
-import {checkoutGesture} from './fitting-motion.js?v=40.0.0';
+import {checkoutGesture} from './fitting-motion.js?v=41.0.0';
 import {createFrameModel} from './eyewear-model.js?v=39.0.0';
 import {frameGesture} from './eyewear-tools.js?v=39.0.0';
 import {readingGesture} from './book-tools.js?v=38.0.0';

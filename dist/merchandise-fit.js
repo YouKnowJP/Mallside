@@ -1,7 +1,7 @@
 import {bodySectionRadius} from './garment-clearance.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
 import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=40.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=40.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=41.0.0';
 import {productAppearance} from './product-appearance.js?v=40.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=40.0.0';

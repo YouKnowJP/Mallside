@@ -1,5 +1,7 @@
 # Mallside documentation
 
+Current release: [v41 gameplay](GAMEPLAY-v41.md) and [v41 QA](qa-v41.md).
+
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
