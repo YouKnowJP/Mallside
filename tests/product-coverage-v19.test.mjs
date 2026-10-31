@@ -16,7 +16,7 @@ import {physicalProduct} from '../dist/merchandise-3d.js';
 const physical=E.PRODUCTS.filter(physicalProduct),unique=[...new Map(physical.map(p=>[PRODUCT_PHOTOS[p.id].path,p])).values()];
 
 test('every clothing and bag photograph has checksum-bound surface and proportion evidence',()=>{
- assert.equal(unique.length,788);assert.equal(physical.length,3081);
+ assert.equal(unique.length,792);assert.equal(physical.length,3109);
  for(const p of unique){const path=PRODUCT_PHOTOS[p.id].path,s=PHOTO_SURFACES[path];assert.ok(s,p.id);assert.equal(s.sha256,createHash('sha256').update(readFileSync(new URL('../dist/'+path,import.meta.url))).digest('hex').slice(0,16));assert.ok(s.aspect>.2&&s.aspect<3.5);assert.equal(s.grid.length,s.size[0]*s.size[1]);assert.ok(s.colors.every(c=>/^#[0-9a-f]{6}$/.test(c)));assert.ok([...s.grid].every(c=>'0123456789abcdefghijklmnopqrstuv'.indexOf(c)<s.colors.length));assert.ok(s.region[0]<s.region[2]&&s.region[1]<s.region[3]);assert.ok(s.region.every(n=>n>0&&n<1));}
 });
 test('all clothing has actual construction profiles, including dresses, skirts, swimwear and jumpsuits formerly typed as shirts',()=>{

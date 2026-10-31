@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v45.0.0 — Activewear studios and flower stops
+
+- Stock seven Fabletics shops with four exact official references, matching photographs, source alpha labels and non-member USD offers; preserve prior product records.
+- Add original care/fabric fixtures, retain material studies and correctly match the combined XXL-1X legging label.
+- Detail all 28 flower kiosks, add free memory-book access and reflect the latest current-center bouquet colors.
+- Ease chosen-bouquet gestures and hide obstructing overhead beams in place while preserving supports and routes.
+- See [v45 QA](docs/qa-v45.md) for validation.
+
 ## v44.0.0 — Bag studios and photo stops
 
 - Add four official MCM references to two unfinished shops, with exact photos, reviewed construction, source bag formats and qualified dimensions/prices.

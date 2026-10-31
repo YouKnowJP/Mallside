@@ -15,7 +15,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=44.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=45.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -146,3 +146,9 @@ Opaque upper garments densify shell rings before retargeting so interpolation fo
 `store-product-additions-v44.js` adds isolated exact-SKU references. `bag-profiles-v44.js` supplies reviewed construction and interpreted axes; published dimension sequences remain explicit, approximate source facts. Separate palette/surface modules preserve all earlier appearance records. Two shops gain `collectionEdition=44`, with source comparisons and retained original material studies. `bag-motion.js` damps sway from real frame time. A zero time step holds the current sway; reduced motion snaps it to the neutral pose.
 
 `photo-kiosk.js` adds camera/backdrop/album detail within existing kiosk footprints. It reads existing current-center `photoAlbum` metadata without altering the save or allocating on updates. A physical album tag and the keyboard-accessible nearby button share the free album route. Kiosk resources reset with scene teardown; no new state schema, reward or photo price is introduced.
+
+## Activewear studios and flower kiosks (v45)
+
+`store-product-additions-v45.js` isolates exact selected-color references and non-member offers. Separate garment, palette and surface overrides preserve earlier appearances. Seven shops gain `collectionEdition=45`, retained material studies and original `active-studio.js` care fixtures. Source sizing preserves the combined XXL-1X legging label.
+
+`flower-kiosk.js` uses existing current-center activity memories for reusable color markers and original chosen-stem bouquet geometry. Free memory-book navigation changes no save or reward rule. `flower-motion.js` supplies smooth lift/hold/return joins and static reduced motion; the existing activity lifecycle restores held items and disposes props. Canopy instances register as noninteractive overhead cutaways, shrinking in all three axes at their original elevation while leaving their supports and collision geometry unchanged.

@@ -1,0 +1,137 @@
+{
+  "release": {
+    "game": "Mallside",
+    "version": "45.0.0",
+    "sourceCommit": "155801ea2d50b1d641adcede17b0636aa311b321",
+    "bundle": "app-XD3MAIDV.js",
+    "sourceVisibility": "public",
+    "license": "LicenseRef-Mallside-Proprietary",
+    "licenseVersion": "1.1",
+    "licenseUrl": "LICENSE.txt",
+    "permissionsUrl": "PERMISSIONS.txt",
+    "officialPlayUrl": "https://youknowjp.github.io/Mallside/",
+    "sourceRepository": "https://github.com/YouKnowJP/Mallside",
+    "publicFiles": "Generated game only; editable source and history are available in the Mallside repository."
+  },
+  "styles": [
+    "styles-6d92a5f8e9bb.css",
+    "life-styles-3d42fae0021b.css"
+  ],
+  "artifactSHA256": {
+    "app-XD3MAIDV.js": "914d076f932db17654d3b6803d7b8b5cc5a8ce909ba10258a19652f2f3d381e8",
+    "styles-6d92a5f8e9bb.css": "6d92a5f8e9bb4f84020cdcaed234f605d576d4ceb159d381738316bd09d4ad6c",
+    "life-styles-3d42fae0021b.css": "3d42fae0021b4622bbf03258ea99b0bc5e9c94fa588d8d026a957d25b783015b"
+  },
+  "proofs": [
+    {
+      "browser": "firefox",
+      "version": "159.0",
+      "driverVersion": "0.37.1",
+      "isolation": "retained-window",
+      "headless": true,
+      "scenarios": 64,
+      "checks": 65,
+      "sessions": 1,
+      "fingerprint": "2730d74b0f52c49045bb790fc8335951b377ab146d02bb6ad57c3f7eac64eb20",
+      "errors": 0,
+      "resourceWarnings": 0,
+      "inputRetries": 0
+    },
+    {
+      "browser": "safari",
+      "version": "26.6.2",
+      "driverVersion": "Apple safaridriver",
+      "isolation": "retained-window",
+      "headless": false,
+      "scenarios": 64,
+      "checks": 65,
+      "sessions": 1,
+      "fingerprint": "8be377a7ba0d040bbea11ab2498178fc7141ec6763d387b91facc67fa4633a54",
+      "errors": 0,
+      "resourceWarnings": 0,
+      "inputRetries": 0
+    }
+  ],
+  "testBuildNote": "The frozen v45 working-tree artifact was tested before its publication commit. Published JavaScript and CSS must match these exact hashes.",
+  "mobileTouchEmulation": [
+    {
+      "width": 320,
+      "collection": {
+        "width": 320,
+        "overflow": false,
+        "height": 44.1953125,
+        "visible": true,
+        "hit": true
+      },
+      "study": {
+        "width": 320,
+        "overflow": false,
+        "height": 62.390625,
+        "visible": true,
+        "hit": true
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "collection": {
+        "width": 390,
+        "overflow": false,
+        "height": 44.1953125,
+        "visible": true,
+        "hit": true
+      },
+      "study": {
+        "width": 390,
+        "overflow": false,
+        "height": 48,
+        "visible": true,
+        "hit": true
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "collection": {
+        "width": 768,
+        "overflow": false,
+        "height": 44.1953125,
+        "visible": true,
+        "hit": true
+      },
+      "study": {
+        "width": 768,
+        "overflow": false,
+        "height": 48,
+        "visible": true,
+        "hit": true
+      },
+      "errors": []
+    }
+  ],
+  "cleanup": {
+    "firefoxTemporaryInstallationRemoved": true,
+    "firefoxNewHomePathsRemoved": 638,
+    "firefoxPreExistingPathsPreserved": 9,
+    "firefoxNewHomePathsRemaining": 0,
+    "firefoxPreExistingPreferencePreserved": true,
+    "firefoxOwnedUpdaterCacheRemoved": true,
+    "safariAutomationVerifiedOff": true,
+    "nativeSessionsClosed": true,
+    "nativeDriversStopped": true
+  },
+  "visualCropChecks": {
+    "crops": [
+      {
+        "path": "assets/photos/v45-real-b40d91268822075965c0.webp",
+        "backgroundFraction": 0
+      },
+      {
+        "path": "assets/photos/v45-real-38cdaa7da8596c5e8435.webp",
+        "backgroundFraction": 0
+      }
+    ],
+    "errors": [],
+    "gesture": "1.000"
+  }
+}

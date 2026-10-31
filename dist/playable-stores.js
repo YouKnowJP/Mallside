@@ -1,7 +1,7 @@
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {MALLS} from './malls.js?v=23.0.0';
 import {matchingTenant,gameStoreFloor,tenantFloor,normalizeName} from './campus-model.js?v=23.0.0';
-import {STORE_PRODUCT_SEEDS} from './store-product-seeds.js?v=44.0.0';
+import {STORE_PRODUCT_SEEDS} from './store-product-seeds.js?v=45.0.0';
 import {RETAILER_BRAND_EVIDENCE} from './retailer-evidence-v12.js?v=23.0.0';
 import {merchantIdentity,storeAudience,isDepartmentMerchant} from './merchant-identity.js?v=23.0.0';
 export const brandFamily=merchantIdentity;
@@ -73,6 +73,7 @@ export function installPlayableStores(stores,products,photos){
   if(selected.some(({p})=>p.id.startsWith('v42-real-')))st.collectionEdition=42;
   if(selected.some(({p})=>p.id.startsWith('v43-real-')))st.collectionEdition=43;
   if(selected.some(({p})=>p.id.startsWith('v44-real-')))st.collectionEdition=44;
+  if(selected.some(({p})=>p.id.startsWith('v45-real-')))st.collectionEdition=45;
   for(const {p,evidence}of selected){const pid=p.store===st.id?p.id:st.id+'::'+p.id,q={...p,id:pid,store:st.id,modelId:p.modelId||p.id,finalSale:p.finalSale||['food','drink'].includes(p.type),assortmentBasis:evidence.kind==='own-brand'?'brand-models':'documented-retailer',associationEvidence:evidence,observedPriceDate:p.referencePriceVerified?p.referenceCheckedOn:p.observedPriceDate||(/official|published/i.test(p.priceBasis||'')&&!/simulated reference|cached/i.test(p.priceBasis||'')?p.checkedOn:undefined)};if(p.store!==st.id){const factor={ross:.4,marshalls:.65,nordstromrack:.6,saksoff5th:.55}[merchantIdentity(st.name)];if(factor){q.price=Math.max(100,Math.round(p.price*factor));q.gamePriceBasis='Original off-price game discount applied to the model reference, not a real store quote.';}}delete q.photo;products.push(q);photos[pid]=photos[p.id];}
   st.catalogStatus=selected.length?'verified':'pending';st.assortmentBasis='verified-brand-reference';st.sub=selected.length?'REAL PRODUCT COLLECTION':'CATALOG RESEARCH IN PROGRESS';st.greeting=selected.length?'Browse this store’s real products and documented carried brands. Every label links to its source. Game prices, stock, fit and return policies are simulated.':'Welcome inside. This store’s verified photographed catalog is still being researched. Earlier purchases can still be returned here under their original game terms.';
  }

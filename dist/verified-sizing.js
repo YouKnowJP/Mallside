@@ -1,6 +1,7 @@
 // Source labels stay intact. This matching is an illustrated game fit, not real sizing advice.
 export function referenceSize(s,p){
  if(p.sizingSystem==='alpha'){
+  if(p.collectionReference===45&&s.size==='XXL'&&p.sizes.includes('XXL-1X'))return 'XXL-1X';
   const aliases={XXS:['XXS','2XS'],XXL:['XXL','2XL','2X'],XXXL:['XXXL','3XL','3X'],XXXXL:['XXXXL','4XL','4X']},choices=aliases[s.size]||[s.size];
   return choices.find(v=>p.sizes.includes(v))||null;
  }

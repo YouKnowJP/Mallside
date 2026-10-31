@@ -58,3 +58,7 @@ Four exact-SKU TAG Heuer Formula 1 Date product references and matching official
 ## v44 official bag references
 
 Four selected MCM SKU photographs and source references were checked on 30 October 2026. Source URLs, offer qualifications, photograph hashes and reviewed body regions are recorded in `docs/research-v44/catalog-evidence.json` and the asset inventory. Photograph permission is not recorded. Bag geometry, inferred axes, material studies, photo kiosks and motion are original game interpretations; local stock, real return eligibility, capacity and physical fit are not asserted.
+
+## v45 activewear source photographs
+
+Four exact-SKU Fabletics photographs are referenced by the v45 catalog. Official selected-color page and image-service provenance, source/runtime hashes and reviewed crop regions are recorded in docs/research-v45/catalog-evidence.json and docs/ASSET_INVENTORY.json. Fabletics and its respective rights holders retain rights in their photographs and marks; inclusion is not a record of commercial permission. Studio fixtures, flower props and game animations are original Mallside interpretations.

@@ -20,7 +20,9 @@ const headless=args.headless==='true';assert.ok(!headless||browser==='firefox','
 const fingerprint=createHash('sha256').update(JSON.stringify({release,styles,isolation,headless,test:readFileSync(runner,'utf8'),matrix:readFileSync(fileURLToPath(import.meta.url),'utf8')})).digest('hex');
 const folder=root+'build/qa/'+browser+'-matrix';mkdirSync(folder,{recursive:true});const reports=[];
 if(args['await-foreground']==='true')for(const suffix of ['-foreground-go','-foreground-ready.json']){const p=root+'build/qa/'+browser+suffix;if(existsSync(p))unlinkSync(p);}
-let retainedSession=null,foregroundRequested=false;
+// Reattach only an explicitly supplied owned test session, preserving its paired window.
+let retainedSession=args.session||null,foregroundRequested=false;
+if(retainedSession){assert.ok(reuseWindow,'An existing session requires retained-window isolation');const prior=JSON.parse(readFileSync(root+'build/qa/'+browser+'-gameplay-report.json','utf8'));assert.equal(prior.browser,browser);assert.deepEqual(prior.release,release);}
 try{
  for(const [i,name]of cases.entries()){
   const key=createHash('sha256').update(name).digest('hex').slice(0,12),path=folder+'/'+key+'.json',log=folder+'/'+key+'.log';

@@ -2,6 +2,14 @@
 
 Updated 30 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v45
+
+- Stock seven unfinished Fabletics shops with four exact selected-color references, source size labels and qualified non-member prices; retain all 8,766 earlier product records and appearances.
+- Furnish original care/fabric studios, preserve material studies and match the combined XXL-1X legging label correctly.
+- Detail all 28 public flower kiosks, add a free accessible memory-book shortcut and reflect the latest current-center bouquet colors.
+- Ease chosen-stem arranging gestures and improve overhead canopy visibility without changing walking geometry.
+- See [v45 gameplay](docs/GAMEPLAY-v45.md), [source evidence](docs/research-v45/catalog-evidence.json) and [v45 QA](docs/qa-v45.md).
+
 ## Completed in v44
 
 - Stock two unfinished MCM shops with four exact official selected-color references, reviewed bag construction and qualified source dimensions/prices; preserve earlier product records.
@@ -182,7 +190,7 @@ Updated 30 October 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,057 stocked identities, 133 service identities and 408 identities awaiting catalog research**. The remaining 317 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,064 stocked identities, 133 service identities and 401 identities awaiting catalog research**. The remaining 310 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

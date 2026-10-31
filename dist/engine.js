@@ -1,6 +1,6 @@
-import {createStudioStudies} from './studio-study.js?v=44.0.0';
-export {supportsMaterialStudy} from './studio-study.js?v=44.0.0';
-import {referenceSize} from './verified-sizing.js?v=40.0.0';
+import {createStudioStudies} from './studio-study.js?v=45.0.0';
+export {supportsMaterialStudy} from './studio-study.js?v=45.0.0';
+import {referenceSize} from './verified-sizing.js?v=45.0.0';
 import {createShoppingPlans,PLAN_BUDGETS,PLAN_LIMIT,isPlanningStore} from './shopping-plans.js?v=36.0.0';
 export {PLAN_BUDGETS,PLAN_LIMIT,isPlanningStore};
 import {createDistrictLife,ART_DETAILS} from './district-life.js?v=35.0.0';
@@ -17,7 +17,7 @@ import {createCompanionLife} from './companion-life.js?v=30.0.0';
 export {COMPANION_ACTIVITIES} from './companion-content.js?v=30.0.0';
 import {createOutingPlanner} from './trip-planner.js?v=24.0.0';
 import {merchantIdentity} from './merchant-identity.js?v=23.0.0';
-import {isServiceStore} from './playable-stores.js?v=44.0.0';
+import {isServiceStore} from './playable-stores.js?v=45.0.0';
 import {serviceMenu} from './store-services.js?v=23.0.0';
 export {isServiceStore,serviceMenu};
 import {STYLE_BRIEFS,LOCAL_TOPICS,FRIEND_STORIES,FLOWER_STEMS,FLOWER_BRIEFS,TEA_RECIPES,CINEMA_SHORTS,PHOTO_FRAMES,PHOTO_POSES} from './life-content.js?v=26.0.0';
@@ -30,7 +30,7 @@ import {MALLS,mallById,storeUnlock,SLOT_NAMES,slotForProduct} from './malls.js?v
 export {MALLS,mallById,SLOT_NAMES,slotForProduct};
 import {ACTIVITIES,CALENDAR,ERRANDS} from './experiences.js?v=23.0.0';
 export {ACTIVITIES,CALENDAR,ERRANDS};
-import {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore,ARCHIVED_PRODUCTS} from './catalog.js?v=44.0.0';
+import {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore,ARCHIVED_PRODUCTS} from './catalog.js?v=45.0.0';
 export {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore};
 export const TAX=.0825, OPEN=600, CLOSE=1200;
 STORES.forEach(st=>st.tier=storeUnlock(st.id));

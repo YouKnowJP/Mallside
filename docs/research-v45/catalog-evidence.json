@@ -1,0 +1,154 @@
+{
+  "edition": 45,
+  "checkedOn": "2026-10-30",
+  "method": "Live official Fabletics US product pages and exact SKU photographs. Non-member USD reference; Regular fit/inseam, no VIP subscription, financing or custom embroidery. Stock is not asserted.",
+  "rights": "Source provenance only; photograph permission is not recorded.",
+  "products": [
+    {
+      "key": "Legging",
+      "sku": "LG2041934-0001",
+      "source": "https://www.fabletics.com/products/ANYWHERE-HIGHWAISTED-LEGGING--REG-LG2041934-0001",
+      "imageUrl": "https://cdn.fabletics.com/assets/images/skus/LG2041934-0001?model=d&imgSize=577x866&version=1",
+      "id": "v45-real-b40d91268822075965c0",
+      "sourceMarkdownSHA256": "49234c83a722f42a29a6b441a201b266a0e94742661cec08d6181d7c09ad020f",
+      "sourceImageSHA256": "dfd826b6b69fcf4a15b7395a11ea14a4462194ae1f71c7f6f0eb498f3f7a355f",
+      "checkedOn": "2026-10-30",
+      "name": "Anywhere Motion365® High-Waisted Legging",
+      "color": "Black",
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL-1X",
+        "2X",
+        "3X",
+        "4X"
+      ],
+      "fit": "Regular",
+      "referenceUSD": 84.95,
+      "priceKind": "non-member",
+      "fabric": "75% Nylon / 25% Elastane",
+      "runtimePhoto": "assets/photos/v45-real-b40d91268822075965c0.webp",
+      "runtimePhotoSHA256": "ad33388d536f086c58560702487923eec259b52b14af87e8401e3ee991c719ba",
+      "reviewedRegion": [
+        0.5,
+        0.18,
+        0.55,
+        0.28
+      ]
+    },
+    {
+      "key": "pocket",
+      "sku": "LG2457807-4846",
+      "source": "https://www.fabletics.com/products/ANYWHERE-MOTION365-HIGH-WAISTED-POCKET-LEGGING-LG2457807-4846",
+      "imageUrl": "https://cdn.fabletics.com/assets/images/skus/LG2457807-4846?model=d&imgSize=577x866&version=1",
+      "id": "v45-real-38cdaa7da8596c5e8435",
+      "sourceMarkdownSHA256": "46584ae171510a25dd771e470e29bdd70c0a0d004cd8eafcaf8b61f9cf5a3c9a",
+      "sourceImageSHA256": "5cfc80e10cd943f863c9afb15b25807ffbf00cac8abd1f0e67c727625ccbd8e5",
+      "checkedOn": "2026-10-30",
+      "name": "Anywhere Motion365+ High-Waisted Pocket Legging",
+      "color": "Deep Navy",
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL-1X",
+        "2X",
+        "3X",
+        "4X"
+      ],
+      "fit": "Regular",
+      "referenceUSD": 84.95,
+      "priceKind": "non-member",
+      "fabric": "73% Recycled Polyester / 27% Spandex",
+      "runtimePhoto": "assets/photos/v45-real-38cdaa7da8596c5e8435.webp",
+      "runtimePhotoSHA256": "3a95017cb29a8ac8425cfdb06f480964f2c36edd98e1d3434723f03f5c3f61c9",
+      "reviewedRegion": [
+        0.39,
+        0.25,
+        0.44,
+        0.35
+      ]
+    },
+    {
+      "key": "teeBlack",
+      "sku": "SS2044523-0001",
+      "source": "https://www.fabletics.com/products/THE-24-7-TEE-SS2044523-0001",
+      "imageUrl": "https://cdn.fabletics.com/assets/images/skus/SS2044523-0001?model=d&imgSize=577x866&version=1",
+      "id": "v45-real-b7e4dcb093b73d61689f",
+      "sourceMarkdownSHA256": "14e16e0fb5c316b83d5e3c3910c1e396c72d09e0e5aa8272f5a1ac6eaf4c507a",
+      "sourceImageSHA256": "230d4e15bcd1801edc68a3f7178efab27d37a35915cac50c9cd882c2da846f14",
+      "checkedOn": "2026-10-30",
+      "name": "The 24-7 Tee",
+      "color": "Black",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "2X",
+        "3X",
+        "4X"
+      ],
+      "fit": "Regular",
+      "referenceUSD": 59.95,
+      "priceKind": "non-member",
+      "fabric": "57% Cotton / 38% Modal / 5% Spandex",
+      "runtimePhoto": "assets/photos/v45-real-b7e4dcb093b73d61689f.webp",
+      "runtimePhotoSHA256": "5ae896d15bf33126b7a67424f66dd7cafc97355776493e5474d2289910266ead",
+      "reviewedRegion": [
+        0.4,
+        0.34,
+        0.6,
+        0.55
+      ]
+    },
+    {
+      "key": "teeGrey",
+      "sku": "SS2044523-0588",
+      "source": "https://www.fabletics.com/products/THE-24-7-TEE-SS2044523-0588",
+      "imageUrl": "https://cdn.fabletics.com/assets/images/skus/SS2044523-0588?model=d&imgSize=577x866&version=1",
+      "id": "v45-real-8003667f39b3ea19fb7b",
+      "sourceMarkdownSHA256": "1b0a94b96a60368ce028617455614b912da0f93227fa6f143d7214374eea1ffe",
+      "sourceImageSHA256": "2602b4775988996d9d50ea5f6d37e04d20481dc9b9ecfb9dd18cbe409d197876",
+      "checkedOn": "2026-10-30",
+      "name": "The 24-7 Tee",
+      "color": "Charcoal Heather",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "2X",
+        "3X",
+        "4X"
+      ],
+      "fit": "Regular",
+      "referenceUSD": 59.95,
+      "priceKind": "non-member",
+      "fabric": "57% Cotton / 38% Modal / 5% Spandex",
+      "runtimePhoto": "assets/photos/v45-real-8003667f39b3ea19fb7b.webp",
+      "runtimePhotoSHA256": "955e5ca5987715bb213459dd7eaabaae793922569d7cfa71b4bc389282838a68",
+      "reviewedRegion": [
+        0.42,
+        0.34,
+        0.62,
+        0.55
+      ]
+    }
+  ],
+  "previousCatalog": {
+    "count": 8766,
+    "sortedProductIdsSHA256": "1d552c3cd4391ee42f9b993659a939bdbf5c7811c582c25e91a279bc3c63b114"
+  }
+}

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "44.0.0",
+  "release": "45.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1987,
-  "uniqueRuntimePhotoFiles": 1965,
+  "runtimePhotoEntries": 1991,
+  "uniqueRuntimePhotoFiles": 1969,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19577,6 +19577,46 @@
       "source": "https://us.mcmworldwide.com/en_US/men/bags/backpacks/stark-side-studs-backpack-in-visetos/MMKEAVE14CO001.html",
       "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MMKEAVE14CO001_01?&fmt=auto&qlt=default",
       "description": "Stark Side Studs Backpack in Visetos Cognac — exact SKU photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v45-real-38cdaa7da8596c5e8435",
+      "path": "assets/photos/v45-real-38cdaa7da8596c5e8435.webp",
+      "sha256": "3a95017cb29a8ac8425cfdb06f480964f2c36edd98e1d3434723f03f5c3f61c9",
+      "source": "https://www.fabletics.com/products/ANYWHERE-MOTION365-HIGH-WAISTED-POCKET-LEGGING-LG2457807-4846",
+      "imageUrl": "https://cdn.fabletics.com/assets/images/skus/LG2457807-4846?model=d&imgSize=577x866&version=1",
+      "description": "Anywhere Motion365+ High-Waisted Pocket Legging Deep Navy — exact SKU photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v45-real-8003667f39b3ea19fb7b",
+      "path": "assets/photos/v45-real-8003667f39b3ea19fb7b.webp",
+      "sha256": "955e5ca5987715bb213459dd7eaabaae793922569d7cfa71b4bc389282838a68",
+      "source": "https://www.fabletics.com/products/THE-24-7-TEE-SS2044523-0588",
+      "imageUrl": "https://cdn.fabletics.com/assets/images/skus/SS2044523-0588?model=d&imgSize=577x866&version=1",
+      "description": "The 24-7 Tee Charcoal Heather — exact SKU photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v45-real-b40d91268822075965c0",
+      "path": "assets/photos/v45-real-b40d91268822075965c0.webp",
+      "sha256": "ad33388d536f086c58560702487923eec259b52b14af87e8401e3ee991c719ba",
+      "source": "https://www.fabletics.com/products/ANYWHERE-HIGHWAISTED-LEGGING--REG-LG2041934-0001",
+      "imageUrl": "https://cdn.fabletics.com/assets/images/skus/LG2041934-0001?model=d&imgSize=577x866&version=1",
+      "description": "Anywhere Motion365® High-Waisted Legging Black — exact SKU photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v45-real-b7e4dcb093b73d61689f",
+      "path": "assets/photos/v45-real-b7e4dcb093b73d61689f.webp",
+      "sha256": "5ae896d15bf33126b7a67424f66dd7cafc97355776493e5474d2289910266ead",
+      "source": "https://www.fabletics.com/products/THE-24-7-TEE-SS2044523-0001",
+      "imageUrl": "https://cdn.fabletics.com/assets/images/skus/SS2044523-0001?model=d&imgSize=577x866&version=1",
+      "description": "The 24-7 Tee Black — exact SKU photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

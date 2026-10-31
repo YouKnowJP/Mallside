@@ -1,4 +1,4 @@
-import {STUDY_PALETTES,STUDY_FINISHES,studioGroup} from './studio-study.js?v=44.0.0';
+import {STUDY_PALETTES,STUDY_FINISHES,studioGroup} from './studio-study.js?v=45.0.0';
 export function studioStudyHTML(s,st,draft,{esc}){
  const palette=STUDY_PALETTES.find(p=>p.id===draft.palette),finish=STUDY_FINISHES.find(f=>f.id===draft.finish),group=studioGroup(st),saved=(s.materialStudies||[]).find(n=>n.store===st.id),same=saved?.palette===draft.palette&&saved?.finish===draft.finish;
  const materials={textile:['Woven swatch','Folded sample','Seam study'],light:['Light dome','Inset tile','Reflector'],workshop:['Room panel','Joinery block','Surface tile']}[group];

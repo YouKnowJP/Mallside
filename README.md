@@ -8,9 +8,9 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v44 — bag studios and photo stops
+## v45 — activewear studios and flower stops
 
-Four verified MCM variants stock two unfinished shops, with exact SKU photographs, qualified USD references and approximate source dimensions. Original care/packing studios retain earlier material notes. Detailed camera kiosks now offer a free album shortcut and remember the latest portrait from each center, while carried bags settle smoothly after walking. Existing purchases and saves remain compatible. See [v44 gameplay](docs/GAMEPLAY-v44.md), [source evidence](docs/research-v44/catalog-evidence.json), [release QA](docs/qa-v44.md) and the [roadmap](ROADMAP.md).
+Four verified Fabletics variants stock seven unfinished shops, with exact photographs, source sizes and qualified non-member USD references. Richer original care studios retain saved material studies. All 28 flower kiosks gain petals, wrapping detail, saved bouquet colors and free memory-book access. Eased arranging gestures and camera cutaways make the new detail easier to see. Existing saves and purchases remain compatible. See [v45 gameplay](docs/GAMEPLAY-v45.md), [source evidence](docs/research-v45/catalog-evidence.json), [release QA](docs/qa-v45.md) and the [roadmap](ROADMAP.md).
 
 ## Earlier update · v41 — working studios and courtyard mosaics
 

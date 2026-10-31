@@ -4,13 +4,13 @@ import {fixtureStop} from './mall-neighborhood.js?v=36.0.0';
 import {campusTrip} from './campus-routing.js?v=36.0.0';
 import {zoneOf} from './campus-model.js?v=23.0.0';
 import {storeFloor} from './map-layout.js?v=36.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=44.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=45.0.0';
 import {windowSelection} from './mall-life.js?v=26.0.0';
 import {walkable,freeMove,freeRoute,closestFloor,personStop} from './free-navigation.js?v=25.0.0';
-import {paintMallGround,paintFacade,paintVenue,paintPublicFixture,VENUE_LABELS} from './mall-art.js?v=44.0.0';
+import {paintMallGround,paintFacade,paintVenue,paintPublicFixture,VENUE_LABELS} from './mall-art.js?v=45.0.0';
 import {LOCALS} from './mall-life.js?v=26.0.0';
 import {paintPerson} from './sprites.js?v=34.0.0';
-import {STORES,PRODUCTS,VENUES,mallOf,CLOSE,equippedLook} from './engine.js?v=44.0.0';
+import {STORES,PRODUCTS,VENUES,mallOf,CLOSE,equippedLook} from './engine.js?v=45.0.0';
 import {layoutFor} from './map-layout.js?v=36.0.0';
 import {pointAt,MAP_WIDTH,MAP_HEIGHT} from './mall-plans.js?v=23.0.0';
 import {mapRoute,moveOnMap,projectToMap,onCorridor} from './map-navigation.js?v=23.0.0';
@@ -39,7 +39,7 @@ export class MallWorld{
  actors.push({depth:this.avatar.y,paint:()=>this.person(this.avatar.x,this.avatar.y,true,this.moving,this.facing,this.distance)});actors.sort((a,b)=>a.depth-b.depth).forEach(a=>a.paint());c.restore();this.drawMini();this.updateNearby();}
  drawMini(){const mini=document.querySelector('#mall-minimap');if(!mini)return;const c=mini.getContext('2d'),p=this.layout.campus?{...this.layout.campus,edges:this.layout.campus.halls}:this.layout.plan,k=Math.min(mini.width/(this.layout.width||1200),mini.height/(this.layout.height||900));c.clearRect(0,0,mini.width,mini.height);c.fillStyle='#f6efdb';c.fillRect(0,0,mini.width,mini.height);c.lineCap='round';for(const e of p.edges){const a=pointAt(p,e.a),b=pointAt(p,e.b);c.beginPath();c.moveTo(a.x*k,a.y*k);c.lineTo(b.x*k,b.y*k);c.strokeStyle='#bdc9ae';c.lineWidth=9;c.stroke();c.strokeStyle='#fff9e7';c.lineWidth=5;c.stroke();}for(const a of [...this.rects,...(this.layout.units||[]),...this.layout.anchors,...this.layout.venues,...this.layout.planters]){c.fillStyle=a.color||'#a4b497';c.fillRect(a.x*k,a.y*k,Math.max(4,a.width*k),Math.max(3,a.height*k));}c.fillStyle='#b66f41';c.beginPath();c.arc(this.avatar.x*k,this.avatar.y*k,4,0,7);c.fill();}
  nearby(){const p=this.avatar,items=[...(this.layout.environment?.fixtures||[]).filter(f=>f.approach).map(f=>({point:f.approach,...fixtureStop(f)})),...(this.layout.units||[]).map(r=>({point:r.door,id:'window:'+r.id,name:r.name,label:'Step inside'})),...this.rects.map(r=>({point:r.door,id:'window:'+r.id,name:r.name+' · window display',label:'Browse window'})),...this.venues.map(v=>({point:v.door,id:'venue:'+v.id,name:VENUE_LABELS[v.id],label:'Make a stop'})),...this.layout.locals.map(n=>({point:n.door,id:'local:'+n.id,name:LOCALS.find(v=>v.id===n.id).name,label:'Say hello'}))];return items.filter(n=>Math.hypot(n.point.x-p.x,n.point.y-p.y)<65).sort((a,b)=>Math.hypot(a.point.x-p.x,a.point.y-p.y)-Math.hypot(b.point.x-p.x,b.point.y-p.y))[0];}
- updateNearby(){const root=document.querySelector('#map-nearby'),n=this.nearby(),key=n?.id||'';if(!root||key===this.lastNearby)return;this.lastNearby=key;if(this.inside&&n?.id==='leave-interior'){root.innerHTML='';return;}root.innerHTML=n?`<button data-action="nearby"><span>NEAR YOU</span><strong>${n.name}</strong><small>${n.label} ↗</small></button>${n.id==='venue:photo'?'<button data-action="photo-album"><span>MY PORTRAITS</span><strong>Open my photo album</strong><small>View saved pictures · free ↗</small></button>':''}`:'';}
+ updateNearby(){const root=document.querySelector('#map-nearby'),n=this.nearby(),key=n?.id||'';if(!root||key===this.lastNearby)return;this.lastNearby=key;if(this.inside&&n?.id==='leave-interior'){root.innerHTML='';return;}root.innerHTML=n?`<button data-action="nearby"><span>NEAR YOU</span><strong>${n.name}</strong><small>${n.label} ↗</small></button>${n.id==='venue:flowers'?'<button data-action="flower-memories"><span>MY BOUQUETS</span><strong>Open my flower memories</strong><small>View saved workshops · free ↗</small></button>':n.id==='venue:photo'?'<button data-action="photo-album"><span>MY PORTRAITS</span><strong>Open my photo album</strong><small>View saved pictures · free ↗</small></button>':''}`:'';}
  enterNearby(){const n=this.nearby();if(n)this.navigate(n.point,{interaction:n.id});}
 
  pointerDown(e){if(e.button!==0||e.isPrimary===false||this.dragOrigin||!this.manualAllowed())return;this.canvas.focus({preventScroll:true});if(e.pointerType==='touch'||e.pointerType==='pen'){this.dragOrigin={x:e.clientX,y:e.clientY,id:e.pointerId,moved:false};this.canvas.setPointerCapture(e.pointerId);}else this.click(e);}

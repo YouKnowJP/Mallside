@@ -1,4 +1,4 @@
-import {updateStudioStudy} from './studio-details.js?v=44.0.0';
+import {updateStudioStudy} from './studio-details.js?v=45.0.0';
 // Original care/packing workbench samples stay separate from the photographed bag collection.
 export function buildBagStudio(w,st,style){
  const samples=[];
