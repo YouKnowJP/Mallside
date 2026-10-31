@@ -1,7 +1,7 @@
-import {PRODUCT_PHOTOS} from './product-photos.js?v=42.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=43.0.0';
 import {PHOTO_PALETTES} from './photo-palettes.js?v=42.0.0';
 import {PHOTO_SURFACES} from './photo-surfaces.js?v=42.0.0';
-import {garmentProfile} from './garment-reference-rules.js?v=42.0.0';
+import {garmentProfile} from './garment-reference-rules.js?v=43.0.0';
 import {bagProfile} from './bag-reference-rules.js?v=23.0.0';
 
 export const MODEL_REFERENCES={

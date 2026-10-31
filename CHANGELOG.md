@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v43.0.0 — Watch studios and sculpture courts
+
+- Add four official exact-SKU TAG Heuer references to three unfinished shops, with source photos, qualified USD prices and clear case-diameter facts.
+- Add solid steel/rubber watch models, detailed original comparison studios, retained material notes and smoother wrist inspection with static reduced motion.
+- Detail sculpture plinths on all 23 floors and reflect saved sketch choices without changing existing rewards or routes.
+- Preserve all 8,746 earlier product records and existing saves; see [v43 QA](docs/qa-v43.md) for validation.
+
 ## 42.0.0 — Knit showrooms and reading shelves — 30 October 2026
 
 - Stock two COS and three Mango shops with six official selected-color references and sixteen merchant-scoped listings; preserve all 8,730 prior active product IDs.

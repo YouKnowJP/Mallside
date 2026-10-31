@@ -15,7 +15,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=42.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=43.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -134,3 +134,9 @@ Opaque upper garments densify shell rings before retargeting so interpolation fo
 `store-product-additions-v42.js` adds exact COS/Mango references. Reviewed palette, garment and surface additions are isolated versioned modules; earlier records remain untouched. Five shops gain `collectionEdition=42`, collection desks and original `knit-studio.js` detail on reserved fixtures. `supportsMaterialStudy` admits planning shops and these newly stocked studios, preserving v41 notes and zero-cost study transactions. The controller routes their study interaction to the existing collection desk; pending-shop studies retain their original station.
 
 `reading-details.js` keeps all book joinery inside each reading-shelf collider and updates a physical bookmark from the existing `commonsNotes` record for the actual mall/floor. It allocates no new resources during updates and clears its scene references on teardown. `gait-motion.js` supplies continuous foot and pelvis curves to the existing distance-based rig, leaving navigation/input and grounded two-bone solving authoritative.
+
+## Watch studios and saved sculpture detail (v43)
+
+`store-product-additions-v43.js` isolates four exact-SKU official references with watch profiles and photograph provenance. Three newly stocked identities gain `collectionEdition=43`; earlier product records remain unchanged. Collection/study eligibility preserves pending-shop notes. `watch-model.js` constructs source-reviewed original steel/rubber models and merges their static parts by material; all resources remain scene-owned. The existing equipment slot owns the wrist model. `watchGesture` drives an eased lift/hold/return from actual fitting elapsed time, with static reduced motion and the existing camera handoff. Case diameter is explicitly separate from wrist fit.
+
+`sculpture-details.js` adds fixture-bounded details and one reusable marker at each art alcove. Updates read existing `artNotes` for the actual mall and floor, allocate no geometry, and reset on scene teardown. No new state schema, collider, reward or time rule is introduced.

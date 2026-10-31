@@ -1,10 +1,10 @@
 import {bodySectionRadius} from './garment-clearance.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
 import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=40.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=42.0.0';
-import {productAppearance} from './product-appearance.js?v=42.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=43.0.0';
+import {productAppearance} from './product-appearance.js?v=43.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
-import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=42.0.0';
+import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=43.0.0';
 import {addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 
 export function fitScaleForSize(size,usual){const canonical=v=>({XXS:'2XS',XXL:'2XL',XXXL:'3XL','2X':'2XL','3X':'3XL'}[v]||v),sizes=['2XS','XS','S','M','L','XL','2XL','3XL'],a=sizes.indexOf(canonical(size)),b=sizes.indexOf(canonical(usual));if(a>=0&&b>=0)return 1+(a-b)*.035;const n=Number(size)||Number(/^W(\d+)L\d+$/.exec(size)?.[1]),u=Number(usual)||Number(/^W(\d+)L\d+$/.exec(usual)?.[1]);return n&&u?Math.max(.9,Math.min(1.1,Math.sqrt(n/u))):1;}

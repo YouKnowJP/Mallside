@@ -50,3 +50,7 @@ Pinned esbuild 0.28.2 generates the public minified browser artifact. It is a de
 ## Development tools and GitHub Actions
 
 Node.js, Python, optional photo-research tools and GitHub Actions are installed or run separately; they are not game ownership claims. Actions retain their own licenses. `scripts/README.md` distinguishes the release tools from historical research scripts.
+
+## v43 official watch references
+
+Four exact-SKU TAG Heuer Formula 1 Date product references and matching official photographs were checked on 30 October 2026. Source URLs, selected SKU, offer qualifications and photograph hashes are recorded in `docs/research-v43/catalog-evidence.json` and the asset inventory. The photographs retain third-party rights; permission is not recorded. Original game watch geometry, comparison furniture and sculpture details are Mallside interpretations, not representations of official branch interiors or current stock.

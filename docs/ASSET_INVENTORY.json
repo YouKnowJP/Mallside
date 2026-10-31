@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "42.0.0",
+  "release": "43.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1979,
-  "uniqueRuntimePhotoFiles": 1957,
+  "runtimePhotoEntries": 1983,
+  "uniqueRuntimePhotoFiles": 1961,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19497,6 +19497,46 @@
       "source": "https://shop.mango.com/us/en/p/men/t-shirts/basics/100-extra-soft-cotton-regular-fit-t-shirt/37016000/01/00",
       "imageUrl": "https://media.mango.com/is/image/punto/37016000-01-002?wid=1024",
       "description": "100% Extra Soft Cotton Regular Fit T-Shirt in White — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v43-real-40ea3b9d47fd4765c8c7",
+      "path": "assets/photos/v43-real-40ea3b9d47fd4765c8c7.webp",
+      "sha256": "40baac6e73579d6201b0a5dc24b4574f54a93830a53e3d5ed06e8ac36666d89a",
+      "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1110.BA0875.html",
+      "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwec913aa9/TAG_Heuer_Formula_1/WAZ1110.BA0875/WAZ1110.BA0875_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
+      "description": "Formula 1 Date WAZ1110.BA0875 — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v43-real-70d0df6a8c8f31f9efbc",
+      "path": "assets/photos/v43-real-70d0df6a8c8f31f9efbc.webp",
+      "sha256": "cce447f133839f15a0c8d006778700178e965e5aa3325ced40249336c23e94eb",
+      "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1118.BA0875.html",
+      "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw7c1dd099/TAG_Heuer_Formula_1/WAZ1118.BA0875/WAZ1118.BA0875_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
+      "description": "Formula 1 Date WAZ1118.BA0875 — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v43-real-98907401680dc67abad4",
+      "path": "assets/photos/v43-real-98907401680dc67abad4.webp",
+      "sha256": "4c663f8696644e691c6a9b1c51ea04f55c02ecd0c746d83d3b67547c9982aedb",
+      "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1112.BA0875.html",
+      "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw3428b613/TAG_Heuer_Formula_1/WAZ1112.BA0875/WAZ1112.BA0875_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
+      "description": "Formula 1 Date WAZ1112.BA0875 — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v43-real-a682258d6a2554a6acbe",
+      "path": "assets/photos/v43-real-a682258d6a2554a6acbe.webp",
+      "sha256": "1ecff4bdd60462fe11544814c3d64f0533898fd50ef316e4a1e35ea1e0639421",
+      "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1110.FT8023.html",
+      "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwa52047a9/TAG_Heuer_Formula_1/WAZ1110.FT8023/WAZ1110.FT8023_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
+      "description": "Formula 1 Date WAZ1110.FT8023 — exact source photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

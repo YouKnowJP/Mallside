@@ -8,9 +8,9 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v42 — knit showrooms and reading shelves
+## v43 — watch studios and sculpture courts
 
-Six verified COS/Mango color variants stock five unfinished locations, with exact source sizes and qualified USD references. Furnished material desks retain studies saved before the collection arrived. Detailed reading shelves remember each floor's saved story, and continuous foot/pelvis curves smooth walking transitions. Existing purchases and saves remain compatible. See [v42 gameplay](docs/GAMEPLAY-v42.md), [source evidence](docs/research-v42/catalog-evidence.json), [release QA](docs/qa-v42.md) and the [roadmap](ROADMAP.md).
+Four verified TAG Heuer references stock three unfinished shops, with exact source photographs, qualified USD prices and clear case-diameter information. Richer original comparison studios retain earlier material studies. Source-reviewed steel/rubber models and eased wrist inspection bring the collection into the scene; all 23 sculpture alcoves gain detailed plinths and saved sketch markers. Existing purchases and saves remain compatible. See [v43 gameplay](docs/GAMEPLAY-v43.md), [source evidence](docs/research-v43/catalog-evidence.json), [release QA](docs/qa-v43.md) and the [roadmap](ROADMAP.md).
 
 ## Previous update · v41 — working studios and courtyard mosaics
 

@@ -1,7 +1,7 @@
 import * as T from './vendor/three.module.js';
 import {ROOM_STYLES} from './home-life.js?v=26.0.0';
-import {owned,byId} from './engine.js?v=42.0.0';
-import {placeMerchandise} from './merchandise-3d.js?v=42.0.0';
+import {owned,byId} from './engine.js?v=43.0.0';
+import {placeMerchandise} from './merchandise-3d.js?v=43.0.0';
 // A small original room; every displayed product is an owned catalog purchase.
 export function buildCollectionRoom(w,state){
  const style=ROOM_STYLES.find(v=>v.id===state.roomStyle)||ROOM_STYLES[0],materials=new Map();

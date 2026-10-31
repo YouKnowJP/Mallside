@@ -1,3 +1,4 @@
+import {buildSculptureDetails} from './sculpture-details.js?v=43.0.0';
 import {buildReadingDetails} from './reading-details.js?v=42.0.0';
 import {buildMosaicStudy} from './mosaic-details.js?v=41.0.0';
 import {buildWaystationDetails} from './waystation-details.js?v=40.0.0';
@@ -142,6 +143,7 @@ export function buildPublicRealm(w,l,theme){
    buildWaystationDetails(b,x,z,p.amenity,theme);
    const key='amenity:'+p.amenity,hit=w.box(x,31,z,26,64,24,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(p.amenity==='water'?'Free water ↗':'Community board ↗',x,80,z,78,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:130,directory:true});
    }else if(p.kind==='art'){
+   buildSculptureDetails(w,b,x,z,theme);
    b.box(x,3,z,29,6,29,theme.stone);b.box(x,7,z,23,2,23,theme.trim);
    for(const [i,color]of ['#b38860','#5e8b80'].entries()){const ring=w.mesh(new T.TorusGeometry(11,2.5,6,28),w.mat(color,{roughness:.36,metalness:.5}));ring.position.set(x+(i?3:-3),23,z);ring.rotation.set(.25,i?-.7:.7,i?.3:-.3);w.tag(ring,'art:'+p.id,p.approach);}
    const label=w.label('Sculpture alcove ↗',x,65,z,95,theme.accent);w.tag(label,'art:'+p.id,p.approach);w.nearLabels.push({object:label,x,z,radius:160,directory:true});

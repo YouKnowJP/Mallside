@@ -1,0 +1,76 @@
+{
+  "edition": 43,
+  "checkedOn": "2026-10-30",
+  "method": "Live official US product pages via Firecrawl; original photograph bytes downloaded directly from official CDN. Prices and specifications transcribed, not branch inventory.",
+  "photographRights": "Provenance only; permission-not-recorded in the existing asset inventory policy.",
+  "products": [
+    {
+      "id": "v43-real-40ea3b9d47fd4765c8c7",
+      "sku": "WAZ1110.BA0875",
+      "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1110.BA0875.html",
+      "checkedOn": "2026-10-30",
+      "referenceUSD": 2050,
+      "caseMM": 41,
+      "color": "Black / black bezel",
+      "band": "steel",
+      "sourceMarkdownSHA256": "9c8067d071e50bf1dc47ce8a47b4b070cb3f526734b9964419ffd0066a6b7d7c",
+      "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwec913aa9/TAG_Heuer_Formula_1/WAZ1110.BA0875/WAZ1110.BA0875_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
+      "sourceImageSHA256": "1ca387a64087b0bd2134060c22a0f159249ee34c41da8734a28056f78c55ac49",
+      "runtimePhoto": "assets/photos/v43-real-40ea3b9d47fd4765c8c7.webp",
+      "runtimePhotoSHA256": "40baac6e73579d6201b0a5dc24b4574f54a93830a53e3d5ed06e8ac36666d89a",
+      "review": "Exact front image and source technical specifications reviewed; game interpretation, no branch-stock assertion."
+    },
+    {
+      "id": "v43-real-70d0df6a8c8f31f9efbc",
+      "sku": "WAZ1118.BA0875",
+      "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1118.BA0875.html",
+      "checkedOn": "2026-10-30",
+      "referenceUSD": 2000,
+      "caseMM": 41,
+      "color": "Blue / steel bracelet",
+      "band": "steel",
+      "sourceMarkdownSHA256": "5e4970331799d5df469738c22a80ff6208c345caefc86fc879fb00da489a2d25",
+      "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw7c1dd099/TAG_Heuer_Formula_1/WAZ1118.BA0875/WAZ1118.BA0875_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
+      "sourceImageSHA256": "e5c6c49aa3c4424179c3c6bd0a68cccc9928e6bde2904287433212b5cf95f4f7",
+      "runtimePhoto": "assets/photos/v43-real-70d0df6a8c8f31f9efbc.webp",
+      "runtimePhotoSHA256": "cce447f133839f15a0c8d006778700178e965e5aa3325ced40249336c23e94eb",
+      "review": "Exact front image and source technical specifications reviewed; game interpretation, no branch-stock assertion."
+    },
+    {
+      "id": "v43-real-98907401680dc67abad4",
+      "sku": "WAZ1112.BA0875",
+      "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1112.BA0875.html",
+      "checkedOn": "2026-10-30",
+      "referenceUSD": 2000,
+      "caseMM": 41,
+      "color": "Black / steel bezel",
+      "band": "steel",
+      "sourceMarkdownSHA256": "df89bc5a7a5a0b3addcf63d4a17300bac55191e42477ab7a49644faee2b602c2",
+      "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw3428b613/TAG_Heuer_Formula_1/WAZ1112.BA0875/WAZ1112.BA0875_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
+      "sourceImageSHA256": "99bc35fd58deec4bf39d902b1bf9d4378a443e96e9c6f3b07c5d748fba6219af",
+      "runtimePhoto": "assets/photos/v43-real-98907401680dc67abad4.webp",
+      "runtimePhotoSHA256": "4c663f8696644e691c6a9b1c51ea04f55c02ecd0c746d83d3b67547c9982aedb",
+      "review": "Exact front image and source technical specifications reviewed; game interpretation, no branch-stock assertion."
+    },
+    {
+      "id": "v43-real-a682258d6a2554a6acbe",
+      "sku": "WAZ1110.FT8023",
+      "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1110.FT8023.html",
+      "checkedOn": "2026-10-30",
+      "referenceUSD": 1850,
+      "caseMM": 41,
+      "color": "Black / perforated rubber strap",
+      "band": "rubber",
+      "sourceMarkdownSHA256": "965c1282560c8f135a4b4fcf54522748e9663ac9df9e3a1954a1f911b7e430da",
+      "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwa52047a9/TAG_Heuer_Formula_1/WAZ1110.FT8023/WAZ1110.FT8023_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
+      "sourceImageSHA256": "5d21c8351e943b8bbf378fc4288439fb68618e3ef9f0664eedf158882c951b62",
+      "runtimePhoto": "assets/photos/v43-real-a682258d6a2554a6acbe.webp",
+      "runtimePhotoSHA256": "1ecff4bdd60462fe11544814c3d64f0533898fd50ef316e4a1e35ea1e0639421",
+      "review": "Exact front image and source technical specifications reviewed; game interpretation, no branch-stock assertion."
+    }
+  ],
+  "previousCatalog": {
+    "count": 8746,
+    "sortedProductIdsSHA256": "28b896ccb682450311ed4ce5b76665e14c566be1e5d41822f4c74b60d87621c0"
+  }
+}

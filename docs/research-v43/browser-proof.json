@@ -1,0 +1,130 @@
+{
+  "release": {
+    "game": "Mallside",
+    "version": "43.0.0",
+    "sourceCommit": "d86c4d924418ab4b666cf36d11a4015fa6440d38",
+    "bundle": "app-FJFUO6ZN.js",
+    "sourceVisibility": "public",
+    "license": "LicenseRef-Mallside-Proprietary",
+    "licenseVersion": "1.1",
+    "licenseUrl": "LICENSE.txt",
+    "permissionsUrl": "PERMISSIONS.txt",
+    "officialPlayUrl": "https://youknowjp.github.io/Mallside/",
+    "sourceRepository": "https://github.com/YouKnowJP/Mallside",
+    "publicFiles": "Generated game only; editable source and history are available in the Mallside repository."
+  },
+  "styles": [
+    "styles-6d92a5f8e9bb.css",
+    "life-styles-a3e53f64648f.css"
+  ],
+  "artifactSHA256": {
+    "app-FJFUO6ZN.js": "a5f706977392dca41ff1a78542a28e0d5f36f3d6d84d3c6556da70098fde9147",
+    "life-styles-a3e53f64648f.css": "a3e53f64648f6bba037197418be44beb4434d9b2a75e6d4889a116d4deb9f029",
+    "styles-6d92a5f8e9bb.css": "6d92a5f8e9bb4f84020cdcaed234f605d576d4ceb159d381738316bd09d4ad6c"
+  },
+  "proofs": [
+    {
+      "browser": "safari",
+      "version": "26.6.2",
+      "driverVersion": "Apple safaridriver",
+      "isolation": "retained-window",
+      "headless": false,
+      "scenarios": 58,
+      "checks": 59,
+      "sessions": 1,
+      "fingerprint": "9df5f11531080e0392bee36567d356fed70e731a62c8c9fc8a68bbdb78e146a7",
+      "errors": 0,
+      "resourceWarnings": 0,
+      "inputRetries": 0
+    },
+    {
+      "browser": "firefox",
+      "version": "159.0",
+      "driverVersion": "0.37.1",
+      "isolation": "retained-window",
+      "headless": false,
+      "scenarios": 58,
+      "checks": 59,
+      "sessions": 1,
+      "fingerprint": "9df5f11531080e0392bee36567d356fed70e731a62c8c9fc8a68bbdb78e146a7",
+      "errors": 0,
+      "resourceWarnings": 0,
+      "inputRetries": 0
+    }
+  ],
+  "testBuildNote": "The frozen v43 working-tree artifact was tested before its publication commit. Published JavaScript and CSS must match these exact hashes.",
+  "mobileTouchEmulation": {
+    "results": [
+      {
+        "width": 320,
+        "overflow": false,
+        "buttons": [
+          {
+            "a": "studio-save",
+            "h": 62.390625,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "a": "leave-shop",
+            "h": 62.390625,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "buttons": [
+          {
+            "a": "studio-save",
+            "h": 48,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "a": "leave-shop",
+            "h": 48,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "buttons": [
+          {
+            "a": "studio-save",
+            "h": 48,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "a": "leave-shop",
+            "h": 48,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  "cleanup": {
+    "removedHomePaths": 4453,
+    "preservedBaselinePaths": 9,
+    "newHomePathsRemaining": 0,
+    "removedUpdaterCaches": [
+      "mallside-v43-firefox",
+      "mallside-v41-firefox"
+    ],
+    "temporaryFirefoxRootRemoved": true,
+    "preexistingPreferenceFilePreserved": true,
+    "stoppedOwnedProcesses": 1,
+    "allowRemoteAutomation": false,
+    "settingsClosed": true,
+    "verification": "Safari Developer checkbox observed Value 0; settings closed to Start Page via CUA."
+  }
+}

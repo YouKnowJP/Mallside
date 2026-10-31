@@ -2,6 +2,14 @@
 
 Updated 30 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v43
+
+- Stock three unfinished TAG Heuer identities with four exact official US watch references and photographed SKUs; retain all earlier product records.
+- Furnish original watch comparison studios, keep saved material studies and clarify case diameter versus wrist fit.
+- Add source-reviewed steel/rubber watch geometry and an eased wrist inspection with static reduced motion; batch detailed models to reduce rendering calls.
+- Detail all 23 sculpture plinths with original plaques and sketch pads, reflecting each floor's saved observation.
+- See [v43 gameplay](docs/GAMEPLAY-v43.md), [source evidence](docs/research-v43/catalog-evidence.json) and [v43 QA](docs/qa-v43.md).
+
 ## Completed in v42
 
 - Stock five unfinished COS/Mango shops with six verified selected-color references, exact source photographs/sizes and qualified USD offers; preserve all earlier product IDs.
