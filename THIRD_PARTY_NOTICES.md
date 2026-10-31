@@ -54,3 +54,7 @@ Node.js, Python, optional photo-research tools and GitHub Actions are installed 
 ## v43 official watch references
 
 Four exact-SKU TAG Heuer Formula 1 Date product references and matching official photographs were checked on 30 October 2026. Source URLs, selected SKU, offer qualifications and photograph hashes are recorded in `docs/research-v43/catalog-evidence.json` and the asset inventory. The photographs retain third-party rights; permission is not recorded. Original game watch geometry, comparison furniture and sculpture details are Mallside interpretations, not representations of official branch interiors or current stock.
+
+## v44 official bag references
+
+Four selected MCM SKU photographs and source references were checked on 30 October 2026. Source URLs, offer qualifications, photograph hashes and reviewed body regions are recorded in `docs/research-v44/catalog-evidence.json` and the asset inventory. Photograph permission is not recorded. Bag geometry, inferred axes, material studies, photo kiosks and motion are original game interpretations; local stock, real return eligibility, capacity and physical fit are not asserted.

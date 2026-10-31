@@ -1,5 +1,5 @@
 import * as T from './vendor/three.module.js';
-import {STUDY_PALETTES,studyFor,studioGroup} from './studio-study.js?v=43.0.0';
+import {STUDY_PALETTES,studyFor,studioGroup} from './studio-study.js?v=44.0.0';
 import {surfaceTexture} from './scene-finish.js?v=33.0.0';
 
 // Joinery, tools and samples remain inside the lounge's reserved display/rail footprints.

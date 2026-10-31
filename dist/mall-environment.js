@@ -1,3 +1,4 @@
+import {buildPhotoKiosk} from './photo-kiosk.js?v=44.0.0';
 import {buildSculptureDetails} from './sculpture-details.js?v=43.0.0';
 import {buildReadingDetails} from './reading-details.js?v=42.0.0';
 import {buildMosaicStudy} from './mosaic-details.js?v=41.0.0';
@@ -133,12 +134,12 @@ export function buildPublicRealm(w,l,theme){
    const hit=w.box(x,17,z,p.width,26,p.height,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'bench:'+p.id,p.approach);
   }else if(p.kind==='kiosk'){
    const accent={coffee:'#54766a',photo:'#9d8798',flowers:'#789262',popup:'#bd8c62'}[p.venue];
-   b.box(x,14,z,38,28,32,theme.stone);b.box(x,29,z,43,3,37,accent);b.box(x,50,z-13,43,4,16,accent);for(const sign of [-1,1])b.box(x+sign*17,39,z-13,2,22,2,theme.trim);
+   b.box(x,14,z,38,28,32,theme.stone);b.box(x,29,z,43,3,37,accent);const canopy=p.venue==='photo'?76:50;b.box(x,canopy,z-13,43,4,16,accent);for(const sign of [-1,1])b.box(x+sign*17,(28+canopy)/2,z-13,2,canopy-28,2,theme.trim);
    if(p.venue==='coffee'){for(const dx of [-9,6]){b.cylinder(x+dx,35,z,4,10,'#f2eadb');b.cylinder(x+dx,40,z,4.5,1,theme.trim);}b.box(x+9,38,z-7,13,17,9,'#384d45');}
    else if(p.venue==='flowers')for(let i=0;i<6;i++){const dx=i%3*10-10,dz=Math.floor(i/3)*12-6;b.cylinder(x+dx,34,z+dz,3,9,'#a4896a');b.leaf(x+dx,42,z+dz,6,[theme.flowers,'#edcb98','#ddaaad'][i%3]);}
-   else if(p.venue==='photo'){b.box(x,40,z,15,10,9,'#4e6060');b.cylinder(x,47,z,3,3,theme.stone);}
+   else if(p.venue==='photo')buildPhotoKiosk(w,b,x,z,theme,p.approach);
    else for(const dx of [-10,0,10])b.box(x+dx,35,z,7,9,7,['#819b87','#c39a76','#b4a079'][(dx+10)/10]);
-   const hit=w.box(x,25,z,40,52,34,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'venue:'+p.venue,p.approach);
+   const hit=w.box(x-(p.venue==='photo'?6:0),25,z,p.venue==='photo'?26:40,52,34,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'venue:'+p.venue,p.approach);
   }else if(p.kind==='waystation'){
    buildWaystationDetails(b,x,z,p.amenity,theme);
    const key='amenity:'+p.amenity,hit=w.box(x,31,z,26,64,24,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(p.amenity==='water'?'Free water ↗':'Community board ↗',x,80,z,78,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:130,directory:true});

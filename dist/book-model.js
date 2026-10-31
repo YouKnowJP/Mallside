@@ -1,5 +1,5 @@
 import * as T from './vendor/three.module.js';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=43.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=44.0.0';
 import {isBookProduct,readingGesture} from './book-tools.js?v=38.0.0';
 // Solid adapted books: exact source cover, neutral original back/spine and paper edges.
 export function placeBook(w,p,x,y,z,width,height,parent=w.scene){

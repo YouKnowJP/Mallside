@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "43.0.0",
+  "release": "44.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1983,
-  "uniqueRuntimePhotoFiles": 1961,
+  "runtimePhotoEntries": 1987,
+  "uniqueRuntimePhotoFiles": 1965,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19537,6 +19537,46 @@
       "source": "https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/41-mm-quartz/WAZ1110.FT8023.html",
       "imageUrl": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwa52047a9/TAG_Heuer_Formula_1/WAZ1110.FT8023/WAZ1110.FT8023_Soldier.png?impolicy=TrimRatioResize&width=1200&ratioHeight=5&ratioWidth=4&expansion=true",
       "description": "Formula 1 Date WAZ1110.FT8023 — exact source photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v44-real-133b069c5d45836f9b2d",
+      "path": "assets/photos/v44-real-133b069c5d45836f9b2d.webp",
+      "sha256": "dd480a3ade87c8f279e5a7d65f4ed76bb51a95f97d3af55e9a9c4a5e990f7322",
+      "source": "https://us.mcmworldwide.com/en_US/men/bags/backpacks/stark-side-studs-backpack-in-visetos/MMKEAVE14BK001.html",
+      "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MMKEAVE14BK001_01?&fmt=auto&qlt=default",
+      "description": "Stark Side Studs Backpack in Visetos Black — exact SKU photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v44-real-8c80b3e2c8f29eb3190c",
+      "path": "assets/photos/v44-real-8c80b3e2c8f29eb3190c.webp",
+      "sha256": "4414618d84f33ca0be7b92af0a7a6cd30af312238299d25f069535dd134cf173",
+      "source": "https://us.mcmworldwide.com/en_US/women/bags/totes-shoppers/new-liz-shopper-in-visetos/MWPGSLR02BK001.html",
+      "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MWPGSLR02BK001_01?&fmt=auto&qlt=default",
+      "description": "New Liz Shopper in Visetos Black — exact SKU photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v44-real-bcffc83ef1d8638e7fc8",
+      "path": "assets/photos/v44-real-bcffc83ef1d8638e7fc8.webp",
+      "sha256": "060c17464598cd7298a87c01e6434d9ef3fc006d8471da097a1cc93f078c8bc0",
+      "source": "https://us.mcmworldwide.com/en_US/women/bags/totes-shoppers/new-liz-shopper-in-visetos/MWPGSLR04CO001.html",
+      "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MWPGSLR04CO001_01?&fmt=auto&qlt=default",
+      "description": "New Liz Shopper in Visetos Cognac — exact SKU photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v44-real-ca9f6625c6e7cf3d2c32",
+      "path": "assets/photos/v44-real-ca9f6625c6e7cf3d2c32.webp",
+      "sha256": "104c9065580be5c2929dceff13a3881010688eade8cc37f20fd69c809654cdee",
+      "source": "https://us.mcmworldwide.com/en_US/men/bags/backpacks/stark-side-studs-backpack-in-visetos/MMKEAVE14CO001.html",
+      "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MMKEAVE14CO001_01?&fmt=auto&qlt=default",
+      "description": "Stark Side Studs Backpack in Visetos Cognac — exact SKU photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

@@ -6,4 +6,5 @@ import {VERIFIED_STUDIO_ADDITIONS as V39} from './store-product-additions-v39.js
 import {VERIFIED_TEXTILE_ADDITIONS as V40} from './store-product-additions-v40.js?v=40.0.0';
 import {VERIFIED_KNIT_ADDITIONS as V42} from './store-product-additions-v42.js?v=42.0.0';
 import {VERIFIED_WATCH_ADDITIONS as V43} from './store-product-additions-v43.js?v=43.0.0';
-export const STORE_PRODUCT_SEEDS=[...V11,...V12,...V37,...V38,...V39,...V40,...V42,...V43];
+import {VERIFIED_BAG_ADDITIONS as V44} from './store-product-additions-v44.js?v=44.0.0';
+export const STORE_PRODUCT_SEEDS=[...V11,...V12,...V37,...V38,...V39,...V40,...V42,...V43,...V44];

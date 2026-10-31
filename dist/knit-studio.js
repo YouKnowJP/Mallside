@@ -1,5 +1,5 @@
 import {surfaceTexture} from './scene-finish.js?v=33.0.0';
-import {updateStudioStudy} from './studio-details.js?v=43.0.0';
+import {updateStudioStudy} from './studio-details.js?v=44.0.0';
 
 // Original fixtures and creative samples; the photographed garments remain separate merchandise.
 export function buildKnitStudio(w,st,style){

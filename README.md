@@ -8,11 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v43 — watch studios and sculpture courts
+## v44 — bag studios and photo stops
 
-Four verified TAG Heuer references stock three unfinished shops, with exact source photographs, qualified USD prices and clear case-diameter information. Richer original comparison studios retain earlier material studies. Source-reviewed steel/rubber models and eased wrist inspection bring the collection into the scene; all 23 sculpture alcoves gain detailed plinths and saved sketch markers. Existing purchases and saves remain compatible. See [v43 gameplay](docs/GAMEPLAY-v43.md), [source evidence](docs/research-v43/catalog-evidence.json), [release QA](docs/qa-v43.md) and the [roadmap](ROADMAP.md).
+Four verified MCM variants stock two unfinished shops, with exact SKU photographs, qualified USD references and approximate source dimensions. Original care/packing studios retain earlier material notes. Detailed camera kiosks now offer a free album shortcut and remember the latest portrait from each center, while carried bags settle smoothly after walking. Existing purchases and saves remain compatible. See [v44 gameplay](docs/GAMEPLAY-v44.md), [source evidence](docs/research-v44/catalog-evidence.json), [release QA](docs/qa-v44.md) and the [roadmap](ROADMAP.md).
 
-## Previous update · v41 — working studios and courtyard mosaics
+## Earlier update · v41 — working studios and courtyard mosaics
 
 All 327 unfinished planning shops gain richer original workbenches and a hands-on material study: compare named palettes and finishes, preview them on the physical desk, and save a study for your next visit. All 23 mosaic tables now turn with their controls and remember saved arrangements. Fitting curtains ease by elapsed time, and room changes release procedural finish textures. Existing saves and product collections stay compatible. See [v41 gameplay](docs/GAMEPLAY-v41.md), [release QA](docs/qa-v41.md) and the [roadmap](ROADMAP.md).
 

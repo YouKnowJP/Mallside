@@ -1,9 +1,9 @@
-import {productAppearance} from './product-appearance.js?v=43.0.0';
+import {productAppearance} from './product-appearance.js?v=44.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {addReferenceDetails,addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
 import {buildGarmentModel} from './merchandise-garments.js?v=23.0.0';
-import {buildBagModel} from './merchandise-bags.js?v=23.0.0';
+import {buildBagModel} from './merchandise-bags.js?v=44.0.0';
 
 const clothing=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);

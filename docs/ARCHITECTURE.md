@@ -15,7 +15,7 @@ Mallside is a static browser application. `dist/` contains the editable HTML, CS
 | Validated browser saves, backup rotation and recovery UI | `save-storage.js`, `save-recovery-ui.js`, `app.js` |
 | Local outfit photo binaries | `portrait-store.js` / IndexedDB |
 
-The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=43.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
+The runtime uses vendored Three.js r180. Bundled relative asset/module URLs let the same `dist/` run at `/` or the GitHub Pages `/Mallside/` prefix. Do not introduce origin-root `/assets/...` or `/app.js` paths. Module version query strings are cache keys, not a mandatory deployment version schema. The GitHub migration changes packaging metadata and adds rights links in the menu/footer. The current UI entry uses `app.js?v=44.0.0`; changed module imports share their new cache keys while unchanged modules retain earlier keys. The production artifact bundles these into one content-hashed script.
 
 ## State and saves
 
@@ -140,3 +140,9 @@ Opaque upper garments densify shell rings before retargeting so interpolation fo
 `store-product-additions-v43.js` isolates four exact-SKU official references with watch profiles and photograph provenance. Three newly stocked identities gain `collectionEdition=43`; earlier product records remain unchanged. Collection/study eligibility preserves pending-shop notes. `watch-model.js` constructs source-reviewed original steel/rubber models and merges their static parts by material; all resources remain scene-owned. The existing equipment slot owns the wrist model. `watchGesture` drives an eased lift/hold/return from actual fitting elapsed time, with static reduced motion and the existing camera handoff. Case diameter is explicitly separate from wrist fit.
 
 `sculpture-details.js` adds fixture-bounded details and one reusable marker at each art alcove. Updates read existing `artNotes` for the actual mall and floor, allocate no geometry, and reset on scene teardown. No new state schema, collider, reward or time rule is introduced.
+
+## Bag studios and photo kiosks (v44)
+
+`store-product-additions-v44.js` adds isolated exact-SKU references. `bag-profiles-v44.js` supplies reviewed construction and interpreted axes; published dimension sequences remain explicit, approximate source facts. Separate palette/surface modules preserve all earlier appearance records. Two shops gain `collectionEdition=44`, with source comparisons and retained original material studies. `bag-motion.js` damps sway from real frame time. A zero time step holds the current sway; reduced motion snaps it to the neutral pose.
+
+`photo-kiosk.js` adds camera/backdrop/album detail within existing kiosk footprints. It reads existing current-center `photoAlbum` metadata without altering the save or allocating on updates. A physical album tag and the keyboard-accessible nearby button share the free album route. Kiosk resources reset with scene teardown; no new state schema, reward or photo price is introduced.

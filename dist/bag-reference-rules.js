@@ -1,3 +1,4 @@
+import {V44_BAG_PROFILES} from './bag-profiles-v44.js?v=44.0.0';
 // Construction profiles, not manufacturer CAD or measured dimensions. Every bag SKU gets a profile.
 // Exact photograph colors and foreground measurements are applied by product-appearance separately.
 const BAG_TYPES=new Set(['bag','crossbody','backpack','duffel','wallet']);
@@ -98,6 +99,7 @@ const named={
 
 export function bagProfile(p){
  if(!p||!BAG_TYPES.has(p.type))return null;
+ const reviewed=V44_BAG_PROFILES[p.modelId||p.assetKey||p.id];if(reviewed)return {...reviewed,reference:{...reviewed.reference}};
  const n=(p.name||'').toLowerCase().normalize('NFKC'),b=(p.brand||'').toLowerCase(),m=(p.material||'').toLowerCase(),text=n+' '+m;
  let finish=/suede/.test(text)?'suede':/saffiano/.test(text)?'saffiano':/glazed|brushed leather|patent|mirror|smooth metallic/.test(text)?'glazed':/straw|raffia|rattan|natural.black|beach tote/.test(text)?'raffia':/denim/.test(text)?'denim':/nylon|re.nylon|ripstop|water repellent|water resistant|water.repellant/.test(text)?'nylon':/canvas|jacquard|cotton|monogram|oblique/.test(text)?'canvas':/pebble|grain|foulonn/.test(text)?'pebble':'leather';
  const base={silhouette:'box',aspect:1.45,taper:1,roundness:.17,depthRatio:.30,construction:'soft',carry:p.type==='crossbody'?'crossbody':p.type==='backpack'?'backpack':p.type==='wallet'?'hand':'shoulder',handles:'single',closure:'zip',detail:'edge-stitch',finish,pattern:'plain',modelFamily:'shoulder',sizeClass:/nano|mini|\bxs\b/.test(n)?'mini':/large|\bxl\b|\bl\b|39|50/.test(n)?'large':/small|\bs\b/.test(n)?'small':'medium',source:p.source||null,evidence:'catalog-name-and-material'};

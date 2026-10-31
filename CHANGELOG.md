@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v44.0.0 — Bag studios and photo stops
+
+- Add four official MCM references to two unfinished shops, with exact photos, reviewed construction, source bag formats and qualified dimensions/prices.
+- Add original comparison/care/packing fixtures, retained material studies, richer photo kiosks and a free album route with saved portrait markers.
+- Smooth carried-bag settling and correct the missing garment fallback for empty bag patterns; retain existing saves and earlier product appearances.
+- See [v44 QA](docs/qa-v44.md) for validation.
+
 ## v43.0.0 — Watch studios and sculpture courts
 
 - Add four official exact-SKU TAG Heuer references to three unfinished shops, with source photos, qualified USD prices and clear case-diameter facts.

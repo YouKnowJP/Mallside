@@ -2,6 +2,14 @@
 
 Updated 30 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v44
+
+- Stock two unfinished MCM shops with four exact official selected-color references, reviewed bag construction and qualified source dimensions/prices; preserve earlier product records.
+- Add original care/packing studios and keep saved material studies when the shops gain stock.
+- Furnish all 47 public camera kiosks across 23 floors, add a free accessible album shortcut and reflect the latest current-center portrait.
+- Dampen carried-bag sway by elapsed time, with a gentle stop, paused-state preservation and static reduced motion.
+- See [v44 gameplay](docs/GAMEPLAY-v44.md), [source evidence](docs/research-v44/catalog-evidence.json) and [v44 QA](docs/qa-v44.md).
+
 ## Completed in v43
 
 - Stock three unfinished TAG Heuer identities with four exact official US watch references and photographed SKUs; retain all earlier product records.
@@ -174,7 +182,7 @@ Updated 30 October 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,052 stocked identities, 133 service identities and 413 identities awaiting catalog research**. The remaining 322 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,057 stocked identities, 133 service identities and 408 identities awaiting catalog research**. The remaining 317 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

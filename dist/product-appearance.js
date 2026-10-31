@@ -1,8 +1,8 @@
-import {PRODUCT_PHOTOS} from './product-photos.js?v=43.0.0';
-import {PHOTO_PALETTES} from './photo-palettes.js?v=42.0.0';
-import {PHOTO_SURFACES} from './photo-surfaces.js?v=42.0.0';
-import {garmentProfile} from './garment-reference-rules.js?v=43.0.0';
-import {bagProfile} from './bag-reference-rules.js?v=23.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=44.0.0';
+import {PHOTO_PALETTES} from './photo-palettes.js?v=44.0.0';
+import {PHOTO_SURFACES} from './photo-surfaces.js?v=44.0.0';
+import {garmentProfile} from './garment-reference-rules.js?v=44.0.0';
+import {bagProfile} from './bag-reference-rules.js?v=44.0.0';
 
 export const MODEL_REFERENCES={
  roundmini:{width:28,height:17,depth:10,finish:'nylon',detail:'roundmini',carry:'crossbody',source:'https://www.uniqlo.com/us/en/products/E481610-000/00'},
@@ -21,7 +21,7 @@ export function productAppearance(p){
  else if(/le pliage original l tote/.test(n))exact=MODEL_REFERENCES.pliageL;
  else if(/classic.*11.12/.test(n))exact=MODEL_REFERENCES.classic1112;
  if(!exact&&bag?.reference)exact={...bag.reference,source:bag.reference.source};
- const result={color:palette?.color||p.color||'#697b70',photo:photo?.path,surface,colorEvidence:palette?.reviewed?'reviewed-photograph':palette?'photo-sample':'catalog',finish:bag?.finish||garment.fabric,detail:bag?.detail||'',pattern:bag?.pattern||garment.pattern,carry:bag?.carry,longSleeve:garment?.sleeve==='long',oversized:['relaxed','wide'].includes(garment?.fit),patternScale:bag?.patternScale||(/cassette/.test(n)?.45:1.4),dimensionsVerified:!!exact,source:exact?.source||p.source,garment,bag};
+ const result={color:palette?.color||p.color||'#697b70',photo:photo?.path,surface,colorEvidence:palette?.reviewed?'reviewed-photograph':palette?'photo-sample':'catalog',finish:bag?.finish||garment.fabric,detail:bag?.detail||'',pattern:bag?.pattern??garment?.pattern,carry:bag?.carry,longSleeve:garment?.sleeve==='long',oversized:['relaxed','wide'].includes(garment?.fit),patternScale:bag?.patternScale||(/cassette/.test(n)?.45:1.4),dimensionsVerified:!!exact&&!exact.axesInterpreted,source:exact?.source||p.source,garment,bag};
  if(bag){
   const numeric=n.match(/(?:\s|^)(2[0-9]|3[0-9]|4[0-5])(?:\s|$|\s*\u00b7)/),size=bag.sizeClass;
   result.width=size==='charm'?10:size==='wallet'||p.type==='wallet'?13:size==='luggage'?38:numeric?Number(numeric[1]):/mini|\bxs\b/.test(n)?22:/large|\bl\b|travel/.test(n)?42:bag.silhouette==='tote'?36:bag.silhouette==='backpack'?28:30;

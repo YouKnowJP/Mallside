@@ -1,10 +1,11 @@
+import {smoothBagSway} from './bag-motion.js?v=44.0.0';
 import {bodySectionRadius} from './garment-clearance.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
 import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=40.0.0';
 import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=43.0.0';
-import {productAppearance} from './product-appearance.js?v=43.0.0';
+import {productAppearance} from './product-appearance.js?v=44.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
-import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=43.0.0';
+import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=44.0.0';
 import {addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 
 export function fitScaleForSize(size,usual){const canonical=v=>({XXS:'2XS',XXL:'2XL',XXXL:'3XL','2X':'2XL','3X':'3XL'}[v]||v),sizes=['2XS','XS','S','M','L','XL','2XL','3XL'],a=sizes.indexOf(canonical(size)),b=sizes.indexOf(canonical(usual));if(a>=0&&b>=0)return 1+(a-b)*.035;const n=Number(size)||Number(/^W(\d+)L\d+$/.exec(size)?.[1]),u=Number(usual)||Number(/^W(\d+)L\d+$/.exec(usual)?.[1]);return n&&u?Math.max(.9,Math.min(1.1,Math.sqrt(n/u))):1;}
@@ -125,7 +126,7 @@ export function updateOutfitPose(g,{seated=false,walking=false,distance=0,kind='
   }p.needsUpdate=true;object.geometry.computeVertexNormals();object.geometry.computeBoundingSphere();
  }
  const fit=g.userData.bagFit;
- if(fit){const next=fit.basePosition.clone(),carry=fit.appearance.carry;fit.sway=walking&&!reducedMotion&&!amount?Math.sin(distance/(g.userData.rig?.stride||40)*Math.PI*2)*(carry==='crossbody'?.012:.025):0;fit.model.rotation.z=fit.sway;next.x+=Math.sin(fit.sway)*fit.bodyH;next.y+=(1-Math.cos(fit.sway))*fit.bodyH;if(amount){const park=new T.Vector3(9.5+fit.bodyW/2,seatHeight-g.position.y+.15,1.5);next.lerp(park,amount);}fit.model.rotation.y=carry==='backpack'?Math.PI*(1-amount):0;
+ if(fit){const next=fit.basePosition.clone(),carry=fit.appearance.carry;const target=walking&&!amount?Math.sin(distance/(g.userData.rig?.stride||40)*Math.PI*2)*(carry==='crossbody'?.012:.025):0;fit.sway=smoothBagSway(fit.sway,target,delta,reducedMotion);fit.model.rotation.z=fit.sway;next.x+=Math.sin(fit.sway)*fit.bodyH;next.y+=(1-Math.cos(fit.sway))*fit.bodyH;if(amount){const park=new T.Vector3(9.5+fit.bodyW/2,seatHeight-g.position.y+.15,1.5);next.lerp(park,amount);}fit.model.rotation.y=carry==='backpack'?Math.PI*(1-amount):0;
   if(fit.model.position.distanceToSquared(next)>1e-8||fit.lastPose!==amount||fit.lastSway!==fit.sway){fit.model.position.copy(next);fit.seatPlane=seatHeight-g.position.y;fit.groundPlane=-g.position.y;rebuildStraps(fit,amount);fit.lastPose=amount;fit.lastSway=fit.sway;}
  }
  const eating=['eat','drink','icecream','tea'].includes(kind);g.userData.seatAmount=amount;g.userData.seatHeight=seatHeight;

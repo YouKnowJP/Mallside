@@ -16,7 +16,7 @@ import {physicalProduct} from '../dist/merchandise-3d.js';
 const physical=E.PRODUCTS.filter(physicalProduct),unique=[...new Map(physical.map(p=>[PRODUCT_PHOTOS[p.id].path,p])).values()];
 
 test('every clothing and bag photograph has checksum-bound surface and proportion evidence',()=>{
- assert.equal(unique.length,784);assert.equal(physical.length,3073);
+ assert.equal(unique.length,788);assert.equal(physical.length,3081);
  for(const p of unique){const path=PRODUCT_PHOTOS[p.id].path,s=PHOTO_SURFACES[path];assert.ok(s,p.id);assert.equal(s.sha256,createHash('sha256').update(readFileSync(new URL('../dist/'+path,import.meta.url))).digest('hex').slice(0,16));assert.ok(s.aspect>.2&&s.aspect<3.5);assert.equal(s.grid.length,s.size[0]*s.size[1]);assert.ok(s.colors.every(c=>/^#[0-9a-f]{6}$/.test(c)));assert.ok([...s.grid].every(c=>'0123456789abcdefghijklmnopqrstuv'.indexOf(c)<s.colors.length));assert.ok(s.region[0]<s.region[2]&&s.region[1]<s.region[3]);assert.ok(s.region.every(n=>n>0&&n<1));}
 });
 test('all clothing has actual construction profiles, including dresses, skirts, swimwear and jumpsuits formerly typed as shirts',()=>{
@@ -26,7 +26,7 @@ test('all clothing has actual construction profiles, including dresses, skirts, 
 });
 test('all bag photos have named construction rules and more than the former six researched models',()=>{
  const families=new Set(),shapes=new Set();let count=0;for(const p of unique){const b=bagProfile(p);if(!b)continue;count++;families.add(b.modelFamily);shapes.add(b.silhouette);assert.notEqual(b.modelFamily,'shoulder',p.name);assert.ok(b.aspect>.4&&b.aspect<3);assert.ok(['hand','shoulder','crossbody','backpack'].includes(b.carry));const a=productAppearance(p);assert.ok(a.width>5&&a.height>3&&a.depth>.5);}
- assert.equal(count,184);assert.ok(families.size>60);assert.ok(shapes.size>=12);
+ assert.equal(count,188);assert.ok(families.size>60);assert.ok(shapes.size>=12);
 });
 test('photo color and print samples wrap real mesh surfaces with upright texture coordinates',()=>{
  const alphabet='0123456789abcdefghijklmnopqrstuv';for(const p of unique.filter((_,i)=>i%17===0)){const a=productAppearance(p),m=referenceMaterial(a);if(['back','detail'].includes(a.garment?.photoView)){assert.equal(m.map.image.width,128);}else{assert.deepEqual([m.map.image.width,m.map.image.height],a.surface.size);const first=parseInt(a.surface.colors[alphabet.indexOf(a.surface.grid[0])].slice(1),16),i=(a.surface.size[1]-1)*a.surface.size[0]*4;assert.deepEqual(Array.from(m.map.image.data.slice(i,i+3)),[first>>16&255,first>>8&255,first&255]);assert.equal(m.map.repeat.x,1);assert.equal(m.map.repeat.y,1);}m.map.dispose();m.bumpMap.dispose();m.dispose();}

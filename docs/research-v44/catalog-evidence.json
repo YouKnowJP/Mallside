@@ -1,0 +1,120 @@
+{
+  "edition": 44,
+  "checkedOn": "2026-10-30",
+  "method": "Live official MCM US pages via Firecrawl. Exact official image-service URLs retrieved with source-page referrer; reviewed front photographs, body crops and source dimensions.",
+  "rights": "Source provenance only; photograph permission is not recorded.",
+  "products": [
+    {
+      "id": "v44-real-8c80b3e2c8f29eb3190c",
+      "sku": "MWPGSLR02BK001",
+      "source": "https://us.mcmworldwide.com/en_US/women/bags/totes-shoppers/new-liz-shopper-in-visetos/MWPGSLR02BK001.html",
+      "checkedOn": "2026-10-30",
+      "referenceUSD": 830,
+      "format": "Medium",
+      "color": "Black",
+      "dimensions": {
+        "publishedDimensions": "6.7 × 11.8 × 13.8 in (source sequence)",
+        "handleDrop": "10.4 in",
+        "format": "Medium",
+        "axesNote": "Published dimensions are approximate. Drawing axes and virtual carry are interpreted from the photograph, not measured capacity or physical fit."
+      },
+      "sourceMarkdownSHA256": "52c3b2de6beed52fdcceee91cd67b80a8dfddb2060ddf6bbaf649b2908a3d9d3",
+      "sourceImageSHA256": "78b4172dfe97e20d155ce98c0221eb161d64e4e12a3029f9a92411179b91c156",
+      "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MWPGSLR02BK001_01?&fmt=auto&qlt=default",
+      "runtimePhoto": "assets/photos/v44-real-8c80b3e2c8f29eb3190c.webp",
+      "runtimePhotoSHA256": "4414618d84f33ca0be7b92af0a7a6cd30af312238299d25f069535dd134cf173",
+      "photoRegion": [
+        0.29,
+        0.52,
+        0.71,
+        0.75
+      ],
+      "sourceNotices": "Both availability alternatives and a non-returnability notice appear in page text. Actual stock and retailer return eligibility are not asserted."
+    },
+    {
+      "id": "v44-real-bcffc83ef1d8638e7fc8",
+      "sku": "MWPGSLR04CO001",
+      "source": "https://us.mcmworldwide.com/en_US/women/bags/totes-shoppers/new-liz-shopper-in-visetos/MWPGSLR04CO001.html",
+      "checkedOn": "2026-10-30",
+      "referenceUSD": 830,
+      "format": "Medium",
+      "color": "Cognac",
+      "dimensions": {
+        "publishedDimensions": "6.7 × 11.8 × 13.8 in (source sequence)",
+        "handleDrop": "10.4 in",
+        "format": "Medium",
+        "axesNote": "Published dimensions are approximate. Drawing axes and virtual carry are interpreted from the photograph, not measured capacity or physical fit."
+      },
+      "sourceMarkdownSHA256": "a418ac82555d7a40ceeb6b57f2e465fa3e5a1a10bbd309c4d4bd60954b3d76bd",
+      "sourceImageSHA256": "12722ddd10139f3df78733191112844c770600dd901862af92e974d055c9d90e",
+      "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MWPGSLR04CO001_01?&fmt=auto&qlt=default",
+      "runtimePhoto": "assets/photos/v44-real-bcffc83ef1d8638e7fc8.webp",
+      "runtimePhotoSHA256": "060c17464598cd7298a87c01e6434d9ef3fc006d8471da097a1cc93f078c8bc0",
+      "photoRegion": [
+        0.29,
+        0.52,
+        0.71,
+        0.75
+      ],
+      "sourceNotices": "Both availability alternatives and a non-returnability notice appear in page text. Actual stock and retailer return eligibility are not asserted."
+    },
+    {
+      "id": "v44-real-133b069c5d45836f9b2d",
+      "sku": "MMKEAVE14BK001",
+      "source": "https://us.mcmworldwide.com/en_US/men/bags/backpacks/stark-side-studs-backpack-in-visetos/MMKEAVE14BK001.html",
+      "checkedOn": "2026-10-30",
+      "referenceUSD": 1330,
+      "format": "Small-Medium",
+      "color": "Black",
+      "dimensions": {
+        "publishedDimensions": "5.1 × 11.8 × 15.0 in (source sequence)",
+        "handleDrop": "3 in",
+        "format": "Small-Medium",
+        "axesNote": "Published dimensions are approximate. Drawing axes and virtual carry are interpreted from the photograph, not measured capacity or physical fit."
+      },
+      "sourceMarkdownSHA256": "792604feca68e4a19f0707b11ffec0fa7cfd57f2bc7ba81e349cf30da2c25c3d",
+      "sourceImageSHA256": "d22453f45bd96be4392449f3ee8051c3d466122d72bac5a45e76cb7399c1ddf3",
+      "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MMKEAVE14BK001_01?&fmt=auto&qlt=default",
+      "runtimePhoto": "assets/photos/v44-real-133b069c5d45836f9b2d.webp",
+      "runtimePhotoSHA256": "dd480a3ade87c8f279e5a7d65f4ed76bb51a95f97d3af55e9a9c4a5e990f7322",
+      "photoRegion": [
+        0.31,
+        0.3,
+        0.67,
+        0.68
+      ],
+      "sourceNotices": "Both availability alternatives and a non-returnability notice appear in page text. Actual stock and retailer return eligibility are not asserted."
+    },
+    {
+      "id": "v44-real-ca9f6625c6e7cf3d2c32",
+      "sku": "MMKEAVE14CO001",
+      "source": "https://us.mcmworldwide.com/en_US/men/bags/backpacks/stark-side-studs-backpack-in-visetos/MMKEAVE14CO001.html",
+      "checkedOn": "2026-10-30",
+      "referenceUSD": 1330,
+      "format": "Small-Medium",
+      "color": "Cognac",
+      "dimensions": {
+        "publishedDimensions": "5.1 × 11.8 × 15.0 in (source sequence)",
+        "handleDrop": "3 in",
+        "format": "Small-Medium",
+        "axesNote": "Published dimensions are approximate. Drawing axes and virtual carry are interpreted from the photograph, not measured capacity or physical fit."
+      },
+      "sourceMarkdownSHA256": "c1d559982eb9007395d7adaf4a18c6082e7c28099f1c202cbeb08fe836e81c19",
+      "sourceImageSHA256": "5d85ec78f67a4272a086ca6d7f7b95fca29cbd119eb53bc02706645e89bebdc6",
+      "imageUrl": "https://images.mcmworldwide.com/i/mcmworldwide/MMKEAVE14CO001_01?&fmt=auto&qlt=default",
+      "runtimePhoto": "assets/photos/v44-real-ca9f6625c6e7cf3d2c32.webp",
+      "runtimePhotoSHA256": "104c9065580be5c2929dceff13a3881010688eade8cc37f20fd69c809654cdee",
+      "photoRegion": [
+        0.31,
+        0.3,
+        0.67,
+        0.68
+      ],
+      "sourceNotices": "Both availability alternatives and a non-returnability notice appear in page text. Actual stock and retailer return eligibility are not asserted."
+    }
+  ],
+  "previousCatalog": {
+    "count": 8758,
+    "sortedProductIdsSHA256": "8e88ab02a51bf6e3eee0687ab994bf457d2f21569301c7962db42695bcbc5e03"
+  }
+}

@@ -37,6 +37,8 @@ export function buildBagModel(b,p,a,{bodyOnly=false}={}){
   panel(0,-h*.18,d/2+.7,w*.72,h*.32,Math.max(1,d*.14),2,trim);box(0,-h*.02,d/2+2,w*.58,.35,.4,metal);
   if(!bodyOnly)for(const sign of [-1,1])band([[sign*w*.25,top-2,-d/2],[sign*w*.32,-h*.1,-d/2-7],[sign*w*.24,bottom+2,-d/2]],2.1);
  }
+ if(B.modelFamily==='stark-v44'){for(const sign of [-1,1]){box(sign*(w/2+.25),-h*.15,0,.5,h*.3,d*.7,trim);for(let row=0;row<3;row++)for(const zz of [-d*.2,d*.2]){const stud=mesh(new T.ConeGeometry(.7,.6,4),metal);stud.position.set(sign*(w/2+.8),-h*.23+row*h*.08,zz);stud.rotation.z=-sign*Math.PI/2;}}box(0,h*.28,d/2+.6,3,2,.25,metal);}
+ if(B.modelFamily==='liz-v44'){for(const sign of [-1,1])tube([[sign*w*.21,top-2,d/2+.4],[sign*w*.2,bottom+2,d/2+.4]],.13,seam);box(0,top-4,d/2+.5,2.4,2.5,.3,metal);for(const sign of [-1,1])box(sign*w*.3,bottom-.1,0,3,.8,d*.5,trim);}
  if(!bodyOnly&&B.handles!=='none'){
   const drop=a.handleDrop||(B.carry==='hand'?9:22),double=B.handles==='double';
   for(const z of double?[-d/2+.7,d/2-.7]:[0]){const pts=[[-w*.29,top-1,z],[-w*.22,top+drop*.92,z],[w*.22,top+drop*.92,z],[w*.29,top-1,z]];band(pts,B.detail==='bamboo-handle'?2.1:1.6);if(B.detail==='bamboo-handle')for(let i=1;i<8;i++){const x=-w*.23+i*w*.055;ring(x,top+drop*.96,z,.8,.22,metal);}}
