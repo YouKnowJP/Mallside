@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v46 — tailoring studios and tea lounges
+## v47 — collectible studios and mosaic courts
+
+Four unfinished Hot Topic shops gain verified Sanrio plush references, solid models and source-qualified prices. Original comparison studios retain material notes, while eased two-hand inspection and collection-room shelves make the new finds more tangible. All 23 mosaic courts gain notebook detail, free saved-discovery access and finite, smoother tile turns, with fewer rendering calls. Existing saves and purchases remain compatible. See [v47 gameplay](docs/GAMEPLAY-v47.md), [source evidence](docs/research-v47/catalog-evidence.json), [release QA](docs/qa-v47.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v46 — tailoring studios and tea lounges
 
 Three unfinished Sandro shops gain four exact photographed references, qualified standard/sale USD offers and source size menus. Original seam/cuff/button studios retain saved material studies. All ten tea lounges gain detailed counters, free recipe cards and saved local tea memories. Smoother sipping, static reduced motion and lounge-specific bench/camera framing improve quiet breaks. Existing saves and purchases remain compatible. See [v46 gameplay](docs/GAMEPLAY-v46.md), [source evidence](docs/research-v46/catalog-evidence.json), [release QA](docs/qa-v46.md) and the [roadmap](ROADMAP.md).
 

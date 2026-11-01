@@ -1,0 +1,91 @@
+{
+  "checkedOn": "2026-10-31",
+  "primarySource": "Official Hot Topic US product pages fetched live and exact photographs from its official image service.",
+  "qualification": "Dated product references; no branch inventory, wearable fit, unlisted measurements, return rights or photo licensing is inferred.",
+  "products": [
+    {
+      "id": "v47-real-0127e3a6c29629f302f7",
+      "sku": "36396339",
+      "name": "Sanrio Japan Originals Hello Kitty Plush",
+      "color": "White / pink overalls / red bow",
+      "referenceUSD": 27.92,
+      "originalUSD": 34.9,
+      "sizes": [
+        "One size"
+      ],
+      "source": "https://www.hottopic.com/product/sanrio-japan-originals-hello-kitty-plush/36396339.html",
+      "checkedOn": "2026-10-31",
+      "construction": "Polyester plush. Pink overalls, yellow buttons and a red bow.",
+      "dimensionNote": "Source does not publish dimensions; game proportions are adapted.",
+      "offerQualification": "Official Hot Topic US automatic sale reference, reduced from $34.90. Hot Cash and promotional-code reductions are excluded. Shipping, branch inventory and real return eligibility are excluded. Game stock, demonstrations and returns are simulated.",
+      "sourcePhoto": "https://cdn.media.amplience.net/s/hottopic/36396334_hi?$productMainDesktop$&fmt=auto",
+      "sourcePhotoSHA256": "fe3c45d039fe8ff316e6d4609adc0cbac1820707790ae059736449fe225ec8d6",
+      "runtimePhoto": "assets/photos/v47-real-0127e3a6c29629f302f7.webp",
+      "runtimePhotoSHA256": "7e3e5c05793c8824c9a002fffdf8bcf21f7c344efd43bb0b932e1d57ac60ea08",
+      "sourceMainContentSHA256": "7f3020701169e97cfca1feeef49afcad6fbc5bc8f8a9c98a4d553a93caa348c1"
+    },
+    {
+      "id": "v47-real-c13b211e85270b6adf24",
+      "sku": "36396342",
+      "name": "Sanrio Japan Originals Cinnamoroll Plush",
+      "color": "Ivory / blue eyes / pink cheeks",
+      "referenceUSD": 36.9,
+      "originalUSD": null,
+      "sizes": [
+        "One size"
+      ],
+      "source": "https://www.hottopic.com/product/sanrio-japan-originals-cinnamoroll-plush/36396342.html",
+      "checkedOn": "2026-10-31",
+      "construction": "Polyester plush. Long floppy ears, blue eyes and pink cheeks. Source lists an approximate 6-inch size.",
+      "dimensionNote": "Source lists approximately 6 inches; no dimension axis is specified.",
+      "offerQualification": "Official Hot Topic US listed USD reference; Hot Cash and promotional-code reductions are excluded. Shipping, branch inventory and real return eligibility are excluded. Game stock, demonstrations and returns are simulated.",
+      "sourcePhoto": "https://cdn.media.amplience.net/s/hottopic/36396337_hi?$productMainDesktop$&fmt=auto",
+      "sourcePhotoSHA256": "5aa611eff9e8426c1373dbd637e8a483524216f010e5d92448f48c837d5be91d",
+      "runtimePhoto": "assets/photos/v47-real-c13b211e85270b6adf24.webp",
+      "runtimePhotoSHA256": "2751fca12ea6e18e9ef32ebc4ed499441ffea2590af536be977ead4b7d97a0e5",
+      "sourceMainContentSHA256": "5c40a7872e59c057ce645d58486d37eaff94fef10173acfd59ded31934404982"
+    },
+    {
+      "id": "v47-real-2acd1c7934cb3d23e817",
+      "sku": "36396343",
+      "name": "Sanrio Japan Originals Kuromi Plush",
+      "color": "White / black hood / pink skull",
+      "referenceUSD": 39.9,
+      "originalUSD": null,
+      "sizes": [
+        "One size"
+      ],
+      "source": "https://www.hottopic.com/product/sanrio-japan-originals-kuromi-plush/36396343.html",
+      "checkedOn": "2026-10-31",
+      "construction": "Polyester plush. Black pointed hood, pink skull and collar bobbles.",
+      "dimensionNote": "Source does not publish dimensions; game proportions are adapted.",
+      "offerQualification": "Official Hot Topic US listed USD reference; Hot Cash and promotional-code reductions are excluded. Shipping, branch inventory and real return eligibility are excluded. Game stock, demonstrations and returns are simulated.",
+      "sourcePhoto": "https://cdn.media.amplience.net/s/hottopic/36396338_hi?$productMainDesktop$&fmt=auto",
+      "sourcePhotoSHA256": "f84beb5b86aa4c0e18a22a9b03fa2da0ea14fee57af4cc79caf1574383a2f521",
+      "runtimePhoto": "assets/photos/v47-real-2acd1c7934cb3d23e817.webp",
+      "runtimePhotoSHA256": "21b3eb474ea4ed477031de90f5cb30cfcbe7d47dc2ed3da52b79196bfc31eb6d",
+      "sourceMainContentSHA256": "f71910f20f6503ef23098ceef6f9d625d28a2169f81b84df6dbc74119689172a"
+    },
+    {
+      "id": "v47-real-67d2dd5c73c97779a1aa",
+      "sku": "36396340",
+      "name": "Sanrio Japan Originals My Melody Plush",
+      "color": "White / pink hood / satin bow",
+      "referenceUSD": 36.9,
+      "originalUSD": null,
+      "sizes": [
+        "One size"
+      ],
+      "source": "https://www.hottopic.com/product/sanrio-japan-originals-my-melody-plush/36396340.html",
+      "checkedOn": "2026-10-31",
+      "construction": "Polyester plush. Pink hood, folded ear and a satin bow.",
+      "dimensionNote": "Source does not publish dimensions; game proportions are adapted.",
+      "offerQualification": "Official Hot Topic US listed USD reference; Hot Cash and promotional-code reductions are excluded. Source shipping stock was low when checked. Shipping, branch inventory and real return eligibility are excluded. Game stock, demonstrations and returns are simulated.",
+      "sourcePhoto": "https://cdn.media.amplience.net/s/hottopic/36396335_hi?$productMainDesktop$&fmt=auto",
+      "sourcePhotoSHA256": "6c94ef8459851b44d696a28b52f71d24e58aa4feea31d8430e03a393d99cd7c2",
+      "runtimePhoto": "assets/photos/v47-real-67d2dd5c73c97779a1aa.webp",
+      "runtimePhotoSHA256": "6c8dc9aa4381196d8db9a76ee6b55b13ea1c1abc4d355900c54b699622819870",
+      "sourceMainContentSHA256": "b202158dfc3f4897a60bd9eed926abcb8cbbc631199ae1cde3ce4a50a26a39e5"
+    }
+  ]
+}

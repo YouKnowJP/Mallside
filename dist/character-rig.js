@@ -1,3 +1,4 @@
+import {collectibleGesture} from './collectible-tools.js?v=47.0.0';
 import {consumptionPose} from './consumption-motion.js?v=46.0.0';
 import {flowerGesture} from './flower-motion.js?v=45.0.0';
 import {createWatchModel} from './watch-model.js?v=43.0.0';
@@ -76,6 +77,7 @@ export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=fal
  if(kind==='watchfit'){const lift=watchGesture(time,reducedMotion);solveArmToGrip(g,1,28+8*lift,7+3*lift,6.5-6*lift);solveArmToGrip(g,0,28+5*lift,7+4*lift,-6.5+5*lift);g.userData.limbs[1].userData.hand.rotation.y=-.5*lift;g.userData.limbs[0].userData.hand.rotation.z=.2*lift;}
  if(kind==='framefit'){const r=frameGesture(time,reducedMotion);for(let i=0;i<2;i++)solveArmToGrip(g,i,28.4+16.5*r,8-4.3*r,(i?1:-1)*(6.5-3.1*r));}
  if(kind==='flowers'){const r=flowerGesture(time,reducedMotion);for(let i=0;i<2;i++)solveArmToGrip(g,i,30.5+r*.4,11,(i?1:-1)*4.8);}
+ if(kind==='collectible'){const r=collectibleGesture(time,reducedMotion).reach;for(let i=0;i<2;i++)solveArmToGrip(g,i,30.5+r*.7,11,(i?1:-1)*4.2);}
  if(kind==='read'){const r=readingGesture(time,reducedMotion).reach;solveArmToGrip(g,0,31.5,10.5);solveArmToGrip(g,1,31.8+r*.8,10.5,6.5-r*4);}
  if(carrying&&(move||!kind)){solveArmToGrip(g,1,28.5,7);}
  if(['eat','drink','icecream','tea'].includes(kind)){const sip=consumptionPose(kind,time,reducedMotion).lift;solveArmToGrip(g,1,36.5+7.2*sip,8-1.8*sip);g.userData.limbs[1].rotation.z=0;}

@@ -158,3 +158,9 @@ Opaque upper garments densify shell rings before retargeting so interpolation fo
 `store-product-additions-v46.js` and separate photo/garment overrides isolate four exact selected-color Sandro references. Three shops gain `collectionEdition=46`; `tailoring-studio.js` reuses compatible material studies and existing collision footprints. All earlier product/appearance records remain unchanged.
 
 `tea-lounge.js` batches original counters into public details and renders a free current-recipe/current-center memory card from existing activity state. Marker updates reuse materials. `consumption-motion.js` supplies continuous lift/hold/lower/rest poses and static reduced motion; actual consumption uses elapsed animation time, stows/restores purchases and tilts cups in shopper space. Tea selects its own lounge bench and hides obstructing labels during the close-up. No save-schema or map-revision change is required.
+
+## Collectible studios and mosaic courts (v47)
+
+`store-product-additions-v47.js` adds four merchant-scoped, unsized Hot Topic references. `plush-model.js` builds source-reviewed original solid models through the existing physical merchandise, carrying and home-shelf paths. `collectible-tools.js` supplies factual source notes and eased inspection poses; `collectible-studio.js` retains compatible material studies. No new save fields or economy rules are introduced.
+
+`detail-instances.js` batches colored fixed details. The mosaic study uses five drawables, including independently rotating tile groups and a saved-discovery marker inside its prior 30-unit footprint. Tile transitions use explicit monotonic time and finish in 360ms; reduced motion applies the target directly. The free nearby notebook opens existing commons records.

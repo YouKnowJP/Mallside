@@ -3,15 +3,15 @@ import {buildFlowerKiosk} from './flower-kiosk.js?v=45.0.0';
 import {buildPhotoKiosk} from './photo-kiosk.js?v=44.0.0';
 import {buildSculptureDetails} from './sculpture-details.js?v=43.0.0';
 import {buildReadingDetails} from './reading-details.js?v=42.0.0';
-import {buildMosaicStudy} from './mosaic-details.js?v=41.0.0';
+import {buildMosaicStudy} from './mosaic-details.js?v=47.0.0';
 import {buildWaystationDetails} from './waystation-details.js?v=40.0.0';
 import {buildGardenStudy} from './garden-details.js?v=39.0.0';
 import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=33.0.0';
 import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
-import {retailIdentity,drawRetailSign} from './retail-identity.js?v=40.0.0';
+import {retailIdentity,drawRetailSign} from './retail-identity.js?v=47.0.0';
 import * as T from './vendor/three.module.js';
 import {themeFor,facadeFrame} from './mall-design.js?v=35.0.0';
-import {brandDesign} from './brand-designs.js?v=40.0.0';
+import {brandDesign} from './brand-designs.js?v=47.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
 class Details{

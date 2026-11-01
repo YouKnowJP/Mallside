@@ -1,4 +1,4 @@
-import {retailIdentity,windowAssortment} from './retail-identity.js?v=40.0.0';
+import {retailIdentity,windowAssortment} from './retail-identity.js?v=47.0.0';
 import {facadeFrame} from './mall-design.js?v=35.0.0';
 import * as T from './vendor/three.module.js';
 
@@ -9,7 +9,7 @@ export function buildWindowDisplay(w,store,products,photos){
   const x=(i?1:-1)*f.width*.29,z=f.depth/2-9,wearable=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type),jewelry=['ring','bracelet','watch','necklace','earrings'].includes(p.type);
   w.box(x,5,z,width,10,14,style.fixture,group);w.box(x,10.5,z,width+1,1,15,style.trim,group);
   if(wearable){const mannequin=new T.Group();mannequin.position.set(x-6,11,z);group.add(mannequin);w.cyl(0,17,0,1,34,'#b7afa0',mannequin);w.box(0,22,0,9,16,5,p.color||style.accent,mannequin);w.ball(0,34,0,4,'#ddd9cd',mannequin);for(const dx of [-3,3])w.box(dx,8,0,3,16,4,'#ded9cb',mannequin);w.photo(p,x+6,30,z+3,width*.58,27,group);}
-  else{if(jewelry)w.box(x,14,z,18,5,12,style.accent,group);w.photo(p,x,32,z+3,width-2,34,group);}
+  else{if(jewelry)w.box(x,14,z,18,5,12,style.accent,group);const display=w.photo(p,x,p.plushProfile?20.5:32,z+3,width-2,p.plushProfile?19:34,group);if(p.plushProfile)display.position.y=11;}
   const glass=w.box(x,33,z+5,width+2,43,1,w.mat('#c7e2dc',{transparent:true,opacity:.075,depthWrite:false}),group);glass.castShadow=false;
   w.box(x,57,z+3,width,2,4,'#ead8b1',group);
  }

@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v47.0.0 — Collectible studios and mosaic courts
+
+- Stock four unfinished Hot Topic shops with four exact photographed Sanrio plush references, unsized formats and qualified sale/listed USD offers.
+- Add original solid models and comparison studios, retained material studies, eased two-hand inspection and collection-room shelf models.
+- Detail all 23 mosaic courts, add free discovery-notebook access and show each floor's saved discovery.
+- Batch mosaic construction and finish tile turns in a finite 360ms, with static reduced motion and unchanged routes/rewards.
+- See [v47 QA](docs/qa-v47.md) for validation.
+
 ## v46.0.0 — Tailoring studios and tea lounges
 
 - Stock three Sandro shops with four exact official references, source size menus, qualified standard/sale USD prices and matching packshots.

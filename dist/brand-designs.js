@@ -3,6 +3,7 @@ import {merchantIdentity} from './merchant-identity.js?v=23.0.0';
 // Original playable interpretations of brand store language, not measured branch replicas.
 const make=(layout,pattern,floor,wall,fixture,accent,trim,feature,title,source='')=>({layout,pattern,floor,wall,fixture,accent,trim,feature,title,source});
 export const BRAND_DESIGNS={
+ hottopic:make('toys','tile','#b9b6bc','#45414c','#625a69','#c896ae','#b9aab9','toy-niches','Original collectible & source gallery'),
  cottonon:make('folded','wood','#c3ac89','#ece6da','#a78d6b','#4c6874','#716452','fold-wall','Original denim & cotton studio'),
  aritzia:make('atelier','stone','#d9d0bf','#efeadf','#b3a48a','#6e7565','#b3a58e','textile-wall','Original jersey & source atelier'),
  apple:make('forum','terrazzo','#deded9','#f2f2ed','#cfab78','#353a38','#d4d4cf','screen','Oak tables & hands-on displays','https://www.apple.com/retail/'),

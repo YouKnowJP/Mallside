@@ -1,6 +1,14 @@
 # Mallside development roadmap
 
-Updated 31 October 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+Updated 1 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+
+## Completed in v47
+
+- Stock four unfinished Hot Topic shops with four exact Sanrio plush references, selected photographs, unsized formats and qualified dated prices.
+- Add solid collectible models, original comparison studios, retained material notes and eased two-hand inspection; preserve purchase, refund and shelf-display rules.
+- Refine all 23 mosaic courts with original inset/notebook details, free saved-discovery access and floor-scoped markers.
+- Batch fixed mosaic details and use finite 360ms tile turns, preserving footprints, puzzles, rewards and reduced motion.
+- See [v47 gameplay](docs/GAMEPLAY-v47.md), [source evidence](docs/research-v47/catalog-evidence.json) and [v47 QA](docs/qa-v47.md).
 
 ## Completed in v46
 
@@ -198,7 +206,7 @@ Updated 31 October 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,067 stocked identities, 133 service identities and 398 identities awaiting catalog research**. The remaining 307 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,071 stocked identities, 133 service identities and 394 identities awaiting catalog research**. The remaining 303 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 
