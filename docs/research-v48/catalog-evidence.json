@@ -1,0 +1,107 @@
+{
+  "version": 48,
+  "checkedOn": "2026-11-01",
+  "merchant": "Arhaus US",
+  "scope": "Two previously pending Arhaus identities; original interiors, not measured branch replicas.",
+  "products": [
+    {
+      "id": "v48-real-eb936fe95134d4669a1c",
+      "sku": "6510397BRV27",
+      "source": "https://www.arhaus.com/products/manton-vase?variant=45513980903595",
+      "checkedOn": "2026-11-01",
+      "selectedReference": "Small",
+      "sourceColor": "Macadamia",
+      "photoReviewedColor": "Macadamia",
+      "referenceUSD": 40,
+      "originalUSD": 50,
+      "sourceDimensions": "13.78\" Height x 7.48\" Diameter",
+      "sourceMarkdownSHA256": "532d85f2391b1a2b8ba8479e5330a66047a17f08b1e63ec80087d7abedda51bf",
+      "photoURL": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/6510397BRV43_O250627.jpg?v=1770819366",
+      "photoSelectionBasis": "Merchant page data associates this shared hero photograph with the selected Small/Macadamia SKU; its historical image filename contains BRV43. It does not establish a measured replica.",
+      "originalPhotoSHA256": "768e8af220495401e9a48aa8cec10e54a1ff1a6e58d2db7871b0f765bc73fe70",
+      "originalPhotoPixels": [
+        3360,
+        2520
+      ],
+      "runtimePhoto": "assets/photos/v48-real-eb936fe95134d4669a1c.webp",
+      "runtimePhotoSHA256": "290beb19d5d8cbcd24b3e738612abcfe83c9650d4c93632228552a8a76eb506f",
+      "notes": "Photographs are provenance references, not a license grant. Online offers do not guarantee branch stock or real return rights."
+    },
+    {
+      "id": "v48-real-162009572b31ca2bdfd2",
+      "sku": "651920D0030",
+      "source": "https://www.arhaus.com/products/eva-bud-vase-1?variant=44825725173931",
+      "checkedOn": "2026-11-01",
+      "selectedReference": "One size",
+      "sourceColor": "Taupe",
+      "photoReviewedColor": "Taupe",
+      "referenceUSD": 40,
+      "originalUSD": null,
+      "sourceDimensions": "10\" Height x 7\" Diameter",
+      "sourceMarkdownSHA256": "4f0aaeb3cfc984b03cda6ff30de3988b8ead21f2864109ab47c8c680743504ea",
+      "photoURL": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/651920D0030_NN250820_1edaf7fb-f0b8-4528-8ffb-5d56959f8ef4.jpg?v=1770850106",
+      "photoSelectionBasis": "Merchant selected-SKU hero photograph, visually reviewed; solid game geometry is an original interpretation.",
+      "originalPhotoSHA256": "eea339e395c3b93004ece014773afad05f305886b3d6ee3610ccd7c5d37f6baf",
+      "originalPhotoPixels": [
+        5682,
+        4262
+      ],
+      "runtimePhoto": "assets/photos/v48-real-162009572b31ca2bdfd2.webp",
+      "runtimePhotoSHA256": "6b6bc6b93adf99703ef0b6ddc6787225b671874c4b76961a7daf5b451005a343",
+      "notes": "Photographs are provenance references, not a license grant. Online offers do not guarantee branch stock or real return rights."
+    },
+    {
+      "id": "v48-real-4b807973802ddfd86268",
+      "sku": "651920V1024",
+      "source": "https://www.arhaus.com/products/meadow-vase?variant=42845011378347",
+      "checkedOn": "2026-11-01",
+      "selectedReference": "Small",
+      "sourceColor": null,
+      "photoReviewedColor": "Off-white \u00b7 photograph",
+      "referenceUSD": 80,
+      "originalUSD": null,
+      "sourceDimensions": "5.51\" Height x 10.6\" Diameter",
+      "sourceMarkdownSHA256": "b2c82064d329b01a3fb718d0989ec39c156d92bd15f93734384e844d6c12087c",
+      "photoURL": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/651920V1024_NZ250820.jpg?v=1770819306",
+      "photoSelectionBasis": "Merchant selected-SKU hero photograph, visually reviewed; solid game geometry is an original interpretation.",
+      "originalPhotoSHA256": "abd63b2b42e7cbdbbe1b589e3bec68fa2c2f24ef464d1355f53342158e564448",
+      "originalPhotoPixels": [
+        5682,
+        4262
+      ],
+      "runtimePhoto": "assets/photos/v48-real-4b807973802ddfd86268.webp",
+      "runtimePhotoSHA256": "b816d2b6714091905753a8cae5b6b8fab1795f46b2c5a804f56a9ae09a2fa61c",
+      "notes": "Photographs are provenance references, not a license grant. Online offers do not guarantee branch stock or real return rights."
+    },
+    {
+      "id": "v48-real-3c0109a322fde864bc3a",
+      "sku": "6510397BRV41",
+      "source": "https://www.arhaus.com/products/bronwen-short-jug-vase?variant=46281077850283",
+      "checkedOn": "2026-11-01",
+      "selectedReference": "One size",
+      "sourceColor": null,
+      "photoReviewedColor": "Cream / speckled base \u00b7 photograph",
+      "referenceUSD": 135,
+      "originalUSD": 180,
+      "sourceDimensions": "9.5\" Height x 10.25\" Diameter",
+      "sourceMarkdownSHA256": "97c5bd1340758a66d00c12a8fdaa88ea60e75abc933d4a649f38017b5f53444c",
+      "photoURL": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/6510397BRV41_CJ260106.jpg?v=1772840792",
+      "photoSelectionBasis": "Merchant selected-SKU hero photograph, visually reviewed; solid game geometry is an original interpretation.",
+      "originalPhotoSHA256": "f6f597fcc4d16f03feb766abb889f8ee46fa4b1e44e6159957d683e594fe712f",
+      "originalPhotoPixels": [
+        3360,
+        2520
+      ],
+      "runtimePhoto": "assets/photos/v48-real-3c0109a322fde864bc3a.webp",
+      "runtimePhotoSHA256": "578329de92964145842503196df67a1fca9e7f1ac99143e8f587819f33d4dd47",
+      "notes": "Photographs are provenance references, not a license grant. Online offers do not guarantee branch stock or real return rights."
+    }
+  ],
+  "previousCatalog": {
+    "count": 8822,
+    "sourceCommit": "8deff5c4a053e544399fe791906c821835683ba5",
+    "sortedProductIdsSHA256": "aa5b4cc8a792db64aec61638a4f0f9c477b419b34fa3820c9bcf750f734cd57b",
+    "productAndAppearanceSnapshotSHA256": "0a53b7c14c596b9e4e5c1827c788ab0cfaac8923bc3d8f1789c0cb8cbc7f5847",
+    "validation": "Each previous product and appearance profile was compared as normalized JSON against its baseline before the source freeze; all 8,822 match."
+  }
+}

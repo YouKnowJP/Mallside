@@ -1,3 +1,4 @@
+import {VERIFIED_CERAMIC_ADDITIONS as V48} from './store-product-additions-v48.js?v=48.0.0';
 import {STORE_PRODUCT_SEEDS as V11} from './store-product-seeds-v11.js?v=23.0.0';
 import {STORE_PRODUCT_ADDITIONS as V12} from './store-product-additions-v12.js?v=23.0.0';
 import {VERIFIED_PRODUCT_ADDITIONS as V37} from './store-product-additions-v37.js?v=37.0.0';
@@ -10,4 +11,4 @@ import {VERIFIED_BAG_ADDITIONS as V44} from './store-product-additions-v44.js?v=
 import {VERIFIED_ACTIVE_ADDITIONS as V45} from './store-product-additions-v45.js?v=45.0.0';
 import {VERIFIED_TAILORING_ADDITIONS as V46} from './store-product-additions-v46.js?v=46.0.0';
 import {VERIFIED_COLLECTIBLE_ADDITIONS as V47} from './store-product-additions-v47.js?v=47.0.0';
-export const STORE_PRODUCT_SEEDS=[...V11,...V12,...V37,...V38,...V39,...V40,...V42,...V43,...V44,...V45,...V46,...V47];
+export const STORE_PRODUCT_SEEDS=[...V11,...V12,...V37,...V38,...V39,...V40,...V42,...V43,...V44,...V45,...V46,...V47,...V48];

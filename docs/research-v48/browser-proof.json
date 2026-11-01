@@ -1,0 +1,878 @@
+{
+  "version": "48.0.0",
+  "verifiedDate": "2026-11-01",
+  "testedRelease": {
+    "game": "Mallside",
+    "version": "48.0.0",
+    "sourceCommit": "8deff5c4a053e544399fe791906c821835683ba5",
+    "bundle": "app-TARJDJUP.js",
+    "sourceVisibility": "public",
+    "license": "LicenseRef-Mallside-Proprietary",
+    "licenseVersion": "1.1",
+    "licenseUrl": "LICENSE.txt",
+    "permissionsUrl": "PERMISSIONS.txt",
+    "officialPlayUrl": "https://youknowjp.github.io/Mallside/",
+    "sourceRepository": "https://github.com/YouKnowJP/Mallside",
+    "publicFiles": "Generated game only; editable source and history are available in the Mallside repository."
+  },
+  "runtimeFiles": 2046,
+  "runtimeTreeSHA256": "485a9c873b5d6b8740f893f4dc68fb2b99d19b490854ab21db51437897bab134",
+  "runtimeSHA256": {
+    "app-TARJDJUP.js": "d1f70dbd37ff4b552017bff7a4f220a24d4b9868e8a19e245ecb24696907337e",
+    "legal-a5b47fd5c5d9.css": "a5b47fd5c5d9fc455139823b4bf29154feeee4cd6661f01b6ecedcabae9d7732",
+    "index.html": "e0e05c31df63cac13ee1ebca630e01ea57f58d8a8d9a89a1ecd4ff3bf3c5d1a8",
+    "release.json": "9f4127fd06a07121ee52e64cac6ed730ea022b6319545c04913b91c23e7be889",
+    "THIRD_PARTY_NOTICES.txt": "2bdc4d866aeecf86096910239d388ed62a768727e516ab57cbd466517872ad82",
+    "life-styles-3d42fae0021b.css": "3d42fae0021b4622bbf03258ea99b0bc5e9c94fa588d8d026a957d25b783015b",
+    "styles-6d92a5f8e9bb.css": "6d92a5f8e9bb4f84020cdcaed234f605d576d4ceb159d381738316bd09d4ad6c",
+    "assets/photos/v48-real-162009572b31ca2bdfd2.webp": "6b6bc6b93adf99703ef0b6ddc6787225b671874c4b76961a7daf5b451005a343",
+    "assets/photos/v48-real-4b807973802ddfd86268.webp": "b816d2b6714091905753a8cae5b6b8fab1795f46b2c5a804f56a9ae09a2fa61c",
+    "assets/photos/v48-real-3c0109a322fde864bc3a.webp": "578329de92964145842503196df67a1fca9e7f1ac99143e8f587819f33d4dd47",
+    "assets/photos/v48-real-eb936fe95134d4669a1c.webp": "290beb19d5d8cbcd24b3e738612abcfe83c9650d4c93632228552a8a76eb506f"
+  },
+  "sourceFiles": 2235,
+  "sourceTreeSHA256": "1f81fdac9c3718dbd4c349a19f0adf61d4267cb464dcd10d9d1d8758c7b0474d",
+  "qaScriptSHA256": {
+    "scripts/gameplay-browser-qa.mjs": "8e98053230c1f74cf2fdb8dec5dbf3e73999c1e6dafbb2c36f8826d0a7d8ce4f",
+    "scripts/gameplay-native-matrix.mjs": "389b97fbfd4e1ae1852f98a389ebdf4bc3620c0e0077acbad478f70b517813d7"
+  },
+  "browsers": [
+    {
+      "browser": "safari",
+      "version": "26.6.2",
+      "scenarios": 73,
+      "checks": 74,
+      "sessions": 2,
+      "isolation": "retained-window",
+      "headless": false,
+      "errors": 0,
+      "resourceWarnings": 0,
+      "inputRetries": 0,
+      "fingerprint": "75bb3ec8aa480149e7c216fdca34f8ae2fe2a73b6fa8bf6ca5b7bd38aea02aea",
+      "results": [
+        {
+          "name": "v48 Arhaus Del Amo ribbed and handled ceramics, retained study, carrying, reload and direct exit",
+          "status": "passed",
+          "ms": 51590
+        },
+        {
+          "name": "no captured game exceptions or unexpected console errors",
+          "status": "passed",
+          "ms": 17
+        },
+        {
+          "name": "v48 Arhaus Island verified ceramics, two-hand inspection, saved glaze study, checkout and exact refunds",
+          "status": "passed",
+          "ms": 48325
+        },
+        {
+          "name": "v48 garden field guide, saved observation marker and compact ceramic source formats",
+          "status": "passed",
+          "ms": 17560
+        },
+        {
+          "name": "v47 batched mosaic court, free keyboard notebook, finite tile turns, saved marker and compact collectibles",
+          "status": "passed",
+          "ms": 19448
+        },
+        {
+          "name": "v47 Cinnamoroll source dimensions, My Melody availability, carrying, reload and shop exit",
+          "status": "passed",
+          "ms": 53757
+        },
+        {
+          "name": "v47 Hot Topic source offers, solid collectibles, two-hand inspection, retained studio and exact refunds",
+          "status": "passed",
+          "ms": 39071
+        },
+        {
+          "name": "v46 furnished tea lounge, free recipe and memories, eased sipping, correct seat and once-only reward",
+          "status": "passed",
+          "ms": 18499
+        },
+        {
+          "name": "v46 Sandro dated navy sale, oversized source sizes, fitting and compact direct exits",
+          "status": "passed",
+          "ms": 68695
+        },
+        {
+          "name": "v46 Sandro fitted shirts and classic tees, retained study, source sizes, checkout, reload and refunds",
+          "status": "passed",
+          "ms": 48022
+        },
+        {
+          "name": "v45 activewear leggings, retained studio, non-member references, source alpha fitting and exact refund",
+          "status": "passed",
+          "ms": 44212
+        },
+        {
+          "name": "v45 activewear tee studio, selected source fabric, purchase, reload and shop exit",
+          "status": "passed",
+          "ms": 57703
+        },
+        {
+          "name": "v45 flower memories, chosen bouquet animation, once-only workshop and compact activewear controls",
+          "status": "passed",
+          "ms": 31494
+        },
+        {
+          "name": "v44 MCM backpack studio, retained material study, source sizing, checkout and exit",
+          "status": "passed",
+          "ms": 41925
+        },
+        {
+          "name": "v44 MCM shopper studio, source format comparison, carry fitting, reload and exact refund",
+          "status": "passed",
+          "ms": 39327
+        },
+        {
+          "name": "v44 public photo memories, free keyboard album route and compact bag controls",
+          "status": "passed",
+          "ms": 21215
+        },
+        {
+          "name": "v43 rubber watch studio, retained material notes, wrist preview, reload and exit",
+          "status": "passed",
+          "ms": 50025
+        },
+        {
+          "name": "v43 sculpture sketch markers, saved floor scope and compact watch controls",
+          "status": "passed",
+          "ms": 26577
+        },
+        {
+          "name": "v43 steel watch studio, case comparison, smooth wrist preview, payment and refund",
+          "status": "passed",
+          "ms": 49391
+        },
+        {
+          "name": "v42 COS interlock studio, retained study, physical fitting, checkout, reload and refund",
+          "status": "passed",
+          "ms": 43633
+        },
+        {
+          "name": "v42 Mango knit studio, retained study, physical fitting, checkout, reload and refund",
+          "status": "passed",
+          "ms": 47229
+        },
+        {
+          "name": "v42 reading shelf bookmark, compact stocked studies and direct exits",
+          "status": "passed",
+          "ms": 23662
+        },
+        {
+          "name": "v41 compact material controls, keyboard focus, draft cancellation and direct shop exit",
+          "status": "passed",
+          "ms": 9344
+        },
+        {
+          "name": "v41 courtyard mosaic follows native keyboard turns and preserves its saved arrangement",
+          "status": "passed",
+          "ms": 27181
+        },
+        {
+          "name": "v41 physical material studios, preview rollback, saved finishes and compatible reload",
+          "status": "passed",
+          "ms": 137699
+        },
+        {
+          "name": "v40 denim studio, source W/L sizes, eased fitting turns, payment and exact refund",
+          "status": "passed",
+          "ms": 36761
+        },
+        {
+          "name": "v40 furnished waystation routes to real discoveries, remembers the visit and preserves compact source controls",
+          "status": "passed",
+          "ms": 71918
+        },
+        {
+          "name": "v40 jersey atelier, cropped longsleeve and exact alpha labels, saved receipts and refunds",
+          "status": "passed",
+          "ms": 68603
+        },
+        {
+          "name": "v39 optical studio, exact width, smooth frame fitting, checkout and refund",
+          "status": "passed",
+          "ms": 41944
+        },
+        {
+          "name": "v39 public garden, compact frame widths and starting price, old notes and pinned shop controls",
+          "status": "passed",
+          "ms": 55199
+        },
+        {
+          "name": "v39 Rhone studio, source alpha sizes, polo and shorts fitting, saved receipts and refunds",
+          "status": "passed",
+          "ms": 49424
+        },
+        {
+          "name": "v38 compact edition facts, old shortlist, comparison focus and pinned checkout and exit",
+          "status": "passed",
+          "ms": 16870
+        },
+        {
+          "name": "v38 physical bookshop, edition comparison, reading animation, purchase and refund",
+          "status": "passed",
+          "ms": 44846
+        },
+        {
+          "name": "v38 public reading shelf routes to verified bookshops and lightweight edition checkout",
+          "status": "passed",
+          "ms": 24178
+        },
+        {
+          "name": "v37 all three new brands inspect, fit exact source sizes, buy, reload and refund",
+          "status": "passed",
+          "ms": 131258
+        },
+        {
+          "name": "v37 compact comparison controls, keyboard focus, cancellation and pinned shop exit",
+          "status": "passed",
+          "ms": 12802
+        },
+        {
+          "name": "v37 physical collection desk, saved shortlist compatibility, staff and preserved rest bench",
+          "status": "passed",
+          "ms": 25771
+        },
+        {
+          "name": "v36 budgeted shortlist, focus, persistence and route to the actual product shop",
+          "status": "passed",
+          "ms": 40494
+        },
+        {
+          "name": "v36 spaced full-motion crowds and eased rest in a planning lounge",
+          "status": "passed",
+          "ms": 32125
+        },
+        {
+          "name": "v36 themed research interiors, lightweight draft cancellation and compact saved-plan exit",
+          "status": "passed",
+          "ms": 137800
+        },
+        {
+          "name": "v35 legacy research-shop purchase reaches returns desk and refunds once",
+          "status": "passed",
+          "ms": 19631
+        },
+        {
+          "name": "v35 lightweight 2D dining reaches the branch door and saves its meal",
+          "status": "passed",
+          "ms": 15293
+        },
+        {
+          "name": "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+          "status": "passed",
+          "ms": 29747
+        },
+        {
+          "name": "v35 upper-floor sculpture route, first sketch, daily limit and saved notebook",
+          "status": "passed",
+          "ms": 9756
+        },
+        {
+          "name": "v34 collection gallery, associate, saved-shop filter and legacy-compatible reload",
+          "status": "passed",
+          "ms": 40762
+        },
+        {
+          "name": "v34 seated visitors and eased walking settle without moving the stopped player",
+          "status": "passed",
+          "ms": 12002
+        },
+        {
+          "name": "v34 upper-floor water and community stops, cooldown and saved invitation",
+          "status": "passed",
+          "ms": 23086
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "status": "passed",
+          "ms": 9784
+        },
+        {
+          "name": "v33 real portrait capture and dressed collection-room close-up",
+          "status": "passed",
+          "ms": 15618
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "status": "passed",
+          "ms": 20573
+        },
+        {
+          "name": "v32 cross-floor discovery and interactive floor connection",
+          "status": "passed",
+          "ms": 17497
+        },
+        {
+          "name": "v32 discovery trail, keyboard mosaic, saved choices and repeat limit",
+          "status": "passed",
+          "ms": 42788
+        },
+        {
+          "name": "v32 illustrated commons and compact activity layouts",
+          "status": "passed",
+          "ms": 6268
+        },
+        {
+          "name": "v32 map details keyboard loop includes summaries and excludes closed contents",
+          "status": "passed",
+          "ms": 3094
+        },
+        {
+          "name": "v32 nonwearable demos and research-only shops give useful options",
+          "status": "passed",
+          "ms": 23326
+        },
+        {
+          "name": "v32 saved bag routes through shop checkout and full purchase refund",
+          "status": "passed",
+          "ms": 11739
+        },
+        {
+          "name": "v32 service reservation, unused refund, cinema use and explicit exit",
+          "status": "passed",
+          "ms": 11424
+        },
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "status": "passed",
+          "ms": 15095
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "status": "passed",
+          "ms": 13960
+        },
+        {
+          "name": "Eli \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 5751
+        },
+        {
+          "name": "Eli \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 3791
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "status": "passed",
+          "ms": 12005
+        },
+        {
+          "name": "game menu exposes shopping, progression, saves and camera controls",
+          "status": "passed",
+          "ms": 6441
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "status": "passed",
+          "ms": 11416
+        },
+        {
+          "name": "Jules \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 4646
+        },
+        {
+          "name": "Jules \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 5713
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "status": "passed",
+          "ms": 7926
+        },
+        {
+          "name": "Maya \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 8952
+        },
+        {
+          "name": "Maya \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 4156
+        },
+        {
+          "name": "Noor \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 4076
+        },
+        {
+          "name": "Noor \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 3590
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "status": "passed",
+          "ms": 5419
+        },
+        {
+          "name": "Sam \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 5015
+        },
+        {
+          "name": "Sam \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 4381
+        }
+      ]
+    },
+    {
+      "browser": "firefox",
+      "version": "159.0",
+      "scenarios": 73,
+      "checks": 74,
+      "sessions": 2,
+      "isolation": "retained-window",
+      "headless": true,
+      "errors": 0,
+      "resourceWarnings": 0,
+      "inputRetries": 0,
+      "fingerprint": "4947ed275fd603ca572eb3442e79c135b7a813ee45e22be70647da22f6a82ab9",
+      "results": [
+        {
+          "name": "v48 Arhaus Del Amo ribbed and handled ceramics, retained study, carrying, reload and direct exit",
+          "status": "passed",
+          "ms": 46680
+        },
+        {
+          "name": "no captured game exceptions or unexpected console errors",
+          "status": "passed",
+          "ms": 1
+        },
+        {
+          "name": "v48 Arhaus Island verified ceramics, two-hand inspection, saved glaze study, checkout and exact refunds",
+          "status": "passed",
+          "ms": 66375
+        },
+        {
+          "name": "v48 garden field guide, saved observation marker and compact ceramic source formats",
+          "status": "passed",
+          "ms": 28950
+        },
+        {
+          "name": "v47 batched mosaic court, free keyboard notebook, finite tile turns, saved marker and compact collectibles",
+          "status": "passed",
+          "ms": 28441
+        },
+        {
+          "name": "v47 Cinnamoroll source dimensions, My Melody availability, carrying, reload and shop exit",
+          "status": "passed",
+          "ms": 53656
+        },
+        {
+          "name": "v47 Hot Topic source offers, solid collectibles, two-hand inspection, retained studio and exact refunds",
+          "status": "passed",
+          "ms": 39932
+        },
+        {
+          "name": "v46 furnished tea lounge, free recipe and memories, eased sipping, correct seat and once-only reward",
+          "status": "passed",
+          "ms": 15716
+        },
+        {
+          "name": "v46 Sandro dated navy sale, oversized source sizes, fitting and compact direct exits",
+          "status": "passed",
+          "ms": 58265
+        },
+        {
+          "name": "v46 Sandro fitted shirts and classic tees, retained study, source sizes, checkout, reload and refunds",
+          "status": "passed",
+          "ms": 55279
+        },
+        {
+          "name": "v45 activewear leggings, retained studio, non-member references, source alpha fitting and exact refund",
+          "status": "passed",
+          "ms": 49322
+        },
+        {
+          "name": "v45 activewear tee studio, selected source fabric, purchase, reload and shop exit",
+          "status": "passed",
+          "ms": 54670
+        },
+        {
+          "name": "v45 flower memories, chosen bouquet animation, once-only workshop and compact activewear controls",
+          "status": "passed",
+          "ms": 31535
+        },
+        {
+          "name": "v44 MCM backpack studio, retained material study, source sizing, checkout and exit",
+          "status": "passed",
+          "ms": 49425
+        },
+        {
+          "name": "v44 MCM shopper studio, source format comparison, carry fitting, reload and exact refund",
+          "status": "passed",
+          "ms": 34151
+        },
+        {
+          "name": "v44 public photo memories, free keyboard album route and compact bag controls",
+          "status": "passed",
+          "ms": 21459
+        },
+        {
+          "name": "v43 rubber watch studio, retained material notes, wrist preview, reload and exit",
+          "status": "passed",
+          "ms": 49944
+        },
+        {
+          "name": "v43 sculpture sketch markers, saved floor scope and compact watch controls",
+          "status": "passed",
+          "ms": 35940
+        },
+        {
+          "name": "v43 steel watch studio, case comparison, smooth wrist preview, payment and refund",
+          "status": "passed",
+          "ms": 57872
+        },
+        {
+          "name": "v42 COS interlock studio, retained study, physical fitting, checkout, reload and refund",
+          "status": "passed",
+          "ms": 76849
+        },
+        {
+          "name": "v42 Mango knit studio, retained study, physical fitting, checkout, reload and refund",
+          "status": "passed",
+          "ms": 68080
+        },
+        {
+          "name": "v42 reading shelf bookmark, compact stocked studies and direct exits",
+          "status": "passed",
+          "ms": 54643
+        },
+        {
+          "name": "v41 compact material controls, keyboard focus, draft cancellation and direct shop exit",
+          "status": "passed",
+          "ms": 12940
+        },
+        {
+          "name": "v41 courtyard mosaic follows native keyboard turns and preserves its saved arrangement",
+          "status": "passed",
+          "ms": 30925
+        },
+        {
+          "name": "v41 physical material studios, preview rollback, saved finishes and compatible reload",
+          "status": "passed",
+          "ms": 139345
+        },
+        {
+          "name": "v40 denim studio, source W/L sizes, eased fitting turns, payment and exact refund",
+          "status": "passed",
+          "ms": 35051
+        },
+        {
+          "name": "v40 furnished waystation routes to real discoveries, remembers the visit and preserves compact source controls",
+          "status": "passed",
+          "ms": 71989
+        },
+        {
+          "name": "v40 jersey atelier, cropped longsleeve and exact alpha labels, saved receipts and refunds",
+          "status": "passed",
+          "ms": 80652
+        },
+        {
+          "name": "v39 optical studio, exact width, smooth frame fitting, checkout and refund",
+          "status": "passed",
+          "ms": 47930
+        },
+        {
+          "name": "v39 public garden, compact frame widths and starting price, old notes and pinned shop controls",
+          "status": "passed",
+          "ms": 46674
+        },
+        {
+          "name": "v39 Rhone studio, source alpha sizes, polo and shorts fitting, saved receipts and refunds",
+          "status": "passed",
+          "ms": 29065
+        },
+        {
+          "name": "v38 compact edition facts, old shortlist, comparison focus and pinned checkout and exit",
+          "status": "passed",
+          "ms": 8813
+        },
+        {
+          "name": "v38 physical bookshop, edition comparison, reading animation, purchase and refund",
+          "status": "passed",
+          "ms": 20662
+        },
+        {
+          "name": "v38 public reading shelf routes to verified bookshops and lightweight edition checkout",
+          "status": "passed",
+          "ms": 26510
+        },
+        {
+          "name": "v37 all three new brands inspect, fit exact source sizes, buy, reload and refund",
+          "status": "passed",
+          "ms": 65358
+        },
+        {
+          "name": "v37 compact comparison controls, keyboard focus, cancellation and pinned shop exit",
+          "status": "passed",
+          "ms": 18072
+        },
+        {
+          "name": "v37 physical collection desk, saved shortlist compatibility, staff and preserved rest bench",
+          "status": "passed",
+          "ms": 40645
+        },
+        {
+          "name": "v36 budgeted shortlist, focus, persistence and route to the actual product shop",
+          "status": "passed",
+          "ms": 53485
+        },
+        {
+          "name": "v36 spaced full-motion crowds and eased rest in a planning lounge",
+          "status": "passed",
+          "ms": 25362
+        },
+        {
+          "name": "v36 themed research interiors, lightweight draft cancellation and compact saved-plan exit",
+          "status": "passed",
+          "ms": 77272
+        },
+        {
+          "name": "v35 legacy research-shop purchase reaches returns desk and refunds once",
+          "status": "passed",
+          "ms": 10292
+        },
+        {
+          "name": "v35 lightweight 2D dining reaches the branch door and saves its meal",
+          "status": "passed",
+          "ms": 7382
+        },
+        {
+          "name": "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+          "status": "passed",
+          "ms": 13229
+        },
+        {
+          "name": "v35 upper-floor sculpture route, first sketch, daily limit and saved notebook",
+          "status": "passed",
+          "ms": 8679
+        },
+        {
+          "name": "v34 collection gallery, associate, saved-shop filter and legacy-compatible reload",
+          "status": "passed",
+          "ms": 26359
+        },
+        {
+          "name": "v34 seated visitors and eased walking settle without moving the stopped player",
+          "status": "passed",
+          "ms": 7608
+        },
+        {
+          "name": "v34 upper-floor water and community stops, cooldown and saved invitation",
+          "status": "passed",
+          "ms": 16717
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "status": "passed",
+          "ms": 11445
+        },
+        {
+          "name": "v33 real portrait capture and dressed collection-room close-up",
+          "status": "passed",
+          "ms": 9333
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "status": "passed",
+          "ms": 16595
+        },
+        {
+          "name": "v32 cross-floor discovery and interactive floor connection",
+          "status": "passed",
+          "ms": 14388
+        },
+        {
+          "name": "v32 discovery trail, keyboard mosaic, saved choices and repeat limit",
+          "status": "passed",
+          "ms": 42247
+        },
+        {
+          "name": "v32 illustrated commons and compact activity layouts",
+          "status": "passed",
+          "ms": 7470
+        },
+        {
+          "name": "v32 map details keyboard loop includes summaries and excludes closed contents",
+          "status": "passed",
+          "ms": 4121
+        },
+        {
+          "name": "v32 nonwearable demos and research-only shops give useful options",
+          "status": "passed",
+          "ms": 17346
+        },
+        {
+          "name": "v32 saved bag routes through shop checkout and full purchase refund",
+          "status": "passed",
+          "ms": 23707
+        },
+        {
+          "name": "v32 service reservation, unused refund, cinema use and explicit exit",
+          "status": "passed",
+          "ms": 11370
+        },
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "status": "passed",
+          "ms": 8675
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "status": "passed",
+          "ms": 9400
+        },
+        {
+          "name": "Eli \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 3486
+        },
+        {
+          "name": "Eli \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 4210
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "status": "passed",
+          "ms": 7376
+        },
+        {
+          "name": "game menu exposes shopping, progression, saves and camera controls",
+          "status": "passed",
+          "ms": 2924
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "status": "passed",
+          "ms": 10636
+        },
+        {
+          "name": "Jules \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 2640
+        },
+        {
+          "name": "Jules \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 3042
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "status": "passed",
+          "ms": 3690
+        },
+        {
+          "name": "Maya \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 4761
+        },
+        {
+          "name": "Maya \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 2633
+        },
+        {
+          "name": "Noor \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 2340
+        },
+        {
+          "name": "Noor \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 5378
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "status": "passed",
+          "ms": 3034
+        },
+        {
+          "name": "Sam \u00b7 shared activity 1 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 2676
+        },
+        {
+          "name": "Sam \u00b7 shared activity 2 choices, saved continuation and daily limit",
+          "status": "passed",
+          "ms": 2495
+        }
+      ]
+    }
+  ],
+  "localTests": {
+    "passed": 590,
+    "failed": 0,
+    "skipped": 0,
+    "command": "npm test",
+    "node": "v26.0.0",
+    "durationMs": 533570.691333
+  },
+  "priorProductsUnchanged": 8822,
+  "testBuildNote": "The frozen v48 working-tree artifact was tested before its publication commit. All published runtime bytes must match; only release.json sourceCommit changes after commit.",
+  "nativeSessionNote": "Passing Safari reports span two retained visible sessions; Firefox reports span two retained headless sessions with real WebGL and trusted WebDriver input. Safari repeated the full older dining case after arrival beat the tester to its Stop control. Firefox repeated the full older atelier case after a native navigation timeout. Earlier incomplete preflight/startup attempts are excluded. Every required case has a passing report checked against one frozen artifact/test fingerprint per browser; these runs establish functional coverage across resumed sessions, not long-session GPU stress or physical-device performance.",
+  "cleanup": {
+    "safari": {
+      "automationOff": true,
+      "settingsClosed": true,
+      "verification": "Native Developer settings checkbox visibly read Value: 0 after the passing suite; settings window closed.",
+      "driverStopped": true
+    },
+    "firefox": {
+      "officialVersion": "159.0",
+      "downloadChecksumsVerified": true,
+      "applicationSignatureVerified": true,
+      "temporaryAppDownloadsDriverAndProfilesRemoved": true,
+      "ownedProfilePathsChecked": 4,
+      "remainingProfileDirectoriesRemoved": 0,
+      "addedHomeFilesRemoved": 4,
+      "preexistingHomeEntriesPreserved": 7,
+      "existingPreferencesPreserved": true,
+      "ownedProcessesStopped": true
+    },
+    "ownedDriversStopped": true,
+    "rawBrowserQAArtifactsRemoved": true,
+    "homePathSetIndependentlyVerified": true
+  },
+  "compactLayouts": [
+    {
+      "width": 320,
+      "height": 900,
+      "overflow": false,
+      "smallestTarget": [
+        49.5390625,
+        44
+      ],
+      "shopExit": true
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "overflow": false,
+      "smallestTarget": [
+        49.5390625,
+        44
+      ],
+      "shopExit": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "overflow": false,
+      "smallestTarget": [
+        49.5390625,
+        44
+      ],
+      "shopExit": true
+    }
+  ],
+  "compactLayoutReviewNote": "Compiled Chromium viewport checks at 320, 390 and 768 pixels cover selected ceramic facts, source formats, free study save and direct shop exit. No page overflow; inspected targets are at least 44 pixels. Native matrices repeat compact layout and keyboard checks. Physical phones/tablets and touch hardware were not tested."
+}

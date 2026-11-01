@@ -2,7 +2,7 @@ import {V46_GARMENT_OVERRIDES} from './garment-overrides-v46.js?v=46.0.0';
 import {V45_GARMENT_OVERRIDES} from './garment-overrides-v45.js?v=45.0.0';
 import {V42_GARMENT_OVERRIDES} from './garment-overrides-v42.js?v=42.0.0';
 import {V40_GARMENT_OVERRIDES} from './garment-overrides-v40.js?v=40.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=47.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=48.0.0';
 
 // Photograph-reviewed exceptions preserve product identity; no retailer/category logo is invented.
 export const GARMENT_PHOTO_OVERRIDES={

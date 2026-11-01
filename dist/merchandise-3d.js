@@ -1,5 +1,6 @@
-import {createPlush,isVerifiedPlush} from './plush-model.js?v=47.0.0';
-import {productAppearance} from './product-appearance.js?v=47.0.0';
+import {createCeramic,isCeramic} from './ceramic-model.js?v=48.0.0';
+import {createPlush,isVerifiedPlush} from './plush-model.js?v=48.0.0';
+import {productAppearance} from './product-appearance.js?v=48.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {addReferenceDetails,addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
@@ -8,12 +9,13 @@ import {buildBagModel} from './merchandise-bags.js?v=44.0.0';
 
 const clothing=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);
-export const physicalProduct=p=>!!p&&(clothing.has(p.type)||bags.has(p.type)||isVerifiedPlush(p));
-export function merchandiseStyle(p){if(isVerifiedPlush(p))return 'plush-'+p.plushProfile.kind;const a=productAppearance(p);return clothing.has(p.type)?a.garment.kind:a.bag?.silhouette||'package';}
+export const physicalProduct=p=>!!p&&(clothing.has(p.type)||bags.has(p.type)||isVerifiedPlush(p)||isCeramic(p));
+export function merchandiseStyle(p){if(isCeramic(p))return 'ceramic-'+p.ceramicProfile.kind;if(isVerifiedPlush(p))return 'plush-'+p.plushProfile.kind;const a=productAppearance(p);return clothing.has(p.type)?a.garment.kind:a.bag?.silhouette||'package';}
 function roundedShape(w,h,r=3){const s=new T.Shape(),x=-w/2,y=-h/2;s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);return s;}
 
 // Original volumetric interpretations of named real products. Photographs remain in details.
 export function createMerchandise(p,{hanger=false,bodyOnly=false,highDetail=false}={}){
+ if(isCeramic(p))return createCeramic(p);
  if(isVerifiedPlush(p))return createPlush(p);
  const root=new T.Group(),g=new T.Group();root.add(g);const style=merchandiseStyle(p),appearance=productAppearance(p),color=appearance.color,light=new T.Color(color).lerp(new T.Color('#ffffff'),.12),fabric=clothing.has(p.type),main=referenceMaterial(appearance,{highDetail,surfaceAspect:appearance.bag?appearance.width/appearance.height:.9}),plain=referenceMaterial(appearance,{plain:true}),trim=referenceMaterial(appearance,{trim:true}),seam=new T.MeshStandardMaterial({color:light,roughness:.9}),metal=referenceMaterial(appearance,{metal:true});
  let bodyDimensions=null;

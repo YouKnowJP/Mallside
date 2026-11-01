@@ -70,3 +70,7 @@ Four exact selected-color Sandro US packshots are referenced by the v46 catalog.
 ## v47 collectible source photographs
 
 Four exact Hot Topic US photographs of Sanrio Japan Originals collectibles are referenced by the v47 catalog. Source pages, selected image URLs, qualified dated offers and source/runtime hashes are recorded in docs/research-v47/catalog-evidence.json and docs/ASSET_INVENTORY.json. Hot Topic, Sanrio and the respective rights holders retain their photographs, characters and marks; commercial permission is not recorded. Solid models, collector fixtures, mosaic/notebook details and motion are original adapted game interpretations, not measured replicas, surveyed interiors or real inventory/fit/return guarantees.
+
+## v48 ceramic source photographs
+
+Four selected Arhaus US ceramic photographs are referenced by the v48 catalog. Exact source pages, selected SKUs, dated prices, dimensions and photo hashes are recorded in docs/research-v48/catalog-evidence.json and docs/ASSET_INVENTORY.json. Manton uses a merchant-assigned shared hero image whose historical filename differs from the selected Small SKU; this is explicitly qualified. Arhaus and the respective rights holders retain their photographs and marks; commercial permission is not recorded. Hollow ceramic models, glaze studios, garden details and inspection motion are original adapted game interpretations, not measured replicas, surveyed interiors or real branch inventory/return guarantees.

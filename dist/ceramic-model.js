@@ -1,0 +1,22 @@
+import * as T from './vendor/three.module.js';
+import {productAppearance} from './product-appearance.js?v=48.0.0';
+import {isCeramic} from './ceramic-tools.js?v=48.0.0';
+export {isCeramic};
+const profiles={manton:[[0,.65],[.05,.85],[.14,1],[.66,1],[.8,.92],[.91,.45],[.96,.25],[1,.24]],eva:[[0,.42],[.1,.74],[.35,1],[.55,.95],[.72,.67],[.87,.29],[1,.2]],meadow:[[0,.45],[.06,.65],[.23,.94],[.5,1],[.77,.94],[.94,.61],[1,.28]],bronwen:[[0,.8],[.1,.97],[.25,1],[.45,.89],[.65,.6],[.82,.23],[1,.19]]};
+function radiusAt(points,y){for(let i=1;i<points.length;i++){const [y1,r1]=points[i], [y0,r0]=points[i-1];if(y<=y1){const t=(y-y0)/(y1-y0),k=t*t*(3-2*t);return r0+(r1-r0)*k;}}return points.at(-1)[1];}
+// Original hollow shells follow reviewed silhouettes; dimensions remain source facts, not replica certification.
+export function createCeramic(p){
+ const a=p.ceramicProfile,h=a.heightIn*2.54,r=a.diameterIn*1.27,n=20,points=[new T.Vector2(0,0)];
+ for(let i=0;i<=n;i++)points.push(new T.Vector2(radiusAt(profiles[a.kind],i/n)*r,i/n*h));
+ for(let i=n;i>=0;i--)points.push(new T.Vector2(Math.max(.12,radiusAt(profiles[a.kind],i/n)*r-r*.075),Math.max(h*.065,i/n*h)));
+ points.push(new T.Vector2(0,h*.065),new T.Vector2(0,0));const geometry=new T.LatheGeometry(points,a.kind==='meadow'?54:48),pos=geometry.attributes.position;
+ for(let i=0;i<pos.count;i++){const j=i%points.length;if(j<1||j>n+1)continue;const x=pos.getX(i),z=pos.getZ(i),y=pos.getY(i)/h,theta=Math.atan2(x,z),amount=a.kind==='meadow'?.035*Math.cos(theta*18)*Math.pow(Math.max(0,Math.sin(Math.PI*Math.max(0,Math.min(1,y)))),.4):a.kind==='eva'?.025*Math.cos(theta*12+Math.floor(y*8)*Math.PI)*Math.sin(y*Math.PI*8)**2:0;pos.setX(i,x*(1+amount));pos.setZ(i,z*(1+amount));}
+ geometry.computeVertexNormals();const pixels=new Uint8Array(128*128*4),bump=new Uint8Array(pixels.length),base=parseInt(a.base.slice(1),16);let seed=4801;
+ for(let i=0;i<pixels.length;i+=4){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const grain=(seed>>>24)/255,dot=grain<.025&&['manton','bronwen'].includes(a.kind),k=dot?.32:.94+grain*.06;pixels.set([Math.round(((base>>>16)&255)*k),Math.round(((base>>>8)&255)*k),Math.round((base&255)*k),255],i);const g=170+Math.floor(grain*65);bump.set([g,g,g,255],i);}
+ const texture=(data,color=false)=>{const t=new T.DataTexture(data,128,128,T.RGBAFormat);t.wrapS=t.wrapT=T.RepeatWrapping;t.repeat.set(2,2);t.minFilter=t.magFilter=T.LinearFilter;if(color)t.colorSpace=T.SRGBColorSpace;t.needsUpdate=true;return t;},baseMap=texture(pixels,true),grain=texture(bump),glazed=new T.MeshStandardMaterial({color:a.body,roughness:a.finish==='glazed'?.3:.78,bumpMap:grain,bumpScale:.025}),raw=new T.MeshStandardMaterial({color:'#ffffff',map:baseMap,roughness:.94,bumpMap:grain,bumpScale:.04});
+ const buckets=[[],[]],index=geometry.index.array,split=['manton','bronwen'].includes(a.kind)?h*(a.kind==='manton'?.14:.23):-1;
+ for(let i=0;i<index.length;i+=3){const y=(pos.getY(index[i])+pos.getY(index[i+1])+pos.getY(index[i+2]))/3;buckets[y<split?0:1].push(index[i],index[i+1],index[i+2]);}geometry.setIndex([...buckets[0],...buckets[1]]);geometry.clearGroups();for(let i=0,start=0;i<2;i++){if(buckets[i].length)geometry.addGroup(start,buckets[i].length,i);start+=buckets[i].length;}
+ const root=new T.Group(),body=new T.Group();root.add(body);const shell=new T.Mesh(geometry,[raw,glazed]);shell.castShadow=shell.receiveShadow=true;shell.userData.role='hollow-shell';body.add(shell);
+ if(a.kind==='bronwen'){const curve=new T.CatmullRomCurve3([[r*.14,h*.96,0],[r*.65,h*.87,0],[r*.92,h*.68,0],[r*.84,h*.48,0]].map(v=>new T.Vector3(...v))),handle=new T.Mesh(new T.TubeGeometry(curve,24,r*.085,8,false),glazed);handle.castShadow=handle.receiveShadow=true;handle.userData.role='handle';body.add(handle);}
+ root.updateMatrixWorld(true);const box=new T.Box3().setFromObject(body,true),size=box.getSize(new T.Vector3()),center=box.getCenter(new T.Vector3());body.position.set(-center.x,-box.min.y,-center.z);root.userData={productId:p.id,referenceSKU:p.referenceSKU,source:p.source,style:'ceramic-'+a.kind,appearance:productAppearance(p),size:{x:size.x,y:size.y,z:size.z},volumetric:true,hollow:true,adaptedProportions:true};return root;
+}

@@ -2,6 +2,14 @@
 
 Updated 1 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v48
+
+- Stock two unfinished Arhaus shops with four selected ceramic references, reviewed source photographs, qualified dated prices and published dimensions.
+- Add original glaze/niche studios, hollow solid models and smoother two-hand inspection; preserve material notes, checkout, refund and collection-shelf rules.
+- Detail all 23 pocket gardens with curved planting, pots, stones and notebooks; add a free field guide and floor-specific saved colors/markers.
+- Batch garden details into 13 drawables and bound ceramic geometry cost while preserving routes, rewards and reduced motion.
+- See [v48 gameplay](docs/GAMEPLAY-v48.md), [source evidence](docs/research-v48/catalog-evidence.json) and [v48 QA](docs/qa-v48.md).
+
 ## Completed in v47
 
 - Stock four unfinished Hot Topic shops with four exact Sanrio plush references, selected photographs, unsized formats and qualified dated prices.
@@ -206,7 +214,7 @@ Updated 1 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,071 stocked identities, 133 service identities and 394 identities awaiting catalog research**. The remaining 303 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,073 stocked identities, 133 service identities and 392 identities awaiting catalog research**. The remaining 301 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

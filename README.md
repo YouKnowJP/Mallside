@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v47 — collectible studios and mosaic courts
+## v48 — ceramic showrooms and pocket gardens
+
+Two unfinished Arhaus shops gain four selected ceramic references, reviewed photographs, qualified prices and published dimensions. Original glaze studios retain saved material studies; hollow solid models, smoother two-hand inspection and home shelves bring the pieces into the game. All 23 gardens gain richer planting, a free field guide and visible floor-specific saved observations. Existing saves and purchases remain compatible. See [v48 gameplay](docs/GAMEPLAY-v48.md), [source evidence](docs/research-v48/catalog-evidence.json), [release QA](docs/qa-v48.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v47 — collectible studios and mosaic courts
 
 Four unfinished Hot Topic shops gain verified Sanrio plush references, solid models and source-qualified prices. Original comparison studios retain material notes, while eased two-hand inspection and collection-room shelves make the new finds more tangible. All 23 mosaic courts gain notebook detail, free saved-discovery access and finite, smoother tile turns, with fewer rendering calls. Existing saves and purchases remain compatible. See [v47 gameplay](docs/GAMEPLAY-v47.md), [source evidence](docs/research-v47/catalog-evidence.json), [release QA](docs/qa-v47.md) and the [roadmap](ROADMAP.md).
 

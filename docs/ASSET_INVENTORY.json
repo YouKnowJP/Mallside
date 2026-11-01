@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "47.0.0",
+  "release": "48.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1999,
-  "uniqueRuntimePhotoFiles": 1977,
+  "runtimePhotoEntries": 2003,
+  "uniqueRuntimePhotoFiles": 1981,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19697,6 +19697,46 @@
       "source": "https://www.hottopic.com/product/sanrio-japan-originals-cinnamoroll-plush/36396342.html",
       "imageUrl": "https://cdn.media.amplience.net/s/hottopic/36396337_hi?$productMainDesktop$&fmt=auto",
       "description": "Sanrio Japan Originals Cinnamoroll Plush — exact product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v48-real-162009572b31ca2bdfd2",
+      "path": "assets/photos/v48-real-162009572b31ca2bdfd2.webp",
+      "sha256": "6b6bc6b93adf99703ef0b6ddc6787225b671874c4b76961a7daf5b451005a343",
+      "source": "https://www.arhaus.com/products/eva-bud-vase-1?variant=44825725173931",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/651920D0030_NN250820_1edaf7fb-f0b8-4528-8ffb-5d56959f8ef4.jpg?v=1770850106",
+      "description": "Eva Bud Vase · Taupe — merchant product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v48-real-3c0109a322fde864bc3a",
+      "path": "assets/photos/v48-real-3c0109a322fde864bc3a.webp",
+      "sha256": "578329de92964145842503196df67a1fca9e7f1ac99143e8f587819f33d4dd47",
+      "source": "https://www.arhaus.com/products/bronwen-short-jug-vase?variant=46281077850283",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/6510397BRV41_CJ260106.jpg?v=1772840792",
+      "description": "Bronwen Short Jug Vase — merchant product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v48-real-4b807973802ddfd86268",
+      "path": "assets/photos/v48-real-4b807973802ddfd86268.webp",
+      "sha256": "b816d2b6714091905753a8cae5b6b8fab1795f46b2c5a804f56a9ae09a2fa61c",
+      "source": "https://www.arhaus.com/products/meadow-vase?variant=42845011378347",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/651920V1024_NZ250820.jpg?v=1770819306",
+      "description": "Meadow Vase · Small — merchant product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v48-real-eb936fe95134d4669a1c",
+      "path": "assets/photos/v48-real-eb936fe95134d4669a1c.webp",
+      "sha256": "290beb19d5d8cbcd24b3e738612abcfe83c9650d4c93632228552a8a76eb506f",
+      "source": "https://www.arhaus.com/products/manton-vase?variant=45513980903595",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/6510397BRV43_O250627.jpg?v=1770819366",
+      "description": "Manton Vase · Macadamia · Small — merchant product photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

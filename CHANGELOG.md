@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v48.0.0 — Ceramic showrooms and pocket gardens
+
+- Stock two unfinished Arhaus branches with four selected ceramic references, source photos, dated qualified offers and published dimensions.
+- Add original glaze/niche interiors, hollow solid models, smoother two-hand inspection and retained home/purchase/refund routes.
+- Refine all 23 gardens with batched planting, free field guides and saved floor-specific observation markers.
+- Preserve all 8,822 previous product records and appearances, schema 6 and map revision 10.
+- See [v48 QA](docs/qa-v48.md) for validation.
+
 ## v47.0.0 — Collectible studios and mosaic courts
 
 - Stock four unfinished Hot Topic shops with four exact photographed Sanrio plush references, unsized formats and qualified sale/listed USD offers.

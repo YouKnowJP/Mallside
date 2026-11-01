@@ -5,13 +5,13 @@ import {buildSculptureDetails} from './sculpture-details.js?v=43.0.0';
 import {buildReadingDetails} from './reading-details.js?v=42.0.0';
 import {buildMosaicStudy} from './mosaic-details.js?v=47.0.0';
 import {buildWaystationDetails} from './waystation-details.js?v=40.0.0';
-import {buildGardenStudy} from './garden-details.js?v=39.0.0';
+import {buildGardenStudy} from './garden-details.js?v=48.0.0';
 import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=33.0.0';
 import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
-import {retailIdentity,drawRetailSign} from './retail-identity.js?v=47.0.0';
+import {retailIdentity,drawRetailSign} from './retail-identity.js?v=48.0.0';
 import * as T from './vendor/three.module.js';
 import {themeFor,facadeFrame} from './mall-design.js?v=35.0.0';
-import {brandDesign} from './brand-designs.js?v=47.0.0';
+import {brandDesign} from './brand-designs.js?v=48.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
 class Details{
@@ -152,7 +152,7 @@ export function buildPublicRealm(w,l,theme){
    const label=w.label('Sculpture alcove ↗',x,65,z,95,theme.accent);w.tag(label,'art:'+p.id,p.approach);w.nearLabels.push({object:label,x,z,radius:160,directory:true});
   }else if(p.kind==='commons'){
    b.box(x,13,z,26,26,26,theme.stone);b.box(x,27,z,30,2,30,theme.trim);
-   if(p.activity==='garden'){b.box(x,29,z,25,3,25,'#6f7957');buildGardenStudy(w,x,z,theme);}
+   if(p.activity==='garden'){b.box(x,29,z,25,3,25,'#6f7957');buildGardenStudy(w,x,z,theme);const guide=w.label('Garden field guide ↗',x,53,z,85,theme.accent);w.tag(guide,'garden-guide',p.approach);w.nearLabels.push({object:guide,x,z,radius:150,directory:true});}
    else if(p.activity==='reading')buildReadingDetails(w,b,x,z,theme);
    else buildMosaicStudy(w,x,z,theme);
    const names={mosaic:'Mosaic table',reading:'Reading shelf',garden:'Garden study'},key='commons:'+p.activity,hit=w.box(x,30,z,30,62,30,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(names[p.activity]+' ↗',x,76,z,82,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:150,directory:true});

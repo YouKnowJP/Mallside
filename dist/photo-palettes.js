@@ -1,3 +1,4 @@
+import {V48_PHOTO_PALETTES} from './photo-palettes-v48.js?v=48.0.0';
 import {V47_PHOTO_PALETTES} from './photo-palettes-v47.js?v=47.0.0';
 import {V46_PHOTO_PALETTES} from './photo-palettes-v46.js?v=46.0.0';
 import {V45_PHOTO_PALETTES} from './photo-palettes-v45.js?v=45.0.0';
@@ -10,3 +11,5 @@ const LEGACY_PHOTO_PALETTES={"assets/photos/v12-real-8a66b5df7f69ff019ff6.webp":
 export const PHOTO_PALETTES={...LEGACY_PHOTO_PALETTES,...V37_PHOTO_PALETTES,...V39_PHOTO_PALETTES,...V40_PHOTO_PALETTES,...V42_PHOTO_PALETTES,...V44_PHOTO_PALETTES,...V45_PHOTO_PALETTES,...V46_PHOTO_PALETTES};
 
 Object.assign(PHOTO_PALETTES,V47_PHOTO_PALETTES);
+
+Object.assign(PHOTO_PALETTES,V48_PHOTO_PALETTES);
