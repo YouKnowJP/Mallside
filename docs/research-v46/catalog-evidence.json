@@ -1,0 +1,104 @@
+{
+  "checkedOn": "2026-10-31",
+  "primarySource": "Official Sandro US selected-color product pages fetched live; exact packshots downloaded from the official image service.",
+  "qualification": "Dated product references; not branch inventory, real fit, return rights or photograph licensing.",
+  "products": [
+    {
+      "id": "v46-real-531d6617cf660f44ee1e",
+      "sku": "SHPTS01759-20",
+      "color": "Black",
+      "referenceUSD": 155,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sourceFit": "Classic",
+      "source": "https://us.sandro-paris.com/en/p/cotton-t-shirt/3607172137397.html",
+      "checkedOn": "2026-10-31",
+      "sourcePhoto": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6810c869/images/packshot/Sandro_SHPTS01759-20_H_P.jpg?sw=2000&sh=2000",
+      "sourcePhotoSHA256": "b1665fb9ced3a14ea463765c3357610b616845e714363871f03a61307e93c118",
+      "runtimePhoto": "assets/photos/v46-real-531d6617cf660f44ee1e.webp",
+      "runtimePhotoSHA256": "cb93f086d61d1183d6393e71131ba6a2f39159c8d162a2327e86b02da216c67f",
+      "construction": "100% cotton; round neck, short sleeves and a classic fit with a small puffed logo.",
+      "offerQualification": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+      "sourceMainContentSHA256": "842c30d62e767557eaaed6033c83693e525be5ae9f37c6273bf36fb8a76f5eca"
+    },
+    {
+      "id": "v46-real-e0522a589c10fe1598fa",
+      "sku": "SHPCM00858-20",
+      "color": "Black",
+      "referenceUSD": 260,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sourceFit": "Fitted",
+      "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_20.html",
+      "checkedOn": "2026-10-31",
+      "sourcePhoto": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc49a9682/images/packshot/Sandro_SHPCM00858-20_V_P.jpg?sw=2000&sh=2000",
+      "sourcePhotoSHA256": "2b3bde44d819d33bd473bb7eb3fd7f494dbbeb45a2a69d9d3bb6a4d0587282fc",
+      "runtimePhoto": "assets/photos/v46-real-e0522a589c10fe1598fa.webp",
+      "runtimePhotoSHA256": "d9cbbe45980156a212148d0e2da14c1fa1c21686f0d83505362e613edf54190b",
+      "construction": "78% cotton, 18% polyamide, 4% elastane; long sleeves, buttoned cuffs, classic collar and button fastening.",
+      "offerQualification": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+      "sourceMainContentSHA256": "861624eb4041ba5cbc2c0c9bc2637e8def977716ba62604a11e1336ca145eb79"
+    },
+    {
+      "id": "v46-real-07489b4756d97870f974",
+      "sku": "SHPCM00858-44",
+      "color": "Navy Blue",
+      "referenceUSD": 130,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sourceFit": "Fitted",
+      "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_44.html",
+      "checkedOn": "2026-10-31",
+      "sourcePhoto": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwaa7ba203/images/packshot/Sandro_SHPCM00858-44_V_P.jpg?sw=2000&sh=2000",
+      "sourcePhotoSHA256": "cbfc1d0dc0eba76ad80b041992e4e6845878d53d60de3ff499fff3b7b0c22a64",
+      "runtimePhoto": "assets/photos/v46-real-07489b4756d97870f974.webp",
+      "runtimePhotoSHA256": "848d3c5ef85346b62f44e95131f11cc3c0c8a6a0250b86715ee233f81318b339",
+      "construction": "78% cotton, 18% polyamide, 4% elastane; long sleeves, buttoned cuffs, classic collar and button fastening.",
+      "offerQualification": "Official US dated sale reference: $130, reduced from $260. Several source size options require restock notification. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+      "sourceMainContentSHA256": "b81d36369056cfe60eb1ba8a35ea6c2c3c963fa4560e921ba0d11bbdb267d33f"
+    },
+    {
+      "id": "v46-real-e97906467d070ffb04f0",
+      "sku": "SHPTS01855-10",
+      "color": "White",
+      "referenceUSD": 185,
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sourceFit": "Oversized",
+      "source": "https://us.sandro-paris.com/en/p/oversized-t-shirt/SHPTS01855_10.html",
+      "checkedOn": "2026-10-31",
+      "sourcePhoto": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf0ab4670/images/packshot/Sandro_SHPTS01855-10_H_P.jpg?sw=2000&sh=2000",
+      "sourcePhotoSHA256": "e034de42f2f80ac3a093df8bf88f49bb6f87aa2195ff3d88d6721125734b3e1a",
+      "runtimePhoto": "assets/photos/v46-real-e97906467d070ffb04f0.webp",
+      "runtimePhotoSHA256": "34ad2f7e7764713d0774f3fbe878caa6afed9d67db987dcff1fe29250cbf5581",
+      "construction": "100% cotton; round neck, short sleeves and an oversized cut with a small side label.",
+      "offerQualification": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+      "sourceMainContentSHA256": "6108f41a49f25ec2187ea7487ffcf200fcb31a8dc034600a3771874e9ba148db"
+    }
+  ],
+  "previousCatalog": {
+    "count": 8794,
+    "sortedProductIdsSHA256": "113b25459f15a667ddcb9caf875cfbac36e2cc89b94509ae2ca091a0de60311d"
+  }
+}

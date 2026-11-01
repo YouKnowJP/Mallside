@@ -152,3 +152,9 @@ Opaque upper garments densify shell rings before retargeting so interpolation fo
 `store-product-additions-v45.js` isolates exact selected-color references and non-member offers. Separate garment, palette and surface overrides preserve earlier appearances. Seven shops gain `collectionEdition=45`, retained material studies and original `active-studio.js` care fixtures. Source sizing preserves the combined XXL-1X legging label.
 
 `flower-kiosk.js` uses existing current-center activity memories for reusable color markers and original chosen-stem bouquet geometry. Free memory-book navigation changes no save or reward rule. `flower-motion.js` supplies smooth lift/hold/return joins and static reduced motion; the existing activity lifecycle restores held items and disposes props. Canopy instances register as noninteractive overhead cutaways, shrinking in all three axes at their original elevation while leaving their supports and collision geometry unchanged.
+
+## Tailoring studios and tea lounges (v46)
+
+`store-product-additions-v46.js` and separate photo/garment overrides isolate four exact selected-color Sandro references. Three shops gain `collectionEdition=46`; `tailoring-studio.js` reuses compatible material studies and existing collision footprints. All earlier product/appearance records remain unchanged.
+
+`tea-lounge.js` batches original counters into public details and renders a free current-recipe/current-center memory card from existing activity state. Marker updates reuse materials. `consumption-motion.js` supplies continuous lift/hold/lower/rest poses and static reduced motion; actual consumption uses elapsed animation time, stows/restores purchases and tilts cups in shopper space. Tea selects its own lounge bench and hides obstructing labels during the close-up. No save-schema or map-revision change is required.

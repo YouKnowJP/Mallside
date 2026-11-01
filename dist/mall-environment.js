@@ -1,3 +1,4 @@
+import {buildTeaLounge} from './tea-lounge.js?v=46.0.0';
 import {buildFlowerKiosk} from './flower-kiosk.js?v=45.0.0';
 import {buildPhotoKiosk} from './photo-kiosk.js?v=44.0.0';
 import {buildSculptureDetails} from './sculpture-details.js?v=43.0.0';
@@ -190,6 +191,7 @@ export function buildPublicRealm(w,l,theme){
   const glass=w.mesh(new T.SphereGeometry(n.radius+13,24,10,0,Math.PI*2,0,Math.PI/2),w.mat('#bfdad4',{transparent:true,opacity:.09,depthWrite:false,side:T.DoubleSide}));glass.scale.y=.24;glass.position.set(n.x,145,n.y);glass.castShadow=false;
   for(let i=0;i<4;i++){const beam=w.mesh(new T.TorusGeometry(n.radius+13,1.4,4,24,Math.PI),w.mat(theme.stone));beam.position.set(n.x,145,n.y);beam.scale.y=.24;beam.rotation.y=i*Math.PI/4;beam.castShadow=false;}
  }
+ for(const v of l.venues.filter(v=>v.id==='lounge'))buildTeaLounge(w,b,v,theme);
  const count=b.flush();w.canvas.dataset.environmentRevision='40';w.canvas.dataset.waystationDetailRevision='40';w.canvas.dataset.gardenStudies=String((w.gardenSprigs||[]).length/4);w.canvas.dataset.artAlcoves=String(d.fixtures.filter(f=>f.kind==='art').length);w.canvas.dataset.waystationCount=String(d.fixtures.filter(f=>f.amenity).length);w.canvas.dataset.publicSeats=String(d.seating.length);w.canvas.dataset.landscapeFeatures=String(d.edgePlanting.length+d.fixtures.length);w.canvas.dataset.architecturalDetails=String(count);return count;
 }
 

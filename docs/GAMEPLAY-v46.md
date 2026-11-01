@@ -1,0 +1,11 @@
+# v46 — tailoring studios and tea lounges
+
+Three unfinished Sandro shops—Century City, South Coast Plaza and Desert Hills—now carry four exact selected-color references: the black classic Cotton T-shirt, black and navy fitted stretch cotton shirts, and white Oversized T-shirt. Official US product pages and matching packshots were checked on 31 October 2026. The navy shirt uses the dated $130 sale reference, reduced from $260; several sizes require restock notifications on the source. Other references are standard USD prices. Exact source size menus are retained, including only S/M/L for the oversized tee. Shipping, financing, local inventory and real return eligibility are excluded; game quantities, fit and returns are simulated.
+
+Original seam, cuff and button-study fixtures accompany the verified collection. Saved material studies remain compatible when the shops gain stock. Source comparisons, physical fitting, payment, exact game refunds, bench rest and direct exits remain available. All 8,794 earlier complete product records and appearance profiles are unchanged.
+
+All ten terrace tea lounges gain batched counters, tea canisters, cups, trays and recipe cards inside their existing footprints. The physical card, nearby keyboard-accessible button and lounge offer open a free recipe-and-memory screen. It shows the current original game recipe and recent tea memories from that center without spending money/time or awarding XP. Tea choices retain keyboard focus as selections change. Starting opens the existing choices; finishing uses the existing $6 and 20-minute rules, with the original daily limit and calendar bonuses.
+
+Drinking, tea, eating and ice-cream gestures now lift, hold, lower and rest smoothly. Cups tilt during a sip, reduced motion stays static, and held purchases are stowed and restored. Tea finishes at its own lounge bench with a clearer side view; oversized floating labels recede during the close-up.
+
+The catalog has 8,806 branch listings, 1,067 stocked identities and 398 identities awaiting research, including 307 retail planning shops. Schema 6 and map revision 10 stay unchanged. See [source evidence](research-v46/catalog-evidence.json), [QA](qa-v46.md) and the [roadmap](../ROADMAP.md).

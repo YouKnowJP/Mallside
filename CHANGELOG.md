@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v46.0.0 — Tailoring studios and tea lounges
+
+- Stock three Sandro shops with four exact official references, source size menus, qualified standard/sale USD prices and matching packshots.
+- Add original tailoring studies and preserve saved notes, fitting, checkout, returns and exits.
+- Detail all ten tea lounges and add free current-recipe/local-memory cards connected to the existing workshop.
+- Ease drinking/eating gestures, fix reduced-motion movement, retain tea-select keyboard focus, restore held purchases and seat tea at its own bench with clearer framing.
+- Release scene-owned shadow buffers when changing rooms to prevent accumulated lighting allocations.
+- See [v46 QA](docs/qa-v46.md) for validation.
+
 ## v45.0.0 — Activewear studios and flower stops
 
 - Stock seven Fabletics shops with four exact official references, matching photographs, source alpha labels and non-member USD offers; preserve prior product records.

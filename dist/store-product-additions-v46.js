@@ -1,0 +1,225 @@
+// Exact selected-color source references; original game interpretations.
+export const VERIFIED_TAILORING_ADDITIONS=[
+ {
+  "id": "v46-real-531d6617cf660f44ee1e",
+  "merchant": "Sandro",
+  "merchantNames": [
+   "Sandro"
+  ],
+  "merchantOnly": true,
+  "brand": "Sandro",
+  "name": "Cotton T-shirt \u2014 Black",
+  "type": "shirt",
+  "audience": "adult",
+  "priceUSD": 155,
+  "referenceAmount": 155,
+  "referenceCurrency": "USD",
+  "referencePriceVerified": true,
+  "referenceCheckedOn": "2026-10-31",
+  "source": "https://us.sandro-paris.com/en/p/cotton-t-shirt/3607172137397.html",
+  "sourceRetailer": "Sandro US",
+  "sourceKind": "retailer-product-page",
+  "condition": "New",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "sizingSystem": "alpha",
+  "colorName": "Black",
+  "color": "#181818",
+  "referenceSKU": "SHPTS01759-20",
+  "collectionReference": 46,
+  "sourceFit": "Classic",
+  "sourceAvailability": "Size-specific source availability varies; see official page",
+  "sourceOfferNote": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+  "sizeBasis": "Exact selected-color source alpha labels. Virtual fit is simulated; these are not measured body dimensions.",
+  "priceBasis": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+  "merchantEvidence": {
+   "kind": "official-merchant-product",
+   "source": "https://us.sandro-paris.com/en/p/cotton-t-shirt/3607172137397.html",
+   "checkedOn": "2026-10-31",
+   "selectedSKU": "SHPTS01759-20",
+   "selectedColor": "Black"
+  },
+  "photo": {
+   "path": "assets/photos/v46-real-531d6617cf660f44ee1e.webp",
+   "source": "https://us.sandro-paris.com/en/p/cotton-t-shirt/3607172137397.html",
+   "imageUrl": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6810c869/images/packshot/Sandro_SHPTS01759-20_H_P.jpg?sw=2000&sh=2000",
+   "description": "Cotton T-shirt \u2014 Black \u2014 exact selected-color packshot.",
+   "variantNote": "Official selected-color packshot visually reviewed; original game geometry is adapted.",
+   "group": "v46-tailoring-studios"
+  },
+  "finalSale": false,
+  "material": "100% cotton; round neck, short sleeves and a classic fit with a small puffed logo."
+ },
+ {
+  "id": "v46-real-e0522a589c10fe1598fa",
+  "merchant": "Sandro",
+  "merchantNames": [
+   "Sandro"
+  ],
+  "merchantOnly": true,
+  "brand": "Sandro",
+  "name": "Fitted stretch cotton shirt \u2014 Black",
+  "type": "shirt",
+  "audience": "adult",
+  "priceUSD": 260,
+  "referenceAmount": 260,
+  "referenceCurrency": "USD",
+  "referencePriceVerified": true,
+  "referenceCheckedOn": "2026-10-31",
+  "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_20.html",
+  "sourceRetailer": "Sandro US",
+  "sourceKind": "retailer-product-page",
+  "condition": "New",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "sizingSystem": "alpha",
+  "colorName": "Black",
+  "color": "#1b1b1b",
+  "referenceSKU": "SHPCM00858-20",
+  "collectionReference": 46,
+  "sourceFit": "Fitted",
+  "sourceAvailability": "Size-specific source availability varies; see official page",
+  "sourceOfferNote": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+  "sizeBasis": "Exact selected-color source alpha labels. Virtual fit is simulated; these are not measured body dimensions.",
+  "priceBasis": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+  "merchantEvidence": {
+   "kind": "official-merchant-product",
+   "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_20.html",
+   "checkedOn": "2026-10-31",
+   "selectedSKU": "SHPCM00858-20",
+   "selectedColor": "Black"
+  },
+  "photo": {
+   "path": "assets/photos/v46-real-e0522a589c10fe1598fa.webp",
+   "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_20.html",
+   "imageUrl": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc49a9682/images/packshot/Sandro_SHPCM00858-20_V_P.jpg?sw=2000&sh=2000",
+   "description": "Fitted stretch cotton shirt \u2014 Black \u2014 exact selected-color packshot.",
+   "variantNote": "Official selected-color packshot visually reviewed; original game geometry is adapted.",
+   "group": "v46-tailoring-studios"
+  },
+  "finalSale": false,
+  "material": "78% cotton, 18% polyamide, 4% elastane; long sleeves, buttoned cuffs, classic collar and button fastening."
+ },
+ {
+  "id": "v46-real-07489b4756d97870f974",
+  "merchant": "Sandro",
+  "merchantNames": [
+   "Sandro"
+  ],
+  "merchantOnly": true,
+  "brand": "Sandro",
+  "name": "Fitted stretch cotton shirt \u2014 Navy Blue",
+  "type": "shirt",
+  "audience": "adult",
+  "priceUSD": 130,
+  "referenceAmount": 130,
+  "referenceCurrency": "USD",
+  "referencePriceVerified": true,
+  "referenceCheckedOn": "2026-10-31",
+  "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_44.html",
+  "sourceRetailer": "Sandro US",
+  "sourceKind": "retailer-product-page",
+  "condition": "New",
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "sizingSystem": "alpha",
+  "colorName": "Navy Blue",
+  "color": "#1f242f",
+  "referenceSKU": "SHPCM00858-44",
+  "collectionReference": 46,
+  "sourceFit": "Fitted",
+  "sourceAvailability": "Size-specific source availability varies; see official page",
+  "sourceOfferNote": "Official US dated sale reference: $130, reduced from $260. Several source size options require restock notification. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+  "sizeBasis": "Exact selected-color source alpha labels. Virtual fit is simulated; these are not measured body dimensions.",
+  "priceBasis": "Official US dated sale reference: $130, reduced from $260. Several source size options require restock notification. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+  "merchantEvidence": {
+   "kind": "official-merchant-product",
+   "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_44.html",
+   "checkedOn": "2026-10-31",
+   "selectedSKU": "SHPCM00858-44",
+   "selectedColor": "Navy Blue"
+  },
+  "photo": {
+   "path": "assets/photos/v46-real-07489b4756d97870f974.webp",
+   "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_44.html",
+   "imageUrl": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwaa7ba203/images/packshot/Sandro_SHPCM00858-44_V_P.jpg?sw=2000&sh=2000",
+   "description": "Fitted stretch cotton shirt \u2014 Navy Blue \u2014 exact selected-color packshot.",
+   "variantNote": "Official selected-color packshot visually reviewed; original game geometry is adapted.",
+   "group": "v46-tailoring-studios"
+  },
+  "finalSale": false,
+  "material": "78% cotton, 18% polyamide, 4% elastane; long sleeves, buttoned cuffs, classic collar and button fastening.",
+  "sourceOriginalReferenceUSD": 260
+ },
+ {
+  "id": "v46-real-e97906467d070ffb04f0",
+  "merchant": "Sandro",
+  "merchantNames": [
+   "Sandro"
+  ],
+  "merchantOnly": true,
+  "brand": "Sandro",
+  "name": "Oversized T-shirt \u2014 White",
+  "type": "shirt",
+  "audience": "adult",
+  "priceUSD": 185,
+  "referenceAmount": 185,
+  "referenceCurrency": "USD",
+  "referencePriceVerified": true,
+  "referenceCheckedOn": "2026-10-31",
+  "source": "https://us.sandro-paris.com/en/p/oversized-t-shirt/SHPTS01855_10.html",
+  "sourceRetailer": "Sandro US",
+  "sourceKind": "retailer-product-page",
+  "condition": "New",
+  "sizes": [
+   "S",
+   "M",
+   "L"
+  ],
+  "sizingSystem": "alpha",
+  "colorName": "White",
+  "color": "#e5e7ee",
+  "referenceSKU": "SHPTS01855-10",
+  "collectionReference": 46,
+  "sourceFit": "Oversized",
+  "sourceAvailability": "Size-specific source availability varies; see official page",
+  "sourceOfferNote": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+  "sizeBasis": "Exact selected-color source alpha labels. Source offers only S, M and L for this oversized cut. Virtual fit is simulated; these are not measured body dimensions.",
+  "priceBasis": "Official US standard USD reference. Shipping, financing, local branch stock and retailer return eligibility are excluded. Game quantities, fit and returns are simulated.",
+  "merchantEvidence": {
+   "kind": "official-merchant-product",
+   "source": "https://us.sandro-paris.com/en/p/oversized-t-shirt/SHPTS01855_10.html",
+   "checkedOn": "2026-10-31",
+   "selectedSKU": "SHPTS01855-10",
+   "selectedColor": "White"
+  },
+  "photo": {
+   "path": "assets/photos/v46-real-e97906467d070ffb04f0.webp",
+   "source": "https://us.sandro-paris.com/en/p/oversized-t-shirt/SHPTS01855_10.html",
+   "imageUrl": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf0ab4670/images/packshot/Sandro_SHPTS01855-10_H_P.jpg?sw=2000&sh=2000",
+   "description": "Oversized T-shirt \u2014 White \u2014 exact selected-color packshot.",
+   "variantNote": "Official selected-color packshot visually reviewed; original game geometry is adapted.",
+   "group": "v46-tailoring-studios"
+  },
+  "finalSale": false,
+  "material": "100% cotton; round neck, short sleeves and an oversized cut with a small side label."
+ }
+];

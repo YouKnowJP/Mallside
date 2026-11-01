@@ -1,0 +1,251 @@
+{
+  "release": {
+    "game": "Mallside",
+    "version": "46.0.0",
+    "sourceCommit": "e499778377d404e160794c68b9f13e887aa57f0a",
+    "bundle": "app-ORWQ3EKU.js",
+    "sourceVisibility": "public",
+    "license": "LicenseRef-Mallside-Proprietary",
+    "licenseVersion": "1.1",
+    "licenseUrl": "LICENSE.txt",
+    "permissionsUrl": "PERMISSIONS.txt",
+    "officialPlayUrl": "https://youknowjp.github.io/Mallside/",
+    "sourceRepository": "https://github.com/YouKnowJP/Mallside",
+    "publicFiles": "Generated game only; editable source and history are available in the Mallside repository."
+  },
+  "styles": [
+    "styles-6d92a5f8e9bb.css",
+    "life-styles-3d42fae0021b.css"
+  ],
+  "artifactSHA256": {
+    "app-ORWQ3EKU.js": "ab9c76fbac129c8afa3fafec56088acd553e0730540d8f63836d9f2c23fd9c9e",
+    "styles-6d92a5f8e9bb.css": "6d92a5f8e9bb4f84020cdcaed234f605d576d4ceb159d381738316bd09d4ad6c",
+    "life-styles-3d42fae0021b.css": "3d42fae0021b4622bbf03258ea99b0bc5e9c94fa588d8d026a957d25b783015b"
+  },
+  "proofs": [
+    {
+      "browser": "firefox",
+      "version": "159.0",
+      "driverVersion": "0.37.1",
+      "isolation": "retained-window",
+      "headless": false,
+      "scenarios": 67,
+      "checks": 68,
+      "sessions": 2,
+      "fingerprint": "0327e16ac4cb05891fa41ef3b38db77df7c1a8cc863dbcb0176094dd25cb0d10",
+      "errors": 0,
+      "resourceWarnings": 0,
+      "inputRetries": 0
+    },
+    {
+      "browser": "safari",
+      "version": "26.6.2",
+      "driverVersion": "Apple safaridriver",
+      "isolation": "retained-window",
+      "headless": false,
+      "scenarios": 67,
+      "checks": 68,
+      "sessions": 2,
+      "fingerprint": "0327e16ac4cb05891fa41ef3b38db77df7c1a8cc863dbcb0176094dd25cb0d10",
+      "errors": 0,
+      "resourceWarnings": 0,
+      "inputRetries": 0
+    }
+  ],
+  "testBuildNote": "The frozen v46 working-tree artifact was tested before its publication commit. Published JavaScript and CSS must match these exact hashes.",
+  "mobileTouchEmulation": [
+    {
+      "width": 320,
+      "sourceSize": "M",
+      "freeStudy": true,
+      "directExit": true,
+      "study": {
+        "cash": 7500000,
+        "xp": 15,
+        "clock": "10:05 AM",
+        "overflow": false,
+        "exitHeight": 62.390625,
+        "visible": true,
+        "hit": true
+      },
+      "recipe": {
+        "cash": 7500900,
+        "xp": 58,
+        "overflow": false,
+        "backHeight": 44.1953125
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "sourceSize": "M",
+      "freeStudy": true,
+      "directExit": true,
+      "study": {
+        "cash": 7500000,
+        "xp": 15,
+        "clock": "10:05 AM",
+        "overflow": false,
+        "exitHeight": 48,
+        "visible": true,
+        "hit": true
+      },
+      "recipe": {
+        "cash": 7500900,
+        "xp": 58,
+        "overflow": false,
+        "backHeight": 44.1953125
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "sourceSize": "M",
+      "freeStudy": true,
+      "directExit": true,
+      "study": {
+        "cash": 7500000,
+        "xp": 15,
+        "clock": "10:05 AM",
+        "overflow": false,
+        "exitHeight": 48,
+        "visible": true,
+        "hit": true
+      },
+      "recipe": {
+        "cash": 7500900,
+        "xp": 58,
+        "overflow": false,
+        "backHeight": 44.1953125
+      },
+      "errors": []
+    }
+  ],
+  "localRegression": {
+    "passed": 551,
+    "failed": 0,
+    "workers": 2,
+    "milliseconds": 80036.607792,
+    "newV46Tests": 14
+  },
+  "nativeSessionNote": "Each matrix spans two retained visible sessions. Safari resumed after its protection dialog interrupted a scenario; Firefox resumed after the mosaic renderer reached tolerance too late for the first run. Every required scenario has a passing matching-fingerprint report; interrupted attempts are excluded.",
+  "seatedTeaSupplement": {
+    "runnerSHA256": "08eb92ab81d7386a49c30c30cdd34739ae116c8192ec0236a5e5b3ea39e66522",
+    "condition": "Tea metadata, consumptionLift > .2, seatedBlend > .995; native workshop completion and once-only memory assertions retained.",
+    "results": [
+      {
+        "browser": "safari",
+        "checks": 2,
+        "pose": {
+          "screenY": -0.009,
+          "base": "green",
+          "lift": 1,
+          "seatBlend": 1
+        },
+        "errors": 0,
+        "resourceWarnings": 0,
+        "inputRetries": 0
+      },
+      {
+        "browser": "firefox",
+        "checks": 2,
+        "pose": {
+          "base": "green",
+          "lift": 1,
+          "screenY": 0.012,
+          "seatBlend": 1
+        },
+        "errors": 0,
+        "resourceWarnings": 0,
+        "inputRetries": 0
+      }
+    ],
+    "visualReview": "Settled bench and cup poses reviewed in both native browsers; earlier capture showed the initial seating blend."
+  },
+  "cleanup": {
+    "safariAutomationVerifiedOff": true,
+    "safariSettingsClosed": true,
+    "ownedNativeDriversStopped": true,
+    "firefox": {
+      "newHomePathsRemoved": 4,
+      "preExistingPathsPreserved": 7,
+      "preExistingPreferencePreserved": true,
+      "newHomePathsRemaining": 0,
+      "ownedUpdaterCacheRemoved": false
+    }
+  },
+  "scenarioNames": [
+    "v46 furnished tea lounge, free recipe and memories, eased sipping, correct seat and once-only reward",
+    "v46 Sandro dated navy sale, oversized source sizes, fitting and compact direct exits",
+    "v46 Sandro fitted shirts and classic tees, retained study, source sizes, checkout, reload and refunds",
+    "v45 activewear leggings, retained studio, non-member references, source alpha fitting and exact refund",
+    "v45 activewear tee studio, selected source fabric, purchase, reload and shop exit",
+    "v45 flower memories, chosen bouquet animation, once-only workshop and compact activewear controls",
+    "v44 MCM backpack studio, retained material study, source sizing, checkout and exit",
+    "v44 MCM shopper studio, source format comparison, carry fitting, reload and exact refund",
+    "v44 public photo memories, free keyboard album route and compact bag controls",
+    "v43 rubber watch studio, retained material notes, wrist preview, reload and exit",
+    "v43 sculpture sketch markers, saved floor scope and compact watch controls",
+    "v43 steel watch studio, case comparison, smooth wrist preview, payment and refund",
+    "v42 COS interlock studio, retained study, physical fitting, checkout, reload and refund",
+    "v42 Mango knit studio, retained study, physical fitting, checkout, reload and refund",
+    "v42 reading shelf bookmark, compact stocked studies and direct exits",
+    "v41 compact material controls, keyboard focus, draft cancellation and direct shop exit",
+    "v41 courtyard mosaic follows native keyboard turns and preserves its saved arrangement",
+    "v41 physical material studios, preview rollback, saved finishes and compatible reload",
+    "v40 denim studio, source W/L sizes, eased fitting turns, payment and exact refund",
+    "v40 furnished waystation routes to real discoveries, remembers the visit and preserves compact source controls",
+    "v40 jersey atelier, cropped longsleeve and exact alpha labels, saved receipts and refunds",
+    "v39 optical studio, exact width, smooth frame fitting, checkout and refund",
+    "v39 public garden, compact frame widths and starting price, old notes and pinned shop controls",
+    "v39 Rhone studio, source alpha sizes, polo and shorts fitting, saved receipts and refunds",
+    "v38 compact edition facts, old shortlist, comparison focus and pinned checkout and exit",
+    "v38 physical bookshop, edition comparison, reading animation, purchase and refund",
+    "v38 public reading shelf routes to verified bookshops and lightweight edition checkout",
+    "v37 all three new brands inspect, fit exact source sizes, buy, reload and refund",
+    "v37 compact comparison controls, keyboard focus, cancellation and pinned shop exit",
+    "v37 physical collection desk, saved shortlist compatibility, staff and preserved rest bench",
+    "v36 budgeted shortlist, focus, persistence and route to the actual product shop",
+    "v36 spaced full-motion crowds and eased rest in a planning lounge",
+    "v36 themed research interiors, lightweight draft cancellation and compact saved-plan exit",
+    "v35 legacy research-shop purchase reaches returns desk and refunds once",
+    "v35 lightweight 2D dining reaches the branch door and saves its meal",
+    "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+    "v35 upper-floor sculpture route, first sketch, daily limit and saved notebook",
+    "v34 collection gallery, associate, saved-shop filter and legacy-compatible reload",
+    "v34 seated visitors and eased walking settle without moving the stopped player",
+    "v34 upper-floor water and community stops, cooldown and saved invitation",
+    "v33 indoor evening lighting and compact focused-play layouts",
+    "v33 real portrait capture and dressed collection-room close-up",
+    "v33 reflected lighting, camera presets, focused play and visible route feedback",
+    "v32 cross-floor discovery and interactive floor connection",
+    "v32 discovery trail, keyboard mosaic, saved choices and repeat limit",
+    "v32 illustrated commons and compact activity layouts",
+    "v32 map details keyboard loop includes summaries and excludes closed contents",
+    "v32 nonwearable demos and research-only shops give useful options",
+    "v32 saved bag routes through shop checkout and full purchase refund",
+    "v32 service reservation, unused refund, cinema use and explicit exit",
+    "3D shop entry, route interruption, exit and repeat entry",
+    "browse, choose size, fitting, carry to checkout, pay and receipt",
+    "Eli \u00b7 shared activity 1 choices, saved continuation and daily limit",
+    "Eli \u00b7 shared activity 2 choices, saved continuation and daily limit",
+    "full viewport gameplay and visible exit control",
+    "game menu exposes shopping, progression, saves and camera controls",
+    "interactive court map leaves an interior before routing",
+    "Jules \u00b7 shared activity 1 choices, saved continuation and daily limit",
+    "Jules \u00b7 shared activity 2 choices, saved continuation and daily limit",
+    "keyboard walking moves and stops on release without a stale route",
+    "Maya \u00b7 shared activity 1 choices, saved continuation and daily limit",
+    "Maya \u00b7 shared activity 2 choices, saved continuation and daily limit",
+    "Noor \u00b7 shared activity 1 choices, saved continuation and daily limit",
+    "Noor \u00b7 shared activity 2 choices, saved continuation and daily limit",
+    "phone/tablet layouts, shop search and keyboard modal containment",
+    "Sam \u00b7 shared activity 1 choices, saved continuation and daily limit",
+    "Sam \u00b7 shared activity 2 choices, saved continuation and daily limit"
+  ],
+  "releaseChecks": {
+    "browserModules": 166,
+    "localReferences": 2969,
+    "publicFiles": 2038
+  }
+}

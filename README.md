@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v45 — activewear studios and flower stops
+## v46 — tailoring studios and tea lounges
+
+Three unfinished Sandro shops gain four exact photographed references, qualified standard/sale USD offers and source size menus. Original seam/cuff/button studios retain saved material studies. All ten tea lounges gain detailed counters, free recipe cards and saved local tea memories. Smoother sipping, static reduced motion and lounge-specific bench/camera framing improve quiet breaks. Existing saves and purchases remain compatible. See [v46 gameplay](docs/GAMEPLAY-v46.md), [source evidence](docs/research-v46/catalog-evidence.json), [release QA](docs/qa-v46.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v45 — activewear studios and flower stops
 
 Four verified Fabletics variants stock seven unfinished shops, with exact photographs, source sizes and qualified non-member USD references. Richer original care studios retain saved material studies. All 28 flower kiosks gain petals, wrapping detail, saved bouquet colors and free memory-book access. Eased arranging gestures and camera cutaways make the new detail easier to see. Existing saves and purchases remain compatible. See [v45 gameplay](docs/GAMEPLAY-v45.md), [source evidence](docs/research-v45/catalog-evidence.json), [release QA](docs/qa-v45.md) and the [roadmap](ROADMAP.md).
 

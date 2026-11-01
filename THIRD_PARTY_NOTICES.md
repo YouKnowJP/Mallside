@@ -62,3 +62,7 @@ Four selected MCM SKU photographs and source references were checked on 30 Octob
 ## v45 activewear source photographs
 
 Four exact-SKU Fabletics photographs are referenced by the v45 catalog. Official selected-color page and image-service provenance, source/runtime hashes and reviewed crop regions are recorded in docs/research-v45/catalog-evidence.json and docs/ASSET_INVENTORY.json. Fabletics and its respective rights holders retain rights in their photographs and marks; inclusion is not a record of commercial permission. Studio fixtures, flower props and game animations are original Mallside interpretations.
+
+## v46 tailoring source photographs
+
+Four exact selected-color Sandro US packshots are referenced by the v46 catalog. Official page/image provenance, dated offers, source/runtime hashes and reviewed fabric regions are recorded in docs/research-v46/catalog-evidence.json and docs/ASSET_INVENTORY.json. Sandro and the respective rights holders retain their photographs and marks; commercial permission is not recorded. Tailoring fixtures, tea counters, recipe cards and game motion are original Mallside interpretations, not exact branch interiors or real stock/fit/return claims.

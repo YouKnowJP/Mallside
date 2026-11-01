@@ -1,11 +1,12 @@
 # Mallside documentation
 
-Current release: [v45 gameplay](GAMEPLAY-v45.md) and [v45 QA](qa-v45.md).
+Current release: [v46 gameplay](GAMEPLAY-v46.md) and [v46 QA](qa-v46.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Tailoring studios, tea recipe cards and eased consumption | [v46 guide](GAMEPLAY-v46.md), [source evidence](research-v46/catalog-evidence.json), [v46 QA](qa-v46.md) |
 | Activewear studios, flower memories and canopy visibility | [v45 guide](GAMEPLAY-v45.md), [source evidence](research-v45/catalog-evidence.json), [v45 QA](qa-v45.md) |
 | Verified bag studios, settling motion and photo kiosks | [v44 guide](GAMEPLAY-v44.md), [source evidence](research-v44/catalog-evidence.json), [v44 QA](qa-v44.md) |
 | Verified watch studios, wrist inspection and sculpture sketches | [v43 guide](GAMEPLAY-v43.md), [source evidence](research-v43/catalog-evidence.json), [v43 QA](qa-v43.md) |

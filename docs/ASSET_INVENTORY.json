@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "45.0.0",
+  "release": "46.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 1991,
-  "uniqueRuntimePhotoFiles": 1969,
+  "runtimePhotoEntries": 1995,
+  "uniqueRuntimePhotoFiles": 1973,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19617,6 +19617,46 @@
       "source": "https://www.fabletics.com/products/THE-24-7-TEE-SS2044523-0001",
       "imageUrl": "https://cdn.fabletics.com/assets/images/skus/SS2044523-0001?model=d&imgSize=577x866&version=1",
       "description": "The 24-7 Tee Black — exact SKU photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v46-real-07489b4756d97870f974",
+      "path": "assets/photos/v46-real-07489b4756d97870f974.webp",
+      "sha256": "848d3c5ef85346b62f44e95131f11cc3c0c8a6a0250b86715ee233f81318b339",
+      "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_44.html",
+      "imageUrl": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwaa7ba203/images/packshot/Sandro_SHPCM00858-44_V_P.jpg?sw=2000&sh=2000",
+      "description": "Fitted stretch cotton shirt — Navy Blue — exact selected-color packshot.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v46-real-531d6617cf660f44ee1e",
+      "path": "assets/photos/v46-real-531d6617cf660f44ee1e.webp",
+      "sha256": "cb93f086d61d1183d6393e71131ba6a2f39159c8d162a2327e86b02da216c67f",
+      "source": "https://us.sandro-paris.com/en/p/cotton-t-shirt/3607172137397.html",
+      "imageUrl": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6810c869/images/packshot/Sandro_SHPTS01759-20_H_P.jpg?sw=2000&sh=2000",
+      "description": "Cotton T-shirt — Black — exact selected-color packshot.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v46-real-e0522a589c10fe1598fa",
+      "path": "assets/photos/v46-real-e0522a589c10fe1598fa.webp",
+      "sha256": "d9cbbe45980156a212148d0e2da14c1fa1c21686f0d83505362e613edf54190b",
+      "source": "https://us.sandro-paris.com/en/p/fitted-stretch-cotton-shirt/SHPCM00858_20.html",
+      "imageUrl": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc49a9682/images/packshot/Sandro_SHPCM00858-20_V_P.jpg?sw=2000&sh=2000",
+      "description": "Fitted stretch cotton shirt — Black — exact selected-color packshot.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v46-real-e97906467d070ffb04f0",
+      "path": "assets/photos/v46-real-e97906467d070ffb04f0.webp",
+      "sha256": "34ad2f7e7764713d0774f3fbe878caa6afed9d67db987dcff1fe29250cbf5581",
+      "source": "https://us.sandro-paris.com/en/p/oversized-t-shirt/SHPTS01855_10.html",
+      "imageUrl": "https://us.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf0ab4670/images/packshot/Sandro_SHPTS01855-10_H_P.jpg?sw=2000&sh=2000",
+      "description": "Oversized T-shirt — White — exact selected-color packshot.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

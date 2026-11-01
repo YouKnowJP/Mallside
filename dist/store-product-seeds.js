@@ -8,4 +8,5 @@ import {VERIFIED_KNIT_ADDITIONS as V42} from './store-product-additions-v42.js?v
 import {VERIFIED_WATCH_ADDITIONS as V43} from './store-product-additions-v43.js?v=43.0.0';
 import {VERIFIED_BAG_ADDITIONS as V44} from './store-product-additions-v44.js?v=44.0.0';
 import {VERIFIED_ACTIVE_ADDITIONS as V45} from './store-product-additions-v45.js?v=45.0.0';
-export const STORE_PRODUCT_SEEDS=[...V11,...V12,...V37,...V38,...V39,...V40,...V42,...V43,...V44,...V45];
+import {VERIFIED_TAILORING_ADDITIONS as V46} from './store-product-additions-v46.js?v=46.0.0';
+export const STORE_PRODUCT_SEEDS=[...V11,...V12,...V37,...V38,...V39,...V40,...V42,...V43,...V44,...V45,...V46];
