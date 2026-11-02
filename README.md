@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v48 — ceramic showrooms and pocket gardens
+## v49 — tableware studio and water breaks
+
+An unfinished Sur La Table shop at South Coast Plaza gains four exact-SKU porcelain references, reviewed photographs and qualified source prices. A furnished tableware studio supports comparison and saved glaze studies, while hollow models and smoother hand/object motion improve inspection. All 23 public water stops gain curved taps, cups, bottles and visible readiness; the card explains the existing shared cooldown. Existing saves and purchases remain compatible. See [v49 gameplay](docs/GAMEPLAY-v49.md), [source evidence](docs/research-v49/catalog-evidence.json), [release QA](docs/qa-v49.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v48 — ceramic showrooms and pocket gardens
 
 Two unfinished Arhaus shops gain four selected ceramic references, reviewed photographs, qualified prices and published dimensions. Original glaze studios retain saved material studies; hollow solid models, smoother two-hand inspection and home shelves bring the pieces into the game. All 23 gardens gain richer planting, a free field guide and visible floor-specific saved observations. Existing saves and purchases remain compatible. See [v48 gameplay](docs/GAMEPLAY-v48.md), [source evidence](docs/research-v48/catalog-evidence.json), [release QA](docs/qa-v48.md) and the [roadmap](ROADMAP.md).
 

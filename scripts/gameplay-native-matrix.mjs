@@ -15,13 +15,16 @@ assert.equal(listing.status,0,listing.stderr);
 let cases=JSON.parse(listing.stdout);if(args.match)cases=cases.filter(n=>n.includes(args.match));assert.ok(cases.length);
 cases.sort((a,b)=>Number(b.match(/^v(\d+)/)?.[1]||0)-Number(a.match(/^v(\d+)/)?.[1]||0)||a.localeCompare(b));
 const release=await fetch(base+'release.json').then(r=>r.json()),html=await fetch(base).then(r=>r.text()),styles=[...html.matchAll(/href="([^\"]+\.css)"/g)].map(m=>m[1]);
-const isolation=reuseWindow?'retained-window':'fresh-session';
+const sessionCaseLimit=reuseWindow?Number(args['max-session-cases']||18):1;assert.ok(Number.isSafeInteger(sessionCaseLimit)&&sessionCaseLimit>0&&sessionCaseLimit<=100);
+const isolation=reuseWindow?'bounded-retained-window':'fresh-session';
+const waitTimeout=Number(args['wait-timeout']||35000);assert.ok(Number.isSafeInteger(waitTimeout)&&waitTimeout>=5000&&waitTimeout<=300000);
+const pageLoadTimeout=Number(args['page-load-timeout']||30000),protocolTimeout=Number(args['protocol-timeout']||45000);for(const n of [pageLoadTimeout,protocolTimeout])assert.ok(Number.isSafeInteger(n)&&n>=5000&&n<=300000);
 const headless=args.headless==='true';assert.ok(!headless||browser==='firefox','Headless mode is Firefox-only');
-const fingerprint=createHash('sha256').update(JSON.stringify({release,styles,isolation,headless,test:readFileSync(runner,'utf8'),matrix:readFileSync(fileURLToPath(import.meta.url),'utf8')})).digest('hex');
+const fingerprint=createHash('sha256').update(JSON.stringify({release,styles,isolation,headless,sessionCaseLimit,waitTimeout,pageLoadTimeout,protocolTimeout,test:readFileSync(runner,'utf8'),matrix:readFileSync(fileURLToPath(import.meta.url),'utf8')})).digest('hex');
 const folder=root+'build/qa/'+browser+'-matrix';mkdirSync(folder,{recursive:true});const reports=[];
 if(args['await-foreground']==='true')for(const suffix of ['-foreground-go','-foreground-ready.json']){const p=root+'build/qa/'+browser+suffix;if(existsSync(p))unlinkSync(p);}
 // Reattach only an explicitly supplied owned test session, preserving its paired window.
-let retainedSession=args.session||null,foregroundRequested=false;
+let retainedSession=args.session||null,foregroundRequested=false,sessionCases=0;
 if(retainedSession){assert.ok(reuseWindow,'An existing session requires retained-window isolation');const prior=JSON.parse(readFileSync(root+'build/qa/'+browser+'-gameplay-report.json','utf8'));assert.equal(prior.browser,browser);assert.deepEqual(prior.release,release);}
 try{
  for(const [i,name]of cases.entries()){
@@ -33,6 +36,8 @@ try{
   console.log(JSON.stringify({index:i+1,total:cases.length,name,status:'running',isolation}));
   const started=Date.now(),argv=[runner,'--browser='+browser,'--base='+base,'--driver='+driver,'--match='+name];
   if(args.binary)argv.push('--binary='+args.binary);
+  argv.push('--wait-timeout='+waitTimeout);
+  argv.push('--page-load-timeout='+pageLoadTimeout,'--protocol-timeout='+protocolTimeout);
   if(headless)argv.push('--headless=true');
   if(args['await-foreground']==='true'&&!foregroundRequested){argv.push('--await-foreground=true');foregroundRequested=true;}
   if(reuseWindow){argv.push('--keep=true');if(retainedSession)argv.push('--session='+retainedSession,'--session-report='+root+'build/qa/'+browser+'-gameplay-report.json');}
@@ -49,12 +54,13 @@ try{
   const d=JSON.parse(readFileSync(root+'build/qa/'+browser+'-gameplay-report.json','utf8'));
   assert.deepEqual(d.errors,[]);assert.deepEqual(d.release,release);
   assert.deepEqual(new Set(d.results.map(r=>r.name)),new Set([name,'no captured game exceptions or unexpected console errors']));
-  const stored={...d,session:sessionRecord.session,isolation,headless,fingerprint,styles};
+  const stored={...d,session:sessionRecord.session,isolation,headless,sessionCaseLimit,waitTimeout,pageLoadTimeout,protocolTimeout,fingerprint,styles};
   writeFileSync(path,JSON.stringify(stored,null,2)+'\n');reports.push(stored);
   console.log(JSON.stringify({index:i+1,name,status:'passed',ms:Date.now()-started}));
+  if(reuseWindow&&++sessionCases>=sessionCaseLimit){const closed=await fetch(driver+'/session/'+retainedSession,{method:'DELETE',signal:AbortSignal.timeout(45000)});assert.ok(closed.ok,'Owned bounded session did not close');retainedSession=null;sessionCases=0;}
  }
  const results=[...new Map(reports.flatMap(d=>d.results).map(r=>[r.name,r])).values()];
- const summary={browser,release,styles,isolation,headless,capabilities:reports[0].capabilities,scenarios:reports.length,sessions:new Set(reports.map(r=>r.session)).size,passed:results.length,results,errors:reports.flatMap(d=>d.errors),resourceWarnings:reports.flatMap(d=>d.resourceWarnings),inputRetries:reports.flatMap(d=>d.inputRetries)};
+ const summary={browser,release,styles,isolation,headless,sessionCaseLimit,waitTimeout,pageLoadTimeout,protocolTimeout,capabilities:reports[0].capabilities,scenarios:reports.length,sessions:new Set(reports.map(r=>r.session)).size,passed:results.length,results,errors:reports.flatMap(d=>d.errors),resourceWarnings:reports.flatMap(d=>d.resourceWarnings),inputRetries:reports.flatMap(d=>d.inputRetries)};
  writeFileSync(root+'build/qa/'+browser+'-matrix-report.json',JSON.stringify(summary,null,2)+'\n');
  console.log(JSON.stringify({browser,passed:summary.passed,scenarios:summary.scenarios,sessions:summary.sessions,errors:summary.errors.length,warnings:summary.resourceWarnings.length}));
 }finally{

@@ -1,4 +1,4 @@
-import {byId,storeById,levelOf,carried,stock,CLOSE,savedBags} from './engine.js?v=48.0.0';
+import {byId,storeById,levelOf,carried,stock,CLOSE,savedBags} from './engine.js?v=49.0.0';
 
 export function validatePickup(state,storeId,bags,productId,size){
  const p=byId(productId),st=storeById(storeId);

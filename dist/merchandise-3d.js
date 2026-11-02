@@ -1,6 +1,6 @@
-import {createCeramic,isCeramic} from './ceramic-model.js?v=48.0.0';
-import {createPlush,isVerifiedPlush} from './plush-model.js?v=48.0.0';
-import {productAppearance} from './product-appearance.js?v=48.0.0';
+import {createCeramic,isCeramic} from './ceramic-model.js?v=49.0.0';
+import {createPlush,isVerifiedPlush} from './plush-model.js?v=49.0.0';
+import {productAppearance} from './product-appearance.js?v=49.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {addReferenceDetails,addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 import * as T from './vendor/three.module.js';

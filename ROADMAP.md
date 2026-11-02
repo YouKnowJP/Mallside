@@ -2,6 +2,14 @@
 
 Updated 1 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v49
+
+- Stock one unfinished Sur La Table branch with four selected single-item porcelain references, exact SKUs, source photographs, dated prices and qualified dimensions/capacities.
+- Furnish an original wood/tile tableware studio, source desk and alcoves, preserving comparison, free saved studies, purchases, refunds, exits and the six-slot collection shelf.
+- Coordinate the actual resting hands, vessel lift, gentle turn, fingers and lowering; use source-aware grips and a closer inspection camera, with fixed reduced motion.
+- Refine all 23 public water stations with curved taps, cups, bottles, ripples and readiness markers; explain the existing center/day cooldown and disable unavailable repeat drinks.
+- See [v49 gameplay](docs/GAMEPLAY-v49.md), [source evidence](docs/research-v49/catalog-evidence.json) and [v49 QA](docs/qa-v49.md).
+
 ## Completed in v48
 
 - Stock two unfinished Arhaus shops with four selected ceramic references, reviewed source photographs, qualified dated prices and published dimensions.
@@ -214,7 +222,7 @@ Updated 1 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,073 stocked identities, 133 service identities and 392 identities awaiting catalog research**. The remaining 301 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,074 stocked identities, 133 service identities and 391 identities awaiting catalog research**. The remaining 300 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

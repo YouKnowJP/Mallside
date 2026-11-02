@@ -1,15 +1,16 @@
-import {isCeramic,ceramicFactsHTML} from './ceramic-tools.js?v=48.0.0';
+import {waterPanelHTML} from './water-details.js?v=49.0.0';
+import {isCeramic,ceramicFactsHTML} from './ceramic-tools.js?v=49.0.0';
 import {gardenGuideHTML} from './garden-details.js?v=48.0.0';
 import {isCollectible,collectibleFactsHTML} from './collectible-tools.js?v=47.0.0';
 import {teaCardHTML} from './tea-lounge.js?v=46.0.0';
-import {STUDY_PALETTES,STUDY_FINISHES,studyFor} from './studio-study.js?v=48.0.0';
-import {studioStudyHTML} from './studio-study-ui.js?v=48.0.0';
-import {displayPoint} from './shop-interiors.js?v=48.0.0';
+import {STUDY_PALETTES,STUDY_FINISHES,studyFor} from './studio-study.js?v=49.0.0';
+import {studioStudyHTML} from './studio-study-ui.js?v=49.0.0';
+import {displayPoint} from './shop-interiors.js?v=49.0.0';
 import {apparelFactsHTML} from './apparel-facts.js?v=46.0.0';
 import {nearbyDiscoveryHTML} from './waystation-guide.js?v=40.0.0';
 import {frameFactsHTML} from './eyewear-tools.js?v=39.0.0';
 import {isBookProduct,bookFactsHTML,bookshopGuideHTML} from './book-tools.js?v=38.0.0';
-import {collectionGuideHTML,collectionSelection,hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=48.0.0';
+import {collectionGuideHTML,collectionSelection,hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=49.0.0';
 import {shoppingPlanHTML,shoppingPlanNotebook} from './shopping-plan-ui.js?v=37.0.0';
 import {diningRoom,sculptureAlcove,artNotebook} from './district-ui.js?v=35.0.0';
 import {fixtureStop} from './mall-neighborhood.js?v=36.0.0';
@@ -22,27 +23,27 @@ import {communityNoticeHTML,lostPropertyHTML,homeRoutineHTML} from './neighborho
 import {communityBoard,localChapterCard,wrappingDesk} from './community-ui.js?v=30.0.0';
 import {outingBoard} from './outing-ui.js?v=24.0.0';
 import {collectionStudioHTML,guestbookHTML,guestbookMemories} from './home-ui.js?v=27.0.0';
-import {CharacterStudio} from './character-studio.js?v=48.0.0';
-import {physicalProduct} from './merchandise-3d.js?v=48.0.0';
-import {validatePickup,putBackSelection} from './shopping-selection.js?v=48.0.0';
-import {brandDesign} from './brand-designs.js?v=48.0.0';
+import {CharacterStudio} from './character-studio.js?v=49.0.0';
+import {physicalProduct} from './merchandise-3d.js?v=49.0.0';
+import {validatePickup,putBackSelection} from './shopping-selection.js?v=49.0.0';
+import {brandDesign} from './brand-designs.js?v=49.0.0';
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {tenantFloor,zoneOf} from './campus-model.js?v=23.0.0';
 import {storePortrait,loadPortrait,deletePortrait} from './portrait-store.js?v=23.0.0';
-import {spatialLayout} from './spatial-layout.js?v=48.0.0';
-import {MallWorld3D} from './world-3d.js?v=48.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=48.0.0';
+import {spatialLayout} from './spatial-layout.js?v=49.0.0';
+import {MallWorld3D} from './world-3d.js?v=49.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=49.0.0';
 import {sourceLabel} from './catalog-links-v7.js?v=23.0.0';
 import {windowSelection} from './mall-life.js?v=26.0.0';
 import {layoutFor} from './map-layout.js?v=36.0.0';
 import {paintPerson} from './sprites.js?v=34.0.0';
-import {ActivityScene} from './activity-scene.js?v=48.0.0';
-import {HomeJourney} from './journey.js?v=48.0.0';
-import * as E from './engine.js?v=48.0.0';
+import {ActivityScene} from './activity-scene.js?v=49.0.0';
+import {HomeJourney} from './journey.js?v=49.0.0';
+import * as E from './engine.js?v=49.0.0';
 import {createSaveStorage} from './save-storage.js?v=28.0.0';
 import {recoveryHTML,backupSummary,saveSummary,modeLabel} from './save-recovery-ui.js?v=28.0.0';
 import {icon} from './art.js?v=23.0.0';
-import {MallWorld} from './world.js?v=48.0.0';
+import {MallWorld} from './world.js?v=49.0.0';
 import {bindWalkPad} from './input-controls.js?v=29.0.0';
 const $=q=>document.querySelector(q), $$=q=>[...document.querySelectorAll(q)];
 const storage={get(k){try{return localStorage.getItem(k);}catch{return null;}},set(k,v){try{localStorage.setItem(k,v);return true;}catch{return false;}}};
@@ -556,7 +557,7 @@ document.addEventListener('input',event=>{if(recovery)return;if(event.target.id=
 function goLocal(id){if(!E.LOCALS.some(n=>n.id===id)||activityBusy||journeyBusy)return;pendingCheckout=null;if(view!=='mall')showView('mall');closeModal();pendingWindow=null;pendingStore=null;pendingProduct=null;pendingReturn=null;mapPanel=null;renderMapPanel();s.paused=false;updateMapOverlay();world?.goToLocal(id);focusMap();}
 function goDirectory(){if(view!=='mall')showView('mall');closeModal();if(world?.inside)world.leaveInterior?.();mapPanel=null;renderMapPanel();s.paused=false;updateMapOverlay();const fixture=world?.layout.environment?.fixtures.filter(f=>f.kind==='directory').sort((a,b)=>Math.hypot(a.approach.x-world.avatar.x,a.approach.y-world.avatar.y)-Math.hypot(b.approach.x-world.avatar.x,b.approach.y-world.avatar.y))[0];if(fixture)world.navigate(fixture.approach,{interaction:'directory:'+fixture.node});else centerMap();focusMap();}
 function giftWrapping(){modal('A parcel, thoughtfully finished.',E.mallOf(s).name+' · Guest services',wrappingDesk(s,{E,picture,esc:escapeHTML},giftWrapStyle),{small:true});}
-function waterStation(){const bottle=E.owned(s).find(i=>!i.checked&&i.worn&&!i.giftWrap&&['bottle','tumbler'].includes(E.byId(i.productId).type));modal('A moment for water.',E.mallOf(s).name+' · Complimentary water station',`<div class="modal-body water-station"><div class="water-illustration" aria-hidden="true">💧</div><h3>${bottle?'Refill your '+escapeHTML(E.byId(bottle.productId).brand)+' bottle.':'A cup of water, on us.'}</h3><p>Take a drink before the next shop. Water restores 8 stamina without replacing a meal. Come back after 30 game minutes if you need another.</p><button class="button orange wide" data-action="water-use">${bottle?'Refill & drink':'Take a cup & drink'} · free · 3 min</button>${nearbyDiscoveryHTML(s,spatialLayout(E.mallOf(s),s.floor||0,E.STORES),'water',escapeHTML)}<button class="text-button" data-action="guest-services">Back to guest services</button></div>`,{small:true});}
+function waterStation(){const bottle=E.owned(s).find(i=>!i.checked&&i.worn&&!i.giftWrap&&['bottle','tumbler'].includes(E.byId(i.productId).type));modal('A moment for water.',E.mallOf(s).name+' · Complimentary water station',waterPanelHTML(s,escapeHTML,{bottleName:bottle?E.byId(bottle.productId).brand:'',nearby:nearbyDiscoveryHTML(s,spatialLayout(E.mallOf(s),s.floor||0,E.STORES),'water',escapeHTML)}),{small:true});}
 function giftIdeas(){const story=E.localStory(s,'maya'),style=story?.record?.choice==='style',items=E.PRODUCTS.filter(p=>E.storeById(p.store).tier<=E.levelOf(s)&&!['food','drink'].includes(p.type)&&E.canTry(p)===style&&E.price(s,p)+Math.round(E.price(s,p)*E.TAX)<=15000&&E.stock(s,p.id,E.idealSize(s,p))>0).sort((a,b)=>E.price(s,a)-E.price(s,b)).slice(0,12);modal('A few real gift possibilities.','Maya’s brief · $150 maximum including game tax',`<div class="modal-body"><p>Buy after beginning the gift chapter, read the label and keep it unused. Choose your usual size for wearables. Wrap at guest services, then give it to Maya for reimbursement.</p><div class="gift-idea-grid">${items.map(p=>`<article><div class="product-art">${picture(p)}</div><strong>${escapeHTML(p.name)}</strong><small>${escapeHTML(E.storeById(p.store).name)} · ${E.money(E.price(s,p)+Math.round(E.price(s,p)*E.TAX))} incl. tax</small><button class="button secondary wide" data-action="detail" data-id="${p.id}">Find this real model ↗</button></article>`).join('')||'<p>No qualifying stocked finds at your current level. Return another day for fresh stock.</p>'}</div></div>`);}
 
 // Optional web fonts must not block the local game stylesheet or startup.

@@ -1,3 +1,4 @@
+import {V49_PHOTO_PALETTES} from './photo-palettes-v49.js?v=49.0.0';
 import {V48_PHOTO_PALETTES} from './photo-palettes-v48.js?v=48.0.0';
 import {V47_PHOTO_PALETTES} from './photo-palettes-v47.js?v=47.0.0';
 import {V46_PHOTO_PALETTES} from './photo-palettes-v46.js?v=46.0.0';
@@ -13,3 +14,5 @@ export const PHOTO_PALETTES={...LEGACY_PHOTO_PALETTES,...V37_PHOTO_PALETTES,...V
 Object.assign(PHOTO_PALETTES,V47_PHOTO_PALETTES);
 
 Object.assign(PHOTO_PALETTES,V48_PHOTO_PALETTES);
+
+Object.assign(PHOTO_PALETTES,V49_PHOTO_PALETTES);

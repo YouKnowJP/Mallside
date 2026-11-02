@@ -1,17 +1,18 @@
+import {buildWaterDetail} from './water-details.js?v=49.0.0';
 import {buildTeaLounge} from './tea-lounge.js?v=46.0.0';
 import {buildFlowerKiosk} from './flower-kiosk.js?v=45.0.0';
 import {buildPhotoKiosk} from './photo-kiosk.js?v=44.0.0';
 import {buildSculptureDetails} from './sculpture-details.js?v=43.0.0';
 import {buildReadingDetails} from './reading-details.js?v=42.0.0';
 import {buildMosaicStudy} from './mosaic-details.js?v=47.0.0';
-import {buildWaystationDetails} from './waystation-details.js?v=40.0.0';
+import {buildWaystationDetails} from './waystation-details.js?v=49.0.0';
 import {buildGardenStudy} from './garden-details.js?v=48.0.0';
 import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=33.0.0';
 import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
-import {retailIdentity,drawRetailSign} from './retail-identity.js?v=48.0.0';
+import {retailIdentity,drawRetailSign} from './retail-identity.js?v=49.0.0';
 import * as T from './vendor/three.module.js';
 import {themeFor,facadeFrame} from './mall-design.js?v=35.0.0';
-import {brandDesign} from './brand-designs.js?v=48.0.0';
+import {brandDesign} from './brand-designs.js?v=49.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
 class Details{
@@ -143,7 +144,7 @@ export function buildPublicRealm(w,l,theme){
    else for(const dx of [-10,0,10])b.box(x+dx,35,z,7,9,7,['#819b87','#c39a76','#b4a079'][(dx+10)/10]);
    const hit=w.box(x-(p.venue==='photo'?6:0),25,z,p.venue==='photo'?26:40,52,34,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'venue:'+p.venue,p.approach);
   }else if(p.kind==='waystation'){
-   buildWaystationDetails(b,x,z,p.amenity,theme);
+   buildWaystationDetails(b,x,z,p.amenity,theme);if(p.amenity==='water')buildWaterDetail(w,x,z,theme);
    const key='amenity:'+p.amenity,hit=w.box(x,31,z,26,64,24,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,p.approach);const label=w.label(p.amenity==='water'?'Free water ↗':'Community board ↗',x,80,z,78,theme.accent);w.tag(label,key,p.approach);w.nearLabels.push({object:label,x,z,radius:130,directory:true});
    }else if(p.kind==='art'){
    buildSculptureDetails(w,b,x,z,theme);

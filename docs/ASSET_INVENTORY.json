@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "48.0.0",
+  "release": "49.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2003,
-  "uniqueRuntimePhotoFiles": 1981,
+  "runtimePhotoEntries": 2007,
+  "uniqueRuntimePhotoFiles": 1985,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19737,6 +19737,46 @@
       "source": "https://www.arhaus.com/products/manton-vase?variant=45513980903595",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0507/9017/0795/files/6510397BRV43_O250627.jpg?v=1770819366",
       "description": "Manton Vase · Macadamia · Small — merchant product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v49-real-4173cb90b9b343377a6d",
+      "path": "assets/photos/v49-real-4173cb90b9b343377a6d.webp",
+      "sha256": "ccc12f5c98b4a63100db26a233c21cd6cd806a4662dfcc53749dd4a262f5aaff",
+      "source": "https://www.surlatable.com/product/sur-la-table-porcelain-creamer/2584886",
+      "imageUrl": "https://assets.surlatable.com/m/c80c318dbea3853/72_dpi_webp-2584886_01i_0716_s-jpg",
+      "description": "Sur La Table Porcelain Creamer — exact selected-SKU merchant photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v49-real-ad61e3e40067a98f393f",
+      "path": "assets/photos/v49-real-ad61e3e40067a98f393f.webp",
+      "sha256": "55091f2ec743e95f79bdcfc570c84d6b0368f8ad27d45862a4c71f7a5885dd52",
+      "source": "https://www.surlatable.com/product/sur-la-table-porcelain-soup-bowl-with-handle/2584902",
+      "imageUrl": "https://assets.surlatable.com/m/2780f2b7fffe5977/72_dpi_webp-2584902_01i_0716_s-jpg",
+      "description": "Sur La Table Porcelain Soup Bowl with Handle — exact selected-SKU merchant photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v49-real-c674e274e2b1092054a5",
+      "path": "assets/photos/v49-real-c674e274e2b1092054a5.webp",
+      "sha256": "865927f55fc034694043a02871856441a28151217f48322ada7a30a2e4ac526e",
+      "source": "https://www.surlatable.com/product/sur-la-table-bistro-mug-8-oz/455287",
+      "imageUrl": "https://assets.surlatable.com/m/5c6f192a0a4da2c6/72_dpi_webp-455287_01p_0315_08-jpg",
+      "description": "Sur La Table Bistro Mug, 8 oz. — exact selected-SKU merchant photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v49-real-d5dd7925f83992a2f6c1",
+      "path": "assets/photos/v49-real-d5dd7925f83992a2f6c1.webp",
+      "sha256": "708537a517cfca6f8a79d9af37cca9872eec96fb8cb63fd63ac898d2adf81fc2",
+      "source": "https://www.surlatable.com/product/sur-la-table-bistro-cereal-bowl/455261",
+      "imageUrl": "https://assets.surlatable.com/m/7e2c600834ae7340/72_dpi_webp-455261_01-jpg",
+      "description": "Sur La Table Bistro Cereal Bowl — exact selected-SKU merchant photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

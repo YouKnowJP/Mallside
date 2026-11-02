@@ -2,10 +2,10 @@ import {smoothBagSway} from './bag-motion.js?v=44.0.0';
 import {bodySectionRadius} from './garment-clearance.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
 import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=40.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=48.0.0';
-import {productAppearance} from './product-appearance.js?v=48.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=49.0.0';
+import {productAppearance} from './product-appearance.js?v=49.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
-import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=48.0.0';
+import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=49.0.0';
 import {addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 
 export function fitScaleForSize(size,usual){const canonical=v=>({XXS:'2XS',XXL:'2XL',XXXL:'3XL','2X':'2XL','3X':'3XL'}[v]||v),sizes=['2XS','XS','S','M','L','XL','2XL','3XL'],a=sizes.indexOf(canonical(size)),b=sizes.indexOf(canonical(usual));if(a>=0&&b>=0)return 1+(a-b)*.035;const n=Number(size)||Number(/^W(\d+)L\d+$/.exec(size)?.[1]),u=Number(usual)||Number(/^W(\d+)L\d+$/.exec(usual)?.[1]);return n&&u?Math.max(.9,Math.min(1.1,Math.sqrt(n/u))):1;}
@@ -108,8 +108,8 @@ export function attachWornBag(w,g,p){
  else model.position.set(9.0+bodyW/2,Math.max(5,41-(a.handleDrop||22)*scale-bodyH),0);
  const fit={group,model,appearance:a,scale,bodyH,bodyW,bodyD,material,metal,basePosition:model.position.clone(),resources:w.resources,straps:[],lastPose:null};g.userData.bagFit=fit;rebuildStraps(fit);return trackMerchandise(w,group);
 }
-export function updateOutfitPose(g,{seated=false,walking=false,distance=0,kind='',time=0,reducedMotion=false,blend=1,seatHeight=15,delta=0}={}){
- const amount=seated?Math.max(0,Math.min(1,blend)):0,limbs=g.userData.limbs,adult=!!g.userData.rig;applyCharacterPose(g,{seated,walking,distance,kind,time,reducedMotion,blend,seatHeight,delta});
+export function updateOutfitPose(g,{seated=false,walking=false,distance=0,kind='',time=0,reducedMotion=false,blend=1,seatHeight=15,delta=0,ceramicPose=null}={}){
+ const amount=seated?Math.max(0,Math.min(1,blend)):0,limbs=g.userData.limbs,adult=!!g.userData.rig;applyCharacterPose(g,{seated,walking,distance,kind,time,reducedMotion,blend,seatHeight,delta,ceramicPose});
  if(!adult)for(const limb of limbs.slice(2)){if(limb.userData.knee)limb.userData.knee.rotation.x=.8*amount;const shoe=limb.userData.shoe;if(shoe)shoe.rotation.x=-limb.rotation.x-(limb.userData.knee?.rotation.x||0);}
  g.updateMatrixWorld(true);
  for(const {object,rest,limbFloor}of g.userData.poseCloth||[]){

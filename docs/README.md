@@ -1,11 +1,12 @@
 # Mallside documentation
 
-Current release: [v47 gameplay](GAMEPLAY-v47.md) and [v47 QA](qa-v47.md).
+Current release: [v49 gameplay](GAMEPLAY-v49.md) and [v49 QA](qa-v49.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Tableware studio, coupled inspections and detailed water breaks | [v49 guide](GAMEPLAY-v49.md), [source evidence](research-v49/catalog-evidence.json), [v49 QA](qa-v49.md) |
 | Ceramic showrooms, glaze studies and pocket garden observations | [v48 guide](GAMEPLAY-v48.md), [v48 QA](qa-v48.md) |
 | Solid collectible studios and refined mosaic courts | [v47 guide](GAMEPLAY-v47.md), [source evidence](research-v47/catalog-evidence.json), [v47 QA](qa-v47.md) |
 | Tailoring studios, tea recipe cards and eased consumption | [v46 guide](GAMEPLAY-v46.md), [source evidence](research-v46/catalog-evidence.json), [v46 QA](qa-v46.md) |

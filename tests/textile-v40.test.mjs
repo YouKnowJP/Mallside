@@ -34,8 +34,8 @@ test('eight official selected-color records keep their exact price, source label
 });
 
 test('eight unfinished shops gain their own four models while every earlier active product ID remains compatible',()=>{
- assert.equal(shops.length,8);assert.equal(shops.reduce((n,s)=>n+s.count,0),32);assert.equal(E.PRODUCTS.length,8830);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1073);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,392);assert.equal(E.STORES.filter(E.isPlanningStore).length,301);assert.equal(E.STORES.filter(hasCollectionDesk).length,59);
- const old=E.PRODUCTS.filter(p=>!/^v(?:40|42|43|44|45|46|47|48)-real-/.test(p.modelId||'')).map(p=>p.id).sort();assert.equal(old.length,evidence.previousCatalog.count);assert.equal(createHash('sha256').update(old.join('\n')).digest('hex'),evidence.previousCatalog.sortedProductIdsSHA256);
+ assert.equal(shops.length,8);assert.equal(shops.reduce((n,s)=>n+s.count,0),32);assert.equal(E.PRODUCTS.length,8834);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1074);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,391);assert.equal(E.STORES.filter(E.isPlanningStore).length,300);assert.equal(E.STORES.filter(hasCollectionDesk).length,60);
+ const old=E.PRODUCTS.filter(p=>!/^v(?:40|42|43|44|45|46|47|48|49)-real-/.test(p.modelId||'')).map(p=>p.id).sort();assert.equal(old.length,evidence.previousCatalog.count);assert.equal(createHash('sha256').update(old.join('\n')).digest('hex'),evidence.previousCatalog.sortedProductIdsSHA256);
  for(const s of shops){assert.equal(s.businessKind,'apparel');assert.equal(collectionProducts(s).length,4);assert.ok(s.products.every(p=>p.brand===s.name&&p.store===s.id&&p.modelId.startsWith('v40-real-')));}
  assert.ok(E.PRODUCTS.filter(p=>p.modelId?.startsWith('v40-real-')).every(p=>shops.some(s=>s.id===p.store)));
 });
@@ -79,7 +79,7 @@ test('new studios retain clear routes to displays, comparisons, fitting, payment
 });
 
 test('detailed water and notice furniture stays inside the existing collider instead of protruding into the approach',()=>{
- for(const amenity of ['water','notice']){const parts=[],b={box(x,y,z,w,h,d){parts.push({x,y,z,w,h,d});},cylinder(x,y,z,r,h){parts.push({x,y,z,w:r*2,h,d:r*2});}};buildWaystationDetails(b,100,200,amenity,{trim:'#7b6b56',stone:'#d4cfbf'});assert.ok(parts.length>20);for(const p of parts){assert.ok(p.x-p.w/2>=89-1e-6&&p.x+p.w/2<=111+1e-6);assert.ok(p.z-p.d/2>=190-1e-6&&p.z+p.d/2<=210+1e-6);}}
+ for(const amenity of ['water','notice']){const parts=[],b={box(x,y,z,w,h,d){parts.push({x,y,z,w,h,d});},cylinder(x,y,z,r,h){parts.push({x,y,z,w:r*2,h,d:r*2});}};buildWaystationDetails(b,100,200,amenity,{trim:'#7b6b56',stone:'#d4cfbf'});assert.ok(parts.length>(amenity==='water'?15:20));for(const p of parts){assert.ok(p.x-p.w/2>=89-1e-6&&p.x+p.w/2<=111+1e-6);assert.ok(p.z-p.d/2>=190-1e-6&&p.z+p.d/2<=210+1e-6);}}
 });
 
 test('all 23 floors offer three real nearby discovery routes with correct saved-note status and no extra charges',()=>{

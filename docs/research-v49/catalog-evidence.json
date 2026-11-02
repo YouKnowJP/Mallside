@@ -1,0 +1,114 @@
+{
+  "version": 49,
+  "checkedOn": "2026-11-01",
+  "scope": "One previously unfinished Sur La Table branch at South Coast Plaza; original game interiors, not surveyed replicas.",
+  "previousCatalog": {
+    "count": 8830,
+    "sourceCommit": "14c9ae5eefde71f5c2140a1f84931d707ce8dbe8",
+    "sortedProductIdsSHA256": "23b3de46e87f10e3d5c658157cefb81864d6f59d3b0b3bb8e09cf6b4d39c33e3",
+    "productAndAppearanceSnapshotSHA256": "c7928e51ee1bbb0da3ac02ce9e0e659c0a121b3ebf7e06893430010c349509b3"
+  },
+  "products": [
+    {
+      "id": "v49-real-c674e274e2b1092054a5",
+      "sku": "455287",
+      "mpn": "GR01MG00",
+      "source": "https://www.surlatable.com/product/sur-la-table-bistro-mug-8-oz/455287",
+      "checkedOn": "2026-11-01",
+      "selectedFormat": "Single",
+      "referenceUSD": 9.76,
+      "priceEvidence": "Exact selected hasVariant Product.offers.price in live merchant ProductGroup JSON-LD. Aggregate or multi-piece-set offers are not used.",
+      "sourceSpecifications": "- Material: Porcelain\n- Dimensions: 4\" tall; 3\" diameter\n- Capacity: 8 oz.\n- Made in Turkey exclusively for Sur La Table",
+      "sourceRecordSHA256": "09ccbf2198b0dcea98021bb988b83dc64b4783281f1db9874e97cd1b404fedb5",
+      "selectedVariantSHA256": "de9582aa73ceb1033a471f1c8d3c012c9e21ec10a09d1ca1d2e0e5710d7b4d0f",
+      "photoURL": "https://assets.surlatable.com/m/5c6f192a0a4da2c6/72_dpi_webp-455287_01p_0315_08-jpg",
+      "photoSelectionBasis": "Exact photograph assigned to the selected SKU in merchant ProductGroup data; visually reviewed. White is a photo description, not an invented color option.",
+      "originalPhotoSHA256": "2545c76c736f1f365a37dab16e6dfc54230c354f2729001763cbe8652bc6a34b",
+      "originalPixels": [
+        1500,
+        1500
+      ],
+      "runtimePhoto": "assets/photos/v49-real-c674e274e2b1092054a5.webp",
+      "runtimePhotoSHA256": "865927f55fc034694043a02871856441a28151217f48322ada7a30a2e4ac526e",
+      "geometryQualifications": "Source specifications: 4 inches tall and 3 inches diameter. Handle proportions are an original photographic interpretation.",
+      "rightsNote": "Source photographs and marks remain with their rights holders. Provenance is not a commercial permission grant."
+    },
+    {
+      "id": "v49-real-ad61e3e40067a98f393f",
+      "sku": "2584902",
+      "mpn": "HB3777",
+      "source": "https://www.surlatable.com/product/sur-la-table-porcelain-soup-bowl-with-handle/2584902",
+      "checkedOn": "2026-11-01",
+      "selectedFormat": "One bowl",
+      "referenceUSD": 12.95,
+      "priceEvidence": "Exact selected hasVariant Product.offers.price in live merchant ProductGroup JSON-LD. Aggregate or multi-piece-set offers are not used.",
+      "sourceSpecifications": "- Manufacturer: Sur La Table\n- Material: Porcelain\n- Dimensions: 2.5\" x 5\"; 2.5\" x 7.5\" including handle\n- Capacity: 16 oz.\n- Made in China exclusively for Sur La Table",
+      "sourceRecordSHA256": "3e5af9a779cb3dc0bace23592f7bf8a743f8571cb8311b4765ebc790a34c31ae",
+      "selectedVariantSHA256": "a7f73700668d03e9e31cbf803f6ebea5a0b3b33be537de561dd4bd3c6f228271",
+      "photoURL": "https://assets.surlatable.com/m/2780f2b7fffe5977/72_dpi_webp-2584902_01i_0716_s-jpg",
+      "photoSelectionBasis": "Exact photograph assigned to the selected SKU in merchant ProductGroup data; visually reviewed. White is a photo description, not an invented color option.",
+      "originalPhotoSHA256": "c60bc8d716487383117b395b42b9357eec1b8997b2d860fb1aaf2436a50c8715",
+      "originalPixels": [
+        1500,
+        1500
+      ],
+      "runtimePhoto": "assets/photos/v49-real-ad61e3e40067a98f393f.webp",
+      "runtimePhotoSHA256": "55091f2ec743e95f79bdcfc570c84d6b0368f8ad27d45862a4c71f7a5885dd52",
+      "geometryQualifications": "Source lists 2.5 × 5 inches; 2.5 × 7.5 inches including the handle, without naming axes. The game interprets height/body width from the reviewed photo; these are not certified model measurements.",
+      "rightsNote": "Source photographs and marks remain with their rights holders. Provenance is not a commercial permission grant."
+    },
+    {
+      "id": "v49-real-d5dd7925f83992a2f6c1",
+      "sku": "455261",
+      "mpn": "EO19KK00",
+      "source": "https://www.surlatable.com/product/sur-la-table-bistro-cereal-bowl/455261",
+      "checkedOn": "2026-11-01",
+      "selectedFormat": "Single",
+      "referenceUSD": 10.46,
+      "priceEvidence": "Exact selected hasVariant Product.offers.price in live merchant ProductGroup JSON-LD. Aggregate or multi-piece-set offers are not used.",
+      "sourceSpecifications": "- Material: Porcelain\n- Dimensions: 7¼\" x 2¼\"\n- Capacity: 26 oz.\n- Made in Turkey exclusively for Sur La Table",
+      "sourceRecordSHA256": "699c5834216bd9e1cec48480948239302ae6abdaae9e879590a3aa523135927e",
+      "selectedVariantSHA256": "5a27a5223c5f610b252c9370d8013e194a7225edfe2b5fa359b66f8d6f68088b",
+      "photoURL": "https://assets.surlatable.com/m/7e2c600834ae7340/72_dpi_webp-455261_01-jpg",
+      "photoSelectionBasis": "Exact photograph assigned to the selected SKU in merchant ProductGroup data; visually reviewed. White is a photo description, not an invented color option.",
+      "originalPhotoSHA256": "f0e789f8cb0266ca1398b5185eee398237681a97b1b2a24d32f1f33cc25b07f7",
+      "originalPixels": [
+        1500,
+        1500
+      ],
+      "runtimePhoto": "assets/photos/v49-real-d5dd7925f83992a2f6c1.webp",
+      "runtimePhotoSHA256": "708537a517cfca6f8a79d9af37cca9872eec96fb8cb63fd63ac898d2adf81fc2",
+      "geometryQualifications": "Source lists 7¼ × 2¼ inches without naming axes. The game interprets the wider value as bowl width and the shorter as height from the reviewed photo.",
+      "rightsNote": "Source photographs and marks remain with their rights holders. Provenance is not a commercial permission grant."
+    },
+    {
+      "id": "v49-real-4173cb90b9b343377a6d",
+      "sku": "2584886",
+      "mpn": "HE3681-3",
+      "source": "https://www.surlatable.com/product/sur-la-table-porcelain-creamer/2584886",
+      "checkedOn": "2026-11-01",
+      "selectedFormat": "One creamer",
+      "referenceUSD": 16.95,
+      "priceEvidence": "Exact selected hasVariant Product.offers.price in live merchant ProductGroup JSON-LD. Aggregate or multi-piece-set offers are not used.",
+      "sourceSpecifications": "- Manufacturer: Sur La Table\n- Material: Porcelain\n- Dimensions: 3.5\" x 5.5\"\n- Capacity: 12 oz.\n- Made in China exclusively for Sur La Table",
+      "sourceRecordSHA256": "0c9458a58bd44b4dccd59e327390f6774e1c7dc3acc0818daac7f73b53d05625",
+      "selectedVariantSHA256": "f591fb524112c1d9a79b8d126e314a97e188c548ec172db5d306601bec451e70",
+      "photoURL": "https://assets.surlatable.com/m/c80c318dbea3853/72_dpi_webp-2584886_01i_0716_s-jpg",
+      "photoSelectionBasis": "Exact photograph assigned to the selected SKU in merchant ProductGroup data; visually reviewed. White is a photo description, not an invented color option.",
+      "originalPhotoSHA256": "3e1eee398287794384c917fdc3a82f0c29de60f7a7f2e780d922b64eb7558578",
+      "originalPixels": [
+        1500,
+        1500
+      ],
+      "runtimePhoto": "assets/photos/v49-real-4173cb90b9b343377a6d.webp",
+      "runtimePhotoSHA256": "ccc12f5c98b4a63100db26a233c21cd6cd806a4662dfcc53749dd4a262f5aaff",
+      "geometryQualifications": "Source lists 3.5 × 5.5 inches without naming axes. Game height, body diameter, spout and handle proportions are interpreted from the photo; a separate body diameter is not published.",
+      "rightsNote": "Source photographs and marks remain with their rights holders. Provenance is not a commercial permission grant."
+    }
+  ],
+  "branchConfirmation": {
+    "source": "https://www.southcoastplaza.com/directory/sur-la-table/",
+    "checkedOn": "2026-11-01",
+    "note": "The current official mall directory confirms this merchant. The game keeps its adapted layout; this is not evidence of measured unit or interior geometry."
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "note": "Actual stricter passing Firefox sources and 43 accepted per-case report hashes; later protocol budget changes do not rewrite these reports or their fingerprints.",
+  "release": {
+    "game": "Mallside",
+    "version": "49.0.0",
+    "sourceCommit": "14c9ae5eefde71f5c2140a1f84931d707ce8dbe8",
+    "bundle": "app-BNWUXFTJ.js",
+    "sourceVisibility": "public",
+    "license": "LicenseRef-Mallside-Proprietary",
+    "licenseVersion": "1.1",
+    "licenseUrl": "LICENSE.txt",
+    "permissionsUrl": "PERMISSIONS.txt",
+    "officialPlayUrl": "https://youknowjp.github.io/Mallside/",
+    "sourceRepository": "https://github.com/YouKnowJP/Mallside",
+    "publicFiles": "Generated game only; editable source and history are available in the Mallside repository."
+  },
+  "styles": [
+    "styles-6d92a5f8e9bb.css",
+    "life-styles-3d42fae0021b.css"
+  ],
+  "isolation": "fresh-session",
+  "headless": true,
+  "sessionCaseLimit": 1,
+  "waitTimeout": 120000,
+  "pageLoadTimeout": 30000,
+  "protocolTimeout": 45000,
+  "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073",
+  "files": {
+    "scripts/gameplay-browser-qa.mjs": {
+      "snapshot": "docs/research-v49/firefox-strict-runner.txt",
+      "sha256": "eb9b240fbe3d049ff06a5e50fe34baec7e6e745a3758b900f3ad89844fcb4a53"
+    },
+    "scripts/gameplay-native-matrix.mjs": {
+      "snapshot": "docs/research-v49/firefox-strict-matrix.txt",
+      "sha256": "56b6b77996327ba67de761ec04d350ea2250d3ffeeda9e8252ecc9ec64f0b178"
+    }
+  },
+  "cases": {
+    "v35 legacy research-shop purchase reaches returns desk and refunds once": {
+      "reportSHA256": "8d425b660501aa2c328f81594270e115e5008538d2d22ddc397bff13e1474c6e",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v36 budgeted shortlist, focus, persistence and route to the actual product shop": {
+      "reportSHA256": "f8fcae2f25319687a347e1fd989d3c651767d1d2b1b404cf7a20bf711a2e3933",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v36 themed research interiors, lightweight draft cancellation and compact saved-plan exit": {
+      "reportSHA256": "120468e6732816cd927cee24edb6628981299e2ab33da43ee1d6f899bb43bf6b",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v36 spaced full-motion crowds and eased rest in a planning lounge": {
+      "reportSHA256": "f5ec7791ad81d7869bea7d1f71d36099402194ae7de56e6249c38cff3e282d3e",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v37 physical collection desk, saved shortlist compatibility, staff and preserved rest bench": {
+      "reportSHA256": "976b3c7f8bdaaec80a69051805b987f6c8c2f0ed064324ddd95b0a5f9d99af4a",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v37 all three new brands inspect, fit exact source sizes, buy, reload and refund": {
+      "reportSHA256": "c1836d57e5e026af43a880ff60d9ead636353df2d03356e13c1be5c148e18cea",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v37 compact comparison controls, keyboard focus, cancellation and pinned shop exit": {
+      "reportSHA256": "d28c6f72843e32cfce55d9d45b0d2fe75f6fc7e994b50bc39b9f830438269766",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v38 physical bookshop, edition comparison, reading animation, purchase and refund": {
+      "reportSHA256": "a597cf5eb747c4e28d40bd5c9aa4b1f732ff66568e9ac143bde9b1cc55fff685",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v38 public reading shelf routes to verified bookshops and lightweight edition checkout": {
+      "reportSHA256": "a0c93121662a93add4be7cac88f920ddc01e10a42d57854591c1d53515a401ad",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v38 compact edition facts, old shortlist, comparison focus and pinned checkout and exit": {
+      "reportSHA256": "ddd8991c44af09191d2f0b08a2aef2fe6ac784888950568573f20ac7aa4f8a93",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v41 physical material studios, preview rollback, saved finishes and compatible reload": {
+      "reportSHA256": "1a9c54a9636ef3225b045afeebe718c0aea8927b5c24a6bab39b48239af83fb5",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v41 courtyard mosaic follows native keyboard turns and preserves its saved arrangement": {
+      "reportSHA256": "78f39c9fe4846ad20d94fa9278b43987837c05d3565ac9b2e58c94f7de553287",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v41 compact material controls, keyboard focus, draft cancellation and direct shop exit": {
+      "reportSHA256": "a8878cb6dbc2deeb7c88f7eec7ccf7f77763649e64391742f0c9704b717f4277",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v40 denim studio, source W/L sizes, eased fitting turns, payment and exact refund": {
+      "reportSHA256": "1dabc373ce6fd62adf66dc8ac0e21d00cad04189f173ad56c0385a76f82108fa",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v40 jersey atelier, cropped longsleeve and exact alpha labels, saved receipts and refunds": {
+      "reportSHA256": "3597c8438ecd5b1e8db8016bed59d18b7b61df0b3cb0e7c5431de74bd2dd3cad",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v40 furnished waystation routes to real discoveries, remembers the visit and preserves compact source controls": {
+      "reportSHA256": "c80690e2227c5dcca7fb5e887af2cd46c2a6d3b073bfa67db0d3c117044d8dce",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v39 optical studio, exact width, smooth frame fitting, checkout and refund": {
+      "reportSHA256": "3a34cf06e1d29064f76f44749fc589bb4c5aeff1f54463decd33a2ffb20bbc84",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v39 Rhone studio, source alpha sizes, polo and shorts fitting, saved receipts and refunds": {
+      "reportSHA256": "108bcccf49e1f8c5ce02c75ef1b8bf7b99f84495151adc4e9ad1a61216043511",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v39 public garden, compact frame widths and starting price, old notes and pinned shop controls": {
+      "reportSHA256": "4b8504b60306860c486b426905a074035f26ecdc38fe8e0ea1893b22eee51412",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v42 COS interlock studio, retained study, physical fitting, checkout, reload and refund": {
+      "reportSHA256": "fc76a60505ea1644a176c8bd302ed2176e33473f99d948eb217a7ebc8971092a",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v42 Mango knit studio, retained study, physical fitting, checkout, reload and refund": {
+      "reportSHA256": "c872822216d9cd13b4ee643d366b49a98bfeaad592b01a0c2fd2996fe86d4071",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v42 reading shelf bookmark, compact stocked studies and direct exits": {
+      "reportSHA256": "aaddc9e588ccc3e3b461f216ca5ec27c6b1a3137868920f1644ecc2fc9646b0c",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v43 steel watch studio, case comparison, smooth wrist preview, payment and refund": {
+      "reportSHA256": "67e6609c227893a6bd54e23c09dce69c87b07d662a99d7156396c15eb5677058",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v43 rubber watch studio, retained material notes, wrist preview, reload and exit": {
+      "reportSHA256": "39c7682d39a14005cbba8f02f9110024c49c1ec3bef00c7c04edaf7c325715bc",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v43 sculpture sketch markers, saved floor scope and compact watch controls": {
+      "reportSHA256": "244b5c5a3dcfa2bb19cdb9846b7d484b8e87dbe4817ef781f967f744ba759eab",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v45 activewear leggings, retained studio, non-member references, source alpha fitting and exact refund": {
+      "reportSHA256": "cafed2c2a92af2371ddf5853cdef1e7e040f771caa1c4c98fe200eb6ab3f147f",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v45 activewear tee studio, selected source fabric, purchase, reload and shop exit": {
+      "reportSHA256": "da2f6c19dd77045017ff3236660ab750faf7bfda4f957c8976c166c91f2cf283",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v45 flower memories, chosen bouquet animation, once-only workshop and compact activewear controls": {
+      "reportSHA256": "c39ae8444b5a9e57cb216dc3575a7fa56b45770911fb3ea48e938fa6f9fc3f2c",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v44 MCM shopper studio, source format comparison, carry fitting, reload and exact refund": {
+      "reportSHA256": "f62ec52635b4bc9ddff38bde3b0f2640239d33c4c34cae3a8e549c42bda89111",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v44 MCM backpack studio, retained material study, source sizing, checkout and exit": {
+      "reportSHA256": "5b7e2812398b9369657d09cdd24728d03963b9b5460df47b803d70b8088967e9",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v44 public photo memories, free keyboard album route and compact bag controls": {
+      "reportSHA256": "058d0bb5f5c3f3ec59db298eae1abf14fdaf7d21081d3d791aa7f33ea5a96b29",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v46 Sandro fitted shirts and classic tees, retained study, source sizes, checkout, reload and refunds": {
+      "reportSHA256": "65dd17d355e55bf81a1d359fae366ebc29fc72604e6088f0a4bbad64f14a5e0d",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v46 Sandro dated navy sale, oversized source sizes, fitting and compact direct exits": {
+      "reportSHA256": "34f7cd5ce4b3e3ca85a250f0a9e1f54282b4f781c137c4f4a74017c09387a0b5",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v46 furnished tea lounge, free recipe and memories, eased sipping, correct seat and once-only reward": {
+      "reportSHA256": "4a2d9ed9cd88667bd1f7f429953d8e936c4b6816e51d8a4fc924ab30e3d71ba6",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v49 Sur La Table selected SKUs, source formats, four close inspections, retained study and exact refunds": {
+      "reportSHA256": "d22ecec424672238527233f86378c8e9ca70fffa39829e74738527537c6b5297",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v49 solid owned tableware shelf, home walking, compact formats and direct exit": {
+      "reportSHA256": "729cc0b05dd3a5426605729ca926dbfaa83e540b10a7b25810e4c7423b4a2894",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v49 curved water station, free readiness card, cooldown, cross-floor routing and reload": {
+      "reportSHA256": "4a04d23f06d9c3f41e802e59e8c861c072ce111a5ca0c4a6ec3ff4f28f702386",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v48 Arhaus Island verified ceramics, two-hand inspection, saved glaze study, checkout and exact refunds": {
+      "reportSHA256": "e34cd6441d998a0d7c1fe45247338774a80052ec6b94d887f3ddbf6d09cb64b1",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v48 Arhaus Del Amo ribbed and handled ceramics, retained study, carrying, reload and direct exit": {
+      "reportSHA256": "f1298aa3ddc96e01d41227a9c70df7eac6af1742a0aa2fa72ee852fa59225ccb",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v48 garden field guide, saved observation marker and compact ceramic source formats": {
+      "reportSHA256": "d4472b58feaac9fa06294bdb7812a8064da516435a2c999f78b2ca20afd5ddfa",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v47 Hot Topic source offers, solid collectibles, two-hand inspection, retained studio and exact refunds": {
+      "reportSHA256": "d38cb39757e9be8403e51c5bc28dd3d92eb2d077bfd558d851ca691fdac2e764",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v47 Cinnamoroll source dimensions, My Melody availability, carrying, reload and shop exit": {
+      "reportSHA256": "5870966751220995b6077c1ee472539ae13465008f6da424e584850c3454ca31",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    },
+    "v47 batched mosaic court, free keyboard notebook, finite tile turns, saved marker and compact collectibles": {
+      "reportSHA256": "67aceb56ca71977d8425ee868183037b8c56df3ea7b9efdb10745825338b2f70",
+      "fingerprint": "c622742bd216ed902133710dd30769270039d3e6175bdc57bde245e9e98e7073"
+    }
+  }
+}

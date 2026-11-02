@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v49.0.0 — Tableware studio and water breaks
+
+- Stock one unfinished Sur La Table shop with four exact selected single-item porcelain references, source photographs and qualified dated USD offers.
+- Add original tableware alcoves and a source/glaze desk; preserve saved studies, checkout, refunds, direct exits and solid home displays.
+- Couple hands, fingers and vessel motion through eased lifts, turns and lowering, with source-aware grips and a closer camera.
+- Detail all 23 public water stations and make their existing readiness/cooldown rules visible and actionable.
+- Preserve all 8,830 earlier product records and appearance profiles, schema 6 and map revision 10.
+- See [v49 QA](docs/qa-v49.md) for validation.
+
 ## v48.0.0 — Ceramic showrooms and pocket gardens
 
 - Stock two unfinished Arhaus branches with four selected ceramic references, source photos, dated qualified offers and published dimensions.

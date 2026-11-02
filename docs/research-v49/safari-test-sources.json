@@ -1,0 +1,14 @@
+{
+  "note": "Exact passing Safari sources, before the Firefox-only configurable readiness-budget option; no stored report fingerprints are rewritten.",
+  "waitTimeout": 35000,
+  "files": {
+    "scripts/gameplay-browser-qa.mjs": {
+      "snapshot": "docs/research-v49/safari-runner.txt",
+      "sha256": "655c61a13a4f998699cd69f956cf7ae4a2e9491830be53be9d441ec5caf14c3a"
+    },
+    "scripts/gameplay-native-matrix.mjs": {
+      "snapshot": "docs/research-v49/safari-matrix.txt",
+      "sha256": "2f46f3c1425ab0f3b4a12be63785bea0abe95070dbed4a8f247578b2cc7b2bf6"
+    }
+  }
+}

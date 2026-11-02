@@ -1,0 +1,13 @@
+# v49 · Tableware studio and water breaks
+
+At South Coast Plaza, find Sur La Table on Level 2 using Shops or the center map. Its four selected porcelain references are the Bistro Mug (SKU 455287, Single), Soup Bowl with Handle (2584902, One bowl), Bistro Cereal Bowl (455261, Single) and Creamer (2584886, One creamer). Merchant US offers reviewed on 1 November 2026 are $9.76, $12.95, $10.46 and $16.95 respectively; game tax and stock are simulated. Source links and qualified facts appear on each label.
+
+The original wood/tile interior has tableware alcoves and a source/glaze desk. Compare selected formats, published dimensions, source capacities and prices, keep a shortlist or save a free material study. Opening, editing and saving a study spends no game money, time or XP. It changes the local studio finish, not the selected product photograph or source finish.
+
+Inspect a solid hollow vessel in a simulated six-minute demo. The player raises it with both hands, gently turns it and lowers it smoothly. Narrow mugs and wider bowls use different hand spacing; the camera frames the player more closely. Reduced motion holds a fixed pose. The soup bowl has a straight horizontal handle, while the creamer has a loop handle and projecting spout. Model thickness, unlabeled dimension axes and the creamer body width are interpreted and explained; this is not a measured replica or capacity test.
+
+Review the bag and pay at checkout, return eligible unopened purchases for the original game totals, or open kept purchases and display them in the existing six-slot home shelf. Opening an item still removes its tags and affects its simulated return eligibility. Direct Exit shop actions return to the mall. Existing products and saves remain compatible.
+
+All 23 public water stations now have curved taps, cups, a bottle, a small ripple and visible readiness. Use Map → public water stop to walk there and open the water-break card. The card is free to read. Drinking takes three game minutes and restores up to eight stamina before normal time costs. The unchanged thirty-minute cooldown is shared by all floors of that center on that game day; the repeat button is disabled until ready. Visiting another floor does not create a second allowance.
+
+Products and source photos are documented in [catalog evidence](research-v49/catalog-evidence.json). The official mall directory confirms the merchant, but the studio is an original game design, not a surveyed branch interior. Source prices do not establish local inventory, shipping, real returns or photograph licensing. [Release QA](qa-v49.md) records browser scope and remaining limits.
