@@ -14,6 +14,9 @@ export function buildWaystationDetails(b,x,z,amenity,theme){
    for(let j=0;j<3;j++)b.box(xx,52-j*2+i%2*3,z-3.4,3,.4,.15,'#819180');
   }
   b.box(x,66,z-6,22,3,8,theme.trim,0,'timber');
+  for(const side of[-1,1])b.box(x+side*9.5,51,z-3.8,.6,25,.5,'#b99b63',0,'metal');
+  for(const yy of[28,32])b.box(x,yy,z+4,18,.7,9,theme.trim,0,'timber');
+  for(const dx of[-8,0,8])b.box(x+dx,30,z+4,.6,4,9,theme.trim,0,'timber');
   b.box(x,34,z+4,18,3,9,theme.trim,0,'timber');
   for(const dx of [-5,5]){b.box(x+dx,37,z+4,5,3,6,'#eee4cc');b.box(x+dx,38.6,z+5,3,.2,3,'#8ba190');}
  }

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "49.0.0",
+  "release": "50.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2007,
-  "uniqueRuntimePhotoFiles": 1985,
+  "runtimePhotoEntries": 2014,
+  "uniqueRuntimePhotoFiles": 1992,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19777,6 +19777,76 @@
       "source": "https://www.surlatable.com/product/sur-la-table-bistro-cereal-bowl/455261",
       "imageUrl": "https://assets.surlatable.com/m/7e2c600834ae7340/72_dpi_webp-455261_01-jpg",
       "description": "Sur La Table Bistro Cereal Bowl — exact selected-SKU merchant photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v50-real-ec-41792",
+      "path": "assets/photos/v50-real-ec-41792.webp",
+      "sha256": "6c207e8c50be3ed4107164c0fee282705ca2b2f6c70003601ee95588d91ebcf8",
+      "source": "https://www.erincondren.com/lilacs-productivity-graph-b6-notebook",
+      "imageUrl": "https://images.erincondren.com/Jan25/B6NB_Lilac_01.jpg?width=1200",
+      "description": "Lilacs Productivity Graph B6 Notebook — exact selected merchant front photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v50-real-ec-41793",
+      "path": "assets/photos/v50-real-ec-41793.webp",
+      "sha256": "823f6c01d057b9b1767983a94df5fb9d512ec61b2f8a85ab878103375239eaee",
+      "source": "https://www.erincondren.com/salmon-productivity-graph-b6-notebook",
+      "imageUrl": "https://images.erincondren.com/Jan25/B6NB_Salmon_01.jpg?width=1200",
+      "description": "Salmon Productivity Graph B6 Notebook — exact selected merchant front photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v50-real-ec-42217",
+      "path": "assets/photos/v50-real-ec-42217.webp",
+      "sha256": "a892d05b209fe0da6339546bca9d99b642ae68df8ade446fd15dfc1ec4aa772a",
+      "source": "https://www.erincondren.com/minimal-productivity-graph-b6-notebook",
+      "imageUrl": "https://images.erincondren.com/LP25_Accessories/B6_SlimNB_minimal_01.jpg?width=1200",
+      "description": "Minimal Productivity Graph B6 Notebook — exact selected merchant front photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v50-real-kino-9780316073875",
+      "path": "assets/photos/v50-real-kino-9780316073875.webp",
+      "sha256": "675a885ecbe167bd6c68455d237ebb15b5c812710a0fd4ccdc30859e29ca83ed",
+      "source": "https://usa.kinokuniya.com/products/9780316073875",
+      "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9780316073875-1_2479173c-7db5-44ae-9338-54ee4172b931.jpg?v=1793502659&width=1200",
+      "description": "Yotsuba&!: Vol 1 — exact selected merchant front photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v50-real-kino-9780316471855",
+      "path": "assets/photos/v50-real-kino-9780316471855.webp",
+      "sha256": "fc0628df95e84ea0f7e1d10eb985ea44888db6b57220fd67dcd5c2d0e202f9df",
+      "source": "https://usa.kinokuniya.com/products/9780316471855",
+      "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9780316471855-1.jpg?v=1788332724&width=1200",
+      "description": "Delicious in Dungeon, Vol. 1 (Delicious in Dungeon) — exact selected merchant front photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v50-real-kino-9781632367709",
+      "path": "assets/photos/v50-real-kino-9781632367709.webp",
+      "sha256": "fb05740d284bdc27e2c875c5b487704ea70eb75300a0d93949af8a010f114535",
+      "source": "https://usa.kinokuniya.com/products/9781632367709",
+      "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9781632367709-1_0911d668-4914-4d24-93e5-632ba8bbfaa9.jpg?v=1793243486&width=1200",
+      "description": "Witch Hat Atelier 1 — exact selected merchant front photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v50-real-kino-9781974725762",
+      "path": "assets/photos/v50-real-kino-9781974725762.webp",
+      "sha256": "f724f86177b7bf55c9d29f31bedf21bfe9906f809b553604b298e0d295e83208",
+      "source": "https://usa.kinokuniya.com/products/9781974725762",
+      "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9781974725762-1_8a21b141-9a61-4aa8-8128-01f4a7511884.jpg?v=1791953471&width=1200",
+      "description": "Frieren: Beyond Journey's End, Vol. 1 (Frieren: Beyond Journey's End) — exact selected merchant front photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

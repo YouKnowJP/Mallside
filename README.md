@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v49 — tableware studio and water breaks
+## v50 — reading corners and paper studios
+
+Two unfinished shops gain four exact English paperback editions and three fixed B6 notebooks, with source photographs, dated prices and factual format details. Original reading/stationery interiors retain free material studies, shortlists, purchases and refunds. Page turning follows the actual leaf, and all 23 community boards gain curved details, kept-invitation markers and a free daybook. Existing saves remain compatible. See [v50 gameplay](docs/GAMEPLAY-v50.md), [source evidence](docs/research-v50/catalog-evidence.json), [release QA](docs/qa-v50.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v49 — tableware studio and water breaks
 
 An unfinished Sur La Table shop at South Coast Plaza gains four exact-SKU porcelain references, reviewed photographs and qualified source prices. A furnished tableware studio supports comparison and saved glaze studies, while hollow models and smoother hand/object motion improve inspection. All 23 public water stops gain curved taps, cups, bottles and visible readiness; the card explains the existing shared cooldown. Existing saves and purchases remain compatible. See [v49 gameplay](docs/GAMEPLAY-v49.md), [source evidence](docs/research-v49/catalog-evidence.json), [release QA](docs/qa-v49.md) and the [roadmap](ROADMAP.md).
 

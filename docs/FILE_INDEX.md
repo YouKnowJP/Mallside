@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2493 files** from Git-tracked paths and
+This catalog lists **2510 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from the enclosing Personal PR
 folder with `python3 tools/refresh_indexes.py`.
@@ -13,10 +13,10 @@ folder with `python3 tools/refresh_indexes.py`.
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2241 |
-| [docs](../docs/) | 156 |
+| [dist](../dist/) | 2252 |
+| [docs](../docs/) | 161 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 57 |
+| [tests](../tests/) | 58 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ folder with `python3 tools/refresh_indexes.py`.
 ## dist
 
 <details>
-<summary>2241 files</summary>
+<summary>2252 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2106,6 +2106,13 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/assets/photos/v49-real-ad61e3e40067a98f393f.webp](../dist/assets/photos/v49-real-ad61e3e40067a98f393f.webp)
 - [dist/assets/photos/v49-real-c674e274e2b1092054a5.webp](../dist/assets/photos/v49-real-c674e274e2b1092054a5.webp)
 - [dist/assets/photos/v49-real-d5dd7925f83992a2f6c1.webp](../dist/assets/photos/v49-real-d5dd7925f83992a2f6c1.webp)
+- [dist/assets/photos/v50-real-ec-41792.webp](../dist/assets/photos/v50-real-ec-41792.webp)
+- [dist/assets/photos/v50-real-ec-41793.webp](../dist/assets/photos/v50-real-ec-41793.webp)
+- [dist/assets/photos/v50-real-ec-42217.webp](../dist/assets/photos/v50-real-ec-42217.webp)
+- [dist/assets/photos/v50-real-kino-9780316073875.webp](../dist/assets/photos/v50-real-kino-9780316073875.webp)
+- [dist/assets/photos/v50-real-kino-9780316471855.webp](../dist/assets/photos/v50-real-kino-9780316471855.webp)
+- [dist/assets/photos/v50-real-kino-9781632367709.webp](../dist/assets/photos/v50-real-kino-9781632367709.webp)
+- [dist/assets/photos/v50-real-kino-9781974725762.webp](../dist/assets/photos/v50-real-kino-9781974725762.webp)
 - [dist/assets/ross-x3.png](../dist/assets/ross-x3.png)
 - [dist/assets/round.jpg](../dist/assets/round.jpg)
 - [dist/assets/scarf.jpg](../dist/assets/scarf.jpg)
@@ -2211,7 +2218,9 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/navigation.js](../dist/navigation.js)
 - [dist/neighborhood-life.js](../dist/neighborhood-life.js)
 - [dist/neighborhood-ui.js](../dist/neighborhood-ui.js)
+- [dist/notice-details.js](../dist/notice-details.js)
 - [dist/outing-ui.js](../dist/outing-ui.js)
+- [dist/paper-studio.js](../dist/paper-studio.js)
 - [dist/photo-kiosk.js](../dist/photo-kiosk.js)
 - [dist/photo-palettes-v37.js](../dist/photo-palettes-v37.js)
 - [dist/photo-palettes-v39.js](../dist/photo-palettes-v39.js)
@@ -2223,6 +2232,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/photo-palettes-v47.js](../dist/photo-palettes-v47.js)
 - [dist/photo-palettes-v48.js](../dist/photo-palettes-v48.js)
 - [dist/photo-palettes-v49.js](../dist/photo-palettes-v49.js)
+- [dist/photo-palettes-v50.js](../dist/photo-palettes-v50.js)
 - [dist/photo-palettes.js](../dist/photo-palettes.js)
 - [dist/photo-surfaces-v37.js](../dist/photo-surfaces-v37.js)
 - [dist/photo-surfaces-v39.js](../dist/photo-surfaces-v39.js)
@@ -2272,6 +2282,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/store-product-additions-v47.js](../dist/store-product-additions-v47.js)
 - [dist/store-product-additions-v48.js](../dist/store-product-additions-v48.js)
 - [dist/store-product-additions-v49.js](../dist/store-product-additions-v49.js)
+- [dist/store-product-additions-v50.js](../dist/store-product-additions-v50.js)
 - [dist/store-product-seeds-v11.js](../dist/store-product-seeds-v11.js)
 - [dist/store-product-seeds.js](../dist/store-product-seeds.js)
 - [dist/store-services.js](../dist/store-services.js)
@@ -2302,7 +2313,7 @@ folder with `python3 tools/refresh_indexes.py`.
 ## docs
 
 <details>
-<summary>156 files</summary>
+<summary>161 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2334,6 +2345,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/GAMEPLAY-v47.md](../docs/GAMEPLAY-v47.md)
 - [docs/GAMEPLAY-v48.md](../docs/GAMEPLAY-v48.md)
 - [docs/GAMEPLAY-v49.md](../docs/GAMEPLAY-v49.md)
+- [docs/GAMEPLAY-v50.md](../docs/GAMEPLAY-v50.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2408,6 +2420,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/qa-v48.md](../docs/qa-v48.md)
 - [docs/qa-v49.md](../docs/qa-v49.md)
 - [docs/qa-v5.md](../docs/qa-v5.md)
+- [docs/qa-v50.md](../docs/qa-v50.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
@@ -2453,6 +2466,9 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/research-v49/safari-matrix.txt](../docs/research-v49/safari-matrix.txt)
 - [docs/research-v49/safari-runner.txt](../docs/research-v49/safari-runner.txt)
 - [docs/research-v49/safari-test-sources.json](../docs/research-v49/safari-test-sources.json)
+- [docs/research-v50/browser-proof.json](../docs/research-v50/browser-proof.json)
+- [docs/research-v50/catalog-evidence.json](../docs/research-v50/catalog-evidence.json)
+- [docs/research-v50/page-fade-proof.json](../docs/research-v50/page-fade-proof.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2497,7 +2513,7 @@ folder with `python3 tools/refresh_indexes.py`.
 ## tests
 
 <details>
-<summary>57 files</summary>
+<summary>58 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2538,6 +2554,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [tests/navigation.test.mjs](../tests/navigation.test.mjs)
 - [tests/neighborhood-v26.test.mjs](../tests/neighborhood-v26.test.mjs)
 - [tests/neighborhood-v27.test.mjs](../tests/neighborhood-v27.test.mjs)
+- [tests/paper-v50.test.mjs](../tests/paper-v50.test.mjs)
 - [tests/places-v34.test.mjs](../tests/places-v34.test.mjs)
 - [tests/planning-v36.test.mjs](../tests/planning-v36.test.mjs)
 - [tests/playable-stores.test.mjs](../tests/playable-stores.test.mjs)

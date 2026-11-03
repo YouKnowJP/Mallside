@@ -34,7 +34,7 @@ export function buildSignatureInterior(w,profile,layout,products){
   for(let i=0;i<6;i++){const x=rail.x+19+i*36;w.box(x,31,rail.y+22,29,4,20,profile.fixture);w.box(x-6,40,rail.y+22,7,17,8,'#363a35');w.box(x+3,47,rail.y+22,21,5,8,'#363a35');const wheel=w.cyl(x-9,47,rail.y+22,6,3,profile.trim);wheel.rotation.z=Math.PI/2;}
  }else if(['hermes','louisvuitton','coach','bottegaveneta','longchamp'].includes(profile.key)||profile.kind==='boutique'||profile.kind==='jewelry'){
   for(let i=0;i<3;i++){const x=rail.x+36+i*74;w.box(x,37,rail.y+20,65,70,7,profile.fixture);w.box(x,38,rail.y+25,57,61,3,profile.wall);w.box(x,14,rail.y+33,62,4,28,profile.trim);const p=own[i%Math.max(1,own.length)];if(p)w.photo(p,x,43,rail.y+29,40,46);w.box(x,72,rail.y+32,61,2,4,'#e9d1a5');}
- }else if(!own.some(p=>p.ceramicProfile)){
+ }else if(layout.store.collectionEdition!==50&&!own.some(p=>p.ceramicProfile)){
   own.slice(0,4).forEach((p,i)=>w.photo(p,rail.x+26+i*55,46,rail.y+23,42,48));
  }
  if(profile.key==='prada'){for(const x of [430,600,770]){w.box(x,103,118,120,3,6,'#e6e9dc');w.box(x,43,120,110,65,3,'#b2c9ae');}}

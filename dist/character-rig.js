@@ -8,7 +8,7 @@ import {footArc,gaitHeight} from './gait-motion.js?v=42.0.0';
 import {checkoutGesture} from './fitting-motion.js?v=41.0.0';
 import {createFrameModel} from './eyewear-model.js?v=39.0.0';
 import {frameGesture} from './eyewear-tools.js?v=39.0.0';
-import {readingGesture} from './book-tools.js?v=38.0.0';
+import {readingGesture,readingHands} from './book-tools.js?v=50.0.0';
 import {locomotionWeight} from './motion.js?v=34.0.0';
 import {surfaceTexture} from './scene-finish.js?v=33.0.0';
 import {addHumanAnatomy,addStarterClothing,poseHumanHands,updateHumanFace} from './human-anatomy.js?v=40.0.0';
@@ -80,7 +80,7 @@ export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=fal
  if(kind==='flowers'){const r=flowerGesture(time,reducedMotion);for(let i=0;i<2;i++)solveArmToGrip(g,i,30.5+r*.4,11,(i?1:-1)*4.8);}
  if(kind==='ceramic'){const pose=ceramicPose||ceramicHold({heightIn:13.78,diameterIn:7.48},time,reducedMotion);for(let i=0;i<2;i++){const h=pose.hands[i];solveArmToGrip(g,i,h.y,h.z,h.x,8);}}
  if(kind==='collectible'){const r=collectibleGesture(time,reducedMotion).reach;for(let i=0;i<2;i++)solveArmToGrip(g,i,30.5+r*.7,11,(i?1:-1)*4.2);}
- if(kind==='read'){const r=readingGesture(time,reducedMotion).reach;solveArmToGrip(g,0,31.5,10.5);solveArmToGrip(g,1,31.8+r*.8,10.5,6.5-r*4);}
+ if(kind==='read'){const hands=readingHands(time,reducedMotion);for(let i=0;i<2;i++){const h=hands[i];solveArmToGrip(g,i,h.y,h.z,h.x,16);}}
  if(carrying&&(move||!kind)){solveArmToGrip(g,1,28.5,7);}
  if(['eat','drink','icecream','tea'].includes(kind)){const sip=consumptionPose(kind,time,reducedMotion).lift;solveArmToGrip(g,1,36.5+7.2*sip,8-1.8*sip);g.userData.limbs[1].rotation.z=0;}
  if(elevated!==null){g.position.y=elevated;if(kind==='carousel')for(const leg of g.userData.limbs.slice(2)){leg.rotation.x=-1.05;leg.userData.knee.rotation.x=1.2;levelFoot(g,leg);}}

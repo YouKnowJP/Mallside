@@ -2,6 +2,16 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v50.0.0 — Reading corners and paper studios
+
+- Stock Books Kinokuniya at Del Amo and Erin Condren at Irvine Spectrum with four exact English paperback editions and three fixed B6 notebooks.
+- Keep official ISBNs or notebook product references, dated non-member/fixed-product prices, reviewed photos and qualified published specifications.
+- Add original paper/source alcoves, ruled/graph studies, bookmarks and source-front solid home volumes; retain free studies, shortlists, checkout, refunds, benches and exits.
+- Coordinate the hand with the actual turning leaf, ease motion joins, hide page resets and retain fixed reduced motion.
+- Refine all 23 public noticeboards, show today's globally kept invitation and add a free invitation daybook.
+- Preserve all 8,834 earlier product records and appearance profiles, schema 6 and map revision 10.
+- See [v50 QA](docs/qa-v50.md) for validation.
+
 ## v49.0.0 — Tableware studio and water breaks
 
 - Stock one unfinished Sur La Table shop with four exact selected single-item porcelain references, source photographs and qualified dated USD offers.

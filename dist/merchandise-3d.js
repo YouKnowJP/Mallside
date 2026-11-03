@@ -1,6 +1,8 @@
-import {createCeramic,isCeramic} from './ceramic-model.js?v=49.0.0';
-import {createPlush,isVerifiedPlush} from './plush-model.js?v=49.0.0';
-import {productAppearance} from './product-appearance.js?v=49.0.0';
+import {isReadingProduct} from './book-tools.js?v=50.0.0';
+import {placeBook} from './book-model.js?v=50.0.0';
+import {createCeramic,isCeramic} from './ceramic-model.js?v=50.0.0';
+import {createPlush,isVerifiedPlush} from './plush-model.js?v=50.0.0';
+import {productAppearance} from './product-appearance.js?v=50.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {addReferenceDetails,addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
@@ -39,6 +41,7 @@ export function merchandiseTemplate(w,p,hanger=false,bodyOnly=false){
  return w.merchandiseCache.get(key);
 }
 export function placeMerchandise(w,p,x,y,z,width,height,parent=w.scene,{hanger=clothing.has(p.type),stock=true}={}){
+ if(isReadingProduct(p))return placeBook(w,p,x,y,z,width,height,parent);
  const g=merchandiseTemplate(w,p,hanger).clone(true),size=g.userData.size,k=Math.min(width/size.x,height/size.y);g.scale.setScalar(k);g.position.set(x,y-size.y*k/2,z);parent.add(g);
  if(stock&&w.inside&&!parent.userData?.dynamicMerchandise){w.merchandiseRecords??=[];w.merchandiseRecords.push({product:p,object:g});}
  return g;

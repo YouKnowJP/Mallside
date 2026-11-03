@@ -1,7 +1,8 @@
+import {isReadingProduct} from './book-tools.js?v=50.0.0';
 import * as T from './vendor/three.module.js';
-import {productAppearance} from './product-appearance.js?v=49.0.0';
-import {slotForProduct,money,price} from './engine.js?v=49.0.0';
-import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=49.0.0';
+import {productAppearance} from './product-appearance.js?v=50.0.0';
+import {slotForProduct,money,price} from './engine.js?v=50.0.0';
+import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=50.0.0';
 
 const clothes=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);
@@ -26,6 +27,7 @@ function shelfGoods(batch,cx,cz,turn,p,profile,width=84,heights=[19,44,69]){
  for(const y of heights)for(const x of [-width*.3,0,width*.3]){
   if(clothes.has(p.type)){for(let layer=0;layer<4;layer++)add('box',color,x,y+layer*2.5,0,20,2,19);}
   else if(['shoes','sandals'].includes(p.type)){for(const dx of [-5,5]){add('box','#eee8da',x+dx,y-2,0,7,2,21);add('box',color,x+dx,y+2,-2,7,7,17);}}
+  else if(isReadingProduct(p)){for(let k=0;k<4;k++){const xx=x-5.25+k*3.5;add('box',color,xx,y+7,0,3,16,10);add('box','#e6dfcd',xx+.1,y+7,1,2.4,15,8);add('box',color,xx-1.25,y+7,0,.5,16,10);add('box',profile.trim,xx-1.55,y+11,1,.2,1,5);}}
   else if(p.ceramicProfile){batch.model(p,cx+x*Math.cos(turn),y-5.5,cz-x*Math.sin(turn),Math.min(19,18*p.ceramicProfile.heightIn/p.ceramicProfile.diameterIn),turn);}
   else if(p.plushProfile){batch.model(p,cx+x*Math.cos(turn),y-5.5,cz-x*Math.sin(turn),19,turn);}
   else if(bags.has(p.type)){batch.model(p,cx+x*Math.cos(turn),y-5,cz-x*Math.sin(turn),p.type==='wallet'?14:22,turn);}
@@ -67,11 +69,11 @@ export function buildStoreFitout(w,store,profile,layout,selection){
  for(const room of layout.fittingRooms){
   w.box(room.x,-1,room.y,59,2,78,w.mat(profile.accent,{polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-2}));
   w.box(room.x,43,fitting.y+2,62,86,4,profile.wall);
-  if(store.collectionEdition===38){w.box(room.x,42,fitting.y+7,36,65,3,profile.fixture);w.photo(own[room.id%own.length],room.x,44,fitting.y+12,29,43);}else if(store.collectionEdition===49){w.box(room.x,48,fitting.y+7,47,45,3,profile.fixture);for(const dx of[-16,0,16])w.box(room.x+dx,48,fitting.y+9,12,33,.5,'#eee5d2');}else w.box(room.x,42,fitting.y+7,32,65,2,w.mat('#b4ceca',{metalness:.75,roughness:.16}));
+  if([38,50].includes(store.collectionEdition)){w.box(room.x,42,fitting.y+7,36,65,3,profile.fixture);w.photo(own[room.id%own.length],room.x,44,fitting.y+12,29,43);}else if(store.collectionEdition===49){w.box(room.x,48,fitting.y+7,47,45,3,profile.fixture);for(const dx of[-16,0,16])w.box(room.x+dx,48,fitting.y+9,12,33,.5,'#eee5d2');}else w.box(room.x,42,fitting.y+7,32,65,2,w.mat('#b4ceca',{metalness:.75,roughness:.16}));
   w.box(room.x,13,fitting.y+20,32,6,18,profile.fixture);
   if(changing){const curtain=new T.Group();curtain.position.set(room.x-23,0,fitting.y+88);w.scene.add(curtain);const shade='#'+new T.Color(profile.fixture).multiplyScalar(.88).getHexString();for(let i=0;i<8;i++)w.box(-4.4+i*1.25,42,i%2?.8:0,1.3,77,1.5,i%2?profile.fixture:shade,curtain);w.fittingCurtains.push({mesh:curtain,room:room.id,x:room.x});for(let dx=-28;dx<=28;dx+=7)w.cyl(room.x+dx,84,fitting.y+87,.7,5,profile.trim);}
   else{w.box(room.x,27,fitting.y+23,42,5,25,profile.fixture);if(store.collectionEdition===49)w.photo(own[(room.id+2)%own.length],room.x,39.5,fitting.y+23,30,20);}
-  w.label(changing?'ROOM '+(room.id+1):(own.some(p=>p.frameProfile)?'FRAMES ':wearable?'STYLE ':store.collectionEdition===38?'EDITIONS ':store.collectionEdition===49?'TABLEWARE ':'CONSULT ')+(room.id+1),room.x,94,fitting.y+20,60,profile.accent,profile.wall);
+  w.label(changing?'ROOM '+(room.id+1):(own.some(p=>p.frameProfile)?'FRAMES ':wearable?'STYLE ':[38,50].includes(store.collectionEdition)?'EDITIONS ':store.collectionEdition===49?'TABLEWARE ':'CONSULT ')+(room.id+1),room.x,94,fitting.y+20,60,profile.accent,profile.wall);
  }
  for(const dx of [0,68,136])w.box(fitting.x+dx+2,changing?42:19,fitting.y+45,4,changing?84:38,90,profile.wall);
  if(changing)w.box(fitX,87,fitting.y+87,140,3,4,profile.trim);

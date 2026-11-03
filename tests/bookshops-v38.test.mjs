@@ -25,9 +25,9 @@ test('eight verified physical editions keep their exact ISBN, format, USD offer 
  assert.equal(validISBN('9781984898457'),false);assert.equal(validISBN('2940176764017'),false);assert.equal(isBookProduct({...editions[0],bookFormat:'EBook'}),false);
 });
 test('six formerly pending bookshops receive only their own documented editions; existing collections remain available',()=>{
- assert.equal(shops.length,6);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1074);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,391);assert.equal(E.STORES.filter(E.isPlanningStore).length,300);assert.equal(E.STORES.filter(hasCollectionDesk).length,60);
+ assert.equal(shops.length,6);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1076);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,389);assert.equal(E.STORES.filter(E.isPlanningStore).length,298);assert.equal(E.STORES.filter(hasCollectionDesk).length,62);
  for(const st of shops){assert.equal(st.count,8);assert.equal(st.businessKind,'books');assert.ok(hasCollectionDesk(st));assert.equal(collectionProducts(st).length,8);for(const p of st.products){assert.ok(isBookProduct(p));assert.equal(p.store,st.id);assert.equal(p.associationEvidence.kind,'retailer-product');assert.equal(p.associationEvidence.source,p.source);}}
- assert.ok(E.PRODUCTS.filter(p=>p.bookISBN).every(p=>shops.some(st=>st.id===p.store)));
+ const retained=E.PRODUCTS.filter(p=>p.modelId?.startsWith('v38-book-'));assert.equal(retained.length,48);assert.ok(retained.every(p=>shops.some(st=>st.id===p.store)));
 });
 test('book volumes have a real page block, boards, depth and exact cover identity, including wide art books',()=>{
  const w=owner();for(const p of shops[0].products){const g=placeBook(w,p,0,0,0,40,50),box=new T.Box3().setFromObject(g),size=box.getSize(new T.Vector3());assert.ok(size.x>10&&size.y>10&&size.z>1);assert.equal(g.userData.bookISBN,p.bookISBN);assert.equal(g.userData.source,p.source);assert.ok(g.children.filter(m=>m.geometry?.type==='BoxGeometry').length>=5);assert.ok(g.children.some(m=>m.geometry?.type==='PlaneGeometry'&&m.material.map));assert.ok(Math.abs(size.x/size.y-p.bookAspect)<.04);g.traverse(o=>{if(o.geometry)assert.ok(o.geometry.attributes.position.array.every(Number.isFinite));});}dispose(w);

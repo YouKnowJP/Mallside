@@ -1,0 +1,294 @@
+{
+  "checkedOn": "2026-11-02",
+  "products": [
+    {
+      "id": "kino-witch",
+      "url": "https://usa.kinokuniya.com/products/9781632367709",
+      "title": "Witch Hat Atelier 1",
+      "price": 12.99,
+      "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9781632367709-1_0911d668-4914-4d24-93e5-632ba8bbfaa9.jpg?v=1793243486&width=1200",
+      "sourceImageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9781632367709-1_0911d668-4914-4d24-93e5-632ba8bbfaa9.jpg?v=1793243486&width=1920",
+      "sourceProductId": "9781632367709",
+      "author": "Shirahama, Kamome",
+      "specs": "PublisherKodansha Comics\n\nPublication DateApr, 2019\n\nISBN\n9781632367709\n\n\nPages200 p.\n\nItem TypeBook\n\nFormatPaperback\n\n",
+      "offer": {
+        "@id": "/products/9781632367709?variant=49039289417955#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "12.99",
+        "priceCurrency": "USD",
+        "url": "https://usa.kinokuniya.com/products/9781632367709?variant=49039289417955"
+      },
+      "modelId": "v50-real-kino-9781632367709",
+      "photo": "assets/photos/v50-real-kino-9781632367709.webp",
+      "sourceSHA256": "2f951b08f37bd55346ecf31baa03215db637f0458c048f1b3be1f51fd2d66d13",
+      "runtimeSHA256": "fb05740d284bdc27e2c875c5b487704ea70eb75300a0d93949af8a010f114535",
+      "sourcePixels": [
+        200,
+        287
+      ],
+      "runtimePixels": [
+        200,
+        287
+      ],
+      "reviewed": true,
+      "checkedOn": "2026-11-02",
+      "format": "English Paperback",
+      "isbn": "9781632367709",
+      "publisher": "Kodansha Comics",
+      "pages": 200
+    },
+    {
+      "id": "kino-frieren",
+      "url": "https://usa.kinokuniya.com/products/9781974725762",
+      "title": "Frieren: Beyond Journey's End, Vol. 1 (Frieren: Beyond Journey's End)",
+      "price": 11.99,
+      "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9781974725762-1_8a21b141-9a61-4aa8-8128-01f4a7511884.jpg?v=1791953471&width=1200",
+      "sourceImageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9781974725762-1_8a21b141-9a61-4aa8-8128-01f4a7511884.jpg?v=1791953471&width=1920",
+      "sourceProductId": "9781974725762",
+      "author": "Yamada, Kanehito/ Abe, Tsukasa",
+      "specs": "PublisherViz Media, Subs. of Shogakukan Inc\n\nPublication DateMar, 2022\n\nISBN\n9781974725762\n\n\nPages192 p.\n\nItem TypeBook\n\nFormatPaperback\n\n",
+      "offer": {
+        "@id": "/products/9781974725762?variant=49047484694755#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "11.99",
+        "priceCurrency": "USD",
+        "url": "https://usa.kinokuniya.com/products/9781974725762?variant=49047484694755"
+      },
+      "modelId": "v50-real-kino-9781974725762",
+      "photo": "assets/photos/v50-real-kino-9781974725762.webp",
+      "sourceSHA256": "39c0fce2b1ef99303665f4b4ad277a6e1a758894fd4cf6cff718bfcb8e52a3e7",
+      "runtimeSHA256": "f724f86177b7bf55c9d29f31bedf21bfe9906f809b553604b298e0d295e83208",
+      "sourcePixels": [
+        200,
+        300
+      ],
+      "runtimePixels": [
+        200,
+        300
+      ],
+      "reviewed": true,
+      "checkedOn": "2026-11-02",
+      "format": "English Paperback",
+      "isbn": "9781974725762",
+      "publisher": "Viz Media, Subs. of Shogakukan Inc",
+      "pages": 192
+    },
+    {
+      "id": "kino-yotsuba",
+      "url": "https://usa.kinokuniya.com/products/9780316073875",
+      "title": "Yotsuba&!: Vol 1",
+      "price": 13,
+      "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9780316073875-1_2479173c-7db5-44ae-9338-54ee4172b931.jpg?v=1793502659&width=1200",
+      "sourceImageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9780316073875-1_2479173c-7db5-44ae-9338-54ee4172b931.jpg?v=1793502659&width=1920",
+      "sourceProductId": "9780316073875",
+      "author": "Azuma, Kiyohiko",
+      "specs": "PublisherYen Press\n\nPublication DateSep, 2009\n\nISBN\n9780316073875\n\n\nPages240 p.\n\nItem TypeBook\n\nFormatPaperback\n\n",
+      "offer": {
+        "@id": "/products/9780316073875?variant=49028604231907#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "13.00",
+        "priceCurrency": "USD",
+        "url": "https://usa.kinokuniya.com/products/9780316073875?variant=49028604231907"
+      },
+      "modelId": "v50-real-kino-9780316073875",
+      "photo": "assets/photos/v50-real-kino-9780316073875.webp",
+      "sourceSHA256": "d02adc3413043b14a12e6898c4168d0ba5df151e474cde8fab95d85db2ae3a34",
+      "runtimeSHA256": "675a885ecbe167bd6c68455d237ebb15b5c812710a0fd4ccdc30859e29ca83ed",
+      "sourcePixels": [
+        200,
+        300
+      ],
+      "runtimePixels": [
+        200,
+        300
+      ],
+      "reviewed": true,
+      "checkedOn": "2026-11-02",
+      "format": "English Paperback",
+      "isbn": "9780316073875",
+      "publisher": "Yen Press",
+      "pages": 240
+    },
+    {
+      "id": "kino-dungeon",
+      "url": "https://usa.kinokuniya.com/products/9780316471855",
+      "title": "Delicious in Dungeon, Vol. 1 (Delicious in Dungeon)",
+      "price": 15,
+      "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9780316471855-1.jpg?v=1788332724&width=1200",
+      "sourceImageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9780316471855-1.jpg?v=1788332724&width=1920",
+      "sourceProductId": "9780316471855",
+      "author": "Kui, Ryoko",
+      "specs": "PublisherYen Press\n\nPublication DateMay, 2017\n\nISBN\n9780316471855\n\n\nPages192 p.\n\nItem TypeBook\n\nFormatPaperback\n\n",
+      "offer": {
+        "@id": "/products/9780316471855?variant=49305307873507#offer",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "15.00",
+        "priceCurrency": "USD",
+        "url": "https://usa.kinokuniya.com/products/9780316471855?variant=49305307873507"
+      },
+      "modelId": "v50-real-kino-9780316471855",
+      "photo": "assets/photos/v50-real-kino-9780316471855.webp",
+      "sourceSHA256": "de4feb76ed6f7ff623a4682fbda35e626333c76e3e278f66a1698a033004ca83",
+      "runtimeSHA256": "fc0628df95e84ea0f7e1d10eb985ea44888db6b57220fd67dcd5c2d0e202f9df",
+      "sourcePixels": [
+        200,
+        288
+      ],
+      "runtimePixels": [
+        200,
+        288
+      ],
+      "reviewed": true,
+      "checkedOn": "2026-11-02",
+      "format": "English Paperback",
+      "isbn": "9780316471855",
+      "publisher": "Yen Press",
+      "pages": 192
+    },
+    {
+      "id": "ec-lilacs",
+      "url": "https://www.erincondren.com/lilacs-productivity-graph-b6-notebook",
+      "title": "Lilacs Productivity Graph B6 Notebook",
+      "price": 8.5,
+      "imageUrl": "https://images.erincondren.com/Jan25/B6NB_Lilac_01.jpg?width=1200",
+      "sourceImageUrl": "https://images.erincondren.com/Jan25/B6NB_Lilac_01.jpg?width=375",
+      "sourceProductId": "41792",
+      "specs": "[details](https://www.erincondren.com/lilacs-productivity-graph-b6-notebook#body41792_318)\n\n• B6 (4.9” x 6.9”)\n\n• 96 productivity graph pages\n\n• 70 lb. linen texture cover\n\n• Lay-flat binding\n\n• Interior pages 54 lb. text weight (slim, Japanese-style paper)\n\n• Imported\n\n",
+      "modelId": "v50-real-ec-41792",
+      "photo": "assets/photos/v50-real-ec-41792.webp",
+      "sourceSHA256": "0e03d76c3a38fcdfaa5c730817a3f44bcdcefe69b078b74e45535bd40f76e0aa",
+      "runtimeSHA256": "6c207e8c50be3ed4107164c0fee282705ca2b2f6c70003601ee95588d91ebcf8",
+      "sourcePixels": [
+        1200,
+        1200
+      ],
+      "runtimePixels": [
+        1000,
+        1000
+      ],
+      "reviewed": true,
+      "checkedOn": "2026-11-02",
+      "profile": {
+        "reviewed": true,
+        "kind": "b6-notebook",
+        "productReference": "41792",
+        "widthIn": 4.9,
+        "heightIn": 6.9,
+        "pages": 96,
+        "binding": "Lay-flat binding",
+        "cover": "70 lb. linen texture cover",
+        "paper": "54 lb. text weight",
+        "frontCrop": [
+          0.2,
+          0.1,
+          0.575,
+          0.8
+        ]
+      }
+    },
+    {
+      "id": "ec-minimal",
+      "url": "https://www.erincondren.com/minimal-productivity-graph-b6-notebook",
+      "title": "Minimal Productivity Graph B6 Notebook",
+      "price": 8.5,
+      "imageUrl": "https://images.erincondren.com/LP25_Accessories/B6_SlimNB_minimal_01.jpg?width=1200",
+      "sourceImageUrl": "https://images.erincondren.com/LP25_Accessories/B6_SlimNB_minimal_01.jpg?width=375",
+      "sourceProductId": "42217",
+      "specs": "[details](https://www.erincondren.com/minimal-productivity-graph-b6-notebook#body42217_318)\n\n• B6 (4.9” x 6.9”)\n\n• 96 productivity graph pages\n\n• 70 lb. linen texture cover\n\n• Lay-flat binding\n\n• Interior pages 54 lb. text weight (slim, Japanese-style paper)\n\n• Imported\n\n",
+      "modelId": "v50-real-ec-42217",
+      "photo": "assets/photos/v50-real-ec-42217.webp",
+      "sourceSHA256": "628a3a5122aa2de0269633ac08ac8ed0d3d4dd56c5692917166cc0ea33a2c168",
+      "runtimeSHA256": "a892d05b209fe0da6339546bca9d99b642ae68df8ade446fd15dfc1ec4aa772a",
+      "sourcePixels": [
+        1200,
+        1200
+      ],
+      "runtimePixels": [
+        1000,
+        1000
+      ],
+      "reviewed": true,
+      "checkedOn": "2026-11-02",
+      "profile": {
+        "reviewed": true,
+        "kind": "b6-notebook",
+        "productReference": "42217",
+        "widthIn": 4.9,
+        "heightIn": 6.9,
+        "pages": 96,
+        "binding": "Lay-flat binding",
+        "cover": "70 lb. linen texture cover",
+        "paper": "54 lb. text weight",
+        "frontCrop": [
+          0.2167,
+          0.0917,
+          0.575,
+          0.8166
+        ]
+      }
+    },
+    {
+      "id": "ec-salmon",
+      "url": "https://www.erincondren.com/salmon-productivity-graph-b6-notebook",
+      "title": "Salmon Productivity Graph B6 Notebook",
+      "price": 8.5,
+      "imageUrl": "https://images.erincondren.com/Jan25/B6NB_Salmon_01.jpg?width=1200",
+      "sourceImageUrl": "https://images.erincondren.com/Jan25/B6NB_Salmon_01.jpg?width=375",
+      "sourceProductId": "41793",
+      "specs": "[details](https://www.erincondren.com/salmon-productivity-graph-b6-notebook#body41793_318)\n\n• B6 (4.9” x 6.9”)\n\n• 96 productivity graph pages\n\n• 70 lb. linen texture cover\n\n• Lay-flat binding\n\n• Interior pages 54 lb. text weight (slim, Japanese-style paper)\n\n• Imported\n\n",
+      "modelId": "v50-real-ec-41793",
+      "photo": "assets/photos/v50-real-ec-41793.webp",
+      "sourceSHA256": "bffb092b58746c8b617faeea45aae1a2bba7f80c60ab350199cc6bcaedf422ce",
+      "runtimeSHA256": "823f6c01d057b9b1767983a94df5fb9d512ec61b2f8a85ab878103375239eaee",
+      "sourcePixels": [
+        1200,
+        1200
+      ],
+      "runtimePixels": [
+        1000,
+        1000
+      ],
+      "reviewed": true,
+      "checkedOn": "2026-11-02",
+      "profile": {
+        "reviewed": true,
+        "kind": "b6-notebook",
+        "productReference": "41793",
+        "widthIn": 4.9,
+        "heightIn": 6.9,
+        "pages": 96,
+        "binding": "Lay-flat binding",
+        "cover": "70 lb. linen texture cover",
+        "paper": "54 lb. text weight",
+        "frontCrop": [
+          0.2083,
+          0.0917,
+          0.5917,
+          0.8166
+        ]
+      }
+    }
+  ],
+  "branches": [
+    {
+      "store": "delamo-tenant-bookskinokuniya-Mainlevel",
+      "source": "https://usa.kinokuniya.com/pages/stores",
+      "finding": "Official Torrance entry: Mitsuwa Marketplace in Del Amo Fashion Center."
+    },
+    {
+      "store": "spectrum-tenant-erincondren",
+      "source": "https://www.irvinespectrumcenter.com/shopping/stores/erin-condren",
+      "finding": "Official mall directory confirms Erin Condren."
+    }
+  ],
+  "qualification": "Branch presence only; interiors are original Mallside art, not surveyed replicas. References do not establish branch stock or redistribution permission.",
+  "previousCatalog": {
+    "count": 8834,
+    "recordsAndAppearancesUnchanged": true,
+    "sortedProductIdsSHA256": "3dbc9c5d091fb2e5dbdf2759c6b44cb0117c52bb6692c70baa180e899e5ee13c"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "checkedOn": "2026-11-02",
+  "method": "Isolated Chromium WebGL pixel readback using the actual createReadingProp material and updateReadingProp function; black background, fixed camera and identical illumination. No game clocks or visibility flags are overridden.",
+  "revision": "180",
+  "transparent": true,
+  "depthWrite": false,
+  "samples": [
+    {
+      "time": 0,
+      "opacity": 1,
+      "rgba": [
+        242,
+        236,
+        222,
+        255
+      ]
+    },
+    {
+      "time": 2.775,
+      "opacity": 0.5,
+      "rgba": [
+        121,
+        118,
+        111,
+        255
+      ]
+    },
+    {
+      "time": 3.1,
+      "opacity": 0,
+      "rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  ],
+  "programs": 1,
+  "sourceSHA256": {
+    "dist/book-model.js": "02323a71e2d4462751d808946cd85f3553449d1d408147abe455434df7983a2b",
+    "dist/book-tools.js": "7f533e9cde2e7d395016adc1e80e6b2805a950260d1291a7a1fd33a5b9d91f17"
+  }
+}

@@ -7,7 +7,7 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 | Topic | Document |
 | --- | --- |
 | Tableware studio, coupled inspections and detailed water breaks | [v49 guide](GAMEPLAY-v49.md), [source evidence](research-v49/catalog-evidence.json), [v49 QA](qa-v49.md) |
-| Ceramic showrooms, glaze studies and pocket garden observations | [v48 guide](GAMEPLAY-v48.md), [v48 QA](qa-v48.md) |
+| Ceramic showrooms, glaze studies and pocket garden observations | [v48 guide](GAMEPLAY-v48.md), [v50 QA](qa-v50.md), [v49 QA](qa-v49.md), [v48 QA](qa-v48.md) |
 | Solid collectible studios and refined mosaic courts | [v47 guide](GAMEPLAY-v47.md), [source evidence](research-v47/catalog-evidence.json), [v47 QA](qa-v47.md) |
 | Tailoring studios, tea recipe cards and eased consumption | [v46 guide](GAMEPLAY-v46.md), [source evidence](research-v46/catalog-evidence.json), [v46 QA](qa-v46.md) |
 | Activewear studios, flower memories and canopy visibility | [v45 guide](GAMEPLAY-v45.md), [source evidence](research-v45/catalog-evidence.json), [v45 QA](qa-v45.md) |
