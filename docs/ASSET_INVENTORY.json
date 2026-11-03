@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "50.0.0",
+  "release": "51.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2014,
-  "uniqueRuntimePhotoFiles": 1992,
+  "runtimePhotoEntries": 2020,
+  "uniqueRuntimePhotoFiles": 1998,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19847,6 +19847,66 @@
       "source": "https://usa.kinokuniya.com/products/9781974725762",
       "imageUrl": "https://usa.kinokuniya.com/cdn/shop/files/9781974725762-1_8a21b141-9a61-4aa8-8128-01f4a7511884.jpg?v=1791953471&width=1200",
       "description": "Frieren: Beyond Journey's End, Vol. 1 (Frieren: Beyond Journey's End) — exact selected merchant front photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v51-real-container-10008759",
+      "path": "assets/photos/v51-real-container-10008759.webp",
+      "sha256": "281dbf08a28b16f79c2bd4e4c476768efee3a671c2e8d7b3b615282a9125231e",
+      "source": "https://www.containerstore.com/s/closet/shoe-storage/our-shoe-box/12d?productId=10001753&skuId=10008759",
+      "imageUrl": "https://www.containerstore.com/catalogimages/356414/10008759OurShoeBox_600.jpg",
+      "description": "Our Shoe Box — official selected-color product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v51-real-container-10008760",
+      "path": "assets/photos/v51-real-container-10008760.webp",
+      "sha256": "ed1236331a2e486c1817dc2550b452dd84bb4eade3e88e79c7f5a3424e64ca47",
+      "source": "https://www.containerstore.com/s/closet/closet-boxes-bins/our-mens-shoe-box/12d?productId=11000058&skuId=10008760",
+      "imageUrl": "https://www.containerstore.com/catalogimages/356422/10008760_OurMensShoeBox_600.jpg",
+      "description": "Our Large Shoe Box — official selected-color product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v51-real-container-10048826",
+      "path": "assets/photos/v51-real-container-10048826.webp",
+      "sha256": "585e6e35c19dc48e303cb4c45366b5b5558d5f0219ffa8911a6de30037a5e1f9",
+      "source": "https://www.containerstore.com/s/storage/plastic-bins-baskets/drop-front-shoe-boxes/12d?productId=11019063&skuId=10048826",
+      "imageUrl": "https://www.containerstore.com/catalogimages/301959/10048826Shoe-Box-DropFront-Transluce.jpg",
+      "description": "Small Drop-Front Shoe Box Translucent — official selected-color product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v51-real-terrain-106914781",
+      "path": "assets/photos/v51-real-terrain-106914781.webp",
+      "sha256": "f264ac9612652975289ced52a6fb091f7d89636476dcfcecf9c40f13f53b7cc9",
+      "source": "https://www.shopterrain.com/shop/honey-pot-ceramic-planter?color=047",
+      "imageUrl": "https://images.urbndata.com/is/image/Anthropologie/106914336_047_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=1000",
+      "description": "Honey Pot Ceramic Planter — official selected-color product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v51-real-terrain-61822987",
+      "path": "assets/photos/v51-real-terrain-61822987.webp",
+      "sha256": "56a5ba5d261d61a2c1db3e4925b6bc7e73927ec6deca43e09206c3ac29d53e60",
+      "source": "https://www.shopterrain.com/shop/ceramic-botanics-footed-planter?color=039",
+      "imageUrl": "https://images.urbndata.com/is/image/Anthropologie/61822987_039_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=1000",
+      "description": "Ceramic Botanics Footed Planter — official selected-color product photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v51-real-terrain-65559882",
+      "path": "assets/photos/v51-real-terrain-65559882.webp",
+      "sha256": "f35b78564eaacb2c8b2b529b156ca2ffe0cd3bfd4a70845bdc55d40ad88b08c3",
+      "source": "https://www.shopterrain.com/shop/roll-top-low-ceramic-planter?color=030",
+      "imageUrl": "https://images.urbndata.com/is/image/Anthropologie/65559882_030_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=1000",
+      "description": "Roll Top Low Ceramic Planter — official selected-color product photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

@@ -2,6 +2,16 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v51.0.0 — Garden and storage studios
+
+- Stock two previously pending Century City branches with six exact selected merchant SKUs; distinguish single-box offers, planter sizes, included contents and qualified source dimensions.
+- Add original garden/storage studio details, clear empty box shells, source-supported planter drainage and six solid owned room displays.
+- Match planter grips to each silhouette and storage grips to source width; ease gift folds, settling ribbon tails and lift/lower phases while preserving reduced motion.
+- Refine all 23 public guest-services counters within existing footprints and preserve their interaction routes and reward rules.
+- Escape inch-size values in format controls so selections, purchases and refunds retain the exact source label.
+- Preserve all 8,841 earlier product records and appearances, save schema 6 and map revision 10.
+- See [v51 QA](docs/qa-v51.md) for validation.
+
 ## v50.0.0 — Reading corners and paper studios
 
 - Stock Books Kinokuniya at Del Amo and Erin Condren at Irvine Spectrum with four exact English paperback editions and three fixed B6 notebooks.

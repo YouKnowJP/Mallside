@@ -1,2 +1,2 @@
 export {campusLayout as spatialLayout} from './campus-layout.js?v=36.0.0';
-export {interiorPlan as interiorLayout} from './shop-interiors.js?v=50.0.0';
+export {interiorPlan as interiorLayout} from './shop-interiors.js?v=51.0.0';

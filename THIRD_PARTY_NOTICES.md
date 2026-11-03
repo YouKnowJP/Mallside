@@ -82,3 +82,8 @@ Four selected single-item Sur La Table US porcelain photographs are referenced b
 ## v50 paper source photographs
 
 Four exact English paperback covers from Kinokuniya USA and three fixed Erin Condren B6 notebook packshots are referenced by the v50 catalog. Official product pages, exact ISBNs or merchant product references, dated standard USD offers, published specifications, reviewed crops and source/runtime hashes are recorded in docs/research-v50/catalog-evidence.json and docs/ASSET_INVENTORY.json. The retailers, publishers, authors/artists and respective rights holders retain their photographs, artwork, characters and marks; commercial permission is not recorded. Book text and merchant interior-page artwork are not reproduced. Neutral spines/backs, sample pages, fixtures, noticeboards and motion are original adapted Mallside art, not measured replicas, surveyed branches or real stock/paper-performance/return guarantees.
+
+
+## v51 garden and storage references
+
+Six selected product references and source photographs from Terrain and The Container Store were checked on 3 November 2026. Exact SKUs, selected formats, qualified USD offers, photo URLs and hashes are recorded in docs/research-v51/catalog-evidence.json. Terrain photographs may show multiple sizes and plants; Container Store photographs may show shoes. Those extra contents are not merchant inventory in Mallside. Planter marks, storage geometry, studio foliage, guest-service tools and wrapping props are original adapted game art. Branch pages establish merchant presence, not surveyed interiors or local stock. Existing third-party photo/design rights remain with their respective owners; source links do not establish reproduction or commercial redistribution permission.

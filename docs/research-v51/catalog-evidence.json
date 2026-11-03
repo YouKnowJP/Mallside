@@ -1,0 +1,182 @@
+{
+  "checkedOn": "2026-11-03",
+  "products": [
+    {
+      "modelId": "v51-real-terrain-61822987",
+      "title": "Ceramic Botanics Footed Planter",
+      "url": "https://www.shopterrain.com/shop/ceramic-botanics-footed-planter?color=039",
+      "selectedSKU": "61822987",
+      "selectedColor": "Botanical Motif",
+      "selectedFormat": "4\"",
+      "price": 22,
+      "currency": "USD",
+      "checkedOn": "2026-11-03",
+      "imageUrl": "https://images.urbndata.com/is/image/Anthropologie/61822987_039_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=1000",
+      "photo": "assets/photos/v51-real-terrain-61822987.webp",
+      "sourceSHA256": "3b72bfcc3230f6dad21bde474220beae57712ab143180c3327233828a8d8fbf0",
+      "runtimeSHA256": "56a5ba5d261d61a2c1db3e4925b6bc7e73927ec6deca43e09206c3ac29d53e60",
+      "sourcePixels": [
+        1000,
+        1500
+      ],
+      "runtimePixels": [
+        667,
+        1000
+      ],
+      "reviewed": true,
+      "photoNote": "Shared official selected-color photograph shows multiple sizes and plants; only the specified pot size is stocked. Plants and other pots are excluded. The model is original adapted game art, not a measured replica; merchant artwork is not copied onto its surfaces.",
+      "dimensions": "3 inches height × 4 inches diameter. Published selected-size dimensions; silhouette, thickness and original surface marks are adapted.",
+      "priceBasis": "Official selected-SKU USD offer checked 3 November 2026. Shipping, branch inventory and real return eligibility are excluded. Game quantities, inspection and returns are simulated."
+    },
+    {
+      "modelId": "v51-real-terrain-65559882",
+      "title": "Roll Top Low Ceramic Planter",
+      "url": "https://www.shopterrain.com/shop/roll-top-low-ceramic-planter?color=030",
+      "selectedSKU": "65559882",
+      "selectedColor": "Green",
+      "selectedFormat": "13\"",
+      "price": 98,
+      "currency": "USD",
+      "checkedOn": "2026-11-03",
+      "imageUrl": "https://images.urbndata.com/is/image/Anthropologie/65559882_030_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=1000",
+      "photo": "assets/photos/v51-real-terrain-65559882.webp",
+      "sourceSHA256": "5ea55a86f311f95548033569f9380c122de90736d4195d3e2212e16a848b7961",
+      "runtimeSHA256": "f35b78564eaacb2c8b2b529b156ca2ffe0cd3bfd4a70845bdc55d40ad88b08c3",
+      "sourcePixels": [
+        1000,
+        1500
+      ],
+      "runtimePixels": [
+        667,
+        1000
+      ],
+      "reviewed": true,
+      "photoNote": "Shared official selected-color photograph shows multiple sizes and plants; only the specified pot size is stocked. Plants and other pots are excluded. The model is original adapted game art, not a measured replica; merchant artwork is not copied onto its surfaces.",
+      "dimensions": "10 inches height × 13 inches diameter. Published selected-size dimensions; silhouette, thickness and original surface marks are adapted.",
+      "priceBasis": "Official selected-SKU USD offer checked 3 November 2026. Shipping, branch inventory and real return eligibility are excluded. Game quantities, inspection and returns are simulated."
+    },
+    {
+      "modelId": "v51-real-terrain-106914781",
+      "title": "Honey Pot Ceramic Planter",
+      "url": "https://www.shopterrain.com/shop/honey-pot-ceramic-planter?color=047",
+      "selectedSKU": "106914781",
+      "selectedColor": "Indigo",
+      "selectedFormat": "5\"",
+      "price": 38,
+      "currency": "USD",
+      "checkedOn": "2026-11-03",
+      "imageUrl": "https://images.urbndata.com/is/image/Anthropologie/106914336_047_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=1000",
+      "photo": "assets/photos/v51-real-terrain-106914781.webp",
+      "sourceSHA256": "0cc924be9c03e740a795d4c0adff8f107ccd3a5e48682ba1273a5a3b5a93a6ad",
+      "runtimeSHA256": "f264ac9612652975289ced52a6fb091f7d89636476dcfcecf9c40f13f53b7cc9",
+      "sourcePixels": [
+        1000,
+        1500
+      ],
+      "runtimePixels": [
+        667,
+        1000
+      ],
+      "reviewed": true,
+      "photoNote": "Shared official selected-color photograph shows multiple sizes and plants; only the specified pot size is stocked. Plants and other pots are excluded. The model is original adapted game art, not a measured replica; merchant artwork is not copied onto its surfaces.",
+      "dimensions": "5.5 inches height × 5.3 inches diameter. Published selected-size dimensions; silhouette, thickness and original surface marks are adapted.",
+      "priceBasis": "Official selected-SKU USD offer checked 3 November 2026. Indigo 5-inch SKU is $38; lower sale prices on the family page apply to other colors. Shipping, branch inventory and real return eligibility are excluded. Game quantities, inspection and returns are simulated."
+    },
+    {
+      "modelId": "v51-real-container-10008759",
+      "title": "Our Shoe Box",
+      "url": "https://www.containerstore.com/s/closet/shoe-storage/our-shoe-box/12d?productId=10001753&skuId=10008759",
+      "selectedSKU": "10008759",
+      "selectedColor": "Clear",
+      "selectedFormat": "Single",
+      "price": 2.89,
+      "currency": "USD",
+      "checkedOn": "2026-11-03",
+      "imageUrl": "https://www.containerstore.com/catalogimages/356414/10008759OurShoeBox_600.jpg",
+      "photo": "assets/photos/v51-real-container-10008759.webp",
+      "sourceSHA256": "25a4fdc0a81e00cb46d8fb1d0b52feba4aa9ac57f44f6a8266ed54899db2941c",
+      "runtimeSHA256": "281dbf08a28b16f79c2bd4e4c476768efee3a671c2e8d7b3b615282a9125231e",
+      "sourcePixels": [
+        600,
+        600
+      ],
+      "runtimePixels": [
+        600,
+        600
+      ],
+      "reviewed": true,
+      "photoNote": "Official selected-SKU photograph. Shoes and display contents are excluded. The model is original adapted game art, not a measured replica; merchant artwork is not copied onto its surfaces.",
+      "dimensions": "13 inches width × 7½ inches length × 4¼ inches height. Merchant exterior axes; not a shoe-fit guarantee.",
+      "priceBasis": "Official selected-SKU USD offer checked 3 November 2026. Single box price; case packs are excluded. Shipping, branch inventory and real return eligibility are excluded. Game quantities, inspection and returns are simulated."
+    },
+    {
+      "modelId": "v51-real-container-10008760",
+      "title": "Our Large Shoe Box",
+      "url": "https://www.containerstore.com/s/closet/closet-boxes-bins/our-mens-shoe-box/12d?productId=11000058&skuId=10008760",
+      "selectedSKU": "10008760",
+      "selectedColor": "Clear",
+      "selectedFormat": "Single",
+      "price": 5.99,
+      "currency": "USD",
+      "checkedOn": "2026-11-03",
+      "imageUrl": "https://www.containerstore.com/catalogimages/356422/10008760_OurMensShoeBox_600.jpg",
+      "photo": "assets/photos/v51-real-container-10008760.webp",
+      "sourceSHA256": "aaa199049bdcff093a85eec55c5a9b8b0a2da258c4425d909abd62dfb336e039",
+      "runtimeSHA256": "ed1236331a2e486c1817dc2550b452dd84bb4eade3e88e79c7f5a3424e64ca47",
+      "sourcePixels": [
+        600,
+        600
+      ],
+      "runtimePixels": [
+        600,
+        600
+      ],
+      "reviewed": true,
+      "photoNote": "Official selected-SKU photograph. Shoes and display contents are excluded. The model is original adapted game art, not a measured replica; merchant artwork is not copied onto its surfaces.",
+      "dimensions": "14¾ inches width × 10⅛ inches length × 5⅝ inches height. Merchant exterior axes; not a shoe-fit guarantee.",
+      "priceBasis": "Official selected-SKU USD offer checked 3 November 2026. Single box price; case packs are excluded. Shipping, branch inventory and real return eligibility are excluded. Game quantities, inspection and returns are simulated."
+    },
+    {
+      "modelId": "v51-real-container-10048826",
+      "title": "Small Drop-Front Shoe Box Translucent",
+      "url": "https://www.containerstore.com/s/storage/plastic-bins-baskets/drop-front-shoe-boxes/12d?productId=11019063&skuId=10048826",
+      "selectedSKU": "10048826",
+      "selectedColor": "Translucent",
+      "selectedFormat": "Small",
+      "price": 10.99,
+      "currency": "USD",
+      "checkedOn": "2026-11-03",
+      "imageUrl": "https://www.containerstore.com/catalogimages/301959/10048826Shoe-Box-DropFront-Transluce.jpg",
+      "photo": "assets/photos/v51-real-container-10048826.webp",
+      "sourceSHA256": "7993211df7e8f379f389d94d1a02b930b7324c2fa6895d9b08aee6fd053137cc",
+      "runtimeSHA256": "585e6e35c19dc48e303cb4c45366b5b5558d5f0219ffa8911a6de30037a5e1f9",
+      "sourcePixels": [
+        1200,
+        1200
+      ],
+      "runtimePixels": [
+        800,
+        800
+      ],
+      "reviewed": true,
+      "photoNote": "Official selected-SKU photograph. Shoes and display contents are excluded. The model is original adapted game art, not a measured replica; merchant artwork is not copied onto its surfaces.",
+      "dimensions": "8⅝ inches width × 12½ inches length × 7¼ inches height. The merchant dimension table says 8⅝ inches; its SKU description says 8 11/16 inches. Both are retained here rather than silently reconciled. Merchant exterior axes; not a shoe-fit guarantee.",
+      "priceBasis": "Official selected-SKU USD offer checked 3 November 2026. Shipping, branch inventory and real return eligibility are excluded. Game quantities, inspection and returns are simulated."
+    }
+  ],
+  "branches": [
+    {
+      "merchant": "terrain",
+      "store": "century-tenant-terrain-Level2",
+      "url": "https://www.shopterrain.com/centurycity",
+      "note": "Official Century City page identifies Terrain within Anthropologie & Co.; original game interior, not surveyed branch geometry."
+    },
+    {
+      "merchant": "The Container Store",
+      "store": "century-tenant-thecontainerstore-Level2",
+      "url": "https://www.containerstore.com/stores/ca/los-angeles/10250-santa-monica-blvd",
+      "mallURL": "https://www.westfield.com/en/united-states/centurycity/retailers/the-container-store/24116",
+      "note": "Official merchant and mall directories confirm Century City; local stock and the interior are simulated."
+    }
+  ]
+}

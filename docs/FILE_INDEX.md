@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2510 files** from Git-tracked paths and
+This catalog lists **2530 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from the enclosing Personal PR
 folder with `python3 tools/refresh_indexes.py`.
@@ -13,10 +13,10 @@ folder with `python3 tools/refresh_indexes.py`.
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2252 |
-| [docs](../docs/) | 161 |
+| [dist](../dist/) | 2266 |
+| [docs](../docs/) | 166 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 58 |
+| [tests](../tests/) | 59 |
 
 ## Root files
 
@@ -27,14 +27,14 @@ folder with `python3 tools/refresh_indexes.py`.
 - [CHANGELOG.md](../CHANGELOG.md)
 - [CONTRIBUTING.md](../CONTRIBUTING.md)
 - [LICENSE](../LICENSE)
+- [package-lock.json](../package-lock.json)
+- [package.json](../package.json)
 - [PERMISSIONS.md](../PERMISSIONS.md)
 - [PRIVACY.md](../PRIVACY.md)
 - [README.md](../README.md)
 - [ROADMAP.md](../ROADMAP.md)
 - [SECURITY.md](../SECURITY.md)
 - [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)
-- [package-lock.json](../package-lock.json)
-- [package.json](../package.json)
 
 </details>
 
@@ -53,13 +53,9 @@ folder with `python3 tools/refresh_indexes.py`.
 ## dist
 
 <details>
-<summary>2252 files</summary>
+<summary>2266 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
-- [dist/LICENSE.txt](../dist/LICENSE.txt)
-- [dist/PERMISSIONS.txt](../dist/PERMISSIONS.txt)
-- [dist/PRIVACY.txt](../dist/PRIVACY.txt)
-- [dist/THIRD_PARTY_NOTICES.txt](../dist/THIRD_PARTY_NOTICES.txt)
 - [dist/active-studio.js](../dist/active-studio.js)
 - [dist/activity-scene.js](../dist/activity-scene.js)
 - [dist/ambient-motion.js](../dist/ambient-motion.js)
@@ -69,17 +65,17 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/assets.json](../dist/assets.json)
 - [dist/assets/apple-x7.jpg](../dist/assets/apple-x7.jpg)
 - [dist/assets/birken.jpg](../dist/assets/birken.jpg)
-- [dist/assets/character/LICENSE-CC0.md](../dist/assets/character/LICENSE-CC0.md)
-- [dist/assets/character/LICENSE-MPFB-scope.md](../dist/assets/character/LICENSE-MPFB-scope.md)
 - [dist/assets/character/eyes-brown.png](../dist/assets/character/eyes-brown.png)
 - [dist/assets/character/hair-bob.png](../dist/assets/character/hair-bob.png)
 - [dist/assets/character/hair-short.png](../dist/assets/character/hair-short.png)
+- [dist/assets/character/LICENSE-CC0.md](../dist/assets/character/LICENSE-CC0.md)
+- [dist/assets/character/LICENSE-MPFB-scope.md](../dist/assets/character/LICENSE-MPFB-scope.md)
 - [dist/assets/character/provenance.json](../dist/assets/character/provenance.json)
 - [dist/assets/character/skin-dark-female.png](../dist/assets/character/skin-dark-female.png)
 - [dist/assets/character/skin-light-female.png](../dist/assets/character/skin-light-female.png)
 - [dist/assets/character/skin-light-male.png](../dist/assets/character/skin-light-male.png)
-- [dist/assets/character/source/LICENSE.ASSETS.md](../dist/assets/character/source/LICENSE.ASSETS.md)
 - [dist/assets/character/source/base.obj](../dist/assets/character/source/base.obj)
+- [dist/assets/character/source/LICENSE.ASSETS.md](../dist/assets/character/source/LICENSE.ASSETS.md)
 - [dist/assets/character/source/mpfb-LICENSE.md](../dist/assets/character/source/mpfb-LICENSE.md)
 - [dist/assets/character/source/rig.game_engine.json](../dist/assets/character/source/rig.game_engine.json)
 - [dist/assets/character/source/subset/eyes/low-poly/low-poly.mhclo](../dist/assets/character/source/subset/eyes/low-poly/low-poly.mhclo)
@@ -2113,6 +2109,12 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/assets/photos/v50-real-kino-9780316471855.webp](../dist/assets/photos/v50-real-kino-9780316471855.webp)
 - [dist/assets/photos/v50-real-kino-9781632367709.webp](../dist/assets/photos/v50-real-kino-9781632367709.webp)
 - [dist/assets/photos/v50-real-kino-9781974725762.webp](../dist/assets/photos/v50-real-kino-9781974725762.webp)
+- [dist/assets/photos/v51-real-container-10008759.webp](../dist/assets/photos/v51-real-container-10008759.webp)
+- [dist/assets/photos/v51-real-container-10008760.webp](../dist/assets/photos/v51-real-container-10008760.webp)
+- [dist/assets/photos/v51-real-container-10048826.webp](../dist/assets/photos/v51-real-container-10048826.webp)
+- [dist/assets/photos/v51-real-terrain-106914781.webp](../dist/assets/photos/v51-real-terrain-106914781.webp)
+- [dist/assets/photos/v51-real-terrain-61822987.webp](../dist/assets/photos/v51-real-terrain-61822987.webp)
+- [dist/assets/photos/v51-real-terrain-65559882.webp](../dist/assets/photos/v51-real-terrain-65559882.webp)
 - [dist/assets/ross-x3.png](../dist/assets/ross-x3.png)
 - [dist/assets/round.jpg](../dist/assets/round.jpg)
 - [dist/assets/scarf.jpg](../dist/assets/scarf.jpg)
@@ -2172,6 +2174,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/full-center-data.js](../dist/full-center-data.js)
 - [dist/gait-motion.js](../dist/gait-motion.js)
 - [dist/garden-details.js](../dist/garden-details.js)
+- [dist/garden-storage-studio.js](../dist/garden-storage-studio.js)
 - [dist/garment-clearance.js](../dist/garment-clearance.js)
 - [dist/garment-overrides-v40.js](../dist/garment-overrides-v40.js)
 - [dist/garment-overrides-v42.js](../dist/garment-overrides-v42.js)
@@ -2186,6 +2189,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/icon.svg](../dist/icon.svg)
 - [dist/index.html](../dist/index.html)
 - [dist/input-controls.js](../dist/input-controls.js)
+- [dist/inspection-focus.js](../dist/inspection-focus.js)
 - [dist/interior-art.js](../dist/interior-art.js)
 - [dist/interior-blueprints.js](../dist/interior-blueprints.js)
 - [dist/journey.js](../dist/journey.js)
@@ -2193,6 +2197,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/legacy-storefronts-v11.js](../dist/legacy-storefronts-v11.js)
 - [dist/legal.css](../dist/legal.css)
 - [dist/legal.html](../dist/legal.html)
+- [dist/LICENSE.txt](../dist/LICENSE.txt)
 - [dist/life-content.js](../dist/life-content.js)
 - [dist/life-styles.css](../dist/life-styles.css)
 - [dist/mall-art.js](../dist/mall-art.js)
@@ -2221,6 +2226,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/notice-details.js](../dist/notice-details.js)
 - [dist/outing-ui.js](../dist/outing-ui.js)
 - [dist/paper-studio.js](../dist/paper-studio.js)
+- [dist/PERMISSIONS.txt](../dist/PERMISSIONS.txt)
 - [dist/photo-kiosk.js](../dist/photo-kiosk.js)
 - [dist/photo-palettes-v37.js](../dist/photo-palettes-v37.js)
 - [dist/photo-palettes-v39.js](../dist/photo-palettes-v39.js)
@@ -2233,6 +2239,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/photo-palettes-v48.js](../dist/photo-palettes-v48.js)
 - [dist/photo-palettes-v49.js](../dist/photo-palettes-v49.js)
 - [dist/photo-palettes-v50.js](../dist/photo-palettes-v50.js)
+- [dist/photo-palettes-v51.js](../dist/photo-palettes-v51.js)
 - [dist/photo-palettes.js](../dist/photo-palettes.js)
 - [dist/photo-surfaces-v37.js](../dist/photo-surfaces-v37.js)
 - [dist/photo-surfaces-v39.js](../dist/photo-surfaces-v39.js)
@@ -2247,6 +2254,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/playable-stores.js](../dist/playable-stores.js)
 - [dist/plush-model.js](../dist/plush-model.js)
 - [dist/portrait-store.js](../dist/portrait-store.js)
+- [dist/PRIVACY.txt](../dist/PRIVACY.txt)
 - [dist/product-appearance.js](../dist/product-appearance.js)
 - [dist/product-photos.js](../dist/product-photos.js)
 - [dist/reading-details.js](../dist/reading-details.js)
@@ -2258,6 +2266,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/save-storage.js](../dist/save-storage.js)
 - [dist/scene-finish.js](../dist/scene-finish.js)
 - [dist/sculpture-details.js](../dist/sculpture-details.js)
+- [dist/service-counter-details.js](../dist/service-counter-details.js)
 - [dist/shop-interiors.js](../dist/shop-interiors.js)
 - [dist/shop-options-ui.js](../dist/shop-options-ui.js)
 - [dist/shopping-plan-ui.js](../dist/shopping-plan-ui.js)
@@ -2266,6 +2275,8 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/spatial-layout.js](../dist/spatial-layout.js)
 - [dist/sprites.js](../dist/sprites.js)
 - [dist/staff-motion.js](../dist/staff-motion.js)
+- [dist/storage-model.js](../dist/storage-model.js)
+- [dist/storage-tools.js](../dist/storage-tools.js)
 - [dist/store-customers.js](../dist/store-customers.js)
 - [dist/store-fitout.js](../dist/store-fitout.js)
 - [dist/store-life.js](../dist/store-life.js)
@@ -2283,6 +2294,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/store-product-additions-v48.js](../dist/store-product-additions-v48.js)
 - [dist/store-product-additions-v49.js](../dist/store-product-additions-v49.js)
 - [dist/store-product-additions-v50.js](../dist/store-product-additions-v50.js)
+- [dist/store-product-additions-v51.js](../dist/store-product-additions-v51.js)
 - [dist/store-product-seeds-v11.js](../dist/store-product-seeds-v11.js)
 - [dist/store-product-seeds.js](../dist/store-product-seeds.js)
 - [dist/store-services.js](../dist/store-services.js)
@@ -2294,6 +2306,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/tailoring-studio.js](../dist/tailoring-studio.js)
 - [dist/tea-lounge.js](../dist/tea-lounge.js)
 - [dist/textile-studio.js](../dist/textile-studio.js)
+- [dist/THIRD_PARTY_NOTICES.txt](../dist/THIRD_PARTY_NOTICES.txt)
 - [dist/trip-planner.js](../dist/trip-planner.js)
 - [dist/vendor/THREE-LICENSE.txt](../dist/vendor/THREE-LICENSE.txt)
 - [dist/vendor/three.core.js](../dist/vendor/three.core.js)
@@ -2307,18 +2320,30 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/waystation-guide.js](../dist/waystation-guide.js)
 - [dist/world-3d.js](../dist/world-3d.js)
 - [dist/world.js](../dist/world.js)
+- [dist/wrapping-tools.js](../dist/wrapping-tools.js)
 
 </details>
 
 ## docs
 
 <details>
-<summary>161 files</summary>
+<summary>166 files</summary>
 
+- [docs/accessories-research-v5.md](../docs/accessories-research-v5.md)
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
+- [docs/bag-audit-v19.md](../docs/bag-audit-v19.md)
+- [docs/catalog-coverage-v12.json](../docs/catalog-coverage-v12.json)
+- [docs/catalog-prices-v6.md](../docs/catalog-prices-v6.md)
+- [docs/catalog-research-v4.md](../docs/catalog-research-v4.md)
+- [docs/character-audit-v20.md](../docs/character-audit-v20.md)
 - [docs/DEPLOYMENT.md](../docs/DEPLOYMENT.md)
+- [docs/design-research-v26.md](../docs/design-research-v26.md)
+- [docs/design-research-v33.md](../docs/design-research-v33.md)
+- [docs/design-research-v4.md](../docs/design-research-v4.md)
+- [docs/design-research-v9.md](../docs/design-research-v9.md)
 - [docs/FILE_INDEX.md](../docs/FILE_INDEX.md)
+- [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/GAMEPLAY-v24.md](../docs/GAMEPLAY-v24.md)
 - [docs/GAMEPLAY-v25.md](../docs/GAMEPLAY-v25.md)
 - [docs/GAMEPLAY-v26.md](../docs/GAMEPLAY-v26.md)
@@ -2346,21 +2371,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/GAMEPLAY-v48.md](../docs/GAMEPLAY-v48.md)
 - [docs/GAMEPLAY-v49.md](../docs/GAMEPLAY-v49.md)
 - [docs/GAMEPLAY-v50.md](../docs/GAMEPLAY-v50.md)
-- [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
-- [docs/MIGRATION.md](../docs/MIGRATION.md)
-- [docs/QA.md](../docs/QA.md)
-- [docs/README.md](../docs/README.md)
-- [docs/RIGHTS.md](../docs/RIGHTS.md)
-- [docs/accessories-research-v5.md](../docs/accessories-research-v5.md)
-- [docs/bag-audit-v19.md](../docs/bag-audit-v19.md)
-- [docs/catalog-coverage-v12.json](../docs/catalog-coverage-v12.json)
-- [docs/catalog-prices-v6.md](../docs/catalog-prices-v6.md)
-- [docs/catalog-research-v4.md](../docs/catalog-research-v4.md)
-- [docs/character-audit-v20.md](../docs/character-audit-v20.md)
-- [docs/design-research-v26.md](../docs/design-research-v26.md)
-- [docs/design-research-v33.md](../docs/design-research-v33.md)
-- [docs/design-research-v4.md](../docs/design-research-v4.md)
-- [docs/design-research-v9.md](../docs/design-research-v9.md)
+- [docs/GAMEPLAY-v51.md](../docs/GAMEPLAY-v51.md)
 - [docs/garment-audit-v19.md](../docs/garment-audit-v19.md)
 - [docs/history/HOSTING.md](../docs/history/HOSTING.md)
 - [docs/human-assets-v23.md](../docs/human-assets-v23.md)
@@ -2370,6 +2381,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/map-research-v10.md](../docs/map-research-v10.md)
 - [docs/map-research-v6.md](../docs/map-research-v6.md)
 - [docs/merchandise-colors-v18.json](../docs/merchandise-colors-v18.json)
+- [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/photo-apparel-v8.json](../docs/photo-apparel-v8.json)
 - [docs/photo-catalog-v8.json](../docs/photo-catalog-v8.json)
 - [docs/photo-file-audit-v8.json](../docs/photo-file-audit-v8.json)
@@ -2421,10 +2433,13 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/qa-v49.md](../docs/qa-v49.md)
 - [docs/qa-v5.md](../docs/qa-v5.md)
 - [docs/qa-v50.md](../docs/qa-v50.md)
+- [docs/qa-v51.md](../docs/qa-v51.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
 - [docs/qa-v9.md](../docs/qa-v9.md)
+- [docs/QA.md](../docs/QA.md)
+- [docs/README.md](../docs/README.md)
 - [docs/research-v11/food.json](../docs/research-v11/food.json)
 - [docs/research-v11/home-beauty.json](../docs/research-v11/home-beauty.json)
 - [docs/research-v11/retail.json](../docs/research-v11/retail.json)
@@ -2469,11 +2484,15 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/research-v50/browser-proof.json](../docs/research-v50/browser-proof.json)
 - [docs/research-v50/catalog-evidence.json](../docs/research-v50/catalog-evidence.json)
 - [docs/research-v50/page-fade-proof.json](../docs/research-v50/page-fade-proof.json)
+- [docs/research-v51/browser-proof.json](../docs/research-v51/browser-proof.json)
+- [docs/research-v51/catalog-evidence.json](../docs/research-v51/catalog-evidence.json)
+- [docs/research-v51/compact-proof.json](../docs/research-v51/compact-proof.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
 - [docs/retail-design-v18.md](../docs/retail-design-v18.md)
 - [docs/retail-design-v19.md](../docs/retail-design-v19.md)
+- [docs/RIGHTS.md](../docs/RIGHTS.md)
 - [docs/store-research-v11.md](../docs/store-research-v11.md)
 - [docs/store-research-v12.md](../docs/store-research-v12.md)
 
@@ -2484,7 +2503,6 @@ folder with `python3 tools/refresh_indexes.py`.
 <details>
 <summary>23 files</summary>
 
-- [scripts/README.md](../scripts/README.md)
 - [scripts/add-official-photos.py](../scripts/add-official-photos.py)
 - [scripts/analyze-merchandise-colors.py](../scripts/analyze-merchandise-colors.py)
 - [scripts/analyze-product-surfaces.py](../scripts/analyze-product-surfaces.py)
@@ -2506,6 +2524,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [scripts/optimize-product-delivery.py](../scripts/optimize-product-delivery.py)
 - [scripts/prepare-human-assets.py](../scripts/prepare-human-assets.py)
 - [scripts/prepare-photos-v8.py](../scripts/prepare-photos-v8.py)
+- [scripts/README.md](../scripts/README.md)
 - [scripts/save-recovery-browser-qa.mjs](../scripts/save-recovery-browser-qa.mjs)
 
 </details>
@@ -2513,7 +2532,7 @@ folder with `python3 tools/refresh_indexes.py`.
 ## tests
 
 <details>
-<summary>58 files</summary>
+<summary>59 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2537,6 +2556,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [tests/free-navigation.test.mjs](../tests/free-navigation.test.mjs)
 - [tests/full-center.test.mjs](../tests/full-center.test.mjs)
 - [tests/gameplay-v31.test.mjs](../tests/gameplay-v31.test.mjs)
+- [tests/garden-storage-v51.test.mjs](../tests/garden-storage-v51.test.mjs)
 - [tests/human-assets-v23.test.mjs](../tests/human-assets-v23.test.mjs)
 - [tests/input-controls.test.mjs](../tests/input-controls.test.mjs)
 - [tests/interior-fixtures.mjs](../tests/interior-fixtures.mjs)

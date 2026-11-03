@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v50 — reading corners and paper studios
+## v51 — garden and storage studios
+
+Two unfinished Century City shops gain six exact-SKU planter and single-box references, dated source prices, richer garden/storage interiors and solid empty homeware models. Source-aware inspection grips, coordinated gift folding and detailed guest-services counters add polish. Planter inch-size selections now work correctly, and existing saves remain compatible. See [v51 gameplay](docs/GAMEPLAY-v51.md), [official source evidence](docs/research-v51/catalog-evidence.json), [release QA](docs/qa-v51.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v50 — reading corners and paper studios
 
 Two unfinished shops gain four exact English paperback editions and three fixed B6 notebooks, with source photographs, dated prices and factual format details. Original reading/stationery interiors retain free material studies, shortlists, purchases and refunds. Page turning follows the actual leaf, and all 23 community boards gain curved details, kept-invitation markers and a free daybook. Existing saves remain compatible. See [v50 gameplay](docs/GAMEPLAY-v50.md), [source evidence](docs/research-v50/catalog-evidence.json), [release QA](docs/qa-v50.md) and the [roadmap](ROADMAP.md).
 

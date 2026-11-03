@@ -2,6 +2,15 @@
 
 Updated 3 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v51
+
+- Stock Terrain and The Container Store at Century City with six exact selected planter/single-box SKUs, reviewed source photographs and qualified dated USD offers.
+- Add original garden trellises, foliage, tools, storage dividers and source alcoves; retain free material studies, shortlists, checkout, refunds, rest and direct exits.
+- Model hollow planters with source-supported drainage holes and empty clear storage shells with their distinct lid/front details; retain solid collection-room displays.
+- Use source-aware planter/storage grips and eased coordinated gift folding with fixed reduced motion; detail all 23 existing guest-services counters.
+- Fix inch marks breaking planter format selections, retaining all 8,841 previous product records and appearances, schema 6 and map revision 10.
+- See [v51 gameplay](docs/GAMEPLAY-v51.md), [source evidence](docs/research-v51/catalog-evidence.json) and [v51 QA](docs/qa-v51.md).
+
 ## Completed in v50
 
 - Stock Books Kinokuniya at Del Amo and Erin Condren at Irvine Spectrum with seven exact physical paper references and reviewed photographs.
@@ -230,7 +239,7 @@ Updated 3 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,076 stocked identities, 133 service identities and 389 identities awaiting catalog research**. The remaining 298 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,078 stocked identities, 133 service identities and 387 identities awaiting catalog research**. The remaining 296 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 
