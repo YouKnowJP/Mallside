@@ -1,4 +1,4 @@
-import {VERIFIED_GARDEN_STORAGE_ADDITIONS as V51} from './store-product-additions-v51.js?v=51.0.0';
+import {VERIFIED_GARDEN_STORAGE_ADDITIONS as V51} from './store-product-additions-v51.js?v=52.0.0';
 import {VERIFIED_TABLEWARE_ADDITIONS as V49} from './store-product-additions-v49.js?v=49.0.0';
 import {VERIFIED_CERAMIC_ADDITIONS as V48} from './store-product-additions-v48.js?v=48.0.0';
 import {STORE_PRODUCT_SEEDS as V11} from './store-product-seeds-v11.js?v=23.0.0';

@@ -1,5 +1,5 @@
-import {wrappingPose} from './wrapping-tools.js?v=51.0.0';
-import {ceramicGesture,ceramicHold} from './ceramic-tools.js?v=51.0.0';
+import {wrappingPose} from './wrapping-tools.js?v=52.0.0';
+import {ceramicGesture,ceramicHold} from './ceramic-tools.js?v=52.0.0';
 import {collectibleGesture} from './collectible-tools.js?v=47.0.0';
 import {consumptionPose} from './consumption-motion.js?v=46.0.0';
 import {flowerGesture} from './flower-motion.js?v=45.0.0';

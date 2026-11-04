@@ -1,6 +1,15 @@
 # Mallside development roadmap
 
-Updated 3 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+Updated 4 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+
+## Completed in v52
+
+- Open the collection room to free floor taps, direct keyboard walking and tap/hold touch controls, with furniture-safe routes from the current position.
+- Connect the shelf, wardrobe, memory desk, window and doorway to real existing functions, with equivalent shortcuts for lighter graphics.
+- Add original wardrobe joinery, notebooks, labels, woven curtains, local garden art, timber grain and beveled furniture.
+- Ease movement startup, preserve distance-based gait and reduced motion, clear input on focus/visibility/dialog changes and seat only on the clear rug.
+- Preserve the full product catalog, six-place shelf rules, schema 6, map revision 10, economy and reward limits.
+- See [v52 gameplay](docs/GAMEPLAY-v52.md) and [v52 QA](docs/qa-v52.md).
 
 ## Completed in v51
 
@@ -233,7 +242,7 @@ Updated 3 November 2026. The game is playable and under active development; this
 - Refine map geometry and visual density at individual centers; keep incomplete collections visibly marked and complete them only with verified product evidence.
 
 - Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
-- Develop the room’s named walking stops into unrestricted home navigation with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
+- Expand the freely walkable collection room with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
 - Continued camera, storefront, lighting, NPC behavior in long visits and character/fabric refinement, including original starter-trouser waist seams visible with cropped tops, and high-neck/sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
 - Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, and broader accessibility verification. The desktop Safari/Firefox matrix is complete for the recorded versions.
 

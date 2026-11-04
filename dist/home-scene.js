@@ -1,12 +1,16 @@
 import * as T from './vendor/three.module.js';
 import {ROOM_STYLES} from './home-life.js?v=26.0.0';
-import {owned,byId} from './engine.js?v=51.0.0';
-import {placeMerchandise} from './merchandise-3d.js?v=51.0.0';
+import {owned,byId} from './engine.js?v=52.0.0';
+import {placeMerchandise} from './merchandise-3d.js?v=52.0.0';
+import {buildHomeDetails} from './home-details.js?v=52.0.0';
+import {HOME_FURNITURE} from './home-navigation.js?v=52.0.0';
+import {beveledBox,surfaceTexture} from './scene-finish.js?v=33.0.0';
+export {HOME_STOPS,homeWalkRoute} from './home-navigation.js?v=52.0.0';
 // A small original room; every displayed product is an owned catalog purchase.
 export function buildCollectionRoom(w,state){
  const style=ROOM_STYLES.find(v=>v.id===state.roomStyle)||ROOM_STYLES[0],materials=new Map();
- const mat=(color,roughness=.8)=>{const k=color+':'+roughness;if(!materials.has(k))materials.set(k,w.mat(color,{roughness}));return materials.get(k);};
- const box=(x,y,z,sx,sy,sz,color,roughness=.8)=>{const m=w.mesh(new T.BoxGeometry(sx,sy,sz),mat(color,roughness));m.position.set(x,y,z);return m;};
+ const mat=(color,roughness=.8)=>{const k=color+':'+roughness;if(!materials.has(k)){const kind=color===style.wood?'timber':color==='#c9c8b3'?'fabric':null;materials.set(k,w.mat(color,{roughness,...kind?{map:surfaceTexture(w,kind),bumpMap:surfaceTexture(w,kind,true),bumpScale:kind==='fabric'?.05:.08}:{}}));}return materials.get(k);};
+ const box=(x,y,z,sx,sy,sz,color,roughness=.8)=>{const m=w.mesh(beveledBox(sx,sy,sz,Math.min(.25,sx*.03,sy*.03,sz*.03)),mat(color,roughness));m.position.set(x,y,z);return m;};
  w.scene.background=new T.Color(style.wall);box(0,-.5,0,208,1,140,style.wood);
  for(let i=0;i<17;i++)box(-98+i*12,.025,0,.18,.01,140,'#88725b');
  box(0,47,-48,208,94,3,style.wall);box(-103,47,-4,3,94,90,style.wall);
@@ -27,7 +31,10 @@ export function buildCollectionRoom(w,state){
  box(76,2,43,33,4,33,style.wood,.6);box(76,13,43,3,24,3,'#5f675f',.4);
  const shade=w.mesh(new T.CylinderGeometry(9,14,18,24,1,true),mat('#f2e5c8'));shade.position.set(76,33,43);
  const bulb=w.mesh(new T.SphereGeometry(3,12,8),w.mat('#fff0c3',{emissive:'#d6ad67',emissiveIntensity:.35}));bulb.position.set(76,25,43);
- w.roomStyle=style.id;w.roomProductCount=purchases.length;w.player.position.x=-28;w.bench.position.x=-28;
+ // Tag only furniture-sized objects, never a wall or floor, for pointer interactions.
+ for(const o of w.scene.children){if(o===w.player||o===w.bench)continue;const b=new T.Box3().setFromObject(o);for(const f of HOME_FURNITURE.filter(f=>f.id!=='lamp'))if(b.max.y>1&&b.min.x>=f.x-.01&&b.max.x<=f.x+f.width+.01&&b.min.z>=f.y-.01&&b.max.z<=f.y+f.height+.01)o.userData.homeStation=f.id==='desk'?'memories':f.id;if(b.min.x>=-95&&b.max.x<=-5&&b.min.y>=24&&b.max.y<=91&&b.min.z>=-47&&b.max.z<=-36)o.userData.homeStation='window';if(o.userData.roomPurchase)o.userData.homeStation='shelf';}
+ buildHomeDetails(w,style);
+ w.roomStyle=style.id;w.roomProductCount=purchases.length;w.player.position.set(-28,0,8);w.bench.position.x=-28;
  return {style:style.id,products:purchases.map(i=>i.productId)};
 }
 
@@ -37,7 +44,3 @@ export function collectionRoomCamera(aspect=1){
  for(const x of [-105,105])for(const y of [0,94])for(const z of [-50,70]){const v=new T.Vector3(x,y,z).sub(target),depth=v.dot(direction);distance=Math.max(distance,depth+Math.abs(v.dot(right))/(tan*ratio)*1.08,depth+Math.abs(v.dot(up))/tan*1.08);}
  const position=target.clone().addScaledVector(direction,distance);return {position:position.toArray(),target:target.toArray(),near:2,far:position.length()+250};
 }
-
-// Furniture-safe paths share the open rug, rather than cutting through the desk or shelves.
-export const HOME_STOPS={window:{x:-48,z:-27,label:'At the window'},shelf:{x:34,z:10,label:'Beside your kept finds'},door:{x:-28,z:48,label:'At the doorway'},center:{x:-28,z:8,label:'Back on the rug'}};
-export function homeWalkRoute(id){const p=HOME_STOPS[id];return p?[{...HOME_STOPS.center},{...p}]:[];}

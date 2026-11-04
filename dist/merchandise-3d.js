@@ -1,10 +1,10 @@
-import {isStorage} from './storage-tools.js?v=51.0.0';
-import {createStorage} from './storage-model.js?v=51.0.0';
+import {isStorage} from './storage-tools.js?v=52.0.0';
+import {createStorage} from './storage-model.js?v=52.0.0';
 import {isReadingProduct} from './book-tools.js?v=50.0.0';
-import {placeBook} from './book-model.js?v=51.0.0';
-import {createCeramic,isCeramic} from './ceramic-model.js?v=51.0.0';
-import {createPlush,isVerifiedPlush} from './plush-model.js?v=51.0.0';
-import {productAppearance} from './product-appearance.js?v=51.0.0';
+import {placeBook} from './book-model.js?v=52.0.0';
+import {createCeramic,isCeramic} from './ceramic-model.js?v=52.0.0';
+import {createPlush,isVerifiedPlush} from './plush-model.js?v=52.0.0';
+import {productAppearance} from './product-appearance.js?v=52.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {addReferenceDetails,addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 import * as T from './vendor/three.module.js';

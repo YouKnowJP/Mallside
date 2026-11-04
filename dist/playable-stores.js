@@ -1,7 +1,7 @@
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {MALLS} from './malls.js?v=23.0.0';
 import {matchingTenant,gameStoreFloor,tenantFloor,normalizeName} from './campus-model.js?v=23.0.0';
-import {STORE_PRODUCT_SEEDS} from './store-product-seeds.js?v=51.0.0';
+import {STORE_PRODUCT_SEEDS} from './store-product-seeds.js?v=52.0.0';
 import {RETAILER_BRAND_EVIDENCE} from './retailer-evidence-v12.js?v=23.0.0';
 import {merchantIdentity,storeAudience,isDepartmentMerchant} from './merchant-identity.js?v=23.0.0';
 export const brandFamily=merchantIdentity;

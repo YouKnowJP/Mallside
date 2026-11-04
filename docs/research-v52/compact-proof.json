@@ -1,0 +1,100 @@
+{
+  "release": {
+    "game": "Mallside",
+    "version": "52.0.0",
+    "sourceCommit": "73787f53df43ac5e3f764862c377015a66c605f4",
+    "bundle": "app-FRMEAQH5.js",
+    "sourceVisibility": "public",
+    "license": "LicenseRef-Mallside-Proprietary",
+    "licenseVersion": "1.1",
+    "licenseUrl": "LICENSE.txt",
+    "permissionsUrl": "PERMISSIONS.txt",
+    "officialPlayUrl": "https://youknowjp.github.io/Mallside/",
+    "sourceRepository": "https://github.com/YouKnowJP/Mallside",
+    "publicFiles": "Generated game only; editable source and history are available in the Mallside repository."
+  },
+  "styles": [
+    "styles-6d92a5f8e9bb.css",
+    "life-styles-af321e69fb3d.css"
+  ],
+  "runnerSHA256": "953daf421630aaa09c7fa89a6390a80d8ab989b0f7e568d19a46ac2cffde249e",
+  "contexts": 6,
+  "existingBrowserStorage": "preserved; each test used a new disposable context closed in finally",
+  "mode": "Chromium touch emulation; not physical mobile hardware",
+  "rows": [
+    {
+      "graphics": "3d",
+      "overflow": false,
+      "minTarget": 46,
+      "width": 320,
+      "touchStepAndHold": true,
+      "stablePad": true,
+      "savedOrder": true,
+      "dialogs": true,
+      "directExit": true,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "overflow": false,
+      "minTarget": 46,
+      "width": 320,
+      "touchStepAndHold": false,
+      "stablePad": false,
+      "savedOrder": true,
+      "dialogs": true,
+      "directExit": true,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "overflow": false,
+      "minTarget": 46,
+      "width": 390,
+      "touchStepAndHold": true,
+      "stablePad": true,
+      "savedOrder": true,
+      "dialogs": true,
+      "directExit": true,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "overflow": false,
+      "minTarget": 46,
+      "width": 390,
+      "touchStepAndHold": false,
+      "stablePad": false,
+      "savedOrder": true,
+      "dialogs": true,
+      "directExit": true,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "overflow": false,
+      "minTarget": 46,
+      "width": 768,
+      "touchStepAndHold": true,
+      "stablePad": true,
+      "savedOrder": true,
+      "dialogs": true,
+      "directExit": true,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "overflow": false,
+      "minTarget": 46,
+      "width": 768,
+      "touchStepAndHold": false,
+      "stablePad": false,
+      "savedOrder": true,
+      "dialogs": true,
+      "directExit": true,
+      "errors": []
+    }
+  ],
+  "browser": "Chromium",
+  "browserVersion": "156.0.8078.80"
+}

@@ -1,4 +1,4 @@
-import {ceramicHold} from './ceramic-tools.js?v=51.0.0';
+import {ceramicHold} from './ceramic-tools.js?v=52.0.0';
 export const isStorage=p=>p?.type==='home'&&p.storageProfile?.reviewed===true;
 // A stationary two-hand cradle: do not turn a wide box through its supporting hands.
 export function storageHold(profile,time,reduced=false,rest){const pose=ceramicHold({heightIn:profile.heightIn,diameterIn:profile.widthIn},time,reduced,rest),half=profile.widthIn*2.54*.2+.08;pose.hands=pose.hands.map((h,i)=>{const a=rest?.[i]||{x:(i?1:-1)*10};return {...h,x:a.x+((i?1:-1)*half-a.x)*pose.reach};});return {...pose,turn:0};}

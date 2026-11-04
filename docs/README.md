@@ -1,11 +1,12 @@
 # Mallside documentation
 
-Current release: [v51 gameplay](GAMEPLAY-v51.md) and [v51 QA](qa-v51.md).
+Current release: [v52 gameplay](GAMEPLAY-v52.md) and [v52 QA](qa-v52.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Free collection-room walking, usable furniture and equivalent shortcuts | [v52 guide](GAMEPLAY-v52.md), [v52 QA](qa-v52.md) |
 | Garden/storage studios, selected SKUs and coordinated gift folding | [v51 guide](GAMEPLAY-v51.md), [source evidence](research-v51/catalog-evidence.json), [v51 QA](qa-v51.md) |
 | Reading and paper studios, solid notebooks and notice daybooks | [v50 guide](GAMEPLAY-v50.md), [v50 QA](qa-v50.md) |
 | Tableware studio, coupled inspections and detailed water breaks | [v49 guide](GAMEPLAY-v49.md), [source evidence](research-v49/catalog-evidence.json), [v49 QA](qa-v49.md) |

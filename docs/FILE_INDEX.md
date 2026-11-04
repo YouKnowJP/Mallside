@@ -2,10 +2,10 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2530 files** from Git-tracked paths and
+This catalog lists **2538 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
-Finder metadata are omitted. Refresh from the enclosing Personal PR
-folder with `python3 tools/refresh_indexes.py`.
+Finder metadata are omitted. Refresh from this repository’s
+`git ls-files --cached --others --exclude-standard` output; keep other projects separate.
 
 ## Folder summary
 
@@ -13,10 +13,10 @@ folder with `python3 tools/refresh_indexes.py`.
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2266 |
-| [docs](../docs/) | 166 |
+| [dist](../dist/) | 2269 |
+| [docs](../docs/) | 170 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 59 |
+| [tests](../tests/) | 60 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ folder with `python3 tools/refresh_indexes.py`.
 ## dist
 
 <details>
-<summary>2266 files</summary>
+<summary>2269 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/active-studio.js](../dist/active-studio.js)
@@ -2181,7 +2181,10 @@ folder with `python3 tools/refresh_indexes.py`.
 - [dist/garment-overrides-v45.js](../dist/garment-overrides-v45.js)
 - [dist/garment-overrides-v46.js](../dist/garment-overrides-v46.js)
 - [dist/garment-reference-rules.js](../dist/garment-reference-rules.js)
+- [dist/home-controls.js](../dist/home-controls.js)
+- [dist/home-details.js](../dist/home-details.js)
 - [dist/home-life.js](../dist/home-life.js)
+- [dist/home-navigation.js](../dist/home-navigation.js)
 - [dist/home-scene.js](../dist/home-scene.js)
 - [dist/home-ui.js](../dist/home-ui.js)
 - [dist/human-anatomy.js](../dist/human-anatomy.js)
@@ -2327,7 +2330,7 @@ folder with `python3 tools/refresh_indexes.py`.
 ## docs
 
 <details>
-<summary>166 files</summary>
+<summary>170 files</summary>
 
 - [docs/accessories-research-v5.md](../docs/accessories-research-v5.md)
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
@@ -2372,6 +2375,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/GAMEPLAY-v49.md](../docs/GAMEPLAY-v49.md)
 - [docs/GAMEPLAY-v50.md](../docs/GAMEPLAY-v50.md)
 - [docs/GAMEPLAY-v51.md](../docs/GAMEPLAY-v51.md)
+- [docs/GAMEPLAY-v52.md](../docs/GAMEPLAY-v52.md)
 - [docs/garment-audit-v19.md](../docs/garment-audit-v19.md)
 - [docs/history/HOSTING.md](../docs/history/HOSTING.md)
 - [docs/human-assets-v23.md](../docs/human-assets-v23.md)
@@ -2434,6 +2438,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/qa-v5.md](../docs/qa-v5.md)
 - [docs/qa-v50.md](../docs/qa-v50.md)
 - [docs/qa-v51.md](../docs/qa-v51.md)
+- [docs/qa-v52.md](../docs/qa-v52.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
@@ -2487,6 +2492,8 @@ folder with `python3 tools/refresh_indexes.py`.
 - [docs/research-v51/browser-proof.json](../docs/research-v51/browser-proof.json)
 - [docs/research-v51/catalog-evidence.json](../docs/research-v51/catalog-evidence.json)
 - [docs/research-v51/compact-proof.json](../docs/research-v51/compact-proof.json)
+- [docs/research-v52/browser-proof.json](../docs/research-v52/browser-proof.json)
+- [docs/research-v52/compact-proof.json](../docs/research-v52/compact-proof.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2532,7 +2539,7 @@ folder with `python3 tools/refresh_indexes.py`.
 ## tests
 
 <details>
-<summary>59 files</summary>
+<summary>60 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2557,6 +2564,7 @@ folder with `python3 tools/refresh_indexes.py`.
 - [tests/full-center.test.mjs](../tests/full-center.test.mjs)
 - [tests/gameplay-v31.test.mjs](../tests/gameplay-v31.test.mjs)
 - [tests/garden-storage-v51.test.mjs](../tests/garden-storage-v51.test.mjs)
+- [tests/home-navigation-v52.test.mjs](../tests/home-navigation-v52.test.mjs)
 - [tests/human-assets-v23.test.mjs](../tests/human-assets-v23.test.mjs)
 - [tests/input-controls.test.mjs](../tests/input-controls.test.mjs)
 - [tests/interior-fixtures.mjs](../tests/interior-fixtures.mjs)

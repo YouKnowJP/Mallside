@@ -2,6 +2,16 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v52.0.0 — A room you can use
+
+- Replace four fixed walking routes with furniture-safe open-floor navigation, screen-relative keyboard controls, tap/hold touch movement and explicit Stop.
+- Make the shelf, wardrobe, memory desk, window and doorway usable from the room, with equivalent non-spatial shortcuts in lighter graphics.
+- Fix tablet status text shifting the directional pad and retargeting a tap onto Stop; verify native pointer position and touch tap/hold behavior.
+- Add original joinery, notebooks, labels, woven curtains, garden art, timber grain and beveled room furniture.
+- Ease movement startup, retain distance-based gait, clear input on focus/visibility/dialog changes and return to the clear rug before sitting.
+- Preserve the 8,847-product catalog, six-slot ownership rules, saves, economy and daily reward limits.
+- See [v52 QA](docs/qa-v52.md) for validation.
+
 ## v51.0.0 — Garden and storage studios
 
 - Stock two previously pending Century City branches with six exact selected merchant SKUs; distinguish single-box offers, planter sizes, included contents and qualified source dimensions.

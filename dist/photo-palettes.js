@@ -1,4 +1,4 @@
-import {V51_PHOTO_PALETTES} from './photo-palettes-v51.js?v=51.0.0';
+import {V51_PHOTO_PALETTES} from './photo-palettes-v51.js?v=52.0.0';
 import {V50_PHOTO_PALETTES} from './photo-palettes-v50.js?v=50.0.0';
 import {V49_PHOTO_PALETTES} from './photo-palettes-v49.js?v=49.0.0';
 import {V48_PHOTO_PALETTES} from './photo-palettes-v48.js?v=48.0.0';

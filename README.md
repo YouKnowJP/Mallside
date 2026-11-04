@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v51 — garden and storage studios
+## v52 — a room you can use
+
+Walk freely around the collection room with floor taps, keyboard or touch controls. Use the shelf, wardrobe, memory desk, window and doorway, with matching shortcuts in lighter graphics. Richer original furnishings, timber grain, fabric detail and a garden view make kept purchases feel more at home. Existing saves and product records remain compatible. See [v52 gameplay](docs/GAMEPLAY-v52.md), [release QA](docs/qa-v52.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v51 — garden and storage studios
 
 Two unfinished Century City shops gain six exact-SKU planter and single-box references, dated source prices, richer garden/storage interiors and solid empty homeware models. Source-aware inspection grips, coordinated gift folding and detailed guest-services counters add polish. Planter inch-size selections now work correctly, and existing saves remain compatible. See [v51 gameplay](docs/GAMEPLAY-v51.md), [official source evidence](docs/research-v51/catalog-evidence.json), [release QA](docs/qa-v51.md) and the [roadmap](ROADMAP.md).
 
