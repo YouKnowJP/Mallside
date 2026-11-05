@@ -1,3 +1,4 @@
+import {MAP_ZOOM_LIMIT,mapView,changeMapView,focusMapPoint,mapViewBox,mapControlsHTML} from './center-map-view.js?v=56.0.0';
 import {isBrush,brushFactsHTML,brushNotebookHTML} from './brush-tools.js?v=54.0.0';
 import {directoryGuideHTML} from './directory-kiosk.js?v=54.0.0';
 import {isStorage,storageFactsHTML} from './storage-tools.js?v=53.0.0';
@@ -8,47 +9,47 @@ import {isCeramic,ceramicFactsHTML} from './ceramic-tools.js?v=53.0.0';
 import {gardenGuideHTML} from './garden-details.js?v=48.0.0';
 import {isCollectible,collectibleFactsHTML} from './collectible-tools.js?v=47.0.0';
 import {teaCardHTML} from './tea-lounge.js?v=46.0.0';
-import {STUDY_PALETTES,STUDY_FINISHES,studyFor} from './studio-study.js?v=55.0.0';
-import {studioStudyHTML} from './studio-study-ui.js?v=55.0.0';
-import {displayPoint} from './shop-interiors.js?v=55.0.0';
+import {STUDY_PALETTES,STUDY_FINISHES,studyFor} from './studio-study.js?v=56.0.0';
+import {studioStudyHTML} from './studio-study-ui.js?v=56.0.0';
+import {displayPoint} from './shop-interiors.js?v=56.0.0';
 import {apparelFactsHTML} from './apparel-facts.js?v=55.0.0';
 import {nearbyDiscoveryHTML} from './waystation-guide.js?v=40.0.0';
-import {frameFactsHTML} from './eyewear-tools.js?v=39.0.0';
+import {frameFactsHTML,opticalNotebookHTML} from './eyewear-tools.js?v=56.0.0';
 import {isBookProduct,isReadingProduct,isStationeryProduct,stationeryFactsHTML,bookFactsHTML,bookshopGuideHTML} from './book-tools.js?v=50.0.0';
-import {collectionGuideHTML,collectionSelection,hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=55.0.0';
+import {collectionGuideHTML,collectionSelection,hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=56.0.0';
 import {shoppingPlanHTML,shoppingPlanNotebook} from './shopping-plan-ui.js?v=37.0.0';
 import {diningRoom,sculptureAlcove,artNotebook} from './district-ui.js?v=55.0.0';
 import {fixtureStop} from './mall-neighborhood.js?v=36.0.0';
 import {savedShopButton,pendingCollection} from './shop-options-ui.js?v=41.0.0';
 import {dialogFocusables} from './dialog-focus.js?v=32.0.0';
 import {commonsActivity,commonsNotebook,publicStops} from './commons-ui.js?v=38.0.0';
-import {shopRows,shoppingGuide,campusMapSVG,shopFinderShortcuts} from './play-ui.js?v=53.0.0';
+import {shopRows,shoppingGuide,campusMapSVG,shopFinderShortcuts} from './play-ui.js?v=56.0.0';
 import {companionBoard,companionCard,companionSession,companionMemory} from './companion-ui.js?v=30.0.0';
 import {communityNoticeHTML,lostPropertyHTML,homeRoutineHTML} from './neighborhood-ui.js?v=50.0.0';
 import {communityBoard,localChapterCard,wrappingDesk} from './community-ui.js?v=30.0.0';
 import {outingBoard} from './outing-ui.js?v=24.0.0';
 import {collectionStudioHTML,guestbookHTML,guestbookMemories} from './home-ui.js?v=53.0.0';
-import {CharacterStudio} from './character-studio.js?v=55.0.0';
-import {physicalProduct} from './merchandise-3d.js?v=55.0.0';
-import {validatePickup,putBackSelection} from './shopping-selection.js?v=55.0.0';
+import {CharacterStudio} from './character-studio.js?v=56.0.0';
+import {physicalProduct} from './merchandise-3d.js?v=56.0.0';
+import {validatePickup,putBackSelection} from './shopping-selection.js?v=56.0.0';
 import {brandDesign} from './brand-designs.js?v=49.0.0';
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {tenantFloor,zoneOf} from './campus-model.js?v=23.0.0';
 import {storePortrait,loadPortrait,deletePortrait} from './portrait-store.js?v=23.0.0';
-import {spatialLayout} from './spatial-layout.js?v=55.0.0';
-import {MallWorld3D} from './world-3d.js?v=55.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=55.0.0';
+import {spatialLayout} from './spatial-layout.js?v=56.0.0';
+import {MallWorld3D} from './world-3d.js?v=56.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=56.0.0';
 import {sourceLabel} from './catalog-links-v7.js?v=23.0.0';
 import {windowSelection} from './mall-life.js?v=26.0.0';
 import {layoutFor} from './map-layout.js?v=36.0.0';
-import {paintPerson} from './sprites.js?v=34.0.0';
-import {ActivityScene} from './activity-scene.js?v=55.0.0';
-import {HomeJourney} from './journey.js?v=55.0.0';
-import * as E from './engine.js?v=55.0.0';
+import {paintPerson} from './sprites.js?v=56.0.0';
+import {ActivityScene} from './activity-scene.js?v=56.0.0';
+import {HomeJourney} from './journey.js?v=56.0.0';
+import * as E from './engine.js?v=56.0.0';
 import {createSaveStorage} from './save-storage.js?v=28.0.0';
 import {recoveryHTML,backupSummary,saveSummary,modeLabel} from './save-recovery-ui.js?v=28.0.0';
 import {icon} from './art.js?v=23.0.0';
-import {MallWorld} from './world.js?v=55.0.0';
+import {MallWorld} from './world.js?v=56.0.0';
 import {bindWalkPad} from './input-controls.js?v=29.0.0';
 const $=q=>document.querySelector(q), $$=q=>[...document.querySelectorAll(q)];
 const storage={get(k){try{return localStorage.getItem(k);}catch{return null;}},set(k,v){try{localStorage.setItem(k,v);return true;}catch{return false;}}};
@@ -279,7 +280,7 @@ const actions={
  'notice-read':b=>{if(perform(()=>E.readCommunityNotice(s,b.dataset.id)).ok){toast('Invitation kept in your daybook · +5 XP.');openNeighborhood('notice');}},
  'property-match':b=>{if(perform(()=>E.helpLostProperty(s,b.dataset.id)).ok){toast('A favorite found its owner · +15 XP.');playActivity('write','Matching the concierge claim card',()=>openNeighborhood('property'));}},
  'home-unwind':()=>{const fromWindow=!!$('.home-window');if(perform(()=>E.unwindAtHome(s)).ok){preview3D?.playMoment('rest');toast('A quiet moment · up to 12 stamina · +10 XP.');if(fromWindow)useRoom('window');}},
- 'room-walk':b=>{previewPose='stand';previewFocus='room';preview3D?.setPose('stand');preview3D?.walkHomeTo(b.dataset.id);$$('[data-action=studio-pose],[data-action=studio-camera]').forEach(control=>{const active=control.dataset.id===(control.dataset.action==='studio-pose'?'stand':'room');control.classList.toggle('active',active);control.setAttribute('aria-pressed',String(active));});},
+ 'room-walk':b=>{previewPose='stand';previewFocus='room';preview3D?.setPose('stand');preview3D?.walkHomeTo(b.dataset.id);const room=$('#outfit-preview');room?.scrollIntoView({block:'center',behavior:'instant'});room?.focus({preventScroll:true});$$('[data-action=studio-pose],[data-action=studio-camera]').forEach(control=>{const active=control.dataset.id===(control.dataset.action==='studio-pose'?'stand':'room');control.classList.toggle('active',active);control.setAttribute('aria-pressed',String(active));});},
  'room-stop':()=>{preview3D?.stopHome();preview3D?.homeStatus('Stopped on the open floor.');},
  'room-nearby':()=>preview3D?.useHome(),
  'room-use':b=>useRoom(b.dataset.id),
@@ -330,7 +331,7 @@ const actions={
  'art-notebook':()=>modal('A sketchbook of quiet corners.',s.artNotes.length+' floors remembered',artNotebook(s,{E,esc:escapeHTML}),{type:'art-notebook'}),
  'service-use':b=>{const r=perform(()=>E.useStoreService(s,b.dataset.id,store));if(r.ok)playActivity(r.value.animation,r.value.name+' · Enjoy the moment',()=>renderServiceStore(store));},
  'garden-guide':openGardenGuide,'center-stop':routePublicStop,'commons-notebook':openCommonsNotebook,'commons-turn':b=>{const i=Number(b.dataset.id);if(Number.isInteger(i)&&i>=0&&i<3){commonsTiles[i]=(commonsTiles[i]+1)%4;openCommons('mosaic',i);}},'commons-save':b=>{const r=perform(()=>E.recordCommons(s,b.dataset.id,b.dataset.id==='mosaic'?commonsTiles:b.dataset.choice));if(r.ok){toast(r.value.completed?'Three discoveries remembered · +'+r.value.xp+' XP':r.value.xp?'Discovery saved · +'+r.value.xp+' XP':'Discovery saved');openCommons(b.dataset.id);}},
- 'center-map':()=>centerMap(),'center-map-floor':b=>centerMap(Number(b.dataset.id)),'center-unit':b=>{pendingCheckout=null;closeModal();mapPanel=null;renderMapPanel();s.paused=false;if(view!=='mall')showView('mall');world?.goToCenterUnit(b.dataset.id);focusMap();},'center-zone':b=>{pendingCheckout=null;const floor=Number(b.dataset.floor),layout=spatialLayout(E.mallOf(s),floor,E.STORES),point=layout.campus.nodes.find(n=>n.id===b.dataset.id);closeModal();if(point){world?.leaveInterior?.();s.paused=false;hud();updateMapOverlay();world.travelTo(point,{interaction:'zone:'+point.id},floor);focusMap();}},
+ 'center-map-view':b=>updateCenterMapView(b.dataset.id),'center-map':()=>centerMap(),'center-map-floor':b=>centerMap(Number(b.dataset.id)),'center-unit':b=>{pendingCheckout=null;closeModal();mapPanel=null;renderMapPanel();s.paused=false;if(view!=='mall')showView('mall');world?.goToCenterUnit(b.dataset.id);focusMap();},'center-zone':b=>{pendingCheckout=null;const floor=Number(b.dataset.floor),layout=spatialLayout(E.mallOf(s),floor,E.STORES),point=layout.campus.nodes.find(n=>n.id===b.dataset.id);closeModal();if(point){world?.leaveInterior?.();s.paused=false;hud();updateMapOverlay();world.travelTo(point,{interaction:'zone:'+point.id},floor);focusMap();}},
  'follow-objective':followObjective,'interactive-guide':welcomeTrip,
  'welcome-follow':()=>{s.v9Welcome=true;s.tutorialDone=true;save();closeModal();followObjective();},'welcome-wander':()=>{s.v9Welcome=true;s.tutorialDone=true;save();closeModal();focusMap();},
  'interior-page':b=>world?.pageDisplays?.(Number(b.dataset.id)),
@@ -451,6 +452,7 @@ const actions={
  'more-catalog':()=>{catalogLimit+=24;updateCatalogResults();},
  'popup-claim':()=>{const r=perform(()=>E.claimPopup(s));if(r.ok){toast('Pavilion stamp collected! Your 10% game coupon is ready at '+E.storeById(r.value.store).name+'.');popupModal();}},
  'bookshops':()=>modal('Find a real bookshop.',E.mallOf(s).name,bookshopGuideHTML(s,{E,esc:escapeHTML}),{type:'bookshops'}),
+ 'optical-notes':()=>{const st=E.storeById(store||world?.inside);if(st?.collectionEdition===56)modal('Frame shapes & dimensions',st.name+' · Clock paused',opticalNotebookHTML(st,escapeHTML),{type:'optical-notes',footer:'<div class="store-exit-strip"><button class="button secondary" data-action="leave-shop">Exit shop → Mall</button><span>Frame dimensions · virtual styling</span></div>'});},
  'brush-notes':()=>{const st=E.storeById(store||world?.inside);if(st?.collectionEdition===54)modal('Brush formats',st.name+' · Clock paused',brushNotebookHTML(st,escapeHTML));},
  'fragrance-notes':()=>{const st=E.storeById(store||world?.inside);if(st?.collectionEdition===53)modal('Fragrance notes',st.name+' · Clock paused',fragranceNotebookHTML(st,escapeHTML));},
  'demo':button=>{const id=button.dataset.id,p=E.byId(id),r=perform(()=>E.demo(s,id));if(r.ok){if(isBrush(p)){playActivity('brush','Inspect '+p.name,()=>detail(id,true),p);return;}if(isFragrance(p)){playActivity('fragrance','Inspect '+p.name,()=>detail(id,true),p);return;}if(isStorage(p)){playActivity('storage','Inspect '+p.name,()=>detail(id,true),p);return;}if(isCeramic(p)){playActivity('ceramic','Inspect '+p.name,()=>detail(id,true),p);return;}if(isCollectible(p)){playActivity('collectible','Inspect '+p.name,()=>detail(id,true),p);return;}if(isReadingProduct(p)){playActivity('read','Browse '+(p.bookTitle||p.name),()=>detail(id,true),p);return;}toast(r.value.text);if(selectedProduct)detail(selectedProduct,true);else popupModal();}},
@@ -564,11 +566,22 @@ async function hydratePortraits(){for(const img of $$('[data-portrait-id]')){con
 function renderAlbum(){$('#view-root').innerHTML=`<div class="page-title"><div><span class="eyebrow">YOUR MALLSIDE PHOTO ALBUM</span><h2>Ordinary afternoons. Your own memories.</h2><p>${s.photoAlbum.length}/20 portraits. Original pictures stay on the device where taken; download them to keep a portable copy.</p></div><button class="button orange" data-action="venue" data-id="photo">Visit the photo studio</button></div><div class="portrait-album">${s.photoAlbum.slice().reverse().map(p=>`<article><img data-portrait-id="${p.id}" alt="${escapeHTML(p.name)}’s outfit on day ${p.day}"><small>DAY ${p.day} · ${E.MALLS.find(m=>m.id===p.mallId)?.name||'Mallside'}</small><h3>${escapeHTML(p.name)} · ${p.pose}</h3><p data-photo-status>Loading local portrait…</p><div><button class="button secondary small" data-action="download-portrait" data-id="${p.id}">Download PNG</button><button class="text-button" data-action="delete-portrait" data-id="${p.id}">Remove from album</button></div></article>`).join('')||'<div class="empty"><h3>Your next afternoon can become a picture.</h3><p>Visit the photo booth, choose a pose and press the shutter.</p></div>'}</div><button class="button secondary" data-action="view" data-id="collections">My collection room</button>`;hydratePortraits();}
 async function downloadPortrait(id){const p=s.photoAlbum.find(p=>p.id===id);if(!p)return;const data=await loadPortrait(mode+':'+id)||illustratedPortrait(p),a=document.createElement('a');a.href=data;a.download='mallside-day-'+p.day+'-'+p.id+'.png';document.body.append(a);a.click();a.remove();}
 
+let centerMapState=null;
 function centerMap(floor=s.floor||0){
  const l=world?.layout.campus&&floor===(s.floor||0)?world.layout:spatialLayout(E.mallOf(s),floor,E.STORES),source=CENTER_DIRECTORIES[s.mallId];
  const position=floor===(s.floor||0)?(world?.inside?world.mallPosition:world?.avatar)||s.mapPosition||l.spawn:null;
- modal('Find your way around.',E.mallOf(s).name+' · '+l.plan.levels[floor],`<div class="modal-body center-map-body"><div class="center-floor-tabs">${l.plan.levels.map((label,i)=>`<button data-action="center-map-floor" data-id="${i}" class="${i===floor?'active':''}" aria-pressed="${i===floor}">${escapeHTML(label)}</button>`).join('')}</div><p>Choose a storefront or court to walk there. Hover or focus a shop for its name. The searchable directory below has larger entry buttons. Blue arrows open floor connections; purple stars mark free public activities.</p>${campusMapSVG(l,position,floor,{E,esc:escapeHTML})}${publicStops(l,floor,{E,esc:escapeHTML,s})}<div class="center-map-legend"><span>● You are here</span><span>■ Stocked shop</span><span>■ Services / research</span><span>✦ Public activity</span><span>↕ Floor connection</span></div><details class="center-court-picker"><summary>Choose a court · ${l.campus.nodes.length} areas</summary><div class="center-courts">${l.campus.nodes.map(n=>`<button data-action="center-zone" data-floor="${floor}" data-id="${n.id}">${escapeHTML(n.label)} ↗</button>`).join('')}</div></details><div class="directory-note"><p>Save a route note for your local story. Reading the map pauses time.</p><button class="button secondary" data-action="directory-note">Save a route note · free · 3 min</button></div>${floor===(s.floor||0)?directoryGuideHTML(s,l,position,{E,esc:escapeHTML}):''}<h3>Center directory · ${source?.tenants.length||0} locations</h3><label class="search-field"><input id="center-search" type="search" aria-label="Search the complete center directory" placeholder="Find a shop, restaurant or service…"></label><div id="center-directory-results">${centerDirectoryRows()}</div><details class="center-accuracy"><summary>Official reference & game map accuracy</summary><p>This is an original condensed game layout. Real directory names and broad areas inform it; individual unit shapes and distances remain adapted for play. Stocked shops and services are playable. Locations marked Collection in research offer exploration while their merchandise is unfinished.</p><p>${escapeHTML(source?.coverage||l.plan.note)}</p><a href="${source?.source||l.plan.source}" target="_blank" rel="noopener noreferrer">Official center directory ↗</a></details></div>`,{type:'center-map'});
+ centerMapState={layout:l,position,view:mapView(l)};
+ modal('Find your way around.',E.mallOf(s).name+' · '+l.plan.levels[floor],`<div class="modal-body center-map-body"><div class="center-floor-tabs">${l.plan.levels.map((label,i)=>`<button data-action="center-map-floor" data-id="${i}" class="${i===floor?'active':''}" aria-pressed="${i===floor}">${escapeHTML(label)}</button>`).join('')}</div><p>Choose a storefront, court or amenity to walk there. Zoom in for names; use the arrows to pan or Find me to see nearby shops. Map controls are free and pause the clock. The lists below offer larger buttons for every destination.</p>${mapControlsHTML(position)}${campusMapSVG(l,position,floor,{E,esc:escapeHTML})}${publicStops(l,floor,{E,esc:escapeHTML,s})}<div class="center-map-legend"><span>● You are here</span><span>■ Stocked shop</span><span>■ Services & game dining</span><span>□ Collection in research</span><span>● Lettered amenities</span><span>✦ Public activity</span><span>↕ Floor connection</span></div><details class="center-court-picker"><summary>Choose a court · ${l.campus.nodes.length} areas</summary><div class="center-courts">${l.campus.nodes.map(n=>`<button data-action="center-zone" data-floor="${floor}" data-id="${n.id}">${escapeHTML(n.label)} ↗</button>`).join('')}</div></details><div class="directory-note"><p>Save a route note for your local story. Reading the map pauses time.</p><button class="button secondary" data-action="directory-note">Save a route note · free · 3 min</button></div>${floor===(s.floor||0)?directoryGuideHTML(s,l,position,{E,esc:escapeHTML}):''}<h3>Center directory · ${source?.tenants.length||0} locations</h3><label class="search-field"><input id="center-search" type="search" aria-label="Search the complete center directory" placeholder="Find a shop, restaurant or service…"></label><div id="center-directory-results">${centerDirectoryRows()}</div><details class="center-accuracy"><summary>Official reference & game map accuracy</summary><p>This is an original condensed game layout. Real directory names and broad areas inform it; individual unit shapes and distances remain adapted for play. Stocked shops and services are playable. Locations marked Collection in research offer exploration while their merchandise is unfinished.</p><p>${escapeHTML(source?.coverage||l.plan.note)}</p><a href="${source?.source||l.plan.source}" target="_blank" rel="noopener noreferrer">Official center directory ↗</a></details></div>`,{type:'center-map'});updateCenterMapView(null);
 }
+function updateCenterMapView(action,point=null){
+ const svg=$('.center-map-body .campus-plan'),context=centerMapState;if(!svg||modalType!=='center-map'||!context)return;
+ context.view=point?focusMapPoint(context.layout,context.view,point):changeMapView(context.layout,context.view,action,context.position);
+ const v=context.view;svg.setAttribute('viewBox',mapViewBox(v));svg.dataset.mapZoom=v.zoom.toFixed(2);
+ const status=$('#center-map-view-status'),message=v.zoom===1?'Whole floor · zoom in to read storefront labels.':'Map zoom '+v.zoom.toFixed(1)+'× · controls move the map; choose a place to walk there.';if(status.textContent!==message)status.textContent=message;
+ for(const b of $$('.center-map-controls [data-action=center-map-view]'))b.disabled=b.dataset.id==='in'?v.zoom>=MAP_ZOOM_LIMIT:b.dataset.id==='out'?v.zoom<=1:['left','right','up','down'].includes(b.dataset.id)?(b.dataset.id==='left'?v.x<=0:b.dataset.id==='right'?v.x+v.width>=context.layout.campus.width-.01:b.dataset.id==='up'?v.y<=0:v.y+v.height>=context.layout.campus.height-.01):false;
+}
+// Keep keyboard-focused destinations visible even when the map has been panned.
+document.addEventListener('focusin',event=>{const target=event.target.closest?.('.campus-plan [data-map-x]');if(target?.matches(':focus-visible'))updateCenterMapView(null,{x:Number(target.dataset.mapX),y:Number(target.dataset.mapY)});});
 function centerDirectoryRows(query=''){const src=CENTER_DIRECTORIES[s.mallId],q=query.toLowerCase(),layouts=new Map(),rows=(src?.tenants||[]).filter(t=>(t.name+' '+(t.section||'')+' '+(t.district||'')).toLowerCase().includes(q));return rows.slice(0,250).map(t=>{const floor=tenantFloor(s.mallId,t),layout=layouts.get(floor)||spatialLayout(E.mallOf(s),floor,E.STORES),unit=layout.units.find(u=>u.key===t.key)||layout.rects.find(u=>u.key===t.key);layouts.set(floor,layout);const st=unit&&E.storeById(unit.id),availability=st?.count?st.count+' real products':st&&E.isServiceStore(st)?'Bookable services':st?.businessKind==='food'?'Original game dining':'Collection in research';return '<div class="center-directory-row"><span><strong>'+escapeHTML(t.name)+'</strong><small>'+escapeHTML((t.floor?E.planFor(s).levels[floor]:'Game placement · '+E.planFor(s).levels[floor])+(t.section?' · Zone '+t.section:'')+(t.district?' · '+t.district:'')+' · '+availability)+'</small></span>'+(unit?'<button class="button secondary small" data-action="center-unit" data-id="'+unit.id+'">'+(st?.count?'Shop here':st&&E.isServiceStore(st)?'Services':st?.businessKind==='food'?'Dine here':'Explore inside')+' ↗</button>':'<a href="'+(t.source||src.source)+'" target="_blank" rel="noopener noreferrer">Official listing ↗</a>')+'</div>';}).join('')||'<p>No matching storefront. Try another name.</p>';}
 function renderServiceStore(id){store=id;const st=E.storeById(id),offers=E.serviceMenu(st),bookings=s.serviceBookings.filter(b=>b.store===id).slice(-12).reverse();modal(st.name,'PLAYABLE SERVICE LOCATION · '+E.mallOf(s).name,`<div class="modal-body service-store"><div class="npc-message"><div class="npc-avatar">${st.npc[0]}</div><div><strong>${st.npc} · Your host</strong><p>Come in, choose a service, and take a break between shops.</p></div></div><div class="hint">Original game sessions and game prices. This is a playable simulation, not this provider’s real booking menu. Unused bookings can be refunded here for 30 game days.</div><div class="service-offer-grid">${offers.map(o=>`<article class="service-offer"><span>${st.businessKind==='entertainment'?'🎟':st.businessKind==='visitor'?'⌂':'✦'}</span><h3>${o.name}</h3><p>${o.description}</p><strong>${o.price?E.money(o.price):'Complimentary'}</strong><small>${o.minutes} min · +${o.recovery} stamina recovery</small><button class="button orange wide" data-action="service-book" data-id="${o.id}">Reserve in game</button></article>`).join('')}</div><h3>My bookings at this branch</h3>${bookings.length?bookings.map(b=>`<article class="booking-row"><div><strong>${offers.find(o=>o.id===b.offer)?.name||'Game session'}</strong><small>Day ${b.day} · ${E.money(b.paid)} · ${b.refunded?'Refunded':b.used?'Enjoyed ✓':'Ready to use'}</small></div>${!b.used&&!b.refunded?`<button class="button" data-action="service-use" data-id="${b.id}">Enjoy now</button><button class="button secondary" data-action="service-refund" data-id="${b.id}" ${s.day-b.day>30?'disabled':''}>Refund</button>`:''}</article>`).join(''):'<p>Your reservations and receipts will appear here.</p>'}<div class="service-links"><button class="button secondary" data-action="close">Back to the floor</button><a href="${st.source}" target="_blank" rel="noopener noreferrer">Official location ↗</a></div></div>`,{type:'service-store',footer:'<div class="store-exit-strip"><button class="button secondary" data-action="leave-shop">Exit service shop → Mall</button><span>Reserve → enjoy or refund unused bookings</span></div>'});}
 document.addEventListener('input',event=>{if(recovery)return;if(event.target.id==='center-search')$('#center-directory-results').innerHTML=centerDirectoryRows(event.target.value);});

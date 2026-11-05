@@ -8,9 +8,9 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v55 — coastal studio and sculpture studies
+## v56 — optical studio and readable floor maps
 
-The unfinished Vineyard Vines shop gains two exact selected-color garments, reviewed photographs, source size labels and a furnished coastal studio. All 23 sculpture courts gain framed saved drawings and free detail previews. Supported notebooks and coordinated pencils make writing animations smoother. Existing saves and products remain compatible. See [v55 gameplay](docs/GAMEPLAY-v55.md), [primary evidence](docs/research-v55/merchant-records.json), [QA](docs/qa-v55.md) and the [roadmap](ROADMAP.md).
+The unfinished JINS Eyewear shop gains two exact selected frames, reviewed photographs, source dimensions and a furnished optical studio. All 23 floor maps gain selectable amenities, storefront labels, zoom, pan and keyboard destination reveal. Frame-fitting hands move smoothly from their actual resting pose; scene cleanup releases shared geometry once. Existing saves and products remain compatible. See [v56 gameplay](docs/GAMEPLAY-v56.md), [primary evidence](docs/research-v56/merchant-records.json), [QA](docs/qa-v56.md) and the [roadmap](ROADMAP.md).
 
 ## Previous update · v54 — brush studio and clearer next stops
 

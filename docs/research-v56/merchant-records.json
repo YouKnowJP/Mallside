@@ -1,0 +1,235 @@
+{
+  "checkedOn": "2026-11-05",
+  "checkedAtUTC": "2026-11-05T17:05:05.802260+00:00",
+  "merchant": "JINS US",
+  "method": [
+    "Official raw product HTML selected-color label and specification table",
+    "Official Shopify product JSON exact reference, USD offers, variants and image identity",
+    "Official product .js current availability observation",
+    "Official front, angle, side and dimension photographs downloaded; visual facts and millimetre axes reviewed"
+  ],
+  "products": [
+    {
+      "handle": "airframe-flat-069-58",
+      "name": "Airframe Flat 069 58",
+      "sku": "MUF-24A-069-58",
+      "source": "https://us.jins.com/products/airframe-flat-069-58",
+      "jsonSource": "https://us.jins.com/products/airframe-flat-069-58.json",
+      "liveVariantSource": "https://us.jins.com/products/airframe-flat-069-58.js",
+      "priceUSD": 170,
+      "currency": "USD",
+      "priceNote": "Dated selected-frame base USD offer with standard clear lenses and the included black case. Prescription and non-prescription variants have the same base price. Premium lenses, tints, other paid case choices, promotions, taxes and shipping are excluded. No actual prescription or optical correction is supplied by the game.",
+      "variants": [
+        {
+          "id": 41171516293163,
+          "label": "Prescription",
+          "sku": "MUF-24A-069-58",
+          "priceUSD": 170.0
+        },
+        {
+          "id": 41171516620843,
+          "label": "Non-Prescription",
+          "sku": "MUF-24A-069-58",
+          "priceUSD": 170.0
+        }
+      ],
+      "color": "Blue",
+      "sizeLabel": "Extra-Wide",
+      "shape": "Rectangle",
+      "material": "Ultem resin (merchant Airframe category)",
+      "noseBridge": "Low Bridge Fit",
+      "nosePadType": "Other",
+      "dimensionString": "55-17-157-36",
+      "lensWidthMM": 55,
+      "bridgeMM": 17,
+      "templeMM": 157,
+      "lensHeightMM": 36,
+      "frameWidthMM": 146,
+      "construction": [
+        "Full rim",
+        "Thin flat Ultem resin frame",
+        "Broad rectangular lens openings",
+        "Integral low-bridge support",
+        "Dark temple tips"
+      ],
+      "visualReview": "Exact blue rectangular frame, clear lenses, broad flat rim, slight translucent edge, dark curved temple tips. Geometry and optical behavior remain adapted game art.",
+      "dimensionNote": "Official dimension images establish millimetre axes: lens width, bridge gap, temple length, lens height; front width is measured separately. Manufacturer size label is retained; no face-fit guarantee.",
+      "photoAssets": [
+        {
+          "role": "Front",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/MUF-24A-069_58_02.jpg?v=1771986223",
+          "sha256": "6187b8a42fce1e89b3ed91e79280babfaecf795aaea2e24ac528d38095aef5b0",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        },
+        {
+          "role": "Front Angle Left",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/MUF-24A-069_58_01.jpg?v=1771986223",
+          "sha256": "2e941fe0919d80539e35d6b3148bd5f54bbe1816b7b5b73d2729d8706958ab10",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        },
+        {
+          "role": "Side",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/MUF-24A-069_58_03.jpg?v=1771986223",
+          "sha256": "d9153c4a7d1fee1ec27282e4827eda3574ccd76d710f398a9b6bd42fc0bfbb93",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        },
+        {
+          "role": "Dimensions Front",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/MUF-24A-069_58_09.jpg?v=1771986223",
+          "sha256": "8dc688570e415532fc0c47ff3e964aa69c117c2478f358ca788552e4bedffd4c",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        },
+        {
+          "role": "Dimensions Side",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/MUF-24A-069_58_10.jpg?v=1771986223",
+          "sha256": "37f846cd523c13419655f7b518c5834cfe841bc5422a1a46d915857b3f999af7",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        }
+      ],
+      "rawSources": {
+        "airframe-flat-069-58.json": {
+          "bytes": 7559,
+          "sha256": "00e88f4009be4410ea5ddc29f470dd89ca94494009833a4bcaf83696b40482e5"
+        },
+        "airframe-flat-069-58.html": {
+          "bytes": 1419851,
+          "sha256": "fade44df77583db2c117653a4b952e884af11fe09d1f378b28dfcffb8031f193"
+        },
+        "airframe-flat-069-58.js.json": {
+          "bytes": 9540,
+          "sha256": "cdf19f1a05b7e5f1671d697afb8a65dcca636b8584e59d29014cbcb1244e48e9"
+        }
+      },
+      "inStockInShopifyAtCheck": true,
+      "stockCaveat": "JSON .js availability is an online-source observation, not a branch inventory guarantee. Raw HTML also contains a generic hidden backorder template; no live stock promise belongs in the game.",
+      "runtimePhoto": "assets/photos/v56-real-jins-MUF-24A-069-58.webp",
+      "runtimeSHA256": "ba728285d1b9ba983476effd84823d8e4588049967b4b2d7f527661a89968026",
+      "parentVisualReview": true
+    },
+    {
+      "handle": "modern-rim-metal-073-196",
+      "name": "Modern Rim Metal 073 196",
+      "sku": "UMF-24A-073-196",
+      "source": "https://us.jins.com/products/modern-rim-metal-073-196",
+      "jsonSource": "https://us.jins.com/products/modern-rim-metal-073-196.json",
+      "liveVariantSource": "https://us.jins.com/products/modern-rim-metal-073-196.js",
+      "priceUSD": 170,
+      "currency": "USD",
+      "priceNote": "Dated selected-frame base USD offer with standard clear lenses and the included black case. Prescription and non-prescription variants have the same base price. Premium lenses, tints, other paid case choices, promotions, taxes and shipping are excluded. No actual prescription or optical correction is supplied by the game.",
+      "variants": [
+        {
+          "id": 41208996757547,
+          "label": "Prescription",
+          "sku": "UMF-24A-073-196",
+          "priceUSD": 170.0
+        },
+        {
+          "id": 41208996823083,
+          "label": "Non-Prescription",
+          "sku": "UMF-24A-073-196",
+          "priceUSD": 170.0
+        }
+      ],
+      "color": "Silver",
+      "sizeLabel": "Medium",
+      "shape": "Round",
+      "material": "Metal; exact alloy not specified",
+      "noseBridge": "Adjustable Fit",
+      "nosePadType": "Adjustable",
+      "dimensionString": "48-21-145-45",
+      "lensWidthMM": 48,
+      "bridgeMM": 21,
+      "templeMM": 145,
+      "lensHeightMM": 45,
+      "frameWidthMM": 131.6,
+      "construction": [
+        "Full rim",
+        "Thin round metal rims",
+        "Engraved temples",
+        "Adjustable nose pads",
+        "Clear temple-tip covers"
+      ],
+      "visualReview": "Exact silver thin round full rim and clear lenses, arched bridge, separate clear nose pads, engraved side arms and transparent curved tip covers. Do not call it titanium; no alloy is specified.",
+      "dimensionNote": "Official dimension images establish millimetre axes: lens width, bridge gap, temple length, lens height; front width is measured separately. Manufacturer size label is retained; no face-fit guarantee.",
+      "photoAssets": [
+        {
+          "role": "Front",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/UMF-24A-073_196_02.jpg?v=1771986337",
+          "sha256": "f55e37222de014b3f37c500c3020c76524a66965d16678d3de6c08d22c2c7771",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        },
+        {
+          "role": "Front Angle Left",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/UMF-24A-073_196_01.jpg?v=1771986337",
+          "sha256": "dfa893b0ccee51e71f12342830640e076e916a4e98ad7e309ec9d6be1f5a7874",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        },
+        {
+          "role": "Side",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/UMF-24A-073_196_03.jpg?v=1771986337",
+          "sha256": "b8920f2f4554982d6f6d16bc7fe4efada1f54693983938aeac580780fb6c089f",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        },
+        {
+          "role": "Dimensions Front",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/UMF-24A-073_196_09.jpg?v=1771986337",
+          "sha256": "7d0808cb3f0cc9151b7f28e427a8543bfe41cf963ac469635776bf60bacc92e7",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        },
+        {
+          "role": "Dimensions Side",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/UMF-24A-073_196_10.jpg?v=1771986337",
+          "sha256": "39e182b124fa5607ed05bb67ec19a03fefbbb5e59ef8ff66e2e509b96a502ae4",
+          "width": 1000,
+          "height": 500,
+          "visuallyReviewed": true
+        }
+      ],
+      "rawSources": {
+        "modern-rim-metal-073-196.json": {
+          "bytes": 7929,
+          "sha256": "f36a943fe080b9243ebd7a4c8f163093d40ece30d71228249595fbc1c27bef51"
+        },
+        "modern-rim-metal-073-196.html": {
+          "bytes": 1420351,
+          "sha256": "1a383c97ae8e7b9af5a8f95fe7a79060b8892bf6ecbf3c5ad6ca23e231c5c814"
+        },
+        "modern-rim-metal-073-196.js.json": {
+          "bytes": 10498,
+          "sha256": "c3c7ccc228461e37ef7f69abd4e6b6a63fb17211adf1ad06311dc19e71e93fc1"
+        }
+      },
+      "inStockInShopifyAtCheck": true,
+      "stockCaveat": "JSON .js availability is an online-source observation, not a branch inventory guarantee. Raw HTML also contains a generic hidden backorder template; no live stock promise belongs in the game.",
+      "runtimePhoto": "assets/photos/v56-real-jins-UMF-24A-073-196.webp",
+      "runtimeSHA256": "1f800b50d46e0e621c6566d8811df223383ef16458949eb69e02c21c02304ae7",
+      "parentVisualReview": true
+    }
+  ],
+  "limits": [
+    "Product provenance does not provide blanket commercial image permission.",
+    "Frame fit and optical properties remain simulated; never imply a prescription or real medical service.",
+    "Only the selected physical frame size/color is evidenced; no invented size options.",
+    "Metal alloy is not specified for the Silver frame; no titanium claim.",
+    "Use clear optical lenses in game, rather than the existing tinted sunglass default.",
+    "Current online availability is not actual mall branch stock."
+  ]
+}

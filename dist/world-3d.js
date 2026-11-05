@@ -6,14 +6,14 @@ import {createFragrance} from './fragrance-model.js?v=53.0.0';
 import {fragranceHold} from './fragrance-tools.js?v=53.0.0';
 import {restoreInspectionActors,focusInspectionActors} from './inspection-focus.js?v=55.0.0';
 import {storageHold} from './storage-tools.js?v=53.0.0';
-import {createStorage} from './storage-model.js?v=55.0.0';
+import {createStorage} from './storage-model.js?v=56.0.0';
 import {createWrappingProp,updateWrappingProp} from './wrapping-tools.js?v=53.0.0';
 import {buildServiceCounterDetails} from './service-counter-details.js?v=53.0.0';
 import {updateNoticeDetails} from './notice-details.js?v=50.0.0';
 import {updateWaterDetails} from './water-details.js?v=49.0.0';
-import {createCeramic} from './ceramic-model.js?v=55.0.0';
+import {createCeramic} from './ceramic-model.js?v=56.0.0';
 import {ceramicHold} from './ceramic-tools.js?v=53.0.0';
-import {createPlush} from './plush-model.js?v=55.0.0';
+import {createPlush} from './plush-model.js?v=56.0.0';
 import {collectibleGesture} from './collectible-tools.js?v=47.0.0';
 import {consumptionPose} from './consumption-motion.js?v=46.0.0';
 import {updateTeaLounges} from './tea-lounge.js?v=46.0.0';
@@ -23,51 +23,51 @@ import {updatePhotoKiosks} from './photo-kiosk.js?v=44.0.0';
 import {isVerifiedWatch,watchGesture} from './watch-tools.js?v=43.0.0';
 import {placeWatch} from './watch-model.js?v=43.0.0';
 import {updateSculptureDetails} from './sculpture-details.js?v=55.0.0';
-import {updateStudioStudy} from './studio-details.js?v=55.0.0';
+import {updateStudioStudy} from './studio-details.js?v=56.0.0';
 import {updateMosaicStudy} from './mosaic-details.js?v=47.0.0';
 import {fittingTurn,focusCamera} from './fitting-motion.js?v=41.0.0';
-import {isVerifiedFrame,frameGesture} from './eyewear-tools.js?v=39.0.0';
-import {placeFrame} from './eyewear-model.js?v=39.0.0';
+import {isVerifiedFrame,frameGesture,framePose} from './eyewear-tools.js?v=56.0.0';
+import {placeFrame} from './eyewear-model.js?v=56.0.0';
 import {updateGardenStudies} from './garden-details.js?v=48.0.0';
 import {isReadingProduct} from './book-tools.js?v=50.0.0';
-import {placeBook,createReadingProp,updateReadingProp} from './book-model.js?v=55.0.0';
-import {hasCollectionDesk} from './collection-guide.js?v=55.0.0';
+import {placeBook,createReadingProp,updateReadingProp} from './book-model.js?v=56.0.0';
+import {hasCollectionDesk} from './collection-guide.js?v=56.0.0';
 import {updateReadingDetails} from './reading-details.js?v=42.0.0';
-import {buildPlanningLounge,buildCollectionStudio} from './planning-lounge.js?v=55.0.0';
+import {buildPlanningLounge,buildCollectionStudio} from './planning-lounge.js?v=56.0.0';
 import {smoothSeatBlend,ambientStrideSpeed,crowdStep,benchSeatTarget} from './ambient-motion.js?v=36.0.0';
-import {buildCourtLife,updateCourtLife} from './court-life.js?v=55.0.0';
+import {buildCourtLife,updateCourtLife} from './court-life.js?v=56.0.0';
 import {installLighting,beveledBox,cameraComposition,buildSceneAccents,updateSceneAccents,surfaceTexture} from './scene-finish.js?v=33.0.0';
-import {canTry} from './engine.js?v=55.0.0';
+import {canTry} from './engine.js?v=56.0.0';
 import {patchAmbientLighting} from './render-compat.js?v=31.0.0';
 import {daylightAt,adultAppearance} from './mall-atmosphere.js?v=33.0.0';
-import {createShopper,applyCharacterPose} from './character-rig.js?v=55.0.0';
-import {updateAttachmentFrames,updateOutfitPose,releasePersonResources,trackMerchandise} from './merchandise-fit.js?v=55.0.0';
+import {createShopper,applyCharacterPose} from './character-rig.js?v=56.0.0';
+import {updateAttachmentFrames,updateOutfitPose,releasePersonResources,trackMerchandise} from './merchandise-fit.js?v=56.0.0';
 import {buildWindowDisplay,buildSignatureInterior} from './retail-scenes.js?v=50.0.0';
-import {buildStoreFitout} from './store-fitout.js?v=55.0.0';
-import {buildStoreLife,drawStoreLife} from './store-life.js?v=55.0.0';
-import {productAppearance} from './product-appearance.js?v=55.0.0';
-import {physicalProduct,placeMerchandise} from './merchandise-3d.js?v=55.0.0';
-import {dressPerson,syncCarriedMerchandise,poseCarriedMerchandise,stowHandhelds} from './merchandise-carry.js?v=55.0.0';
+import {buildStoreFitout} from './store-fitout.js?v=56.0.0';
+import {buildStoreLife,drawStoreLife} from './store-life.js?v=56.0.0';
+import {productAppearance} from './product-appearance.js?v=56.0.0';
+import {physicalProduct,placeMerchandise} from './merchandise-3d.js?v=56.0.0';
+import {dressPerson,syncCarriedMerchandise,poseCarriedMerchandise,stowHandhelds} from './merchandise-carry.js?v=56.0.0';
 import {brandSign} from './mall-environment.js?v=55.0.0';
 import {shopperPlan,fixtureStop} from './mall-neighborhood.js?v=36.0.0';
 import {buildMallGround,buildStorefronts,buildPublicRealm,buildAnchor,buildRetailConnections,buildMallEntrance} from './mall-environment.js?v=55.0.0';
 import {themeFor,facadeFrame,cameraCutaway,overviewFraming} from './mall-design.js?v=35.0.0';
-import {buildDiningGallery} from './dining-interior.js?v=55.0.0';
+import {buildDiningGallery} from './dining-interior.js?v=56.0.0';
 import {buildInteriorArchitecture,buildProductFixture,buildCollectionGallery} from './interior-art.js?v=35.0.0';
 import {onSurface} from './free-navigation.js?v=25.0.0';
-import {shopProfile,departmentOf,displaySelection,displayPoint} from './shop-interiors.js?v=55.0.0';
+import {shopProfile,departmentOf,displaySelection,displayPoint} from './shop-interiors.js?v=56.0.0';
 import * as T from './vendor/three.module.js';
-import {MallWorld} from './world.js?v=55.0.0';
-import {spatialLayout,interiorLayout} from './spatial-layout.js?v=55.0.0';
+import {MallWorld} from './world.js?v=56.0.0';
+import {spatialLayout,interiorLayout} from './spatial-layout.js?v=56.0.0';
 import {walkable,closestFloor,freeRoute,freeMove,clearWalk,personStop} from './free-navigation.js?v=25.0.0';
-import {isPlanningStore,isServiceStore,serviceMenu,STORES,PRODUCTS,CLOSE,mallOf,equippedLook,slotForProduct,money,price,savedBags} from './engine.js?v=55.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=55.0.0';
+import {isPlanningStore,isServiceStore,serviceMenu,STORES,PRODUCTS,CLOSE,mallOf,equippedLook,slotForProduct,money,price,savedBags} from './engine.js?v=56.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=56.0.0';
 import {windowSelection,LOCALS} from './mall-life.js?v=26.0.0';
 import {stepToward,facingFor,turnToward,yieldToPlayer,cameraBlend} from './motion.js?v=34.0.0';
 import {VENUE_LABELS} from './mall-art.js?v=55.0.0';
 
 patchAmbientLighting(T.ShaderChunk);
-export const ANIMATION_REVISION='55';
+export const ANIMATION_REVISION='56';
 export class MallWorld3D extends MallWorld{
  constructor(canvas,state,onEnter,onMove){
   const renderer=new T.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'low-power'});
@@ -168,12 +168,12 @@ export class MallWorld3D extends MallWorld{
  goToFloor(floor){if(this.inside)this.leaveInterior();super.goToFloor(floor);}
  beginExit(done){if(this.inside)this.leaveInterior();super.beginExit(done);}
  rideEscalator(floor,connectorId){this.hint('Riding the escalator to '+this.layout.plan.levels[floor]+'…');const start={...this.avatar},r=this.layout.escalators.find(e=>e.id===(connectorId||this.activeConnector))||this.layout.escalator;this.animate('escalator',()=>this.onEnter('floor:'+floor),{start,escalator:r,end:{x:r.x+r.width/2,y:r.y+10},up:floor>(this.state.floor||0)});}
- clearScene(){restoreInspectionActors(this);this.finishTextures?.clear();this.studioStudy=null;this.studioPreview=null;this.mosaicStudy=null;this.commonsPreview=null;this.gardenSprigs=[];this.gardenStudies=[];this.waterStations=[];this.noticeBoards=[];this.readingStudies=[];this.sculptureStudies=[];this.photoKiosks=[];this.flowerKiosks=[];this.teaLounges=[];this.teaLoungeName=null;const skeletons=new Set(),shadows=new Set();this.scene?.traverse(o=>{if(o.isSkinnedMesh)skeletons.add(o.skeleton);if(o.isLight&&o.shadow)shadows.add(o.shadow);});for(const s of skeletons)s.dispose();for(const shadow of shadows)shadow.dispose();this.scene?.traverse(o=>{if(o.isInstancedMesh)o.dispose();if(o.geometry)o.geometry.dispose();});for(const r of this.resources)r.dispose?.();this.resources.clear();this.textures.clear();}
+ clearScene(){restoreInspectionActors(this);this.finishTextures?.clear();this.studioStudy=null;this.studioPreview=null;this.mosaicStudy=null;this.commonsPreview=null;this.gardenSprigs=[];this.gardenStudies=[];this.waterStations=[];this.noticeBoards=[];this.readingStudies=[];this.sculptureStudies=[];this.photoKiosks=[];this.flowerKiosks=[];this.teaLounges=[];this.teaLoungeName=null;const skeletons=new Set(),shadows=new Set();this.scene?.traverse(o=>{if(o.isSkinnedMesh)skeletons.add(o.skeleton);if(o.isLight&&o.shadow)shadows.add(o.shadow);});for(const s of skeletons)s.dispose();for(const shadow of shadows)shadow.dispose();const disposable=new Set(this.resources);this.scene?.traverse(o=>{if(o.isInstancedMesh)o.dispose();if(o.geometry)disposable.add(o.geometry);});for(const r of disposable)r.dispose?.();this.resources.clear();this.textures.clear();}
  enterInterior(id,options={}){
   const rebuilding=this.inside===id,oldPosition=rebuilding?{...this.avatar}:null;this.clearInput();this.cancelRoute();this.moving=false;
   if(!rebuilding){this.mallAngle=this.angle;this.mallZoom=this.zoom;this.mallPosition={...this.avatar};this.interiorDepartment='all';this.interiorPage=0;}
   this.inside=id;document.querySelector('.map-stage')?.classList?.add('interior-scene');this.clearScene();const st=STORES.find(s=>s.id===id),profile=shopProfile(st,PRODUCTS),chosen=displaySelection(PRODUCTS,id,this.interiorDepartment||'all',this.interiorPage||0);this.layout=interiorLayout(st,this.layout.plan,isServiceStore(st)?serviceMenu(st).length:chosen.items.length||6);this.avatar=oldPosition&&walkable(oldPosition,this.layout.nav)?oldPosition:{...this.layout.spawn};this.initScene();this.scene.background=new T.Color('#cddbd6');
-  buildInteriorArchitecture(this,profile,this.layout);buildSignatureInterior(this,profile,this.layout,PRODUCTS);const studio=isPlanningStore(st)||[42,43,44,45,46,47,48,49,50,51].includes(st.collectionEdition);brandSign(this,st,600,studio?92:98,124,studio?180:260,studio?24:34);if(!studio)this.label(profile.title,600,75,147,220,profile.accent,profile.wall);this.interiorStops=[];
+  buildInteriorArchitecture(this,profile,this.layout);buildSignatureInterior(this,profile,this.layout,PRODUCTS);const studio=isPlanningStore(st)||[42,43,44,45,46,47,48,49,50,51,53,54,55,56].includes(st.collectionEdition);brandSign(this,st,600,studio?92:98,124,studio?180:260,studio?24:34);if(!studio)this.label(profile.title,600,75,147,220,profile.accent,profile.wall);this.interiorStops=[];
   const selection=chosen;this.interiorPage=selection.page;this.interiorSelection=selection;
   selection.items.forEach((p,i)=>{const r=this.layout.displays[i],x=r.x+r.width/2,z=r.y+r.height/2,height=buildProductFixture(this,p,r,profile);
    const cloth=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type),plate=this.photo(p,x,cloth?53.5:height+(p.plushProfile?9.5:27),z+16,cloth?45:p.plushProfile?28:50,cloth?45:p.plushProfile?19:54),point=displayPoint(r),key='product:'+p.id;this.tag(plate,key,point);const name=this.label(p.name.length>35?p.name.slice(0,32)+'…':p.name,x,height+(p.plushProfile?36:69),z,132,st.color);this.tag(name,key,point);this.nearLabels.push({object:name,x,z,radius:260});this.tag(this.label(money(price(this.state,p)),x,height+3,z+36,70),'product:'+p.id,point);this.interiorStops.push({point,id:key,name:p.name,label:'Inspect · '+money(price(this.state,p))});
@@ -187,7 +187,7 @@ export class MallWorld3D extends MallWorld{
   const fitX=fitting.x+fitting.width/2,fitZ=fitting.y+45;
   const wearable=st.products.some(canTry),fittingLabel=isServiceStore(st)?'Service lounge':!st.count?(st.businessKind==='food'?'Dining menu':'Material study nook'):st.products.some(isVerifiedFrame)?'Frame fitting & widths':wearable?'Fitting & try-on':'Menu & product demos',fittingAction=wearable?'fitting:'+id:!st.count?(st.businessKind==='food'?'dining:':'study:')+id:'rack:'+id;this.tag(this.label(fittingLabel,fitX,84,fitZ,150),fittingAction,this.layout.services.fitting);this.interiorStops.push({point:this.layout.services.fitting,id:fittingAction,name:fittingLabel,label:wearable?'Choose a real item to try':'Browse this location'});
   const railX=rail.x+rail.width/2,railZ=rail.y+20;
-  this.tag(this.label(isServiceStore(st)?'Services & my bookings':st.count?'Full collection · '+st.products.length+' real items':'Shop guide · Collection in research',railX,85,railZ,[42,43,44,45,46,47,48,49,50,51].includes(st.collectionEdition)?120:180),'rack:'+id,{x:railX,y:225});
+  this.tag(this.label(isServiceStore(st)?'Services & my bookings':st.count?'Full collection · '+st.products.length+' real items':'Shop guide · Collection in research',railX,85,railZ,[42,43,44,45,46,47,48,49,50,51,53,54,55,56].includes(st.collectionEdition)?120:180),'rack:'+id,{x:railX,y:225});
   const associate=this.person(st.color);associate.position.set(this.layout.services.associate.x,0,this.layout.services.associate.y);this.tag(associate,'associate:'+id,this.layout.services.associate);this.tag(this.label(st.npc+' · Shop associate',this.layout.services.associate.x,66,this.layout.services.associate.y,132),'associate:'+id,this.layout.services.associate);this.interiorStops.push({point:this.layout.services.associate,id:'associate:'+id,name:st.npc+' · Associate',label:'Advice & store services'});
   if(!st.count&&!isServiceStore(st)){if(st.businessKind==='food')buildDiningGallery(this,st,profile,this.layout);else buildPlanningLounge(this,st,profile,this.layout);}else buildStoreFitout(this,st,profile,this.layout,selection.items);if(hasCollectionDesk(st))buildCollectionStudio(this,st,profile);buildStoreLife(this,st);
   const exitSprite=this.label('EXIT ↓ MALL',600,.3,765,92),exitSign=this.mesh(new T.PlaneGeometry(92,20),new T.MeshBasicMaterial({map:exitSprite.material.map,transparent:true,depthWrite:false}));this.resources.add(exitSign.material);exitSign.position.copy(exitSprite.position);exitSign.rotation.x=-Math.PI/2;exitSign.castShadow=false;exitSprite.removeFromParent();this.player=this.person(this.state.appearance.shirt,this.state.appearance,equippedLook(this.state));this.playerLabel=this.label(this.state.playerName,600,60,730,74);this.overview=false;this.zoom=1;this.angle=0;buildSceneAccents(this);this.lastNearby=null;this.setCamera(true);this.publishPosition();
@@ -212,9 +212,9 @@ export class MallWorld3D extends MallWorld{
  turnFitting(){if(this.action?.kind==='try')this.action.turnTarget=(this.action.turnTarget??this.player.rotation.y)+Math.PI/2;}
  startFitting(product,done){const room=this.layout.fittingRooms?.[0];this.fittingPending={product,done};if(room)this.playerFittingRoom=room.id;this.navigate(room?{x:room.x,y:room.y}:this.layout.services.fitting,{fittingPreview:true});this.hint(isVerifiedFrame(product)?'Walking to the frame fitting station…':'Walking into the fitting room…');}
  finishFitting(skip=false){if(this.fittingPending){const pending=this.fittingPending;this.fittingPending=null;this.path=[];this.destination=null;if(this.playerFittingRoom!==undefined&&this.avatar)Object.assign(this.avatar,this.layout.services.fitting);delete this.playerFittingRoom;pending.done();}else if(this.fittingExitPending){const done=this.fittingExitPending;this.fittingExitPending=null;this.path=[];this.destination=null;Object.assign(this.avatar,this.layout.services.fitting);delete this.playerFittingRoom;done();}else{this.skipFittingReturn=skip;this.finishAnimation();this.skipFittingReturn=false;}}
- animate(kind,done,extra={}){document.querySelector('#scene-location details')?.removeAttribute('open');this.keys.clear();this.touchVector=null;this.touchDirection=null;this.path=[];this.destination=null;if(kind==='rest'&&this.restSeat&&Math.hypot(this.restSeat.x-this.avatar.x,this.restSeat.y-this.avatar.y)<75){extra.seat={...this.restSeat};this.restSeat=null;}if(this.inside){const st=STORES.find(s=>s.id===this.inside);if(isServiceStore(st)&&['rest','cinema'].includes(kind)||st.businessKind==='food'&&['eat','drink','icecream'].includes(kind))extra.seat={x:600,y:630,bench:true,height:15};}if(kind==='try'&&extra.previewProduct){this.refreshPlayer(extra.previewProduct);this.canvas.dataset.previewProduct=extra.previewProduct.id;this.fittingSprites=[];this.scene.traverse(o=>{if(o.isSprite)this.fittingSprites.push([o,o.visible]);});}this.canvas.closest?.('.map-stage')?.classList?.toggle('fitting-scene',kind==='try');this.action={kind,done,hold:kind==='try'&&this.playerFittingRoom!==undefined,startTime:performance.now(),riderAngle:this.carousel?.ride.rotation.y||0,...extra};if(kind==='try'&&isVerifiedFrame(extra.previewProduct))this.action.restoreHands=stowHandhelds(this.player);if(kind==='read'){this.action.readCameraOffset=portraitOffset({...this.layout,spawn:{x:this.avatar.x,y:this.avatar.y}});this.player.rotation.y=Math.atan2(this.action.readCameraOffset[0],this.action.readCameraOffset[1]);}if(['drink','eat','icecream','tea'].includes(kind))this.player.rotation.y=extra.seat?.rotation||0;if(['wrap','write','prepare','read','flowers','drink','eat','icecream','tea','collectible','ceramic','storage','fragrance','brush'].includes(kind))this.action.restoreHands=stowHandhelds(this.player);if(['ceramic','storage','fragrance','brush','wrap','write'].includes(kind)){applyCharacterPose(this.player,{kind:'',time:0,delta:0,reducedMotion:true});this.player.updateMatrixWorld(true);this.action.ceramicRest=this.player.userData.limbs.slice(0,2).map(a=>this.player.worldToLocal(a.userData.grip.getWorldPosition(new T.Vector3())).clone());this.action.ceramicCameraOffset=this.layout?.nav?portraitOffset({...this.layout,spawn:{x:this.avatar.x,y:this.avatar.y}}):[30,90];}this.canvas.dataset.animation=kind;}
+ animate(kind,done,extra={}){document.querySelector('#scene-location details')?.removeAttribute('open');this.keys.clear();this.touchVector=null;this.touchDirection=null;this.path=[];this.destination=null;if(kind==='rest'&&this.restSeat&&Math.hypot(this.restSeat.x-this.avatar.x,this.restSeat.y-this.avatar.y)<75){extra.seat={...this.restSeat};this.restSeat=null;}if(this.inside){const st=STORES.find(s=>s.id===this.inside);if(isServiceStore(st)&&['rest','cinema'].includes(kind)||st.businessKind==='food'&&['eat','drink','icecream'].includes(kind))extra.seat={x:600,y:630,bench:true,height:15};}if(kind==='try'&&extra.previewProduct){this.refreshPlayer(extra.previewProduct);this.canvas.dataset.previewProduct=extra.previewProduct.id;this.fittingSprites=[];this.scene.traverse(o=>{if(o.isSprite)this.fittingSprites.push([o,o.visible]);});}this.canvas.closest?.('.map-stage')?.classList?.toggle('fitting-scene',kind==='try');this.action={kind,done,hold:kind==='try'&&this.playerFittingRoom!==undefined,startTime:performance.now(),riderAngle:this.carousel?.ride.rotation.y||0,...extra};if(kind==='try'&&isVerifiedFrame(extra.previewProduct)){this.action.restoreHands=stowHandhelds(this.player);applyCharacterPose(this.player,{kind:'',time:0,delta:0,reducedMotion:true});this.player.updateMatrixWorld(true);this.action.ceramicRest=this.player.userData.limbs.slice(0,2).map(a=>this.player.worldToLocal(a.userData.grip.getWorldPosition(new T.Vector3())).clone());}if(kind==='read'){this.action.readCameraOffset=portraitOffset({...this.layout,spawn:{x:this.avatar.x,y:this.avatar.y}});this.player.rotation.y=Math.atan2(this.action.readCameraOffset[0],this.action.readCameraOffset[1]);}if(['drink','eat','icecream','tea'].includes(kind))this.player.rotation.y=extra.seat?.rotation||0;if(['wrap','write','prepare','read','flowers','drink','eat','icecream','tea','collectible','ceramic','storage','fragrance','brush'].includes(kind))this.action.restoreHands=stowHandhelds(this.player);if(['ceramic','storage','fragrance','brush','wrap','write'].includes(kind)){applyCharacterPose(this.player,{kind:'',time:0,delta:0,reducedMotion:true});this.player.updateMatrixWorld(true);this.action.ceramicRest=this.player.userData.limbs.slice(0,2).map(a=>this.player.worldToLocal(a.userData.grip.getWorldPosition(new T.Vector3())).clone());this.action.ceramicCameraOffset=this.layout?.nav?portraitOffset({...this.layout,spawn:{x:this.avatar.x,y:this.avatar.y}}):[30,90];}this.canvas.dataset.animation=kind;}
  finishAnimation(){const action=this.action;if(!action)return;this.action=null;restoreInspectionActors(this);action.restoreHands?.();this.canvas.closest?.('.map-stage')?.classList?.remove('fitting-scene');this.player.position.y=0;for(const limb of this.player.userData.limbs)limb.rotation.x=0;if(this.prop){const owned=new Set();this.prop.traverse(o=>{if(o.geometry)owned.add(o.geometry);for(const m of Array.isArray(o.material)?o.material:o.material?[o.material]:[]){owned.add(m);if(['collectible','ceramic','storage','fragrance','brush'].includes(action.kind))for(const key of ['map','bumpMap','roughnessMap'])if(m[key])owned.add(m[key]);}});for(const r of owned)if(this.resources?.has(r)){r.dispose?.();this.resources.delete(r);}this.prop.removeFromParent();this.prop=null;}if(action.kind==='try'&&action.previewProduct){for(const [sprite,visible]of this.fittingSprites||[])sprite.visible=visible;this.fittingSprites=[];this.refreshPlayer();delete this.canvas.dataset.previewProduct;}delete this.canvas.dataset.animation;delete this.canvas.dataset.flowerGesture;delete this.canvas.dataset.collectibleTurn;delete this.canvas.dataset.wrapFold;delete this.canvas.dataset.writingReach;delete this.canvas.dataset.ceramicTurn;delete this.canvas.dataset.ceramicReach;delete this.canvas.dataset.consumptionLift;delete this.canvas.dataset.teaCupBase;delete this.canvas.dataset.bookPageTurn;delete this.canvas.dataset.bookPreviewISBN;delete this.canvas.dataset.frameAdjustment;delete this.canvas.dataset.fittingYaw;delete this.canvas.dataset.framePreviewProduct;if(action.kind==='try'&&this.inside&&this.playerFittingRoom!==undefined){if(!this.skipFittingReturn){this.fittingExitPending=action.done;this.navigate(this.layout.services.fitting,{fittingExit:true});return;}Object.assign(this.avatar,this.layout.services.fitting);delete this.playerFittingRoom;}action.done?.();}
- animatePose(){const a=this.action;if(!a)return;const elapsed=(performance.now()-a.startTime)/1000;if(a.kind==='try'&&isVerifiedWatch(a.previewProduct)){a.watchElapsed=elapsed;this.canvas.dataset.watchInspection=watchGesture(elapsed,this.state.preferences.reducedMotion).toFixed(3);this.canvas.dataset.watchPreviewProduct=a.previewProduct.id;}if(a.kind==='try'&&isVerifiedFrame(a.previewProduct)){a.frameElapsed=elapsed;this.canvas.dataset.frameAdjustment=frameGesture(elapsed,this.state.preferences.reducedMotion).toFixed(3);this.canvas.dataset.framePreviewProduct=a.previewProduct.id;}if(this.canvas&&Math.floor(elapsed*4)!==a.telemetryFrame){a.telemetryFrame=Math.floor(elapsed*4);this.canvas.dataset.animationElapsed=elapsed.toFixed(2);}const duration=['rest','eat','drink','icecream','tea','wrap','read','flowers'].includes(a.kind)?8:4.5,t=Math.min(1,elapsed/(this.state.preferences.reducedMotion?.35:duration)),limbs=this.player.userData.limbs;
+ animatePose(){const a=this.action;if(!a)return;const elapsed=(performance.now()-a.startTime)/1000;if(a.kind==='try'&&isVerifiedWatch(a.previewProduct)){a.watchElapsed=elapsed;this.canvas.dataset.watchInspection=watchGesture(elapsed,this.state.preferences.reducedMotion).toFixed(3);this.canvas.dataset.watchPreviewProduct=a.previewProduct.id;}if(a.kind==='try'&&isVerifiedFrame(a.previewProduct)){a.frameElapsed=elapsed;a.ceramicPose=framePose(elapsed,this.state.preferences.reducedMotion,a.ceramicRest);this.canvas.dataset.frameAdjustment=frameGesture(elapsed,this.state.preferences.reducedMotion).toFixed(3);this.canvas.dataset.framePreviewProduct=a.previewProduct.id;}if(this.canvas&&Math.floor(elapsed*4)!==a.telemetryFrame){a.telemetryFrame=Math.floor(elapsed*4);this.canvas.dataset.animationElapsed=elapsed.toFixed(2);}const duration=['rest','eat','drink','icecream','tea','wrap','read','flowers'].includes(a.kind)?8:4.5,t=Math.min(1,elapsed/(this.state.preferences.reducedMotion?.35:duration)),limbs=this.player.userData.limbs;
   if(a.kind==='escalator'){const r=a.escalator||this.layout.escalator,x=r.x+r.width/2,up=a.up===true,z0=r.y+(up?90:10),z1=r.y+(up?10:90),approach=Math.min(1,t/.18),ride=Math.max(0,(t-.18)/.82);this.player.position.set(a.start.x+(x-a.start.x)*approach,up?42*ride:42*approach*(1-ride),t<.18?a.start.y+(z0-a.start.y)*approach:z0+(z1-z0)*ride);this.player.rotation.y=up?Math.PI:0;}
   else if(a.kind==='bridge'){const b=this.layout.venues.find(v=>v.id==='bridge');this.player.position.set(b.x+15+t*(b.width-30),4,b.y+b.height/2);this.player.rotation.y=Math.PI/2;limbs.forEach((p,i)=>p.rotation.x=Math.sin(elapsed*8)*.6*(i%2?1:-1));}
   else if(a.kind==='artwalk'){this.player.rotation.y=Math.PI/4;limbs[1].rotation.x=-1.1+Math.sin(elapsed*2)*.1;}

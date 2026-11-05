@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "55.0.0",
+  "release": "56.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2027,
-  "uniqueRuntimePhotoFiles": 2005,
+  "runtimePhotoEntries": 2029,
+  "uniqueRuntimePhotoFiles": 2007,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19977,6 +19977,26 @@
       "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728387&color=480&size=M",
       "imageUrl": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dwff4b3456/images/2025/1V023108_480_LD_0015_F.jpg?sw=864&strip=false",
       "description": "Lived-In Tee — exact Nautical Navy photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v56-real-jins-MUF-24A-069-58",
+      "path": "assets/photos/v56-real-jins-MUF-24A-069-58.webp",
+      "sha256": "ba728285d1b9ba983476effd84823d8e4588049967b4b2d7f527661a89968026",
+      "source": "https://us.jins.com/products/airframe-flat-069-58",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/MUF-24A-069_58_01.jpg?v=1771986223",
+      "description": "Airframe Flat 069 58 in Blue — exact official selected-frame angle photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v56-real-jins-UMF-24A-073-196",
+      "path": "assets/photos/v56-real-jins-UMF-24A-073-196.webp",
+      "sha256": "1f800b50d46e0e621c6566d8811df223383ef16458949eb69e02c21c02304ae7",
+      "source": "https://us.jins.com/products/modern-rim-metal-073-196",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0562/8903/4283/files/UMF-24A-073_196_01.jpg?v=1771986337",
+      "description": "Modern Rim Metal 073 196 in Silver — exact official selected-frame angle photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

@@ -1,6 +1,6 @@
 import {isBrush} from './brush-tools.js?v=54.0.0';
-import {createStudioStudies} from './studio-study.js?v=55.0.0';
-export {supportsMaterialStudy} from './studio-study.js?v=55.0.0';
+import {createStudioStudies} from './studio-study.js?v=56.0.0';
+export {supportsMaterialStudy} from './studio-study.js?v=56.0.0';
 import {referenceSize} from './verified-sizing.js?v=45.0.0';
 import {createShoppingPlans,PLAN_BUDGETS,PLAN_LIMIT,isPlanningStore} from './shopping-plans.js?v=36.0.0';
 export {PLAN_BUDGETS,PLAN_LIMIT,isPlanningStore};
@@ -18,7 +18,7 @@ import {createCompanionLife} from './companion-life.js?v=30.0.0';
 export {COMPANION_ACTIVITIES} from './companion-content.js?v=30.0.0';
 import {createOutingPlanner} from './trip-planner.js?v=24.0.0';
 import {merchantIdentity} from './merchant-identity.js?v=23.0.0';
-import {isServiceStore} from './playable-stores.js?v=55.0.0';
+import {isServiceStore} from './playable-stores.js?v=56.0.0';
 import {serviceMenu} from './store-services.js?v=23.0.0';
 export {isServiceStore,serviceMenu};
 import {STYLE_BRIEFS,LOCAL_TOPICS,FRIEND_STORIES,FLOWER_STEMS,FLOWER_BRIEFS,TEA_RECIPES,CINEMA_SHORTS,PHOTO_FRAMES,PHOTO_POSES} from './life-content.js?v=26.0.0';
@@ -27,11 +27,11 @@ export {LOCALS,momentStatus};
 import {FLOORPLANS,planFor} from './mall-plans.js?v=23.0.0';
 import {storeFloor} from './map-layout.js?v=36.0.0';
 export {FLOORPLANS,planFor,storeFloor};
-import {MALLS,mallById,storeUnlock,SLOT_NAMES,slotForProduct} from './malls.js?v=23.0.0';
+import {MALLS,mallById,storeUnlock,SLOT_NAMES,slotForProduct} from './malls.js?v=56.0.0';
 export {MALLS,mallById,SLOT_NAMES,slotForProduct};
 import {ACTIVITIES,CALENDAR,ERRANDS} from './experiences.js?v=23.0.0';
 export {ACTIVITIES,CALENDAR,ERRANDS};
-import {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore,ARCHIVED_PRODUCTS} from './catalog.js?v=55.0.0';
+import {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore,ARCHIVED_PRODUCTS} from './catalog.js?v=56.0.0';
 export {PRODUCTS,STORES,CHECKED_ON,DISTRICTS,VENUES,POPUPS,UNIQUE_MODELS,CORE_STORES,productsForStore};
 export const TAX=.0825, OPEN=600, CLOSE=1200;
 STORES.forEach(st=>st.tier=storeUnlock(st.id));
@@ -127,8 +127,8 @@ export function eat(s,id){const food=[...FOOD,...COFFEE_MENU].find(f=>f.id===id)
 export function rest(s){canAct(s,30,0,{care:true});advance(s,30);s.energy=Math.min(100,s.energy+38);s.metrics.rests++;progress(s,'rest',String(s.metrics.rests));communityStories.event(s,'rest','rest');return true;}
 export const coffee=s=>eat(s,'coffee');
 export function appointment(s){if(levelOf(s)<9)throw Error('Styling appointments unlock at Level 10.');if(s.appointmentDay===s.day)throw Error('You have already had a styling appointment today.');act(s,35,5);s.appointmentDay=s.day;s.metrics.appointments++;addXP(s,20);return true;}
-export const canTry=p=>p?.audience!=='child'&&['shirt','hoodie','cardigan','jacket','shorts','pants','shoes','sandals','bag','crossbody','backpack','duffel','wallet','belt','digitalwatch','bracelet','scarf','hat','necklace','earrings','ring','watch','sunglasses'].includes(p.type);
-export const categoryOf=p=>['food','drink'].includes(p.type)?'Food & drinks':['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type)?'Clothing':['shoes','sandals'].includes(p.type)?'Footwear':['bag','backpack','crossbody','duffel','wallet','belt','digitalwatch','bracelet','scarf','hat','necklace','earrings','ring','watch','sunglasses'].includes(p.type)?'Bags & accessories':['perfume','skincare','lipstick','makeup','mascara','hairbrush'].includes(p.type)?'Beauty':['earbuds','headphones','speaker','tracker','stylus','mouse','keyboard','charger','cable'].includes(p.type)?'Tech':'Hobbies & home';
+export const canTry=p=>p?.audience!=='child'&&['shirt','hoodie','cardigan','jacket','shorts','pants','shoes','sandals','bag','crossbody','backpack','duffel','wallet','belt','digitalwatch','bracelet','scarf','hat','necklace','earrings','ring','watch','sunglasses','eyeglasses'].includes(p.type);
+export const categoryOf=p=>['food','drink'].includes(p.type)?'Food & drinks':['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type)?'Clothing':['shoes','sandals'].includes(p.type)?'Footwear':['bag','backpack','crossbody','duffel','wallet','belt','digitalwatch','bracelet','scarf','hat','necklace','earrings','ring','watch','sunglasses','eyeglasses'].includes(p.type)?'Bags & accessories':['perfume','skincare','lipstick','makeup','mascara','hairbrush'].includes(p.type)?'Beauty':['earbuds','headphones','speaker','tracker','stylus','mouse','keyboard','charger','cable'].includes(p.type)?'Tech':'Hobbies & home';
 export function demo(s,id){const p=byId(id);if(!p)throw Error('Product not found.');act(s,6,2);const known=p.type==='book'&&p.bookISBN?s.demos.some(seen=>byId(seen)?.bookISBN===p.bookISBN):s.demos.includes(id);if(!s.demos.includes(id)){s.demos.push(id);if(!known){s.metrics.demos++;addXP(s,10);}}progress(s,'demo',id);return {text:isBrush(p)?'You inspect the wooden brush, published dimensions, dark cushion and intentional ventilation opening. Hair, skin and treatment effects are not simulated.':p.fragranceProfile?.reviewed?'You inspect the closed bottle, selected volume and published notes. No spray, scent, refilling or skin suitability is simulated.':p.storageProfile?.reviewed?'You inspect an empty, closed box and check the selected SKU, exterior dimensions and opening type. Photograph contents are excluded; storage does not expand your game bag.':p.stationeryProfile?.reviewed?'You check the fixed notebook format, published cover, page count and binding. Sample pages are original Mallside art.':p.type==='book'?'You check this physical edition’s cover, author, publisher and ISBN. Full book text is not included.':p.type==='buildingtoy'?'You examine the real set model and try a short sample build.':categoryOf(p)==='Beauty'?'You explore a simulated tester and read the actual product identity. No real skin or fragrance recommendation is made.':'You try a simulated demonstration and check the real model before deciding.'};}
 export function travel(s,district){if(!DISTRICTS.some(d=>d.id===district))throw Error('District not found.');if(s.district!==district){canAct(s,3,0,{care:true});advance(s,3,1);s.metrics.travels++;s.district=district;s.avatar={u:4.4,v:4.1};}s.mapOverview=false;return district;}
 export function visitVenue(s,id){if(!VENUES.some(v=>v.id===id))throw Error('Location not found.');canAct(s,2,0,{care:true});advance(s,2,1);if(!s.venues.includes(id)){s.venues.push(id);addXP(s,8);}return true;}

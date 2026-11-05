@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2587 files** from Git-tracked paths and
+This catalog lists **2599 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from this repository’s
 `git ls-files --cached --others --exclude-standard` output; keep other projects separate.
@@ -13,10 +13,10 @@ Finder metadata are omitted. Refresh from this repository’s
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2295 |
-| [docs](../docs/) | 190 |
+| [dist](../dist/) | 2300 |
+| [docs](../docs/) | 196 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 63 |
+| [tests](../tests/) | 64 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## dist
 
 <details>
-<summary>2295 files</summary>
+<summary>2300 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2126,6 +2126,8 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/assets/photos/v54-real-aveda-ATL301.webp](../dist/assets/photos/v54-real-aveda-ATL301.webp)
 - [dist/assets/photos/v55-real-vv-1G013219-100.webp](../dist/assets/photos/v55-real-vv-1G013219-100.webp)
 - [dist/assets/photos/v55-real-vv-1V023108-480.webp](../dist/assets/photos/v55-real-vv-1V023108-480.webp)
+- [dist/assets/photos/v56-real-jins-MUF-24A-069-58.webp](../dist/assets/photos/v56-real-jins-MUF-24A-069-58.webp)
+- [dist/assets/photos/v56-real-jins-UMF-24A-073-196.webp](../dist/assets/photos/v56-real-jins-UMF-24A-073-196.webp)
 - [dist/assets/ross-x3.png](../dist/assets/ross-x3.png)
 - [dist/assets/round.jpg](../dist/assets/round.jpg)
 - [dist/assets/scarf.jpg](../dist/assets/scarf.jpg)
@@ -2155,6 +2157,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/catalog-original.js](../dist/catalog-original.js)
 - [dist/catalog-v6.js](../dist/catalog-v6.js)
 - [dist/catalog.js](../dist/catalog.js)
+- [dist/center-map-view.js](../dist/center-map-view.js)
 - [dist/ceramic-model.js](../dist/ceramic-model.js)
 - [dist/ceramic-studio.js](../dist/ceramic-studio.js)
 - [dist/ceramic-tools.js](../dist/ceramic-tools.js)
@@ -2246,6 +2249,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/neighborhood-life.js](../dist/neighborhood-life.js)
 - [dist/neighborhood-ui.js](../dist/neighborhood-ui.js)
 - [dist/notice-details.js](../dist/notice-details.js)
+- [dist/optical-studio.js](../dist/optical-studio.js)
 - [dist/outing-ui.js](../dist/outing-ui.js)
 - [dist/paper-studio.js](../dist/paper-studio.js)
 - [dist/photo-kiosk.js](../dist/photo-kiosk.js)
@@ -2324,6 +2328,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/store-product-additions-v53.js](../dist/store-product-additions-v53.js)
 - [dist/store-product-additions-v54.js](../dist/store-product-additions-v54.js)
 - [dist/store-product-additions-v55.js](../dist/store-product-additions-v55.js)
+- [dist/store-product-additions-v56.js](../dist/store-product-additions-v56.js)
 - [dist/store-product-seeds-v11.js](../dist/store-product-seeds-v11.js)
 - [dist/store-product-seeds.js](../dist/store-product-seeds.js)
 - [dist/store-services.js](../dist/store-services.js)
@@ -2356,7 +2361,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## docs
 
 <details>
-<summary>190 files</summary>
+<summary>196 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2394,6 +2399,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/GAMEPLAY-v53.md](../docs/GAMEPLAY-v53.md)
 - [docs/GAMEPLAY-v54.md](../docs/GAMEPLAY-v54.md)
 - [docs/GAMEPLAY-v55.md](../docs/GAMEPLAY-v55.md)
+- [docs/GAMEPLAY-v56.md](../docs/GAMEPLAY-v56.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2474,6 +2480,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/qa-v53.md](../docs/qa-v53.md)
 - [docs/qa-v54.md](../docs/qa-v54.md)
 - [docs/qa-v55.md](../docs/qa-v55.md)
+- [docs/qa-v56.md](../docs/qa-v56.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
@@ -2541,6 +2548,10 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/research-v55/compact-proof.json](../docs/research-v55/compact-proof.json)
 - [docs/research-v55/compatibility.json](../docs/research-v55/compatibility.json)
 - [docs/research-v55/merchant-records.json](../docs/research-v55/merchant-records.json)
+- [docs/research-v56/browser-proof.json](../docs/research-v56/browser-proof.json)
+- [docs/research-v56/compact-proof.json](../docs/research-v56/compact-proof.json)
+- [docs/research-v56/compatibility.json](../docs/research-v56/compatibility.json)
+- [docs/research-v56/merchant-records.json](../docs/research-v56/merchant-records.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2585,7 +2596,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## tests
 
 <details>
-<summary>63 files</summary>
+<summary>64 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2631,6 +2642,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/navigation.test.mjs](../tests/navigation.test.mjs)
 - [tests/neighborhood-v26.test.mjs](../tests/neighborhood-v26.test.mjs)
 - [tests/neighborhood-v27.test.mjs](../tests/neighborhood-v27.test.mjs)
+- [tests/optical-map-v56.test.mjs](../tests/optical-map-v56.test.mjs)
 - [tests/paper-v50.test.mjs](../tests/paper-v50.test.mjs)
 - [tests/places-v34.test.mjs](../tests/places-v34.test.mjs)
 - [tests/planning-v36.test.mjs](../tests/planning-v36.test.mjs)

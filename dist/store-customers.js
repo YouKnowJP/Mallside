@@ -1,6 +1,6 @@
 import {freeRoute,freeMove,closestFloor} from './free-navigation.js?v=25.0.0';
 import {stepToward} from './motion.js?v=34.0.0';
-import {slotForProduct} from './malls.js?v=23.0.0';
+import {slotForProduct} from './malls.js?v=56.0.0';
 
 const initial=['browse','try','queue','pay','compare','try','browse','leave'];
 export function createStoreCustomers(layout,products,count=8,{reservedRoom=null}={}){

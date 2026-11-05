@@ -1,5 +1,5 @@
 import * as T from './vendor/three.module.js';
-import {productAppearance} from './product-appearance.js?v=55.0.0';
+import {productAppearance} from './product-appearance.js?v=56.0.0';
 
 export const isVerifiedPlush=p=>p?.type==='plush'&&p.plushProfile?.reviewed===true;
 // Original solid interpretations of the four photographed collectibles. Not measured replicas.

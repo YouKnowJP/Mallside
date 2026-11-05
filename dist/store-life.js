@@ -2,12 +2,12 @@ import {curtainWidth} from './fitting-motion.js?v=41.0.0';
 import {staffGesture,staffTarget} from './staff-motion.js?v=37.0.0';
 import {turnToward} from './motion.js?v=34.0.0';
 import {adultAppearance} from './mall-atmosphere.js?v=33.0.0';
-import {attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=55.0.0';
-import {physicalProduct} from './merchandise-3d.js?v=55.0.0';
-import {applyCharacterPose,solveArmToGrip} from './character-rig.js?v=55.0.0';
+import {attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=56.0.0';
+import {physicalProduct} from './merchandise-3d.js?v=56.0.0';
+import {applyCharacterPose,solveArmToGrip} from './character-rig.js?v=56.0.0';
 import * as T from './vendor/three.module.js';
-import {createStoreCustomers,updateStoreCustomers,customerActivity} from './store-customers.js?v=37.0.0';
-import {slotForProduct} from './malls.js?v=23.0.0';
+import {createStoreCustomers,updateStoreCustomers,customerActivity} from './store-customers.js?v=56.0.0';
+import {slotForProduct} from './malls.js?v=56.0.0';
 
 const colors=['#bf8b71','#638a84','#a890ab','#c0ab6d','#7e93b1','#b76e66','#8b9a6e','#988674'];
 export function buildStoreLife(w,store){

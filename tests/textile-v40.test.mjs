@@ -34,8 +34,8 @@ test('eight official selected-color records keep their exact price, source label
 });
 
 test('eight unfinished shops gain their own four models while every earlier active product ID remains compatible',()=>{
- assert.equal(shops.length,8);assert.equal(shops.reduce((n,s)=>n+s.count,0),32);assert.equal(E.PRODUCTS.length,8854);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1081);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,384);assert.equal(E.STORES.filter(E.isPlanningStore).length,293);assert.equal(E.STORES.filter(hasCollectionDesk).length,67);
- const old=E.PRODUCTS.filter(p=>!/^v(?:40|42|43|44|45|46|47|48|49|50|51|53|54|55)-real-/.test(p.modelId||'')).map(p=>p.id).sort();assert.equal(old.length,evidence.previousCatalog.count);assert.equal(createHash('sha256').update(old.join('\n')).digest('hex'),evidence.previousCatalog.sortedProductIdsSHA256);
+ assert.equal(shops.length,8);assert.equal(shops.reduce((n,s)=>n+s.count,0),32);assert.equal(E.PRODUCTS.length,8856);assert.equal(E.STORES.filter(s=>s.catalogStatus==='verified').length,1082);assert.equal(E.STORES.filter(s=>s.catalogStatus==='pending').length,383);assert.equal(E.STORES.filter(E.isPlanningStore).length,292);assert.equal(E.STORES.filter(hasCollectionDesk).length,68);
+ const old=E.PRODUCTS.filter(p=>!/^v(?:40|42|43|44|45|46|47|48|49|50|51|53|54|55|56)-real-/.test(p.modelId||'')).map(p=>p.id).sort();assert.equal(old.length,evidence.previousCatalog.count);assert.equal(createHash('sha256').update(old.join('\n')).digest('hex'),evidence.previousCatalog.sortedProductIdsSHA256);
  for(const s of shops){assert.equal(s.businessKind,'apparel');assert.equal(collectionProducts(s).length,4);assert.ok(s.products.every(p=>p.brand===s.name&&p.store===s.id&&p.modelId.startsWith('v40-real-')));}
  assert.ok(E.PRODUCTS.filter(p=>p.modelId?.startsWith('v40-real-')).every(p=>shops.some(s=>s.id===p.store)));
 });

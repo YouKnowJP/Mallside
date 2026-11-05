@@ -1,5 +1,5 @@
 import {detailBoxes} from './detail-instances.js?v=47.0.0';
-import {updateStudioStudy} from './studio-details.js?v=55.0.0';
+import {updateStudioStudy} from './studio-details.js?v=56.0.0';
 
 // Original comparison trays and seam samples occupy the existing source-desk and rail.
 export function buildCollectibleStudio(w,st,style){

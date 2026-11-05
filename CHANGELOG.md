@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 56.0.0 · 5 November 2026
+
+- Stock JINS Eyewear with two selected clear optical frames, exact source widths, dimensions and reviewed photos.
+- Furnish original optical casework and free source notes; retain all established shop and save flows.
+- Add amenities, readable labels, zoom, pan and keyboard focus reveal to every floor map.
+- Smooth frame-fitting lift/lower from actual resting hands and prevent duplicate geometry disposal on room changes.
+- Reveal and focus the collection room after choosing a preset destination, keeping the walk visible and keyboard controls ready.
+- Preserve all prior complete products, palette values, identities, schema 6 and map revision 10. See [gameplay](docs/GAMEPLAY-v56.md) and [QA](docs/qa-v56.md).
+
 ## 55.0.0 · 5 November 2026
 
 - Stock Vineyard Vines at Century City with two exact selected-color garments, reviewed photos and source XS–XXL variants.

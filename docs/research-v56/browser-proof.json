@@ -1,0 +1,399 @@
+{
+  "version": "56.0.0",
+  "bundle": "app-VWYWZOWP.js",
+  "sourceCommitAtTesting": "0acc1700ee4476816f403e8f717239728337da84",
+  "sourceFiles": 2300,
+  "publicFiles": 2072,
+  "sourceTreeSHA256": "5cd81718eac5c4fa49f6ed074966dfd48cc22206beed9d114b0148725fa8a4b2",
+  "publicTreeSHA256": "0aed2eff266ee1e25d23f7ae9acf929cc7b35fd93986ce51ee69cc449efdc645",
+  "treeHashFormat": "SHA256 of compact JSON sorted relative-path-to-file-SHA256 maps",
+  "nativeRunnerSHA256": "3d85bf001b5e9d81ff7e16d39cbb3e2af1ec1d0816c5bccf08c4b7ac8be0d19a",
+  "matrixRunnerSHA256": "a88e8223c6db1bbc26c7b14c59456f2beaf048c168d52d9fc851ae4f16cc0ab4",
+  "scope": {
+    "availableScenarios": 99,
+    "selectedScenarios": 18,
+    "selectedPattern": "^(v56 |v55 |v54 detailed|v39 optical|v39 public|v41 physical|v36 budgeted|v52 free room|v52 native floor|3D shop entry|keyboard walking|browse, choose|full viewport|phone/tablet layouts)",
+    "description": "All three new scenarios, affected optical fitting, map/planning/studio/collection-room flows, v55 regression and core walking, shop, fullscreen and compact controls. A selected18-scenario suite, not the full99-scenario matrix."
+  },
+  "clocksAndVisibility": "Real; no overrides",
+  "budgets": {
+    "wait": 120000,
+    "pageLoad": 120000,
+    "protocol": 150000
+  },
+  "browsers": {
+    "firefox": {
+      "browserVersion": "159.0.1",
+      "scenarios": 18,
+      "checks": 19,
+      "sessions": 18,
+      "isolation": "fresh-session",
+      "headless": true,
+      "sessionCaseLimit": 1,
+      "errors": 0,
+      "warnings": 0,
+      "retries": 0,
+      "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+      "cases": [
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "ms": 26587,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "96567818fe415f15"
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "ms": 10904,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "909fd7114670e0e8"
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "ms": 17211,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "71ec51e7fbd1e506"
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "ms": 17949,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "522a67e464de6b76"
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "ms": 8617,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "8901dbb13d90103f"
+        },
+        {
+          "name": "v36 budgeted shortlist, focus, persistence and route to the actual product shop",
+          "ms": 37124,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "c0f91a760ff2eeb5"
+        },
+        {
+          "name": "v41 physical material studios, preview rollback, saved finishes and compatible reload",
+          "ms": 111193,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "628c47af80c8cf61"
+        },
+        {
+          "name": "v39 optical studio, exact width, smooth frame fitting, checkout and refund",
+          "ms": 38221,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "787ba7a829be849c"
+        },
+        {
+          "name": "v39 public garden, compact frame widths and starting price, old notes and pinned shop controls",
+          "ms": 43342,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "a43f0edfe8069e17"
+        },
+        {
+          "name": "v52 free room walking, collision-safe stops, keyboard shelf use, memories and daily window pause",
+          "ms": 17188,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "ceba4123c5b912c1"
+        },
+        {
+          "name": "v52 native floor and furniture clicks, cancelled routes, reduced motion and owned shelf persistence",
+          "ms": 36483,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "9bb412e63042dab8"
+        },
+        {
+          "name": "v54 detailed directory kiosks, free nearby guide, real water route, saved plans and stocked-shop entry",
+          "ms": 18163,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "20615dbf3b7ab838"
+        },
+        {
+          "name": "v55 Vineyard Vines exact colors and alpha sizes, retained studio, fitting, reload and exact refunds",
+          "ms": 69935,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "678653c6d6a9d324"
+        },
+        {
+          "name": "v55 sculpture previews are free, coordinated sketching, kept framed choice and notebook reload",
+          "ms": 59634,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "f30b6469da73419f"
+        },
+        {
+          "name": "v55 compact clothing and sculpture controls, reduced motion, free studies and lighter exits",
+          "ms": 9021,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "6e7f837f99d3506a"
+        },
+        {
+          "name": "v56 JINS optical dimensions, retained studio, clear frame fitting, reload and exact refunds",
+          "ms": 52946,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "5ea21c3a45dca0e7"
+        },
+        {
+          "name": "v56 floor-map zoom, pan, keyboard destination reveal, free state and actual mapped rest route",
+          "ms": 9223,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "c162d2ee6d6ad815"
+        },
+        {
+          "name": "v56 compact optical notebook and map controls retain touch targets, free views and direct lighter exits",
+          "ms": 6717,
+          "fingerprint": "aa584f2bf356a7ba4d87d5f90a34800c778c03e6f3392a6f153f105b8f9c9a5f",
+          "sessionHash": "4ea811f995e171e9"
+        }
+      ],
+      "removedProfiles": [
+        {
+          "pathSHA256": "ad653d1ad5d7bb6c832d952bcf054a78fe0e5e3b60cfec70f0065bb30e21908a",
+          "removed": true
+        },
+        {
+          "pathSHA256": "aebae8d4a4af5da6b3d19ed60748b5d6259765ad2f829bd3b8ed7bcff737d3ab",
+          "removed": true
+        },
+        {
+          "pathSHA256": "48ba6af9d06260bc6a37b3c1edbcb0f72d97bfb69090bdf17599a0da536d950e",
+          "removed": true
+        },
+        {
+          "pathSHA256": "25a39a89071ed3362f436756d20f3bb853578c96c58ca4f182309cfdc6ecd5a9",
+          "removed": true
+        },
+        {
+          "pathSHA256": "4bec8d2a932fd13a0a5e3757fa69e1dc953178761062a67c4208e5803dbb96a0",
+          "removed": true
+        },
+        {
+          "pathSHA256": "5a7880c6eefb57febcf5f6cd8f0a453e19b9cb37748e7ee848d8c5f34daa3142",
+          "removed": true
+        },
+        {
+          "pathSHA256": "1cf55dc63581111633264c5d8c3e5eefad2104db88814bb441aa33f3f58e07e5",
+          "removed": true
+        },
+        {
+          "pathSHA256": "53d8c2fa30daff76e697d9b958793404203858cd8c974aed804fe5435fb89b2e",
+          "removed": true
+        },
+        {
+          "pathSHA256": "70dfdb0eab8cfc9c4517ef2c5d309e5f118d295476f97104671d2f3be1d5de67",
+          "removed": true
+        },
+        {
+          "pathSHA256": "39ae2443e41f5ee03445745935ad93b4f47e69519327c2060ecc383a59efb029",
+          "removed": true
+        },
+        {
+          "pathSHA256": "c04dabcc74ec7ca796fb5db51fe5e427a30b8a72d09c7e7c0804d7f5d3372ecd",
+          "removed": true
+        },
+        {
+          "pathSHA256": "13f9df412ead1a2212f8b604d324c8cb09bd79a37783b5c4c6e967901d2b3a63",
+          "removed": true
+        },
+        {
+          "pathSHA256": "ae800b1aedc6af96680be836b942de8cb2e7e348c59a94d6658437005e85fb5c",
+          "removed": true
+        },
+        {
+          "pathSHA256": "e99df2308557c9d00530d2e19f2497c69bd1b813f5680fed476b922f34ad91ac",
+          "removed": true
+        },
+        {
+          "pathSHA256": "9b9d314e8230d6a5c3e7ac6af87f4ae9fb546c367b491db421580bbdbae05bb8",
+          "removed": true
+        },
+        {
+          "pathSHA256": "55a264ec12fe8cfc7abb1ff0c7869db7b189fd485b19be148df3d9ec28cc9648",
+          "removed": true
+        },
+        {
+          "pathSHA256": "afd551b5e3880722869ba3944738e1da9a86692729e2dd515172f75a99c00729",
+          "removed": true
+        },
+        {
+          "pathSHA256": "ad749e5a01cbeb18aa5678d002d40ab0cccaf96fa795c3dc0a8cd8354ab0170a",
+          "removed": true
+        }
+      ],
+      "rawSummarySHA256": "0603165cefc6362e39e80f64f049cddb7a4f7a6a347f0b637478f4c6474ab2dc",
+      "allRetainedReportsMatchFrozenCandidate": true
+    },
+    "safari": {
+      "browserVersion": "26.6.2",
+      "scenarios": 18,
+      "checks": 19,
+      "sessions": 1,
+      "isolation": "bounded-retained-window",
+      "headless": false,
+      "sessionCaseLimit": 18,
+      "errors": 0,
+      "warnings": 0,
+      "retries": 0,
+      "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+      "cases": [
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "ms": 15211,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "ms": 6872,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "ms": 14340,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "ms": 9802,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "ms": 5291,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v36 budgeted shortlist, focus, persistence and route to the actual product shop",
+          "ms": 33432,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v41 physical material studios, preview rollback, saved finishes and compatible reload",
+          "ms": 99669,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v39 optical studio, exact width, smooth frame fitting, checkout and refund",
+          "ms": 35293,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v39 public garden, compact frame widths and starting price, old notes and pinned shop controls",
+          "ms": 41020,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v52 free room walking, collision-safe stops, keyboard shelf use, memories and daily window pause",
+          "ms": 15990,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v52 native floor and furniture clicks, cancelled routes, reduced motion and owned shelf persistence",
+          "ms": 32379,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v54 detailed directory kiosks, free nearby guide, real water route, saved plans and stocked-shop entry",
+          "ms": 24439,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v55 Vineyard Vines exact colors and alpha sizes, retained studio, fitting, reload and exact refunds",
+          "ms": 106740,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v55 sculpture previews are free, coordinated sketching, kept framed choice and notebook reload",
+          "ms": 20059,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v55 compact clothing and sculpture controls, reduced motion, free studies and lighter exits",
+          "ms": 23103,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v56 JINS optical dimensions, retained studio, clear frame fitting, reload and exact refunds",
+          "ms": 51481,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v56 floor-map zoom, pan, keyboard destination reveal, free state and actual mapped rest route",
+          "ms": 30678,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        },
+        {
+          "name": "v56 compact optical notebook and map controls retain touch targets, free views and direct lighter exits",
+          "ms": 31263,
+          "fingerprint": "0885c88afd33f4f60a27928ee7bdff3a628907cc8e072823dcbb8b7ad8fa9b4a",
+          "sessionHash": "e1c95078175c5ee2"
+        }
+      ],
+      "removedProfiles": [],
+      "rawSummarySHA256": "ff1c0303da2849005e6a41106ac980de5ed2ab600c387d6f45dcf7ad4403c33a",
+      "allRetainedReportsMatchFrozenCandidate": true
+    }
+  },
+  "localTests": {
+    "tests": 718,
+    "pass": 718,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "newRegressions": 12,
+    "logSHA256": "d3bd06ed6a6cf75e3118c1fc0fe64737e45c1368431f11139680d4bc81089c0b"
+  },
+  "visualReviews": [
+    {
+      "browser": "safari",
+      "file": "safari-gameplay-v56-map-nearby.png",
+      "sha256": "f01970ff246d638612fb23201f88257570ab2a1c1fa21cae122da8fef85ac933",
+      "reviewed": true
+    },
+    {
+      "browser": "safari",
+      "file": "safari-gameplay-v56-fit-UMF-24A-073-196.png",
+      "sha256": "5ce80ff818dad7f8b398c7d045354989397af98ffe1436e05e6739b296a27088",
+      "reviewed": true
+    },
+    {
+      "browser": "safari",
+      "file": "safari-gameplay-v52-walkable-room.png",
+      "sha256": "150a0d16eca3943a38a4466b92a5bd20e6c087fec0b5e38ed1ee9cec60b5a6ea",
+      "reviewed": true
+    },
+    {
+      "browser": "firefox",
+      "file": "firefox-gameplay-v56-map-nearby.png",
+      "sha256": "429ef8f752af88bb9bef4c14a8d5ddee98e733e6da6e88c56f41ecbb90d69284",
+      "reviewed": true
+    },
+    {
+      "browser": "firefox",
+      "file": "firefox-gameplay-v56-fit-UMF-24A-073-196.png",
+      "sha256": "8b7edd59a40725cd3ba65f3ecb179a9d266653917337416c90fe07b2c1463d6c",
+      "reviewed": true
+    },
+    {
+      "browser": "firefox",
+      "file": "firefox-gameplay-v52-walkable-room.png",
+      "sha256": "00c92af6c98d5f1134adde9ec0c4e2154ef0eb21b03666f37238481a88a52fcb",
+      "reviewed": true
+    }
+  ]
+}

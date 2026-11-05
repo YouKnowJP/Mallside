@@ -1,5 +1,5 @@
-import {equippedLook} from './engine.js?v=55.0.0';
-import {paintPerson} from './sprites.js?v=34.0.0';
+import {equippedLook} from './engine.js?v=56.0.0';
+import {paintPerson} from './sprites.js?v=56.0.0';
 import {nightFrame} from './motion.js?v=34.0.0';
 export class HomeJourney{
  constructor(root,state,done){this.root=root;this.state=state;this.done=done;this.canvas=root.querySelector('canvas');this.ctx=this.canvas.getContext('2d');this.elapsed=0;this.last=0;this.alive=true;this.frame=t=>this.animate(t);requestAnimationFrame(this.frame);}

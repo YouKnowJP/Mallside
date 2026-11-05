@@ -1,11 +1,12 @@
 # Mallside documentation
 
-Current release: [v53 gameplay](GAMEPLAY-v53.md) and [v53 QA](qa-v53.md).
+Current release: [v56 gameplay](GAMEPLAY-v56.md) and [v56 QA](qa-v56.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Optical studio, readable floor maps and smoother frame fitting | [v56 guide](GAMEPLAY-v56.md), [primary evidence](research-v56/merchant-records.json), [v56 QA](qa-v56.md) |
 | Verified fragrance studio, coordinated bottle inspection and useful rest corners | [v53 guide](GAMEPLAY-v53.md), [source evidence](research-v53/catalog-evidence.json), [v53 QA](qa-v53.md) |
 | Free collection-room walking, usable furniture and equivalent shortcuts | [v52 guide](GAMEPLAY-v52.md), [v52 QA](qa-v52.md) |
 | Garden/storage studios, selected SKUs and coordinated gift folding | [v51 guide](GAMEPLAY-v51.md), [source evidence](research-v51/catalog-evidence.json), [v51 QA](qa-v51.md) |
@@ -51,7 +52,7 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 | Contribution and security reports | [Contributing](../CONTRIBUTING.md), [security](../SECURITY.md) |
 | Research/conversion tooling | [Scripts guide](../scripts/README.md) |
 
-## Current update · v55
+## Previous update · v55
 
 - [Coastal studio and sculpture studies](GAMEPLAY-v55.md)
 - [Release QA](qa-v55.md)
@@ -76,3 +77,10 @@ Versioned files are retained as historical evidence. Their counts and checks des
 - Catalog provenance: [v4 research](catalog-research-v4.md), [v6 price references](catalog-prices-v6.md), [v7 product links](product-links-v7.md), JSON records alongside them.
 
 Other versioned research and QA files remain alongside these documents. Raw researched images outside the repository are not reproduced merely because an old note mentions a temporary local path.
+
+## Current update · v56
+
+- [Optical studio and readable floor maps](GAMEPLAY-v56.md)
+- [Release QA](qa-v56.md)
+- [Primary merchant records](research-v56/merchant-records.json)
+- [Prior-catalog compatibility snapshot](research-v56/compatibility.json)

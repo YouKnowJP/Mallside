@@ -1,8 +1,8 @@
 import {isReadingProduct} from './book-tools.js?v=50.0.0';
 import * as T from './vendor/three.module.js';
-import {productAppearance} from './product-appearance.js?v=55.0.0';
-import {slotForProduct,money,price} from './engine.js?v=55.0.0';
-import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=55.0.0';
+import {productAppearance} from './product-appearance.js?v=56.0.0';
+import {slotForProduct,money,price} from './engine.js?v=56.0.0';
+import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=56.0.0';
 
 const clothes=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);

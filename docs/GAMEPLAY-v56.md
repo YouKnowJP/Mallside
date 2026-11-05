@@ -1,0 +1,17 @@
+# v56 · Optical studio and readable floor maps
+
+JINS Eyewear on Del Amo’s upper level moves from a research lounge to a stocked original optical studio. Two selected official US references were checked 5 November 2026: Airframe Flat 069 58 in Blue (MUF-24A-069-58, Extra-Wide) and Modern Rim Metal 073 196 in Silver (UMF-24A-073-196, Medium). Both dated base offers are $170 with standard clear lenses; paid lens upgrades, tints, other case choices, promotions, tax and shipping are excluded. Real branch inventory is not asserted. Game quantities, fitting, prices and returns remain simulated.
+
+The frames have distinct source-informed proportions, clear lenses, thin full rims, temples and integral or adjustable nose support. The Blue reference uses Ultem resin; the Silver alloy is unspecified. Exact selected-frame photographs remain available beside adapted original 3D models. No prescription is collected, and optical correction is not simulated. A free source notebook distinguishes lens width, bridge gap, temple length, lens height and total front width in millimetres. Source width labels are retained as published.
+
+Original timber casework, measuring cards, light-study rings and reading materials enrich the studio inside existing furniture footprints. Saved creative studies survive the transition from pending to stocked. Comparison, fitting, source notes, shortlists, carrying selections, checkout, eligible refunds, rest and direct exits use the established game systems.
+
+All 23 floor maps now show every existing venue alongside shops, courts, public discoveries and connections. Separate lettered badges keep amenities that share an adapted footprint selectable. Zoom up to 16×, pan, Whole floor and Find me controls are free and pause the clock. Court, amenity and discovery names use collision-aware placement with short callout lines where needed. Storefront names become visible on zoom; keyboard focus reveals offscreen destinations. Larger lists remain available for every destination. The current-position marker lets clicks pass through to destinations beneath it. These are views of the existing condensed game maps, not surveyed real-center geometry.
+
+Preset collection-room destinations bring the room back into view and focus its canvas, so walking remains visible and keyboard controls are ready without another click. Touch stepping keeps its existing stable controls.
+
+Frame-fitting hands now follow a smooth arc from their actual resting positions to the temples and back. Quintic joins stop gently without abrupt acceleration, and reduced motion holds a fixed pose. The arc avoids an unstable near-body arm solution. Scene teardown disposes each owned geometry once, including geometry shared by multiple objects.
+
+All 8,854 complete v55 product records, previous palette values and 1,598 shop identities remain intact. There are now 8,856 listings, 1,082 stocked identities, 133 services and 383 pending catalogs; 292 retail planning lounges remain. Save schema 6, map revision 10, economy and reward limits are unchanged. Further catalogs, mall geometry, spatial shared activities and physical mobile/accessibility testing remain on the roadmap.
+
+See [primary records](research-v56/merchant-records.json), [v55 compatibility snapshot](research-v56/compatibility.json) and [release QA](qa-v56.md). Photograph references establish provenance rather than blanket commercial permission.

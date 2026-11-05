@@ -1,5 +1,5 @@
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
-import {MALLS} from './malls.js?v=23.0.0';
+import {MALLS} from './malls.js?v=56.0.0';
 import {matchingTenant,gameStoreFloor,tenantFloor,normalizeName} from './campus-model.js?v=23.0.0';
 import {STORE_PRODUCT_SEEDS} from './store-product-seeds-v11.js?v=23.0.0';
 

@@ -12,14 +12,14 @@ export function paintPerson(c,x,y,{color='#b8ac86',appearance={},equipment={},pl
  round(-11,-37-b,22,25,4,player?top:color);if(pose==='celebrate')line(-13,-31-b,-24,-51-b,skin,6);else rect(-16,-33-b+arm*.5,6,20,skin);if(['wave','celebrate'].includes(pose))line(13,-31-b,24,-51-b,skin,6);else rect(10,-33-b-arm*.5,6,20,skin);
  if(equipment.belt){rect(-11,-17-b,22,4,equipment.belt.color);rect(-2,-18-b,6,6,'#d9b962');rect(0,-16-b,2,2,'#715a3c');}
  if(equipment.scarf){round(-9,-36-b,19,6,2,equipment.scarf.color);rect(4,-32-b,6,15,equipment.scarf.color);}
- if(equipment.jewelry&&equipment.jewelry.type!=='sunglasses'){line(-7,-34-b,0,-26-b,'#e3bd68',1.8);line(0,-26-b,7,-34-b,'#e3bd68',1.8);round(-2,-28-b,4,5,1,equipment.jewelry.color||'#edd389');}
+ if(equipment.jewelry&&!['sunglasses','eyeglasses'].includes(equipment.jewelry.type)){line(-7,-34-b,0,-26-b,'#e3bd68',1.8);line(0,-26-b,7,-34-b,'#e3bd68',1.8);round(-2,-28-b,4,5,1,equipment.jewelry.color||'#edd389');}
  if(equipment.watch)round(pose==='celebrate'?-26:-16,pose==='celebrate'?-50-b:-18-b+arm*.5,6,5,1,equipment.watch.color||'#d6bf7b');
  round(-9,-53-b,18,19,5,skin);round(-10,-56-b,20,9,4,hair);
  if(facing==='up')round(-10,-51-b,20,13,3,hair);
  else if(facing==='left'){rect(-11,-47-b,4,8,skin);rect(-7,-45-b,2,3,'#384139');rect(6,-51-b,4,13,hair);}
  else if(facing==='right'){rect(7,-47-b,4,8,skin);rect(5,-45-b,2,3,'#384139');rect(-10,-51-b,4,13,hair);}
  else{rect(-5,-45-b,2,pose==='rest'?1:3,'#384139');rect(4,-45-b,2,pose==='rest'?1:3,'#384139');rect(-10,-51-b,3,13,hair);}
- if(equipment.jewelry?.type==='sunglasses'&&facing!=='up'){round(-8,-47-b,7,5,1,'#344744');round(1,-47-b,7,5,1,'#344744');line(-1,-45-b,1,-45-b,'#8d7859',1);}
+ if(['sunglasses','eyeglasses'].includes(equipment.jewelry?.type)&&facing!=='up'){const optical=equipment.jewelry.type==='eyeglasses';for(const dx of[-8,1]){round(dx,-47-b,7,5,optical&&equipment.jewelry.frameProfile?.shape==='round'?2.4:1,optical?'rgba(210,228,222,.18)':'#344744');if(optical){c.strokeStyle=equipment.jewelry.color||'#536b70';c.lineWidth=.8;c.stroke();}}line(-1,-45-b,1,-45-b,optical?equipment.jewelry.color:'#8d7859',1);}
  if(equipment.hat){const col=equipment.hat.color||'#5f6e65';round(-12,-61-b,24,11,3,col);round(-16,-52-b,32,5,2,col);rect(-11,-53-b,22,2,'#ffffff44');}
  const bag=equipment.bag;if(bag){const col=bag.color||appearance.bag||'#bd743f';if(bag.type==='backpack'){if(facing==='up'){round(-14,-34-b,28,27,5,col);round(-10,-20-b,20,12,3,'#ffffff22');line(-8,-18-b,8,-18-b,'#e7d8b7',1);round(-5,-31-b,10,5,1,'#f2e3c4');}else{line(-8,-35-b,-6,-17-b,col,3);line(8,-35-b,6,-17-b,col,3);round(facing==='left'?-21:14,-29-b,8,24,3,col);}}
  else{if(bag.type==='crossbody'||/shoulder|crossbody/i.test(bag.name))line(-10,-36-b,17,-14-b,col,2.5);round(12,-18-b-arm*.4,17,16,bag.type==='duffel'?6:3,col);line(16,-17-b,17,-24-b,col,2);line(17,-24-b,24,-24-b,col,2);line(24,-24-b,25,-17-b,col,2);rect(19,-10-b,4,3,'#e9cc85');}}
