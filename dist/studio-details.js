@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {STUDY_PALETTES,studyFor,studioGroup} from './studio-study.js?v=56.0.0';
-import {surfaceTexture} from './scene-finish.js?v=33.0.0';
+import {surfaceTexture} from './scene-finish.js?v=57.0.0';
 
 // Joinery, tools and samples remain inside the lounge's reserved display/rail footprints.
 export function buildStudyStation(w,st,style,r){

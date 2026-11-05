@@ -2,9 +2,9 @@ import * as T from './vendor/three.module.js';
 import {ROOM_STYLES} from './home-life.js?v=26.0.0';
 import {owned,byId} from './engine.js?v=56.0.0';
 import {placeMerchandise} from './merchandise-3d.js?v=56.0.0';
-import {buildHomeDetails} from './home-details.js?v=53.0.0';
+import {buildHomeDetails} from './home-details.js?v=57.0.0';
 import {HOME_FURNITURE} from './home-navigation.js?v=53.0.0';
-import {beveledBox,surfaceTexture} from './scene-finish.js?v=33.0.0';
+import {beveledBox,surfaceTexture} from './scene-finish.js?v=57.0.0';
 export {HOME_STOPS,homeWalkRoute} from './home-navigation.js?v=53.0.0';
 // A small original room; every displayed product is an owned catalog purchase.
 export function buildCollectionRoom(w,state){

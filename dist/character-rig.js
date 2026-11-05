@@ -1,3 +1,4 @@
+import {addStarterTrousers} from './starter-trousers.js?v=57.0.0';
 import {wrappingPose} from './wrapping-tools.js?v=53.0.0';
 import {ceramicGesture,ceramicHold} from './ceramic-tools.js?v=53.0.0';
 import {collectibleGesture} from './collectible-tools.js?v=47.0.0';
@@ -11,7 +12,7 @@ import {createFrameModel} from './eyewear-model.js?v=56.0.0';
 import {frameGesture} from './eyewear-tools.js?v=56.0.0';
 import {readingGesture,readingHands} from './book-tools.js?v=50.0.0';
 import {locomotionWeight} from './motion.js?v=34.0.0';
-import {surfaceTexture} from './scene-finish.js?v=33.0.0';
+import {surfaceTexture} from './scene-finish.js?v=57.0.0';
 import {addHumanAnatomy,addStarterClothing,poseHumanHands,updateHumanFace} from './human-anatomy.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
 
@@ -29,12 +30,12 @@ function loft(rings,segments=32){const p=[],uv=[],idx=[];for(let r=0;r<rings.len
 export function createShopper(w,color,appearance={},equipment={},dress){
  appearance={...appearance,hairStyle:appearance.hairStyle||((parseInt(String(color).slice(-2),16)||0)%3===0?'bob':'short'),faceStyle:appearance.faceStyle||((parseInt(String(color).slice(-2),16)||0)%2?'defined':'natural')};
  const fabric=w.finishTextures?{bumpMap:surfaceTexture(w,'fabric',true),bumpScale:.018}:{};
- const g=new T.Group(),skin=w.mat(appearance.skin||'#d4a27d',{roughness:.68,envMapIntensity:.4}),base=w.mat(equipment.top?.color||color,{roughness:.92,...fabric}),pants=w.mat(equipment.bottom?.color||'#526775',{roughness:.94,...fabric}),shoeMat=w.mat(equipment.shoes?.color||'#e7e2d8');
+ const g=new T.Group(),skin=w.mat(appearance.skin||'#d4a27d',{roughness:.68,envMapIntensity:.4}),base=w.mat(equipment.top?.color||color,{roughness:.92,...fabric}),pants=w.mat(equipment.bottom?.color||'#526775',{roughness:.88,...(w.finishTextures?{bumpMap:surfaceTexture(w,'twill',true),bumpScale:.026,roughnessMap:surfaceTexture(w,'twill',true)}:fabric)}),shoeMat=w.mat(equipment.shoes?.color||'#e7e2d8');
  const mesh=(geo,mat,parent=g,x=0,y=0,z=0)=>{const m=w.mesh(geo,mat,parent);m.position.set(x,y,z);return m;},ellipse=(x,y,z,sx,sy,sz,mat,parent=g)=>{const m=mesh(new T.SphereGeometry(1,20,14),mat,parent,x,y,z);m.scale.set(sx,sy,sz);return m;};
  const headGroup=new T.Bone();headGroup.position.y=46.7;g.add(headGroup);const limbs=[];
  for(const sign of [-1,1]){const arm=new T.Bone();arm.position.set(sign*6.5,40.8,0);g.add(arm);const elbow=new T.Bone();elbow.position.y=-7.7;arm.add(elbow);const hand=new T.Bone();hand.position.y=-7.1;elbow.add(hand);const grip=new T.Group();grip.position.set(0,-2.4,.5);hand.add(grip);arm.userData={elbow,hand,grip,upperLength:7.7,lowerLength:7.1};limbs.push(arm);}
  for(const sign of [-1,1]){const leg=new T.Bone();leg.position.set(sign*2.7,25,0);g.add(leg);const knee=new T.Bone();knee.position.y=-12;leg.add(knee);const foot=new T.Bone();foot.position.y=-11;knee.add(foot);const shoe=ellipse(0,-.68,1.12,1.38,.92,2.75,shoeMat,foot);ellipse(0,-1.36,1.12,1.40,.24,2.8,w.mat('#f4efe4'),foot);for(let i=0;i<4;i++){const lace=mesh(new T.CapsuleGeometry(.055,1.6,2,6),w.mat('#f4f1e7'),foot,0,.1-i*.08,.2+i*.38);lace.rotation.z=Math.PI/2;}leg.userData={knee,foot,shoe,ankle:foot,upperLength:12,lowerLength:11};limbs.push(leg);}
- g.userData={limbs,rig:{...CHARACTER,profile:'adult-v23',headGroup,pose:{}}};addHumanAnatomy(w,g,appearance,{skin,base,pants,headGroup,limbs});if(!equipment.top)addStarterClothing(w,g,base);
+ g.userData={limbs,rig:{...CHARACTER,profile:'adult-v23',headGroup,pose:{}}};addHumanAnatomy(w,g,appearance,{skin,base,pants,headGroup,limbs});if(!equipment.bottom)addStarterTrousers(w,g,pants);if(!equipment.top)addStarterClothing(w,g,base);
  if(equipment.hat){g.userData.anatomy.meshes.get('hair').visible=false;ellipse(0,4.2,.1,2.9,1.4,3.05,w.mat(equipment.hat.color),headGroup);const brim=mesh(new T.CapsuleGeometry(.18,3.5,3,12),w.mat(equipment.hat.color),headGroup,0,3.6,3.15);brim.rotation.z=Math.PI/2;}
  if(equipment.belt){const m=mesh(new T.TorusGeometry(5.25,.28,6,32),w.mat(equipment.belt.color),g,0,26,0);m.rotation.x=Math.PI/2;m.scale.y=.6;}
  if(equipment.scarf){const m=mesh(new T.TorusGeometry(1.8,.55,8,24),w.mat(equipment.scarf.color),g,0,43.3,0);m.rotation.x=Math.PI/2;}

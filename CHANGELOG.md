@@ -2,6 +2,15 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 57.0.0 · 5 November 2026
+
+- Keep floating 3D names inside the scene, clear of the player and controls, with bounded counts and destination priority.
+- Add original rigged starter trousers, a continuous waist, pocket/fly stitching and tidier hems; replace them correctly with catalog outfits.
+- Keep seated dressing-room looks visible from the back with a low preview seat.
+- Differentiate shared wood/paint/metal casework and bevel larger nested fixture edges inside existing footprints.
+- Clear nearby prompts during activities and correct fitting and one-item bag feedback.
+- Preserve all 8,856 complete product records, 1,598 shop identities, photographs, schema 6 and map revision 10. See [gameplay](docs/GAMEPLAY-v57.md) and [QA](docs/qa-v57.md).
+
 ## 56.0.0 · 5 November 2026
 
 - Stock JINS Eyewear with two selected clear optical frames, exact source widths, dimensions and reviewed photos.

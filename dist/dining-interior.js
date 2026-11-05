@@ -1,4 +1,4 @@
-import {surfaceTexture} from './scene-finish.js?v=33.0.0';
+import {surfaceTexture} from './scene-finish.js?v=57.0.0';
 import {displayPoint} from './shop-interiors.js?v=56.0.0';
 // Original dining furniture stays inside the same reserved footprints as guide displays.
 export function buildDiningGallery(w,st,style,layout){

@@ -2,6 +2,15 @@
 
 Updated 5 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v57
+
+- Add projected containment, collision filtering, destination priority and stable bounded floating labels to the 3D scene.
+- Add original rigged starter trouser surfaces, a continuous waist, pocket/fly stitching and tidier hems, with correct catalog outfit replacement.
+- Keep seated outfit previews visible from the back and clear stale nearby/fitting/bag guidance.
+- Refine shared shop casework materials and larger nested fixture edges within their existing dimensions.
+- Preserve all catalog records, shop identities, photographs, schema 6, map revision 10 and economy rules.
+- See [v57 gameplay](docs/GAMEPLAY-v57.md), [compatibility](docs/research-v57/compatibility.json) and [QA](docs/qa-v57.md).
+
 ## Completed in v56
 
 - Stock JINS Eyewear at Del Amo with two exact selected optical frames, reviewed photographs, source widths and published dimensions.
@@ -280,7 +289,7 @@ Updated 5 November 2026. The game is playable and under active development; this
 
 - Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
 - Expand the freely walkable collection room with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
-- Continued camera, storefront, lighting, NPC behavior in long visits and character/fabric refinement, including original starter-trouser waist seams visible with cropped tops, and high-neck/sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
+- Continued camera, storefront, lighting, NPC behavior in long visits and character/fabric refinement, including store-crowd neighbor avoidance in long visits and high-neck/sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
 - Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, and broader accessibility verification. The desktop Safari/Firefox matrix is complete for the recorded versions.
 
 ## Catalog and mall fidelity

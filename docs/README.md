@@ -1,11 +1,12 @@
 # Mallside documentation
 
-Current release: [v56 gameplay](GAMEPLAY-v56.md) and [v56 QA](qa-v56.md).
+Current release: [v57 gameplay](GAMEPLAY-v57.md) and [v57 QA](qa-v57.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Clearer 3D scenes, finished starter trousers and visible seated outfits | [v57 guide](GAMEPLAY-v57.md), [compatibility](research-v57/compatibility.json), [v57 QA](qa-v57.md) |
 | Optical studio, readable floor maps and smoother frame fitting | [v56 guide](GAMEPLAY-v56.md), [primary evidence](research-v56/merchant-records.json), [v56 QA](qa-v56.md) |
 | Verified fragrance studio, coordinated bottle inspection and useful rest corners | [v53 guide](GAMEPLAY-v53.md), [source evidence](research-v53/catalog-evidence.json), [v53 QA](qa-v53.md) |
 | Free collection-room walking, usable furniture and equivalent shortcuts | [v52 guide](GAMEPLAY-v52.md), [v52 QA](qa-v52.md) |

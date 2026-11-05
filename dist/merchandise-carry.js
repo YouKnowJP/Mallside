@@ -1,4 +1,4 @@
-import {attachWornGarment,attachWornBag,attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=56.0.0';
+import {attachWornGarment,attachWornBag,attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=57.0.0';
 import * as T from './vendor/three.module.js';
 import {productAppearance} from './product-appearance.js?v=56.0.0';
 import {physicalProduct} from './merchandise-3d.js?v=56.0.0';

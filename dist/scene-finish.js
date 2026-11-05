@@ -28,8 +28,8 @@ export function beveledBox(width=1,height=1,depth=1,radius=Math.min(width,height
 export function surfaceTexture(w,kind='stone',dataOnly=false){
  w.finishTextures??=new Map();const key=kind+(dataOnly?'-data':'-color');if(w.finishTextures?.has(key))return w.finishTextures.get(key);
  const size=128,data=new Uint8Array(size*size*4);let seed=3301;
- for(let y=0;y<size;y++)for(let x=0;x<size;x++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const noise=(seed>>>24)/255,grain=kind==='fabric'?((x%4<2?.25:.6)+(y%4<2?.15:.4)):kind==='timber'?Math.sin(x*.32+Math.sin(y*.05)*2)*.5+.5:Math.sin(x*.035+y*.06+Math.sin(y*.07)*1.4)*.5+.5,value=Math.round(dataOnly?180+noise*42+grain*22:224+noise*15+grain*16);data.set([value,value,value,255],(y*size+x)*4);}
- const t=new T.DataTexture(data,size,size,T.RGBAFormat);t.colorSpace=dataOnly?T.NoColorSpace:T.SRGBColorSpace;t.wrapS=t.wrapT=T.RepeatWrapping;t.repeat.set(kind==='timber'?3:kind==='fabric'?1:8,kind==='timber'?3:kind==='fabric'?1:8);t.magFilter=T.LinearFilter;t.minFilter=T.LinearMipmapLinearFilter;t.generateMipmaps=true;t.needsUpdate=true;w.resources.add(t);w.finishTextures?.set(key,t);return t;
+ for(let y=0;y<size;y++)for(let x=0;x<size;x++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const noise=(seed>>>24)/255,grain=kind==='twill'?((x+y)%8<3?.75:.2)+(y%3===0?.15:0):kind==='fabric'?((x%4<2?.25:.6)+(y%4<2?.15:.4)):kind==='timber'?Math.sin(x*.32+Math.sin(y*.05)*2)*.5+.5:Math.sin(x*.035+y*.06+Math.sin(y*.07)*1.4)*.5+.5,value=Math.round(dataOnly?180+noise*42+grain*22:224+noise*15+grain*16);data.set([value,value,value,255],(y*size+x)*4);}
+ const t=new T.DataTexture(data,size,size,T.RGBAFormat);t.colorSpace=dataOnly?T.NoColorSpace:T.SRGBColorSpace;t.wrapS=t.wrapT=T.RepeatWrapping;t.repeat.set(kind==='timber'?3:['fabric','twill'].includes(kind)?1:8,kind==='timber'?3:['fabric','twill'].includes(kind)?1:8);t.magFilter=T.LinearFilter;t.minFilter=T.LinearMipmapLinearFilter;t.generateMipmaps=true;t.needsUpdate=true;w.resources.add(t);w.finishTextures?.set(key,t);return t;
 }
 export function cameraComposition(mode='promenade',inside=false,zoom=1){
  const z=Math.max(.5,Math.min(3,Number.isFinite(zoom)?zoom:1));

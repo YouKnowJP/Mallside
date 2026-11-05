@@ -1,4 +1,4 @@
-import {buildDirectoryKiosk} from './directory-kiosk.js?v=54.0.0';
+import {buildDirectoryKiosk} from './directory-kiosk.js?v=57.0.0';
 import {buildNoticeDetail} from './notice-details.js?v=50.0.0';
 import {buildWaterDetail} from './water-details.js?v=49.0.0';
 import {buildTeaLounge} from './tea-lounge.js?v=46.0.0';
@@ -9,7 +9,7 @@ import {buildReadingDetails} from './reading-details.js?v=42.0.0';
 import {buildMosaicStudy} from './mosaic-details.js?v=47.0.0';
 import {buildWaystationDetails} from './waystation-details.js?v=50.0.0';
 import {buildGardenStudy} from './garden-details.js?v=48.0.0';
-import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=33.0.0';
+import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=57.0.0';
 import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
 import {retailIdentity,drawRetailSign} from './retail-identity.js?v=49.0.0';
 import * as T from './vendor/three.module.js';

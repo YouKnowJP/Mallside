@@ -1,5 +1,5 @@
 import * as T from './vendor/three.module.js';
-import {beveledBox,surfaceTexture} from './scene-finish.js?v=33.0.0';
+import {beveledBox,surfaceTexture} from './scene-finish.js?v=57.0.0';
 // A narrow freestanding directory fits the unchanged 14×14 collision footprint.
 export function buildDirectoryKiosk(w,p,theme,texture){
  const root=new T.Group(),x=p.x+p.width/2,z=p.y+p.height/2;root.position.set(x,0,z);w.scene.add(root);

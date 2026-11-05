@@ -1,0 +1,345 @@
+{
+  "version": "57.0.0",
+  "bundle": "app-F2I6ZXTT.js",
+  "status": "passed",
+  "sourceCommitAtTesting": "e24aaf30ffaf4766f008ef4ba34cf388d9ed0843",
+  "sourceFiles": 2303,
+  "publicFiles": 2072,
+  "sourceTreeSHA256": "66884401fadeffd0e9a948a3e7a1512833eb07a9c8423ed1400f62c636a1e1ea",
+  "publicTreeSHA256": "e35153088aca6cb063fbc3150b231d143661ebd9f15bca497654a44586b1762f",
+  "nativeRunnerSHA256": "347adb73b1393ed602e1a3b03e0265505144a5967a5eaab7515b3bac1b56d9f2",
+  "matrixRunnerSHA256": "a88e8223c6db1bbc26c7b14c59456f2beaf048c168d52d9fc851ae4f16cc0ab4",
+  "scope": "18 selected scenarios from 102 available, plus strict error capture, in each browser; real clocks, visibility and native input remain active.",
+  "browsers": {
+    "firefox": {
+      "browserVersion": "159.0.1",
+      "scenarios": 18,
+      "checks": 19,
+      "sessions": 18,
+      "fingerprint": "b396a10ebec37fa3a63118819ce4829f1317836be7085aa6404f0cf6efd9eefb",
+      "isolation": "fresh-session",
+      "headless": true,
+      "budgets": {
+        "wait": 120000,
+        "pageLoad": 120000,
+        "protocol": 150000
+      },
+      "errors": [],
+      "resourceWarnings": [],
+      "inputRetries": [],
+      "profileRemovalsVerified": 18,
+      "results": [
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "status": "passed",
+          "sessionSHA256": "b161b21931ed890b6e6d4b9f04452c725fbe4c81d3b3eb384d48cc045c779dee",
+          "milliseconds": 7160
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "status": "passed",
+          "sessionSHA256": "b8864edc0fea7380de00d19594b4f45b2a412791f69b8bbc4d5f458685d561e4",
+          "milliseconds": 4117
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "status": "passed",
+          "sessionSHA256": "5b5e947255fa0925ea9e70ec482a927a8d1cf3c1939f7a4085a4541dfe303392",
+          "milliseconds": 8063
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "status": "passed",
+          "sessionSHA256": "976d782a63d564b8bc12eaaf28e662d3e4b076e5e64d3703ab85f086ea5d8e13",
+          "milliseconds": 6798
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "status": "passed",
+          "sessionSHA256": "293158e4affb27169f99830afef85e8bc076de10b45a130f2a741cb802f9a68c",
+          "milliseconds": 5815
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "status": "passed",
+          "sessionSHA256": "79151724d5bb2df206ed6a84d86436eede58706e38c9368d1e3818af151f6deb",
+          "milliseconds": 2766
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "status": "passed",
+          "sessionSHA256": "ab3fe5bae400dc127a7ad34be1aafff2112920f74136fe52ffebf66b6fffc97b",
+          "milliseconds": 8504
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "status": "passed",
+          "sessionSHA256": "c13309f3ebe21daa84b55812409562063a1b1ef08de2ea07638b47f02a6cc9cf",
+          "milliseconds": 4396
+        },
+        {
+          "name": "v33 real portrait capture and dressed collection-room close-up",
+          "status": "passed",
+          "sessionSHA256": "9982ae86fa4bb36ebf7f266347aa3c765a04a66ba5c757da8e47635a0ffdb138",
+          "milliseconds": 5641
+        },
+        {
+          "name": "v40 jersey atelier, cropped longsleeve and exact alpha labels, saved receipts and refunds",
+          "status": "passed",
+          "sessionSHA256": "4ed873fe2f449f57af39e0b20a7509ca1eae21121a3f48ceae330e9bbf2d6098",
+          "milliseconds": 21386
+        },
+        {
+          "name": "v52 free room walking, collision-safe stops, keyboard shelf use, memories and daily window pause",
+          "status": "passed",
+          "sessionSHA256": "6b9d7a8fc106ef8d520168f613a1e3e1c2fa0044fc1a83f1bbc4d7dfc6552ab1",
+          "milliseconds": 8233
+        },
+        {
+          "name": "v52 native floor and furniture clicks, cancelled routes, reduced motion and owned shelf persistence",
+          "status": "passed",
+          "sessionSHA256": "48ade85f64370b309f74f82d76069dec5f173d1e27030facc04def46ddd911bd",
+          "milliseconds": 14958
+        },
+        {
+          "name": "v56 JINS optical dimensions, retained studio, clear frame fitting, reload and exact refunds",
+          "status": "passed",
+          "sessionSHA256": "8c5aeb396d380642947a26c85dab10a935c83f93c6fafcaaa5091f4fe5539009",
+          "milliseconds": 22766
+        },
+        {
+          "name": "v56 floor-map zoom, pan, keyboard destination reveal, free state and actual mapped rest route",
+          "status": "passed",
+          "sessionSHA256": "ce7ef7f9bb1c3fbc0494be605efc36890c1ccbd878e0a6a308c620de71ff07c6",
+          "milliseconds": 5310
+        },
+        {
+          "name": "v56 compact optical notebook and map controls retain touch targets, free views and direct lighter exits",
+          "status": "passed",
+          "sessionSHA256": "2ced901186eb0037f62a3884ef403eaa76c4f3ff398ac008cc31d0b0e2c5991c",
+          "milliseconds": 4951
+        },
+        {
+          "name": "v57 contained scene labels, native walking and readable original shop casework",
+          "status": "passed",
+          "sessionSHA256": "090042674ba0f144aaba8f9973fb95f94c87d87ac64d0b6922f255787eb830c0",
+          "milliseconds": 11496
+        },
+        {
+          "name": "v57 original trousers, cropped waist, unobstructed seated back view and catalog replacement",
+          "status": "passed",
+          "sessionSHA256": "c90345da3950a98dffe1a1411833376d5409f91b22017c9ee9ae2d493bfcede5",
+          "milliseconds": 10458
+        },
+        {
+          "name": "v57 compact fitting status, clear scene view and singular bag guidance",
+          "status": "passed",
+          "sessionSHA256": "7d5822677e63e58ab7427bace5e42a27ee8bcc07a4f7325d4b40de7ee72071d4",
+          "milliseconds": 21744
+        }
+      ]
+    },
+    "safari": {
+      "browserVersion": "26.6.2",
+      "scenarios": 18,
+      "checks": 19,
+      "sessions": 1,
+      "fingerprint": "0d6112808cefa1ef853c0fac8cfdf4b8e79db29091406de7b1a0af9595037fb6",
+      "isolation": "bounded-retained-window",
+      "headless": false,
+      "budgets": {
+        "wait": 120000,
+        "pageLoad": 120000,
+        "protocol": 150000
+      },
+      "errors": [],
+      "resourceWarnings": [],
+      "inputRetries": [],
+      "profileRemovalsVerified": 0,
+      "results": [
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 9557
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 4863
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 8029
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 7926
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 7334
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 2896
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 8855
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 4271
+        },
+        {
+          "name": "v33 real portrait capture and dressed collection-room close-up",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 9340
+        },
+        {
+          "name": "v40 jersey atelier, cropped longsleeve and exact alpha labels, saved receipts and refunds",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 25387
+        },
+        {
+          "name": "v52 free room walking, collision-safe stops, keyboard shelf use, memories and daily window pause",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 10408
+        },
+        {
+          "name": "v52 native floor and furniture clicks, cancelled routes, reduced motion and owned shelf persistence",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 16161
+        },
+        {
+          "name": "v56 JINS optical dimensions, retained studio, clear frame fitting, reload and exact refunds",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 25338
+        },
+        {
+          "name": "v56 floor-map zoom, pan, keyboard destination reveal, free state and actual mapped rest route",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 4944
+        },
+        {
+          "name": "v56 compact optical notebook and map controls retain touch targets, free views and direct lighter exits",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 4767
+        },
+        {
+          "name": "v57 contained scene labels, native walking and readable original shop casework",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 17181
+        },
+        {
+          "name": "v57 original trousers, cropped waist, unobstructed seated back view and catalog replacement",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 22215
+        },
+        {
+          "name": "v57 compact fitting status, clear scene view and singular bag guidance",
+          "status": "passed",
+          "sessionSHA256": "93082e022cca45e2fe1bde47f525b20841fcc129e1dabfd01c639463987d2c65",
+          "milliseconds": 21509
+        }
+      ]
+    }
+  },
+  "localTests": {
+    "total": 728,
+    "passed": 728,
+    "failed": 0,
+    "logSHA256": "4a418b69bdd99e5329d0163a2cf140cbb18080bcc4c6124080128e1fbd531608"
+  },
+  "visualReviews": [
+    {
+      "name": "firefox-gameplay-v57-clear-studio.png",
+      "sha256": "ee6fc21b59fbf901c1284269cb5719a12d679487b515e497c5a466056b3b0505",
+      "visuallyReviewed": true
+    },
+    {
+      "name": "firefox-gameplay-v57-cropped-seated-back.png",
+      "sha256": "64cbd039ed1d8f73eba5d38b31825644da67664323cfe376920514b7defe609b",
+      "visuallyReviewed": true
+    },
+    {
+      "name": "firefox-v57-settled-crop.png",
+      "sha256": "2342c07c34a0de46c958ca84bdb22c43917c5816863cc574fab7c54671c14866",
+      "visuallyReviewed": true
+    },
+    {
+      "name": "safari-gameplay-v56-optical-studio.png",
+      "sha256": "a3d5946ea6db7d7225ba26e2a21c19c7325c0e126fb41bbe8c105c336a0c0b50",
+      "width": 2800,
+      "height": 1464,
+      "visuallyReviewed": true
+    },
+    {
+      "name": "safari-gameplay-v57-cropped-front.png",
+      "sha256": "d740a1bd6568c10936499fc99f9f012dcbe0c0abe20e819cd6a18c96b23f08f4",
+      "width": 2800,
+      "height": 1464,
+      "visuallyReviewed": true
+    },
+    {
+      "name": "safari-gameplay-v57-cropped-seated-back.png",
+      "sha256": "f50c9d5c7c399d3532610eb67c855a81ad6429c2ba4fb5c092b73ef1af570af9",
+      "width": 2800,
+      "height": 1464,
+      "visuallyReviewed": true
+    },
+    {
+      "name": "safari-gameplay-shop.png",
+      "sha256": "6ae2670579925df28524ee4403b7391645ed24aafa15ec1daea434ce8f7cd5b7",
+      "width": 2800,
+      "height": 1464,
+      "visuallyReviewed": true
+    }
+  ],
+  "settledPoseProbe": {
+    "errors": [],
+    "frames": 85,
+    "pose": "sit",
+    "presentation": "57",
+    "starterTrousers": "original",
+    "browserVersion": "159.0.1",
+    "realFramesWaited": 74,
+    "screenshotSHA256": "2342c07c34a0de46c958ca84bdb22c43917c5816863cc574fab7c54671c14866",
+    "profileRemoved": true,
+    "visuallyReviewed": true
+  },
+  "treeHashFormat": "SHA-256 of compact JSON relative-path-to-SHA256 map in lexical path order, excluding Finder metadata.",
+  "excludedVisualThumbnails": [
+    {
+      "name": "safari-gameplay-v57-clear-studio.png",
+      "reason": "Safari screenshot API returned a small background-window thumbnail; full-size optical/shop and outfit views were reviewed instead."
+    },
+    {
+      "name": "safari-gameplay-v57-compact-shop.png",
+      "reason": "Safari screenshot API returned a small background-window thumbnail; full-size optical/shop and outfit views were reviewed instead."
+    }
+  ]
+}

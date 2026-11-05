@@ -1,6 +1,7 @@
+import {shopSurface} from './shop-surfaces.js?v=57.0.0';
 import {closestFloor} from './free-navigation.js?v=25.0.0';
 import {themeFor} from './mall-design.js?v=35.0.0';
-import {surfaceTexture} from './scene-finish.js?v=33.0.0';
+import {surfaceTexture} from './scene-finish.js?v=57.0.0';
 import * as T from './vendor/three.module.js';
 
 export function interiorFloor(world,style){
@@ -58,7 +59,7 @@ export function buildInteriorArchitecture(w,style,layout){
 }
 
 export function buildProductFixture(w,p,r,profile){
- const x=r.x+r.width/2,z=r.y+r.height/2,kind=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type)?'apparel':['shoes','sandals'].includes(p.type)?'shoes':['bag','crossbody','backpack','duffel','wallet'].includes(p.type)?'boutique':['perfume','skincare','lipstick','makeup','mascara'].includes(p.type)?'beauty':['watch','digitalwatch','ring','bracelet','necklace','earrings'].includes(p.type)?'jewelry':['food','drink'].includes(p.type)?'cafe':profile.kind,wood=profile.fixture,trim=profile.trim;let height=28;
+ const x=r.x+r.width/2,z=r.y+r.height/2,kind=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type)?'apparel':['shoes','sandals'].includes(p.type)?'shoes':['bag','crossbody','backpack','duffel','wallet'].includes(p.type)?'boutique':['perfume','skincare','lipstick','makeup','mascara'].includes(p.type)?'beauty':['watch','digitalwatch','ring','bracelet','necklace','earrings'].includes(p.type)?'jewelry':['food','drink'].includes(p.type)?'cafe':profile.kind,wood=shopSurface(w,profile.fixture,/wood|timber|leather|woven|book|coastal|library|atelier/.test(profile.feature+' '+profile.layout)?'timber':'paint'),trim=shopSurface(w,profile.trim,['tech','jewelry','beauty'].includes(profile.kind)?'metal':'paint');let height=28;
  if(kind==='tech'){w.box(x,22,z,r.width,7,r.height,wood);for(const dx of [-38,38])w.box(x+dx,11,z,4,22,48,trim);height=27;}
  else if(kind==='jewelry'){w.box(x,17,z,r.width,34,r.height,wood);w.box(x,39,z,r.width,14,r.height,w.mat('#cde4de',{transparent:true,opacity:.25,depthWrite:false}));w.box(x,36,z,55,3,35,profile.accent);height=46;}
  else if(kind==='cafe'){w.cyl(x,25,z,45,6,wood);for(const dx of [-33,33])w.box(x+dx,12,z,4,24,40,trim);height=31;}

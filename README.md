@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v56 — optical studio and readable floor maps
+## v57 — clearer scenes and character detail
+
+Floating 3D labels stay readable and inside the view. Original starter trousers gain a finished waist, pockets and rigged fabric; seated outfits stay visible from the back. More distinct shop casework materials and clearer fitting/bag feedback refine the existing shopping loop. All products and saves remain compatible. See [v57 gameplay](docs/GAMEPLAY-v57.md), [QA](docs/qa-v57.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v56 — optical studio and readable floor maps
 
 The unfinished JINS Eyewear shop gains two exact selected frames, reviewed photographs, source dimensions and a furnished optical studio. All 23 floor maps gain selectable amenities, storefront labels, zoom, pan and keyboard destination reveal. Frame-fitting hands move smoothly from their actual resting pose; scene cleanup releases shared geometry once. Existing saves and products remain compatible. See [v56 gameplay](docs/GAMEPLAY-v56.md), [primary evidence](docs/research-v56/merchant-records.json), [QA](docs/qa-v56.md) and the [roadmap](ROADMAP.md).
 

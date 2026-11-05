@@ -1,8 +1,9 @@
+import {hideStarterTrousers} from './starter-trousers.js?v=57.0.0';
 import {smoothBagSway} from './bag-motion.js?v=44.0.0';
 import {bodySectionRadius} from './garment-clearance.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
 import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=40.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=56.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=57.0.0';
 import {productAppearance} from './product-appearance.js?v=56.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=56.0.0';
@@ -12,7 +13,7 @@ export function fitScaleForSize(size,usual){const canonical=v=>({XXS:'2XS',XXL:'
 export function trackMerchandise(w,object){object.traverse(o=>{if(!o.isMesh)return;w.resources.add(o.geometry);for(const m of Array.isArray(o.material)?o.material:[o.material]){w.resources.add(m);for(const k of ['map','bumpMap','roughnessMap'])if(m[k])w.resources.add(m[k]);if(m.userData.detailTexture)w.resources.add(m.userData.detailTexture);}});return object;}
 function mesh(parent,geo,mat,x=0,y=0,z=0){const m=new T.Mesh(geo,mat);m.position.set(x,y,z);m.castShadow=m.receiveShadow=true;parent.add(m);return m;}
 function ribbon(parent,points,width,mat,linear=false){return mesh(parent,strapGeometry(points,width,.14,{linear}),mat);}
-function skinLegs(g){for(const limb of g.userData.limbs.slice(2)){for(const part of [limb.userData.upper||limb.children[0],limb.userData.lower,limb.userData.joint])if(part){part.material=g.userData.head.material;part.visible=true;}}if(g.userData.pelvis)g.userData.pelvis.material=g.userData.head.material;}
+function skinLegs(g){hideStarterTrousers(g);for(const limb of g.userData.limbs.slice(2)){for(const part of [limb.userData.upper||limb.children[0],limb.userData.lower,limb.userData.joint])if(part){part.material=g.userData.head.material;part.visible=true;}}if(g.userData.pelvis)g.userData.pelvis.material=g.userData.head.material;}
 function shirtShell(cut,ease=1){
  const cropped=cut.length==='cropped'||cut.kind==='bra',bare=cut.sleeve==='none',bottom=cut.kind==='bra'?23.5:cropped?22:cut.length==='thigh'?10:cut.length==='maxi'?5:15.5,top=cut.kind==='bra'?29:bare?31.7:34.8;
  const rings=[[bottom,7.7,5.8],[bottom+(top-bottom)*.15,cut.fit==='slim'?7.5:8.3,5.9],[27,cut.fit==='slim'?7.5:8.5,6],[31.2,8,5.9],[top,bare?7.4:3.6,bare?5.5:3.8]],pos=[],uv=[],idx=[],groups=[],n=32;

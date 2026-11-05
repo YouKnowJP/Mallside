@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
-import {surfaceTexture} from './scene-finish.js?v=33.0.0';
+import {surfaceTexture} from './scene-finish.js?v=57.0.0';
 export function homeGardenPixels(){
  const width=160,height=120,data=new Uint8Array(width*height*4);
  for(let y=0;y<height;y++)for(let x=0;x<width;x++){const v=y/height,u=x/width,hill=.58+Math.sin(u*7)*.07,sky=[170+v*35,199+v*21,202+v*12];let c=v>hill?[133-v*34,159-v*28,113-v*24]:sky;

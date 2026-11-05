@@ -62,7 +62,7 @@ test('reviewed textile profiles distinguish relaxed denim, short tees and fitted
 test('opaque cropped sleeves cover the real torso and shoulders while leaving skin below the intended hem',()=>{
  for(const a of additions.filter(a=>a.name.includes('Longsleeve'))){const p=E.PRODUCTS.find(p=>p.modelId===a.id),w=owner(),g=MallWorld3D.prototype.person.call(w,'#bda079',{}, {top:p});g.updateMatrixWorld(true);g.userData.anatomy.skeleton.update();assert.equal(g.userData.torso.visible,true);const visible=[];g.traverse(o=>{if(!o.isMesh)return;let n=o;while(n&&n.visible)n=n.parent;if(!n)visible.push(o);});
   for(const sign of [-1,1])for(const y of [32.5,34,36,38,40,40.8,41.2])for(const x of [-4,-2,0,2,4]){const hits=new T.Raycaster(new T.Vector3(x,y+g.position.y,sign*20),new T.Vector3(0,0,-sign)).intersectObjects(visible,false);assert.ok(hits.length);assert.ok(!['human:torso','human:neckline'].includes(hits[0].object.name),p.name+' exposed skin at '+x+','+y+','+sign);}
-  const under=new T.Raycaster(new T.Vector3(0,28+g.position.y,20),new T.Vector3(0,0,-1)).intersectObjects(visible,false);assert.equal(under[0].object.name,'human:torso','cropped hem should preserve the exposed waist');release(w);
+  const under=new T.Raycaster(new T.Vector3(0,29+g.position.y,20),new T.Vector3(0,0,-1)).intersectObjects(visible,false);assert.equal(under[0].object.name,'human:torso','cropped hem should preserve the exposed waist');release(w);
  }
 });
 

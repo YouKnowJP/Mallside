@@ -1,0 +1,129 @@
+{
+  "version": "57.0.0",
+  "bundle": "app-F2I6ZXTT.js",
+  "status": "passed",
+  "scope": "Six desktop Chromium touch-capable contexts; physical mobile and screen-reader validation remain open.",
+  "browser": "156.0.8078.80",
+  "results": [
+    {
+      "width": 320,
+      "graphics": "3d",
+      "sourceNotebook": true,
+      "directExit": true,
+      "mappedAmenities": 4,
+      "touchTargets44": true,
+      "noHorizontalOverflow": true,
+      "mapClockPaused": true,
+      "freeMoneyAndXPPreserved": true,
+      "starterTrousers": "original",
+      "labels": {
+        "width": 302,
+        "height": 430,
+        "boxes": []
+      },
+      "errors": [],
+      "warnings": [],
+      "ownedContextClosed": true
+    },
+    {
+      "width": 320,
+      "graphics": "2d",
+      "sourceNotebook": true,
+      "directExit": true,
+      "mappedAmenities": 4,
+      "touchTargets44": true,
+      "noHorizontalOverflow": true,
+      "mapClockPaused": true,
+      "freeMoneyAndXPPreserved": true,
+      "starterTrousers": "illustrated",
+      "labels": [],
+      "errors": [],
+      "warnings": [],
+      "ownedContextClosed": true
+    },
+    {
+      "width": 390,
+      "graphics": "3d",
+      "sourceNotebook": true,
+      "directExit": true,
+      "mappedAmenities": 4,
+      "touchTargets44": true,
+      "noHorizontalOverflow": true,
+      "mapClockPaused": true,
+      "freeMoneyAndXPPreserved": true,
+      "starterTrousers": "original",
+      "labels": {
+        "width": 372,
+        "height": 430,
+        "boxes": []
+      },
+      "errors": [],
+      "warnings": [],
+      "ownedContextClosed": true
+    },
+    {
+      "width": 390,
+      "graphics": "2d",
+      "sourceNotebook": true,
+      "directExit": true,
+      "mappedAmenities": 4,
+      "touchTargets44": true,
+      "noHorizontalOverflow": true,
+      "mapClockPaused": true,
+      "freeMoneyAndXPPreserved": true,
+      "starterTrousers": "illustrated",
+      "labels": [],
+      "errors": [],
+      "warnings": [],
+      "ownedContextClosed": true
+    },
+    {
+      "width": 768,
+      "graphics": "3d",
+      "sourceNotebook": true,
+      "directExit": true,
+      "mappedAmenities": 4,
+      "touchTargets44": true,
+      "noHorizontalOverflow": true,
+      "mapClockPaused": true,
+      "freeMoneyAndXPPreserved": true,
+      "starterTrousers": "original",
+      "labels": {
+        "width": 472,
+        "height": 550,
+        "boxes": []
+      },
+      "errors": [],
+      "warnings": [],
+      "ownedContextClosed": true
+    },
+    {
+      "width": 768,
+      "graphics": "2d",
+      "sourceNotebook": true,
+      "directExit": true,
+      "mappedAmenities": 4,
+      "touchTargets44": true,
+      "noHorizontalOverflow": true,
+      "mapClockPaused": true,
+      "freeMoneyAndXPPreserved": true,
+      "starterTrousers": "illustrated",
+      "labels": [],
+      "errors": [],
+      "warnings": [],
+      "ownedContextClosed": true
+    }
+  ],
+  "visualReviews": [
+    {
+      "name": "v57-compact-shop.png",
+      "sha256": "f112b96d98db40014c7bfec853123317e08699ca8617cfde1169953ca299033b",
+      "visuallyReviewed": true
+    },
+    {
+      "name": "v57-compact-seated.png",
+      "sha256": "2140b9d762276f8a015b6bcfa3074c841cbe13ade47f1b71fefaefab1e72eff7",
+      "visuallyReviewed": true
+    }
+  ]
+}
