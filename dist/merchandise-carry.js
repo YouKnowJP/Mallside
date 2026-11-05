@@ -1,9 +1,9 @@
-import {attachWornGarment,attachWornBag,attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=53.0.0';
+import {attachWornGarment,attachWornBag,attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=54.0.0';
 import * as T from './vendor/three.module.js';
-import {productAppearance} from './product-appearance.js?v=53.0.0';
-import {physicalProduct} from './merchandise-3d.js?v=53.0.0';
-import {carriedSelections} from './shopping-selection.js?v=53.0.0';
-import {carried,canTry} from './engine.js?v=53.0.0';
+import {productAppearance} from './product-appearance.js?v=54.0.0';
+import {physicalProduct} from './merchandise-3d.js?v=54.0.0';
+import {carriedSelections} from './shopping-selection.js?v=54.0.0';
+import {carried,canTry} from './engine.js?v=54.0.0';
 
 export function dressPerson(w,g,equipment){
  const top=equipment.top,cut=top&&physicalProduct(top)&&productAppearance(top).garment;
@@ -30,7 +30,7 @@ export function syncCarriedMerchandise(w,{force=false,pickupId=null}={}){
  for(const [id,records]of grouped){records.sort((a,b)=>a.object.getWorldPosition(new T.Vector3()).distanceTo(w.player.position)-b.object.getWorldPosition(new T.Vector3()).distanceTo(w.player.position));records.forEach((r,i)=>r.object.visible=i>=(counts.get(id)||0));}
  w.canvas.dataset.carriedProducts=JSON.stringify(entries.map(i=>({id:i.id,size:i.size,store:i.store})));w.canvas.dataset.carrying3D=String(shown.length);
  const info=document.querySelector('#carried-selection'),put=document.querySelector('[data-action="put-back-held"]'),tryButton=document.querySelector('[data-held-try]');const local=entries.filter(i=>i.store===w.inside),held=local.at(-1);
- if(info)info.textContent=held?'In hand · '+held.product.name+' · '+held.size+' · unpaid':w.layout?.store?.collectionEdition===53?'Pick up a fragrance bottle from the displays':w.layout?.store?.collectionEdition===51?'Pick up a planter or storage box from the displays':w.layout?.store?.collectionEdition===48?'Pick up a ceramic from the displays':w.layout?.store?.collectionEdition===47?'Pick up a collectible from the displays':'Pick up clothes and bags from the displays';if(put)put.hidden=!held;
+ if(info)info.textContent=held?'In hand · '+held.product.name+' · '+held.size+' · unpaid':w.layout?.store?.collectionEdition===54?'Pick up a wooden brush from the displays':w.layout?.store?.collectionEdition===53?'Pick up a fragrance bottle from the displays':w.layout?.store?.collectionEdition===51?'Pick up a planter or storage box from the displays':w.layout?.store?.collectionEdition===48?'Pick up a ceramic from the displays':w.layout?.store?.collectionEdition===47?'Pick up a collectible from the displays':'Pick up clothes and bags from the displays';if(put)put.hidden=!held;
  if(tryButton){const wearable=held?canTry(held.product):(w.layout?.store?.products||[]).some(canTry);tryButton.textContent=wearable?(held?'Try held':'Try-on'):(held?'Inspect held':'Demos');tryButton.setAttribute('aria-label',wearable?(held?'Try carried item in fitting room':'Walk to fitting room'):(held?'Inspect carried product and demo options':'Walk to product demos'));}
 }
 export function poseCarriedMerchandise(w){

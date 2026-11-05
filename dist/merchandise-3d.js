@@ -1,11 +1,12 @@
+import {createBrush,isBrush} from './brush-model.js?v=54.0.0';
 import {createFragrance,isFragrance} from './fragrance-model.js?v=53.0.0';
 import {isStorage} from './storage-tools.js?v=53.0.0';
-import {createStorage} from './storage-model.js?v=53.0.0';
+import {createStorage} from './storage-model.js?v=54.0.0';
 import {isReadingProduct} from './book-tools.js?v=50.0.0';
-import {placeBook} from './book-model.js?v=53.0.0';
-import {createCeramic,isCeramic} from './ceramic-model.js?v=53.0.0';
-import {createPlush,isVerifiedPlush} from './plush-model.js?v=53.0.0';
-import {productAppearance} from './product-appearance.js?v=53.0.0';
+import {placeBook} from './book-model.js?v=54.0.0';
+import {createCeramic,isCeramic} from './ceramic-model.js?v=54.0.0';
+import {createPlush,isVerifiedPlush} from './plush-model.js?v=54.0.0';
+import {productAppearance} from './product-appearance.js?v=54.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
 import {addReferenceDetails,addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 import * as T from './vendor/three.module.js';
@@ -14,12 +15,13 @@ import {buildBagModel} from './merchandise-bags.js?v=44.0.0';
 
 const clothing=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);
-export const physicalProduct=p=>!!p&&(clothing.has(p.type)||bags.has(p.type)||isVerifiedPlush(p)||isCeramic(p)||isStorage(p)||isFragrance(p));
-export function merchandiseStyle(p){if(isFragrance(p))return 'closed-fragrance';if(isStorage(p))return 'storage-box';if(isCeramic(p))return 'ceramic-'+p.ceramicProfile.kind;if(isVerifiedPlush(p))return 'plush-'+p.plushProfile.kind;const a=productAppearance(p);return clothing.has(p.type)?a.garment.kind:a.bag?.silhouette||'package';}
+export const physicalProduct=p=>!!p&&(clothing.has(p.type)||bags.has(p.type)||isVerifiedPlush(p)||isCeramic(p)||isStorage(p)||isFragrance(p)||isBrush(p));
+export function merchandiseStyle(p){if(isBrush(p))return 'wooden-paddle-brush';if(isFragrance(p))return 'closed-fragrance';if(isStorage(p))return 'storage-box';if(isCeramic(p))return 'ceramic-'+p.ceramicProfile.kind;if(isVerifiedPlush(p))return 'plush-'+p.plushProfile.kind;const a=productAppearance(p);return clothing.has(p.type)?a.garment.kind:a.bag?.silhouette||'package';}
 function roundedShape(w,h,r=3){const s=new T.Shape(),x=-w/2,y=-h/2;s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);return s;}
 
 // Original volumetric interpretations of named real products. Photographs remain in details.
 export function createMerchandise(p,{hanger=false,bodyOnly=false,highDetail=false}={}){
+ if(isBrush(p))return createBrush(p);
  if(isFragrance(p))return createFragrance(p);
  if(isStorage(p))return createStorage(p);
  if(isCeramic(p))return createCeramic(p);

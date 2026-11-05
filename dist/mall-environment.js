@@ -1,3 +1,4 @@
+import {buildDirectoryKiosk} from './directory-kiosk.js?v=54.0.0';
 import {buildNoticeDetail} from './notice-details.js?v=50.0.0';
 import {buildWaterDetail} from './water-details.js?v=49.0.0';
 import {buildTeaLounge} from './tea-lounge.js?v=46.0.0';
@@ -162,8 +163,7 @@ export function buildPublicRealm(w,l,theme){
   else if(p.kind==='fountain'){
    b.cylinder(x,5,z,17,10,theme.stone);b.water(x,10.4,z,14);b.cylinder(x,15,z,4,9,theme.trim);const jet=w.mesh(new T.CylinderGeometry(.9,1.3,19,6),w.mat('#c5e7df',{transparent:true,opacity:.65,depthWrite:false}));jet.position.set(x,26,z);jet.castShadow=false;w.waterFeatures.push({mesh:jet,y:26});
   }else if(p.kind==='directory'){
-   b.box(x,26,z,13,50,8,theme.trim);b.box(x,53,z,25,6,12,theme.stone);
-   const panel=w.mesh(new T.PlaneGeometry(22,33),w.mat('#ffffff',{map:directoryTexture(w,theme,l,{x,y:z}),roughness:.8}));panel.position.set(x,34,z+4.4);panel.castShadow=false;w.tag(panel,'directory:'+p.node,p.approach);w.tag(w.label('Directory ↗',x,66,z,56,theme.accent),'directory:'+p.node,p.approach);w.nearLabels.push({object:w.scene.children.at(-1),x,z,radius:125,directory:true});
+   buildDirectoryKiosk(w,p,theme,directoryTexture(w,theme,l,{x,y:z}));w.tag(w.label('Directory ↗',x,66,z,56,theme.accent),'directory:'+p.node,p.approach);w.nearLabels.push({object:w.scene.children.at(-1),x,z,radius:125,directory:true});
   }
  }
  // Repeated gallery lighting and planted hanging baskets add detail above

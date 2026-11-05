@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v53 — fragrance studio and useful rest corners
+## v54 — brush studio and clearer next stops
+
+The unfinished Aveda shop at Century City gains two exact paddle-brush references, reviewed official photographs, source dimensions and dated prices. An original timber-and-slate studio adds free format comparisons, solid brush models and coordinated two-hand inspection. All 85 public directory kiosks gain detailed construction and current-floor next-stop guides linked to real shops, amenities and saved plans. Earlier products and saves remain compatible. See [v54 gameplay](docs/GAMEPLAY-v54.md), [official source evidence](docs/research-v54/catalog-evidence.json), [release QA](docs/qa-v54.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v53 — fragrance studio and useful rest corners
 
 An unfinished Guerlain shop gains three exact selected bottle references with official photographs, sizes and dated prices. A richer original interior supports free source-note comparisons, saved material studies, solid glass models and smoother two-hand inspection. All 23 public rest lounges gain detailed furnishings, current-floor shop links and calmer sitting/standing transitions. Earlier product records and saves remain compatible. See [v53 gameplay](docs/GAMEPLAY-v53.md), [official source evidence](docs/research-v53/catalog-evidence.json), [release QA](docs/qa-v53.md) and the [roadmap](ROADMAP.md).
 

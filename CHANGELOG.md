@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 54.0.0 · 4 November 2026
+
+- Stock Aveda at Century City with two exact paddle brushes, reviewed photos, published dimensions and dated US offers.
+- Furnish an original wood/slate studio, free format notebook, solid brush models and smooth two-hand inspection; preserve saved studies and existing shop actions.
+- Carry brushes by their handles and display owned opened brushes on the existing shelf.
+- Detail all 85 public directory kiosks and link free current-floor guides to actual stocked shops, public stops and saved shortlists.
+- Preserve all earlier product records, compatible saves, map revision and economy rules. See [gameplay](docs/GAMEPLAY-v54.md), [source evidence](docs/research-v54/catalog-evidence.json) and [QA](docs/qa-v54.md).
+
 ## 53.0.0 · 4 November 2026
 
 - Stock Guerlain’s unfinished South Coast Plaza branch with three selected Aqua Allegoria references, official photos, exact formats and dated US offers.

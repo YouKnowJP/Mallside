@@ -1,0 +1,164 @@
+{
+  "version": "54.0.0",
+  "bundle": "app-RR2SEREP.js",
+  "fullNativeBaseline": {
+    "proof": "browser-baseline-proof.json",
+    "bundle": "app-ZRJJ25UU.js",
+    "browsers": {
+      "safari": {
+        "browserVersion": "26.6.2",
+        "scenarios": 93,
+        "checks": 94,
+        "sessions": 6,
+        "errors": 0,
+        "warnings": 0,
+        "retries": 0
+      },
+      "firefox": {
+        "browserVersion": "159.0.1",
+        "scenarios": 93,
+        "checks": 94,
+        "sessions": 93,
+        "errors": 0,
+        "warnings": 0,
+        "retries": 0
+      }
+    }
+  },
+  "finalCorrection": {
+    "file": "dist/planning-lounge.js",
+    "oldSHA256": "babab672b0c8c1b96949dca1f2e19696e19e75d7d825e11c613c29ebe20deb76",
+    "newSHA256": "9e04c23b283db72956e158e6dcc87fe6a75bae62859658a448b15818978d7b93",
+    "old": "const x=563+i*36;if(p.ceramicProfile||p.storageProfile||p.fragranceProfile||p.brushProfile)",
+    "new": "const x=563+i*36;if(p.brushProfile)continue;if(p.ceramicProfile||p.storageProfile||p.fragranceProfile)",
+    "scope": "Only removes generic placeholder pads under the purpose-built Aveda brush desk; all hit targets, routes, actions, catalogs and other shop branches are unchanged."
+  },
+  "finalVerification": {
+    "localTests": {
+      "tests": 693,
+      "passed": 693,
+      "failed": 0,
+      "logSHA256": "b0a731415385bce433bca06ef6001370c04beb4ebf3502005b544c7c070a0f53",
+      "targetedTests": 14
+    },
+    "firefoxAffectedFlows": {
+      "version": "54.0.0",
+      "bundle": "app-RR2SEREP.js",
+      "sourceCommitAtTesting": "c35422926bf0f29eee400a7c3d8efb5ea2787a8b",
+      "sourceFiles": 2286,
+      "publicFiles": 2068,
+      "sourceTreeSHA256": "766ed50cabfe3bbe7cce92d0863551e67cfa8a4d7196deea21566e6a909f4270",
+      "publicTreeSHA256": "666e5df68021800e31dd44ba1a9fa84d0c968a128fb93c471d83a3768af96a51",
+      "nativeRunnerSHA256": "5e1e2107fa6be400420be65a4dae49a14f2942b47dc1d1795114a59bfdb853b5",
+      "matrixRunnerSHA256": "6b819238fa526a3986c0159f20e7298ebb2862b46c111f858633b53505a475af",
+      "clocksAndVisibility": "Real; no overrides",
+      "budgets": {
+        "wait": 120000,
+        "pageLoad": 120000,
+        "protocol": 150000
+      },
+      "browsers": {
+        "firefox": {
+          "browserVersion": "159.0.1",
+          "scenarios": 3,
+          "checks": 4,
+          "sessions": 3,
+          "isolation": "fresh-session",
+          "headless": true,
+          "sessionCaseLimit": 1,
+          "errors": 0,
+          "warnings": 0,
+          "retries": 0,
+          "fingerprint": "4ba1c601cb78a718f461fa919b17aa6b9a976aa55b54a6b0932e26534271fc38",
+          "cases": [
+            {
+              "name": "v54 Aveda source comparison, coordinated brush inspections, retained study, checkout and exact refunds",
+              "ms": 33438,
+              "fingerprint": "4ba1c601cb78a718f461fa919b17aa6b9a976aa55b54a6b0932e26534271fc38",
+              "sessionHash": "66819b1ac7499778",
+              "profileRemoved": true
+            },
+            {
+              "name": "v54 solid owned brushes, compact formats, title clearance and lighter-mode exits",
+              "ms": 19157,
+              "fingerprint": "4ba1c601cb78a718f461fa919b17aa6b9a976aa55b54a6b0932e26534271fc38",
+              "sessionHash": "f2ece3ba9c9f0fd0",
+              "profileRemoved": true
+            },
+            {
+              "name": "v54 detailed directory kiosks, free nearby guide, real water route, saved plans and stocked-shop entry",
+              "ms": 12552,
+              "fingerprint": "4ba1c601cb78a718f461fa919b17aa6b9a976aa55b54a6b0932e26534271fc38",
+              "sessionHash": "e340dfc65e894e81",
+              "profileRemoved": true
+            }
+          ]
+        }
+      },
+      "notes": [
+        "Final affected-flow recheck after decorative desk correction. Full baseline Safari and Firefox matrices remain separately identified. Publication changes only release.json sourceCommit."
+      ]
+    },
+    "safariVisual": {
+      "version": "54.0.0",
+      "bundle": "app-RR2SEREP.js",
+      "method": "Native Safari interface, manual visual recheck with remote automation OFF throughout",
+      "isolatedOrigin": "http://127.0.0.1:58075/Mallside/",
+      "ownedPrivateWindow": "CF16B33C-3F0D-4530-A3B6-74444A3200BD",
+      "steps": [
+        "Started separate free shop save",
+        "Travelled to Century City",
+        "Used map directory search and walked into Aveda",
+        "Opened Collection desk",
+        "Opened material study and closed it",
+        "Reviewed final wood/slate brush desk fronts at close range in native screenshot; no overlapping white front panels",
+        "Used direct Exit shop and observed Explore the center",
+        "Closed only owned private window; desktop tool reported no windows available afterward"
+      ],
+      "visualResult": "passed",
+      "scope": "Decorative-only front-surface correction; baseline complete native Safari matrix is recorded separately. No new full matrix or brush-inspection rerun is claimed.",
+      "screenshot": "Native inline screenshot reviewed; no separate on-disk capture",
+      "automationOffThroughout": true,
+      "ownedPrivateWindowClosed": true
+    },
+    "compactProof": "compact-proof.json",
+    "finalFirefoxVisualReview": {
+      "file": "firefox-gameplay-v54-inspect-A09A70.png",
+      "sha256": "faa4d652d34d7051f82354a9a3021b6901291f6a0d27269f4127b26ceaf5bca0",
+      "reviewed": true,
+      "notes": "Solid brush held by both hands; source desk visible, no overlapping generic white front panels."
+    }
+  },
+  "cleanup": {
+    "firefox": {
+      "temporaryRootRemoved": true,
+      "preExistingEntriesPreserved": 14,
+      "originalPreferenceBytesPreserved": true,
+      "newHomeEntriesRemoved": [
+        "Library/Application Support/Firefox/Crash Reports/glean/db/data.safe.bin",
+        "Library/Application Support/Firefox/Crash Reports/glean/crashping.pid",
+        "Library/Application Support/Firefox/Crash Reports/glean/client_id.txt",
+        "Library/Application Support/Firefox/Crash Reports/crash_helper_server.log",
+        "Library/Caches/Mozilla/updates/private/tmp/mallside-v54-firefox",
+        "Library/Caches/Mozilla/updates/private/tmp/mallside-v54-firefox/Firefox",
+        "Library/Caches/Mozilla/updates/private/tmp/mallside-v54-firefox/Firefox/.parentlock",
+        "Library/Caches/Mozilla/updates/private/tmp/mallside-v54-firefox/Firefox/updates",
+        "Library/Caches/Mozilla/updates/private/tmp/mallside-v54-firefox/Firefox/updates/0",
+        "Library/Caches/Mozilla/updates/private/tmp/mallside-v54-firefox/Firefox/updates/downloading"
+      ],
+      "ownedProcessesStopped": true,
+      "preservedUnattributedEntries": [],
+      "signatureBeforeAndAfterVerified": true,
+      "mozillaTeam": "43AQ936H96",
+      "ownedUpdateCacheRemoved": true
+    },
+    "safariAutomationEnabled": false,
+    "safariAutomationVisiblyConfirmedOff": true,
+    "safariDriverStopped": true,
+    "manualSafariWindowClosed": true,
+    "manualSafariServerStopped": true,
+    "rawNativeArtifactsRemoved": true,
+    "rawNativeArtifactEntriesRemoved": 287
+  },
+  "publication": "After commit, release.json sourceCommit alone may change; every other public file must match the final tested candidate. Exact-head CI and live-byte/gameplay verification are retained in ignored build/qa/v54-live-proof.json."
+}

@@ -1,0 +1,44 @@
+{
+  "checkedOn": "2026-11-04",
+  "basis": "Selected SKU objects independently parsed from the official US product pages' embedded JSON. The game's short referenceSKU uses the merchant PRODUCT_CODE; the separate internal SKU_ID and SKU_BASE_ID are retained here to disambiguate it.",
+  "records": [
+    {
+      "url": "https://www.aveda.com/product/17775/16651/styling/brush/aveda-wooden-paddle-brush",
+      "SKU_BASE_ID": 33067,
+      "MEDIUM_IMAGE": [
+        "/media/images/products/3000x3000/white/av_sku_A09A70_33067_3000x3000_0.jpg?width=768&height=768",
+        "/media/images/products/3000x3000/white/av_sku_A09A70_33067_3000x3000_1.jpg?width=768&height=768"
+      ],
+      "SMALL_IMAGE": "/media/images/products/3000x3000/white/av_sku_A09A70_33067_3000x3000_0.jpg?width=240&height=240",
+      "PRICE": 34,
+      "PRODUCT_ID": "PROD16651",
+      "PRODUCT_CODE": "A09A70",
+      "PRODUCT_SIZE": "brush",
+      "PRICE2": null,
+      "SKU_ID": "SKU33067",
+      "LARGE_IMAGE": [
+        "/media/images/products/3000x3000/white/av_sku_A09A70_33067_3000x3000_0.jpg?width=1400&height=1400"
+      ],
+      "UPC_CODE": "018084507216"
+    },
+    {
+      "url": "https://www.aveda.com/product/17775/66963/styling/brush/aveda-wooden-mini-paddle-brush",
+      "SKU_BASE_ID": 104746,
+      "MEDIUM_IMAGE": [
+        "/media/images/products/3000x3000/white/av_sku_ATL301_104746_3000x3000_0.jpg?width=768&height=768",
+        "/media/images/products/3000x3000/white/av_sku_ATL301_104746_3000x3000_1.jpg?width=768&height=768"
+      ],
+      "SMALL_IMAGE": "/media/images/products/3000x3000/white/av_sku_ATL301_104746_3000x3000_0.jpg?width=240&height=240",
+      "PRICE": 26,
+      "PRODUCT_ID": "PROD66963",
+      "PRODUCT_CODE": "ATL301",
+      "PRODUCT_SIZE": "brush",
+      "PRICE2": null,
+      "SKU_ID": "SKU104746",
+      "LARGE_IMAGE": [
+        "/media/images/products/3000x3000/white/av_sku_ATL301_104746_3000x3000_0.jpg?width=1400&height=1400"
+      ],
+      "UPC_CODE": "018084009413"
+    }
+  ]
+}

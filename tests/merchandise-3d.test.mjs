@@ -9,7 +9,7 @@ import {interiorPlan} from '../dist/shop-interiors.js';
 import {MallWorld3D} from '../dist/world-3d.js';
 
 test('clothing and bag families are actual solid meshes with collars, straps or construction details, never image planes',()=>{
- const samples=new Map();for(const p of E.PRODUCTS)if(physicalProduct(p)&&!p.ceramicProfile&&!samples.has(merchandiseStyle(p)))samples.set(merchandiseStyle(p),p);
+ const samples=new Map();for(const p of E.PRODUCTS)if(physicalProduct(p)&&!p.ceramicProfile&&!p.brushProfile&&!samples.has(merchandiseStyle(p)))samples.set(merchandiseStyle(p),p);
  assert.ok(samples.size>=10);
  for(const [style,p]of samples){const g=createMerchandise(p,{hanger:true}),size=new T.Box3().setFromObject(g).getSize(new T.Vector3());assert.ok(size.x>5&&size.y>5&&size.z>3,style);assert.equal(g.userData.productId,p.id);assert.equal(g.userData.source,p.source);let meshes=0;g.traverse(o=>{assert.ok(!o.isSprite);if(o.isMesh){meshes++;assert.ok(!['PlaneGeometry'].includes(o.geometry.type));for(const m of Array.isArray(o.material)?o.material:[o.material])assert.ok(!m.map||m.map.isTexture);assert.ok(o.geometry.attributes.position.array.every(Number.isFinite));}});assert.ok(meshes>=4,style);g.traverse(o=>{o.geometry?.dispose();for(const m of Array.isArray(o.material)?o.material:[o.material])m?.dispose();});}
 });

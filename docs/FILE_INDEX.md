@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2554 files** from Git-tracked paths and
+This catalog lists **2571 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from this repository’s
 `git ls-files --cached --others --exclude-standard` output; keep other projects separate.
@@ -13,10 +13,10 @@ Finder metadata are omitted. Refresh from this repository’s
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2278 |
-| [docs](../docs/) | 176 |
+| [dist](../dist/) | 2286 |
+| [docs](../docs/) | 184 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 61 |
+| [tests](../tests/) | 62 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## dist
 
 <details>
-<summary>2278 files</summary>
+<summary>2286 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2122,6 +2122,8 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/assets/photos/v53-real-guerlain-G014385.webp](../dist/assets/photos/v53-real-guerlain-G014385.webp)
 - [dist/assets/photos/v53-real-guerlain-G014395.webp](../dist/assets/photos/v53-real-guerlain-G014395.webp)
 - [dist/assets/photos/v53-real-guerlain-G014413.webp](../dist/assets/photos/v53-real-guerlain-G014413.webp)
+- [dist/assets/photos/v54-real-aveda-A09A70.webp](../dist/assets/photos/v54-real-aveda-A09A70.webp)
+- [dist/assets/photos/v54-real-aveda-ATL301.webp](../dist/assets/photos/v54-real-aveda-ATL301.webp)
 - [dist/assets/ross-x3.png](../dist/assets/ross-x3.png)
 - [dist/assets/round.jpg](../dist/assets/round.jpg)
 - [dist/assets/scarf.jpg](../dist/assets/scarf.jpg)
@@ -2137,6 +2139,9 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/book-model.js](../dist/book-model.js)
 - [dist/book-tools.js](../dist/book-tools.js)
 - [dist/brand-designs.js](../dist/brand-designs.js)
+- [dist/brush-model.js](../dist/brush-model.js)
+- [dist/brush-studio.js](../dist/brush-studio.js)
+- [dist/brush-tools.js](../dist/brush-tools.js)
 - [dist/campus-layout.js](../dist/campus-layout.js)
 - [dist/campus-model.js](../dist/campus-model.js)
 - [dist/campus-routing.js](../dist/campus-routing.js)
@@ -2168,6 +2173,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/detail-instances.js](../dist/detail-instances.js)
 - [dist/dialog-focus.js](../dist/dialog-focus.js)
 - [dist/dining-interior.js](../dist/dining-interior.js)
+- [dist/directory-kiosk.js](../dist/directory-kiosk.js)
 - [dist/district-life.js](../dist/district-life.js)
 - [dist/district-ui.js](../dist/district-ui.js)
 - [dist/engine.js](../dist/engine.js)
@@ -2252,6 +2258,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/photo-palettes-v50.js](../dist/photo-palettes-v50.js)
 - [dist/photo-palettes-v51.js](../dist/photo-palettes-v51.js)
 - [dist/photo-palettes-v53.js](../dist/photo-palettes-v53.js)
+- [dist/photo-palettes-v54.js](../dist/photo-palettes-v54.js)
 - [dist/photo-palettes.js](../dist/photo-palettes.js)
 - [dist/photo-surfaces-v37.js](../dist/photo-surfaces-v37.js)
 - [dist/photo-surfaces-v39.js](../dist/photo-surfaces-v39.js)
@@ -2308,6 +2315,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/store-product-additions-v50.js](../dist/store-product-additions-v50.js)
 - [dist/store-product-additions-v51.js](../dist/store-product-additions-v51.js)
 - [dist/store-product-additions-v53.js](../dist/store-product-additions-v53.js)
+- [dist/store-product-additions-v54.js](../dist/store-product-additions-v54.js)
 - [dist/store-product-seeds-v11.js](../dist/store-product-seeds-v11.js)
 - [dist/store-product-seeds.js](../dist/store-product-seeds.js)
 - [dist/store-services.js](../dist/store-services.js)
@@ -2339,7 +2347,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## docs
 
 <details>
-<summary>176 files</summary>
+<summary>184 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2375,6 +2383,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/GAMEPLAY-v51.md](../docs/GAMEPLAY-v51.md)
 - [docs/GAMEPLAY-v52.md](../docs/GAMEPLAY-v52.md)
 - [docs/GAMEPLAY-v53.md](../docs/GAMEPLAY-v53.md)
+- [docs/GAMEPLAY-v54.md](../docs/GAMEPLAY-v54.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2453,6 +2462,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/qa-v51.md](../docs/qa-v51.md)
 - [docs/qa-v52.md](../docs/qa-v52.md)
 - [docs/qa-v53.md](../docs/qa-v53.md)
+- [docs/qa-v54.md](../docs/qa-v54.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
@@ -2510,6 +2520,12 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/research-v53/catalog-evidence.json](../docs/research-v53/catalog-evidence.json)
 - [docs/research-v53/compact-proof.json](../docs/research-v53/compact-proof.json)
 - [docs/research-v53/compatibility.json](../docs/research-v53/compatibility.json)
+- [docs/research-v54/browser-baseline-proof.json](../docs/research-v54/browser-baseline-proof.json)
+- [docs/research-v54/browser-proof.json](../docs/research-v54/browser-proof.json)
+- [docs/research-v54/catalog-evidence.json](../docs/research-v54/catalog-evidence.json)
+- [docs/research-v54/compact-proof.json](../docs/research-v54/compact-proof.json)
+- [docs/research-v54/compatibility.json](../docs/research-v54/compatibility.json)
+- [docs/research-v54/merchant-records.json](../docs/research-v54/merchant-records.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2554,11 +2570,12 @@ Finder metadata are omitted. Refresh from this repository’s
 ## tests
 
 <details>
-<summary>61 files</summary>
+<summary>62 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
 - [tests/bookshops-v38.test.mjs](../tests/bookshops-v38.test.mjs)
+- [tests/brush-directory-v54.test.mjs](../tests/brush-directory-v54.test.mjs)
 - [tests/campaign.test.mjs](../tests/campaign.test.mjs)
 - [tests/campus-assertions.mjs](../tests/campus-assertions.mjs)
 - [tests/catalog-integrity-v12.test.mjs](../tests/catalog-integrity-v12.test.mjs)

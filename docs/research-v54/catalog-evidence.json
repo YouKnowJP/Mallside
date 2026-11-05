@@ -1,0 +1,70 @@
+{
+  "checkedOn": "2026-11-04",
+  "products": [
+    {
+      "modelId": "v54-real-aveda-A09A70",
+      "title": "Wooden Paddle Brush",
+      "url": "https://www.aveda.com/product/17775/16651/styling/brush/aveda-wooden-paddle-brush",
+      "selectedSKU": "A09A70",
+      "selectedFormat": "One full size brush",
+      "price": 34,
+      "currency": "USD",
+      "checkedOn": "2026-11-04",
+      "lengthIn": 9.9,
+      "widthIn": 3.4,
+      "imageUrl": "https://www.aveda.com/media/images/products/3000x3000/white/av_sku_A09A70_33067_3000x3000_0.jpg?width=1400&height=1400",
+      "photo": "assets/photos/v54-real-aveda-A09A70.webp",
+      "sourceSHA256": "bed74270e70142743dcc5e6db16ba1661c3c21172a4736533caf5775b4cf433b",
+      "runtimeSHA256": "5e0e3b5731ef649e82d7fcc5c6953c4cc3127680c705377b78e2b75df9bc03a1",
+      "sourcePixels": [
+        1400,
+        1400
+      ],
+      "runtimePixels": [
+        900,
+        900
+      ],
+      "reviewed": true,
+      "photoNote": "Official US product image av_sku_A09A70_33067; visually reviewed front photograph of the full size wooden paddle brush. White background retained. The missing lower central pin is intentional ventilation. The original model omits merchant lettering and adapts depth, contour and pin count.",
+      "priceBasis": "Official US single-brush USD offer checked 4 November 2026: $34. Subscription savings, other formats and sets are excluded. Local branch stock and real returns are not verified; game quantities and returns are simulated.",
+      "merchantProductCode": "A09A70",
+      "internalSKU": "SKU33067",
+      "internalSKUBaseId": 33067,
+      "upc": "018084507216",
+      "sourceRecord": "merchant-records.json"
+    },
+    {
+      "modelId": "v54-real-aveda-ATL301",
+      "title": "Wooden Mini Paddle Brush",
+      "url": "https://www.aveda.com/product/17775/66963/styling/brush/aveda-wooden-mini-paddle-brush",
+      "selectedSKU": "ATL301",
+      "selectedFormat": "One mini brush",
+      "price": 26,
+      "currency": "USD",
+      "checkedOn": "2026-11-04",
+      "lengthIn": 7.6,
+      "widthIn": 2.5,
+      "imageUrl": "https://www.aveda.com/media/images/products/3000x3000/white/av_sku_ATL301_104746_3000x3000_0.jpg?width=1400&height=1400",
+      "photo": "assets/photos/v54-real-aveda-ATL301.webp",
+      "sourceSHA256": "beb1b42ff3e45231bf53fe71aa1f11092380548a98a6d7749a4ed809c615e60f",
+      "runtimeSHA256": "bbb7ced1759ad06e4ddd3b412a28b5a6153e786eca750892847ca0b98d014bc9",
+      "sourcePixels": [
+        1400,
+        1400
+      ],
+      "runtimePixels": [
+        900,
+        900
+      ],
+      "reviewed": true,
+      "photoNote": "Official US product image av_sku_ATL301_104746; visually reviewed front photograph of the mini wooden paddle brush. White background retained. The missing lower central pin is intentional ventilation. The original model omits merchant lettering and adapts depth, contour and pin count.",
+      "priceBasis": "Official US single-brush USD offer checked 4 November 2026: $26. Subscription savings, other formats and sets are excluded. Local branch stock and real returns are not verified; game quantities and returns are simulated.",
+      "merchantProductCode": "ATL301",
+      "internalSKU": "SKU104746",
+      "internalSKUBaseId": 104746,
+      "upc": "018084009413",
+      "sourceRecord": "merchant-records.json"
+    }
+  ],
+  "scope": "Two selected individual brushes at the Aveda identity only. Online offers do not verify branch stock. Photographic provenance is not blanket image permission."
+}

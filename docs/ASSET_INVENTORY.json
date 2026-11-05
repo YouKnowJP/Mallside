@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "53.0.0",
+  "release": "54.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2023,
-  "uniqueRuntimePhotoFiles": 2001,
+  "runtimePhotoEntries": 2025,
+  "uniqueRuntimePhotoFiles": 2003,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19937,6 +19937,26 @@
       "source": "https://www.guerlain.com/us/en-us/p/aqua-allegoria-nerolia-vetiver---eau-de-toilette-P014413.html",
       "imageUrl": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dw0bd8b91a/01-ProductsViewer/P014413/P014413_G014413_E01_hi-res.png?sh=900&sw=900",
       "description": "Nerolia Vetiver — official selected-SKU bottle photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v54-real-aveda-A09A70",
+      "path": "assets/photos/v54-real-aveda-A09A70.webp",
+      "sha256": "5e0e3b5731ef649e82d7fcc5c6953c4cc3127680c705377b78e2b75df9bc03a1",
+      "source": "https://www.aveda.com/product/17775/16651/styling/brush/aveda-wooden-paddle-brush",
+      "imageUrl": "https://www.aveda.com/media/images/products/3000x3000/white/av_sku_A09A70_33067_3000x3000_0.jpg?width=1400&height=1400",
+      "description": "Official full size wooden paddle brush photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v54-real-aveda-ATL301",
+      "path": "assets/photos/v54-real-aveda-ATL301.webp",
+      "sha256": "bbb7ced1759ad06e4ddd3b412a28b5a6153e786eca750892847ca0b98d014bc9",
+      "source": "https://www.aveda.com/product/17775/66963/styling/brush/aveda-wooden-mini-paddle-brush",
+      "imageUrl": "https://www.aveda.com/media/images/products/3000x3000/white/av_sku_ATL301_104746_3000x3000_0.jpg?width=1400&height=1400",
+      "description": "Official mini wooden paddle brush photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },
