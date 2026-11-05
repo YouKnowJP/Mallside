@@ -1,5 +1,5 @@
 import {walkable,freeMove} from './free-navigation.js?v=25.0.0';
-export function smoothSeatBlend(elapsed,duration=8){if(!Number.isFinite(elapsed)||!Number.isFinite(duration)||duration<=0)return 0;const t=Math.max(0,Math.min(1,elapsed/.65,(duration-elapsed)/.5));return t*t*(3-2*t);}
+export function smoothSeatBlend(elapsed,duration=8){if(!Number.isFinite(elapsed)||!Number.isFinite(duration)||duration<=0)return 0;const t=Math.max(0,Math.min(1,elapsed/.65,(duration-elapsed)/.5));return t*t*t*(t*(t*6-15)+10);}
 export function ambientStrideSpeed(base,remaining){return Math.max(0,base)*Math.max(.18,Math.min(1,Math.max(0,remaining)/38));}
 export function spacedCrowdPoint(anchor,angle,radius,actors,spawn,nav){
  for(let attempt=0;attempt<192;attempt++){const r=attempt?radius+18+Math.floor((attempt-1)/12)*20:radius,a=angle+(attempt?((attempt-1)%12)*Math.PI/6:0),p={x:anchor.x+Math.cos(a)*r,y:anchor.y+Math.sin(a)*r};if(walkable(p,nav)&&Math.hypot(p.x-spawn.x,p.y-spawn.y)>=48&&actors.every(q=>Math.hypot(q.x-p.x,q.y-p.y)>=34))return p;}return null;

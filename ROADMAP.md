@@ -2,6 +2,15 @@
 
 Updated 4 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v53
+
+- Stock the unfinished Guerlain branch at South Coast Plaza with three exact selected Aqua Allegoria bottle references, official photographs and qualified dated USD offers.
+- Add an original fluted-wood/plaster studio, a free source-note notebook and solid glass models; retain saved studies, shortlists, checkout, refunds and direct exits.
+- Coordinate both hands with a smoothly lifted, turned and lowered closed bottle; retain a fixed reduced-motion pose and solid owned collection-room displays.
+- Furnish all 23 rest lounges inside their existing footprints, add free current-floor guides and shortlist links, and soften sitting/standing acceleration and initial turns.
+- Preserve all 8,847 earlier complete product records, every shop identity, schema 6, map revision 10, ownership and economy rules.
+- See [v53 gameplay](docs/GAMEPLAY-v53.md), [source evidence](docs/research-v53/catalog-evidence.json) and [v53 QA](docs/qa-v53.md).
+
 ## Completed in v52
 
 - Open the collection room to free floor taps, direct keyboard walking and tap/hold touch controls, with furniture-safe routes from the current position.
@@ -248,7 +257,7 @@ Updated 4 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,078 stocked identities, 133 service identities and 387 identities awaiting catalog research**. The remaining 296 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,079 stocked identities, 133 service identities and 386 identities awaiting catalog research**. The remaining 295 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

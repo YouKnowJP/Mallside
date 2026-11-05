@@ -1,0 +1,318 @@
+{
+  "browser": "Chromium",
+  "version": "156.0.8078.80",
+  "contexts": 6,
+  "runnerSHA256": "63ff7bde4391590a42a9d2dcc9515254e69b7ffbedb2b3003b29df96176ef3ac",
+  "fixtureSHA256": "6d8354e2d82646e1885159a6dcaff596788b4b7845d90af30fec288e133d6a05",
+  "results": [
+    {
+      "width": 320,
+      "graphics": "3d",
+      "notebook": {
+        "cards": 3,
+        "overflow": false,
+        "targets": [
+          {
+            "w": 228,
+            "h": 46
+          },
+          {
+            "w": 228,
+            "h": 46
+          },
+          {
+            "w": 228,
+            "h": 46
+          },
+          {
+            "w": 205.859375,
+            "h": 46
+          }
+        ]
+      },
+      "reference": {
+        "sku": "G014413",
+        "size": "75 mL spray"
+      },
+      "rest": {
+        "overflow": false,
+        "targets": [
+          46,
+          46,
+          62.390625,
+          62.390625,
+          46,
+          46,
+          46
+        ],
+        "shops": 4
+      },
+      "freeNotes": true,
+      "directExit": true,
+      "shortlists": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 320,
+      "graphics": "2d",
+      "notebook": {
+        "cards": 3,
+        "overflow": false,
+        "targets": [
+          {
+            "w": 228,
+            "h": 46
+          },
+          {
+            "w": 228,
+            "h": 46
+          },
+          {
+            "w": 228,
+            "h": 46
+          },
+          {
+            "w": 205.859375,
+            "h": 46
+          }
+        ]
+      },
+      "reference": {
+        "sku": "G014413",
+        "size": "75 mL spray"
+      },
+      "rest": {
+        "overflow": false,
+        "targets": [
+          46,
+          46,
+          62.390625,
+          62.390625,
+          46,
+          46,
+          46
+        ],
+        "shops": 4
+      },
+      "freeNotes": true,
+      "directExit": true,
+      "shortlists": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 390,
+      "graphics": "3d",
+      "notebook": {
+        "cards": 3,
+        "overflow": false,
+        "targets": [
+          {
+            "w": 298,
+            "h": 46
+          },
+          {
+            "w": 298,
+            "h": 46
+          },
+          {
+            "w": 298,
+            "h": 46
+          },
+          {
+            "w": 205.859375,
+            "h": 46
+          }
+        ]
+      },
+      "reference": {
+        "sku": "G014413",
+        "size": "75 mL spray"
+      },
+      "rest": {
+        "overflow": false,
+        "targets": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ],
+        "shops": 4
+      },
+      "freeNotes": true,
+      "directExit": true,
+      "shortlists": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 390,
+      "graphics": "2d",
+      "notebook": {
+        "cards": 3,
+        "overflow": false,
+        "targets": [
+          {
+            "w": 298,
+            "h": 46
+          },
+          {
+            "w": 298,
+            "h": 46
+          },
+          {
+            "w": 298,
+            "h": 46
+          },
+          {
+            "w": 205.859375,
+            "h": 46
+          }
+        ]
+      },
+      "reference": {
+        "sku": "G014413",
+        "size": "75 mL spray"
+      },
+      "rest": {
+        "overflow": false,
+        "targets": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ],
+        "shops": 4
+      },
+      "freeNotes": true,
+      "directExit": true,
+      "shortlists": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 768,
+      "graphics": "3d",
+      "notebook": {
+        "cards": 3,
+        "overflow": false,
+        "targets": [
+          {
+            "w": 182,
+            "h": 46
+          },
+          {
+            "w": 182,
+            "h": 46
+          },
+          {
+            "w": 182,
+            "h": 46
+          },
+          {
+            "w": 205.859375,
+            "h": 46
+          }
+        ]
+      },
+      "reference": {
+        "sku": "G014413",
+        "size": "75 mL spray"
+      },
+      "rest": {
+        "overflow": false,
+        "targets": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ],
+        "shops": 4
+      },
+      "freeNotes": true,
+      "directExit": true,
+      "shortlists": true,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "width": 768,
+      "graphics": "2d",
+      "notebook": {
+        "cards": 3,
+        "overflow": false,
+        "targets": [
+          {
+            "w": 182,
+            "h": 46
+          },
+          {
+            "w": 182,
+            "h": 46
+          },
+          {
+            "w": 182,
+            "h": 46
+          },
+          {
+            "w": 205.859375,
+            "h": 46
+          }
+        ]
+      },
+      "reference": {
+        "sku": "G014413",
+        "size": "75 mL spray"
+      },
+      "rest": {
+        "overflow": false,
+        "targets": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ],
+        "shops": 4
+      },
+      "freeNotes": true,
+      "directExit": true,
+      "shortlists": true,
+      "errors": [],
+      "failed": []
+    }
+  ],
+  "allContextsClosed": true,
+  "isolatedStorage": true,
+  "notes": [
+    "Trusted touch taps in disposable contexts; real clocks and visibility handling retained.",
+    "The fixture page waits for network idle before switching to the game; an earlier favicon-navigation cancellation is excluded. The complete final six-context set passes without failed requests.",
+    "Desktop viewport emulation; physical mobile hardware and wider screen-reader verification remain on the roadmap."
+  ],
+  "visualReview": [
+    {
+      "image": "compact-768-3d-notes.png",
+      "sha256": "8b97fadf73f814d4f122ce97caa29e1dacb1fa578fb6e38e0b4248da12194b26",
+      "reviewed": true,
+      "temporaryImageRemovedAfterReview": true
+    },
+    {
+      "image": "compact-320-2d-notes.png",
+      "sha256": "78ba0cee6e5b47ea996d599e40a3ca62c663c2cfd0c460db75b72a0de3d5df51",
+      "reviewed": true,
+      "temporaryImageRemovedAfterReview": true
+    }
+  ]
+}

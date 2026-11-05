@@ -9,7 +9,7 @@ export function buildWindowDisplay(w,store,products,photos){
   const x=(i?1:-1)*f.width*.29,z=f.depth/2-9,wearable=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type),jewelry=['ring','bracelet','watch','necklace','earrings'].includes(p.type);
   w.box(x,5,z,width,10,14,style.fixture,group);w.box(x,10.5,z,width+1,1,15,style.trim,group);
   if(wearable){const mannequin=new T.Group();mannequin.position.set(x-6,11,z);group.add(mannequin);w.cyl(0,17,0,1,34,'#b7afa0',mannequin);w.box(0,22,0,9,16,5,p.color||style.accent,mannequin);w.ball(0,34,0,4,'#ddd9cd',mannequin);for(const dx of [-3,3])w.box(dx,8,0,3,16,4,'#ded9cb',mannequin);w.photo(p,x+6,30,z+3,width*.58,27,group);}
-  else{if(jewelry)w.box(x,14,z,18,5,12,style.accent,group);const display=w.photo(p,x,p.plushProfile||p.ceramicProfile?20.5:32,z+3,width-2,p.plushProfile||p.ceramicProfile?19:34,group);if(p.plushProfile||p.ceramicProfile)display.position.y=11;}
+  else{if(jewelry)w.box(x,14,z,18,5,12,style.accent,group);const display=w.photo(p,x,p.plushProfile||p.ceramicProfile||p.fragranceProfile?20.5:32,z+3,width-2,p.plushProfile||p.ceramicProfile||p.fragranceProfile?19:34,group);if(p.plushProfile||p.ceramicProfile||p.fragranceProfile)display.position.y=11;}
   const glass=w.box(x,33,z+5,width+2,43,1,w.mat('#c7e2dc',{transparent:true,opacity:.075,depthWrite:false}),group);glass.castShadow=false;
   w.box(x,57,z+3,width,2,4,'#ead8b1',group);
  }
@@ -24,7 +24,7 @@ export function buildSignatureInterior(w,profile,layout,products){
   for(const x of [530,670]){w.box(x,.25,480,3,.3,340,profile.key==='nike'?'#f1e6c8':'#ebece4');}
  }else if(profile.key==='uniqlo'||profile.key==='muji'){
   for(let x=rail.x+21,j=0;x<rail.x+rail.width;x+=37,j++)for(let row=0;row<3;row++){w.box(x,14+row*20,rail.y+22,31,2,26,profile.fixture);const p=own[j%Math.max(1,own.length)];for(let n=0;n<3;n++)w.box(x,18+row*20+n*3,rail.y+22,24,2.5,19,p?.color||['#b08676','#aeb7a8','#c9bb8e'][j%3]);}
- }else if(profile.key==='sephora'||profile.kind==='beauty'){
+ }else if(layout.store.collectionEdition!==53&&(profile.key==='sephora'||profile.kind==='beauty')){
   for(const x of [back-95,back,back+95]){w.box(x,48,122,65,70,2,'#252a27');w.box(x,48,125,56,61,2,w.mat('#abc1bb',{metalness:.7,roughness:.2}));for(const sign of [-1,1])w.box(x+sign*32,48,127,2,66,2,'#f8f2e2');}
   for(let i=0;i<8;i++)w.cyl(rail.x+16+i*26,32,rail.y+24,5,23,own[i%Math.max(1,own.length)]?.color||profile.accent);
  }else if(profile.key==='apple'){
@@ -34,7 +34,7 @@ export function buildSignatureInterior(w,profile,layout,products){
   for(let i=0;i<6;i++){const x=rail.x+19+i*36;w.box(x,31,rail.y+22,29,4,20,profile.fixture);w.box(x-6,40,rail.y+22,7,17,8,'#363a35');w.box(x+3,47,rail.y+22,21,5,8,'#363a35');const wheel=w.cyl(x-9,47,rail.y+22,6,3,profile.trim);wheel.rotation.z=Math.PI/2;}
  }else if(['hermes','louisvuitton','coach','bottegaveneta','longchamp'].includes(profile.key)||profile.kind==='boutique'||profile.kind==='jewelry'){
   for(let i=0;i<3;i++){const x=rail.x+36+i*74;w.box(x,37,rail.y+20,65,70,7,profile.fixture);w.box(x,38,rail.y+25,57,61,3,profile.wall);w.box(x,14,rail.y+33,62,4,28,profile.trim);const p=own[i%Math.max(1,own.length)];if(p)w.photo(p,x,43,rail.y+29,40,46);w.box(x,72,rail.y+32,61,2,4,'#e9d1a5');}
- }else if(layout.store.collectionEdition!==50&&!own.some(p=>p.ceramicProfile)){
+ }else if(![50,53].includes(layout.store.collectionEdition)&&!own.some(p=>p.ceramicProfile)){
   own.slice(0,4).forEach((p,i)=>w.photo(p,rail.x+26+i*55,46,rail.y+23,42,48));
  }
  if(profile.key==='prada'){for(const x of [430,600,770]){w.box(x,103,118,120,3,6,'#e6e9dc');w.box(x,43,120,110,65,3,'#b2c9ae');}}

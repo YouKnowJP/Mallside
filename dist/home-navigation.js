@@ -1,4 +1,4 @@
-import {freeRoute,freeMove,walkable} from './free-navigation.js?v=52.0.0';
+import {freeRoute,freeMove,walkable} from './free-navigation.js?v=53.0.0';
 import {walkingStep} from './motion.js?v=34.0.0';
 
 // These footprints match the visible furniture. Coordinates use the room's x/z floor.

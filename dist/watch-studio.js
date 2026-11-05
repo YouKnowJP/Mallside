@@ -1,4 +1,4 @@
-import {updateStudioStudy} from './studio-details.js?v=52.0.0';
+import {updateStudioStudy} from './studio-details.js?v=53.0.0';
 // Original comparison trays, reflection samples and service notes stay inside existing fixture footprints.
 export function buildWatchStudio(w,st,style){
  const samples=[];

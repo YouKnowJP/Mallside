@@ -1,0 +1,109 @@
+{
+  "checkedOn": "2026-11-04",
+  "products": [
+    {
+      "modelId": "v53-real-guerlain-G014385",
+      "title": "Bergamote Calabria",
+      "url": "https://www.guerlain.com/us/en-us/p/aqua-allegoria-bergamote-calabria---eau-de-toilette-P014384.html",
+      "selectedSKU": "G014385",
+      "selectedFormat": "125 mL spray",
+      "price": 170,
+      "currency": "USD",
+      "checkedOn": "2026-11-04",
+      "notes": [
+        "Bergamot",
+        "Cardamom",
+        "Pink peppercorn",
+        "Ginger",
+        "Petitgrain lemon",
+        "White musks"
+      ],
+      "imageUrl": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dw79d8b14e/01-ProductsViewer/P014384/P014384_G014385_E01_hi-res.png?sh=900&sw=900",
+      "photo": "assets/photos/v53-real-guerlain-G014385.webp",
+      "sourceSHA256": "7fa34db6145605461f8c2fb547b2e06b104f74b1dfce9ad96f66a41d82a19004",
+      "runtimeSHA256": "eb4c4b02ba284312a9dab8a9e132c18d11f903a9bd7e65f7a8d6299f8df9dd7e",
+      "sourcePixels": [
+        900,
+        900
+      ],
+      "runtimePixels": [
+        900,
+        900
+      ],
+      "reviewed": true,
+      "photoNote": "Official product photograph named P014384_G014385. The selected format is 125 mL. Transparent background retained; no image artwork is copied onto the original adapted 3D bottle. The source does not publish bottle dimensions.",
+      "priceBasis": "Official USD offer checked 4 November 2026: selected 125 mL spray, $170. Other sizes, refills and gift sets are excluded. Local branch stock, availability and real return eligibility are not verified; game quantities and returns are simulated."
+    },
+    {
+      "modelId": "v53-real-guerlain-G014395",
+      "title": "Mandarine Basilic",
+      "url": "https://www.guerlain.com/us/en-us/p/aqua-allegoria-mandarine-basilic---eau-de-toilette-P014394.html",
+      "selectedSKU": "G014395",
+      "selectedFormat": "125 mL spray",
+      "price": 170,
+      "currency": "USD",
+      "checkedOn": "2026-11-04",
+      "notes": [
+        "Mandarin",
+        "Basil",
+        "Green tea",
+        "Woody notes"
+      ],
+      "imageUrl": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dw6f5ec85a/01-ProductsViewer/P014394/P014394_G014395_E01_hi-res.png?sh=900&sw=900",
+      "photo": "assets/photos/v53-real-guerlain-G014395.webp",
+      "sourceSHA256": "7558a757a334757ad7429901d25a130851cfb861f6ab6089486207856f7803a5",
+      "runtimeSHA256": "9ec0c4a091fb20253bdc3418c3138dabab81419baf874a20de7e8555aa69c250",
+      "sourcePixels": [
+        900,
+        900
+      ],
+      "runtimePixels": [
+        900,
+        900
+      ],
+      "reviewed": true,
+      "photoNote": "Official product photograph named P014394_G014395. The selected format is 125 mL. Transparent background retained; no image artwork is copied onto the original adapted 3D bottle. The source does not publish bottle dimensions.",
+      "priceBasis": "Official USD offer checked 4 November 2026: selected 125 mL spray, $170. Other sizes, refills and gift sets are excluded. Local branch stock, availability and real return eligibility are not verified; game quantities and returns are simulated."
+    },
+    {
+      "modelId": "v53-real-guerlain-G014413",
+      "title": "Nerolia Vetiver",
+      "url": "https://www.guerlain.com/us/en-us/p/aqua-allegoria-nerolia-vetiver---eau-de-toilette-P014413.html",
+      "selectedSKU": "G014413",
+      "selectedFormat": "75 mL spray",
+      "price": 125,
+      "currency": "USD",
+      "checkedOn": "2026-11-04",
+      "notes": [
+        "Neroli",
+        "Vetiver",
+        "Basil",
+        "Fig accord"
+      ],
+      "imageUrl": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dw0bd8b91a/01-ProductsViewer/P014413/P014413_G014413_E01_hi-res.png?sh=900&sw=900",
+      "photo": "assets/photos/v53-real-guerlain-G014413.webp",
+      "sourceSHA256": "b3e33d431a7598f7930fd9f4981501c170881a6bab125a0d732d8bb163a6edfb",
+      "runtimeSHA256": "73cce90bd7ff5693989ab8fd5f4042c26ad70a3b202b4840637f4bbb90a1ab23",
+      "sourcePixels": [
+        900,
+        900
+      ],
+      "runtimePixels": [
+        900,
+        900
+      ],
+      "reviewed": true,
+      "photoNote": "Official product photograph named P014413_G014413. The selected format is 75 mL. Transparent background retained; no image artwork is copied onto the original adapted 3D bottle. The source does not publish bottle dimensions.",
+      "priceBasis": "Official USD offer checked 4 November 2026: selected 75 mL spray, $125. Other sizes, refills and gift sets are excluded. Local branch stock, availability and real return eligibility are not verified; game quantities and returns are simulated."
+    }
+  ],
+  "branches": [
+    {
+      "merchant": "Guerlain",
+      "store": "southcoast-tenant-guerlain-1",
+      "url": "https://www.guerlain.com/us/en-us/c/south-coast-plaza.html",
+      "mallURL": "https://www.southcoastplaza.com/directory/guerlain/",
+      "note": "Official merchant and center directories confirm the Level 1 branch. Interior and bottle dimensions are original adapted game art. Online offers do not establish local inventory."
+    }
+  ]
+}

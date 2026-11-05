@@ -1,0 +1,12 @@
+{
+  "baselineCommit": "aa85e6170ded360dbb62ad24794cd2c6e0d1cfde",
+  "productCount": 8847,
+  "productRecordsSHA256": "3d3652025c83dec790169222a981dd0ed26d2583bf35c2f9243f52313d5ae36b",
+  "storeIdsSHA256": "499e350c23c8da8be1a6c2ca80cb490f7c024eaa06b0ae4aaa32c2ac919f1b0d",
+  "storeCount": 1598,
+  "unchangedModuleSHA256": {
+    "product-appearance.js": "b8d2549eaaea79f179ac80d1cfaddf234382f0e58900f601af2b522bc98948f0",
+    "product-photos.js": "f57fc8fbe3c2d00244eab739644d39073e6eaeff121ef37a5b24ae0d56cef741"
+  },
+  "previousPalettesSHA256": "5b36e6c1f6101d62e953e72ab6af81573ad175e164ba0f0a00187d8c12652bb8"
+}

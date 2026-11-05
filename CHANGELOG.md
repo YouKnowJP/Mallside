@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 53.0.0 · 4 November 2026
+
+- Stock Guerlain’s unfinished South Coast Plaza branch with three selected Aqua Allegoria references, official photos, exact formats and dated US offers.
+- Add an original fragrance studio, free source-note notebook, solid glass bottles, coordinated two-hand inspection and compatible owned shelf displays.
+- Detail all 23 rest lounges, link their free guides to saved shortlists and accessible current-floor shops, and ease sitting/standing acceleration and initial turns.
+- Preserve all earlier product records and existing saves, map revision, economy, returns and rewards. See [gameplay](docs/GAMEPLAY-v53.md), [source evidence](docs/research-v53/catalog-evidence.json) and [QA](docs/qa-v53.md).
+
 ## v52.0.0 — A room you can use
 
 - Replace four fixed walking routes with furniture-safe open-floor navigation, screen-relative keyboard controls, tap/hold touch movement and explicit Stop.
