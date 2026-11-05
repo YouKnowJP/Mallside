@@ -1,5 +1,5 @@
 import * as T from './vendor/three.module.js';
-import {productAppearance} from './product-appearance.js?v=54.0.0';
+import {productAppearance} from './product-appearance.js?v=55.0.0';
 // Empty, closed shell; no shoes or photograph contents become merchant inventory.
 export function createStorage(p){
  const a=p.storageProfile,x=a.widthIn*2.54,z=a.depthIn*2.54,y=a.heightIn*2.54,t=.3,root=new T.Group(),clear=new T.MeshStandardMaterial({color:'#deeeea',transparent:true,opacity:.18,depthWrite:false,roughness:.22,side:T.DoubleSide}),edge=new T.MeshStandardMaterial({color:a.opening==='drop-front door'?'#d1ddd8':'#b9cbc5',roughness:.4});

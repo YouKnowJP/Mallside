@@ -253,3 +253,6 @@ html{scroll-behavior:auto}
 .directory-nearby-grid button{margin:8px 0;text-align:left}
 .directory-nearby>button{margin-top:14px}
 @media(max-width:600px){.brush-note-grid,.directory-nearby-grid{grid-template-columns:1fr}.directory-nearby{padding:12px}.brush-note-grid article,.directory-nearby-grid article{padding:12px}}
+
+/* Original sculpture studies remain readable on narrow screens. */
+.sculpture-drawing{display:block;width:min(100%,340px);height:auto;margin:12px auto}.sculpture-alcove .commons-pages button{min-height:46px;white-space:normal;margin:5px 4px 5px 0}.art-note .sculpture-drawing{max-width:240px}.sculpture-alcove [aria-pressed=true]{background:var(--green);color:#fff}

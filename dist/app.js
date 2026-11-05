@@ -8,16 +8,16 @@ import {isCeramic,ceramicFactsHTML} from './ceramic-tools.js?v=53.0.0';
 import {gardenGuideHTML} from './garden-details.js?v=48.0.0';
 import {isCollectible,collectibleFactsHTML} from './collectible-tools.js?v=47.0.0';
 import {teaCardHTML} from './tea-lounge.js?v=46.0.0';
-import {STUDY_PALETTES,STUDY_FINISHES,studyFor} from './studio-study.js?v=54.0.0';
-import {studioStudyHTML} from './studio-study-ui.js?v=54.0.0';
-import {displayPoint} from './shop-interiors.js?v=54.0.0';
-import {apparelFactsHTML} from './apparel-facts.js?v=46.0.0';
+import {STUDY_PALETTES,STUDY_FINISHES,studyFor} from './studio-study.js?v=55.0.0';
+import {studioStudyHTML} from './studio-study-ui.js?v=55.0.0';
+import {displayPoint} from './shop-interiors.js?v=55.0.0';
+import {apparelFactsHTML} from './apparel-facts.js?v=55.0.0';
 import {nearbyDiscoveryHTML} from './waystation-guide.js?v=40.0.0';
 import {frameFactsHTML} from './eyewear-tools.js?v=39.0.0';
 import {isBookProduct,isReadingProduct,isStationeryProduct,stationeryFactsHTML,bookFactsHTML,bookshopGuideHTML} from './book-tools.js?v=50.0.0';
-import {collectionGuideHTML,collectionSelection,hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=54.0.0';
+import {collectionGuideHTML,collectionSelection,hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=55.0.0';
 import {shoppingPlanHTML,shoppingPlanNotebook} from './shopping-plan-ui.js?v=37.0.0';
-import {diningRoom,sculptureAlcove,artNotebook} from './district-ui.js?v=35.0.0';
+import {diningRoom,sculptureAlcove,artNotebook} from './district-ui.js?v=55.0.0';
 import {fixtureStop} from './mall-neighborhood.js?v=36.0.0';
 import {savedShopButton,pendingCollection} from './shop-options-ui.js?v=41.0.0';
 import {dialogFocusables} from './dialog-focus.js?v=32.0.0';
@@ -28,27 +28,27 @@ import {communityNoticeHTML,lostPropertyHTML,homeRoutineHTML} from './neighborho
 import {communityBoard,localChapterCard,wrappingDesk} from './community-ui.js?v=30.0.0';
 import {outingBoard} from './outing-ui.js?v=24.0.0';
 import {collectionStudioHTML,guestbookHTML,guestbookMemories} from './home-ui.js?v=53.0.0';
-import {CharacterStudio} from './character-studio.js?v=54.0.0';
-import {physicalProduct} from './merchandise-3d.js?v=54.0.0';
-import {validatePickup,putBackSelection} from './shopping-selection.js?v=54.0.0';
+import {CharacterStudio} from './character-studio.js?v=55.0.0';
+import {physicalProduct} from './merchandise-3d.js?v=55.0.0';
+import {validatePickup,putBackSelection} from './shopping-selection.js?v=55.0.0';
 import {brandDesign} from './brand-designs.js?v=49.0.0';
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {tenantFloor,zoneOf} from './campus-model.js?v=23.0.0';
 import {storePortrait,loadPortrait,deletePortrait} from './portrait-store.js?v=23.0.0';
-import {spatialLayout} from './spatial-layout.js?v=54.0.0';
-import {MallWorld3D} from './world-3d.js?v=54.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=54.0.0';
+import {spatialLayout} from './spatial-layout.js?v=55.0.0';
+import {MallWorld3D} from './world-3d.js?v=55.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=55.0.0';
 import {sourceLabel} from './catalog-links-v7.js?v=23.0.0';
 import {windowSelection} from './mall-life.js?v=26.0.0';
 import {layoutFor} from './map-layout.js?v=36.0.0';
 import {paintPerson} from './sprites.js?v=34.0.0';
-import {ActivityScene} from './activity-scene.js?v=54.0.0';
-import {HomeJourney} from './journey.js?v=54.0.0';
-import * as E from './engine.js?v=54.0.0';
+import {ActivityScene} from './activity-scene.js?v=55.0.0';
+import {HomeJourney} from './journey.js?v=55.0.0';
+import * as E from './engine.js?v=55.0.0';
 import {createSaveStorage} from './save-storage.js?v=28.0.0';
 import {recoveryHTML,backupSummary,saveSummary,modeLabel} from './save-recovery-ui.js?v=28.0.0';
 import {icon} from './art.js?v=23.0.0';
-import {MallWorld} from './world.js?v=54.0.0';
+import {MallWorld} from './world.js?v=55.0.0';
 import {bindWalkPad} from './input-controls.js?v=29.0.0';
 const $=q=>document.querySelector(q), $$=q=>[...document.querySelectorAll(q)];
 const storage={get(k){try{return localStorage.getItem(k);}catch{return null;}},set(k,v){try{localStorage.setItem(k,v);return true;}catch{return false;}}};
@@ -190,7 +190,7 @@ const shopExitFooter='<div class="store-exit-strip"><button class="button second
 function diningDoor(id){return [...(world?.layout.rects||[]),...(world?.layout.units||[])].find(u=>u.id===id)?.door;}
 function atDiningBranch(id){const p=diningDoor(id);return world?.inside===id||s.preferences.graphics==='2d'&&p&&Math.hypot(world.avatar.x-p.x,world.avatar.y-p.y)<25;}
 function renderDining(){const st=E.storeById(store);if(!st||!E.diningMenu(st).length)return;modal(st.name,'Dining break · Original Mallside game menu',diningRoom(s,st,{E,esc:escapeHTML,savedShopButton}),{type:'store',footer:shopExitFooter});}
-function openArt(){modal('Sculpture alcove.','Two Lines · '+E.planFor(s).levels[s.floor||0],sculptureAlcove(s,{E,esc:escapeHTML}),{type:'art'});}
+function openArt(preview){modal('Sculpture alcove.','Two Lines · '+E.planFor(s).levels[s.floor||0],sculptureAlcove(s,{E,esc:escapeHTML},preview),{type:'art'});}
 let collectionPicks=[];
 function openCollectionDesk(id,keep=false){const st=E.storeById(id);if(!hasCollectionDesk(st)||(world instanceof MallWorld3D?world.inside!==id:store!==id))return;store=id;if(!keep)collectionPicks=[];const previous=modalType==='collection-desk'?$('.modal'):null,top=previous?.scrollTop||0,action=document.activeElement?.dataset.action,pick=document.activeElement?.dataset.id;modal('The collection desk.',st.name+' · Compare & plan',collectionGuideHTML(s,st,collectionPicks,{E,esc:escapeHTML,picture}),{type:'collection-desk',footer:`<div class="store-exit-strip"><button class="button secondary" data-action="leave-shop">Exit shop → Mall</button><button class="button secondary" data-action="collection-review" ${collectionPicks.length===2?'':'disabled'}>${collectionPicks.length===2?'Review comparison ↑':'Choose two to compare'}</button></div>`});if(previous){const dialog=$('.modal');dialog.scrollTop=top;const buttons=[...dialog.querySelectorAll('[data-action]')],target=buttons.find(b=>b.dataset.action===action&&b.dataset.id===pick&&!b.disabled)||dialog.querySelector('[data-action=collection-clear]')||dialog.querySelector('.close-button');target?.focus({preventScroll:true});target?.scrollIntoView({block:'nearest',behavior:'instant'});}}
 function openShoppingPlan(id){if(!E.storeById(id))return;shoppingDraft=E.shoppingPlanDraft(s,id);planningQuery='';planningLimit=12;renderShoppingPlan();}
@@ -325,6 +325,7 @@ const actions={
  'dining-walk':b=>{const point=world?.inside===store?{x:600,y:675}:s.preferences.graphics==='2d'?diningDoor(store):null;if(!point){toast('Enter this dining location first.',true);return;}const meal=b.dataset.id;if(!E.diningMenu(E.storeById(store)).some(f=>f.id===meal))return;closeModal();world.navigate(point,{interaction:'dine:'+store+':'+meal});focusMap();},
  'dining-collection':()=>{const st=E.storeById(store);if(st.count)renderStore();else renderPendingStore(st);},
  'dining-returns':()=>{if(!walkStoreService('returns'))storeReturns();},
+ 'art-study':b=>openArt(b.dataset.id),
  'art-sketch':b=>{if(perform(()=>E.sketchAlcove(s,b.dataset.id)).ok)playActivity('write','Sketching the Two Lines sculpture',openArt);},
  'art-notebook':()=>modal('A sketchbook of quiet corners.',s.artNotes.length+' floors remembered',artNotebook(s,{E,esc:escapeHTML}),{type:'art-notebook'}),
  'service-use':b=>{const r=perform(()=>E.useStoreService(s,b.dataset.id,store));if(r.ok)playActivity(r.value.animation,r.value.name+' · Enjoy the moment',()=>renderServiceStore(store));},

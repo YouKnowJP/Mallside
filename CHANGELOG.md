@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## 55.0.0 · 5 November 2026
+
+- Stock Vineyard Vines at Century City with two exact selected-color garments, reviewed photos and source XS–XXL variants.
+- Add an original coastal studio while retaining saved studies, fitting, checkout, refunds, rest and exits.
+- Detail all 23 sculpture courts, preview original studies freely and show saved floor drawings in the sketchbook.
+- Coordinate writing hands with a supported notebook and pencil, with eased lift/lower and fixed reduced motion.
+- Preserve all prior complete products, palettes, identities, schema 6 and map revision 10. See [gameplay](docs/GAMEPLAY-v55.md) and [QA](docs/qa-v55.md).
+
 ## 54.0.0 · 4 November 2026
 
 - Stock Aveda at Century City with two exact paddle brushes, reviewed photos, published dimensions and dated US offers.

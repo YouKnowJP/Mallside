@@ -1,0 +1,190 @@
+{
+  "checkedOn": "2026-11-05",
+  "merchant": "Vineyard Vines US",
+  "methods": [
+    "Official merchant server HTML ProductGroup JSON-LD, selected color variants and per-size offer records",
+    "Direct selected-M simplified PDP includes exact color/price/first-photo URL",
+    "Raw HTML Features & Care accordion confirms fabric and construction",
+    "All six exact-size PDPs fetched independently for published body-fit lines"
+  ],
+  "products": [
+    {
+      "key": "polo",
+      "style": "1G013219",
+      "colorCode": "100",
+      "color": "White Cap",
+      "material": "92% polyester, 8% spandex",
+      "construction": [
+        "Short sleeves",
+        "Classic relaxed cut",
+        "Three-button placket",
+        "Interior collar stays",
+        "Embroidered whale on chest"
+      ],
+      "care": "Machine wash",
+      "frontPhoto": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw970a1016/images/2025/1G013219_100_LD_1771_F.jpg?sw=864&strip=false",
+      "photoNote": "Exact style and color100 filename; direct selected-M PDP lists this as first photograph. Parent must visually review before adoption.",
+      "chart": [
+        {
+          "size": "XS",
+          "source": "https://www.vineyardvines.com/product/mens-polos/performance-solid-sankaty-polo/1G013219.html?pid=198355556980&color=100&size=XS",
+          "publishedFitLine": "Fits Neck: 13.5 - 14\"Chest: 34 - 36\"Sleeve: 33.5\""
+        },
+        {
+          "size": "S",
+          "source": "https://www.vineyardvines.com/product/mens-polos/performance-solid-sankaty-polo/1G013219.html?pid=198355556966&color=100&size=S",
+          "publishedFitLine": "Fits Neck: 14.5 - 15\"Chest: 37 - 39\"Sleeve: 34\""
+        },
+        {
+          "size": "M",
+          "source": "https://www.vineyardvines.com/product/mens-polos/performance-solid-sankaty-polo/1G013219.html?pid=198355556959&color=100&size=M",
+          "publishedFitLine": "Fits Neck: 15.5 - 16\"Chest: 39 - 41\"Sleeve: 34.5\""
+        },
+        {
+          "size": "L",
+          "source": "https://www.vineyardvines.com/product/mens-polos/performance-solid-sankaty-polo/1G013219.html?pid=198355557093&color=100&size=L",
+          "publishedFitLine": "Fits Neck: 16.5 - 17\"Chest: 42 - 44\"Sleeve: 35.5\""
+        },
+        {
+          "size": "XL",
+          "source": "https://www.vineyardvines.com/product/mens-polos/performance-solid-sankaty-polo/1G013219.html?pid=198355557086&color=100&size=XL",
+          "publishedFitLine": "Fits Neck: 17.5 - 18\"Chest: 45 - 47\"Sleeve: 36\""
+        },
+        {
+          "size": "XXL",
+          "source": "https://www.vineyardvines.com/product/mens-polos/performance-solid-sankaty-polo/1G013219.html?pid=198355557109&color=100&size=XXL",
+          "publishedFitLine": "Fits Neck: 18.5 - 19\"Chest: 48 - 50\"Sleeve: 36.5\""
+        }
+      ],
+      "name": "Performance Solid Sankaty Polo",
+      "source": "https://www.vineyardvines.com/product/mens-polos/performance-solid-sankaty-polo/1G013219.html?pid=198355556959&color=100&size=M",
+      "priceUSD": 98,
+      "selectedSizeSKU": "198355556959",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sizeSKUs": {
+        "XS": "198355556980",
+        "S": "198355556966",
+        "M": "198355556959",
+        "L": "198355557093",
+        "XL": "198355557086",
+        "XXL": "198355557109"
+      },
+      "sourceSchemaImage": "https://www.vineyardvines.com/on/demandware.static/-/Sites-vineyardvines-master/default/dw970a1016/images/2025/1G013219_100_LD_1771_F.jpg",
+      "allSelectedVariantsInStock": true,
+      "currency": "USD",
+      "condition": "New",
+      "ordinaryFullPrice": true,
+      "offerNote": "Official US single-garment selected-color USD offer checked 5 November 2026. Other color discounts, shipping, coupons, live branch stock and real return eligibility are excluded. Game quantities and fitting/returns remain simulated.",
+      "validation": {
+        "rawProductGroupJSON": true,
+        "exactSelectedMPDPPriceAndColor": true,
+        "allSixSelectedSizeFitLinesFetched": true,
+        "featuresAccordionRawHTML": true,
+        "photoDownloaded": true,
+        "photoVisuallyReviewed": true
+      },
+      "runtimePhoto": "assets/photos/v55-real-vv-1G013219-100.webp",
+      "runtimeSHA256": "a5cfd6c395f8e04a9852700cb5df20d72926bbf27695de96de29ffd7f6d95c66",
+      "visualReview": "Visually reviewed exact style/color front photograph. Folded off-model polo; fabric sample avoids chest mark and placket. Short sleeves and three-button collar confirmed by merchant features; body length remains adapted game art."
+    },
+    {
+      "key": "tee",
+      "style": "1V023108",
+      "colorCode": "480",
+      "color": "Nautical Navy",
+      "material": "100% cotton",
+      "construction": [
+        "Short sleeves",
+        "Relaxed cut",
+        "Garment dyed",
+        "Heavier cotton weight described without measured gsm",
+        "No exterior branding"
+      ],
+      "care": "Machine wash",
+      "frontPhoto": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dwff4b3456/images/2025/1V023108_480_LD_0015_F.jpg?sw=864&strip=false",
+      "photoNote": "Exact style and color480 filename; direct selected-M PDP lists this as first photograph. Parent must visually review before adoption.",
+      "chart": [
+        {
+          "size": "XS",
+          "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728356&color=480&size=XS",
+          "publishedFitLine": "Fits Neck: 13.5 - 14\"Chest: 34 - 36\"Sleeve: 33.5\""
+        },
+        {
+          "size": "S",
+          "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728332&color=480&size=S",
+          "publishedFitLine": "Fits Neck: 14.5 - 15\"Chest: 37 - 39\"Sleeve: 34\""
+        },
+        {
+          "size": "M",
+          "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728387&color=480&size=M",
+          "publishedFitLine": "Fits Neck: 15.5 - 16\"Chest: 39 - 41\"Sleeve: 34.5\""
+        },
+        {
+          "size": "L",
+          "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728370&color=480&size=L",
+          "publishedFitLine": "Fits Neck: 16.5 - 17\"Chest: 42 - 44\"Sleeve: 35.5\""
+        },
+        {
+          "size": "XL",
+          "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728301&color=480&size=XL",
+          "publishedFitLine": "Fits Neck: 17.5 - 18\"Chest: 45 - 47\"Sleeve: 36\""
+        },
+        {
+          "size": "XXL",
+          "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728295&color=480&size=XXL",
+          "publishedFitLine": "Fits Neck: 18.5 - 19\"Chest: 48 - 50\"Sleeve: 36.5\""
+        }
+      ],
+      "name": "Lived-In Tee",
+      "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728387&color=480&size=M",
+      "priceUSD": 45,
+      "selectedSizeSKU": "198355728387",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sizeSKUs": {
+        "XS": "198355728356",
+        "S": "198355728332",
+        "M": "198355728387",
+        "L": "198355728370",
+        "XL": "198355728301",
+        "XXL": "198355728295"
+      },
+      "sourceSchemaImage": "https://www.vineyardvines.com/on/demandware.static/-/Sites-vineyardvines-master/default/dwff4b3456/images/2025/1V023108_480_LD_0015_F.jpg",
+      "allSelectedVariantsInStock": true,
+      "currency": "USD",
+      "condition": "New",
+      "ordinaryFullPrice": true,
+      "offerNote": "Official US single-garment selected-color USD offer checked 5 November 2026. Other color discounts, shipping, coupons, live branch stock and real return eligibility are excluded. Game quantities and fitting/returns remain simulated.",
+      "validation": {
+        "rawProductGroupJSON": true,
+        "exactSelectedMPDPPriceAndColor": true,
+        "allSixSelectedSizeFitLinesFetched": true,
+        "featuresAccordionRawHTML": true,
+        "photoDownloaded": true,
+        "photoVisuallyReviewed": true
+      },
+      "runtimePhoto": "assets/photos/v55-real-vv-1V023108-480.webp",
+      "runtimeSHA256": "7e4ec1de151ae469d2795dbd988709aa3ddebfd90c23ff0e51aa30ccb0577b4d",
+      "visualReview": "Visually reviewed exact style/color front photograph. Off-model front tee, short sleeves, crew neck and plain body; fabric sample excludes the neck label. Shape, thickness and fit remain adapted game art."
+    }
+  ],
+  "limits": [
+    "No local mall inventory assertion",
+    "Published fit lines are body guidance, not garment dimensions or a guarantee of fit",
+    "UPF and performance marketing not independently tested; do not treat game geometry as performance simulation",
+    "Photo source establishes provenance only; parent handles visual review and asset permission conventions"
+  ]
+}

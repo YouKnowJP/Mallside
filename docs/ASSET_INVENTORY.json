@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "54.0.0",
+  "release": "55.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2025,
-  "uniqueRuntimePhotoFiles": 2003,
+  "runtimePhotoEntries": 2027,
+  "uniqueRuntimePhotoFiles": 2005,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19957,6 +19957,26 @@
       "source": "https://www.aveda.com/product/17775/66963/styling/brush/aveda-wooden-mini-paddle-brush",
       "imageUrl": "https://www.aveda.com/media/images/products/3000x3000/white/av_sku_ATL301_104746_3000x3000_0.jpg?width=1400&height=1400",
       "description": "Official mini wooden paddle brush photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v55-real-vv-1G013219-100",
+      "path": "assets/photos/v55-real-vv-1G013219-100.webp",
+      "sha256": "a5cfd6c395f8e04a9852700cb5df20d72926bbf27695de96de29ffd7f6d95c66",
+      "source": "https://www.vineyardvines.com/product/mens-polos/performance-solid-sankaty-polo/1G013219.html?pid=198355556959&color=100&size=M",
+      "imageUrl": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw970a1016/images/2025/1G013219_100_LD_1771_F.jpg?sw=864&strip=false",
+      "description": "Performance Solid Sankaty Polo — exact White Cap photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v55-real-vv-1V023108-480",
+      "path": "assets/photos/v55-real-vv-1V023108-480.webp",
+      "sha256": "7e4ec1de151ae469d2795dbd988709aa3ddebfd90c23ff0e51aa30ccb0577b4d",
+      "source": "https://www.vineyardvines.com/product/mens-t-shirts/lived-in-tee/1V023108.html?pid=198355728387&color=480&size=M",
+      "imageUrl": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dwff4b3456/images/2025/1V023108_480_LD_0015_F.jpg?sw=864&strip=false",
+      "description": "Lived-In Tee — exact Nautical Navy photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
     },

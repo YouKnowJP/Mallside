@@ -51,7 +51,14 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 | Contribution and security reports | [Contributing](../CONTRIBUTING.md), [security](../SECURITY.md) |
 | Research/conversion tooling | [Scripts guide](../scripts/README.md) |
 
-## Current update · v54
+## Current update · v55
+
+- [Coastal studio and sculpture studies](GAMEPLAY-v55.md)
+- [Release QA](qa-v55.md)
+- [Primary merchant records](research-v55/merchant-records.json)
+- [Prior-catalog compatibility snapshot](research-v55/compatibility.json)
+
+## Previous update · v54
 
 - [Brush studio and directory gameplay](GAMEPLAY-v54.md)
 - [Release QA](qa-v54.md)

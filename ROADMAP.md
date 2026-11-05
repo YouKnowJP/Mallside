@@ -1,6 +1,15 @@
 # Mallside development roadmap
 
-Updated 4 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+Updated 5 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+
+## Completed in v55
+
+- Stock Vineyard Vines at Century City with two exact selected-color, source-sized garments and reviewed official photographs.
+- Furnish an original coastal studio, retaining material notes, comparison, fitting, checkout, refunds, rest and exits.
+- Detail all 23 sculpture courts with framed saved drawings and free curve/shadow/color previews.
+- Support the notebook and pencil with coordinated hands, smooth lift/lower and fixed reduced motion.
+- Preserve all 8,852 earlier complete products, palette values, shop identities and save/economy rules.
+- See [v55 gameplay](docs/GAMEPLAY-v55.md), [primary evidence](docs/research-v55/merchant-records.json) and [QA](docs/qa-v55.md).
 
 ## Completed in v54
 
@@ -266,7 +275,7 @@ Updated 4 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,080 stocked identities, 133 service identities and 385 identities awaiting catalog research**. The remaining 294 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,081 stocked identities, 133 service identities and 384 identities awaiting catalog research**. The remaining 293 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

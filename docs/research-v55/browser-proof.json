@@ -1,0 +1,348 @@
+{
+  "version": "55.0.0",
+  "bundle": "app-OBNUUVKE.js",
+  "sourceCommitAtTesting": "9fbde6cdac62cf4fc1328ea2ab566cb45aedd0f6",
+  "sourceFiles": 2295,
+  "publicFiles": 2070,
+  "sourceTreeSHA256": "db2a3e378b4b850df617e256796c643f3a69419033ae71abac4e0c750100ab4a",
+  "publicTreeSHA256": "a6d6a5314f5870d1e38359f554a41e74941f0443010feb275c71b63ed53b0649",
+  "nativeRunnerSHA256": "d31c3dede22a74d2481d62ea60bb1ed02fbc9454c54b90535f0d1cfcb3059ef8",
+  "matrixRunnerSHA256": "a88e8223c6db1bbc26c7b14c59456f2beaf048c168d52d9fc851ae4f16cc0ab4",
+  "scope": {
+    "availableScenarios": 96,
+    "selectedScenarios": 17,
+    "selectedPattern": "^(v55 |3D shop entry|keyboard walking|browse, choose|full viewport|phone/tablet layouts|v43 sculpture|v51 furnished|v50 kept|v35 upper-floor|v46 Sandro|v54 )",
+    "description": "All three new scenarios, affected clothing/writing/sculpture flows, v54 brush/directory regression and core shop, movement, fullscreen and compact controls. Not a full96-scenario rerun."
+  },
+  "clocksAndVisibility": "Real; no overrides",
+  "budgets": {
+    "wait": 120000,
+    "pageLoad": 120000,
+    "protocol": 150000
+  },
+  "browsers": {
+    "safari": {
+      "browserVersion": "26.6.2",
+      "scenarios": 17,
+      "checks": 18,
+      "sessions": 1,
+      "isolation": "bounded-retained-window",
+      "headless": false,
+      "sessionCaseLimit": 18,
+      "errors": 0,
+      "warnings": 0,
+      "retries": 0,
+      "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+      "cases": [
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "ms": 7615,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "ms": 4765,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "ms": 8894,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "ms": 6979,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "ms": 2905,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v35 upper-floor sculpture route, first sketch, daily limit and saved notebook",
+          "ms": 4036,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v43 sculpture sketch markers, saved floor scope and compact watch controls",
+          "ms": 11094,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v46 Sandro fitted shirts and classic tees, retained study, source sizes, checkout, reload and refunds",
+          "ms": 26858,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v46 Sandro dated navy sale, oversized source sizes, fitting and compact direct exits",
+          "ms": 32086,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v51 furnished guest services, coordinated gift wrapping, intact tags, reload and free unwrapping",
+          "ms": 9728,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v50 kept notice marker, free daybook, global daily limit and compatible reload",
+          "ms": 17537,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v54 Aveda source comparison, coordinated brush inspections, retained study, checkout and exact refunds",
+          "ms": 22974,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v54 solid owned brushes, compact formats, title clearance and lighter-mode exits",
+          "ms": 8317,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v54 detailed directory kiosks, free nearby guide, real water route, saved plans and stocked-shop entry",
+          "ms": 8862,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v55 Vineyard Vines exact colors and alpha sizes, retained studio, fitting, reload and exact refunds",
+          "ms": 30804,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v55 sculpture previews are free, coordinated sketching, kept framed choice and notebook reload",
+          "ms": 7868,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        },
+        {
+          "name": "v55 compact clothing and sculpture controls, reduced motion, free studies and lighter exits",
+          "ms": 68792,
+          "fingerprint": "6402dd7bbea924231442270399e134ef92ced0f1972943fe7e9f9d904367d0b3",
+          "sessionHash": "383314b6ef8dd97d"
+        }
+      ]
+    },
+    "firefox": {
+      "browserVersion": "159.0.1",
+      "scenarios": 17,
+      "checks": 18,
+      "sessions": 17,
+      "isolation": "fresh-session",
+      "headless": true,
+      "sessionCaseLimit": 1,
+      "errors": 0,
+      "warnings": 0,
+      "retries": 0,
+      "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+      "cases": [
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "ms": 10263,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "a79b14de688f2976",
+          "profileRemoved": true
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "ms": 3659,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "5d12f7154893f1f2",
+          "profileRemoved": true
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "ms": 8653,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "36e0df2fcb8921ed",
+          "profileRemoved": true
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "ms": 8005,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "8b3fb959ed254075",
+          "profileRemoved": true
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "ms": 2434,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "3e2acc3f2ac5ef4d",
+          "profileRemoved": true
+        },
+        {
+          "name": "v35 upper-floor sculpture route, first sketch, daily limit and saved notebook",
+          "ms": 6926,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "59aa66e5b0e15f9e",
+          "profileRemoved": true
+        },
+        {
+          "name": "v43 sculpture sketch markers, saved floor scope and compact watch controls",
+          "ms": 13223,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "a54efac641badfd0",
+          "profileRemoved": true
+        },
+        {
+          "name": "v46 Sandro fitted shirts and classic tees, retained study, source sizes, checkout, reload and refunds",
+          "ms": 23946,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "38d3e8bb9221e015",
+          "profileRemoved": true
+        },
+        {
+          "name": "v46 Sandro dated navy sale, oversized source sizes, fitting and compact direct exits",
+          "ms": 31676,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "5f46ae49d0ba05e1",
+          "profileRemoved": true
+        },
+        {
+          "name": "v51 furnished guest services, coordinated gift wrapping, intact tags, reload and free unwrapping",
+          "ms": 8948,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "4306f15526291226",
+          "profileRemoved": true
+        },
+        {
+          "name": "v50 kept notice marker, free daybook, global daily limit and compatible reload",
+          "ms": 16245,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "14e3d0edd87b3b4c",
+          "profileRemoved": true
+        },
+        {
+          "name": "v54 Aveda source comparison, coordinated brush inspections, retained study, checkout and exact refunds",
+          "ms": 21132,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "5392fee3d1bb3de5",
+          "profileRemoved": true
+        },
+        {
+          "name": "v54 solid owned brushes, compact formats, title clearance and lighter-mode exits",
+          "ms": 8524,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "05f7cf836daad9b2",
+          "profileRemoved": true
+        },
+        {
+          "name": "v54 detailed directory kiosks, free nearby guide, real water route, saved plans and stocked-shop entry",
+          "ms": 7187,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "be310ad2c1cd52aa",
+          "profileRemoved": true
+        },
+        {
+          "name": "v55 Vineyard Vines exact colors and alpha sizes, retained studio, fitting, reload and exact refunds",
+          "ms": 24705,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "728d4a2468be0210",
+          "profileRemoved": true
+        },
+        {
+          "name": "v55 sculpture previews are free, coordinated sketching, kept framed choice and notebook reload",
+          "ms": 8047,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "3e4f918c8b8e8eac",
+          "profileRemoved": true
+        },
+        {
+          "name": "v55 compact clothing and sculpture controls, reduced motion, free studies and lighter exits",
+          "ms": 7452,
+          "fingerprint": "fd539933cf3e09607786a87539a763693a062e6ea19e299df6af5517f6c30418",
+          "sessionHash": "dcfd6a6dd583a18a",
+          "profileRemoved": true
+        }
+      ]
+    }
+  },
+  "status": "Local validation passed; publication requires exact-head CI and live verification",
+  "localTests": {
+    "tests": 706,
+    "passed": 706,
+    "failed": 0,
+    "logSHA256": "2b2376512b8afce2cea23e0b9afbb93adfb4b9b7d0cf13967992308d0bffc64e",
+    "newRegressions": 13
+  },
+  "compactProof": "compact-proof.json",
+  "cleanup": {
+    "firefox": {
+      "temporaryRootRemoved": true,
+      "ownedUpdateCacheRemoved": true,
+      "preExistingEntriesPreserved": 14,
+      "originalPreferenceBytesPreserved": true,
+      "removedNewHomeEntries": [
+        "Library/Application Support/Firefox/Crash Reports/crash_helper_server.log"
+      ],
+      "preservedUnattributedEntries": [],
+      "mozillaSignatureBeforeAndAfterVerified": true,
+      "ownedProcessesStopped": true
+    },
+    "rawFirefoxArtifactsRemoved": true,
+    "rawFirefoxArtifactEntriesRemoved": 33,
+    "safari": {
+      "automationEnabled": false,
+      "visiblyConfirmedOff": true,
+      "driverStopped": true,
+      "ownedDriverPID": 5779,
+      "driverPortClosed": true,
+      "originalStartPageRestored": true,
+      "originalWindowUUID": "A51DBE76-E6E3-4590-8278-8BD8219883B7",
+      "otherDevelopmentFlagsPreserved": true,
+      "disabledUnsignedExtensionsValue": 1,
+      "localPasswordCompletedByUser": true
+    },
+    "rawSafariArtifactsRemoved": true,
+    "rawSafariArtifactEntriesRemoved": 34
+  },
+  "visualReviews": [
+    {
+      "file": "firefox-gameplay-v55-sketching.png",
+      "sha256": "8b2c98742e917e593238f9d3c1d626371eac90153a580a44c8237d79e5f82070",
+      "reviewed": true
+    },
+    {
+      "file": "firefox-gameplay-v55-fitting-1G013219-100.png",
+      "sha256": "7a42d967d73efd9c682b2a63886026e0f02484560d91d488887a0087a8b85e19",
+      "reviewed": true
+    },
+    {
+      "file": "firefox-gameplay-v55-coastal-studio.png",
+      "sha256": "55cef8974bc793c94c6d01441516db724633cd9524611e43c3a5ccdd29f81ce8",
+      "reviewed": true
+    },
+    {
+      "file": "safari-gameplay-v55-sketching.png",
+      "sha256": "2756c6e321506a8d10b41f2456b3f616fb8207242d3ef60534b73258660c2f00",
+      "reviewed": true
+    },
+    {
+      "file": "safari-gameplay-v55-fitting-1G013219-100.png",
+      "sha256": "32755618bb3f5408f65935a4c61cc7ef2db7ebd329652e89a96d97db7a7eae46",
+      "reviewed": true
+    },
+    {
+      "file": "safari-gameplay-v55-coastal-studio.png",
+      "sha256": "2eb67e4951e5c0dc32109ae3311ce332f68b3d08cad10ab0943166bafbd5534c",
+      "reviewed": true
+    }
+  ],
+  "publication": "After commit, every public file must be byte-identical to the final tested artifact except release.json sourceCommit. Exact-head CI and live evidence are retained locally in ignored build/qa/v55-live-proof.json."
+}

@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v54 — brush studio and clearer next stops
+## v55 — coastal studio and sculpture studies
+
+The unfinished Vineyard Vines shop gains two exact selected-color garments, reviewed photographs, source size labels and a furnished coastal studio. All 23 sculpture courts gain framed saved drawings and free detail previews. Supported notebooks and coordinated pencils make writing animations smoother. Existing saves and products remain compatible. See [v55 gameplay](docs/GAMEPLAY-v55.md), [primary evidence](docs/research-v55/merchant-records.json), [QA](docs/qa-v55.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v54 — brush studio and clearer next stops
 
 The unfinished Aveda shop at Century City gains two exact paddle-brush references, reviewed official photographs, source dimensions and dated prices. An original timber-and-slate studio adds free format comparisons, solid brush models and coordinated two-hand inspection. All 85 public directory kiosks gain detailed construction and current-floor next-stop guides linked to real shops, amenities and saved plans. Earlier products and saves remain compatible. See [v54 gameplay](docs/GAMEPLAY-v54.md), [official source evidence](docs/research-v54/catalog-evidence.json), [release QA](docs/qa-v54.md) and the [roadmap](ROADMAP.md).
 

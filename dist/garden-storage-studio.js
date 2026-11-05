@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
-import {updateStudioStudy} from './studio-details.js?v=54.0.0';
+import {updateStudioStudy} from './studio-details.js?v=55.0.0';
 // Original studio joinery, gardening tools and dividers; no additional merchant stock.
 export function buildGardenStorageStudio(w,st,style){
  const garden=st.products.some(p=>p.ceramicProfile?.planter),r=w.layout.rail,cx=r.x+r.width/2,z=r.y+r.height/2,parts=[],box=(...v)=>parts.push(v),wood=garden?'#9e805d':'#c5bda9',ink=garden?'#46685a':'#586c74',paper='#eee8d6';

@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2571 files** from Git-tracked paths and
+This catalog lists **2587 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from this repository’s
 `git ls-files --cached --others --exclude-standard` output; keep other projects separate.
@@ -13,10 +13,10 @@ Finder metadata are omitted. Refresh from this repository’s
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2286 |
-| [docs](../docs/) | 184 |
+| [dist](../dist/) | 2295 |
+| [docs](../docs/) | 190 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 62 |
+| [tests](../tests/) | 63 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## dist
 
 <details>
-<summary>2286 files</summary>
+<summary>2295 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2124,6 +2124,8 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/assets/photos/v53-real-guerlain-G014413.webp](../dist/assets/photos/v53-real-guerlain-G014413.webp)
 - [dist/assets/photos/v54-real-aveda-A09A70.webp](../dist/assets/photos/v54-real-aveda-A09A70.webp)
 - [dist/assets/photos/v54-real-aveda-ATL301.webp](../dist/assets/photos/v54-real-aveda-ATL301.webp)
+- [dist/assets/photos/v55-real-vv-1G013219-100.webp](../dist/assets/photos/v55-real-vv-1G013219-100.webp)
+- [dist/assets/photos/v55-real-vv-1V023108-480.webp](../dist/assets/photos/v55-real-vv-1V023108-480.webp)
 - [dist/assets/ross-x3.png](../dist/assets/ross-x3.png)
 - [dist/assets/round.jpg](../dist/assets/round.jpg)
 - [dist/assets/scarf.jpg](../dist/assets/scarf.jpg)
@@ -2158,6 +2160,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/ceramic-tools.js](../dist/ceramic-tools.js)
 - [dist/character-rig.js](../dist/character-rig.js)
 - [dist/character-studio.js](../dist/character-studio.js)
+- [dist/coastal-studio.js](../dist/coastal-studio.js)
 - [dist/collectible-studio.js](../dist/collectible-studio.js)
 - [dist/collectible-tools.js](../dist/collectible-tools.js)
 - [dist/collection-guide.js](../dist/collection-guide.js)
@@ -2196,6 +2199,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/garment-overrides-v42.js](../dist/garment-overrides-v42.js)
 - [dist/garment-overrides-v45.js](../dist/garment-overrides-v45.js)
 - [dist/garment-overrides-v46.js](../dist/garment-overrides-v46.js)
+- [dist/garment-overrides-v55.js](../dist/garment-overrides-v55.js)
 - [dist/garment-reference-rules.js](../dist/garment-reference-rules.js)
 - [dist/home-controls.js](../dist/home-controls.js)
 - [dist/home-details.js](../dist/home-details.js)
@@ -2259,6 +2263,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/photo-palettes-v51.js](../dist/photo-palettes-v51.js)
 - [dist/photo-palettes-v53.js](../dist/photo-palettes-v53.js)
 - [dist/photo-palettes-v54.js](../dist/photo-palettes-v54.js)
+- [dist/photo-palettes-v55.js](../dist/photo-palettes-v55.js)
 - [dist/photo-palettes.js](../dist/photo-palettes.js)
 - [dist/photo-surfaces-v37.js](../dist/photo-surfaces-v37.js)
 - [dist/photo-surfaces-v39.js](../dist/photo-surfaces-v39.js)
@@ -2267,6 +2272,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/photo-surfaces-v44.js](../dist/photo-surfaces-v44.js)
 - [dist/photo-surfaces-v45.js](../dist/photo-surfaces-v45.js)
 - [dist/photo-surfaces-v46.js](../dist/photo-surfaces-v46.js)
+- [dist/photo-surfaces-v55.js](../dist/photo-surfaces-v55.js)
 - [dist/photo-surfaces.js](../dist/photo-surfaces.js)
 - [dist/planning-lounge.js](../dist/planning-lounge.js)
 - [dist/play-ui.js](../dist/play-ui.js)
@@ -2285,6 +2291,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/save-storage.js](../dist/save-storage.js)
 - [dist/scene-finish.js](../dist/scene-finish.js)
 - [dist/sculpture-details.js](../dist/sculpture-details.js)
+- [dist/sculpture-gallery.js](../dist/sculpture-gallery.js)
 - [dist/service-counter-details.js](../dist/service-counter-details.js)
 - [dist/shop-interiors.js](../dist/shop-interiors.js)
 - [dist/shop-options-ui.js](../dist/shop-options-ui.js)
@@ -2316,6 +2323,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/store-product-additions-v51.js](../dist/store-product-additions-v51.js)
 - [dist/store-product-additions-v53.js](../dist/store-product-additions-v53.js)
 - [dist/store-product-additions-v54.js](../dist/store-product-additions-v54.js)
+- [dist/store-product-additions-v55.js](../dist/store-product-additions-v55.js)
 - [dist/store-product-seeds-v11.js](../dist/store-product-seeds-v11.js)
 - [dist/store-product-seeds.js](../dist/store-product-seeds.js)
 - [dist/store-services.js](../dist/store-services.js)
@@ -2341,13 +2349,14 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/world-3d.js](../dist/world-3d.js)
 - [dist/world.js](../dist/world.js)
 - [dist/wrapping-tools.js](../dist/wrapping-tools.js)
+- [dist/writing-motion.js](../dist/writing-motion.js)
 
 </details>
 
 ## docs
 
 <details>
-<summary>184 files</summary>
+<summary>190 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2384,6 +2393,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/GAMEPLAY-v52.md](../docs/GAMEPLAY-v52.md)
 - [docs/GAMEPLAY-v53.md](../docs/GAMEPLAY-v53.md)
 - [docs/GAMEPLAY-v54.md](../docs/GAMEPLAY-v54.md)
+- [docs/GAMEPLAY-v55.md](../docs/GAMEPLAY-v55.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2463,6 +2473,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/qa-v52.md](../docs/qa-v52.md)
 - [docs/qa-v53.md](../docs/qa-v53.md)
 - [docs/qa-v54.md](../docs/qa-v54.md)
+- [docs/qa-v55.md](../docs/qa-v55.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
@@ -2526,6 +2537,10 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/research-v54/compact-proof.json](../docs/research-v54/compact-proof.json)
 - [docs/research-v54/compatibility.json](../docs/research-v54/compatibility.json)
 - [docs/research-v54/merchant-records.json](../docs/research-v54/merchant-records.json)
+- [docs/research-v55/browser-proof.json](../docs/research-v55/browser-proof.json)
+- [docs/research-v55/compact-proof.json](../docs/research-v55/compact-proof.json)
+- [docs/research-v55/compatibility.json](../docs/research-v55/compatibility.json)
+- [docs/research-v55/merchant-records.json](../docs/research-v55/merchant-records.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2570,7 +2585,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## tests
 
 <details>
-<summary>62 files</summary>
+<summary>63 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2583,6 +2598,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/ceramics-v48.test.mjs](../tests/ceramics-v48.test.mjs)
 - [tests/character-detail-v23.test.mjs](../tests/character-detail-v23.test.mjs)
 - [tests/character-v20.test.mjs](../tests/character-v20.test.mjs)
+- [tests/coastal-gallery-v55.test.mjs](../tests/coastal-gallery-v55.test.mjs)
 - [tests/collectibles-v47.test.mjs](../tests/collectibles-v47.test.mjs)
 - [tests/collection-v37.test.mjs](../tests/collection-v37.test.mjs)
 - [tests/commons-v32.test.mjs](../tests/commons-v32.test.mjs)

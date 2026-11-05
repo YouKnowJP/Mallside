@@ -12,7 +12,7 @@ assert.ok(['firefox','safari'].includes(browser));
 for(const u of [base,driver])assert.ok(['localhost','127.0.0.1','[::1]'].includes(new URL(u).hostname));
 const listing=spawnSync(process.execPath,[runner,'--list=true'],{cwd:root,encoding:'utf8'});
 assert.equal(listing.status,0,listing.stderr);
-let cases=JSON.parse(listing.stdout);if(args.match)cases=cases.filter(n=>n.includes(args.match));assert.ok(cases.length);
+let cases=JSON.parse(listing.stdout);if(args.match)cases=cases.filter(n=>n.includes(args.match));if(args['match-pattern']){const pattern=new RegExp(args['match-pattern']);cases=cases.filter(n=>pattern.test(n));}assert.ok(cases.length);
 cases.sort((a,b)=>Number(b.match(/^v(\d+)/)?.[1]||0)-Number(a.match(/^v(\d+)/)?.[1]||0)||a.localeCompare(b));
 const release=await fetch(base+'release.json').then(r=>r.json()),html=await fetch(base).then(r=>r.text()),styles=[...html.matchAll(/href="([^\"]+\.css)"/g)].map(m=>m[1]);
 const sessionCaseLimit=reuseWindow?Number(args['max-session-cases']||18):1;assert.ok(Number.isSafeInteger(sessionCaseLimit)&&sessionCaseLimit>0&&sessionCaseLimit<=100);
