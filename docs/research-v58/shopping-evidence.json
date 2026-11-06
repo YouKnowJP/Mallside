@@ -1,0 +1,55 @@
+{
+  "reviewedAt": "2026-11-05",
+  "scope": "Primary retailer evidence for original Mallside shopping interactions and visual refinement; no catalog additions, copied brand art, current real-stock claims, or policy replication authorized by these citations.",
+  "sources": [
+    {
+      "title": "Special In-Store Services for Members — Nike",
+      "url": "https://www.nike.com/membership/in-store-services",
+      "evidence": "The official page describes scanning product barcodes for sizes and colors, in-store and online; favoriting styles to help find them in-store; and asking store athletes for help.",
+      "adaptation": "Give the existing associate an exact-product help action with selected size and existing simulated stock. A response should identify a real game product, explain the next physical destination and offer a walk-to-display or fitting action. Generic size advice can remain secondary.",
+      "limits": "Services are membership/context dependent. Mallside should describe its own simulated inventory, not live Nike store inventory."
+    },
+    {
+      "title": "Store Mode in the App — Zara United Kingdom",
+      "url": "https://www.zara.com/uk/en/help-center/StoreMode",
+      "evidence": "Click and Find shows the floor-plan location of a product placed in the app basket; Click and Go uses the selected store's available catalogue for same-store collection.",
+      "adaptation": "Connect a selected product to its actual existing display or stock fixture. Show department and actionable floor destination, retaining the correct display page when the player arrives. This makes the shopping interface a companion to physical browsing.",
+      "limits": "The currently read UK page does not describe fitting-room reservation, so do not infer that feature from older third-party articles."
+    },
+    {
+      "title": "How to find products in-store? — IKEA United States",
+      "url": "https://www.ikea.com/us/en/customer-service/knowledge/articles/56835821-8dgd-4fb1-b7e3-0015g7f5g990.html",
+      "evidence": "Product pages identify a marketplace department for small products or aisle and bin for larger self-serve items.",
+      "adaptation": "Use stable, readable department and fixture references instead of another abstract catalogue modal. A product help result can say which physical display has the item and guide the player there.",
+      "limits": "Do not recreate IKEA warehouse procedures in every fashion shop; adapt the general principle of product-to-location clarity."
+    },
+    {
+      "title": "Fitting Room Usage Policy Update — UNIQLO Malaysia Customer Service",
+      "url": "https://faq-my.uniqlo.com/pkb_Home_UQ_MY?c=category_uq_sg_my%3AUQMY_CAT04_01&fs=Search&id=kA0fQ000000Avmb&l=en_US&pn=1",
+      "evidence": "The FAQ describes fitting-room guidance during busy periods, staff flexibility for practical needs, and staff keeping remaining merchandise together in a shopping basket while a customer tries the current selection.",
+      "adaptation": "Make fitting status and retained unpaid selections explicit. Keep the player's chosen items intact while trying one item, with clear return-to-browsing and next-size help. Physical waiting positions should remain separate from room occupants and access routes.",
+      "limits": "The three-item policy is specific to this region and peak periods; do not impose it globally in Mallside or invent a mandatory delay."
+    },
+    {
+      "title": "About In-Store Purchase Self-Checkout — UNIQLO Malaysia Customer Service",
+      "url": "https://faq-my.uniqlo.com/pkb_Home_UQ_MY?fs=RelatedArticle&id=kA0Ie000000TOrQ&l=en_US",
+      "evidence": "The official sequence is place basket in the counter space, review items on the display, pay, and bag the items.",
+      "adaptation": "Make unpaid carried selections visibly distinct from purchased bags. At the existing physical counter, show item names, size and total before payment, followed by a bagging/receipt confirmation. Any animation should preserve the existing atomic purchase transaction.",
+      "limits": "Do not copy the regional paper-bag fee or payment methods. Additional timed stages should be skippable and should not conceal payment outcomes."
+    },
+    {
+      "title": "Apple Union Square Highlights New Design Elements, Community Programs — Apple Newsroom",
+      "url": "https://www.apple.com/newsroom/2016/05/19Apple-Union-Square-Highlights-New-Design-Elements-Community-Programs/",
+      "publishedAt": "2016-05-19",
+      "evidence": "The primary launch account describes themed perimeter display bays with experts at displays, side-by-side support, public seating and gathering space.",
+      "adaptation": "Refine original perimeter merchandise bays into coherent themed groupings with restrained fixed signs and small purposeful details. Leave a clear central browse aisle, comfortable pause points and visible associate presence rather than filling walkable space with arbitrary decoration.",
+      "limits": "Historical design precedent, not a claim about all present-day Apple stores. No Apple photography, distinctive architecture or branded fixture art should be copied."
+    }
+  ],
+  "implementationPriorities": [
+    "Replace purely generic associate dialogue with exact-product, exact-size game assistance connected to physical browsing.",
+    "Ensure product-to-fixture routing works for off-page products and changed departments without spending money or reducing stock.",
+    "Refine visible checkout and fitting props only where they communicate an existing gameplay action.",
+    "Improve personal space in shopper routes and queues; this is a game-design inference from the desired experience, not a measured behavior claim from the sources. Test both separation and eventual transaction progress to prevent deadlocks."
+  ]
+}

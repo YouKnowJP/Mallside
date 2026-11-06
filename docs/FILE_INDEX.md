@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2608 files** from Git-tracked paths and
+This catalog lists **2618 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from this repository’s
 `git ls-files --cached --others --exclude-standard` output; keep other projects separate.
@@ -13,10 +13,10 @@ Finder metadata are omitted. Refresh from this repository’s
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2303 |
-| [docs](../docs/) | 201 |
+| [dist](../dist/) | 2305 |
+| [docs](../docs/) | 208 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 65 |
+| [tests](../tests/) | 66 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## dist
 
 <details>
-<summary>2303 files</summary>
+<summary>2305 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2136,6 +2136,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/assets/sephora-x8.jpg](../dist/assets/sephora-x8.jpg)
 - [dist/assets/target-x3.jpg](../dist/assets/target-x3.jpg)
 - [dist/assets/target-x8.jpg](../dist/assets/target-x8.jpg)
+- [dist/associate-service.js](../dist/associate-service.js)
 - [dist/bag-motion.js](../dist/bag-motion.js)
 - [dist/bag-profiles-v44.js](../dist/bag-profiles-v44.js)
 - [dist/bag-reference-rules.js](../dist/bag-reference-rules.js)
@@ -2288,6 +2289,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/reading-details.js](../dist/reading-details.js)
 - [dist/render-compat.js](../dist/render-compat.js)
 - [dist/rest-lounge.js](../dist/rest-lounge.js)
+- [dist/retail-details.js](../dist/retail-details.js)
 - [dist/retail-identity.js](../dist/retail-identity.js)
 - [dist/retail-scenes.js](../dist/retail-scenes.js)
 - [dist/retailer-evidence-v12.js](../dist/retailer-evidence-v12.js)
@@ -2364,7 +2366,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## docs
 
 <details>
-<summary>201 files</summary>
+<summary>208 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2404,6 +2406,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/GAMEPLAY-v55.md](../docs/GAMEPLAY-v55.md)
 - [docs/GAMEPLAY-v56.md](../docs/GAMEPLAY-v56.md)
 - [docs/GAMEPLAY-v57.md](../docs/GAMEPLAY-v57.md)
+- [docs/GAMEPLAY-v58.md](../docs/GAMEPLAY-v58.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2486,6 +2489,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/qa-v55.md](../docs/qa-v55.md)
 - [docs/qa-v56.md](../docs/qa-v56.md)
 - [docs/qa-v57.md](../docs/qa-v57.md)
+- [docs/qa-v58.md](../docs/qa-v58.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
@@ -2560,6 +2564,11 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/research-v57/browser-proof.json](../docs/research-v57/browser-proof.json)
 - [docs/research-v57/compact-proof.json](../docs/research-v57/compact-proof.json)
 - [docs/research-v57/compatibility.json](../docs/research-v57/compatibility.json)
+- [docs/research-v58/browser-proof.json](../docs/research-v58/browser-proof.json)
+- [docs/research-v58/compact-proof.json](../docs/research-v58/compact-proof.json)
+- [docs/research-v58/compatibility.json](../docs/research-v58/compatibility.json)
+- [docs/research-v58/crowd-layout-proof.json](../docs/research-v58/crowd-layout-proof.json)
+- [docs/research-v58/shopping-evidence.json](../docs/research-v58/shopping-evidence.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2604,7 +2613,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## tests
 
 <details>
-<summary>65 files</summary>
+<summary>66 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2663,6 +2672,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/save-recovery.test.mjs](../tests/save-recovery.test.mjs)
 - [tests/scene-lifecycle.test.mjs](../tests/scene-lifecycle.test.mjs)
 - [tests/shopping-day-v24.test.mjs](../tests/shopping-day-v24.test.mjs)
+- [tests/shopping-v58.test.mjs](../tests/shopping-v58.test.mjs)
 - [tests/store-customers.test.mjs](../tests/store-customers.test.mjs)
 - [tests/studies-v41.test.mjs](../tests/studies-v41.test.mjs)
 - [tests/studios-v39.test.mjs](../tests/studios-v39.test.mjs)

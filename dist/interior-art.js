@@ -67,6 +67,7 @@ export function buildProductFixture(w,p,r,profile){
  else if(kind==='apparel'||kind==='department'){
   w.box(x,3,z,r.width,5,r.height,wood);for(const dx of [-43,43])w.box(x+dx,38,z,3,70,5,trim);w.box(x,73,z,90,3,4,trim);height=28;
  }else if(profile.layout==='library'){for(let i=0;i<3;i++)w.box(x,7+i*6,z,85-i*5,6,48,[wood,profile.accent,trim][i]);height=23;}
+ else if(['shoes','home','boutique'].includes(kind)){w.box(x,27,z,r.width,6,r.height,wood);for(const dx of [-r.width/2+6,r.width/2-6])for(const dz of [-r.height/2+6,r.height/2-6])w.box(x+dx,12,z+dz,3,24,3,trim);w.box(x,7,z,r.width-10,2,r.height-10,wood);height=32;}
  else if(kind==='beauty'){w.box(x,16,z,r.width,32,r.height,wood);w.box(x,34,z,r.width+2,4,r.height+2,trim);height=38;}
  else if(profile.layout==='atelier'||kind==='boutique'){w.box(x,17,z,r.width-8,34,r.height-6,wood);w.box(x,36,z,r.width,4,r.height,trim);height=40;}
  else{w.box(x,15,z,r.width,30,r.height,wood);for(const dx of [-38,38])w.box(x+dx,10,z,4,20,45,trim);height=32;}

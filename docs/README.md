@@ -1,11 +1,12 @@
 # Mallside documentation
 
-Current release: [v57 gameplay](GAMEPLAY-v57.md) and [v57 QA](qa-v57.md).
+Current release: [v58 gameplay](GAMEPLAY-v58.md) and [v58 QA](qa-v58.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Exact-product assistance, finished displays and personal space | [v58 guide](GAMEPLAY-v58.md), [primary research](research-v58/shopping-evidence.json), [v58 QA](qa-v58.md) |
 | Clearer 3D scenes, finished starter trousers and visible seated outfits | [v57 guide](GAMEPLAY-v57.md), [compatibility](research-v57/compatibility.json), [v57 QA](qa-v57.md) |
 | Optical studio, readable floor maps and smoother frame fitting | [v56 guide](GAMEPLAY-v56.md), [primary evidence](research-v56/merchant-records.json), [v56 QA](qa-v56.md) |
 | Verified fragrance studio, coordinated bottle inspection and useful rest corners | [v53 guide](GAMEPLAY-v53.md), [source evidence](research-v53/catalog-evidence.json), [v53 QA](qa-v53.md) |
@@ -52,6 +53,12 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 | Browser storage and external services | [Privacy](../PRIVACY.md) |
 | Contribution and security reports | [Contributing](../CONTRIBUTING.md), [security](../SECURITY.md) |
 | Research/conversion tooling | [Scripts guide](../scripts/README.md) |
+
+## Current update · v58
+
+- [Shopping assistance and interior refinement](GAMEPLAY-v58.md)
+- [Retailer research](research-v58/shopping-evidence.json)
+- [Release QA](qa-v58.md)
 
 ## Previous update · v55
 

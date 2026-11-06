@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v57 — clearer scenes and character detail
+## v58 — a more personal shopping visit
+
+Find an exact product on its physical display, ask the associate to check your selected size or format, and keep browsing while they walk out and return. Numbered price cards, open display tables, finer shelves and detailed counters give stores more definition. Shoppers keep personal space and use fitting-room waiting spots and checkout lines without blocking each other. Earlier products and saves remain compatible. See [v58 gameplay](docs/GAMEPLAY-v58.md), [retailer research](docs/research-v58/shopping-evidence.json), [QA](docs/qa-v58.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v57 — clearer scenes and character detail
 
 Floating 3D labels stay readable and inside the view. Original starter trousers gain a finished waist, pockets and rigged fabric; seated outfits stay visible from the back. More distinct shop casework materials and clearer fitting/bag feedback refine the existing shopping loop. All products and saves remain compatible. See [v57 gameplay](docs/GAMEPLAY-v57.md), [QA](docs/qa-v57.md) and the [roadmap](ROADMAP.md).
 

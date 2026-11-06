@@ -1,0 +1,197 @@
+{
+  "version": "58.0.0",
+  "bundle": "app-Q3X4PAG7.js",
+  "scope": "Desktop touch-capable browser contexts at exact viewport widths; not physical-device certification.",
+  "browserType": "chromium",
+  "browserVersion": "156.0.8078.80",
+  "results": [
+    {
+      "width": 320,
+      "graphics": "3d",
+      "status": "passed",
+      "viewport": 320,
+      "touchPoints": 1,
+      "overflow": false,
+      "photo": {
+        "holder": 150,
+        "image": 150,
+        "top": 0,
+        "bottom": 0
+      },
+      "buttons": [
+        {
+          "action": "associate-pickup",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-inspect",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-dismiss",
+          "height": 44
+        }
+      ],
+      "toasts": false,
+      "cash": 7500000,
+      "fullscreen": true
+    },
+    {
+      "width": 320,
+      "graphics": "2d",
+      "status": "passed",
+      "viewport": 320,
+      "touchPoints": 1,
+      "overflow": false,
+      "photo": {
+        "holder": 150,
+        "image": 150,
+        "top": 0,
+        "bottom": 0
+      },
+      "buttons": [
+        {
+          "action": "associate-pickup",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-inspect",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-dismiss",
+          "height": 44
+        }
+      ],
+      "toasts": false,
+      "cash": 7500000,
+      "fullscreen": false
+    },
+    {
+      "width": 390,
+      "graphics": "3d",
+      "status": "passed",
+      "viewport": 390,
+      "touchPoints": 1,
+      "overflow": false,
+      "photo": {
+        "holder": 150,
+        "image": 150,
+        "top": 0,
+        "bottom": 0
+      },
+      "buttons": [
+        {
+          "action": "associate-pickup",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-inspect",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-dismiss",
+          "height": 44
+        }
+      ],
+      "toasts": false,
+      "cash": 7500000,
+      "fullscreen": true
+    },
+    {
+      "width": 390,
+      "graphics": "2d",
+      "status": "passed",
+      "viewport": 390,
+      "touchPoints": 1,
+      "overflow": false,
+      "photo": {
+        "holder": 150,
+        "image": 150,
+        "top": 0,
+        "bottom": 0
+      },
+      "buttons": [
+        {
+          "action": "associate-pickup",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-inspect",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-dismiss",
+          "height": 44
+        }
+      ],
+      "toasts": false,
+      "cash": 7500000,
+      "fullscreen": false
+    },
+    {
+      "width": 768,
+      "graphics": "3d",
+      "status": "passed",
+      "viewport": 768,
+      "touchPoints": 1,
+      "overflow": false,
+      "photo": {
+        "holder": 150,
+        "image": 150,
+        "top": 0,
+        "bottom": 0
+      },
+      "buttons": [
+        {
+          "action": "associate-pickup",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-inspect",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-dismiss",
+          "height": 44
+        }
+      ],
+      "toasts": false,
+      "cash": 7500000,
+      "fullscreen": true
+    },
+    {
+      "width": 768,
+      "graphics": "2d",
+      "status": "passed",
+      "viewport": 768,
+      "touchPoints": 1,
+      "overflow": false,
+      "photo": {
+        "holder": 150,
+        "image": 150,
+        "top": 0,
+        "bottom": 0
+      },
+      "buttons": [
+        {
+          "action": "associate-pickup",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-inspect",
+          "height": 44.1953125
+        },
+        {
+          "action": "associate-dismiss",
+          "height": 44
+        }
+      ],
+      "toasts": false,
+      "cash": 7500000,
+      "fullscreen": false
+    }
+  ],
+  "errors": [],
+  "ownedContextsClosed": 6
+}

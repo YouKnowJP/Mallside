@@ -2,6 +2,15 @@
 
 Updated 5 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v58
+
+- Connect an exact product to its actual floor display, including later display pages.
+- Add per-visit associate size/format checks with physical outward/check/return movement, cancellation, stationary reduced motion, current game stock and validated optional pickup.
+- Add numbered fixed price cards, open footwear/home/accessory tables, shelf trim and finer checkout casework and receipt props without changing navigation footprints.
+- Give shoppers personal space, separate fitting-room waiting spots and correct queue-to-register progression, with bounded detours and repeated purchase-cycle checks across 190 distinct stocked layouts.
+- Preserve all catalog records, photos, shop identities, schema 6, map revision 10 and economy rules.
+- See [v58 gameplay](docs/GAMEPLAY-v58.md), [primary research](docs/research-v58/shopping-evidence.json) and [QA](docs/qa-v58.md).
+
 ## Completed in v57
 
 - Add projected containment, collision filtering, destination priority and stable bounded floating labels to the 3D scene.
@@ -289,7 +298,7 @@ Updated 5 November 2026. The game is playable and under active development; this
 
 - Develop the shared afternoons into spatial group activities with more visible consequences in later visits; the current ten activities are choice-based conversation scenes.
 - Expand the freely walkable collection room with more rooms and collection arrangements; deepen the homeward routine beyond the current evening pause.
-- Continued camera, storefront, lighting, NPC behavior in long visits and character/fabric refinement, including store-crowd neighbor avoidance in long visits and high-neck/sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
+- Continued camera, storefront, lighting, NPC behavior in long visits and character/fabric refinement, including heavily obstructed store-crowd routes in long visits and high-neck/sheer garment seams against their source photographs; the current motion is controlled animation rather than complete cloth physics.
 - Physical phone/tablet testing, including iOS/iPadOS Safari and Android Firefox, and broader accessibility verification. The desktop Safari/Firefox matrix is complete for the recorded versions.
 
 ## Catalog and mall fidelity

@@ -1,0 +1,2852 @@
+[
+  {
+    "store": "ross",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "marshalls",
+    "minDistance": 25.001982413293316,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "target",
+    "minDistance": 25.0036244510059,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "oldnavy",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "hm",
+    "minDistance": 25.004080316384336,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "uniqlo",
+    "minDistance": 25.002455060763836,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "levis",
+    "minDistance": 25.000437493553584,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "nike",
+    "minDistance": 25.004080316384336,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "adidas",
+    "minDistance": 25.00124996875156,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "lego",
+    "minDistance": 25.000985819906827,
+    "purchases": 45,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      5,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "sephora",
+    "minDistance": 25.00485546180727,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "apple",
+    "minDistance": 25.00059729270754,
+    "purchases": 45,
+    "perShopper": [
+      6,
+      6,
+      6,
+      5,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "nordstrom",
+    "minDistance": 25.000341556543177,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "coach",
+    "minDistance": 25.00168472888954,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "longchamp",
+    "minDistance": 25.001040768665487,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "tory",
+    "minDistance": 25.00168472888954,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "gucci",
+    "minDistance": 25.002220853108287,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "prada",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "lv",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "hermes",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "zara",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "muji",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "newbalance",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "lululemon",
+    "minDistance": 25.002455060763836,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "alo",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "bathbody",
+    "minDistance": 25.000121347692232,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "tiffany",
+    "minDistance": 25.000192275249287,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "cartier",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "ysl",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "bottega",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "chanel",
+    "minDistance": 25.016656889855025,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-abercrombiefitch-Upperlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-aerieamericaneagleoutfitters-Upperlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-aldo-Lowerlevel",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-americaneagle-Upperlevel",
+    "minDistance": 25.008475078263878,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-auntieannespretzels-",
+    "minDistance": 25.000910330350386,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-bafangdumpling-",
+    "minDistance": 25.007746681912653,
+    "purchases": 45,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      5,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-benbridgejewelers-Lowerlevel",
+    "minDistance": 25.000192275249287,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-blazepizza-",
+    "minDistance": 25.005182487062033,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      5,
+      6,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "brea-tenant-boxlunch-Lowerlevel",
+    "minDistance": 25.008267655860656,
+    "purchases": 45,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      5,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-brightoncollectibles-Lowerlevel",
+    "minDistance": 25.00675376511973,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-buildabearworkshop-Upperlevel",
+    "minDistance": 25.003478593371764,
+    "purchases": 44,
+    "perShopper": [
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-caitlynminimalist-",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-casper-Lowerlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-chageemodernteahouse-",
+    "minDistance": 25.007746681912653,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-champssports-Upperlevel",
+    "minDistance": 25.002455060763836,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-chipotlemexicangrill-",
+    "minDistance": 25.000310028538888,
+    "purchases": 47,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-chronotoys-Upperlevel",
+    "minDistance": 25,
+    "purchases": 45,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      5,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-cinnabon-Upperlevel",
+    "minDistance": 25.01106506580472,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "brea-tenant-cottonon-Upperlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-dickssportinggoods-Outdoorarea",
+    "minDistance": 25,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-dintaifung-Outdoorarea",
+    "minDistance": 25,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-drmartens-Upperlevel",
+    "minDistance": 25.000223412238096,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-evereve-",
+    "minDistance": 25.00176115796934,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-express-Upperlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-fabletics-Lowerlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-footlocker-Lowerlevel",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-footwork-",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-fossil-Lowerlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-freepeoplemovement-Lowerlevel",
+    "minDistance": 25.002455060763836,
+    "purchases": 36,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-gorjana-Outdoorarea",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-heytea-",
+    "minDistance": 25.00230771444089,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-hollisterco-Upperlevel",
+    "minDistance": 25.014571930421287,
+    "purchases": 47,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "brea-tenant-hottopic-Upperlevel",
+    "minDistance": 25.00459735464499,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-jambajuice-Upperlevel",
+    "minDistance": 25.005012647232192,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-kayjewelers-Lowerlevel",
+    "minDistance": 25.001779804906214,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-kiehlssince1851-Upperlevel",
+    "minDistance": 25.00093646920376,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      5,
+      6,
+      5,
+      6,
+      7,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "brea-tenant-kurasushi-Upperlevel",
+    "minDistance": 25.00407357092115,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-lids-Upperlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-loccitane-Upperlevel",
+    "minDistance": 25.008220917806497,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-lovesac-Lowerlevel",
+    "minDistance": 25.00248906347925,
+    "purchases": 47,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-lushfreshhandmadecosmetics-Upperlevel",
+    "minDistance": 25.00224431217779,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-maccosmetics-Upperlevel",
+    "minDistance": 25.000538561866303,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-macysmenshome-",
+    "minDistance": 25.002455060763836,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-mango-Lowerlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-michaelkors-Lowerlevel",
+    "minDistance": 25.001443971655466,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-milaskitchenhawaii-",
+    "minDistance": 25.001311175246162,
+    "purchases": 44,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      5,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-osim-Upperlevel",
+    "minDistance": 25.003978791848226,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-pandora-Lowerlevel",
+    "minDistance": 25.002455060763836,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-philzcoffee-",
+    "minDistance": 25.00114010807181,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-potterybarn-Outdoorarea",
+    "minDistance": 25.0016479053336,
+    "purchases": 44,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      5,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-purple-Upperlevel",
+    "minDistance": 25.00449735093356,
+    "purchases": 47,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "brea-tenant-quay-Upperlevel",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-sportstreasures-Lowerlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-starbuckscoffee-Lowerlevel",
+    "minDistance": 25.00013639699836,
+    "purchases": 45,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-sunglasshut-Upperlevel",
+    "minDistance": 25.001040768665487,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-swarovskicrystal-Lowerlevel",
+    "minDistance": 25.001311175246162,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      5,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-swisswatchgalleryandfinejewelry-Lowerlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-themelt-",
+    "minDistance": 25,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "brea-tenant-tumi-",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-urbanoutfitters-Upperlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-vans-Upperlevel",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-voluspa-",
+    "minDistance": 25.010658595815737,
+    "purchases": 45,
+    "perShopper": [
+      6,
+      5,
+      6,
+      5,
+      6,
+      5,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "brea-tenant-warbyparker-Lowerlevel",
+    "minDistance": 25.002912299387724,
+    "purchases": 32,
+    "perShopper": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "brea-tenant-wetzelspretzelscoldstonecreamery-",
+    "minDistance": 25.024951280595797,
+    "purchases": 47,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-aesop-Level1",
+    "minDistance": 25.00316644156356,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      5,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "century-tenant-aguabendita-Level2",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-allsaints-Level1",
+    "minDistance": 25.00011993507009,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-americangirl-Level2",
+    "minDistance": 25.01999200639361,
+    "purchases": 44,
+    "perShopper": [
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-anthropologie-Level2",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-aritzia-Level1",
+    "minDistance": 25,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-aveda-Level1",
+    "minDistance": 25.007229137693294,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      5,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "century-tenant-breitling-Level1",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-buckmason-Level1",
+    "minDistance": 25.002455060763836,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-calpak-Level2",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-cos-Level1",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-dreame-Level2",
+    "minDistance": 25.000816683432372,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-dyson-Level1",
+    "minDistance": 25.00248906347925,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      5,
+      6,
+      7,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-eataly-Level2&3",
+    "minDistance": 25.001311175246162,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-jcrew-Level1",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-janieandjack-Level2",
+    "minDistance": 25.000341556543177,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-jomalonelondon-Level1",
+    "minDistance": 25.00449735093356,
+    "purchases": 48,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "century-tenant-katespadenewyork-Level1",
+    "minDistance": 25.000172637952765,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-kendrascott-Level1",
+    "minDistance": 25.003028945641233,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-marcjacobs-Level1",
+    "minDistance": 25.00011993507009,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-marinelayer-Level1",
+    "minDistance": 25.002455060763836,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-mejuri-Level1",
+    "minDistance": 25.002754763745664,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-messika-Level1",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-minamotokitchoan-Level2",
+    "minDistance": 25.001744840090037,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      7,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-moleskine-Level1",
+    "minDistance": 25.001364107061892,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-mzwallace-Level1",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-pixibeauty-Level2",
+    "minDistance": 25.00921543416915,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "century-tenant-popmart-Level2",
+    "minDistance": 25.004999500099974,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      5,
+      6,
+      6,
+      6,
+      5,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "century-tenant-princesspolly-Level2",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-rhone-Level1",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-sajenaturalwellness-Level1",
+    "minDistance": 25.00095526293696,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-sandro-Level1",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-skechers-Level2",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-tagheuer-Level1",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-terrain-Level2",
+    "minDistance": 25.000456063579012,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-theordinary-Level1",
+    "minDistance": 25.006115430555365,
+    "purchases": 47,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-topologie-Level2",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "century-tenant-venchi-Level1",
+    "minDistance": 25.013557004517633,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-videoaudiocenter-Level1",
+    "minDistance": 25.00316644156356,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "century-tenant-vineyardvines-Level1",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "beverly-tenant-coffeecommissary-Street/Level1",
+    "minDistance": 25.007746681912653,
+    "purchases": 47,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "beverly-tenant-mcm-Level7",
+    "minDistance": 25.000341556543177,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "beverly-tenant-philippplein-Level7",
+    "minDistance": 25.000346550299117,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-apc-2",
+    "minDistance": 25.000204873661456,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-chloe-2",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-miumiu-2",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-skims-1",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-rogervivier-1",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-alangesohne-2",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-audemarspiguet-2",
+    "minDistance": 25.003028945641233,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-baccarat-3",
+    "minDistance": 25.0175016395522,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "southcoast-tenant-jessicamccormack-2",
+    "minDistance": 25.000518469142865,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-vacheronconstantin-2",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-byredo-2",
+    "minDistance": 25.0175016395522,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "southcoast-tenant-guerlain-1",
+    "minDistance": 25.00138029862869,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "southcoast-tenant-santamarianovella-1",
+    "minDistance": 25.005103807552818,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      5,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "southcoast-tenant-jacquesmariemage-1",
+    "minDistance": 25,
+    "purchases": 44,
+    "perShopper": [
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "southcoast-tenant-oliverpeoples-3",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-barnesnoble-3",
+    "minDistance": 25.003740300040533,
+    "purchases": 47,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "southcoast-tenant-hallmark-2",
+    "minDistance": 25.002455060763836,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-cratebarrel-1",
+    "minDistance": 25.000374333235563,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "southcoast-tenant-surlatable-2",
+    "minDistance": 25.00734519705569,
+    "purchases": 48,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "southcoast-tenant-tempurpedic-2",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "southcoast-tenant-yucake-1",
+    "minDistance": 25.000894634669415,
+    "purchases": 47,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "island-tenant-byltbasics-main",
+    "minDistance": 25.00124996875156,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "island-tenant-jonesroad-main",
+    "minDistance": 25.00040388505742,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "island-tenant-rayban-main",
+    "minDistance": 25.002455060763836,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "island-tenant-ditaeyewear-main",
+    "minDistance": 25,
+    "purchases": 44,
+    "perShopper": [
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "island-tenant-duxiana-main",
+    "minDistance": 25.01219695359188,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "island-tenant-ultabeauty-main",
+    "minDistance": 25,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "island-tenant-joeynewportbeach-main",
+    "minDistance": 25.001311175246162,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "island-tenant-arhaus-main",
+    "minDistance": 25.001432063562863,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "island-tenant-bloomingdaleshomestore-upper",
+    "minDistance": 25.000294287426026,
+    "purchases": 48,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "store": "citadel-tenant-citizencompanystore-",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "citadel-tenant-columbiafactorystore-",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "citadel-tenant-conversefactoryoutlet-",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "citadel-tenant-crocsoutlet-",
+    "minDistance": 25.000223412238096,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "citadel-tenant-disneyoutlet-",
+    "minDistance": 25.00030881761151,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "citadel-tenant-timberland-",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "citadel-tenant-ugg-",
+    "minDistance": 25.000341556543177,
+    "purchases": 35,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "orange-tenant-haagendazs-Mainlevel",
+    "minDistance": 25.0041693989228,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "orange-tenant-nordstromrack-Mainlevel",
+    "minDistance": 25.016186019156503,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "delamo-tenant-bookofflowerlevel-Lowerlevel",
+    "minDistance": 25.01219695359188,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "delamo-tenant-bookskinokuniya-Mainlevel",
+    "minDistance": 25.003559001727243,
+    "purchases": 47,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "delamo-tenant-gap-Upperlevel",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "delamo-tenant-jinseyewear-Upperlevel",
+    "minDistance": 25.00450050965769,
+    "purchases": 33,
+    "perShopper": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "delamo-tenant-lunagrill-Mainlevel",
+    "minDistance": 25.010935068339244,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "store": "delamo-tenant-sanrio-Mainlevel",
+    "minDistance": 25.008332208447747,
+    "purchases": 36,
+    "perShopper": [
+      4,
+      5,
+      5,
+      5,
+      5,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "delamo-tenant-shiseido-Lowerlevel",
+    "minDistance": 25.00224431217779,
+    "purchases": 46,
+    "perShopper": [
+      6,
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "desert-tenant-sferra-Mainlevel",
+    "minDistance": 25.001712973795446,
+    "purchases": 45,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      5,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "spectrum-tenant-coldstonecreamery",
+    "minDistance": 25.001810674650958,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      6
+    ]
+  },
+  {
+    "store": "spectrum-tenant-erincondren",
+    "minDistance": 25.005518845270053,
+    "purchases": 47,
+    "perShopper": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "spectrum-tenant-naturerepublic",
+    "minDistance": 25.012543067400706,
+    "purchases": 44,
+    "perShopper": [
+      5,
+      6,
+      6,
+      5,
+      6,
+      5,
+      6,
+      5
+    ]
+  },
+  {
+    "store": "spectrum-tenant-sandcloud",
+    "minDistance": 25.000341556543177,
+    "purchases": 34,
+    "perShopper": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "store": "spectrum-tenant-torpedocomics",
+    "minDistance": 25.005944231745964,
+    "purchases": 46,
+    "perShopper": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5
+    ]
+  }
+]

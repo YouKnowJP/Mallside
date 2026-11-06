@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v58 · 5 November 2026
+
+- Research real retailer product-location, associate, fitting and checkout practices; adapt them into original Mallside interactions.
+- Add exact-product floor location and per-visit selected-size/format checks with physical associate movement, cancellation, focused-play access and reduced-motion/lighter equivalents.
+- Add fixed numbered price cards, open display tables, finer shelf and counter details, separated fitting waits and collision-aware shopper routes with correct queue progression.
+- Retain all catalog records, shop identities, photos and save/economy rules. See [v58 gameplay](docs/GAMEPLAY-v58.md) and [QA](docs/qa-v58.md).
+
 ## 57.0.0 · 5 November 2026
 
 - Keep floating 3D names inside the scene, clear of the player and controls, with bounded counts and destination priority.
