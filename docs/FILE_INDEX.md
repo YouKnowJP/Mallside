@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2626 files** from Git-tracked paths and
+This catalog lists **2640 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from this repository’s
 `git ls-files --cached --others --exclude-standard` output; keep other projects separate.
@@ -13,10 +13,10 @@ Finder metadata are omitted. Refresh from this repository’s
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2306 |
-| [docs](../docs/) | 214 |
+| [dist](../dist/) | 2312 |
+| [docs](../docs/) | 221 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 67 |
+| [tests](../tests/) | 68 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## dist
 
 <details>
-<summary>2306 files</summary>
+<summary>2312 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2128,6 +2128,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/assets/photos/v55-real-vv-1V023108-480.webp](../dist/assets/photos/v55-real-vv-1V023108-480.webp)
 - [dist/assets/photos/v56-real-jins-MUF-24A-069-58.webp](../dist/assets/photos/v56-real-jins-MUF-24A-069-58.webp)
 - [dist/assets/photos/v56-real-jins-UMF-24A-073-196.webp](../dist/assets/photos/v56-real-jins-UMF-24A-073-196.webp)
+- [dist/assets/photos/v60-real-zoom-h1n.webp](../dist/assets/photos/v60-real-zoom-h1n.webp)
 - [dist/assets/ross-x3.png](../dist/assets/ross-x3.png)
 - [dist/assets/round.jpg](../dist/assets/round.jpg)
 - [dist/assets/scarf.jpg](../dist/assets/scarf.jpg)
@@ -2253,6 +2254,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/optical-studio.js](../dist/optical-studio.js)
 - [dist/outing-ui.js](../dist/outing-ui.js)
 - [dist/paper-studio.js](../dist/paper-studio.js)
+- [dist/parcel-guide.js](../dist/parcel-guide.js)
 - [dist/photo-kiosk.js](../dist/photo-kiosk.js)
 - [dist/photo-palettes-v37.js](../dist/photo-palettes-v37.js)
 - [dist/photo-palettes-v39.js](../dist/photo-palettes-v39.js)
@@ -2288,6 +2290,9 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/product-appearance.js](../dist/product-appearance.js)
 - [dist/product-photos.js](../dist/product-photos.js)
 - [dist/reading-details.js](../dist/reading-details.js)
+- [dist/recorder-model.js](../dist/recorder-model.js)
+- [dist/recorder-tools.js](../dist/recorder-tools.js)
+- [dist/recording-studio.js](../dist/recording-studio.js)
 - [dist/render-compat.js](../dist/render-compat.js)
 - [dist/rest-lounge.js](../dist/rest-lounge.js)
 - [dist/retail-details.js](../dist/retail-details.js)
@@ -2335,6 +2340,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/store-product-additions-v54.js](../dist/store-product-additions-v54.js)
 - [dist/store-product-additions-v55.js](../dist/store-product-additions-v55.js)
 - [dist/store-product-additions-v56.js](../dist/store-product-additions-v56.js)
+- [dist/store-product-additions-v60.js](../dist/store-product-additions-v60.js)
 - [dist/store-product-seeds-v11.js](../dist/store-product-seeds-v11.js)
 - [dist/store-product-seeds.js](../dist/store-product-seeds.js)
 - [dist/store-services.js](../dist/store-services.js)
@@ -2367,7 +2373,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## docs
 
 <details>
-<summary>214 files</summary>
+<summary>221 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2409,6 +2415,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/GAMEPLAY-v57.md](../docs/GAMEPLAY-v57.md)
 - [docs/GAMEPLAY-v58.md](../docs/GAMEPLAY-v58.md)
 - [docs/GAMEPLAY-v59.md](../docs/GAMEPLAY-v59.md)
+- [docs/GAMEPLAY-v60.md](../docs/GAMEPLAY-v60.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2494,6 +2501,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/qa-v58.md](../docs/qa-v58.md)
 - [docs/qa-v59.md](../docs/qa-v59.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
+- [docs/qa-v60.md](../docs/qa-v60.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
 - [docs/qa-v9.md](../docs/qa-v9.md)
@@ -2576,6 +2584,11 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/research-v59/compact-proof.json](../docs/research-v59/compact-proof.json)
 - [docs/research-v59/compatibility.json](../docs/research-v59/compatibility.json)
 - [docs/research-v59/shopping-services-evidence.json](../docs/research-v59/shopping-services-evidence.json)
+- [docs/research-v60/browser-proof.json](../docs/research-v60/browser-proof.json)
+- [docs/research-v60/catalog-evidence.json](../docs/research-v60/catalog-evidence.json)
+- [docs/research-v60/compact-proof.json](../docs/research-v60/compact-proof.json)
+- [docs/research-v60/compatibility.json](../docs/research-v60/compatibility.json)
+- [docs/research-v60/firefox-proof.json](../docs/research-v60/firefox-proof.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2620,7 +2633,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## tests
 
 <details>
-<summary>67 files</summary>
+<summary>68 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2674,6 +2687,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/presentation-v57.test.mjs](../tests/presentation-v57.test.mjs)
 - [tests/product-coverage-v19.test.mjs](../tests/product-coverage-v19.test.mjs)
 - [tests/product-photos.test.mjs](../tests/product-photos.test.mjs)
+- [tests/recording-parcels-v60.test.mjs](../tests/recording-parcels-v60.test.mjs)
 - [tests/render-compat.test.mjs](../tests/render-compat.test.mjs)
 - [tests/retail-identity.test.mjs](../tests/retail-identity.test.mjs)
 - [tests/save-recovery.test.mjs](../tests/save-recovery.test.mjs)

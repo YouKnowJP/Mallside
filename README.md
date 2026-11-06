@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v59 — browse together and plan your next stop
+## v60 — recording studio and clearer parcel collection
+
+The unfinished Guitar Center shop gains an exact H1n reference with a licensed photograph, original solid model, warmer recording studio and coordinated two-hand inspection. A free recording-setup guide compares manufacturer specifications while clearly identifying discontinued models. Guest services shows purchased parcels, original shops and collection capacity, with physical parcel markers on all 23 counters. Associate returns ease into walking from rest. Existing saves and product records remain compatible. See [v60 gameplay](docs/GAMEPLAY-v60.md), [source evidence](docs/research-v60/catalog-evidence.json), [QA](docs/qa-v60.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v59 — browse together and plan your next stop
 
 Preview original materials on the floor of all 292 research-only retail planning lounges while the host joins you at the workbench. Keep or cancel the note, watch finishes change smoothly, and use public benches to review unpaid picks, saved shortlists and nearby real shop routes. Finer lamps, desk details, bench joinery and eased associate walking add polish. Existing products and saves remain compatible. See [v59 gameplay](docs/GAMEPLAY-v59.md), [primary research](docs/research-v59/shopping-services-evidence.json), [QA](docs/qa-v59.md) and the [roadmap](ROADMAP.md).
 

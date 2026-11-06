@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v60 · 5 November 2026
+
+- Complete the Guitar Center shop with one exact black H1n discontinued-model reference, a licensed and attributed photograph, original solid geometry and two-hand inspection.
+- Add warm timber/charcoal recording furniture, cable and acoustic study details, retained material notes and a free keyboard-accessible setup comparison. H4n Pro remains specifications only; its mismatched-finish photo is excluded.
+- Clarify purchased-parcel check/collection at all 23 guest-services counters, retain unpaid picks and original receipts, and show up to three physical parcels with the exact count in the guide.
+- Ease associate return starts from stationary consultations; preserve moving cancellation momentum, reduced motion, economy, schema 6, map revision 10 and every earlier product record. See [gameplay](docs/GAMEPLAY-v60.md) and [QA](docs/qa-v60.md).
+
 ## v59 · 5 November 2026
 
 - Turn research-only material rooms into usable floor consultations with a visible host, stable palette/finish controls, eased samples, free saved notes and clear cancellation.

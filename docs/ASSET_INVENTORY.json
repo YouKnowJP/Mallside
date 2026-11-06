@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "59.0.0",
+  "release": "60.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2029,
-  "uniqueRuntimePhotoFiles": 2007,
+  "runtimePhotoEntries": 2030,
+  "uniqueRuntimePhotoFiles": 2008,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -19999,6 +19999,20 @@
       "description": "Modern Rim Metal 073 196 in Silver — exact official selected-frame angle photograph.",
       "rightsHolder": "Respective third-party owner; not established by source URL",
       "permissionStatus": "permission-not-recorded"
+    },
+    {
+      "id": "v60-real-zoom-h1n",
+      "path": "assets/photos/v60-real-zoom-h1n.webp",
+      "sha256": "c3630fa0fd8e48fe6ffc3ca125aff628c431b86b786ef902eccf89290a9d0e1f",
+      "source": "https://commons.wikimedia.org/wiki/File:Grabadora_Zoom_H1n_encendida.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Grabadora_Zoom_H1n_encendida.jpg",
+      "description": "ZOOM H1n in Black, held in a hand. Luisalvaz / CC BY-SA 4.0.",
+      "rightsHolder": "Luisalvaz",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Luisalvaz",
+      "changes": "Orientation normalized, orientation normalized, resized to 900 × 1200 and encoded as WebP; no crop."
     },
     {
       "id": "ysl-v4-1",

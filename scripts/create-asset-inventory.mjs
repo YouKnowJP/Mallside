@@ -15,7 +15,7 @@ export function createAssetInventory(){
  const photos=Object.entries(PRODUCT_PHOTOS).sort(([a],[b])=>a.localeCompare(b,'en')).map(([id,p])=>{
   if(!p.path.startsWith('assets/')||p.path.includes('..'))throw Error('Invalid photograph path: '+id);
   if(!hashes.has(p.path))hashes.set(p.path,digest(p.path));
-  return {id,path:p.path,sha256:hashes.get(p.path),source:p.source,imageUrl:p.imageUrl,description:p.description,rightsHolder:'Respective third-party owner; not established by source URL',permissionStatus:'permission-not-recorded'};
+  return {id,path:p.path,sha256:hashes.get(p.path),source:p.source,imageUrl:p.imageUrl,description:p.description,rightsHolder:p.rightsHolder||'Respective third-party owner; not established by source URL',permissionStatus:p.license?'licensed':'permission-not-recorded',...(p.license?{license:p.license,licenseUrl:p.licenseUrl,author:p.author,changes:p.changes}:{})};
  });
  const unindexedImages=walk(resolve(dist,'assets')).map(p=>relative(dist,p).replaceAll('\\','/'))
   .filter(p=>!p.startsWith('assets/character/')&&/\.(?:png|jpe?g|webp|gif|avif|svg)$/i.test(p)&&!hashes.has(p)).sort()

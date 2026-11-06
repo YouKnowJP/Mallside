@@ -7,10 +7,10 @@ import {bindHomeControls} from './home-controls.js?v=53.0.0';
 import {turnToward} from './motion.js?v=34.0.0';
 import {stowHandhelds} from './merchandise-carry.js?v=57.0.0';
 import * as T from './vendor/three.module.js';
-import {createShopper} from './character-rig.js?v=57.0.0';
+import {createShopper} from './character-rig.js?v=60.0.0';
 import {dressPerson} from './merchandise-carry.js?v=57.0.0';
 import {updateOutfitPose,releasePersonResources} from './merchandise-fit.js?v=57.0.0';
-import {equippedLook} from './engine.js?v=56.0.0';
+import {equippedLook} from './engine.js?v=60.0.0';
 
 // The dressing room uses the same rig, products and pose solver as the mall.
 patchAmbientLighting(T.ShaderChunk);

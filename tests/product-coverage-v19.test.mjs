@@ -14,7 +14,7 @@ import {MallWorld3D} from '../dist/world-3d.js';
 import {releasePersonResources} from '../dist/merchandise-fit.js';
 import {physicalProduct} from '../dist/merchandise-3d.js';
 // Printed clothing/bag evidence is separate from the new geometry-only plush faces.
-const physical=E.PRODUCTS.filter(p=>physicalProduct(p)&&!p.plushProfile&&!p.ceramicProfile&&!p.storageProfile&&!p.fragranceProfile&&!p.brushProfile),unique=[...new Map(physical.map(p=>[PRODUCT_PHOTOS[p.id].path,p])).values()];
+const physical=E.PRODUCTS.filter(p=>physicalProduct(p)&&!p.plushProfile&&!p.ceramicProfile&&!p.storageProfile&&!p.fragranceProfile&&!p.brushProfile&&!p.recorderProfile),unique=[...new Map(physical.map(p=>[PRODUCT_PHOTOS[p.id].path,p])).values()];
 
 test('every clothing and bag photograph has checksum-bound surface and proportion evidence',()=>{
  assert.equal(unique.length,798);assert.equal(physical.length,3123);

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-05",
+  "timezone": "America/Los_Angeles",
+  "scope": "One exact black H1n catalog reference with licensed photograph; H4n Pro manufacturer specifications appear only in a free comparison guide, without price/finish/stock/photograph claims.",
+  "branch": {
+    "id": "orange-tenant-guitarcenter-Mainlevel",
+    "name": "Guitar Center",
+    "mall": "orange",
+    "coverageStatus": "pending",
+    "coverageProducts": 0,
+    "locationSourceFromCoverage": "https://www.simon.com/mall/the-outlets-at-orange/stores/print",
+    "locationLimit": "Branch identity confirmed from repository coverage; no present-day branch stock verified."
+  },
+  "products": [
+    {
+      "researchKey": "h1n",
+      "title": "Zoom H1n Handy Recorder",
+      "brand": "ZOOM",
+      "model": "H1n",
+      "merchant": "Guitar Center",
+      "branchId": "orange-tenant-guitarcenter-Mainlevel",
+      "sourceUrl": "https://www.guitarcenter.com/Zoom/H1n-Handy-Recorder-1500000188969.gc",
+      "sourceKind": "official-merchant-product-page",
+      "merchantItemId": "1500000188969",
+      "merchantPOS": "114101785",
+      "merchantCatalogRefId": "site51500000188969",
+      "merchantProductId": "site51500000000180447",
+      "upc": "884354018191",
+      "observedCondition": "New",
+      "checkedOn": "2026-11-05",
+      "timezone": "America/Los_Angeles",
+      "price": {
+        "amount": 79.99,
+        "currency": "USD",
+        "qualifier": "Dated US advertised reference price for retained new-condition listing, not a live purchase/stock offer. Manufacturer has discontinued this model.",
+        "checkedOn": "2026-11-05"
+      },
+      "availabilityReview": {
+        "manufacturerStatus": "Discontinued",
+        "manufacturerStatusSource": "https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h1n-handy-recorder/",
+        "merchantCTAStatus": "out_of_stock",
+        "merchantCTAButtons": [
+          "866-498-7882",
+          "Let's Chat"
+        ],
+        "merchantConflict": "Merchant detail alertType says InStock while CTA status is out_of_stock and only phone/chat is offered; do not infer availability.",
+        "branchStockClaim": false,
+        "recommendedGameTreatment": "Reference/demo model and free comparison; clearly label discontinued/unavailable rather than claim a currently purchasable branch item."
+      },
+      "manufacturerUrl": "https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h1n-handy-recorder/",
+      "specificationUrl": "https://zoomcorp.com/media/documents/E_H1n_Specifications.pdf",
+      "dimensions": {
+        "unit": "mm",
+        "manufacturerAxes": {
+          "W": 50.0,
+          "D": 137.5,
+          "H": 32.0
+        },
+        "source": "https://zoomcorp.com/media/documents/E_H1n_Specifications.pdf",
+        "note": "Retain original W/D/H labels. Long D dimension is recorder body length; do not misread as display height."
+      },
+      "facts": {
+        "recording": "Two-channel stereo with built-in 90-degree X/Y microphone pair; WAV up to 24-bit/96 kHz and MP3.",
+        "media": "microSD/microSDHC, Class 4 or higher, maximum 32 GB.",
+        "controls": "1.25-inch monochrome LCD; one-touch button controls.",
+        "connections": "3.5 mm mic/line input,3.5 mm combined line/headphone output, microUSB.",
+        "power": "Two AAA batteries, or optional ZOOM AD-17 DC 5 V / 1 A adapter.",
+        "weight": {
+          "value": 60,
+          "unit": "g",
+          "basis": "main unit only"
+        }
+      },
+      "variantLimit": "Merchant style/property selectors contain no selected color option. Do not invent a finish SKU. Parent should visually verify Commons image against the exact merchant model; H4n Pro exists in Classic/Gray and All Black variants.",
+      "merchantImageForComparisonOnly": "https://media.guitarcenter.com/is/image/MMGS7/L00115000000000-00-2000x2000.jpg",
+      "photo": {
+        "fileTitle": "File:Grabadora Zoom H1n encendida.jpg",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File:Grabadora_Zoom_H1n_encendida.jpg",
+        "filePageRevisionId": 1285898458,
+        "permanentFilePageUrl": "https://commons.wikimedia.org/w/index.php?oldid=1285898458",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Grabadora_Zoom_H1n_encendida.jpg",
+        "author": "Luisalvaz",
+        "authorUrl": "//commons.wikimedia.org/wiki/User:Luisalvaz",
+        "sourceCredit": "Own work",
+        "creationDateAsPublished": "15 August 2021 (according to Exif data)",
+        "width": 3000,
+        "height": 4000,
+        "mime": "image/jpeg",
+        "sha1": "46ec253f5bc82a8f992fa0a2392c8d83972347ee",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attributionRequired": true,
+        "rightsScope": "Photograph reuse under the Commons file license; not a statement of merchant/brand endorsement or a license to unrelated merchant photographs.",
+        "attributionExample": "Grabadora Zoom H1n encendida.jpg — Luisalvaz, CC BY-SA 4.0; source: https://commons.wikimedia.org/wiki/File:Grabadora_Zoom_H1n_encendida.jpg; license: https://creativecommons.org/licenses/by-sa/4.0. Changes: state any crop/resize/edits applied.",
+        "derivativePhotoNote": "If this photo is cropped/adapted, preserve CC BY-SA 4.0 or compatible terms for the adapted photograph and indicate changes.",
+        "visualReviewStatus": "Research agent reviewed exact file-page/model metadata, not image pixels. Parent must visually check before adopting; no photo downloads performed by research agent.",
+        "originalSHA256": "d9df180681795fe5250e4e72db29173a3dea57143ad4956ddd6a3599436c7e71"
+      },
+      "sourceConflictReview": [
+        "GC generic Specs lists wrong-looking battery/track data (3 AA / 4 tracks), inconsistent with its own feature description and manufacturer H1n PDF. Use manufacturer two AAA/two-channel specifications."
+      ],
+      "adoptedAsCatalogItem": true,
+      "visualReview": "H1n matches black merchant model. H4n Pro Commons photo is All Black; merchant photo is Classic/Gray. H4n Pro NOT added as a catalog item or photograph.",
+      "runtimePhoto": {
+        "path": "assets/photos/v60-real-zoom-h1n.webp",
+        "sha256": "c3630fa0fd8e48fe6ffc3ca125aff628c431b86b786ef902eccf89290a9d0e1f",
+        "changes": "Orientation normalized; resized to 900 × 1200; WebP encoding; no crop.",
+        "license": "CC-BY-SA-4.0"
+      }
+    },
+    {
+      "researchKey": "h4n-pro",
+      "title": "Zoom H4n Pro Handy Recorder",
+      "brand": "ZOOM",
+      "model": "H4n Pro",
+      "merchant": "Guitar Center",
+      "branchId": "orange-tenant-guitarcenter-Mainlevel",
+      "sourceUrl": "https://www.guitarcenter.com/Zoom/H4n-Pro-Handy-Recorder-1500000013022.gc",
+      "sourceKind": "official-merchant-product-page",
+      "merchantItemId": "1500000013022",
+      "merchantPOS": "112336995",
+      "merchantCatalogRefId": "site51500000013022",
+      "merchantProductId": "site51500000000011683",
+      "upc": null,
+      "observedCondition": "New",
+      "checkedOn": "2026-11-05",
+      "timezone": "America/Los_Angeles",
+      "price": {
+        "amount": 219.99,
+        "currency": "USD",
+        "qualifier": "Dated US advertised reference price for retained new-condition listing, not a live purchase/stock offer. Manufacturer has discontinued this model.",
+        "checkedOn": "2026-11-05"
+      },
+      "availabilityReview": {
+        "manufacturerStatus": "Discontinued",
+        "manufacturerStatusSource": "https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h4n-pro/",
+        "merchantCTAStatus": "out_of_stock",
+        "merchantCTAButtons": [
+          "Sold Out",
+          "Let's Chat"
+        ],
+        "merchantConflict": "Merchant page visibly says Sold Out.",
+        "branchStockClaim": false,
+        "recommendedGameTreatment": "Reference/demo model and free comparison; clearly label discontinued/unavailable rather than claim a currently purchasable branch item."
+      },
+      "manufacturerUrl": "https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h4n-pro/",
+      "specificationUrl": "https://zoomcorp.com/media/documents/E_H4nPro_Specifications.pdf",
+      "dimensions": {
+        "unit": "mm",
+        "manufacturerAxes": {
+          "W": 73.0,
+          "D": 157.2,
+          "H": 37.0
+        },
+        "source": "https://zoomcorp.com/media/documents/E_H4nPro_Specifications.pdf",
+        "note": "Retain original W/D/H labels. Long D dimension is recorder body length; do not misread as display height."
+      },
+      "facts": {
+        "recording": "Stereo, 4CH and MTR modes; 4CH captures built-in X/Y mics plus two external inputs. WAV up to 24-bit/96 kHz.",
+        "microphones": "Adjustable 90/120-degree X/Y pair.",
+        "media": "SD 16 MB–2 GB or SDHC 4 GB–32 GB.",
+        "connections": "Two locking XLR/TRS combination inputs, external 3.5 mm mic/line input,3.5 mm line/headphone output, USB.",
+        "power": "Two AA batteries, or optional ZOOM AD-14 DC 5 V / 1 A adapter.",
+        "weight": {
+          "value": 294,
+          "unit": "g",
+          "basis": "as specified in manufacturer PDF; no battery exclusion stated in this PDF"
+        }
+      },
+      "variantLimit": "Merchant style/property selectors contain no selected color option. Do not invent a finish SKU. Parent should visually verify Commons image against the exact merchant model; H4n Pro exists in Classic/Gray and All Black variants.",
+      "merchantImageForComparisonOnly": "https://media.guitarcenter.com/is/image/MMGS7/J41183000000000-00-2000x2000.jpg",
+      "photo": {
+        "fileTitle": "File:ZOOM H4n Pro.jpg",
+        "filePageUrl": "https://commons.wikimedia.org/wiki/File:ZOOM_H4n_Pro.jpg",
+        "filePageRevisionId": 1043511561,
+        "permanentFilePageUrl": "https://commons.wikimedia.org/w/index.php?oldid=1043511561",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/ZOOM_H4n_Pro.jpg",
+        "author": "Dibko",
+        "authorUrl": "//commons.wikimedia.org/w/index.php?title=User:Dibko&amp;action=edit&amp;redlink=1",
+        "sourceCredit": "Own work",
+        "creationDateAsPublished": "2021-06-02 07:19:29",
+        "width": 3968,
+        "height": 2976,
+        "mime": "image/jpeg",
+        "sha1": "ac9acbb59678f4c5f889d716ec041fdacd66a318",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "attributionRequired": true,
+        "rightsScope": "Photograph reuse under the Commons file license; not a statement of merchant/brand endorsement or a license to unrelated merchant photographs.",
+        "attributionExample": "ZOOM H4n Pro.jpg — Dibko, CC BY 4.0; source: https://commons.wikimedia.org/wiki/File:ZOOM_H4n_Pro.jpg; license: https://creativecommons.org/licenses/by/4.0. Changes: state any crop/resize/edits applied.",
+        "derivativePhotoNote": "Give author/source/license credit and indicate crop/resize/other edits, if any.",
+        "visualReviewStatus": "Research agent reviewed exact file-page/model metadata, not image pixels. Parent must visually check before adopting; no photo downloads performed by research agent."
+      },
+      "sourceConflictReview": [],
+      "adoptedAsCatalogItem": false,
+      "visualReview": "H1n matches black merchant model. H4n Pro Commons photo is All Black; merchant photo is Classic/Gray. H4n Pro NOT added as a catalog item or photograph."
+    }
+  ],
+  "interactionIdea": {
+    "title": "Free recorder comparison and audition bench",
+    "supportedFacts": "Manufacturer supports H1n simple stereo recording and H4n Pro stereo/4CH/MTR modes with external inputs. Merchant offers recording-gear advice.",
+    "proposal": "Place two clearly labeled demo models on a comparison bench; inspect mic configuration, input ports, dimensions and controls; select stereo interview vs multi-input rehearsal use cases, then watch an original hand/record-button animation and a synthetic level meter.",
+    "limits": "Free interaction; no microphone permission, real customer recordings, shopping charge or reproduced merchant sound demo required. Synthetic meter/audio must be identified as game demonstration, not a measured sonic comparison or real sound-quality emulation."
+  }
+}

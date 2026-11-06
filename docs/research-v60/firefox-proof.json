@@ -1,0 +1,276 @@
+{
+  "version": "60.0.0",
+  "status": "passed",
+  "bundle": "app-WUNKYC7T.js",
+  "release": {
+    "game": "Mallside",
+    "version": "60.0.0",
+    "sourceCommit": "d2bbef28903b21ea346e93f6c82b03cf59db39f5",
+    "bundle": "app-WUNKYC7T.js",
+    "sourceVisibility": "public",
+    "license": "LicenseRef-Mallside-Proprietary",
+    "licenseVersion": "1.1",
+    "licenseUrl": "LICENSE.txt",
+    "permissionsUrl": "PERMISSIONS.txt",
+    "officialPlayUrl": "https://youknowjp.github.io/Mallside/",
+    "sourceRepository": "https://github.com/YouKnowJP/Mallside",
+    "publicFiles": "Generated game only; editable source and history are available in the Mallside repository."
+  },
+  "styles": [
+    "styles-08c80ca023b6.css",
+    "life-styles-8bb423c08c0a.css"
+  ],
+  "sourceTreeSHA256": "a78115a1fc291752cc039ccd4bab9bcab1ab951c93b39299d22929e8e2d6683b",
+  "publicTreeSHA256": "c3a2cc0f3bd716962705bf9567ea0efeb6358d55b01ed967ebd251b36470352e",
+  "nativeRunnerSHA256": "d0d3f7d93ed857749d640d9573588ae9c13e42d2da746b993e92158a356b1b2c",
+  "matrixRunnerSHA256": "a88e8223c6db1bbc26c7b14c59456f2beaf048c168d52d9fc851ae4f16cc0ab4",
+  "browserName": "firefox",
+  "browserVersion": "159.0.1",
+  "platformName": "mac",
+  "headless": true,
+  "isolation": "fresh-session",
+  "sessionCaseLimit": 1,
+  "scenarios": 18,
+  "checks": 19,
+  "sessions": 18,
+  "availableScenarios": 111,
+  "errors": [],
+  "resourceWarnings": [],
+  "inputRetries": [],
+  "cases": [
+    {
+      "name": "3D shop entry, route interruption, exit and repeat entry",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "ecefd637ba194d0312fb55c06b6207da9d7a982f35be71062634baaf8161451a",
+      "checks": [
+        "3D shop entry, route interruption, exit and repeat entry",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "keyboard walking moves and stops on release without a stale route",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "08bbc3ad98e2d67e1eff96abb930e34c8c5167ded84a2bd55b4890fc1f5835ba",
+      "checks": [
+        "keyboard walking moves and stops on release without a stale route",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "2328f92922e2e83cd589fbc89e4dd08466b3e5397e34543547e61acba2e60859",
+      "checks": [
+        "browse, choose size, fitting, carry to checkout, pay and receipt",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "interactive court map leaves an interior before routing",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "9ba6e3d18c437acb677ba4f4695740a09f0b75b1ce3ec4f0a65932dcd7230264",
+      "checks": [
+        "interactive court map leaves an interior before routing",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "full viewport gameplay and visible exit control",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "2ba479d0d7cb9293be6185cee3a757e6f716e926f2aeaf2b24bc71aac20cfaf3",
+      "checks": [
+        "full viewport gameplay and visible exit control",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "phone/tablet layouts, shop search and keyboard modal containment",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "e73eefd00bee44fe2fefe5c92b56ac798b1a45d83feb036bff2820f7dcee9188",
+      "checks": [
+        "phone/tablet layouts, shop search and keyboard modal containment",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": [
+        {
+          "height": 759,
+          "width": 500
+        },
+        {
+          "height": 939,
+          "width": 768
+        },
+        {
+          "height": 915,
+          "width": 1400
+        }
+      ]
+    },
+    {
+      "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "30a2e07ffa42903366d97907b3481c4cf619d5d009d5ca6195281ca20d51d5ba",
+      "checks": [
+        "v33 reflected lighting, camera presets, focused play and visible route feedback",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v33 indoor evening lighting and compact focused-play layouts",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "bb5f6065976c5b9fef9be6ee3927ccbbdc72c2e68e7ba2f7041ae3760ec0c117",
+      "checks": [
+        "v33 indoor evening lighting and compact focused-play layouts",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v57 contained scene labels, native walking and readable original shop casework",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "2e16ac4901a9904f5d5e3584910bf19e00b00843586884f02cadb09bd342cbf3",
+      "checks": [
+        "v57 contained scene labels, native walking and readable original shop casework",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "b1f6c548c4e258474dd744f45822d361075f5fac39088c4b4f0b5c2b40c24361",
+      "checks": [
+        "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "591f5711a1b6a7ba3d1cf6534c1475f58e97ed43c9698490d164b03e8c46bca1",
+      "checks": [
+        "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "11e13dc4b169a9f8887fa3846f1885b6138b2e3e52fc736ab0fadeb86396d709",
+      "checks": [
+        "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v59 guided floor materials, free saving, reload and shop exit",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "00a0968a7ac2267e95f6f730eb74fa983c4508e94c01795d47cd8c189189f1f7",
+      "checks": [
+        "v59 guided floor materials, free saving, reload and shop exit",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v59 floor cancellation, paused host, reduced motion and compact fullscreen",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "67ecf8f1eacdd1e9f1eeca2baff71a00c1e06e2d0ccf9d4201de8bed70b27234",
+      "checks": [
+        "v59 floor cancellation, paused host, reduced motion and compact fullscreen",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v59 public bench review, actual closest stocked destinations, rest and lighter mode",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "7aba7f3add4726ed7e501a578ef9c17c419df3fa8f762ea6a03c2a8e812d95cd",
+      "checks": [
+        "v59 public bench review, actual closest stocked destinations, rest and lighter mode",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v60 exact recorder source, free scenarios, smooth inspection, physical pickup, reload and refund",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "c2fa934726f388f4e84c154e8ffbc644d38a91b2b14033c17d90acb2aa37ae79",
+      "checks": [
+        "v60 exact recorder source, free scenarios, smooth inspection, physical pickup, reload and refund",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v60 parcel check, physical markers, unpaid picks, reload, collection and original-shop refund",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "8cc032cf0bc2f554588c27beb499aef612c7f87148995fc72597d651f65a0fb3",
+      "checks": [
+        "v60 parcel check, physical markers, unpaid picks, reload, collection and original-shop refund",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    },
+    {
+      "name": "v60 compact lighter shop, keyboard scenarios, reduced motion and full parcel capacity",
+      "fingerprint": "f36b1e678b0df20a2003e901e16fbf4159a12025f21dcfbf53641adc44980dbe",
+      "reportSHA256": "3ddd6fe74e76d6a85ba3e5440237cb7dc4cdf1c1b5ba2da59e56fd938c72a7a8",
+      "checks": [
+        "v60 compact lighter shop, keyboard scenarios, reduced motion and full parcel capacity",
+        "no captured game exceptions or unexpected console errors"
+      ],
+      "viewports": []
+    }
+  ],
+  "reviewedImages": [
+    {
+      "name": "firefox-gameplay-v60-recording-studio.png",
+      "sha256": "38d33fba6f10fb12b944223256b303c48e7f5be1df5a01b9ececb12f93904f91"
+    },
+    {
+      "name": "firefox-gameplay-v60-recorder-hands.png",
+      "sha256": "2d07a05e0d5ea54315011cc886b2eb1dfe09eadcb5d8331e174feb1b996a9347"
+    },
+    {
+      "name": "firefox-gameplay-v60-parcel-guide.png",
+      "sha256": "dbb1f6bbb3725ba22afc4f84df69e79c871209fd987c1e6446cd9270caa1897f"
+    },
+    {
+      "name": "v60-compact-3d-320x568-recording.png",
+      "sha256": "8d0f0e0c06f24c4781a43fbf70046a093168823bc61c24ec9773b0be90195417"
+    },
+    {
+      "name": "v60-compact-2d-844x390-parcels.png",
+      "sha256": "a4b57eab9a26e7eec625b87ce87f86a42554a1398dc73267163bbb30254dae65"
+    }
+  ],
+  "cleanup": {
+    "baselineEntries": 14,
+    "baselinePreserved": true,
+    "newGlobalFilesRemoved": 1,
+    "finalProfiles": 18,
+    "finalProfilesAbsent": true,
+    "extraOwnedProfilesRemoved": 0,
+    "temporaryRootRemoved": true,
+    "temporaryRootEntriesRemoved": 168,
+    "signatureVerifiedAfterTests": true
+  },
+  "softwareVerification": {
+    "version": "159.0.1",
+    "driver": "v0.37.1",
+    "firefoxSHA512": "0158a1df6c3b954320542002a86cf3bf4531c25abf0fbf075f46e551669bc70e7c6567aa0ab690a46f955b90acf9976bb8173842b83351625f0d9e27e1cd023c",
+    "driverSHA256": "d02b3f7003f999caf90974a2ef5da0286c05d01cee19112c86846d759fdba4f5",
+    "signatureTeam": "43AQ936H96",
+    "baselineEntries": 14
+  }
+}

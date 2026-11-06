@@ -2,6 +2,15 @@
 
 Updated 5 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v60
+
+- Give the former Guitar Center research lounge one exact source-verified H1n reference and a separately licensed photograph. Qualify its discontinued status and virtual game stock.
+- Add an original recording studio with solid recorder controls, acoustic study panels, cable hooks, drawers, retained material notes and source-based setup comparisons.
+- Coordinate recorder lift/turn/lower with both hands and smooth associate returns after stationary conversations.
+- Explain purchased-parcel storage and collection with original-shop receipt details, eight-item capacity and visible markers on all 23 guest-services counters; preserve existing timings and save fields.
+- Keep 8,856 previous complete product records and all 1,598 shop IDs unchanged. The current catalog has 8,857 entries, 1,083 verified shops, 382 pending shops and 291 retail planning lounges.
+- See [v60 gameplay](docs/GAMEPLAY-v60.md), [source evidence](docs/research-v60/catalog-evidence.json) and [QA](docs/qa-v60.md). Remaining shops, wider product assortments, exact mall geometry and broader character polish are still unfinished.
+
 ## Completed in v59
 
 - Connect all 292 research-only retail planning lounges to a live floor consultation, using existing material notes and actual host/workbench routes.
@@ -312,7 +321,7 @@ Updated 5 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,082 stocked identities, 133 service identities and 383 identities awaiting catalog research**. The remaining 292 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,083 stocked identities, 133 service identities and 382 identities awaiting catalog research**. The remaining 291 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 
