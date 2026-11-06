@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2640 files** from Git-tracked paths and
+This catalog lists **2659 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from this repository’s
 `git ls-files --cached --others --exclude-standard` output; keep other projects separate.
@@ -13,10 +13,10 @@ Finder metadata are omitted. Refresh from this repository’s
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2312 |
-| [docs](../docs/) | 221 |
+| [dist](../dist/) | 2321 |
+| [docs](../docs/) | 230 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 68 |
+| [tests](../tests/) | 69 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## dist
 
 <details>
-<summary>2312 files</summary>
+<summary>2321 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2129,6 +2129,8 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/assets/photos/v56-real-jins-MUF-24A-069-58.webp](../dist/assets/photos/v56-real-jins-MUF-24A-069-58.webp)
 - [dist/assets/photos/v56-real-jins-UMF-24A-073-196.webp](../dist/assets/photos/v56-real-jins-UMF-24A-073-196.webp)
 - [dist/assets/photos/v60-real-zoom-h1n.webp](../dist/assets/photos/v60-real-zoom-h1n.webp)
+- [dist/assets/photos/v61-real-iphone16-black-128.webp](../dist/assets/photos/v61-real-iphone16-black-128.webp)
+- [dist/assets/photos/v61-real-iphone16-pink-128.webp](../dist/assets/photos/v61-real-iphone16-pink-128.webp)
 - [dist/assets/ross-x3.png](../dist/assets/ross-x3.png)
 - [dist/assets/round.jpg](../dist/assets/round.jpg)
 - [dist/assets/scarf.jpg](../dist/assets/scarf.jpg)
@@ -2148,6 +2150,9 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/brush-model.js](../dist/brush-model.js)
 - [dist/brush-studio.js](../dist/brush-studio.js)
 - [dist/brush-tools.js](../dist/brush-tools.js)
+- [dist/cafe-details.js](../dist/cafe-details.js)
+- [dist/cafe-guide.js](../dist/cafe-guide.js)
+- [dist/cafe-props.js](../dist/cafe-props.js)
 - [dist/campus-layout.js](../dist/campus-layout.js)
 - [dist/campus-model.js](../dist/campus-model.js)
 - [dist/campus-routing.js](../dist/campus-routing.js)
@@ -2255,6 +2260,9 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/outing-ui.js](../dist/outing-ui.js)
 - [dist/paper-studio.js](../dist/paper-studio.js)
 - [dist/parcel-guide.js](../dist/parcel-guide.js)
+- [dist/phone-model.js](../dist/phone-model.js)
+- [dist/phone-studio.js](../dist/phone-studio.js)
+- [dist/phone-tools.js](../dist/phone-tools.js)
 - [dist/photo-kiosk.js](../dist/photo-kiosk.js)
 - [dist/photo-palettes-v37.js](../dist/photo-palettes-v37.js)
 - [dist/photo-palettes-v39.js](../dist/photo-palettes-v39.js)
@@ -2341,6 +2349,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/store-product-additions-v55.js](../dist/store-product-additions-v55.js)
 - [dist/store-product-additions-v56.js](../dist/store-product-additions-v56.js)
 - [dist/store-product-additions-v60.js](../dist/store-product-additions-v60.js)
+- [dist/store-product-additions-v61.js](../dist/store-product-additions-v61.js)
 - [dist/store-product-seeds-v11.js](../dist/store-product-seeds-v11.js)
 - [dist/store-product-seeds.js](../dist/store-product-seeds.js)
 - [dist/store-services.js](../dist/store-services.js)
@@ -2373,7 +2382,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## docs
 
 <details>
-<summary>221 files</summary>
+<summary>230 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2416,6 +2425,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/GAMEPLAY-v58.md](../docs/GAMEPLAY-v58.md)
 - [docs/GAMEPLAY-v59.md](../docs/GAMEPLAY-v59.md)
 - [docs/GAMEPLAY-v60.md](../docs/GAMEPLAY-v60.md)
+- [docs/GAMEPLAY-v61.md](../docs/GAMEPLAY-v61.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2502,6 +2512,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/qa-v59.md](../docs/qa-v59.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v60.md](../docs/qa-v60.md)
+- [docs/qa-v61.md](../docs/qa-v61.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
 - [docs/qa-v9.md](../docs/qa-v9.md)
@@ -2589,6 +2600,13 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/research-v60/compact-proof.json](../docs/research-v60/compact-proof.json)
 - [docs/research-v60/compatibility.json](../docs/research-v60/compatibility.json)
 - [docs/research-v60/firefox-proof.json](../docs/research-v60/firefox-proof.json)
+- [docs/research-v61/browser-proof.json](../docs/research-v61/browser-proof.json)
+- [docs/research-v61/catalog-evidence.json](../docs/research-v61/catalog-evidence.json)
+- [docs/research-v61/cleanup-proof.json](../docs/research-v61/cleanup-proof.json)
+- [docs/research-v61/coffee-evidence.json](../docs/research-v61/coffee-evidence.json)
+- [docs/research-v61/compact-proof.json](../docs/research-v61/compact-proof.json)
+- [docs/research-v61/compatibility.json](../docs/research-v61/compatibility.json)
+- [docs/research-v61/dining-test-revision.patch](../docs/research-v61/dining-test-revision.patch)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2633,7 +2651,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## tests
 
 <details>
-<summary>68 files</summary>
+<summary>69 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2681,6 +2699,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/neighborhood-v27.test.mjs](../tests/neighborhood-v27.test.mjs)
 - [tests/optical-map-v56.test.mjs](../tests/optical-map-v56.test.mjs)
 - [tests/paper-v50.test.mjs](../tests/paper-v50.test.mjs)
+- [tests/phones-cafe-v61.test.mjs](../tests/phones-cafe-v61.test.mjs)
 - [tests/places-v34.test.mjs](../tests/places-v34.test.mjs)
 - [tests/planning-v36.test.mjs](../tests/planning-v36.test.mjs)
 - [tests/playable-stores.test.mjs](../tests/playable-stores.test.mjs)

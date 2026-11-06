@@ -2,6 +2,14 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v61 · 6 November 2026
+
+- Stock two unfinished T-Mobile shops with exact 128GB iPhone 16 references, qualified carrier pricing, reviewed licensed photos and original handset studios.
+- Add solid phone geometry, free source/format comparisons, retained material notes and coordinated lift/turn/lower inspection.
+- Detail all 23 coffee counters and add free menu selection, exact price/time review, visible payment and session receipts.
+- Give cold drinks, hot mugs and pastries distinct props; fix croissant consumption and smooth hand lift/lowering without changing economy or saves.
+- Preserve every prior product record, shop identity, schema 6 and map revision 10. See [gameplay](docs/GAMEPLAY-v61.md) and [QA](docs/qa-v61.md).
+
 ## v60 · 5 November 2026
 
 - Complete the Guitar Center shop with one exact black H1n discontinued-model reference, a licensed and attributed photograph, original solid geometry and two-hand inspection.

@@ -1,6 +1,16 @@
 # Mallside development roadmap
 
-Updated 5 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+Updated 6 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+
+## Completed in v61
+
+- Stock the Orange and Spectrum T-Mobile research lounges with two exact iPhone 16 color/storage references each, dated carrier offer qualifications and separately licensed photographs.
+- Add original timber-and-berry handset studios, source-proportioned solid models, free body/format notes and smooth two-hand inspection while retaining saved material studies and shortlists.
+- Refine all 23 coffee counters with original espresso equipment, grinders, cups and trays within their existing footprints.
+- Give café orders a free selection stage, clear price/time review, fixed payment bar, correct floor labels and a session receipt; preserve the six-item menu and economy.
+- Distinguish cold cups, mugs and croissants, fix pastry orders playing a drink animation and ease finite consumption from actual resting hands.
+- Preserve all 8,857 previous complete product records, 1,598 shop IDs, schema 6 and map revision 10. The current catalog has 8,861 entries, 1,085 verified shops, 380 pending shops and 289 retail planning lounges.
+- See [v61 gameplay](docs/GAMEPLAY-v61.md), [source evidence](docs/research-v61/catalog-evidence.json) and [QA](docs/qa-v61.md). Wider assortments, remaining shops, exact mall geometry and broader character refinement remain unfinished.
 
 ## Completed in v60
 
@@ -321,7 +331,7 @@ Updated 5 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,083 stocked identities, 133 service identities and 382 identities awaiting catalog research**. The remaining 291 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,085 stocked identities, 133 service identities and 380 identities awaiting catalog research**. The remaining 289 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

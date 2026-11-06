@@ -1,5 +1,5 @@
 import {buildLegacyStorefronts} from './legacy-storefronts-v11.js?v=56.0.0';
-import {installPlayableStores} from './playable-stores.js?v=60.0.0';
+import {installPlayableStores} from './playable-stores.js?v=61.0.0';
 import {PRODUCT_PHOTOS} from './product-photos.js?v=56.0.0';
 import {PRODUCT_CORRECTIONS} from './catalog-corrections-v8.js?v=23.0.0';
 import {improveProductLinks} from './catalog-links-v7.js?v=23.0.0';

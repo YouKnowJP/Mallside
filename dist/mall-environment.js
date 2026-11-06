@@ -15,7 +15,7 @@ import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
 import {retailIdentity,drawRetailSign} from './retail-identity.js?v=49.0.0';
 import * as T from './vendor/three.module.js';
 import {themeFor,facadeFrame} from './mall-design.js?v=35.0.0';
-import {brandDesign} from './brand-designs.js?v=60.0.0';
+import {brandDesign} from './brand-designs.js?v=61.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
 class Details{

@@ -1,0 +1,23 @@
+{
+  "reviewedOn": "2026-11-06",
+  "sources": [
+    {
+      "url": "https://about.starbucks.com/stories/2025/espresso-explained/",
+      "supports": [
+        "Caffè Latte",
+        "Flat White",
+        "Cappuccino",
+        "Caffè Americano"
+      ],
+      "use": "Existing menu name/composition context; paraphrased; no article text or media copied"
+    },
+    {
+      "url": "https://www.starbucks.com/menu/product/1033/single/nutrition",
+      "supports": [
+        "Butter Croissant identity"
+      ],
+      "use": "Official menu identity only; no price, nutrition or branch availability assertion"
+    }
+  ],
+  "adaptation": "Original Mallside coffee equipment, six existing game menu entries, unchanged simulated prices/time/recovery. No real branch interior, brand artwork, merchant photographs or drink-customization claim. Cold Brew name retained from existing game data, not a newly verified offer."
+}

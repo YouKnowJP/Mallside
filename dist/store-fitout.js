@@ -1,8 +1,8 @@
 import {isReadingProduct} from './book-tools.js?v=50.0.0';
 import * as T from './vendor/three.module.js';
 import {productAppearance} from './product-appearance.js?v=56.0.0';
-import {slotForProduct,money,price} from './engine.js?v=60.0.0';
-import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=60.0.0';
+import {slotForProduct,money,price} from './engine.js?v=61.0.0';
+import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=61.0.0';
 
 const clothes=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);
@@ -28,6 +28,7 @@ function shelfGoods(batch,cx,cz,turn,p,profile,width=84,heights=[19,44,69]){
   if(clothes.has(p.type)){for(let layer=0;layer<4;layer++)add('box',color,x,y+layer*2.5,0,20,2,19);}
   else if(['shoes','sandals'].includes(p.type)){for(const dx of [-5,5]){add('box','#eee8da',x+dx,y-2,0,7,2,21);add('box',color,x+dx,y+2,-2,7,7,17);}}
   else if(isReadingProduct(p)){for(let k=0;k<4;k++){const xx=x-5.25+k*3.5;add('box',color,xx,y+7,0,3,16,10);add('box','#e6dfcd',xx+.1,y+7,1,2.4,15,8);add('box',color,xx-1.25,y+7,0,.5,16,10);add('box',profile.trim,xx-1.55,y+11,1,.2,1,5);}}
+  else if(p.phoneProfile){batch.model(p,cx+x*Math.cos(turn),y-5.5,cz-x*Math.sin(turn),6.5,turn);}
   else if(p.storageProfile){batch.model(p,cx+x*Math.cos(turn),y-5.5,cz-x*Math.sin(turn),Math.min(19,18*p.storageProfile.heightIn/p.storageProfile.widthIn),turn);}
   else if(p.ceramicProfile){batch.model(p,cx+x*Math.cos(turn),y-5.5,cz-x*Math.sin(turn),Math.min(19,18*p.ceramicProfile.heightIn/p.ceramicProfile.diameterIn),turn);}
   else if(p.plushProfile){batch.model(p,cx+x*Math.cos(turn),y-5.5,cz-x*Math.sin(turn),19,turn);}
@@ -47,19 +48,20 @@ export function buildStoreFitout(w,store,profile,layout,selection){
   const cx=r.x+r.width/2,cz=r.y+r.height/2,turn=r.kind==='wall'?(r.side<0?Math.PI/2:-Math.PI/2):0;
   if(r.kind==='feature'){
    w.box(cx,27,cz,r.width,6,r.height,profile.fixture);for(const dx of [-r.width/2+10,r.width/2-10])w.box(cx+dx,13,cz,4,26,r.height-8,profile.trim);
-   if(p.storageProfile){for(const dx of [-45,0,45])batch.model(p,cx+dx,30,cz,Math.min(22,32*p.storageProfile.heightIn/p.storageProfile.widthIn),0);}
+   if(p.phoneProfile){for(const dx of [-45,0,45]){w.box(cx+dx,30.5,cz,7,1,6,profile.trim);w.photo(p,cx+dx,34.25,cz,4,6.5);}}
+   else if(p.storageProfile){for(const dx of [-45,0,45])batch.model(p,cx+dx,30,cz,Math.min(22,32*p.storageProfile.heightIn/p.storageProfile.widthIn),0);}
    else if(p.ceramicProfile){for(const dx of [-45,0,45])batch.model(p,cx+dx,30,cz,Math.min(22,32*p.ceramicProfile.heightIn/p.ceramicProfile.diameterIn),0);}
    else if(p.plushProfile){for(const dx of [-45,0,45])batch.model(p,cx+dx,30,cz,19,0);}
    else if(clothes.has(p.type)){for(const dx of [-48,-16,16,48])for(let n=0;n<4;n++)batch.add('box',productAppearance(p).color||profile.accent,cx+dx,32+n*3,cz,25,2.5,30);}
    else if(bags.has(p.type)){for(const dx of [-45,0,45])batch.model(p,cx+dx,31,cz,31,0);}
    else{for(const dx of [-45,45])w.photo(p,cx+dx,49,cz,25,30);}
-   if(!p.plushProfile&&!p.ceramicProfile&&!p.storageProfile)w.photo(p,cx,67,cz,30,34);
+   if(!p.phoneProfile&&!p.plushProfile&&!p.ceramicProfile&&!p.storageProfile)w.photo(p,cx,67,cz,30,34);
   }
   else if(r.kind==='wall')shelfStock(batch,cx,cz,turn,p,profile,r.height-6);
   else if(apparel.length)rail(w,batch,cx,cz,r.height-8,r.width-6,apparel[i%apparel.length],profile,Math.PI/2);
-  else{w.box(cx,20,cz,r.width,40,r.height,profile.fixture);for(const z of [cz-48,cz+48]){if(p.storageProfile)batch.model(p,cx,40,z,Math.min(19,28*p.storageProfile.heightIn/p.storageProfile.widthIn),0);else if(p.ceramicProfile)batch.model(p,cx,40,z,Math.min(19,28*p.ceramicProfile.heightIn/p.ceramicProfile.diameterIn),0);else if(p.plushProfile)batch.model(p,cx,40,z,19,0);else w.photo(p,cx,59,z,34,39);}}
+  else{w.box(cx,20,cz,r.width,40,r.height,profile.fixture);for(const z of [cz-48,cz+48]){if(p.phoneProfile)w.photo(p,cx,43.25,z,4,6.5);else if(p.storageProfile)batch.model(p,cx,40,z,Math.min(19,28*p.storageProfile.heightIn/p.storageProfile.widthIn),0);else if(p.ceramicProfile)batch.model(p,cx,40,z,Math.min(19,28*p.ceramicProfile.heightIn/p.ceramicProfile.diameterIn),0);else if(p.plushProfile)batch.model(p,cx,40,z,19,0);else w.photo(p,cx,59,z,34,39);}}
   const group=new T.Group();group.position.set(cx,0,cz);group.rotation.y=turn;w.scene.add(group);
-  if(r.kind==='wall'&&!p.plushProfile&&!p.ceramicProfile&&!p.storageProfile)w.photo(p,0,108,8,38,37,group);
+  if(r.kind==='wall'&&!p.phoneProfile&&!p.plushProfile&&!p.ceramicProfile&&!p.storageProfile)w.photo(p,0,108,8,38,37,group);
   const key='product:'+p.id;w.tag(group,key,r.approach);const hit=w.box(cx,45,cz,r.width,90,r.height,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,r.approach);const label=w.label(money(price(w.state,p)),r.approach.x,28,r.approach.y,52);w.tag(label,key,r.approach);
   w.interiorStops.push({point:r.approach,id:key,name:p.name,label:'Browse stocked display · '+money(price(w.state,p))});
  }

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "60.0.0",
+  "release": "61.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2030,
-  "uniqueRuntimePhotoFiles": 2008,
+  "runtimePhotoEntries": 2032,
+  "uniqueRuntimePhotoFiles": 2010,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -20013,6 +20013,34 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "Luisalvaz",
       "changes": "Orientation normalized, orientation normalized, resized to 900 × 1200 and encoded as WebP; no crop."
+    },
+    {
+      "id": "v61-real-iphone16-black-128",
+      "path": "assets/photos/v61-real-iphone16-black-128.webp",
+      "sha256": "c9f7982a574555194e10a94f2c942cc7e694ee77e4a771e63521afee71bd82eb",
+      "source": "https://commons.wikimedia.org/wiki/File:Back_of_iPhone_16.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Back_of_iPhone_16.jpg",
+      "description": "iPhone 16 in Black · licensed display-sample photograph. Black display sample is held beside an in-store display; hand, security tether and background display are not included. The photo illustrates model and finish; selected storage and US hardware reference come from the carrier and manufacturer, not the photograph.",
+      "rightsHolder": "Kyu3a",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Kyu3a",
+      "changes": "Orientation normalized where needed, resized to 1200 pixels high and WebP encoded, without cropping."
+    },
+    {
+      "id": "v61-real-iphone16-pink-128",
+      "path": "assets/photos/v61-real-iphone16-pink-128.webp",
+      "sha256": "7887430bbb9d53f0caf52e71db883ed816cd86dba129ee1b9aed12eca5ec2abf",
+      "source": "https://commons.wikimedia.org/wiki/File:Back_view_of_iPhone_16_in_Pink.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Back_view_of_iPhone_16_in_Pink.jpg",
+      "description": "iPhone 16 in Pink · licensed display-sample photograph. Pink display sample is seen through a clear magnetic-ring case with a store security tether; case, ring, hand and security hardware are not included. The photo illustrates model and finish; selected storage and US hardware reference come from the carrier and manufacturer, not the photograph.",
+      "rightsHolder": "メイド理世",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "メイド理世",
+      "changes": "Orientation normalized where needed, resized to 1200 pixels high and WebP encoded, without cropping."
     },
     {
       "id": "ysl-v4-1",

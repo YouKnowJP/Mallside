@@ -1,4 +1,4 @@
-const CLOSE_UPS=new Set(['ceramic','storage','fragrance','brush','recorder','collectible','read','write']);
+const CLOSE_UPS=new Set(['ceramic','storage','fragrance','brush','recorder','phone','collectible','read','write']);
 // Restore before simulation updates, then temporarily hide only nearby character occluders.
 // This changes camera presentation, never positions, routing, stock or activity state.
 export function restoreInspectionActors(w){if(!w.inspectionActors)return;for(const [g,visible]of w.inspectionActors)g.visible=visible;w.inspectionActors.clear();}

@@ -1,5 +1,5 @@
-import {hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=60.0.0';
-import {brandDesign} from './brand-designs.js?v=60.0.0';
+import {hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=61.0.0';
+import {brandDesign} from './brand-designs.js?v=61.0.0';
 
 // Six display stations keep every model reachable; their arrangement and furnishings vary by brand.
 const plans={

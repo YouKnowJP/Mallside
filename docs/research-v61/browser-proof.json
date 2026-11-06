@@ -1,0 +1,710 @@
+{
+  "version": "61.0.0",
+  "bundle": "app-IFCX25OG.js",
+  "status": "passed",
+  "sourceCommitAtTesting": "87d9889959fb066aeeecd64b611d06a206fc155c",
+  "sourceFiles": 2321,
+  "publicFiles": 2075,
+  "sourceTreeSHA256": "0fdbeaa390d311449165ebca76e2d406fa3a58accc417fb24cb15fd5383cf096",
+  "publicTreeSHA256": "c4673101622f52c1440293eafb4af37b19f0b253ff5dd8fc6e87e063da509584",
+  "nativeRunnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+  "priorNativeRunnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+  "matrixRunnerSHA256": "a88e8223c6db1bbc26c7b14c59456f2beaf048c168d52d9fc851ae4f16cc0ab4",
+  "testOnlyRevision": {
+    "changedScenario": "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+    "patchSHA256": "cdb8a6ad4cfb091f42038c42d5f90e53bc04ba8ac14373267638efd7d4785c91",
+    "otherScenarioBodiesByteIdentical": true,
+    "runtimeAndPublicFilesUnchanged": true,
+    "retainedSessions": "Safari reused the same paired window across two bounded coordinator batches; Firefox resumed in a second headless window after the dining test failure."
+  },
+  "scope": "25 selected scenarios from 115 available, plus strict error capture in each native browser. Unchanged measured cases retain their exact earlier runner fingerprint; only dining cancellation was corrected, and that case is repeated in both browsers. The committed patch reconstructs the prior runner. Runtime/public bytes and all other scenario bodies are unchanged. Native keyboard/pointer input, real clocks and genuine visibility remain active.",
+  "browsers": {
+    "firefox": {
+      "browserName": "firefox",
+      "browserVersion": "159.0.1",
+      "platformName": "mac",
+      "isolation": "bounded-retained-window",
+      "headless": true,
+      "sessionCaseLimit": 26,
+      "scenarios": 25,
+      "checks": 26,
+      "sessions": 2,
+      "waitTimeout": 120000,
+      "pageLoadTimeout": 120000,
+      "protocolTimeout": 150000,
+      "runnerRevisions": [
+        "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+        "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880"
+      ],
+      "errors": [],
+      "resourceWarnings": [],
+      "inputRetries": [],
+      "cases": [
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "cc86bdeb828087f14bf10d57a5d5850c6e2f77ecebe1dfa01d3c9a83811ab7bb",
+          "checks": [
+            "3D shop entry, route interruption, exit and repeat entry",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "a71d07c1f9441a9b03509dbba22912a8aa56bcad5ca9332ff82ab2f1be48bd2c",
+          "checks": [
+            "keyboard walking moves and stops on release without a stale route",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "26f0ba388bd009b84df2ed3fa8662da74dab84a189746ef6df06ae6e82904254",
+          "checks": [
+            "browse, choose size, fitting, carry to checkout, pay and receipt",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "d1b4d0af29fff3c0772fddc5051adcc176303f193e7c73c5c0e3d09a258029d2",
+          "checks": [
+            "interactive court map leaves an interior before routing",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "83bdccb37052b7f74e2370ab0d84adf3fa01995d5d46bbdb837777e8514df315",
+          "checks": [
+            "full viewport gameplay and visible exit control",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "3b3714bbf73eba2f3d39ebf20d3d035d1ebcaf8e1d76a890d50c30ecec6a3688",
+          "checks": [
+            "phone/tablet layouts, shop search and keyboard modal containment",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": [
+            {
+              "height": 759,
+              "width": 500
+            },
+            {
+              "height": 939,
+              "width": 768
+            },
+            {
+              "height": 915,
+              "width": 1400
+            }
+          ]
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "b20b85b7efb839078982942d8937e2313cf5e2d4c1713eca72889340d1d63192",
+          "checks": [
+            "v33 reflected lighting, camera presets, focused play and visible route feedback",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "5188bf0992d9cdc34d941dd1fd6ba4959c978cc7a17952fa6515abd4bda5f33c",
+          "checks": [
+            "v33 indoor evening lighting and compact focused-play layouts",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v57 contained scene labels, native walking and readable original shop casework",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "51d88bd2b898222a06c09fdc18d1b0ea9a0cd716210851a3ad80d480c3b613bd",
+          "checks": [
+            "v57 contained scene labels, native walking and readable original shop casework",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "3366c747f4080d4afbfbf41d4d53640ca9cf4b50279ffef23d86ab120be5b917",
+          "checks": [
+            "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "63a8f1b00bd78e7ba9b4aa481fb92f0e320eaf15ec44bc698ed2fa70255b7e0e",
+          "checks": [
+            "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "ff1bbe0319c349d35337b9f4cfdcf998bcb71574c19ff81068284c5c6aac0d5d",
+          "checks": [
+            "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v59 guided floor materials, free saving, reload and shop exit",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "aaf864067669b958d31b225a452f752216a540b06b9548178b606c599c8c352d",
+          "checks": [
+            "v59 guided floor materials, free saving, reload and shop exit",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v59 floor cancellation, paused host, reduced motion and compact fullscreen",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "86515258e12aa76ed616b3b7b120cf7e11ede8d8e964492dc380e60c92910928",
+          "checks": [
+            "v59 floor cancellation, paused host, reduced motion and compact fullscreen",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v59 public bench review, actual closest stocked destinations, rest and lighter mode",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "a8478910af909efef5b8587fa1b9f0a8f83b430aab4b2853aaf1c9bb8ad7ee68",
+          "checks": [
+            "v59 public bench review, actual closest stocked destinations, rest and lighter mode",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v60 exact recorder source, free scenarios, smooth inspection, physical pickup, reload and refund",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "63cecbdde0fd6e2223f032a72dfa748c8dcd10ba2825ca02386063930d9eed92",
+          "checks": [
+            "v60 exact recorder source, free scenarios, smooth inspection, physical pickup, reload and refund",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v60 parcel check, physical markers, unpaid picks, reload, collection and original-shop refund",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "19a5a3a40c4650fba054779e4186d7e8e43b173131fd797c47f6b78084677208",
+          "checks": [
+            "v60 parcel check, physical markers, unpaid picks, reload, collection and original-shop refund",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v60 compact lighter shop, keyboard scenarios, reduced motion and full parcel capacity",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "e59c5d254d910f8df701ec9764ffb42592ccf6363edefe0601c792fd25f32d41",
+          "checks": [
+            "v60 compact lighter shop, keyboard scenarios, reduced motion and full parcel capacity",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v46 furnished tea lounge, free recipe and memories, eased sipping, correct seat and once-only reward",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "9a34ec5342ef8b168fb7e09fe5c6bdeb15ec3ce79c1a3838acc69b45b25a5f48",
+          "checks": [
+            "v46 furnished tea lounge, free recipe and memories, eased sipping, correct seat and once-only reward",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v61 Orange phone variants, free guide, smooth inspection, pickup, reload and exact refunds",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "d56cedcd6c420be0ac0c41bf32b36f2e12923f0e0b257e92616678aad97821c0",
+          "checks": [
+            "v61 Orange phone variants, free guide, smooth inspection, pickup, reload and exact refunds",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v61 Spectrum phone variants, retained studio notes, source facts, payment and exit",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "3eb6333c86df9af00dbd84cddec38b1402be82529674ce51b183c04612a8a4b2",
+          "checks": [
+            "v61 Spectrum phone variants, retained studio notes, source facts, payment and exit",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v61 detailed cafe, free selection, visible payment, cold cup and pastry animation with one charge",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "17ca8530d49642f8a63f8b3336321d461d46a1e0c71d9a498791e9344af5b201",
+          "checks": [
+            "v61 detailed cafe, free selection, visible payment, cold cup and pastry animation with one charge",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v61 compact lighter phone notebook, keyboard cafe selection, fixed footer and insufficient funds",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "fb1e886ded3aa3238228e69f818bb8cd90c42080e46349c0e6c1f8bc29ff68b1",
+          "checks": [
+            "v61 compact lighter phone notebook, keyboard cafe selection, fixed footer and insufficient funds",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "cccf8cb16ee7811537b5a2b12e23a1eb5b3b516d281c031f5d0a657f9ab23171",
+          "reportSHA256": "bc857e9a19b0500fe56f87f33199030107083c7ee8eaf572c08657d027d22f42",
+          "checks": [
+            "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v49 curved water station, free readiness card, cooldown, cross-floor routing and reload",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "4bb6c663a0854ee06ec017149db3061a3f8962c0a0e2cdc57e5494fe6a627137",
+          "reportSHA256": "306d65e397116fb07e858b532ac94555d402b6f7d1ee015d86a725dc52fcc83b",
+          "checks": [
+            "v49 curved water station, free readiness card, cooldown, cross-floor routing and reload",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        }
+      ]
+    },
+    "safari": {
+      "browserName": "Safari",
+      "browserVersion": "26.6.2",
+      "platformName": "macOS",
+      "isolation": "bounded-retained-window",
+      "headless": false,
+      "sessionCaseLimit": 26,
+      "scenarios": 25,
+      "checks": 26,
+      "sessions": 1,
+      "waitTimeout": 120000,
+      "pageLoadTimeout": 120000,
+      "protocolTimeout": 150000,
+      "runnerRevisions": [
+        "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+        "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880"
+      ],
+      "errors": [],
+      "resourceWarnings": [],
+      "inputRetries": [],
+      "cases": [
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "67d78178d75fb1fd2e18ae4f5b88aec282c685cd8f6203cbe281fed871ef01ab",
+          "reportSHA256": "cf08926afadc99e27c7f871b065590fb1d155e1a4a2743cca6a6950cdbc94415",
+          "checks": [
+            "3D shop entry, route interruption, exit and repeat entry",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "67d78178d75fb1fd2e18ae4f5b88aec282c685cd8f6203cbe281fed871ef01ab",
+          "reportSHA256": "1bc19ced6f123ca726fe9737bb5ff1d289905e284c94b4966186353440a6d0f1",
+          "checks": [
+            "keyboard walking moves and stops on release without a stale route",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "67d78178d75fb1fd2e18ae4f5b88aec282c685cd8f6203cbe281fed871ef01ab",
+          "reportSHA256": "c17a17e3a4521a1118e4986f4409567adaf73caaa587800258ef3eae25ff31c3",
+          "checks": [
+            "browse, choose size, fitting, carry to checkout, pay and receipt",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "67d78178d75fb1fd2e18ae4f5b88aec282c685cd8f6203cbe281fed871ef01ab",
+          "reportSHA256": "0993307f50dd12f7ff01d2a9766cf81691c4073f84ab362653c34cc595fa6fcc",
+          "checks": [
+            "interactive court map leaves an interior before routing",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "67d78178d75fb1fd2e18ae4f5b88aec282c685cd8f6203cbe281fed871ef01ab",
+          "reportSHA256": "563e614aea0fd8f69eb4a748897357635c6576afeb2e9d705223d9d8ac1d0340",
+          "checks": [
+            "full viewport gameplay and visible exit control",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "67d78178d75fb1fd2e18ae4f5b88aec282c685cd8f6203cbe281fed871ef01ab",
+          "reportSHA256": "d2076d9af65df294c1a04b0eb88817770133f9ac06fc4927fd407fbc552f07fb",
+          "checks": [
+            "phone/tablet layouts, shop search and keyboard modal containment",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": [
+            {
+              "width": 390,
+              "height": 735
+            },
+            {
+              "width": 768,
+              "height": 735
+            },
+            {
+              "width": 1400,
+              "height": 735
+            }
+          ]
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "67d78178d75fb1fd2e18ae4f5b88aec282c685cd8f6203cbe281fed871ef01ab",
+          "reportSHA256": "b35bbe5b8240153d63c6e9bcea979ca90919ee895fa2ac894a5f7ecad57998a2",
+          "checks": [
+            "v33 reflected lighting, camera presets, focused play and visible route feedback",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "c88d0d12868c8510706de7b83904e09869577bca4d2e3700932ad72aed6570f2",
+          "checks": [
+            "v33 indoor evening lighting and compact focused-play layouts",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v57 contained scene labels, native walking and readable original shop casework",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "a4f77f4f59bc4ebe84aa793775a6a57b8410f587385eb1c59921158b67dc6fc9",
+          "checks": [
+            "v57 contained scene labels, native walking and readable original shop casework",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "d2348bfa7e55ce64c14323dd17afc866c76debd74ba5334e8e69266912a49e80",
+          "checks": [
+            "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "c655589b384e4919202ff57becb263bb0f7be924b2605685a0c4911c0819b280",
+          "checks": [
+            "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "d0a49b3ece7691bafd37bbfe1b965a1e34b1fa270bdcb3e59af98860822db558",
+          "checks": [
+            "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v59 guided floor materials, free saving, reload and shop exit",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "2a3d7d7ba928329866fe0b10ee7afdba216e04050150da422147dc7113ef8252",
+          "checks": [
+            "v59 guided floor materials, free saving, reload and shop exit",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v59 floor cancellation, paused host, reduced motion and compact fullscreen",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "38d6e224c641f9f0a4856fb0d958d7a508e52b6f7be2bb754b36c54ed5d05f25",
+          "checks": [
+            "v59 floor cancellation, paused host, reduced motion and compact fullscreen",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v59 public bench review, actual closest stocked destinations, rest and lighter mode",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "08b97567717d6689da36c20b7b1fe1fc473efcc05bfb59f1601fc76504094d2b",
+          "checks": [
+            "v59 public bench review, actual closest stocked destinations, rest and lighter mode",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v60 exact recorder source, free scenarios, smooth inspection, physical pickup, reload and refund",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "2efec9f20fcc7d1699b6b9b6336153d9923ff897ee711ed4c7596ae17f8ec06d",
+          "checks": [
+            "v60 exact recorder source, free scenarios, smooth inspection, physical pickup, reload and refund",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v60 parcel check, physical markers, unpaid picks, reload, collection and original-shop refund",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "e8d11c9337c7dde91084859ec54d161f2f10435275bb1d2ef6b93bec13f33030",
+          "checks": [
+            "v60 parcel check, physical markers, unpaid picks, reload, collection and original-shop refund",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v60 compact lighter shop, keyboard scenarios, reduced motion and full parcel capacity",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "508a343edcda30222be2713d272e56b477448070c7504363c9351baa5bd4ca73",
+          "checks": [
+            "v60 compact lighter shop, keyboard scenarios, reduced motion and full parcel capacity",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v46 furnished tea lounge, free recipe and memories, eased sipping, correct seat and once-only reward",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "7373d0a021b0426434043cfdd69f2055572732a5d0b4fafbb090533e6c833b26",
+          "checks": [
+            "v46 furnished tea lounge, free recipe and memories, eased sipping, correct seat and once-only reward",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v61 Orange phone variants, free guide, smooth inspection, pickup, reload and exact refunds",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "abad0cedc77a046bef4067e7edd33d65c6c7dc3c06f3d2db425bb2a577759df9",
+          "checks": [
+            "v61 Orange phone variants, free guide, smooth inspection, pickup, reload and exact refunds",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v61 Spectrum phone variants, retained studio notes, source facts, payment and exit",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "d40a5f1b68ad4beb659378267bde53151ee763f841c5124977e81d684ecfd9fb",
+          "checks": [
+            "v61 Spectrum phone variants, retained studio notes, source facts, payment and exit",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v61 detailed cafe, free selection, visible payment, cold cup and pastry animation with one charge",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "93541d61fcfd03739c3ef2717c4c25618d77a80d5e1ab8abce6734c88ccb8786",
+          "checks": [
+            "v61 detailed cafe, free selection, visible payment, cold cup and pastry animation with one charge",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v61 compact lighter phone notebook, keyboard cafe selection, fixed footer and insufficient funds",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "cdcea3ef698aa5ce36490f6c3ceed47df28bfa5c3e5182af73225bc2b7a63f80",
+          "checks": [
+            "v61 compact lighter phone notebook, keyboard cafe selection, fixed footer and insufficient funds",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+          "runnerSHA256": "e73b701ce4872581d0a8fe054e887da772335d04f3865e5580b85fa64f41f880",
+          "fingerprint": "67d78178d75fb1fd2e18ae4f5b88aec282c685cd8f6203cbe281fed871ef01ab",
+          "reportSHA256": "6eb3e9d8520143b2c64201620e1fee632679606bec32d97586e6defb5f18fbde",
+          "checks": [
+            "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        },
+        {
+          "name": "v49 curved water station, free readiness card, cooldown, cross-floor routing and reload",
+          "runnerSHA256": "5e175cf538c121f306c588b785d4c78c04a018a2ee999988dcd944e2b9eaa807",
+          "fingerprint": "89e7ae338b9b8f29b926187daa1e71b1fbd119ce9700f45a893647279a82bdad",
+          "reportSHA256": "efb78635f61f3306736ca2001d7710efc57abe137925a7746223513daae728e8",
+          "checks": [
+            "v49 curved water station, free readiness card, cooldown, cross-floor routing and reload",
+            "no captured game exceptions or unexpected console errors"
+          ],
+          "viewports": []
+        }
+      ]
+    }
+  },
+  "reviewedImages": {
+    "firefox-gameplay-v61-consume-sb-cold.png": "c66a5a776eaffdbd7b9d5cec40248b03c4015f6255ddc7cac71cb13afd77ed63",
+    "firefox-gameplay-v61-orange-Pink-hands.png": "0dca199ce223127528f1ab2effddf118f298379c2c252d211b6a878738ec1f2c",
+    "firefox-gameplay-v61-spectrum-phone-studio.png": "43c0482860e8bc10779c4888e42c045c7ee067d375b500f355ec2c91d529e49b",
+    "safari-gameplay-v61-consume-sb-croissant.png": "05ee447327e6e86d0f79725b70eec0f71646888d34bb02f14cfb4cb780cb2419",
+    "safari-gameplay-v61-orange-Pink-hands.png": "9371896022bbfef01b2c25a08e724b77a3707c6be8808c250c6533b87054ccab",
+    "safari-gameplay-v61-orange-phone-studio.png": "05607cdd4aeb7c53fa612c16ccea8cc776e56420b61708a62b3121d62871307b"
+  },
+  "softwareVerification": {
+    "firefoxVersion": "159.0.1",
+    "firefoxURL": "https://archive.mozilla.org/pub/firefox/releases/159.0.1/mac/en-US/Firefox%20159.0.1.dmg",
+    "firefoxSHA512": "0158a1df6c3b954320542002a86cf3bf4531c25abf0fbf075f46e551669bc70e7c6567aa0ab690a46f955b90acf9976bb8173842b83351625f0d9e27e1cd023c",
+    "checksumsURL": "https://archive.mozilla.org/pub/firefox/releases/159.0.1/SHA512SUMS",
+    "geckoVersion": "v0.37.1",
+    "geckoURL": "https://github.com/mozilla/geckodriver/releases/download/v0.37.1/geckodriver-v0.37.1-macos-aarch64.tar.gz",
+    "geckoSHA256": "d02b3f7003f999caf90974a2ef5da0286c05d01cee19112c86846d759fdba4f5",
+    "appleTeam": "43AQ936H96",
+    "signatureVerifiedBeforeTesting": true,
+    "checkedAt": "2026-11-06T08:04:56.154798+00:00",
+    "signatureVerifiedAfterTesting": true
+  },
+  "cleanup": {
+    "safari": {
+      "remoteAutomationOffVisiblyVerified": true,
+      "otherDeveloperFlagsPreserved": true,
+      "normalStartPagePreserved": true,
+      "ownedSessionClosed": true,
+      "driverStopped": true,
+      "displayAssertionsStopped": true
+    },
+    "firefox": {
+      "temporaryRootRemoved": true,
+      "installerAppDriverAndMetadataRemoved": true,
+      "ownedProcessesAbsent": true,
+      "observedOwnedProfiles": 14,
+      "allObservedProfilesAbsent": true,
+      "leftoversRemovedWithExactAppPath": [],
+      "baselineEntries": 14,
+      "preservedAllBaselineKindsAndBytes": true,
+      "removedNewKnownTestFiles": [
+        "~/Library/Application Support/Firefox/Crash Reports/crash_helper_server.log",
+        "~/Library/Application Support/Firefox/Crash Reports/glean/client_id.txt",
+        "~/Library/Application Support/Firefox/Crash Reports/glean/crashping.pid",
+        "~/Library/Application Support/Firefox/Crash Reports/glean/db/data.safe.bin"
+      ],
+      "unclassifiedNewFiles": []
+    },
+    "driverPortsClosed": {
+      "4444": true,
+      "4445": true
+    },
+    "softwareVerification": {
+      "firefoxVersion": "159.0.1",
+      "firefoxURL": "https://archive.mozilla.org/pub/firefox/releases/159.0.1/mac/en-US/Firefox%20159.0.1.dmg",
+      "firefoxSHA512": "0158a1df6c3b954320542002a86cf3bf4531c25abf0fbf075f46e551669bc70e7c6567aa0ab690a46f955b90acf9976bb8173842b83351625f0d9e27e1cd023c",
+      "checksumsURL": "https://archive.mozilla.org/pub/firefox/releases/159.0.1/SHA512SUMS",
+      "geckoVersion": "v0.37.1",
+      "geckoURL": "https://github.com/mozilla/geckodriver/releases/download/v0.37.1/geckodriver-v0.37.1-macos-aarch64.tar.gz",
+      "geckoSHA256": "d02b3f7003f999caf90974a2ef5da0286c05d01cee19112c86846d759fdba4f5",
+      "appleTeam": "43AQ936H96",
+      "signatureVerifiedBeforeTesting": true,
+      "checkedAt": "2026-11-06T08:04:56.154798+00:00",
+      "signatureVerifiedAfterTesting": true
+    }
+  }
+}

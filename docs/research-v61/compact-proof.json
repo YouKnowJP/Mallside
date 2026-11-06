@@ -1,0 +1,332 @@
+{
+  "browserVersion": "156.0.8078.80",
+  "contexts": 10,
+  "results": [
+    {
+      "graphics": "3d",
+      "width": 320,
+      "height": 900,
+      "phone": {
+        "width": 320,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 320,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 827.25,
+          "bottom": 871.25,
+          "height": 44,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "width": 390,
+      "height": 900,
+      "phone": {
+        "width": 390,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 390,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 836,
+          "bottom": 880,
+          "height": 44,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "width": 768,
+      "height": 900,
+      "phone": {
+        "width": 768,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 768,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 833.8046875,
+          "bottom": 878,
+          "height": 44.1953125,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "width": 844,
+      "height": 390,
+      "phone": {
+        "width": 844,
+        "height": 390,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 844,
+        "height": 390,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 323.8046875,
+          "bottom": 368,
+          "height": 44.1953125,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "width": 320,
+      "height": 568,
+      "phone": {
+        "width": 320,
+        "height": 568,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 320,
+        "height": 568,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 495.25,
+          "bottom": 539.25,
+          "height": 44,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 320,
+      "height": 900,
+      "phone": {
+        "width": 320,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 320,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 827.25,
+          "bottom": 871.25,
+          "height": 44,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 390,
+      "height": 900,
+      "phone": {
+        "width": 390,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 390,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 836,
+          "bottom": 880,
+          "height": 44,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 768,
+      "height": 900,
+      "phone": {
+        "width": 768,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 768,
+        "height": 900,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 833.8046875,
+          "bottom": 878,
+          "height": 44.1953125,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 844,
+      "height": 390,
+      "phone": {
+        "width": 844,
+        "height": 390,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 844,
+        "height": 390,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 323.8046875,
+          "bottom": 368,
+          "height": 44.1953125,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 320,
+      "height": 568,
+      "phone": {
+        "width": 320,
+        "height": 568,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": null
+      },
+      "cafe": {
+        "width": 320,
+        "height": 568,
+        "overflow": false,
+        "dialogOverflow": false,
+        "minControl": 44,
+        "footer": {
+          "top": 495.25,
+          "bottom": 539.25,
+          "height": 44,
+          "hit": true
+        }
+      },
+      "focus": "sb-croissant",
+      "paid": 425,
+      "errors": []
+    }
+  ],
+  "version": "61.0.0",
+  "status": "passed",
+  "bundle": "app-IFCX25OG.js",
+  "scope": "Final five-context batches use the corrected frozen candidate, real clocks and visibility, and close each owned context. Owned desktop touch emulations, not physical-device certification. Earlier interrupted or superseded runs are excluded.",
+  "sourceTreeSHA256": "0fdbeaa390d311449165ebca76e2d406fa3a58accc417fb24cb15fd5383cf096",
+  "publicTreeSHA256": "c4673101622f52c1440293eafb4af37b19f0b253ff5dd8fc6e87e063da509584",
+  "captureSHA256": {
+    "v61-compact-2d-320x568-cafe.png": "0cee8b0b704c4866c46535d4473fc8b50e104a6e01a66cc6e93ff6d27e1ba01d",
+    "v61-compact-2d-320x568-phone.png": "86e1566c3471a2745065a96769439557ec0823f7540dd427a152d3d525714252",
+    "v61-compact-2d-320x900-cafe.png": "102ea778a8d61040227bae189bc620ca39f7626a305e115b910cdcd7cffe51c7",
+    "v61-compact-2d-320x900-phone.png": "e9c9c8b92c641e2e3b52d4d02616f9fa2b6b7a3d8bdf1bd07dc1f278b9218b9f",
+    "v61-compact-2d-390x900-cafe.png": "a2a60d54884034003a2d38f0ccf182134a4ba45444650a0a305f237dac9aab81",
+    "v61-compact-2d-390x900-phone.png": "9c10e6b81165975ac18166ef19df7a7b97d8603901cc8e8182d339af76d21012",
+    "v61-compact-2d-768x900-cafe.png": "73878ad003b9c84173643548bdcc622efe9cb904d37c25edb159efbe85306007",
+    "v61-compact-2d-768x900-phone.png": "fb63f1278572ee1c48dd377c46827c24c5c33ed14c8642a9e7b05bc965a167dc",
+    "v61-compact-2d-844x390-cafe.png": "a9d6174b0814444ef01881a5a7b72107c447c82af91dc39716d23c17a2c17e06",
+    "v61-compact-2d-844x390-phone.png": "d548f8b7c03178a31e47db02cfcd13298d179081ab47e6b0bcf72d7414cd36c4",
+    "v61-compact-3d-320x568-cafe.png": "99ce2ee0d312b9aa4cf9d7e140d827633177e87ff233f6fed79ea5994013f8e3",
+    "v61-compact-3d-320x568-phone.png": "01b501bbb401f9c8356a3f4e74595a46db5cd2191ac4897f48fbb5997e3ba74a",
+    "v61-compact-3d-320x900-cafe.png": "0ad40fe1fba47596a345a1b3ddb4c3e1dc763bd18145683dfac0be04e73235aa",
+    "v61-compact-3d-320x900-phone.png": "38c0b92222f64c26c4321f0118f236b0efd1960f536e5fe7b9f867520c04cf3e",
+    "v61-compact-3d-390x900-cafe.png": "cd2079c1d494aa843a92eefe1c8bf991e5b528907933edf6c266abdd127b0d80",
+    "v61-compact-3d-390x900-phone.png": "eb45374b8afc4960a708d4759e9ea849150169e4d4cf107c17ba84ea9d19e433",
+    "v61-compact-3d-768x900-cafe.png": "929cc75ff697ca060d9fbf1229174f0cd72b3070e9c26ba722b96a1dfd507c15",
+    "v61-compact-3d-768x900-phone.png": "d5234e34094084c3da05cb215898470751e0cf2c326b66376aa103114b71bd90",
+    "v61-compact-3d-844x390-cafe.png": "230ca498705dd3614accc2d6c84dacb0b10a9d8751663017c2e7e0903f247cdf",
+    "v61-compact-3d-844x390-phone.png": "d7ce52a1fd5a269d19225819bdacd04c75a7217da7cf69c9dabcac5d7167dd1e"
+  },
+  "reviewedImages": {
+    "v61-compact-3d-320x568-cafe.png": "99ce2ee0d312b9aa4cf9d7e140d827633177e87ff233f6fed79ea5994013f8e3",
+    "v61-compact-2d-844x390-phone.png": "d548f8b7c03178a31e47db02cfcd13298d179081ab47e6b0bcf72d7414cd36c4",
+    "v61-compact-3d-320x900-phone.png": "38c0b92222f64c26c4321f0118f236b0efd1960f536e5fe7b9f867520c04cf3e",
+    "v61-compact-2d-390x900-cafe.png": "a2a60d54884034003a2d38f0ccf182134a4ba45444650a0a305f237dac9aab81",
+    "v61-compact-3d-768x900-cafe.png": "929cc75ff697ca060d9fbf1229174f0cd72b3070e9c26ba722b96a1dfd507c15",
+    "v61-compact-2d-320x568-phone.png": "86e1566c3471a2745065a96769439557ec0823f7540dd427a152d3d525714252"
+  }
+}

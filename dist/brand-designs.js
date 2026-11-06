@@ -3,6 +3,7 @@ import {merchantIdentity} from './merchant-identity.js?v=23.0.0';
 // Original playable interpretations of brand store language, not measured branch replicas.
 const make=(layout,pattern,floor,wall,fixture,accent,trim,feature,title,source='')=>({layout,pattern,floor,wall,fixture,accent,trim,feature,title,source});
 export const BRAND_DESIGNS={
+ tmobile:make('forum','terrazzo','#d0c8b8','#eee7dc','#b89a76','#95556f','#566272','screen','Original handset & connection studio'),
  guitarcenter:make('forum','wood','#ad967b','#e5dccb','#947453','#874c3a','#354b51','screen','Original recording & comparison studio'),
  surlatable:make('home','tile','#d6cdb9','#f1eee3','#b69b73','#486c5b','#82765d','display-shelves','Original tableware & source studio'),
  arhaus:make('home','wood','#cdb99c','#e9e1d3','#bba17c','#655d4a','#84765e','display-shelves','Original ceramic & glaze gallery'),

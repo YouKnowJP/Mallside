@@ -1,3 +1,4 @@
+import {createPhone,isPhone} from './phone-model.js?v=61.0.0';
 import {createRecorder,isRecorder} from './recorder-model.js?v=60.0.0';
 import {createBrush,isBrush} from './brush-model.js?v=54.0.0';
 import {createFragrance,isFragrance} from './fragrance-model.js?v=53.0.0';
@@ -16,12 +17,13 @@ import {buildBagModel} from './merchandise-bags.js?v=44.0.0';
 
 const clothing=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);
-export const physicalProduct=p=>!!p&&(clothing.has(p.type)||bags.has(p.type)||isVerifiedPlush(p)||isCeramic(p)||isStorage(p)||isFragrance(p)||isBrush(p)||isRecorder(p));
-export function merchandiseStyle(p){if(isRecorder(p))return 'handheld-recorder';if(isBrush(p))return 'wooden-paddle-brush';if(isFragrance(p))return 'closed-fragrance';if(isStorage(p))return 'storage-box';if(isCeramic(p))return 'ceramic-'+p.ceramicProfile.kind;if(isVerifiedPlush(p))return 'plush-'+p.plushProfile.kind;const a=productAppearance(p);return clothing.has(p.type)?a.garment.kind:a.bag?.silhouette||'package';}
+export const physicalProduct=p=>!!p&&(clothing.has(p.type)||bags.has(p.type)||isVerifiedPlush(p)||isCeramic(p)||isStorage(p)||isFragrance(p)||isBrush(p)||isRecorder(p)||isPhone(p));
+export function merchandiseStyle(p){if(isPhone(p))return 'smartphone';if(isRecorder(p))return 'handheld-recorder';if(isBrush(p))return 'wooden-paddle-brush';if(isFragrance(p))return 'closed-fragrance';if(isStorage(p))return 'storage-box';if(isCeramic(p))return 'ceramic-'+p.ceramicProfile.kind;if(isVerifiedPlush(p))return 'plush-'+p.plushProfile.kind;const a=productAppearance(p);return clothing.has(p.type)?a.garment.kind:a.bag?.silhouette||'package';}
 function roundedShape(w,h,r=3){const s=new T.Shape(),x=-w/2,y=-h/2;s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);return s;}
 
 // Original volumetric interpretations of named real products. Photographs remain in details.
 export function createMerchandise(p,{hanger=false,bodyOnly=false,highDetail=false}={}){
+ if(isPhone(p))return createPhone(p);
  if(isRecorder(p))return createRecorder(p);
  if(isBrush(p))return createBrush(p);
  if(isFragrance(p))return createFragrance(p);
@@ -51,7 +53,7 @@ export function merchandiseTemplate(w,p,hanger=false,bodyOnly=false){
 }
 export function placeMerchandise(w,p,x,y,z,width,height,parent=w.scene,{hanger=clothing.has(p.type),stock=true}={}){
  if(isReadingProduct(p))return placeBook(w,p,x,y,z,width,height,parent);
- const g=merchandiseTemplate(w,p,hanger).clone(true),size=g.userData.size,k=Math.min(width/size.x,height/size.y);g.scale.setScalar(k);g.position.set(x,y-size.y*k/2,z);parent.add(g);
+ const g=merchandiseTemplate(w,p,hanger).clone(true),size=g.userData.size,originalScale=Math.min(width/size.x,height/size.y),k=isPhone(p)?Math.min(originalScale,6.5/size.y):originalScale;g.scale.setScalar(k);g.position.set(x,y-size.y*originalScale/2,z);if(isPhone(p))g.userData.displayHeight=size.y*k;parent.add(g);
  if(stock&&w.inside&&!parent.userData?.dynamicMerchandise){w.merchandiseRecords??=[];w.merchandiseRecords.push({product:p,object:g});}
  return g;
 }
