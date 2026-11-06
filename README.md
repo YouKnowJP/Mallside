@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v61 — handset studios and a proper café pause
+## v62 — a watch salon and a livelier pavilion
+
+The unfinished South Coast Plaza TUDOR boutique gains an exact Black Bay 54 reference, a licensed photograph, original no-date watch geometry, lined-tray interiors and a free case/bezel study. All ten pop-up pavilions gain photographic exhibit cards, finer furniture, free comparisons and clear daily stamp/coupon status. Wrist previews now lift and lower smoothly from actual resting hands. Existing saves and product records remain compatible. See [v62 gameplay](docs/GAMEPLAY-v62.md), [sources](docs/research-v62/catalog-evidence.json), [QA](docs/qa-v62.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v61 — handset studios and a proper café pause
 
 Two unfinished T-Mobile shops gain exact Pink and Black iPhone 16 128GB references, licensed photographs, original solid models and furnished handset studios. Compare source dimensions for free, inspect with a smooth two-hand lift, carry your choice to checkout and retain earlier material notes. All 23 coffee terraces gain finer original equipment and a clearer choose → review → pay menu with a visible payment bar. Cold drinks, mugs and pastries have distinct hand props; pastry orders now play the eating animation. Existing saves and earlier product records remain compatible. See [v61 gameplay](docs/GAMEPLAY-v61.md), [source evidence](docs/research-v61/catalog-evidence.json), [QA](docs/qa-v61.md) and the [roadmap](ROADMAP.md).
 

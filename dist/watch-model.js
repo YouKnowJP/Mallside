@@ -1,9 +1,11 @@
+import {createDiveWatch} from './dive-watch-model.js?v=62.0.0';
 import * as T from './vendor/three.module.js';
-import {isVerifiedWatch} from './watch-tools.js?v=43.0.0';
+import {isVerifiedWatch} from './watch-tools.js?v=62.0.0';
 
 // Original source-reviewed geometry, with a readable dial and distinct steel/rubber construction.
 export function createWatchModel(w,p,{worn=false}={}){
  if(!isVerifiedWatch(p))return null;
+ if(p.watchProfile.diveReference)return createDiveWatch(w,p,{worn});
  const g=new T.Group(),a=p.watchProfile,k=worn?.06:1,steel=w.mat('#aeb4b8',{metalness:.72,roughness:.32}),bezel=w.mat(a.bezel,{metalness:.64,roughness:.38}),dial=w.mat(a.dial,{roughness:.48}),white=w.mat('#e5e9df',{roughness:.45}),dark=w.mat('#101315'),band=w.mat(a.bandColor,{metalness:a.band==='steel'?.65:0,roughness:a.band==='steel'?.38:.84});
  const mesh=(geo,mat,x=0,y=0,z=0)=>{const o=new T.Mesh(geo,mat);o.castShadow=o.receiveShadow=true;g.add(o);o.position.set(x,y,z);return o;},box=(x,y,z,ww,h,d,m)=>mesh(new T.BoxGeometry(ww,h,d),m,x,y,z),disc=(r,h,z,m)=>{const o=mesh(new T.CylinderGeometry(r,r,h,40),m,0,0,z);o.rotation.x=Math.PI/2;return o;};
  disc(12.5,4,0,steel);disc(11.9,1.1,2.3,bezel);disc(9.5,.4,3,dial);
@@ -25,4 +27,4 @@ export function createWatchModel(w,p,{worn=false}={}){
  for(const [mat,b]of batches){const geo=new T.BufferGeometry();for(const key of ['position','normal'])geo.setAttribute(key,new T.Float32BufferAttribute(b[key],3));const o=w.mesh(geo,mat,g);o.castShadow=o.receiveShadow=true;}
  g.scale.setScalar(k);g.userData={productId:p.id,role:worn?'worn-watch':'watch-model',caseMM:a.caseMM,band:a.band,source:p.source};return g;
 }
-export function placeWatch(w,p,x,y,z,width,height,parent=w.scene){const g=createWatchModel(w,p),bounds=new T.Box3().setFromObject(g),size=bounds.getSize(new T.Vector3()),k=Math.min(.28,width/size.x,height/size.y);g.scale.setScalar(k);g.position.set(x,y,z);parent.add(g);return g;}
+export function placeWatch(w,p,x,y,z,width,height,parent=w.scene){const g=createWatchModel(w,p),bounds=new T.Box3().setFromObject(g),size=bounds.getSize(new T.Vector3()),k=Math.min(p.watchProfile.diveReference?.075:.28,width/size.x,height/size.y);g.scale.setScalar(k);g.position.set(x,p.watchProfile.diveReference?y-height/2-bounds.min.y*k:y,z);parent.add(g);return g;}

@@ -1,6 +1,6 @@
 import {isPlanningStore} from './shopping-plans.js?v=36.0.0';
 // Newly stocked studios retain the original creative studies saved before their catalogs arrived.
-export const supportsMaterialStudy=st=>isPlanningStore(st)||[42,43,44,45,46,47,48,49,50,51,53,54,55,56,60,61].includes(st?.collectionEdition);
+export const supportsMaterialStudy=st=>isPlanningStore(st)||[42,43,44,45,46,47,48,49,50,51,53,54,55,56,60,61,62].includes(st?.collectionEdition);
 // Original Mallside design exercises. These samples are never merchant stock.
 export const STUDY_PALETTES=[
  {id:'earth',name:'Earth & linen',colors:['#ac7456','#dfca9e','#718374'],labels:['Clay','Linen','Sage']},

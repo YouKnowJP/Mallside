@@ -1,5 +1,5 @@
 import {bagFactsHTML} from './bag-motion.js?v=44.0.0';
-import {watchFactsHTML} from './watch-tools.js?v=43.0.0';
+import {watchFactsHTML} from './watch-tools.js?v=62.0.0';
 export function apparelFactsHTML(p,esc){
  if(p.bagReference)return bagFactsHTML(p,esc);
  if(p.watchProfile)return watchFactsHTML(p,esc);

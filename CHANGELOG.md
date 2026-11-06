@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v62 · 6 November 2026
+
+- Complete one exact TUDOR reference with licensed photography, original no-date geometry, lined-tray salon and free case/bezel notes.
+- Enrich all ten pop-up pavilions with photographic cards, exhibit comparisons, source notes and saved stamp/coupon status.
+- Smooth watch previews from actual resting grips; retain prior product records and schema 6/map 10 saves.
+- [Gameplay](docs/GAMEPLAY-v62.md) · [QA](docs/qa-v62.md) · [source evidence](docs/research-v62/catalog-evidence.json).
+
 ## v61 · 6 November 2026
 
 - Stock two unfinished T-Mobile shops with exact 128GB iPhone 16 references, qualified carrier pricing, reviewed licensed photos and original handset studios.

@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
-import {updateStudioStudy} from './studio-details.js?v=59.0.0';
+import {updateStudioStudy} from './studio-details.js?v=62.0.0';
 // Original device comparison furniture, cable storage and sample joinery.
 export function buildPhoneStudio(w,st,style){
  const r=w.layout.rail,x=r.x+r.width/2,z=r.y+r.height/2,parts=[],box=(...v)=>parts.push(v),ink='#505b68',wood='#b89977',paper='#eee8dc';

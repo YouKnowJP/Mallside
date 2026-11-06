@@ -1,4 +1,4 @@
-import {retailIdentity,windowAssortment} from './retail-identity.js?v=49.0.0';
+import {retailIdentity,windowAssortment} from './retail-identity.js?v=62.0.0';
 import {facadeFrame} from './mall-design.js?v=35.0.0';
 import * as T from './vendor/three.module.js';
 
@@ -17,6 +17,7 @@ export function buildWindowDisplay(w,store,products,photos){
 }
 
 export function buildSignatureInterior(w,profile,layout,products){
+ if(layout.store.collectionEdition===62)return;
  const own=products.filter(p=>p.store===layout.store.id),rail=layout.rail,cx=rail.x+rail.width/2,back=layout.rail.x<500?640:530;
  // All added vertical features stay inside the existing rail/decor footprints.
  if(['nike','adidas','newbalance','puma','vans'].includes(profile.key)){

@@ -1,0 +1,109 @@
+{
+  "version": "62.0.0",
+  "status": "passed",
+  "bundle": "app-MDRABK2V.js",
+  "browserVersion": "Chromium 156.0.8078.80",
+  "contexts": 10,
+  "results": [
+    {
+      "graphics": "3d",
+      "width": 320,
+      "height": 900,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "width": 390,
+      "height": 900,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "width": 768,
+      "height": 900,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "width": 844,
+      "height": 390,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "3d",
+      "width": 320,
+      "height": 568,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 320,
+      "height": 900,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 390,
+      "height": 900,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 768,
+      "height": 900,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 844,
+      "height": 390,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "graphics": "2d",
+      "width": 320,
+      "height": 568,
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "scope": "Owned desktop touch emulations at five viewports in 3D and lighter mode. Dialog containment, free comparisons/source reading, two-item limit, keyboard focus, repeated bezel control scroll retention, fixed stamp footer and direct shop exits. Not physical-device or assistive-technology certification.",
+  "sourceTreeSHA256": "93f9c54fc36baa34675528d3d2ecb5dd15a0f2fc069ff76b3e9e20109a8d466e",
+  "publicTreeSHA256": "f03769dbe5731fe0e8622de3ca89c175e7f7dc3b316520d727d4dda0959bc8ab",
+  "captureSHA256": {
+    "v62-compact-2d-320x568-pavilion.png": "7adbc3d1dcb06e8fc8c26ed1be899ba17c3597ce349a5993d346ca1e144fe143",
+    "v62-compact-2d-320x568-watch.png": "04dd52e1d5d328ab01811b0511f9925aaf4fad6b3bcfe19b1948d9e3e1faaf1e",
+    "v62-compact-2d-320x900-pavilion.png": "b93134aeb7a1b69097648191334497ffa2554a38a14cfdc34dee6a84110b6a6d",
+    "v62-compact-2d-320x900-watch.png": "1bd382004b7ecaf6718af07476448c7de5259fdc947065d1a56da60257709353",
+    "v62-compact-2d-390x900-pavilion.png": "e7a962aaeef335f5f75c1dd66f0885e0d955c79cdba5855ae738de129b99a595",
+    "v62-compact-2d-390x900-watch.png": "6dc82c8a7c761019184e4a3d6902fe174bee3161491f0f800ebd7df5cbedc425",
+    "v62-compact-2d-768x900-pavilion.png": "c4efc50d644a10c574a30516b0b7ec06d1f162c156908995a31bed4daf89ddc1",
+    "v62-compact-2d-768x900-watch.png": "4bbedb8783eb6bd3874fbb397f3bac2ca181ad7c233bb13d0e85a5bd3254dbf4",
+    "v62-compact-2d-844x390-pavilion.png": "f2c3031420523121d4d94ae76818f572eb40449f6507449d87bc32e1f1b132a4",
+    "v62-compact-2d-844x390-watch.png": "43d702114fae3607d81dae2d09e538a5c8d300f61bb2d96356e56864feb70eb7",
+    "v62-compact-3d-320x568-pavilion.png": "4b295b20f1c427d55cbe73488797e51f6a17358eaecdeed15d0a7196916e8e95",
+    "v62-compact-3d-320x568-watch.png": "3ef9d6436fc1c6221f6f8786364f858065f55e1f536c4cb7613f91d7527289c0",
+    "v62-compact-3d-320x900-pavilion.png": "4d1b39ee588920dc19f9cc90f64ec31ff2ae4dd4906dbd5ac48284a11a849fb6",
+    "v62-compact-3d-320x900-watch.png": "7c2c7aa48f6f1aa3dfeb3ba971748546059a18fd22ca3045c36764f5fff6b1d7",
+    "v62-compact-3d-390x900-pavilion.png": "c1026c3b203170470b8545209541db45d8debd9fd66bf9b58943e0870c25c253",
+    "v62-compact-3d-390x900-watch.png": "a42a9e18bc5f46d96d4bf4b09894482fb860f11aae0de7502fc5349c1a31ad8b",
+    "v62-compact-3d-768x900-pavilion.png": "c4efc50d644a10c574a30516b0b7ec06d1f162c156908995a31bed4daf89ddc1",
+    "v62-compact-3d-768x900-watch.png": "4bbedb8783eb6bd3874fbb397f3bac2ca181ad7c233bb13d0e85a5bd3254dbf4",
+    "v62-compact-3d-844x390-pavilion.png": "731b1dc5a6c735b581fbd87ffd8db2706056d0144644632674df2456f5b80bda",
+    "v62-compact-3d-844x390-watch.png": "cd170a96e5a3bef81cec2ca632cdabefbb4c3f5a472589dd9f15af8988f06c64"
+  },
+  "reviewedImages": {
+    "v62-compact-3d-320x568-watch.png": "3ef9d6436fc1c6221f6f8786364f858065f55e1f536c4cb7613f91d7527289c0",
+    "v62-compact-3d-844x390-pavilion.png": "731b1dc5a6c735b581fbd87ffd8db2706056d0144644632674df2456f5b80bda",
+    "v62-compact-2d-390x900-pavilion.png": "e7a962aaeef335f5f75c1dd66f0885e0d955c79cdba5855ae738de129b99a595"
+  }
+}

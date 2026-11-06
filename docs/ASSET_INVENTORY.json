@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "61.0.0",
+  "release": "62.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2032,
-  "uniqueRuntimePhotoFiles": 2010,
+  "runtimePhotoEntries": 2033,
+  "uniqueRuntimePhotoFiles": 2011,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -20041,6 +20041,20 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "メイド理世",
       "changes": "Orientation normalized where needed, resized to 1200 pixels high and WebP encoded, without cropping."
+    },
+    {
+      "id": "v62-real-tudor-black-bay54-steel",
+      "path": "assets/photos/v62-real-tudor-black-bay54-steel.webp",
+      "sha256": "e279d431a98992df4573a2559fad28912da0669e3d80ed66a8e6660ed36994cd",
+      "source": "https://commons.wikimedia.org/wiki/File:Tudor_Black_Bay_54_ref._m79000n-0001.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tudor_Black_Bay_54_ref._m79000n-0001.jpg",
+      "description": "TUDOR Black Bay 54 ref. M79000N-0001 · exact-reference licensed wrist photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "EMore98",
+      "changes": "JPEG encoded as WebP at original 823 × 932 dimensions; no cropping, resizing, rotation or semantic edit."
     },
     {
       "id": "ysl-v4-1",

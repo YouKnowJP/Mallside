@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
-import {updateStudioStudy} from './studio-details.js?v=57.0.0';
+import {updateStudioStudy} from './studio-details.js?v=62.0.0';
 // Original plaster niches, fluted wood, note trays and brass details inside existing footprints.
 export function buildFragranceStudio(w,st){
  const r=w.layout.rail,cx=r.x+r.width/2,z=r.y+r.height/2,parts=[],box=(...p)=>parts.push(p),wood='#977958',paper='#eee5d2',brass='#bb9f67',ink='#667968';

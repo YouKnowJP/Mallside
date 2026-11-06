@@ -1,0 +1,198 @@
+{
+  "schema": "mallside-v62-bounded-product-research-1",
+  "reviewedAt": "2026-11-06",
+  "scope": "Read-only product research. No runtime, publishing, account or browser settings changed.",
+  "recommendation": "Adopt exactly one model: TUDOR Black Bay 54 M79000N-0001 for the South Coast Plaza TUDOR boutique. Do not add Rolex based on unmatched photographs.",
+  "products": [
+    {
+      "tenantId": "southcoast-tenant-tudorbucherer1888-2",
+      "brand": "TUDOR",
+      "model": "Black Bay 54",
+      "reference": "M79000N-0001",
+      "retailerSecondaryReference": "79000N-73560",
+      "manufacturerUrl": "https://www.tudorwatch.com/en/watches/black-bay-54/m79000n-0001",
+      "manufacturerFacts": {
+        "caseDiameterMm": 37,
+        "caseThicknessMm": 11.2,
+        "lugWidthMm": 20,
+        "caseMaterial": "stainless steel",
+        "caseFinish": [
+          "polished",
+          "satin"
+        ],
+        "dialColor": "black",
+        "dialShape": "domed",
+        "dateDisplay": false,
+        "bezelMaterial": "stainless steel; aluminum insert",
+        "bezelAction": "one-way, 60-minute scale",
+        "bezelIdentityDetail": "Sparse scale; no minute hash marks",
+        "crystal": "domed sapphire",
+        "crown": "screw-down steel; rose emblem",
+        "bracelet": "three-link stainless steel; polished/satin finish; T-fit clasp",
+        "movement": "MT5400; COSC; automatic; bidirectional rotor",
+        "powerReserveHoursApprox": 70,
+        "waterResistanceMetersManufacturerRated": 200,
+        "noPrimaryMeasurementFound": [
+          "lug-to-lug",
+          "watch weight",
+          "bracelet length",
+          "minimum or maximum wrist size"
+        ],
+        "dimensionConflictResolution": "Retailer rounds case thickness to 11 mm. Manufacturer explicitly gives 11.2 mm, which takes precedence."
+      },
+      "price": {
+        "amount": 4725,
+        "currency": "USD",
+        "asOf": "2026-11-06",
+        "kind": "US retailer regular outright watch price, not finance or trade-in",
+        "sourceUrl": "https://www.bucherer.com/us/en/watches/tudor/black-bay-54/1371-825-3.html",
+        "retailerProductId": "1371-825-3",
+        "pricebook": "bucherer-us-regular-prices",
+        "rawEvidence": "bucherer54-product-state.json",
+        "taxQualification": "Displayed watch price only. Sales tax and final checkout total are not established; do not label tax-inclusive.",
+        "regionalQualification": "Live manufacturer fetch rendered EUR. USD is established by exact US retailer product state and indexed official US result; no currency conversion performed.",
+        "stockQualification": "US online product state was orderable/in stock at review. This does not establish Costa Mesa boutique inventory. Do not advertise branch availability or limited stock.",
+        "promotionsExcluded": "Temporary gift-with-purchase, shipping, real returns and warranty policies are excluded from game transaction claims."
+      },
+      "retailerAssociation": {
+        "retailer": "Bucherer",
+        "boutique": "TUDOR Boutique Bucherer South Coast Plaza",
+        "address": "3333 Bristol Street, Suite 2017, Costa Mesa, CA 92626, United States",
+        "primarySourceUrl": "https://www.bucherer.com/us/en/appointment/booking?confirmed=guest",
+        "primarySourceObservation": "Indexed primary booking page explicitly lists Tudor Boutique South Coast Plaza with Available brands TUDOR. No booking or selection submitted.",
+        "corroboratingPrimaryUrl": "https://www.bucherer.com/us/en/locations?dwcont=C1311776118&redirect=tourneau",
+        "mallPrimaryUrl": "https://www.southcoastplaza.com/directory/tudor/",
+        "mallPrimaryObservation": "Mall directory lists Tudor | Bucherer 1888; Fall 2026 link present.",
+        "dynamicPageQualification": "Plain US locations and booking direct HTML can return unloaded client shells; do not treat saved shell files as textual proof of branch facts."
+      },
+      "image": {
+        "fileTitle": "File:Tudor Black Bay 54 ref. m79000n-0001.jpg",
+        "pageId": 175139388,
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Tudor_Black_Bay_54_ref._m79000n-0001.jpg",
+        "revisionId": 1086656731,
+        "revisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Tudor_Black_Bay_54_ref._m79000n-0001.jpg&oldid=1086656731",
+        "author": "EMore98",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:EMore98",
+        "sourceClaim": "Own work",
+        "creationDate": "2025-09-16",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tudor_Black_Bay_54_ref._m79000n-0001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "canonicalOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tudor_Black_Bay_54_ref._m79000n-0001.jpg",
+        "width": 823,
+        "height": 932,
+        "bytes": 98473,
+        "sha1": "ed4b17c8b37ab67b7992e38c05f5e78e0e236ee1",
+        "sha256": "0e909b7cd9079cc824d4b41fc0a7836b0b63ed69d31847e95ecf8ede39024761",
+        "rawImageinfoAndWikitextFile": "commons-bb54-imageinfo.json",
+        "visualReview": {
+          "performed": true,
+          "exactReferenceClaim": "Commons file description explicitly names m79000n-0001.",
+          "visibleMatch": [
+            "black no-date dial",
+            "steel three-link bracelet",
+            "snowflake hour hand",
+            "lollipop seconds",
+            "sparse black bezel scale"
+          ],
+          "scene": "Natural wrist photograph in car; jacket partially occludes left dial edge.",
+          "limitations": "Photo does not verify dimensions, clasp mechanism, fit or water performance. Wrist, sleeve and background are not included with watch.",
+          "underlyingImageRightsReview": "Appears to be a natural own-work photograph, not a photographed catalog/packshot."
+        },
+        "attributionSuggested": "Tudor Black Bay 54 ref. m79000n-0001 — EMore98, CC BY-SA 4.0, via Wikimedia Commons.",
+        "adaptationRequirements": "If resized, cropped or converted, record modifications and license the adapted image CC BY-SA 4.0, retaining author, source and license links. No manufacturer image reuse permission inferred."
+      },
+      "runtimePhoto": {
+        "path": "assets/photos/v62-real-tudor-black-bay54-steel.webp",
+        "bytes": 98590,
+        "sha256": "e279d431a98992df4573a2559fad28912da0669e3d80ed66a8e6660ed36994cd",
+        "dimensions": [
+          823,
+          932
+        ],
+        "changes": "WebP encoded at quality 86. No crop, resizing, rotation or semantic edits. Adapted image remains CC BY-SA 4.0."
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "reference": "Rolex 124060 / m124060-0001",
+      "reason": "No confidently matching licensed Commons photograph found. Older 16610 / 116610 / 14060 photos are not the exact reference. Do not substitute."
+    },
+    {
+      "reference": "TUDOR M79030N-0001",
+      "reason": "Old primary direct URL redirects to collection; no exact matching licensed Commons photo established."
+    },
+    {
+      "reference": "TUDOR M79018V",
+      "reason": "Commons image is a photographed printed catalog packshot; uploader own-work claim does not establish underlying photo permission. Also gold bracelet photo does not match official brown-strap M79018V-0001 variant. Excluded."
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "name": "bucherer-locations.html",
+      "bytes": 885783,
+      "sha256": "a4cf63e9890caa702014d9d9922766731875094e30762be02f68a9609e5adcac"
+    },
+    {
+      "name": "bucherer-us-booking.html",
+      "bytes": 33634,
+      "sha256": "6c5c2b7ae42a17a219708e53b496c8678b3fa5521614108f667e1b62738df16e"
+    },
+    {
+      "name": "bucherer54-exact.html",
+      "bytes": 1045199,
+      "sha256": "af07d816b0a5d9ba778345723a714d2e87565175e11884c316c78531cff7e130"
+    },
+    {
+      "name": "bucherer54-list.html",
+      "bytes": 1066241,
+      "sha256": "196d54375a79b0173822fac4d00611dfae8198decfda8a984f1ecb50a23dac81"
+    },
+    {
+      "name": "bucherer54-product-state.json",
+      "bytes": 45170,
+      "sha256": "ab1acca16b87f543ab02ae567b8bfc876423fefa6c1f2944cdba192ccb574991"
+    },
+    {
+      "name": "commons-bb54-imageinfo.json",
+      "bytes": 3626,
+      "sha256": "271eb00bbacab18e13bb313c3f6dc93163c3629a99f5b6eadef8be073a6446a7"
+    },
+    {
+      "name": "commons-search-124060.json",
+      "bytes": 20485,
+      "sha256": "cc84e549f2be7ef8f1da7d01f09cf062c1032e3bc6f973ee70cbc9c4d269c953"
+    },
+    {
+      "name": "commons-search-79030N.json",
+      "bytes": 185,
+      "sha256": "5df7e86df7dc013e29d7faf899e063d78e29130cfe944a23cf035f190d18051b"
+    },
+    {
+      "name": "commons-search-Rolex-Submariner.json",
+      "bytes": 23056,
+      "sha256": "f4799211a50b4084f7654375d83cc99a785c90e1166f7580b1dcd0c35b4dce4e"
+    },
+    {
+      "name": "commons-search-Tudor-Black-Bay.json",
+      "bytes": 27727,
+      "sha256": "edc7eb885eba78c3131dfd6f74d0277eaa08ac3ae69616ac98a1c4880af8f99d"
+    },
+    {
+      "name": "commons-watch-imageinfo.json",
+      "bytes": 27445,
+      "sha256": "457af5181179c432d9e6905f7c46d9236db67925f841c71b3c00833ba06a0c1d"
+    },
+    {
+      "name": "tudor54-photo.jpg",
+      "bytes": 98473,
+      "sha256": "0e909b7cd9079cc824d4b41fc0a7836b0b63ed69d31847e95ecf8ede39024761"
+    },
+    {
+      "name": "tudor58-gold-photo.jpg",
+      "bytes": 214794,
+      "sha256": "962f211030c069eec52f35dc11252ab358c1d350c39dd0c24fe8a3e639c0aa22"
+    }
+  ]
+}

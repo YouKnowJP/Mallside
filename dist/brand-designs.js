@@ -90,6 +90,7 @@ const defaults={
 };
 const hash=s=>[...s].reduce((n,c)=>(Math.imul(n,31)+c.charCodeAt(0))>>>0,7);
 export function brandDesign(store,kind=store.businessKind||'apparel'){
+ if(store.collectionEdition===62)return {...make('perimeter','wood','#ad9677','#e4dccb','#896c50','#405b51','#c4b89d','light-mirrors','Original lined-tray watch salon'),key:merchantIdentity(store.name),variation:0,referenceKind:'original-design',source:store.source||'',signColor:'#405b51',signBackground:'#e4dccb'};
  const key=merchantIdentity(store.name),known=BRAND_DESIGNS[key],base=known||defaults[kind]||defaults.service;
  // Individual brands keep a stable material layout even when several branches share a family.
  const variation=hash(key)%4;
