@@ -25,10 +25,12 @@ export function buildStudyStation(w,st,style,r){
  w.box(x+39,33,z+9,3,2,27,'#c8aa72');for(let i=0;i<6;i++)w.box(x+39,34.1,z-1+i*4,2,.2,.3,style.trim);
  w.studioStudy={store:st.id,samples,signature:null,group};updateStudioStudy(w);
 }
-export function updateStudioStudy(w){
- const study=w.studioStudy;if(!study)return;const d=w.studioPreview?.store===study.store?w.studioPreview:studyFor(w.state,study.store),signature=d.palette+':'+d.finish;if(study.signature===signature)return;
- const palette=STUDY_PALETTES.find(p=>p.id===d.palette)||STUDY_PALETTES[0];for(const [i,m]of study.samples.entries()){m.color.set(palette.colors[i]);m.roughness=d.finish==='smooth'?.24:.88;m.bumpScale=d.finish==='smooth'?0:.06;}
- study.signature=signature;w.canvas.dataset.materialStudy=signature;w.canvas.dataset.materialStudyGroup=study.group;
+export function updateStudioStudy(w,dt=0){
+ const study=w.studioStudy;if(!study)return;const d=w.studioPreview?.store===study.store?w.studioPreview:studyFor(w.state,study.store),signature=d.palette+':'+d.finish;
+ if(study.signature!==signature){const palette=STUDY_PALETTES.find(p=>p.id===d.palette)||STUDY_PALETTES[0];study.targets=palette.colors.map(c=>new T.Color(c));study.targetRoughness=d.finish==='smooth'?.24:.88;study.targetBump=d.finish==='smooth'?0:.06;study.signature=signature;study.settled=false;w.canvas.dataset.materialStudy=signature;w.canvas.dataset.materialStudyGroup=study.group;}
+ if(study.settled)return;const blend=!(dt>0)||w.state.preferences?.reducedMotion?1:1-Math.exp(-14*Math.min(.05,dt));let error=0;
+ for(const [i,m]of study.samples.entries()){m.color.lerp(study.targets[i],blend);m.roughness+=(study.targetRoughness-m.roughness)*blend;m.bumpScale+=(study.targetBump-m.bumpScale)*blend;error=Math.max(error,Math.abs(m.color.r-study.targets[i].r),Math.abs(m.color.g-study.targets[i].g),Math.abs(m.color.b-study.targets[i].b),Math.abs(m.roughness-study.targetRoughness));}
+ study.settled=error<.0001;if(study.settled)for(const [i,m]of study.samples.entries()){m.color.copy(study.targets[i]);m.roughness=study.targetRoughness;m.bumpScale=study.targetBump;}w.canvas.dataset.studioBlend=study.settled?'1':'transition';
 }
 export function buildPlanningDetails(w,st,style,layout){
  const timber=w.mat(style.fixture,{map:surfaceTexture(w,'timber'),roughness:.72}),paper='#eee5d0',group=studioGroup(st);
@@ -37,7 +39,7 @@ export function buildPlanningDetails(w,st,style,layout){
   // Slatted aprons, recessed handles and workbench foot rails add readable construction.
   for(const dz of [-26,26]){w.box(x,24,z+dz,84,7,2,timber);w.box(x,24,z+dz*1.04,17,1,1,style.trim);}
   for(const dx of [-35,35])w.box(x+dx,7,z,3,2,43,style.trim);
-  if(i===1)continue;
+  if(i===0||i===1){w.box(x+37,42,z-20,1.5,24,1.5,style.trim);w.box(x+31,54,z-20,13,1.5,3,style.trim);w.box(x+25,52,z-20,12,3,9,'#d7c8a9');for(let n=0;n<3;n++)w.box(x-25+n*13,31.4,z+22,10,.3,3,['#9d7b65','#7b9584','#b6a16e'][n]);}if(i===1)continue;
   w.box(x-34,32,z+16,14,1.6,18,'#8b9e8a');w.box(x-34,33,z+16,12,.5,16,paper);for(let j=0;j<4;j++)w.box(x-34,33.3,z+11+j*3,9,.2,.3,style.trim);
  }
  const r=layout.rail,x=r.x+r.width/2,z=r.y+r.height/2;

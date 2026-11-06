@@ -2,6 +2,15 @@
 
 Updated 5 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v59
+
+- Connect all 292 research-only retail planning lounges to a live floor consultation, using existing material notes and actual host/workbench routes.
+- Keep palette/finish controls stable, animate sample changes, support continuous cancellation/return, paused dialogs and stationary reduced motion.
+- Refine original workbenches with task lamps and paper details; add public bench arm caps, fasteners and planning plaques within existing footprints.
+- Let public seats review actual unpaid picks and saved shortlists and route to the closest stocked shops on their current game floor, with an honest empty-floor map fallback.
+- Ease associate walking while preserving catalogs, photos, shop identities, schema 6, map revision 10 and economy rules.
+- See [v59 gameplay](docs/GAMEPLAY-v59.md), [primary research](docs/research-v59/shopping-services-evidence.json) and [QA](docs/qa-v59.md).
+
 ## Completed in v58
 
 - Connect an exact product to its actual floor display, including later display pages.

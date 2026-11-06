@@ -1,0 +1,16 @@
+{
+  "releaseBefore": "58.0.0",
+  "productCount": 8856,
+  "productRecordsSHA256": "4410e2cf7e4dddbdbc999100849183a85552d77a69728e8e22cad1c5bd4834a7",
+  "shopCount": 1598,
+  "shopIdsSHA256": "499e350c23c8da8be1a6c2ca80cb490f7c024eaa06b0ae4aaa32c2ac919f1b0d",
+  "saveSchema": 6,
+  "mapRevision": 10,
+  "unchangedCatalogSources": {
+    "catalog.js": "919647749b0d005299cd88d23ebfa66d1ae40a7c8c2b4f195d4cc317673c7b82",
+    "malls.js": "b4d12a76906fa7e9462e302b49545c665368a4850dfbc790e9de8b7db1a700d4",
+    "store-product-seeds.js": "6d859eb91440675ab6078b53a3deb93c6d2a34879ce9dd52ec282a293eb34a17",
+    "playable-stores.js": "c75904b23163e53c3163260673f412a6643e2a9fc4cee539974c0d1747237933",
+    "photo-palettes.js": "eca4ddd7f8a35a4f5998ede49a08a219c652e1e1c606a1d414f07b49f65d503c"
+  }
+}

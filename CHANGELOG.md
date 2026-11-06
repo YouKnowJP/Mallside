@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v59 · 5 November 2026
+
+- Turn research-only material rooms into usable floor consultations with a visible host, stable palette/finish controls, eased samples, free saved notes and clear cancellation.
+- Add original workbench lamps and paper details, fine bench construction and current-floor bench guides for unpaid picks, shortlists and real stocked-shop routes.
+- Ease associate walking startup and arrival, preserve reduced-motion/lighter equivalents, and contain consultation controls in desktop, compact and fullscreen scenes.
+- Retain all catalog records, shop identities, photographs and save/economy rules. See [v59 gameplay](docs/GAMEPLAY-v59.md) and [QA](docs/qa-v59.md).
+
 ## v58 · 5 November 2026
 
 - Research real retailer product-location, associate, fitting and checkout practices; adapt them into original Mallside interactions.

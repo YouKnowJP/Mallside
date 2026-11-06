@@ -1,11 +1,12 @@
 # Mallside documentation
 
-Current release: [v58 gameplay](GAMEPLAY-v58.md) and [v58 QA](qa-v58.md).
+Current release: [v59 gameplay](GAMEPLAY-v59.md) and [v59 QA](qa-v59.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Guided material visits, useful public benches and eased host movement | [v59 guide](GAMEPLAY-v59.md), [primary research](research-v59/shopping-services-evidence.json), [v59 QA](qa-v59.md) |
 | Exact-product assistance, finished displays and personal space | [v58 guide](GAMEPLAY-v58.md), [primary research](research-v58/shopping-evidence.json), [v58 QA](qa-v58.md) |
 | Clearer 3D scenes, finished starter trousers and visible seated outfits | [v57 guide](GAMEPLAY-v57.md), [compatibility](research-v57/compatibility.json), [v57 QA](qa-v57.md) |
 | Optical studio, readable floor maps and smoother frame fitting | [v56 guide](GAMEPLAY-v56.md), [primary evidence](research-v56/merchant-records.json), [v56 QA](qa-v56.md) |

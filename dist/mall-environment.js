@@ -1,3 +1,4 @@
+import {buildBenchPlanningDetails} from './planning-visit.js?v=59.0.0';
 import {buildDirectoryKiosk} from './directory-kiosk.js?v=57.0.0';
 import {buildNoticeDetail} from './notice-details.js?v=50.0.0';
 import {buildWaterDetail} from './water-details.js?v=49.0.0';
@@ -136,6 +137,7 @@ export function buildPublicRealm(w,l,theme){
    for(const slat of [-7,0,7])b.box(x+fx*slat,14.7,z+fz*slat,63,.5,1.4,'#6f583f',a,'timber');for(const rail of [19,26,33])b.box(x-fx*11,rail,z-fz*11,62,1,1,'#967653',a,'timber');
    if(l.campus.outdoor){const a=p.rotation,px=x-Math.sin(a)*8,pz=z-Math.cos(a)*8;b.cylinder(px,49,pz,1.6,72,theme.trim);const shade=w.mesh(new T.ConeGeometry(43,12,8),w.mat(theme.wall));shade.position.set(px,91,pz);shade.castShadow=true;}
    for(const side of [-1,1]){const cx=x+rx*side*15,cz=z+rz*side*15;b.box(cx,16.1,cz,27,2.4,17,'#a6b39a',a);for(const seam of [-7,7])b.box(cx+fx*seam,17.35,cz+fz*seam,25,.2,.35,'#d4ddc7',a);}
+   buildBenchPlanningDetails(b,x,z,a,theme);w.canvas.dataset.benchPlanningRevision='59';
    const hit=w.box(x,17,z,p.width,26,p.height,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,'bench:'+p.id,p.approach);
   }else if(p.kind==='kiosk'){
    const accent={coffee:'#54766a',photo:'#9d8798',flowers:'#789262',popup:'#bd8c62'}[p.venue];

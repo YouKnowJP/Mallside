@@ -2,7 +2,7 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2618 files** from Git-tracked paths and
+This catalog lists **2626 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
 Finder metadata are omitted. Refresh from this repository’s
 `git ls-files --cached --others --exclude-standard` output; keep other projects separate.
@@ -13,10 +13,10 @@ Finder metadata are omitted. Refresh from this repository’s
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2305 |
-| [docs](../docs/) | 208 |
+| [dist](../dist/) | 2306 |
+| [docs](../docs/) | 214 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 66 |
+| [tests](../tests/) | 67 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## dist
 
 <details>
-<summary>2305 files</summary>
+<summary>2306 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2280,6 +2280,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/photo-surfaces-v55.js](../dist/photo-surfaces-v55.js)
 - [dist/photo-surfaces.js](../dist/photo-surfaces.js)
 - [dist/planning-lounge.js](../dist/planning-lounge.js)
+- [dist/planning-visit.js](../dist/planning-visit.js)
 - [dist/play-ui.js](../dist/play-ui.js)
 - [dist/playable-stores.js](../dist/playable-stores.js)
 - [dist/plush-model.js](../dist/plush-model.js)
@@ -2366,7 +2367,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## docs
 
 <details>
-<summary>208 files</summary>
+<summary>214 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2407,6 +2408,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/GAMEPLAY-v56.md](../docs/GAMEPLAY-v56.md)
 - [docs/GAMEPLAY-v57.md](../docs/GAMEPLAY-v57.md)
 - [docs/GAMEPLAY-v58.md](../docs/GAMEPLAY-v58.md)
+- [docs/GAMEPLAY-v59.md](../docs/GAMEPLAY-v59.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2490,6 +2492,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/qa-v56.md](../docs/qa-v56.md)
 - [docs/qa-v57.md](../docs/qa-v57.md)
 - [docs/qa-v58.md](../docs/qa-v58.md)
+- [docs/qa-v59.md](../docs/qa-v59.md)
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
@@ -2569,6 +2572,10 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/research-v58/compatibility.json](../docs/research-v58/compatibility.json)
 - [docs/research-v58/crowd-layout-proof.json](../docs/research-v58/crowd-layout-proof.json)
 - [docs/research-v58/shopping-evidence.json](../docs/research-v58/shopping-evidence.json)
+- [docs/research-v59/browser-proof.json](../docs/research-v59/browser-proof.json)
+- [docs/research-v59/compact-proof.json](../docs/research-v59/compact-proof.json)
+- [docs/research-v59/compatibility.json](../docs/research-v59/compatibility.json)
+- [docs/research-v59/shopping-services-evidence.json](../docs/research-v59/shopping-services-evidence.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2613,7 +2620,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## tests
 
 <details>
-<summary>66 files</summary>
+<summary>67 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2679,6 +2686,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/tableware-v49.test.mjs](../tests/tableware-v49.test.mjs)
 - [tests/tailoring-v46.test.mjs](../tests/tailoring-v46.test.mjs)
 - [tests/textile-v40.test.mjs](../tests/textile-v40.test.mjs)
+- [tests/visits-v59.test.mjs](../tests/visits-v59.test.mjs)
 - [tests/visual-v33.test.mjs](../tests/visual-v33.test.mjs)
 - [tests/watch-v43.test.mjs](../tests/watch-v43.test.mjs)
 

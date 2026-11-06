@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v58 — a more personal shopping visit
+## v59 — browse together and plan your next stop
+
+Preview original materials on the floor of all 292 research-only retail planning lounges while the host joins you at the workbench. Keep or cancel the note, watch finishes change smoothly, and use public benches to review unpaid picks, saved shortlists and nearby real shop routes. Finer lamps, desk details, bench joinery and eased associate walking add polish. Existing products and saves remain compatible. See [v59 gameplay](docs/GAMEPLAY-v59.md), [primary research](docs/research-v59/shopping-services-evidence.json), [QA](docs/qa-v59.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v58 — a more personal shopping visit
 
 Find an exact product on its physical display, ask the associate to check your selected size or format, and keep browsing while they walk out and return. Numbered price cards, open display tables, finer shelves and detailed counters give stores more definition. Shoppers keep personal space and use fitting-room waiting spots and checkout lines without blocking each other. Earlier products and saves remain compatible. See [v58 gameplay](docs/GAMEPLAY-v58.md), [retailer research](docs/research-v58/shopping-evidence.json), [QA](docs/qa-v58.md) and the [roadmap](ROADMAP.md).
 

@@ -1,0 +1,342 @@
+{
+  "version": "59.0.0",
+  "bundle": "app-BOQ4WKLY.js",
+  "status": "passed",
+  "sourceCommitAtTesting": "fc5d4086229a41998a3b677ea26e4c5ab25fe7c0",
+  "sourceFiles": 2306,
+  "publicFiles": 2072,
+  "sourceTreeSHA256": "081cbd3669946954d56fe7b82bfda7bea7f7e481d1f1d218ffbf4c58f946ff44",
+  "publicTreeSHA256": "baec798ba6d3a224ae01cd92b09b367345596ad543dcbca7cbd3598791ad7bc8",
+  "nativeRunnerSHA256": "3fd2a8a6bede2ce29ec03b913412c0fb3608146815f874b8557ceb13fdf9d203",
+  "matrixRunnerSHA256": "a88e8223c6db1bbc26c7b14c59456f2beaf048c168d52d9fc851ae4f16cc0ab4",
+  "scope": "18 selected scenarios from 108 available, plus strict error capture in each browser; real clocks, visibility and native input remain active.",
+  "browsers": {
+    "firefox": {
+      "browserVersion": "159.0.1",
+      "scenarios": 18,
+      "checks": 19,
+      "sessions": 18,
+      "fingerprint": "525e7e905c1fea6f3dc3c4e7d43aefae053146dac171af5c27390e18dee9958d",
+      "isolation": "fresh-session",
+      "headless": true,
+      "budgets": {
+        "wait": 120000,
+        "pageLoad": 120000,
+        "protocol": 150000
+      },
+      "errors": [],
+      "resourceWarnings": [],
+      "inputRetries": [],
+      "profileRemovalsVerified": 18,
+      "results": [
+        {
+          "name": "v59 floor cancellation, paused host, reduced motion and compact fullscreen",
+          "status": "passed",
+          "ms": 50397
+        },
+        {
+          "name": "no captured game exceptions or unexpected console errors",
+          "status": "passed",
+          "ms": 15
+        },
+        {
+          "name": "v59 guided floor materials, free saving, reload and shop exit",
+          "status": "passed",
+          "ms": 26362
+        },
+        {
+          "name": "v59 public bench review, actual closest stocked destinations, rest and lighter mode",
+          "status": "passed",
+          "ms": 13908
+        },
+        {
+          "name": "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections",
+          "status": "passed",
+          "ms": 12737
+        },
+        {
+          "name": "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance",
+          "status": "passed",
+          "ms": 24963
+        },
+        {
+          "name": "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund",
+          "status": "passed",
+          "ms": 42133
+        },
+        {
+          "name": "v57 compact fitting status, clear scene view and singular bag guidance",
+          "status": "passed",
+          "ms": 137977
+        },
+        {
+          "name": "v53 furnished public rest lounge, free floor guide, saved shortlists and smooth seated recovery",
+          "status": "passed",
+          "ms": 75375
+        },
+        {
+          "name": "v41 compact material controls, keyboard focus, draft cancellation and direct shop exit",
+          "status": "passed",
+          "ms": 53063
+        },
+        {
+          "name": "v41 physical material studios, preview rollback, saved finishes and compatible reload",
+          "status": "passed",
+          "ms": 245706
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "status": "passed",
+          "ms": 33721
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "status": "passed",
+          "ms": 28055
+        },
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "status": "passed",
+          "ms": 16787
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "status": "passed",
+          "ms": 33698
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "status": "passed",
+          "ms": 41051
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "status": "passed",
+          "ms": 34729
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "status": "passed",
+          "ms": 15943
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "status": "passed",
+          "ms": 10477
+        }
+      ],
+      "caseReportSHA256": {
+        "3D shop entry, route interruption, exit and repeat entry": "ab1333eed16f0ad151d7a4ae1e4e4303690033a7eb4e15089d551d950ceaa395",
+        "keyboard walking moves and stops on release without a stale route": "ae21fb0c5fea18dd445644f6b50980c1af20e4d12ec82358593d4bdd64cd5eb1",
+        "browse, choose size, fitting, carry to checkout, pay and receipt": "1b04d165c2db18f908f409b6e88363eaea5c72f4bfd56bcca6d7ce8f68daf9da",
+        "interactive court map leaves an interior before routing": "e642b55cfe6bba6dab5ed3faf627eb81399a2de6389b20ddec7a3c99eb2cdea1",
+        "full viewport gameplay and visible exit control": "ef4ed3c9105a5ad6a68cd38cbab37adece5c7accb3c47599c37ddd311b270d6c",
+        "phone/tablet layouts, shop search and keyboard modal containment": "fd6cf5d1d55dd191c7a97b2b1d29d2ccad7ef1e868ffdff87b1300f6652fec62",
+        "v33 reflected lighting, camera presets, focused play and visible route feedback": "aa3dd6bfc412acb13aa0a5aa9db460df15ea65f88340e36b5eb196f97afddb24",
+        "v33 indoor evening lighting and compact focused-play layouts": "fa6ce911ff1b16b6f701d1c9933c28eaa791b0a8bd2d42167d42064ebd9ba5de",
+        "v41 physical material studios, preview rollback, saved finishes and compatible reload": "26d3d53728e0b84b7c8a5b40655ba22b9cf4c66ea5115ebb87606a85758420e3",
+        "v41 compact material controls, keyboard focus, draft cancellation and direct shop exit": "f86328befe6099d3368b88c1ae3f717fe21d2063b7e2da17586b90a70f783a61",
+        "v53 furnished public rest lounge, free floor guide, saved shortlists and smooth seated recovery": "a5c0bac492fe35fb9d34d1d27c6ec8108b68a033b14d1561ebec8232133112d6",
+        "v57 compact fitting status, clear scene view and singular bag guidance": "88763b00ad69f973cc42bfc5473442422f4886de3f655fc04b6c419f6aca4ef3",
+        "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund": "f8c9add0794d057215d206b20118cd193de00513c602202978358315dfdbf342",
+        "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections": "00dfbbadb18a6582d143716c1164c16105055e834c3cec5a5a1632f5074091a7",
+        "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance": "fe212202a40f69fb03093a5f5659ace665bde74e723e67b5ed51997553321ab0",
+        "v59 guided floor materials, free saving, reload and shop exit": "306bfab4b0f165c6e28b7964d2caefc9882ce7d074ea51e48ab5ba08318e63a3",
+        "v59 floor cancellation, paused host, reduced motion and compact fullscreen": "3db97a3f3cf8ff39ffdb8fb68d962aaec6e1170a5505bdbfb18cdd3474c5f836",
+        "v59 public bench review, actual closest stocked destinations, rest and lighter mode": "a9b4102c094d467bf122cf42dc30e99cbbc2b648ffea6de8d428611ab136406d"
+      }
+    },
+    "safari": {
+      "browserVersion": "26.6.2",
+      "scenarios": 18,
+      "checks": 19,
+      "sessions": 1,
+      "fingerprint": "6067b85d8c6d2d87938f5ab6ac3dc05bd01aa0a1878bebfff058082bb76ae6b0",
+      "isolation": "bounded-retained-window",
+      "headless": false,
+      "budgets": {
+        "wait": 120000,
+        "pageLoad": 120000,
+        "protocol": 150000
+      },
+      "errors": [],
+      "resourceWarnings": [],
+      "inputRetries": [],
+      "profileRemovalsVerified": 0,
+      "results": [
+        {
+          "name": "v59 floor cancellation, paused host, reduced motion and compact fullscreen",
+          "status": "passed",
+          "ms": 91099
+        },
+        {
+          "name": "no captured game exceptions or unexpected console errors",
+          "status": "passed",
+          "ms": 13
+        },
+        {
+          "name": "v59 guided floor materials, free saving, reload and shop exit",
+          "status": "passed",
+          "ms": 208935
+        },
+        {
+          "name": "v59 public bench review, actual closest stocked destinations, rest and lighter mode",
+          "status": "passed",
+          "ms": 37112
+        },
+        {
+          "name": "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections",
+          "status": "passed",
+          "ms": 29069
+        },
+        {
+          "name": "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance",
+          "status": "passed",
+          "ms": 40416
+        },
+        {
+          "name": "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund",
+          "status": "passed",
+          "ms": 74192
+        },
+        {
+          "name": "v57 compact fitting status, clear scene view and singular bag guidance",
+          "status": "passed",
+          "ms": 25879
+        },
+        {
+          "name": "v53 furnished public rest lounge, free floor guide, saved shortlists and smooth seated recovery",
+          "status": "passed",
+          "ms": 115062
+        },
+        {
+          "name": "v41 compact material controls, keyboard focus, draft cancellation and direct shop exit",
+          "status": "passed",
+          "ms": 8188
+        },
+        {
+          "name": "v41 physical material studios, preview rollback, saved finishes and compatible reload",
+          "status": "passed",
+          "ms": 70344
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "status": "passed",
+          "ms": 6026
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "status": "passed",
+          "ms": 25535
+        },
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "status": "passed",
+          "ms": 10814
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "status": "passed",
+          "ms": 10270
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "status": "passed",
+          "ms": 9960
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "status": "passed",
+          "ms": 10699
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "status": "passed",
+          "ms": 6129
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "status": "passed",
+          "ms": 4923
+        }
+      ],
+      "caseReportSHA256": {
+        "3D shop entry, route interruption, exit and repeat entry": "238567c585211d19ee7801383ef40511edbd9e3ddd7102a02350aa65063e0c23",
+        "keyboard walking moves and stops on release without a stale route": "7a2e0e20d338fd8b2101059af656a0cda08812ace6419af35984f82cb18338ff",
+        "browse, choose size, fitting, carry to checkout, pay and receipt": "fbfab4e5a4f0f63cc6cec56a76b10cd9da732cd559179bde0e0965c334c32464",
+        "interactive court map leaves an interior before routing": "52c8dc9482dbc45ae132c268d2776a7295be2bb7ec5e4d7434e24c4021428ad1",
+        "full viewport gameplay and visible exit control": "254a6ec6b50a061b98ee69518c1d3e284ca6ef2ea7cbb5028bcc08f962044673",
+        "phone/tablet layouts, shop search and keyboard modal containment": "cf86e7f03e5c1b459a3fd088281ce2f8a97bd386166987d5619cdbe7a046a509",
+        "v33 reflected lighting, camera presets, focused play and visible route feedback": "f95a64fc34383c75209420af2f8eac9baaa91a246a45349e6059b0bbbc007338",
+        "v33 indoor evening lighting and compact focused-play layouts": "22c27548866730653078aa54ea2424c5992832756e9004a1f465af167118c0db",
+        "v41 physical material studios, preview rollback, saved finishes and compatible reload": "25ab33cab783d6cceb469ebbf95ca296cedc2847e042e043804acfb3460fef2c",
+        "v41 compact material controls, keyboard focus, draft cancellation and direct shop exit": "c9e51d5ae9e5273dfb091404a18da785eb681466e9e3b15c94805bcaec884bed",
+        "v53 furnished public rest lounge, free floor guide, saved shortlists and smooth seated recovery": "7e8142f594cc405597abf061fd2664ad9a7e2e9fbbe55ef2a7d9abb8d99504e3",
+        "v57 compact fitting status, clear scene view and singular bag guidance": "42d4d29793fad509119c121cd12be1df822b4dad1b4f85b4c16c5f8186f20ab9",
+        "v58 exact product locator, physical associate size check, pickup, checkout, reload and refund": "afb5897b8688982f6dcf34528d3f8f322859854129eace4bef1c51d91740becb",
+        "v58 associate pause, cancellation, continuous return and shop-exit cleanup preserve unpaid selections": "513d0a670e31cb8112f2d52b2b6f11ce57fec16e3eaec7b5c49804f61ddb5a48",
+        "v58 compact reduced-motion size checks, exhausted stock, keyboard focus and lighter-mode assistance": "4a422ceb29ed5cc6816f323fdd59fc99f995706fac2911a028967bfb38ec08bc",
+        "v59 guided floor materials, free saving, reload and shop exit": "d68f206b1e59102ab3a6505ece1e01a50366b3993fe94a12050376a3ab264995",
+        "v59 floor cancellation, paused host, reduced motion and compact fullscreen": "bf85563d15304a9265f15076cc833a92d6d6ba8a0d1eb7f2216735c794edf513",
+        "v59 public bench review, actual closest stocked destinations, rest and lighter mode": "e401d90e97f65b4965b6b43778f427949af71e6db4f50a29bbb89162a2fa950a"
+      }
+    }
+  },
+  "reviewedImages": [
+    {
+      "name": "safari-gameplay-v59-guided-workbench.png",
+      "sha256": "a6ad7325e13221fccbe4d9c63da0dded1264da26c992f1cef875eae6caf00aef"
+    },
+    {
+      "name": "safari-gameplay-v59-3d-bench-guide.png",
+      "sha256": "29ebf62cd2d08df95fb63d9bf92d06072957f4b9af1d4af9d75fe57fdf5a8819"
+    },
+    {
+      "name": "firefox-gameplay-v59-guided-workbench.png",
+      "sha256": "5029d756ca9998d115739de89ebc0f27db8d13e510a7539f2b7fa1b8cb91159d"
+    },
+    {
+      "name": "firefox-gameplay-v59-compact-floor.png",
+      "sha256": "003626fc2fea2d38eaa338020ceb61c6823c0e4b7ffb885b5c6d8b93f6106848"
+    },
+    {
+      "name": "v59-compact-3d-844-390.png",
+      "sha256": "cc34425490d7afffcdf35cd7099c3e139add2fdb228cf4100aefa36c718e205a"
+    },
+    {
+      "name": "v59-compact-3d-320-568.png",
+      "sha256": "56cc1709d7635c3bb69361aa187c14b7ae71a7f4bc5d45c1d305f9242da1242a"
+    }
+  ],
+  "cleanup": {
+    "safari": {
+      "automationEnabled": false,
+      "automationOffVisiblyConfirmed": true,
+      "otherDeveloperFlagsPreserved": true,
+      "normalStartPageLeftOpen": true,
+      "driverStopped": true,
+      "driverPortClosed": true,
+      "temporaryDisplayAssertionsStopped": true
+    },
+    "firefox": {
+      "temporarySoftwareSignatureVerifiedAgain": true,
+      "team": "43AQ936H96",
+      "profilesVerifiedAbsent": 18,
+      "extraOwnedProfilesRemoved": 0,
+      "baselineEntriesPreserved": 14,
+      "baselineBytesPreserved": true,
+      "originalPreferencesRestored": false,
+      "newTestFilesRemoved": 4,
+      "temporaryFilesRemoved": 116,
+      "temporaryRootRemoved": true
+    }
+  },
+  "softwareVerification": {
+    "firefoxVersion": "159.0.1",
+    "officialFirefoxSHA512": "0158a1df6c3b954320542002a86cf3bf4531c25abf0fbf075f46e551669bc70e7c6567aa0ab690a46f955b90acf9976bb8173842b83351625f0d9e27e1cd023c",
+    "teamIdentifier": "43AQ936H96",
+    "signatureVerifiedBeforeAndAfterTests": true,
+    "geckodriverVersion": "v0.37.1",
+    "officialGeckodriverSHA256": "d02b3f7003f999caf90974a2ef5da0286c05d01cee19112c86846d759fdba4f5"
+  }
+}

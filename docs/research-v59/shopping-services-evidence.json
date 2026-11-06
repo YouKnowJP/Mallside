@@ -1,0 +1,49 @@
+{
+  "reviewedAt": "2026-11-05",
+  "scope": "Primary mall and retailer evidence for original consultation spaces and useful public areas. No new merchandise, copied branded interiors, real bookings, messages or real-world inventory claims.",
+  "sources": [
+    {
+      "title": "Design Services — Herman Miller",
+      "url": "https://store.hermanmiller.com/design-services.html?lang=en_US",
+      "evidence": "The service combines a specialist conversation with fabric/finish browsing, a mood board and room visualization. The FAQ says existing owned furniture can be incorporated and there is no minimum order.",
+      "adaptation": "Turn original planning props into a coherent consultation desk: the associate meets the player beside a swatch/mood board, selected material notes appear physically, and the player can review a budget and actual next shop without purchasing anything.",
+      "limits": "Use original sample shapes and colors, not actual Herman Miller furniture, photographs or an assertion that each pending game shop offers this real service. Do not copy current prices or promise delivery."
+    },
+    {
+      "title": "In-Store Styling — Nordstrom",
+      "url": "https://www.nordstrom.com/browse/services/personal-stylists/appointments",
+      "evidence": "The official sequence asks about style, fit and budget preferences before meeting a stylist; the FAQ describes prepared dressing-room options and says customers need not buy.",
+      "adaptation": "Make the player-facing planning sequence clear: choose a preference, inspect a prepared original mood board, keep or cancel the note, then follow a real stocked-shop route. Keep the assistant visibly involved instead of another generic information-only dialogue.",
+      "limits": "This is evidence for the interaction pattern, not permission to claim a Nordstrom appointment at every branch or to invent guest merchandise in an unverified collection."
+    },
+    {
+      "title": "South Coast Plaza Concierge",
+      "url": "https://www.southcoastplaza.com/concierge/",
+      "evidence": "The center lists four concierge locations on two levels, offers package check at all four, and describes reservations and language assistance.",
+      "adaptation": "A refined original public help area can connect existing package-check, directory and break functions through one visible desk. Show current-center/floor destinations and keep links actionable through existing routes.",
+      "limits": "Do not add real reservations, contact messages, payment services or language claims. Do not generalize this center's four desks or policies to every mall."
+    },
+    {
+      "title": "Center Amenities — Irvine Spectrum Center",
+      "url": "https://www.irvinespectrumcenter.com/guest-services/services",
+      "evidence": "Guest Services offers store, event, restaurant and lost-property information at locations by the wheel and carousel. The page's visitor help also answers where stores, services and dining are located.",
+      "adaptation": "Public pause points should offer concrete nearby choices, not only scenery: a readable original guide board and an accessible way to walk to an actual shop, water stop or existing service.",
+      "limits": "Do not reproduce its chat service, collect player contact details or claim every real amenity's exact surveyed placement. The game's adapted map remains authoritative."
+    },
+    {
+      "title": "Services — Westfield Century City",
+      "url": "https://www.westfield.com/en/united-states/centurycity/services",
+      "evidence": "The official service list includes package-check lockers, water-bottle refill stations, phone charging, family facilities and retailer services such as alterations and personal styling.",
+      "adaptation": "Finish useful-looking public fixtures with restrained service signage, parcel/receipt details and clear access lanes. Tie new controls to existing actual gameplay functions; avoid decorative buttons that imply an unimplemented service.",
+      "limits": "Do not invent a phone-battery system or copy regional fees. Do not claim universal availability across the game's centers."
+    }
+  ],
+  "recommendedSlice": {
+    "name": "A consultation-led planning visit",
+    "problem": "The 292 pending retail planning interiors already contain six functional tables, but the props and generic associate can feel disconnected from a real visit.",
+    "gameAdaptation": "Make original planning materials the focus: a visibly guided consultation at a real existing table, coordinated pointing/notebook handling, and a physical board reflecting the player's saved palette/finish and actual route/budget choices. Preserve research-only catalog status. Pair this with a clearer original public help or pause area that routes to existing center services.",
+    "visualDirection": "Refine existing footprints into calm consultation niches: thinner desk edges, task-lamp construction, original framed mood boards, paper tabs, handles, subtle upholstery detail and purposeful signs. Use original generated art and existing geometry bounds rather than copied brand fixtures or arbitrary clutter.",
+    "compatibility": "Prefer existing materialStudies and shoppingPlans fields, with ephemeral per-visit staff motion. Keep schema 6, map revision 10, stock, money and rewards unchanged unless a separately justified gameplay change is needed.",
+    "verification": "Check reachable player/associate stops with personal space, pause/reduced-motion/cancel/exit behavior, old-note retention, real stocked-shop destinations, capacity/checkout invariants and compact keyboard controls. Planning-only objects must not enter the bag or reserve stock."
+  }
+}
