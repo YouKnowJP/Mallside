@@ -2,10 +2,10 @@
 
 Browse the [repository guide](../README.md) for project context.
 
-This catalog lists **2659 files** from Git-tracked paths and
+This catalog lists **2729 files** from Git-tracked paths and
 unignored local additions. Git internals, ignored local state, and
-Finder metadata are omitted. Refresh from this repository’s
-`git ls-files --cached --others --exclude-standard` output; keep other projects separate.
+Finder metadata are omitted. Refresh from the enclosing Personal PR
+folder with `python3 tools/refresh_indexes.py`.
 
 ## Folder summary
 
@@ -13,10 +13,10 @@ Finder metadata are omitted. Refresh from this repository’s
 | --- | ---: |
 | Root files | 12 |
 | [.github](../.github/) | 4 |
-| [dist](../dist/) | 2321 |
-| [docs](../docs/) | 230 |
+| [dist](../dist/) | 2355 |
+| [docs](../docs/) | 259 |
 | [scripts](../scripts/) | 23 |
-| [tests](../tests/) | 69 |
+| [tests](../tests/) | 76 |
 
 ## Root files
 
@@ -53,7 +53,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## dist
 
 <details>
-<summary>2321 files</summary>
+<summary>2355 files</summary>
 
 - [dist/.nojekyll](../dist/.nojekyll)
 - [dist/LICENSE.txt](../dist/LICENSE.txt)
@@ -2131,6 +2131,15 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/assets/photos/v60-real-zoom-h1n.webp](../dist/assets/photos/v60-real-zoom-h1n.webp)
 - [dist/assets/photos/v61-real-iphone16-black-128.webp](../dist/assets/photos/v61-real-iphone16-black-128.webp)
 - [dist/assets/photos/v61-real-iphone16-pink-128.webp](../dist/assets/photos/v61-real-iphone16-pink-128.webp)
+- [dist/assets/photos/v62-real-tudor-black-bay54-steel.webp](../dist/assets/photos/v62-real-tudor-black-bay54-steel.webp)
+- [dist/assets/photos/v63-real-rimowa-original-cabin-silver.webp](../dist/assets/photos/v63-real-rimowa-original-cabin-silver.webp)
+- [dist/assets/photos/v66-airpods-pro-3.webp](../dist/assets/photos/v66-airpods-pro-3.webp)
+- [dist/assets/photos/v66-iphone16-ultramarine.webp](../dist/assets/photos/v66-iphone16-ultramarine.webp)
+- [dist/assets/photos/v66-iphone17-lavender.webp](../dist/assets/photos/v66-iphone17-lavender.webp)
+- [dist/assets/photos/v67-galaxy-s25-ultra.webp](../dist/assets/photos/v67-galaxy-s25-ultra.webp)
+- [dist/assets/photos/v67-jenga-classic.webp](../dist/assets/photos/v67-jenga-classic.webp)
+- [dist/assets/photos/v67-rubiks-3x3.webp](../dist/assets/photos/v67-rubiks-3x3.webp)
+- [dist/assets/photos/v67-scrabble-classic.webp](../dist/assets/photos/v67-scrabble-classic.webp)
 - [dist/assets/ross-x3.png](../dist/assets/ross-x3.png)
 - [dist/assets/round.jpg](../dist/assets/round.jpg)
 - [dist/assets/scarf.jpg](../dist/assets/scarf.jpg)
@@ -2170,6 +2179,9 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/ceramic-tools.js](../dist/ceramic-tools.js)
 - [dist/character-rig.js](../dist/character-rig.js)
 - [dist/character-studio.js](../dist/character-studio.js)
+- [dist/cinema-art.js](../dist/cinema-art.js)
+- [dist/cinema-details.js](../dist/cinema-details.js)
+- [dist/cinema-guide.js](../dist/cinema-guide.js)
 - [dist/coastal-studio.js](../dist/coastal-studio.js)
 - [dist/collectible-studio.js](../dist/collectible-studio.js)
 - [dist/collectible-tools.js](../dist/collectible-tools.js)
@@ -2186,9 +2198,12 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/detail-instances.js](../dist/detail-instances.js)
 - [dist/dialog-focus.js](../dist/dialog-focus.js)
 - [dist/dining-interior.js](../dist/dining-interior.js)
+- [dist/dining-presentation.js](../dist/dining-presentation.js)
 - [dist/directory-kiosk.js](../dist/directory-kiosk.js)
 - [dist/district-life.js](../dist/district-life.js)
 - [dist/district-ui.js](../dist/district-ui.js)
+- [dist/dive-watch-model.js](../dist/dive-watch-model.js)
+- [dist/dive-watch-studio.js](../dist/dive-watch-studio.js)
 - [dist/engine.js](../dist/engine.js)
 - [dist/experiences.js](../dist/experiences.js)
 - [dist/eyewear-model.js](../dist/eyewear-model.js)
@@ -2202,6 +2217,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/free-navigation.js](../dist/free-navigation.js)
 - [dist/full-center-data.js](../dist/full-center-data.js)
 - [dist/gait-motion.js](../dist/gait-motion.js)
+- [dist/game-select.js](../dist/game-select.js)
 - [dist/garden-details.js](../dist/garden-details.js)
 - [dist/garden-storage-studio.js](../dist/garden-storage-studio.js)
 - [dist/garment-clearance.js](../dist/garment-clearance.js)
@@ -2232,6 +2248,9 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/legal.html](../dist/legal.html)
 - [dist/life-content.js](../dist/life-content.js)
 - [dist/life-styles.css](../dist/life-styles.css)
+- [dist/luggage-model.js](../dist/luggage-model.js)
+- [dist/luggage-studio.js](../dist/luggage-studio.js)
+- [dist/luggage-tools.js](../dist/luggage-tools.js)
 - [dist/mall-art.js](../dist/mall-art.js)
 - [dist/mall-atmosphere.js](../dist/mall-atmosphere.js)
 - [dist/mall-design.js](../dist/mall-design.js)
@@ -2260,6 +2279,8 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/outing-ui.js](../dist/outing-ui.js)
 - [dist/paper-studio.js](../dist/paper-studio.js)
 - [dist/parcel-guide.js](../dist/parcel-guide.js)
+- [dist/pavilion-details.js](../dist/pavilion-details.js)
+- [dist/pavilion-guide.js](../dist/pavilion-guide.js)
 - [dist/phone-model.js](../dist/phone-model.js)
 - [dist/phone-studio.js](../dist/phone-studio.js)
 - [dist/phone-tools.js](../dist/phone-tools.js)
@@ -2297,6 +2318,8 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/portrait-store.js](../dist/portrait-store.js)
 - [dist/product-appearance.js](../dist/product-appearance.js)
 - [dist/product-photos.js](../dist/product-photos.js)
+- [dist/promenade-materials.js](../dist/promenade-materials.js)
+- [dist/promenade-ui.css](../dist/promenade-ui.css)
 - [dist/reading-details.js](../dist/reading-details.js)
 - [dist/recorder-model.js](../dist/recorder-model.js)
 - [dist/recorder-tools.js](../dist/recorder-tools.js)
@@ -2305,6 +2328,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/rest-lounge.js](../dist/rest-lounge.js)
 - [dist/retail-details.js](../dist/retail-details.js)
 - [dist/retail-identity.js](../dist/retail-identity.js)
+- [dist/retail-light.js](../dist/retail-light.js)
 - [dist/retail-scenes.js](../dist/retail-scenes.js)
 - [dist/retailer-evidence-v12.js](../dist/retailer-evidence-v12.js)
 - [dist/save-recovery-ui.js](../dist/save-recovery-ui.js)
@@ -2317,6 +2341,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/shop-interiors.js](../dist/shop-interiors.js)
 - [dist/shop-options-ui.js](../dist/shop-options-ui.js)
 - [dist/shop-surfaces.js](../dist/shop-surfaces.js)
+- [dist/shopping-filters.js](../dist/shopping-filters.js)
 - [dist/shopping-plan-ui.js](../dist/shopping-plan-ui.js)
 - [dist/shopping-plans.js](../dist/shopping-plans.js)
 - [dist/shopping-selection.js](../dist/shopping-selection.js)
@@ -2350,10 +2375,15 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/store-product-additions-v56.js](../dist/store-product-additions-v56.js)
 - [dist/store-product-additions-v60.js](../dist/store-product-additions-v60.js)
 - [dist/store-product-additions-v61.js](../dist/store-product-additions-v61.js)
+- [dist/store-product-additions-v62.js](../dist/store-product-additions-v62.js)
+- [dist/store-product-additions-v63.js](../dist/store-product-additions-v63.js)
+- [dist/store-product-additions-v66.js](../dist/store-product-additions-v66.js)
+- [dist/store-product-additions-v67.js](../dist/store-product-additions-v67.js)
 - [dist/store-product-seeds-v11.js](../dist/store-product-seeds-v11.js)
 - [dist/store-product-seeds.js](../dist/store-product-seeds.js)
 - [dist/store-services.js](../dist/store-services.js)
 - [dist/studio-details.js](../dist/studio-details.js)
+- [dist/studio-gesture.js](../dist/studio-gesture.js)
 - [dist/studio-study-ui.js](../dist/studio-study-ui.js)
 - [dist/studio-study.js](../dist/studio-study.js)
 - [dist/styles.css](../dist/styles.css)
@@ -2361,6 +2391,10 @@ Finder metadata are omitted. Refresh from this repository’s
 - [dist/tailoring-studio.js](../dist/tailoring-studio.js)
 - [dist/tea-lounge.js](../dist/tea-lounge.js)
 - [dist/textile-studio.js](../dist/textile-studio.js)
+- [dist/ticket-motion.js](../dist/ticket-motion.js)
+- [dist/toy-model.js](../dist/toy-model.js)
+- [dist/toy-studio.js](../dist/toy-studio.js)
+- [dist/toy-table.js](../dist/toy-table.js)
 - [dist/trip-planner.js](../dist/trip-planner.js)
 - [dist/vendor/THREE-LICENSE.txt](../dist/vendor/THREE-LICENSE.txt)
 - [dist/vendor/three.core.js](../dist/vendor/three.core.js)
@@ -2382,7 +2416,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## docs
 
 <details>
-<summary>230 files</summary>
+<summary>259 files</summary>
 
 - [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)
 - [docs/ASSET_INVENTORY.json](../docs/ASSET_INVENTORY.json)
@@ -2426,6 +2460,13 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/GAMEPLAY-v59.md](../docs/GAMEPLAY-v59.md)
 - [docs/GAMEPLAY-v60.md](../docs/GAMEPLAY-v60.md)
 - [docs/GAMEPLAY-v61.md](../docs/GAMEPLAY-v61.md)
+- [docs/GAMEPLAY-v62.md](../docs/GAMEPLAY-v62.md)
+- [docs/GAMEPLAY-v63.md](../docs/GAMEPLAY-v63.md)
+- [docs/GAMEPLAY-v64.md](../docs/GAMEPLAY-v64.md)
+- [docs/GAMEPLAY-v65.md](../docs/GAMEPLAY-v65.md)
+- [docs/GAMEPLAY-v66.md](../docs/GAMEPLAY-v66.md)
+- [docs/GAMEPLAY-v67.md](../docs/GAMEPLAY-v67.md)
+- [docs/GAMEPLAY-v68.md](../docs/GAMEPLAY-v68.md)
 - [docs/GAME_GUIDE.md](../docs/GAME_GUIDE.md)
 - [docs/MIGRATION.md](../docs/MIGRATION.md)
 - [docs/QA.md](../docs/QA.md)
@@ -2513,6 +2554,13 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/qa-v6.md](../docs/qa-v6.md)
 - [docs/qa-v60.md](../docs/qa-v60.md)
 - [docs/qa-v61.md](../docs/qa-v61.md)
+- [docs/qa-v62.md](../docs/qa-v62.md)
+- [docs/qa-v63.md](../docs/qa-v63.md)
+- [docs/qa-v64.md](../docs/qa-v64.md)
+- [docs/qa-v65.md](../docs/qa-v65.md)
+- [docs/qa-v66.md](../docs/qa-v66.md)
+- [docs/qa-v67.md](../docs/qa-v67.md)
+- [docs/qa-v68.md](../docs/qa-v68.md)
 - [docs/qa-v7.md](../docs/qa-v7.md)
 - [docs/qa-v8.md](../docs/qa-v8.md)
 - [docs/qa-v9.md](../docs/qa-v9.md)
@@ -2607,6 +2655,21 @@ Finder metadata are omitted. Refresh from this repository’s
 - [docs/research-v61/compact-proof.json](../docs/research-v61/compact-proof.json)
 - [docs/research-v61/compatibility.json](../docs/research-v61/compatibility.json)
 - [docs/research-v61/dining-test-revision.patch](../docs/research-v61/dining-test-revision.patch)
+- [docs/research-v62/browser-proof.json](../docs/research-v62/browser-proof.json)
+- [docs/research-v62/catalog-evidence.json](../docs/research-v62/catalog-evidence.json)
+- [docs/research-v62/compact-proof.json](../docs/research-v62/compact-proof.json)
+- [docs/research-v62/compatibility.json](../docs/research-v62/compatibility.json)
+- [docs/research-v63/browser-proof.json](../docs/research-v63/browser-proof.json)
+- [docs/research-v63/catalog-evidence.json](../docs/research-v63/catalog-evidence.json)
+- [docs/research-v63/compact-proof.json](../docs/research-v63/compact-proof.json)
+- [docs/research-v63/compatibility.json](../docs/research-v63/compatibility.json)
+- [docs/research-v64/compact-proof.json](../docs/research-v64/compact-proof.json)
+- [docs/research-v64/compatibility-before.json](../docs/research-v64/compatibility-before.json)
+- [docs/research-v64/validation.json](../docs/research-v64/validation.json)
+- [docs/research-v64/visual-direction.json](../docs/research-v64/visual-direction.json)
+- [docs/research-v65/validation.json](../docs/research-v65/validation.json)
+- [docs/research-v66/catalog-evidence.json](../docs/research-v66/catalog-evidence.json)
+- [docs/research-v67/catalog-evidence.json](../docs/research-v67/catalog-evidence.json)
 - [docs/retail-design-v15.md](../docs/retail-design-v15.md)
 - [docs/retail-design-v16.md](../docs/retail-design-v16.md)
 - [docs/retail-design-v17.md](../docs/retail-design-v17.md)
@@ -2651,7 +2714,7 @@ Finder metadata are omitted. Refresh from this repository’s
 ## tests
 
 <details>
-<summary>69 files</summary>
+<summary>76 files</summary>
 
 - [tests/active-v45.test.mjs](../tests/active-v45.test.mjs)
 - [tests/bags-v44.test.mjs](../tests/bags-v44.test.mjs)
@@ -2671,12 +2734,14 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/community-v25.test.mjs](../tests/community-v25.test.mjs)
 - [tests/companion-v30.test.mjs](../tests/companion-v30.test.mjs)
 - [tests/destinations.test.mjs](../tests/destinations.test.mjs)
+- [tests/dining-v65.test.mjs](../tests/dining-v65.test.mjs)
 - [tests/district-v35.test.mjs](../tests/district-v35.test.mjs)
 - [tests/engine.test.mjs](../tests/engine.test.mjs)
 - [tests/expansion.test.mjs](../tests/expansion.test.mjs)
 - [tests/fragrance-rest-v53.test.mjs](../tests/fragrance-rest-v53.test.mjs)
 - [tests/free-navigation.test.mjs](../tests/free-navigation.test.mjs)
 - [tests/full-center.test.mjs](../tests/full-center.test.mjs)
+- [tests/game-table-v67.test.mjs](../tests/game-table-v67.test.mjs)
 - [tests/gameplay-v31.test.mjs](../tests/gameplay-v31.test.mjs)
 - [tests/garden-storage-v51.test.mjs](../tests/garden-storage-v51.test.mjs)
 - [tests/home-navigation-v52.test.mjs](../tests/home-navigation-v52.test.mjs)
@@ -2686,6 +2751,7 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/knit-v42.test.mjs](../tests/knit-v42.test.mjs)
 - [tests/life-depth.test.mjs](../tests/life-depth.test.mjs)
 - [tests/life.test.mjs](../tests/life.test.mjs)
+- [tests/luggage-cinema-v63.test.mjs](../tests/luggage-cinema-v63.test.mjs)
 - [tests/mall-design.test.mjs](../tests/mall-design.test.mjs)
 - [tests/mall-life.test.mjs](../tests/mall-life.test.mjs)
 - [tests/mall-neighborhood.test.mjs](../tests/mall-neighborhood.test.mjs)
@@ -2706,13 +2772,16 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/presentation-v57.test.mjs](../tests/presentation-v57.test.mjs)
 - [tests/product-coverage-v19.test.mjs](../tests/product-coverage-v19.test.mjs)
 - [tests/product-photos.test.mjs](../tests/product-photos.test.mjs)
+- [tests/promenade-v64.test.mjs](../tests/promenade-v64.test.mjs)
 - [tests/recording-parcels-v60.test.mjs](../tests/recording-parcels-v60.test.mjs)
 - [tests/render-compat.test.mjs](../tests/render-compat.test.mjs)
 - [tests/retail-identity.test.mjs](../tests/retail-identity.test.mjs)
 - [tests/save-recovery.test.mjs](../tests/save-recovery.test.mjs)
 - [tests/scene-lifecycle.test.mjs](../tests/scene-lifecycle.test.mjs)
 - [tests/shopping-day-v24.test.mjs](../tests/shopping-day-v24.test.mjs)
+- [tests/shopping-edit-v66.test.mjs](../tests/shopping-edit-v66.test.mjs)
 - [tests/shopping-v58.test.mjs](../tests/shopping-v58.test.mjs)
+- [tests/shopping-visit-v68.test.mjs](../tests/shopping-visit-v68.test.mjs)
 - [tests/store-customers.test.mjs](../tests/store-customers.test.mjs)
 - [tests/studies-v41.test.mjs](../tests/studies-v41.test.mjs)
 - [tests/studios-v39.test.mjs](../tests/studios-v39.test.mjs)
@@ -2722,5 +2791,6 @@ Finder metadata are omitted. Refresh from this repository’s
 - [tests/visits-v59.test.mjs](../tests/visits-v59.test.mjs)
 - [tests/visual-v33.test.mjs](../tests/visual-v33.test.mjs)
 - [tests/watch-v43.test.mjs](../tests/watch-v43.test.mjs)
+- [tests/watches-pavilions-v62.test.mjs](../tests/watches-pavilions-v62.test.mjs)
 
 </details>
