@@ -1,3 +1,4 @@
+import {furnishFittingBay} from './fitting-room.js?v=69.0.0';
 import {buildToyStudio} from './toy-studio.js?v=67.0.0';
 import {buildLuggageStudio} from './luggage-studio.js?v=67.0.0';
 import {buildDiveWatchStudio} from './dive-watch-studio.js?v=67.0.0';
@@ -43,7 +44,15 @@ export function buildPlanningLounge(w,st,style,layout){
  }
  buildLoungeBench(w,st);buildPlanningDetails(w,st,style,layout);
  // Existing partition footprints become a small planning studio with a framed reflective panel.
- const f=layout.fitting,x=f.x+f.width/2;w.box(x,48,f.y+5,86,84,2,style.trim);w.box(x,48,f.y+7,80,78,1,w.mat('#b9cac5',{metalness:.5,roughness:.18}));
+ const f=layout.fitting,x=f.x+f.width/2;
+ if(group==='textile'){
+  w.box(x,44,f.y+5,88,88,3,style.wall);
+  furnishFittingBay(w,w.scene,x,f.y+8,style);
+  w.canvas.dataset.fittingPlanning='69';
+ }else{
+  w.box(x,48,f.y+5,86,84,2,style.trim);
+  w.box(x,48,f.y+7,80,78,1,w.mat('#b9cac5',{metalness:.5,roughness:.18}));
+ }
  w.canvas.dataset.collectionGuideDisplays=String(layout.displays.length);w.canvas.dataset.planningLounge=group;
 }
 

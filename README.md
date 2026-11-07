@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v69 — a proper fitting room
+
+Take exact bag selections to the fitting room, try a different size, and swap it into your bag before checkout. Mirrors, lighting, benches and privacy curtains give the rooms a clearer purpose. [Gameplay](docs/GAMEPLAY-v69.md).
+
 ## v68 — from the window to the till
 
 Browse the same pieces you see in a shop window and follow an item to its display. Shelves have clearer format labels, and the till shows what you’re paying, what you’ll have left, and what needs to change if payment is blocked. [Gameplay](docs/GAMEPLAY-v68.md) · [QA](docs/qa-v68.md).

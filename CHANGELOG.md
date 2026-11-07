@@ -2,6 +2,12 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v69 · 7 November 2026
+
+- Add a fitting-room tray for unpaid selections and an exact-size swap after a try-on.
+- Furnish apparel fitting bays and unfinished textile planning lounges.
+- Ease 3D try-on turns and sleeve movement, and refine the lightweight fitting preview. [Gameplay](docs/GAMEPLAY-v69.md).
+
 ## v68 · 7 November 2026
 
 - Match storefront windows to the browse panel and route featured finds to their actual shop displays.

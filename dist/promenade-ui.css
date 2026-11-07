@@ -301,3 +301,20 @@ body.in-mall .play-map:has(#floor-study-controls) #map-nearby{display:none}
 }
 body.in-mall .map-nearby.has-window-action{display:grid;gap:4px}
 body.in-mall .map-nearby button.nearby-window{min-height:44px;background:#f7f3e6;color:#284d3e;border:1px solid #a9beab;text-align:center;font-weight:750}
+
+.fitting-room-panel{display:grid;gap:16px}
+.fitting-tray{padding:16px;border:1px solid #c7d2bd;border-radius:12px;background:#edf1e7}
+.fitting-tray h3{font-family:Georgia,serif;font-size:clamp(22px,4vw,29px);margin:5px 0 8px;color:#28483d}
+.fitting-tray p,.fitting-review p{margin:6px 0;line-height:1.45}
+.fitting-tray .fitting-options{margin-bottom:0}
+.fitting-room-panel .fitting-options>button{width:100%;overflow-wrap:anywhere}
+.fitting-shop{border:1px solid #c7d2bd;border-radius:10px;padding:0 12px}
+.fitting-shop summary{min-height:44px;padding:12px 0;cursor:pointer;font-weight:700;color:#28483d}
+.fitting-shop summary span{float:right;font-size:.86em;font-weight:500}
+.fitting-review{display:grid;gap:5px;margin:16px 0 0;scroll-margin:12px}
+.fitting-review:focus-visible{outline:2px solid #446e56;outline-offset:3px}
+.fitting-review .fitting-note,.fitting-tray .fitting-note{color:#43564b}
+.fitting-review-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:5px}
+.fitting-review-actions .button{min-height:44px;white-space:normal;text-align:center}
+.scene-activity [data-fitting-status]{display:block;margin-top:4px;color:#456252;font-size:.82em}
+@media(max-width:480px){.fitting-review-actions .button{flex:1 1 100%}}

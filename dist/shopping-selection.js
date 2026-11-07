@@ -16,4 +16,13 @@ export function putBackSelection(bags,storeId,index){
  if(!Array.isArray(bags[storeId])||!Number.isInteger(index)||index<0||index>=bags[storeId].length)throw Error('That unpaid item is no longer in your hands.');
  return bags[storeId].splice(index,1)[0];
 }
+export function swapFittingSize(state,storeId,bags,index,productId,size){
+ const current=bags[storeId]?.[index];
+ if(!current||current.id!==productId)throw Error('That unpaid selection has changed.');
+ if(current.size===size)return current;
+ const remaining=bags[storeId].filter((_,position)=>position!==index);
+ const next=validatePickup(state,storeId,{...bags,[storeId]:remaining},productId,size);
+ bags[storeId][index]=next;
+ return next;
+}
 export function carriedSelections(state){return Object.entries(savedBags(state)).flatMap(([store,items])=>items.map(item=>({...item,store,product:byId(item.id)})));}

@@ -5,6 +5,7 @@ import * as T from './vendor/three.module.js';
 import {productAppearance} from './product-appearance.js?v=67.0.0';
 import {slotForProduct,money,price} from './engine.js?v=68.0.0';
 import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=67.0.0';
+import {furnishFittingBay} from './fitting-room.js?v=69.0.0';
 
 const clothes=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);
@@ -77,14 +78,37 @@ export function buildStoreFitout(w,store,profile,layout,selection){
  for(const room of layout.fittingRooms){
   w.box(room.x,-1,room.y,59,2,78,w.mat(profile.accent,{polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-2}));
   w.box(room.x,43,fitting.y+2,62,86,4,profile.wall);
-  if([38,50].includes(store.collectionEdition)){w.box(room.x,42,fitting.y+7,36,65,3,profile.fixture);w.photo(own[room.id%own.length],room.x,44,fitting.y+12,29,43);}else if(store.collectionEdition===49){w.box(room.x,48,fitting.y+7,47,45,3,profile.fixture);for(const dx of[-16,0,16])w.box(room.x+dx,48,fitting.y+9,12,33,.5,'#eee5d2');}else w.box(room.x,42,fitting.y+7,32,65,2,w.mat('#b4ceca',{metalness:.75,roughness:.16}));
-  w.box(room.x,13,fitting.y+20,32,6,18,profile.fixture);
-  if(changing){const curtain=new T.Group();curtain.position.set(room.x-23,0,fitting.y+88);w.scene.add(curtain);const shade='#'+new T.Color(profile.fixture).multiplyScalar(.88).getHexString();for(let i=0;i<8;i++)w.box(-4.4+i*1.25,42,i%2?.8:0,1.3,77,1.5,i%2?profile.fixture:shade,curtain);w.fittingCurtains.push({mesh:curtain,room:room.id,x:room.x});for(let dx=-28;dx<=28;dx+=7)w.cyl(room.x+dx,84,fitting.y+87,.7,5,profile.trim);}
-  else{w.box(room.x,27,fitting.y+23,42,5,25,profile.fixture);if(store.collectionEdition===49)w.photo(own[(room.id+2)%own.length],room.x,39.5,fitting.y+23,30,20);}
+  if(changing){
+   furnishFittingBay(w,w.scene,room.x,fitting.y+8,profile);
+   const shade='#'+new T.Color(profile.fixture).multiplyScalar(.83).getHexString();
+   const leaves=[-1,1].map(side=>{
+    const mesh=new T.Group();
+    mesh.position.set(room.x+side*27,0,fitting.y+88);
+    mesh.scale.x=.7;
+    w.scene.add(mesh);
+    for(let i=0;i<8;i++)w.box(-4.4+i*1.25,42,i%2?.8:0,1.3,77,1.5,i%2?profile.fixture:shade,mesh);
+    return {mesh,side};
+   });
+   const ready=w.mat('#92b8a0',{emissive:'#5b8b69',emissiveIntensity:.35});
+   const occupied=w.mat('#d5a17c',{emissive:'#a9704a',emissiveIntensity:.35});
+   w.box(room.x,90,fitting.y+88,25,6,3,profile.trim);
+   const indicator=w.box(room.x,90,fitting.y+89.8,19,2.5,1,ready);
+   w.fittingCurtains.push({leaves,room:room.id,x:room.x,width:7,indicator,ready,occupied});
+  }else{
+   if([38,50].includes(store.collectionEdition)){w.box(room.x,42,fitting.y+7,36,65,3,profile.fixture);w.photo(own[room.id%own.length],room.x,44,fitting.y+12,29,43);}
+   else if(store.collectionEdition===49){w.box(room.x,48,fitting.y+7,47,45,3,profile.fixture);for(const dx of[-16,0,16])w.box(room.x+dx,48,fitting.y+9,12,33,.5,'#eee5d2');}
+   else w.box(room.x,42,fitting.y+7,32,65,2,w.mat('#b4ceca',{metalness:.75,roughness:.16}));
+   w.box(room.x,13,fitting.y+20,32,6,18,profile.fixture);
+   w.box(room.x,27,fitting.y+23,42,5,25,profile.fixture);
+   if(store.collectionEdition===49)w.photo(own[(room.id+2)%own.length],room.x,39.5,fitting.y+23,30,20);
+  }
   w.label(changing?'ROOM '+(room.id+1):(own.some(p=>p.frameProfile)?'FRAMES ':wearable?'STYLE ':[38,50].includes(store.collectionEdition)?'EDITIONS ':store.collectionEdition===49?'TABLEWARE ':'CONSULT ')+(room.id+1),room.x,94,fitting.y+20,60,profile.accent,profile.wall);
  }
  for(const dx of [0,68,136])w.box(fitting.x+dx+2,changing?42:19,fitting.y+45,4,changing?84:38,90,profile.wall);
- if(changing)w.box(fitX,87,fitting.y+87,140,3,4,profile.trim);
+ if(changing){
+  w.box(fitX,87,fitting.y+87,140,3,4,profile.trim);
+  w.canvas.dataset.fittingInterior='69';
+ }
  // A fully dressed payment area: register, card terminal, scanner, bags and receipt roll.
  for(const [kind,r]of [['checkout',layout.checkout],['returns',layout.returns]]){
   const cx=r.x+r.width/2,cz=r.y+r.height/2;

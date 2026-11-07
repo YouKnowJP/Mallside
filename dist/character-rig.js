@@ -9,7 +9,7 @@ import {flowerGesture} from './flower-motion.js?v=45.0.0';
 import {createWatchModel} from './watch-model.js?v=62.0.0';
 import {isVerifiedWatch,watchGesture,watchPose} from './watch-tools.js?v=62.0.0';
 import {footArc,gaitHeight} from './gait-motion.js?v=42.0.0';
-import {checkoutGesture} from './fitting-motion.js?v=41.0.0';
+import {checkoutGesture} from './fitting-motion.js?v=69.0.0';
 import {createFrameModel} from './eyewear-model.js?v=56.0.0';
 import {frameGesture} from './eyewear-tools.js?v=56.0.0';
 import {readingGesture,readingHands} from './book-tools.js?v=50.0.0';
@@ -68,7 +68,7 @@ export function solveArmToGrip(g,index,y,z=7.5,x=null,iterations=4,gain=1){
  a.gripSolution={signature,upper:arm.quaternion.clone(),lower:a.elbow.quaternion.clone()};
 }
 function levelFoot(g,leg){const foot=leg.userData.foot;if(!foot)return;foot.rotation.set(-leg.rotation.x-leg.userData.knee.rotation.x,0,0);}
-export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=false,blend=1,kind='',reducedMotion=false,seatHeight=15,attention=g.userData.attention||0,delta=0,carrying=false,ceramicPose=null,consumptionHands=null,consultation=0}={}){
+export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=false,blend=1,kind='',reducedMotion=false,seatHeight=15,attention=g.userData.attention||0,delta=0,carrying=false,ceramicPose=null,consumptionHands=null,consultation=0,fitting=0}={}){
  const rig=g.userData.rig;if(!rig)return;const priorHead=rig.headGroup.quaternion.clone();const elevated=['escalator','bridge','carousel'].includes(kind)?g.position.y:null;const amount=seated?clamp(blend,0,1):0;rig.gaitWeight=locomotionWeight(rig.gaitWeight,walking&&!seated,delta,reducedMotion);const weight=rig.gaitWeight,move=weight>0&&!reducedMotion&&!seated,phase=((distance/rig.stride)%1+1)%1,reach=(rig.stepReach||10)*weight,baseY=move?gaitHeight(phase,reach,rig):-.4,seatedY=seatHeight-rig.pelvisBottom;g.position.y=baseY+(seatedY-baseY)*amount;
  for(const [i,arm]of g.userData.limbs.slice(0,2).entries()){const hand=arm.userData.hand;hand.rotation.set(0,0,0);if(i===1&&kind==='greet'&&!reducedMotion)hand.rotation.z=Math.sin(time*5)*.14;}
  for(const [i,leg]of g.userData.limbs.slice(2).entries()){
@@ -83,6 +83,11 @@ export function applyCharacterPose(g,{walking=false,distance=0,time=0,seated=fal
   solveArmToGrip(g,0,28.5+consultation*1.4,7+consultation*1.5,-6.5);
   solveArmToGrip(g,1,29+consultation*7.2,7+consultation*5,6.4+consultation*.8);
   g.userData.limbs[1].userData.hand.rotation.z=-consultation*.46;
+ }
+ if(kind==='try'&&fitting>0&&!move)for(const [i,arm] of g.userData.limbs.slice(0,2).entries()){
+  arm.rotation.x-=fitting*.23;
+  arm.rotation.z+=(i?1:-1)*fitting*.20;
+  arm.userData.elbow.rotation.x-=fitting*.35;
  }
  if(!move&&!amount&&!kind&&!reducedMotion){const breath=Math.sin(time*1.15+(g.userData.anatomy?.seed||0));for(const arm of g.userData.limbs.slice(0,2))if(!(g.userData.gravityAttachments||[]).some(e=>e.holder.visible&&e.limb===arm)){arm.rotation.x+=breath*.009;arm.userData.elbow.rotation.x+=breath*.008;}}
  if(kind==='luggage'){const pose=ceramicPose||luggageHold({widthCM:40,heightCM:55,depthCM:23},time,reducedMotion);for(let i=0;i<2;i++){const h=pose.hands[i];solveArmToGrip(g,i,h.y,h.z,h.x,pose.reach<.15?128:64,.5);}}

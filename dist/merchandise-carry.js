@@ -1,8 +1,8 @@
-import {attachWornGarment,attachWornBag,attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=67.0.0';
+import {attachWornGarment,attachWornBag,attachHeldProduct,updateAttachmentFrames} from './merchandise-fit.js?v=69.0.0';
 import * as T from './vendor/three.module.js';
 import {productAppearance} from './product-appearance.js?v=67.0.0';
 import {physicalProduct} from './merchandise-3d.js?v=67.0.0';
-import {carriedSelections} from './shopping-selection.js?v=68.0.0';
+import {carriedSelections} from './shopping-selection.js?v=69.0.0';
 import {carried,canTry} from './engine.js?v=68.0.0';
 
 export function dressPerson(w,g,equipment){

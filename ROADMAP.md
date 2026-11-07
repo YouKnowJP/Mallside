@@ -2,6 +2,12 @@
 
 Updated 7 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v69
+
+- Make try-ons easier to find from the shop floor and show the exact items and sizes in the shopper’s fitting tray.
+- Furnish fitting bays and unfinished textile planning lounges, with smoother turns and a clearer way back to the floor.
+- Let shoppers swap an unpaid selection to the size they just tried. [Gameplay](docs/GAMEPLAY-v69.md).
+
 ## Completed in v68
 
 - Connect 3D storefront windows and the window panel to the exact products inside the shop.
