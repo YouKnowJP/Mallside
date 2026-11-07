@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v65 · 6 November 2026
+
+- Furnish pending dining rooms with laid tables, sample trays and two selectable bench seats.
+- Add illustrated reviews and affordability checks to the original game meals at public food halls and dining rooms.
+- Sequence the seated meal pose and add distinct sandwich, banana and spoon props.
+- [Gameplay](docs/GAMEPLAY-v65.md) · [QA](docs/qa-v65.md).
+
 ## v64 · 6 November 2026
 
 - Refine the ten malls with original paving, court details, planting, soft fixture shadows and foreground camera cutaways.

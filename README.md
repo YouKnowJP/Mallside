@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v65 — dining rooms and food halls
+
+Set tables and illustrated menus give unfinished dining rooms a clearer purpose. Choose a seat in 3D, compare meals before ordering, and watch the shopper settle and handle a prop suited to the dish. The public food halls have dressed counters and the same free meal previews. [Gameplay](docs/GAMEPLAY-v65.md) · [QA](docs/qa-v65.md).
+
 ## v64 — a more inviting promenade
 
 New mall finishes, leafy planting, recessed windows and richer shop interiors give each center a clearer look. A wider play view, simpler guide and compact controls make it easier to walk, browse, check the bag and return to the mall. Existing products, routes and saves remain compatible. See [gameplay](docs/GAMEPLAY-v64.md), [visual references](docs/research-v64/visual-direction.json) and [QA](docs/qa-v64.md).

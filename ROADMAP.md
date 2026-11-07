@@ -2,6 +2,13 @@
 
 Updated 6 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v65
+
+- Give the 91 pending dining rooms richer table settings, display dishes and two usable dining seats.
+- Improve the ten food hall counters and add a free preview before any meal payment.
+- Coordinate sitting, reaching and standing, with dish-specific props and a stable reduced-motion pose.
+- [Gameplay](docs/GAMEPLAY-v65.md) · [QA](docs/qa-v65.md).
+
 ## Completed in v64
 
 - Give all ten centers distinct ground finishes, court inlays, more natural foliage and grounded fixtures; keep the same 23 walkable floors.

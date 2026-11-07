@@ -1,0 +1,182 @@
+{
+  "status": "validated-for-release",
+  "version": "65.0.0",
+  "bundle": "app-OKUIGZOM.js",
+  "testedBaseCommit": "86880cb24162d18fb0b435ae75d26644b4202910",
+  "publicManifestSHA256": "a12ef8f8cea3b7ced88b80c901465e32df8590d8c9e66488d5ff99bfebfa992d",
+  "publicFileCount": 2078,
+  "bundleSHA256": "7be57474b7b50e2174f7113c77c78570e99b173ca83d1f1d7338b594605efd9e",
+  "styles": [
+    {
+      "file": "styles-08c80ca023b6.css",
+      "sha256": "08c80ca023b61a8dcb6e19df6ed966f2b77a01e41f1c6173588dbbf778ddaaf3"
+    },
+    {
+      "file": "life-styles-f7a431267e63.css",
+      "sha256": "f7a431267e6394a428896ee7f78b4239bd71ad48a1ea6ed7e4dc3a9d976e8653"
+    },
+    {
+      "file": "promenade-ui-09080f50f4f9.css",
+      "sha256": "09080f50f4f97f67b4b8a9b7dffa9d97e0f0689a6b14dbe8245eec751aa22893"
+    }
+  ],
+  "runnerSHA256": "0d1751a00ba08484a3f644c3ce97cb77480cf89918b9f7c9419d9eb06f7292df",
+  "matrixSHA256": "a88e8223c6db1bbc26c7b14c59456f2beaf048c168d52d9fc851ae4f16cc0ab4",
+  "local": {
+    "sourceSuiteCases": 804,
+    "finalTargetedChecks": 11,
+    "compact": {
+      "browser": "156.0.8078.80",
+      "results": [
+        {
+          "width": 320,
+          "height": 568,
+          "mode": "3d",
+          "touchTarget": 44.1953125,
+          "exitFree": true,
+          "errors": []
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "mode": "2d",
+          "touchTarget": 44.1953125,
+          "exitFree": true,
+          "errors": []
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "mode": "3d",
+          "touchTarget": 44.1953125,
+          "exitFree": true,
+          "errors": []
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "mode": "2d",
+          "touchTarget": 44.1953125,
+          "exitFree": true,
+          "errors": []
+        }
+      ],
+      "bundle": "app-OKUIGZOM.js"
+    },
+    "publicArtifactCheck": "passed"
+  },
+  "firefox": {
+    "version": "159.0.1",
+    "headless": true,
+    "selectedScenarios": 12,
+    "passedChecks": 13,
+    "sessions": 1,
+    "errors": [],
+    "resourceWarnings": [],
+    "inputRetries": [],
+    "results": [
+      {
+        "name": "v65 food hall previews are free, compact funding gate and distinct sandwich prop",
+        "status": "passed",
+        "ms": 13710
+      },
+      {
+        "name": "no captured game exceptions or unexpected console errors",
+        "status": "passed",
+        "ms": 3
+      },
+      {
+        "name": "v65 selectable dining seats, exact meal charge, spoon animation and saved receipt",
+        "status": "passed",
+        "ms": 9194
+      },
+      {
+        "name": "v64 compact scene HUD, map and bag focus in both graphics modes",
+        "status": "passed",
+        "ms": 9752
+      },
+      {
+        "name": "v64 promenade finishes, camera dock and reachable storefronts",
+        "status": "passed",
+        "ms": 9998
+      },
+      {
+        "name": "v61 detailed cafe, free selection, visible payment, cold cup and pastry animation with one charge",
+        "status": "passed",
+        "ms": 13736
+      },
+      {
+        "name": "v35 lightweight 2D dining reaches the branch door and saves its meal",
+        "status": "passed",
+        "ms": 4400
+      },
+      {
+        "name": "v35 original dining review, cancelled route, seated meal, reload and compact exit",
+        "status": "passed",
+        "ms": 9450
+      },
+      {
+        "name": "3D shop entry, route interruption, exit and repeat entry",
+        "status": "passed",
+        "ms": 11304
+      },
+      {
+        "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+        "status": "passed",
+        "ms": 12064
+      },
+      {
+        "name": "full viewport gameplay and visible exit control",
+        "status": "passed",
+        "ms": 7465
+      },
+      {
+        "name": "keyboard walking moves and stops on release without a stale route",
+        "status": "passed",
+        "ms": 5038
+      },
+      {
+        "name": "phone/tablet layouts, shop search and keyboard modal containment",
+        "status": "passed",
+        "ms": 3268
+      }
+    ],
+    "cleanup": {
+      "temporaryFirefoxRootRemoved": true,
+      "driverStopped": true,
+      "originalLibraryEntriesVerified": 14,
+      "newCrashOrTelemetryFilesRemoved": 4,
+      "verifiedAppleSignatureBeforeAndAfter": true
+    }
+  },
+  "safari": {
+    "version": "26.6.2",
+    "method": "Manual native checks in a disposable private window",
+    "bundle": "app-OKUIGZOM.js",
+    "scenarios": [
+      {
+        "name": "Brea dining room entry, free review, right seat, bowl, exit and reload",
+        "walletBefore": 7500000,
+        "walletAfter": 7498600,
+        "diningVisits": 1,
+        "meal": "bowl",
+        "paid": 1400
+      },
+      {
+        "name": "Orange 3D food hall counter and sandwich with a clear seated view",
+        "walletBefore": 2000,
+        "walletAfter": 1000,
+        "benchAndDinerVisible": true
+      },
+      {
+        "name": "Orange lightweight food hall funding gate, back to menu and free water",
+        "walletAfter": 0,
+        "paidMealDisabled": true,
+        "waterRestoredStamina": true
+      }
+    ],
+    "remoteAutomationOffVerified": true,
+    "originalWindowRestored": true,
+    "privateWindowClosed": true
+  }
+}

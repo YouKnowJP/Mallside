@@ -1,7 +1,20 @@
+import {DINING_SEATS,mealArtwork,mealEffects} from './dining-presentation.js?v=65.0.0';
 import {sculptureDrawing,ART_VIEWS} from './sculpture-gallery.js?v=55.0.0';
 export function diningRoom(s,st,{E,esc,savedShopButton}){
  const history=s.diningVisits.filter(v=>v.store===st.id).slice(-3).reverse();
- return `<div class="modal-body dining-room"><div class="dining-intro"><span class="eyebrow">A LITTLE BREAK BETWEEN SHOPS</span><h3>Take a seat. Take your time.</h3><p>An original Mallside game menu, shared by dining locations. These meals and game prices do not describe this restaurant’s real menu.</p>${savedShopButton(s,st.id,{esc})}</div><div class="dining-menu">${E.diningMenu(st).map(f=>`<article><span class="meal-symbol" aria-hidden="true">${({coffee:'☕',snack:'◒',sandwich:'▱',bowl:'◡',icecream:'♧'})[f.id]}</span><h3>${esc(f.name)}</h3><strong>${E.money(f.price)}</strong><p>${f.minutes} game min · +${f.hunger} fullness · +${f.energy} stamina</p><button class="button orange wide" data-action="dining-review" data-id="${f.id}">Review this meal</button></article>`).join('')}</div><p class="hint">Review first. Game money is spent only when you reach the dining seat. Stop walking or exit to cancel.</p>${history.length?`<details><summary>Your recent breaks here</summary>${history.map(v=>`<p>Day ${v.day} · ${esc(E.FOOD.find(f=>f.id===v.meal).name)} · ${E.money(v.paid)}</p>`).join('')}</details>`:''}<div class="service-links"><button class="button secondary" data-action="dining-collection">${st.count?'Browse real products':'Collection guide'}</button><button class="button secondary" data-action="dining-returns">Receipts & returns</button></div></div>`;
+ return `<div class="modal-body dining-room"><div class="dining-intro"><span class="eyebrow">A LITTLE BREAK BETWEEN SHOPS</span><h3>Take a seat. Take your time.</h3><p>An original Mallside game menu, shared by dining locations. These meals and game prices do not describe this restaurant’s real menu.</p>${savedShopButton(s,st.id,{esc})}</div><div class="dining-menu">${E.diningMenu(st).map(f=>`<article>${mealArtwork(f.id)}<h3>${esc(f.name)}</h3><strong>${E.money(f.price)}</strong>${mealEffects(f)}<button class="button orange wide" data-action="dining-review" data-id="${f.id}">Review this meal</button></article>`).join('')}</div><p class="hint">Review first. Game money is spent only when you reach the dining seat. Stop walking or exit to cancel.</p>${history.length?`<details><summary>Your recent breaks here</summary>${history.map(v=>`<p>Day ${v.day} · ${esc(E.FOOD.find(f=>f.id===v.meal).name)} · ${E.money(v.paid)}</p>`).join('')}</details>`:''}<div class="service-links"><button class="button secondary" data-action="dining-collection">${st.count?'Browse real products':'Collection guide'}</button><button class="button secondary" data-action="dining-returns">Receipts & returns</button></div></div>`;
+}
+export function mealReview(food,{price,esc,atBranch=false,chooseSeat=false,error=''}) {
+ const cost=price(food.price);
+ const seats=chooseSeat?`<fieldset class="dining-seats"><legend>Choose a seat</legend>
+  ${DINING_SEATS.map((seat,index)=>`<label><input type="radio" name="dining-seat" value="${seat.id}" ${index===0?'checked':''}> ${seat.name}</label>`).join('')}
+ </fieldset>`:'';
+ const note=atBranch?'You pay when you reach the dining spot. Stop walking or exit to cancel on the way.':'This meal uses game time and restores the needs shown above.';
+ return `<div class="modal-body dining-review"><div class="dining-review-meal">${mealArtwork(food.id)}
+  <div><h3>${esc(food.name)}</h3><p>${esc(food.description)}</p>${mealEffects(food)}</div></div>
+  ${seats}<p class="hint">${note}</p>${error?`<p class="dining-warning">${esc(error)}</p>`:''}
+  <div class="dining-review-actions"><button class="button orange" data-action="${atBranch?'dining-walk':'eat'}" data-id="${food.id}" ${error?'disabled':''}>${atBranch?'Walk to dine':food.price?'Buy meal':'Take a break'} · ${food.price?cost:'Free'}</button>
+  <button class="button secondary" data-action="${atBranch?'dining-open':'food-menu-back'}">Back to the menu</button></div></div>`;
 }
 export function sculptureAlcove(s,{E,esc},preview){
  const note=s.artNotes.find(n=>n.mallId===s.mallId&&n.floor===(s.floor||0)),done=note?.day===s.day,view=ART_VIEWS.includes(preview)?preview:note?.detail||'curve';

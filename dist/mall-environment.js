@@ -120,7 +120,21 @@ function directoryTexture(w,theme,l,position){
  g.fillStyle='#a5482a';g.beginPath();g.arc(position.x,position.y,6/k,0,7);g.fill();g.restore();g.fillStyle=theme.accent;g.font='bold 15px Arial';g.fillText('YOU ARE HERE',128,352);g.font='13px Arial';g.fillText(l.plan.levels[l.campus.floor]||'Current floor',128,373);const t=new T.CanvasTexture(c);t.colorSpace=T.SRGBColorSpace;w.resources.add(t);return t;
 }
 export function buildPublicRealm(w,l,theme){
- const d=l.environment,b=new Details(w),mainCourt=l.campus.courts.find(n=>/Jewel|Atrium/.test(n.label))||l.campus.courts.reduce((a,n)=>Math.hypot(a.x-l.spawn.x,a.y-l.spawn.y)<Math.hypot(n.x-l.spawn.x,n.y-l.spawn.y)?a:n),portals=d.portals.filter(p=>l.campus.outdoor||Math.hypot(p.x-mainCourt.x,p.y-mainCourt.y)>190);w.waterFeatures=[];
+ const d=l.environment,b=new Details(w);
+ const mainCourt=l.campus.courts.find(n=>/Jewel|Atrium/.test(n.label))||
+  l.campus.courts.reduce((a,n)=>Math.hypot(a.x-l.spawn.x,a.y-l.spawn.y)<Math.hypot(n.x-l.spawn.x,n.y-l.spawn.y)?a:n);
+ const hall=l.venues.find(venue=>venue.id==='food');
+ const portals=d.portals.filter(portal=>{
+  if(!l.campus.outdoor&&Math.hypot(portal.x-mainCourt.x,portal.y-mainCourt.y)<=190)return false;
+  if(!hall)return true;
+  // Keep a decorative arcade post out of the counter and seating footprint.
+  return [-1,1].every(side=>{
+   const x=portal.x+Math.cos(portal.angle)*side*portal.width/2;
+   const y=portal.y-Math.sin(portal.angle)*side*portal.width/2;
+   return x<hall.x-12||x>hall.x+hall.width+12||y<hall.y-12||y>hall.y+hall.height+12;
+  });
+ });
+ w.waterFeatures=[];
  for(const p of d.edgePlanting){const x=p.x+p.width/2,z=p.y+p.height/2;if(p.kind==='garden'){b.box(x,4,z,p.width,8,p.height,theme.stone);b.box(x,8,z,p.width-8,1,p.height-8,'#687850');for(const dx of [-23,0,23])for(const dz of [-17,17]){b.leaf(x+dx,18,z+dz,15,theme.plant,1,.65,.8);b.leaf(x+dx+3,25,z+dz-3,4,theme.flowers);}plant(b,x, z,theme,false,true);}else{plant(b,x,z,theme,p.palm);b.box(x,1.3,z,47,2.6,47,theme.stone);}}
  for(const [i,p]of portals.flatMap(p=>[-1,1].map(sign=>({x:p.x+Math.cos(p.angle)*sign*p.width/2,y:p.y-Math.sin(p.angle)*sign*p.width/2,height:p.height}))).entries()){b.owner={id:'promenade-column:'+i,x:p.x-12,y:p.y-12,width:24,height:24,structure:true,overhead:true,cutHeight:p.height+8};b.box(p.x,3,p.y,18,6,18,theme.stone);b.box(p.x,p.height/2,p.y,7,p.height,7,theme.wall);b.box(p.x,p.height-3,p.y,15,4,15,theme.trim);}b.owner=null;
  // Original stone inlays articulate the broad courts without adding obstacles.

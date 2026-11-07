@@ -10,3 +10,9 @@ export function consumptionHandPose(kind,time,reduced=false,rest){
  const t=Number.isFinite(time)?Math.max(0,time):0,reach=reduced?1:ease(t/.8)*(1-ease((t-6.7)/.9)),sip=consumptionPose(kind,t-.9,reduced),from=rest?.[1]||{x:9,y:22,z:1.5},target={x:9-7.5*sip.lift,y:36.5+8.3*sip.lift,z:8-1.8*sip.lift};
  return {reach,right:{x:from.x+(target.x-from.x)*reach,y:from.y+(target.y-from.y)*reach,z:from.z+(target.z-from.z)*reach},tilt:sip.tilt*reach,lift:sip.lift*reach,visible:reduced||reach>.02};
 }
+
+// Finish sitting before reaching for a meal and stow the prop before standing.
+export function mealHandPose(kind,time,reduced,rest) {
+ const diningTime=(Math.max(0,time-.6)*7.6)/6.8;
+ return consumptionHandPose(kind,diningTime,reduced,rest);
+}
