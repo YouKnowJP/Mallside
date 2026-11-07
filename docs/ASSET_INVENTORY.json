@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "65.0.0",
+  "release": "66.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2034,
-  "uniqueRuntimePhotoFiles": 2012,
+  "runtimePhotoEntries": 2040,
+  "uniqueRuntimePhotoFiles": 2015,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -20069,6 +20069,90 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "author": "Andermann (Commons uploader Steve.rimowa)",
       "changes": "Encoded JPEG as WebP at original640×640 dimensions; no crop, resize, rotation or semantic edit."
+    },
+    {
+      "id": "v66-apple-airpods-pro-3",
+      "path": "assets/photos/v66-airpods-pro-3.webp",
+      "sha256": "cd7964a9be621381277d0e71ac45819c555977ffcef5bc1b834aa2b0eccda7a0",
+      "source": "https://commons.wikimedia.org/wiki/File:AirPods_Pro_3_with_case.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AirPods_Pro_3_with_case.jpg",
+      "description": "AirPods Pro 3 in the charging case",
+      "rightsHolder": "Auggie G",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "author": "Auggie G",
+      "changes": "Encoded as WebP at the original 695 × 527 dimensions."
+    },
+    {
+      "id": "v66-apple-iphone16-black",
+      "path": "assets/photos/v61-real-iphone16-black-128.webp",
+      "sha256": "c9f7982a574555194e10a94f2c942cc7e694ee77e4a771e63521afee71bd82eb",
+      "source": "https://commons.wikimedia.org/wiki/File:Back_of_iPhone_16.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Back_of_iPhone_16.jpg",
+      "description": "iPhone 16 in Black · licensed display-sample photograph. Black display sample is held beside an in-store display; hand, security tether and background display are not included. The photo illustrates model and finish; selected storage and US hardware reference come from the carrier and manufacturer, not the photograph.",
+      "rightsHolder": "Kyu3a",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Kyu3a",
+      "changes": "Orientation normalized where needed, resized to 1200 pixels high and WebP encoded, without cropping."
+    },
+    {
+      "id": "v66-apple-iphone16-pink",
+      "path": "assets/photos/v61-real-iphone16-pink-128.webp",
+      "sha256": "7887430bbb9d53f0caf52e71db883ed816cd86dba129ee1b9aed12eca5ec2abf",
+      "source": "https://commons.wikimedia.org/wiki/File:Back_view_of_iPhone_16_in_Pink.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Back_view_of_iPhone_16_in_Pink.jpg",
+      "description": "iPhone 16 in Pink · licensed display-sample photograph. Pink display sample is seen through a clear magnetic-ring case with a store security tether; case, ring, hand and security hardware are not included. The photo illustrates model and finish; selected storage and US hardware reference come from the carrier and manufacturer, not the photograph.",
+      "rightsHolder": "メイド理世",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "メイド理世",
+      "changes": "Orientation normalized where needed, resized to 1200 pixels high and WebP encoded, without cropping."
+    },
+    {
+      "id": "v66-apple-iphone16-ultramarine",
+      "path": "assets/photos/v66-iphone16-ultramarine.webp",
+      "sha256": "e460e26a60027f86d6979df33fd63059b92fd38a4068a625ca0dfa31877019c8",
+      "source": "https://commons.wikimedia.org/wiki/File:Back_view_of_iPhone_16_Ultramarine.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Back_view_of_iPhone_16_Ultramarine.jpg",
+      "description": "Back of the iPhone 16 in Ultramarine",
+      "rightsHolder": "メイド理世",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "メイド理世",
+      "changes": "Orientation normalized, resized to 1200 pixels high and encoded as WebP without cropping."
+    },
+    {
+      "id": "v66-apple-iphone17-lavender",
+      "path": "assets/photos/v66-iphone17-lavender.webp",
+      "sha256": "4683cd0a2d83f3449f662a475b6c8b6217f26efb83e57595199d1b3fcc0155fb",
+      "source": "https://commons.wikimedia.org/wiki/File:IPhone_17_(Lavender)_-_Backside.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/IPhone_17_%28Lavender%29_-_Backside.jpg",
+      "description": "Back of the iPhone 17 in Lavender",
+      "rightsHolder": "AzureSaturn",
+      "permissionStatus": "licensed",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0",
+      "author": "AzureSaturn",
+      "changes": "Resized to 1200 pixels high and encoded as WebP without cropping."
+    },
+    {
+      "id": "v66-tudor-black-bay54-steel",
+      "path": "assets/photos/v62-real-tudor-black-bay54-steel.webp",
+      "sha256": "e279d431a98992df4573a2559fad28912da0669e3d80ed66a8e6660ed36994cd",
+      "source": "https://commons.wikimedia.org/wiki/File:Tudor_Black_Bay_54_ref._m79000n-0001.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tudor_Black_Bay_54_ref._m79000n-0001.jpg",
+      "description": "TUDOR Black Bay 54 ref. M79000N-0001 · exact-reference licensed wrist photograph.",
+      "rightsHolder": "Respective third-party owner; not established by source URL",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "EMore98",
+      "changes": "JPEG encoded as WebP at original 823 × 932 dimensions; no cropping, resizing, rotation or semantic edit."
     },
     {
       "id": "ysl-v4-1",

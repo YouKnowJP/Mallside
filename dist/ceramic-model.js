@@ -1,5 +1,5 @@
 import * as T from './vendor/three.module.js';
-import {productAppearance} from './product-appearance.js?v=63.0.0';
+import {productAppearance} from './product-appearance.js?v=66.0.0';
 import {isCeramic} from './ceramic-tools.js?v=53.0.0';
 export {isCeramic};
 const profiles={manton:[[0,.65],[.05,.85],[.14,1],[.66,1],[.8,.92],[.91,.45],[.96,.25],[1,.24]],eva:[[0,.42],[.1,.74],[.35,1],[.55,.95],[.72,.67],[.87,.29],[1,.2]],meadow:[[0,.45],[.06,.65],[.23,.94],[.5,1],[.77,.94],[.94,.61],[1,.28]],bronwen:[[0,.8],[.1,.97],[.25,1],[.45,.89],[.65,.6],[.82,.23],[1,.19]]};

@@ -164,3 +164,54 @@ body.expanded-play.in-mall .mall-shell .map-stage,body.expanded-play.in-mall .ma
  .food-hall-card{grid-template-columns:minmax(74px,100px) minmax(0,1fr);grid-template-rows:auto auto;align-items:start}
  .food-hall-card .button{grid-column:2}
 }
+
+/* The same picker is used in the mall, catalogue, studios and settings. */
+select.game-select-native{display:none!important}
+.game-select{display:block;min-width:0;max-width:100%}
+.game-select-trigger{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-width:0;min-height:44px;padding:9px 12px;border:1px solid #b9c8b4;border-radius:9px;background:#f6f8ef;color:#284b3d;box-shadow:0 2px 0 #c9d5c4;text-align:left;font:600 13px/1.35 var(--sans);cursor:pointer}
+.game-select-trigger:hover,.game-select-trigger[aria-expanded=true]{background:#e5eee0;border-color:#8da68b}
+.game-select-trigger:disabled{cursor:default;opacity:.56;box-shadow:none}
+.game-select-value{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.game-select-trigger::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;flex:0 0 auto;margin:-3px 2px 0 0;transform:rotate(45deg)}
+.game-select-trigger[aria-expanded=true]::after{transform:rotate(225deg);margin-top:3px}
+.game-select-list{position:fixed;inset:auto;margin:0;z-index:180;overflow:auto;overscroll-behavior:contain;padding:5px;border:1px solid #b3c3af;border-radius:11px;background:#fffdf4;color:#2b473c;box-shadow:0 10px 28px #20392b39;scrollbar-width:thin}
+.game-select-list[hidden]{display:none!important}
+.game-select-option{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:44px;border:0;border-radius:6px;padding:8px 10px;background:transparent;color:inherit;text-align:left;font:500 14px/1.35 var(--sans);white-space:normal;overflow-wrap:anywhere;cursor:pointer}
+.game-select-option.is-active,.game-select-option:not(:disabled):hover{background:#e6eee0;color:#233e32}
+.game-select-option[aria-selected=true]{font-weight:700}
+.game-select-option[aria-selected=true]::after{content:"✓";color:#365e48;flex:0 0 auto}
+.game-select-option:disabled{opacity:.45;cursor:default}
+.settings-row>.game-select{width:min(58%,240px);flex:none}
+.floor-study .game-select,.tea-controls .game-select,.portrait-studio .game-select,.shop-tools .game-select{width:100%}
+.floor-study .game-select-trigger{font-size:16px}
+@media(max-width:560px){
+ .game-select-trigger{font-size:12px;padding:8px 9px}
+ .game-select-list{padding:4px}
+}
+@media(forced-colors:active){
+ .game-select-option.is-active{outline:2px solid Highlight;outline-offset:-2px}
+}
+
+.shopping-filters{display:grid;gap:7px;margin:10px 0 14px;padding:11px 12px;border:1px solid #d7dfd2;border-radius:12px;background:#f1f5ed}
+.shopping-filter-label{color:#465e51;font-size:.69rem;font-weight:750;letter-spacing:.09em;text-transform:uppercase}
+.shopping-filter-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,172px),1fr));gap:8px}
+.shopping-filter-options .game-select{width:100%}
+.shopping-filter-options .game-select-trigger{width:100%}
+@media(max-width:520px){.shopping-filters{padding:9px}.shopping-filter-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* The walking dock stays below the material controls during a consultation. */
+body.in-mall .mall-shell .play-map:has(#floor-study-controls) .mall-controls{
+ position:relative;inset:auto;transform:none;order:1;align-self:center;flex-shrink:0;margin:5px auto
+}
+body.in-mall .mall-shell .play-map:has(#floor-study-controls) #floor-study-controls{
+ max-height:min(55dvh,max(96px,calc(100% - 226px)))
+}
+@media(max-width:560px){
+ body.in-mall .mall-shell .play-map:has(#floor-study-controls) .mall-controls{width:calc(100% - 16px)}
+}
+@media(max-height:600px) and (min-width:701px){
+ body.expanded-play.in-mall .mall-shell .play-map:has(#floor-study-controls){
+  display:grid;grid-template-columns:minmax(0,1fr) min(36%,280px);grid-template-rows:minmax(0,1fr) auto
+ }
+ body.expanded-play.in-mall .mall-shell .play-map:has(#floor-study-controls) #floor-study-controls{max-height:none}
+}

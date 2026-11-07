@@ -94,10 +94,10 @@ async function verifyTailoring(mall){
  if(mall==='desert'){const compact=await stored();compact.preferences.graphics='2d';compact.mapPosition=s.mapPosition;await seed(compact);await click('[data-action=resume-game]');await resize(390,844);await enterCollection(st,'2d');await click('[data-action=collection-open]');await click('.collection-tools [data-action=studio-open]');const snapshot=await stored();await click('[data-action=studio-save]');assert.equal((await stored()).cash,snapshot.cash);assert.equal(await js('return document.documentElement.scrollWidth>innerWidth'),false);await screenshot('v46-compact-tailoring');await click('.store-exit-strip [data-action=leave-shop]');assert.equal(await exists('.modal-overlay'),false);await resize(1400,1000);}
 }
 async function firstTeaOption(selector,value){
- await js("document.querySelector(arguments[0]).focus({preventScroll:true})",selector);await key(value[0]);await key(String.fromCodePoint(0xe004));
+ await js("document.querySelector(arguments[0]).nextElementSibling.querySelector(\".game-select-trigger\").focus({preventScroll:true})",selector);await key(value[0]);await key(String.fromCodePoint(0xe004));
  const next=selector.includes('=base]')?'temperature':selector.includes('=temperature]')?'minutes':'experience-finish';
  await wait(()=>js('return document.querySelector(arguments[0]).value===arguments[1]',selector,value),'native tea choice '+value);
- assert.equal(await js('return document.activeElement?.dataset.experienceField||document.activeElement?.dataset.action'),next,'Tea selection must retain the next keyboard focus');
+ assert.equal(await js('const a=document.activeElement;return a.closest(".game-select")?.previousElementSibling.dataset.experienceField||a.dataset.action'),next,'Tea selection must retain the next keyboard focus');
 }
 
 
@@ -105,9 +105,9 @@ async function firstTeaOption(selector,value){
 async function visitBench(id){await click('.play-menu [data-action=center-map]');await click('.map-public-stops details>summary');await click('.map-public-stops [data-type=fixture][data-id="'+id+'"]');await wait(()=>exists('.bench-pause'),'selected public bench guide');}
 
 async function floorOption(selector,value){
- await js("document.querySelector(arguments[0]).focus({preventScroll:true})",selector);await key(value[0]);await key('\uE004');
+ await js("document.querySelector(arguments[0]).nextElementSibling.querySelector(\".game-select-trigger\").focus({preventScroll:true})",selector);await key(value[0]);await key('\uE004');
  await wait(()=>js('return document.querySelector(arguments[0]).value===arguments[1]',selector,value),'native material choice '+value);
- assert.equal(await js('return document.activeElement?.id||document.activeElement?.dataset.action'),selector.endsWith('palette')?'floor-study-finish':'floor-study-save');
+ assert.equal(await js('const a=document.activeElement;return a.closest(".game-select")?.previousElementSibling.id||a.dataset.action'),selector.endsWith('palette')?'floor-study-finish':'floor-study-save');
 }
 
 async function verifyGardenStorage(merchant){
@@ -507,10 +507,10 @@ try{
 
 
  await check('v59 guided floor materials, free saving, reload and shop exit',async()=>{
-  const {s,st}=planningFixture();s.preferences.motion='full';s.preferences.reducedMotion=false;await seed(s);await click('[data-action=resume-game]');await enterPlanning(st);await click('.collection-guide [data-action=studio-open]');await click('[data-action=floor-study-start]');await wait(()=>js("return document.querySelector('#mall-canvas').dataset.studioGuideStage==='consulting'"),'host beside real workbench');assert.equal(await exists('.modal-overlay'),false);await floorOption('#floor-study-palette','coast');await floorOption('#floor-study-finish','smooth');await wait(()=>js("return document.querySelector('#mall-canvas').dataset.materialStudy==='coast:smooth'&&document.querySelector('#mall-canvas').dataset.studioBlend==='1'"),'eased original material colors and finish');const bounds=await js("const f=document.querySelector('#floor-study-controls').getBoundingClientRect(),m=document.querySelector('.map-bottom').getBoundingClientRect(),c=document.querySelector('#mall-canvas').getBoundingClientRect();return {fits:f.bottom<=m.top+.5,scene:c.height}");assert.ok(bounds.fits&&bounds.scene>=160);await screenshot('v59-guided-workbench');const before=await stored();await click('[data-action=floor-study-save]');await wait(async()=>!await exists('#floor-study-controls'),'floor study saved');const saved=await stored();assert.equal(saved.cash,before.cash);assert.equal(saved.xp,before.xp);assert.deepEqual(E.savedBags(saved),E.savedBags(before));assert.equal(saved.materialStudies.find(n=>n.store===st.id).palette,'coast');await reload();await click('[data-action=resume-game]');await enterPlanning(st);await key('\uE00C');assert.equal(await js("return document.querySelector('#mall-canvas').dataset.materialStudy"),'coast:smooth');await click('#play-exit');await wait(()=>js("const d=document.querySelector('#mall-canvas').dataset;return !d.store&&!d.studioGuideStage"),'saved consultation exits cleanly');
+  const {s,st}=planningFixture();s.preferences.motion='full';s.preferences.reducedMotion=false;await seed(s);await click('[data-action=resume-game]');await enterPlanning(st);await click('.collection-guide [data-action=studio-open]');await click('[data-action=floor-study-start]');await wait(()=>js("return document.querySelector('#mall-canvas').dataset.studioGuideStage==='consulting'"),'host beside real workbench');assert.equal(await exists('.modal-overlay'),false);await floorOption('#floor-study-palette','coast');await floorOption('#floor-study-finish','smooth');await wait(()=>js("return document.querySelector('#mall-canvas').dataset.materialStudy==='coast:smooth'&&document.querySelector('#mall-canvas').dataset.studioBlend==='1'"),'eased original material colors and finish');const bounds=await js("const f=document.querySelector('#floor-study-controls').getBoundingClientRect(),m=document.querySelector('.mall-controls').getBoundingClientRect(),c=document.querySelector('#mall-canvas').getBoundingClientRect();return {fits:f.bottom<=m.top+.5,scene:c.height}");assert.ok(bounds.fits&&bounds.scene>=160);await screenshot('v59-guided-workbench');const before=await stored();await click('[data-action=floor-study-save]');await wait(async()=>!await exists('#floor-study-controls'),'floor study saved');const saved=await stored();assert.equal(saved.cash,before.cash);assert.equal(saved.xp,before.xp);assert.deepEqual(E.savedBags(saved),E.savedBags(before));assert.equal(saved.materialStudies.find(n=>n.store===st.id).palette,'coast');await reload();await click('[data-action=resume-game]');await enterPlanning(st);await key('\uE00C');assert.equal(await js("return document.querySelector('#mall-canvas').dataset.materialStudy"),'coast:smooth');await click('#play-exit');await wait(()=>js("const d=document.querySelector('#mall-canvas').dataset;return !d.store&&!d.studioGuideStage"),'saved consultation exits cleanly');
  });
  await check('v59 floor cancellation, paused host, reduced motion and compact fullscreen',async()=>{
-  const {s,st}=planningFixture();s.preferences.motion='full';s.preferences.reducedMotion=false;s.materialStudies=[{store:st.id,palette:'coast',finish:'smooth',day:6}];await seed(s);await resize(390,900);await click('[data-action=resume-game]');await enterPlanning(st);await click('.collection-guide [data-action=studio-open]');await click('[data-action=floor-study-start]');await floorOption('#floor-study-palette','berry');await click('#play-browse');const position=await js("const d=document.querySelector('#mall-canvas').dataset;return [d.studioGuideX,d.studioGuideY]");assert.ok(position.every(v=>v!==undefined&&Number.isFinite(Number(v))));await new Promise(r=>setTimeout(r,600));assert.deepEqual(await js("const d=document.querySelector('#mall-canvas').dataset;return [d.studioGuideX,d.studioGuideY]"),position);await key('\uE00C');await click('#play-fullscreen');assert.equal(await js('return document.documentElement.scrollWidth>innerWidth'),false);const controls=await js("return [...document.querySelectorAll('.floor-study button,.floor-study select')].map(e=>({h:e.getBoundingClientRect().height,w:e.getBoundingClientRect().width}))");assert.ok(controls.every(b=>b.h>=44&&b.w>=44));await screenshot('v59-compact-floor');await click('[data-action=floor-study-cancel]');await wait(()=>js("return document.querySelector('#mall-canvas').dataset.materialStudy==='coast:smooth'"),'cancel restores saved original materials');assert.deepEqual((await stored()).materialStudies,s.materialStudies);await click('#play-exit');await resize(1400,1000);const quiet=planningFixture();await seed(quiet.s);await click('[data-action=resume-game]');await enterPlanning(quiet.st);await click('.collection-guide [data-action=studio-open]');await click('[data-action=floor-study-start]');await wait(()=>js("return document.querySelector('#mall-canvas').dataset.studioGuideStage==='consulting'"),'reduced motion usable stationary host');assert.match(await js("return document.querySelector('[data-floor-guide-status]').textContent"),/help point/);await click('#play-exit');await wait(async()=>!await exists('#floor-study-controls'),'pending preview removed when leaving');assert.equal(await js("return !!document.querySelector('#mall-canvas').dataset.studioGuideStage"),false);assert.deepEqual((await stored()).materialStudies,[]);
+  const {s,st}=planningFixture();s.preferences.motion='full';s.preferences.reducedMotion=false;s.materialStudies=[{store:st.id,palette:'coast',finish:'smooth',day:6}];await seed(s);await resize(390,900);await click('[data-action=resume-game]');await enterPlanning(st);await click('.collection-guide [data-action=studio-open]');await click('[data-action=floor-study-start]');await floorOption('#floor-study-palette','berry');await click('#play-browse');const position=await js("const d=document.querySelector('#mall-canvas').dataset;return [d.studioGuideX,d.studioGuideY]");assert.ok(position.every(v=>v!==undefined&&Number.isFinite(Number(v))));await new Promise(r=>setTimeout(r,600));assert.deepEqual(await js("const d=document.querySelector('#mall-canvas').dataset;return [d.studioGuideX,d.studioGuideY]"),position);await key('\uE00C');await click('#play-fullscreen');assert.equal(await js('return document.documentElement.scrollWidth>innerWidth'),false);const controls=await js("return [...document.querySelectorAll('.floor-study button:not([role=option])')].map(e=>({h:e.getBoundingClientRect().height,w:e.getBoundingClientRect().width}))");assert.ok(controls.every(b=>b.h>=44&&b.w>=44));await screenshot('v59-compact-floor');await click('[data-action=floor-study-cancel]');await wait(()=>js("return document.querySelector('#mall-canvas').dataset.materialStudy==='coast:smooth'"),'cancel restores saved original materials');assert.deepEqual((await stored()).materialStudies,s.materialStudies);await click('#play-exit');await resize(1400,1000);const quiet=planningFixture();await seed(quiet.s);await click('[data-action=resume-game]');await enterPlanning(quiet.st);await click('.collection-guide [data-action=studio-open]');await click('[data-action=floor-study-start]');await wait(()=>js("return document.querySelector('#mall-canvas').dataset.studioGuideStage==='consulting'"),'reduced motion usable stationary host');assert.match(await js("return document.querySelector('[data-floor-guide-status]').textContent"),/help point/);await click('#play-exit');await wait(async()=>!await exists('#floor-study-controls'),'pending preview removed when leaving');assert.equal(await js("return !!document.querySelector('#mall-canvas').dataset.studioGuideStage"),false);assert.deepEqual((await stored()).materialStudies,[]);
  });
  await check('v59 public bench review, actual closest stocked destinations, rest and lighter mode',async()=>{
   for(const graphics of ['3d','2d']){const s=fixture(null,0,graphics),l=spatialLayout(E.mallOf(s),0,E.STORES),seat=l.environment.seating.find(b=>b.id==='bench-38')||l.environment.seating[0],p=E.storeById('nike').products[0],size=E.idealSize(s,p);s.mapPosition={...seat.approach,mallId:s.mallId,floor:0};s.shoppingBags={day:s.day,mallId:s.mallId,bags:{[p.store]:[{id:p.id,size}]}};await seed(s);await click('[data-action=resume-game]');if(graphics==='3d')assert.equal(await js("return document.querySelector('#mall-canvas').dataset.benchPlanningRevision"),'59');await visitBench(seat.id);await wait(()=>exists('.bench-pause'),'bench pause guide');assert.match(await js("return document.querySelector('.bench-pause').textContent"),/1 unpaid selection/);const ids=await js("return [...document.querySelectorAll('.bench-pause [data-action=visit]')].map(e=>e.dataset.id)");assert.ok(ids.length>0&&ids.length<=4);assert.ok(ids.every(id=>[...l.rects,...l.units].some(r=>r.id===id)&&E.storeById(id)?.count));const before=await stored();await click('.bench-pause [data-action=play-bag]');await wait(()=>exists('[data-action=bag-checkout]'),'unpaid bag review');assert.equal((await stored()).cash,before.cash);assert.deepEqual(E.savedBags(await stored()),E.savedBags(before));await key('\uE00C');await visitBench(seat.id);await wait(()=>exists('.bench-pause'),'bench again');await screenshot('v59-'+graphics+'-bench-guide');const clock=await displayedMinutes();await click('[data-action=rest-now]');await wait(async()=>(await displayedMinutes())>=clock+30,'existing thirty-minute rest');await finishAnimation();assert.equal((await stored()).cash,before.cash);await visitBench(seat.id);await wait(()=>exists('.bench-pause'),'bench destination choice');const target=ids[0];await click('.bench-pause [data-action=visit]');if(graphics==='3d'){await wait(()=>js("return document.querySelector('#mall-canvas').dataset.store===arguments[0]",target),'actual bench-to-shop arrival');await click('#play-exit');}else await wait(()=>exists('#store-grid'),'lighter bench-to-shop arrival');assert.equal(await js('return document.documentElement.scrollWidth>innerWidth'),false);}
@@ -670,6 +670,74 @@ try{
   await finishAnimation();
   assert.equal((await stored()).cash,0);
   await resize(1400,1000);
+ });
+ await check('v66 catalog dropdown keyboard, focus and filtered branch listings',async()=>{
+  await seed(fixture());await click('[data-action=resume-game]');
+  await click('[data-action=play-menu]');await click('.play-menu-grid [data-action=view][data-id=catalog]');
+  const picker=id=>'#'+id+' + .game-select .game-select-trigger';
+  const choose=async(id,position)=>{await click(picker(id));await key(position);await key('\uE007');};
+  await click(picker('catalog-mall'));await key('\uE011');await key('\uE015');await key('\uE007');
+  assert.equal(await js("return document.querySelector('#catalog-mall').value"),'all');
+  assert.equal(await js("return document.activeElement.previousElementSibling?.className||document.activeElement.closest('.game-select')?.previousElementSibling.id"),'catalog-mall');
+  await choose('catalog-filter-availability','\uE010');
+  assert.match(await js("return document.querySelector('#catalog-result-count').textContent"),/^6 real models/);
+  await choose('catalog-filter-scope','\uE010');
+  assert.match(await js("return document.querySelector('#catalog-result-count').textContent"),/^27 shop listings/);
+  await type('#catalog-search','AirPods Pro 3');
+  assert.match(await js("return document.querySelector('#catalog-result-count').textContent"),/^5 shop listings/);
+  await click('#catalog-results .heart-button');
+  await click(picker('catalog-filter-availability'));await key('\uE013');await key('\uE007');
+  assert.match(await js("return document.querySelector('#catalog-result-count').textContent"),/^1 shop listings/);
+  await click('#catalog-results .heart-button');
+  assert.match(await js("return document.querySelector('#catalog-result-count').textContent"),/^0 shop listings/);
+  await resize(390,844);
+  await click(picker('catalog-filter-price'));
+  const bounds=await js("const r=document.querySelector('.game-select-list:not([hidden])').getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,w:innerWidth,h:innerHeight,scroll:document.documentElement.scrollWidth};");
+  assert.ok(bounds.left>=0&&bounds.right<=bounds.w&&bounds.top>=0&&bounds.bottom<=bounds.h);
+  assert.equal(bounds.scroll,bounds.w);
+  await screenshot('v66-catalog-picker');
+  await key('\uE00C');
+  await resize(1400,1000);
+ });
+ await check('v66 settings popup Escape, outside dismissal and saved keyboard value',async()=>{
+  await seed(fixture());await click('[data-action=resume-game]');
+  await click('[data-action=play-menu]');await click('.play-menu-grid [data-action=settings]');
+  const speed='select[data-pref=walkSpeed] + .game-select .game-select-trigger';
+  await click(speed);await key('\uE011');await key('\uE007');
+  assert.equal((await stored()).preferences.walkSpeed,.75);
+  const motion='select[data-pref=motion] + .game-select .game-select-trigger';
+  await click(motion);await key('\uE00C');
+  assert.ok(await exists('.settings-row'));
+  assert.equal(await exists('.game-select-list:not([hidden])'),false);
+  await click(motion);await click('.modal-header h2');
+  assert.equal(await exists('.game-select-list:not([hidden])'),false);
+  await key('\uE00C');
+  assert.equal(await exists('.settings-row'),false);
+  await reload();
+  assert.equal((await stored()).preferences.walkSpeed,.75);
+ });
+ await check('v66 Apple store filter, product photograph, purchase, exit and save reload',async()=>{
+  const s=fixture(),st=E.storeById('apple');s.mallId='brea';s.floor=E.storeFloor(E.mallOf(s),st.id);
+  const l=spatialLayout(E.mallOf(s),s.floor,E.STORES),unit=[...l.rects,...l.units].find(r=>r.id===st.id);
+  s.mapPosition={...unit.door,mallId:s.mallId,floor:s.floor};
+  await seed(s);await click('[data-action=resume-game]');await enterCollection(st,'2d');
+  await click('#store-filter-availability + .game-select .game-select-trigger');
+  await key('\uE00C');
+  assert.ok(await exists('#store-grid'));
+  await click('#store-filter-availability + .game-select .game-select-trigger');
+  await click('.game-select-list:not([hidden]) [data-option="3"]');
+  assert.match(await js("return document.querySelector('#store-result-count').textContent"),/^5 of 18/);
+  const id='apple::v66-apple-airpods-pro-3';
+  await click('.product-open[data-id="'+id+'"]');
+  await wait(()=>js("const img=document.querySelector('.detail-art img');return img?.complete&&img.naturalWidth>0&&img.src.includes('v66-airpods-pro-3')"),'decoded AirPods reference photograph');
+  await click('[data-action=add]');
+  await click('[data-action=checkout]');
+  await click('[data-action=pay]');
+  await wait(async()=>(await stored()).purchases.some(v=>v.productId===id&&v.size==='Earbuds + charging case'),'AirPods Pro 3 receipt');
+  await click('[data-action=back-store]');await click('#modal-root [data-action=leave-shop]');
+  assert.equal(await exists('#store-grid'),false);
+  await reload();await click('[data-action=resume-game]');
+  assert.equal((await stored()).purchases.at(-1).productId,id);
  });
  await check('no captured game exceptions or unexpected console errors',async()=>{assert.deepEqual(errors,[]);});
  writeFileSync(`build/qa/${browser}-gameplay-report.json`,JSON.stringify({browser,capabilities,release,passed:results.length,results,viewports,errors,resourceWarnings,inputRetries},null,2)+'\n');console.log(JSON.stringify({browser,passed:results.length,errors,resourceWarnings:resourceWarnings.length,inputRetries:inputRetries.length}));

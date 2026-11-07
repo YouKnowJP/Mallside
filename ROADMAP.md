@@ -1,6 +1,13 @@
 # Mallside development roadmap
 
-Updated 6 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+Updated 7 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+
+## Completed in v66
+
+- Standardize dropdowns across shopping, settings, the shop finder, and activities.
+- Add size, stock, price and wishlist filters to store shelves and the catalog.
+- Expand seven shop assortments with 27 verified listings and reuse-licensed photographs.
+- Preserve earlier catalog records, shop identities, navigation, and save compatibility. [Gameplay](docs/GAMEPLAY-v66.md) · [QA](docs/qa-v66.md).
 
 ## Completed in v65
 

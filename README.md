@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v66 — easier browsing and more to shop
+
+Find items by saved size, exact format, price with tax, stock, or wishlist. A shared in-game picker works across the catalog, stores, settings and activities. Browse 27 additional Apple and TUDOR listings by mall or group matching branches. [Gameplay](docs/GAMEPLAY-v66.md) · [QA](docs/qa-v66.md).
+
 ## v65 — dining rooms and food halls
 
 Set tables and illustrated menus give unfinished dining rooms a clearer purpose. Choose a seat in 3D, compare meals before ordering, and watch the shopper settle and handle a prop suited to the dish. The public food halls have dressed counters and the same free meal previews. [Gameplay](docs/GAMEPLAY-v65.md) · [QA](docs/qa-v65.md).

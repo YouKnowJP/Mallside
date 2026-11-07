@@ -1,0 +1,337 @@
+{
+  "checkedOn": "2026-11-06",
+  "qualifier": "Published US hardware and watch prices are dated references. Game stock, availability and checkout are simulated.",
+  "listingCount": 27,
+  "models": [
+    {
+      "name": "iPhone 16 · 128GB · Pink",
+      "brand": "Apple",
+      "reference": "A3081",
+      "format": "128GB",
+      "referenceUSD": 829,
+      "photo": {
+        "path": "assets/photos/v61-real-iphone16-pink-128.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Back_view_of_iPhone_16_in_Pink.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Back_view_of_iPhone_16_in_Pink.jpg",
+        "description": "iPhone 16 in Pink · licensed display-sample photograph. Pink display sample is seen through a clear magnetic-ring case with a store security tether; case, ring, hand and security hardware are not included. The photo illustrates model and finish; selected storage and US hardware reference come from the carrier and manufacturer, not the photograph.",
+        "variantNote": "Pink display sample is seen through a clear magnetic-ring case with a store security tether; case, ring, hand and security hardware are not included. The photo illustrates model and finish; selected storage and US hardware reference come from the carrier and manufacturer, not the photograph.",
+        "group": "v61-handsets",
+        "author": "メイド理世",
+        "rightsHolder": "メイド理世",
+        "license": "CC-BY-SA-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Orientation normalized where needed, resized to 1200 pixels high and WebP encoded, without cropping.",
+        "sha256": "7887430bbb9d53f0caf52e71db883ed816cd86dba129ee1b9aed12eca5ec2abf"
+      },
+      "listings": [
+        {
+          "id": "apple::v66-apple-iphone16-pink",
+          "store": "apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-pink-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "century-tenant-apple-Level1::v66-apple-iphone16-pink",
+          "store": "century-tenant-apple-Level1",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-pink-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "beverly-tenant-apple-Level7::v66-apple-iphone16-pink",
+          "store": "beverly-tenant-apple-Level7",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-pink-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "delamo-tenant-apple-Mainlevel::v66-apple-iphone16-pink",
+          "store": "delamo-tenant-apple-Mainlevel",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-pink-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "spectrum-tenant-apple::v66-apple-iphone16-pink",
+          "store": "spectrum-tenant-apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-pink-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        }
+      ]
+    },
+    {
+      "name": "iPhone 16 · 128GB · Black",
+      "brand": "Apple",
+      "reference": "A3081",
+      "format": "128GB",
+      "referenceUSD": 829,
+      "photo": {
+        "path": "assets/photos/v61-real-iphone16-black-128.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Back_of_iPhone_16.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Back_of_iPhone_16.jpg",
+        "description": "iPhone 16 in Black · licensed display-sample photograph. Black display sample is held beside an in-store display; hand, security tether and background display are not included. The photo illustrates model and finish; selected storage and US hardware reference come from the carrier and manufacturer, not the photograph.",
+        "variantNote": "Black display sample is held beside an in-store display; hand, security tether and background display are not included. The photo illustrates model and finish; selected storage and US hardware reference come from the carrier and manufacturer, not the photograph.",
+        "group": "v61-handsets",
+        "author": "Kyu3a",
+        "rightsHolder": "Kyu3a",
+        "license": "CC-BY-SA-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Orientation normalized where needed, resized to 1200 pixels high and WebP encoded, without cropping.",
+        "sha256": "c9f7982a574555194e10a94f2c942cc7e694ee77e4a771e63521afee71bd82eb"
+      },
+      "listings": [
+        {
+          "id": "apple::v66-apple-iphone16-black",
+          "store": "apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-black-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "century-tenant-apple-Level1::v66-apple-iphone16-black",
+          "store": "century-tenant-apple-Level1",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-black-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "beverly-tenant-apple-Level7::v66-apple-iphone16-black",
+          "store": "beverly-tenant-apple-Level7",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-black-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "delamo-tenant-apple-Mainlevel::v66-apple-iphone16-black",
+          "store": "delamo-tenant-apple-Mainlevel",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-black-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "spectrum-tenant-apple::v66-apple-iphone16-black",
+          "store": "spectrum-tenant-apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-black-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        }
+      ]
+    },
+    {
+      "name": "iPhone 16 · 128GB · Ultramarine",
+      "brand": "Apple",
+      "reference": "A3081",
+      "format": "128GB",
+      "referenceUSD": 829,
+      "photo": {
+        "path": "assets/photos/v66-iphone16-ultramarine.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Back_view_of_iPhone_16_Ultramarine.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Back_view_of_iPhone_16_Ultramarine.jpg",
+        "description": "Back of the iPhone 16 in Ultramarine",
+        "author": "メイド理世",
+        "rightsHolder": "メイド理世",
+        "license": "CC-BY-SA-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Orientation normalized, resized to 1200 pixels high and encoded as WebP without cropping.",
+        "variantNote": "Rear view of an Ultramarine display handset. The display tether is separate from the selected hardware.",
+        "group": "v66-shopping-edit",
+        "sha256": "e460e26a60027f86d6979df33fd63059b92fd38a4068a625ca0dfa31877019c8",
+        "originalSHA256": "82ba8f62f2d7cd91d49911b6ba7a1db16867397cab8caeb9649a6a984bd8c950"
+      },
+      "listings": [
+        {
+          "id": "apple::v66-apple-iphone16-ultramarine",
+          "store": "apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-ultramarine-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "century-tenant-apple-Level1::v66-apple-iphone16-ultramarine",
+          "store": "century-tenant-apple-Level1",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-ultramarine-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "beverly-tenant-apple-Level7::v66-apple-iphone16-ultramarine",
+          "store": "beverly-tenant-apple-Level7",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-ultramarine-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "delamo-tenant-apple-Mainlevel::v66-apple-iphone16-ultramarine",
+          "store": "delamo-tenant-apple-Mainlevel",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-ultramarine-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "spectrum-tenant-apple::v66-apple-iphone16-ultramarine",
+          "store": "spectrum-tenant-apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-ultramarine-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        }
+      ]
+    },
+    {
+      "name": "iPhone 17 · 256GB · Lavender",
+      "brand": "Apple",
+      "reference": "iPhone 17 · US",
+      "format": "256GB",
+      "referenceUSD": 929,
+      "photo": {
+        "path": "assets/photos/v66-iphone17-lavender.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:IPhone_17_(Lavender)_-_Backside.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/IPhone_17_%28Lavender%29_-_Backside.jpg",
+        "description": "Back of the iPhone 17 in Lavender",
+        "author": "AzureSaturn",
+        "rightsHolder": "AzureSaturn",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0",
+        "changes": "Resized to 1200 pixels high and encoded as WebP without cropping.",
+        "variantNote": "Rear view of a Lavender iPhone 17. Storage is documented by the retailer.",
+        "group": "v66-shopping-edit",
+        "sha256": "4683cd0a2d83f3449f662a475b6c8b6217f26efb83e57595199d1b3fcc0155fb",
+        "originalSHA256": "44a597ce7b0d04b58d810dfdfc96a34d15dfad41356c7c90f44700a99eb02ab7"
+      },
+      "listings": [
+        {
+          "id": "apple::v66-apple-iphone17-lavender",
+          "store": "apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "century-tenant-apple-Level1::v66-apple-iphone17-lavender",
+          "store": "century-tenant-apple-Level1",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "beverly-tenant-apple-Level7::v66-apple-iphone17-lavender",
+          "store": "beverly-tenant-apple-Level7",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "delamo-tenant-apple-Mainlevel::v66-apple-iphone17-lavender",
+          "store": "delamo-tenant-apple-Mainlevel",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "spectrum-tenant-apple::v66-apple-iphone17-lavender",
+          "store": "spectrum-tenant-apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-iphone/iphone-17/6.3-inch-display-256gb-lavender-unlocked",
+          "directory": "https://www.apple.com/retail/storelist/"
+        }
+      ]
+    },
+    {
+      "name": "AirPods Pro 3",
+      "brand": "Apple",
+      "reference": "A3063 / A3064 / A3065",
+      "format": "Earbuds + charging case",
+      "referenceUSD": 249,
+      "photo": {
+        "path": "assets/photos/v66-airpods-pro-3.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:AirPods_Pro_3_with_case.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AirPods_Pro_3_with_case.jpg",
+        "description": "AirPods Pro 3 in the charging case",
+        "author": "Auggie G",
+        "rightsHolder": "Auggie G",
+        "license": "CC-BY-3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "changes": "Encoded as WebP at the original 695 × 527 dimensions.",
+        "variantNote": "Video still showing both earbuds and the charging case.",
+        "group": "v66-shopping-edit",
+        "sha256": "cd7964a9be621381277d0e71ac45819c555977ffcef5bc1b834aa2b0eccda7a0",
+        "originalSHA256": "d2b86061052226e8f5b9e5ca85244997e1a3c5e011bf5ae5a99b13b12b3ee029"
+      },
+      "listings": [
+        {
+          "id": "apple::v66-apple-airpods-pro-3",
+          "store": "apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "century-tenant-apple-Level1::v66-apple-airpods-pro-3",
+          "store": "century-tenant-apple-Level1",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "beverly-tenant-apple-Level7::v66-apple-airpods-pro-3",
+          "store": "beverly-tenant-apple-Level7",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "delamo-tenant-apple-Mainlevel::v66-apple-airpods-pro-3",
+          "store": "delamo-tenant-apple-Mainlevel",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
+          "directory": "https://www.apple.com/retail/storelist/"
+        },
+        {
+          "id": "spectrum-tenant-apple::v66-apple-airpods-pro-3",
+          "store": "spectrum-tenant-apple",
+          "retailer": "Apple US",
+          "source": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
+          "directory": "https://www.apple.com/retail/storelist/"
+        }
+      ]
+    },
+    {
+      "name": "Black Bay 54 · Steel bracelet · M79000N-0001",
+      "brand": "TUDOR",
+      "reference": "M79000N-0001",
+      "format": "37 mm case",
+      "referenceUSD": 4725,
+      "photo": {
+        "path": "assets/photos/v62-real-tudor-black-bay54-steel.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Tudor_Black_Bay_54_ref._m79000n-0001.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tudor_Black_Bay_54_ref._m79000n-0001.jpg",
+        "description": "TUDOR Black Bay 54 ref. M79000N-0001 · exact-reference licensed wrist photograph.",
+        "variantNote": "Natural wrist photograph of the exact black-dial, steel three-link-bracelet M79000N-0001 reference. A sleeve partly covers the left dial edge; the wrist, sleeve and car background are not included. The photograph does not measure case size, bracelet fit or water performance.",
+        "group": "v62-diver-watch",
+        "author": "EMore98",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:EMore98",
+        "license": "CC-BY-SA-4.0",
+        "changes": "JPEG encoded as WebP at original 823 × 932 dimensions; no cropping, resizing, rotation or semantic edit.",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sha256": "e279d431a98992df4573a2559fad28912da0669e3d80ed66a8e6660ed36994cd"
+      },
+      "listings": [
+        {
+          "id": "century-tenant-tudor-Level1::v66-tudor-black-bay54-steel",
+          "store": "century-tenant-tudor-Level1",
+          "retailer": "Westime",
+          "source": "https://westime.com/catalog/watches/tudor/black-bay-54-steel",
+          "directory": "https://www.tudorwatch.com/en/retailers/details/unitedstates/california/losangeles/131436-tudorboutiquewestimelosangeles"
+        },
+        {
+          "id": "island-tenant-tudoratthe1916company-main::v66-tudor-black-bay54-steel",
+          "store": "island-tenant-tudoratthe1916company-main",
+          "retailer": "The 1916 Company",
+          "source": "https://www.the1916company.com/watches/tudor/black-bay/black-bay-m79000n-0001/",
+          "directory": "https://www.tudorwatch.com/en/retailers/details/unitedstates/california/newportbeach/10661-the1916companynewportbeach"
+        }
+      ]
+    }
+  ]
+}

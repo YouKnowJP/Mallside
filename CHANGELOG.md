@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v66 · 7 November 2026
+
+- Use a shared keyboard- and touch-friendly picker for every dropdown in the game.
+- Add size, tax-inclusive price, stock, wishlist and new arrival filters. Show each branch and mall when browsing all shop listings.
+- Add 27 verified Apple and TUDOR listings and keep the walking controls clear of the material study.
+- [Gameplay](docs/GAMEPLAY-v66.md) · [QA](docs/qa-v66.md).
+
 ## v65 · 6 November 2026
 
 - Furnish pending dining rooms with laid tables, sample trays and two selectable bench seats.

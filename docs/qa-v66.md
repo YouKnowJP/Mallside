@@ -1,0 +1,7 @@
+# Mallside v66 release checks
+
+The generated browser bundle is `app-2NEHDSUS.js`. The source suite passed 807 tests, including historical product and save compatibility and all 23 navigation floors. Release checks validate module and asset paths, notices, and the generated Pages artifact.
+
+- **Safari 26.6.2** used a disposable private window. Native keyboard input selected new arrivals, changed the mall filter, and grouped listings. Searching AirPods Pro 3 returned five named branches. The settings picker retained the walking speed choice and Escape dismissed the picker. The Brea Apple walkthrough opened the item from the catalog, showed the package photo and stock, and completed the simulated $215.63 checkout. The save resumed with the expected wallet and AirPods in the wardrobe. Safari refused a subsequent WebDriver session because remote automation was off.
+- **Firefox 159.0.1** ran seven native gameplay scenarios. They cover catalog grouping, wishlist updates, keyboard focus, settings, shop checkout, exit and reload, the tea recipe, material study save and cancellation, and portrait capture. The runner reported zero game exceptions, resource warnings, or input retries.
+- **Compact layouts** passed touch or pointer checks at 320 × 568, 390 × 844, 844 × 390, 768 × 1024, and 1440 × 1000. Popups stayed within the viewport and the catalog stayed within its content width. Firefox also exercised material controls and the walking dock in compact fullscreen.
