@@ -215,3 +215,43 @@ body.in-mall .mall-shell .play-map:has(#floor-study-controls) #floor-study-contr
  }
  body.expanded-play.in-mall .mall-shell .play-map:has(#floor-study-controls) #floor-study-controls{max-height:none}
 }
+
+/* The tabletop previews use original shapes and the same actions by mouse, key or touch. */
+.toy-table{text-align:center}
+.toy-illustration{display:grid;align-content:center;justify-content:center;min-height:150px;margin:12px auto;border:1px solid #c8d3be;border-radius:13px;background:radial-gradient(ellipse at 50% 0,#f9f5e5,#e6ecda);overflow:hidden}
+.toy-table-status{min-height:2.5em;margin:12px 0;color:#365747;font-weight:650}
+.toy-table-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.toy-table-actions button{min-height:44px}
+.toy-tower{position:relative;gap:2px;justify-items:center;padding:18px 0 12px}
+.toy-layer{display:grid;grid-template-columns:repeat(3,24px);gap:2px}
+.toy-layer:nth-child(even) i{background:#d9ad71}
+.toy-layer i,.toy-top-block{display:block;height:11px;border:1px solid #ac814f;border-radius:2px;background:#e4bd80;box-shadow:inset 0 -2px #af784740}
+.toy-tower .toy-top-block{visibility:hidden;width:24px}
+.toy-tower[data-step="1"] .toy-moving-block{transform:translateX(90px);animation:toy-slide .38s ease-out both}
+.toy-tower[data-step="2"] .toy-moving-block{transform:translate(90px,-62px);animation:toy-lift .38s ease-out both}
+.toy-tower[data-step="3"] .toy-moving-block{visibility:hidden}
+.toy-tower[data-step="3"] .toy-top-block{visibility:visible;animation:toy-set .38s ease-out both}
+@keyframes toy-slide{from{transform:translateX(0)}to{transform:translateX(90px)}}
+@keyframes toy-lift{from{transform:translate(90px,0)}to{transform:translate(90px,-62px)}}
+@keyframes toy-set{from{transform:translate(90px,-9px)}to{transform:translate(0,0)}}
+.toy-cube-assembly{position:relative;width:126px;height:120px;margin:10px auto}
+.toy-cube-face{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:3px;background:#293a35;padding:4px;width:72px;height:72px;border-radius:4px}
+.toy-cube-face i{border-radius:2px;background:#f7f0d7}
+.toy-cube-face .tile-green{background:#53a579}.toy-cube-face .tile-red{background:#dc6854}
+.toy-cube-face .tile-orange{background:#e3a359}.toy-cube-face .tile-blue{background:#528bc2}
+.toy-cube-face.front{position:absolute;left:15px;top:44px}
+.toy-cube-face.top{position:absolute;left:15px;top:44px;transform-origin:0 0;transform:skewX(-37deg) scaleY(.42) translateY(-100%)}
+.toy-cube-face.right{position:absolute;left:87px;top:44px;transform-origin:0 0;transform:skewY(-33deg) scaleX(.35);filter:brightness(.85)}
+.toy-cube-face.top,.toy-cube-face.front i:nth-child(-n+3){animation:toy-cube-catch .26s ease-out}
+@keyframes toy-cube-catch{from{opacity:.46}to{opacity:1}}
+.toy-word{grid-auto-flow:column;gap:6px;padding:20px 8px}
+.toy-word i{width:39px;height:40px;border:1px solid #bdba96;border-radius:4px;background:#f9f1d8;color:#3f4e34;font:700 23px/39px var(--sans);font-style:normal}
+.toy-letter{min-width:44px}
+.toy-table.quiet *{animation:none!important}
+@media(prefers-reduced-motion:reduce){.toy-table *{animation:none!important}}
+
+/* Keep the workbench and its controls clear while the host is with the player. */
+body.in-mall .play-map:has(#floor-study-controls) #map-nearby{display:none}
+@media(min-width:1001px){
+ body.in-mall .mall-shell .play-layout:has(#floor-study-controls)>.play-sidebar{display:none}
+}

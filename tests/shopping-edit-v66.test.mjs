@@ -8,7 +8,7 @@ import {filterShoppingItems, oneListingPerModel, usualShoppingSize} from '../dis
 const added = E.PRODUCTS.filter(p => p.collectionReference === 66);
 
 test('27 branch listings extend verified shelves with reusable exact model photos', () => {
- assert.equal(E.PRODUCTS.length, 8890);
+ assert.equal(E.PRODUCTS.filter(p=>(p.collectionReference??0)<67).length, 8890);
  assert.equal(added.length, 27);
  assert.equal(new Set(added.map(p => p.id)).size, 27);
  assert.equal(new Set(added.map(p => p.store)).size, 7);

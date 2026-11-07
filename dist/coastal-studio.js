@@ -1,6 +1,6 @@
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
 import {surfaceTexture} from './scene-finish.js?v=57.0.0';
-import {updateStudioStudy} from './studio-details.js?v=63.0.0';
+import {updateStudioStudy} from './studio-details.js?v=67.0.0';
 // Original cotton, collar and seam studies; these props are not merchant inventory.
 export function buildCoastalStudio(w,st,style){
  const parts=[],box=(...a)=>parts.push(a),wood='#b4a38a',paper='#eee8db',ink='#4d6172',samples=[];

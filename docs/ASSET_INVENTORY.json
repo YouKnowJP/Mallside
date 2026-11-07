@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "66.0.0",
+  "release": "67.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2040,
-  "uniqueRuntimePhotoFiles": 2015,
+  "runtimePhotoEntries": 2044,
+  "uniqueRuntimePhotoFiles": 2019,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -20153,6 +20153,62 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "EMore98",
       "changes": "JPEG encoded as WebP at original 823 × 932 dimensions; no cropping, resizing, rotation or semantic edit."
+    },
+    {
+      "id": "v67-galaxy-s25-ultra",
+      "path": "assets/photos/v67-galaxy-s25-ultra.webp",
+      "sha256": "237de028c89a28cc32d0e15136ea979bfe2f72829583e0066644d065371babe3",
+      "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg",
+      "description": "The back of a Samsung Galaxy S25 Ultra in Titanium Silverblue",
+      "rightsHolder": "Alvis Jean",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "author": "Alvis Jean",
+      "changes": "Orientation normalized, resized to 900 × 1200 and encoded as WebP without cropping."
+    },
+    {
+      "id": "v67-jenga-classic",
+      "path": "assets/photos/v67-jenga-classic.webp",
+      "sha256": "ab40ff2028d61f8ddefd3113a2fff8672226bf916100c23dc930f2fb6dd13fc6",
+      "source": "https://commons.wikimedia.org/wiki/File:Jenga_tower_1.JPG",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Jenga_tower_1.JPG",
+      "description": "A Jenga Classic hardwood tower in play",
+      "rightsHolder": "Joshjrowe",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "author": "Joshjrowe",
+      "changes": "Orientation normalized, resized to 900 × 1200 and encoded as WebP without cropping."
+    },
+    {
+      "id": "v67-rubiks-3x3",
+      "path": "assets/photos/v67-rubiks-3x3.webp",
+      "sha256": "d5baa9ec59378ec3678cdd68c24ef29424b4ffdd5a2560f54375cf4dab389c01",
+      "source": "https://commons.wikimedia.org/wiki/File:Rubik%27s_Cube_3x3.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Rubik%27s_Cube_3x3.jpg",
+      "description": "A scrambled black Rubik’s 3×3 cube with six tile colors",
+      "rightsHolder": "Thenror",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "author": "Thenror",
+      "changes": "Resized to 1200 × 1002 and encoded as WebP without cropping."
+    },
+    {
+      "id": "v67-scrabble-classic",
+      "path": "assets/photos/v67-scrabble-classic.webp",
+      "sha256": "8d3541242ec1bace9fd91c9a21de9585125058ed3ddc6f7b3e1ee7ed7cb91779",
+      "source": "https://commons.wikimedia.org/wiki/File:Scrabble_tiles_en.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Scrabble_tiles_en.jpg/1280px-Scrabble_tiles_en.jpg",
+      "description": "All 100 English-language Scrabble tiles",
+      "rightsHolder": "Agentsoo",
+      "permissionStatus": "licensed",
+      "license": "PD-self",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Scrabble_tiles_en.jpg",
+      "author": "Agentsoo",
+      "changes": "1280-pixel source preview resized to 1200 × 1155 and encoded as WebP."
     },
     {
       "id": "ysl-v4-1",

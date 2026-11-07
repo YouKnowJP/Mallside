@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
-import {updateStudioStudy} from './studio-details.js?v=63.0.0';
+import {updateStudioStudy} from './studio-details.js?v=67.0.0';
 // Original timber, slate, folded linens and plant specimens inside existing furniture areas.
 export function buildBrushStudio(w,st){
  const r=w.layout.rail,cx=r.x+r.width/2,z=r.y+r.height/2,parts=[],box=(...v)=>parts.push(v),wood='#9c7957',slate='#58665c',paper='#eee5d0',brass='#b4a172';

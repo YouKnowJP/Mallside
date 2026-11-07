@@ -1,19 +1,19 @@
 import {buildGrounding} from './promenade-materials.js?v=64.0.0';
 import {createLuggage,updateLuggage} from './luggage-model.js?v=63.0.0';
 import {luggageHold} from './luggage-tools.js?v=63.0.0';
-import {buildCinemaDetails,updateCinemaDetails} from './cinema-details.js?v=66.0.0';
+import {buildCinemaDetails,updateCinemaDetails} from './cinema-details.js?v=67.0.0';
 import {ticketPose,createTicket,updateTicket} from './ticket-motion.js?v=63.0.0';
-import {buildPavilionDetails,updatePavilionDetails} from './pavilion-details.js?v=66.0.0';
-import {createPhone} from './phone-model.js?v=61.0.0';
-import {phoneHold} from './phone-tools.js?v=66.0.0';
+import {buildPavilionDetails,updatePavilionDetails} from './pavilion-details.js?v=67.0.0';
+import {createPhone} from './phone-model.js?v=67.0.0';
+import {phoneHold} from './phone-tools.js?v=67.0.0';
 import {buildCoffeeCounterDetails} from './cafe-details.js?v=61.0.0';
 import {createCafeProp} from './cafe-props.js?v=65.0.0';
 import {consumptionHandPose,mealHandPose} from './consumption-motion.js?v=65.0.0';
 import {createRecorder} from './recorder-model.js?v=60.0.0';
 import {recorderHold} from './recorder-tools.js?v=60.0.0';
 import {updateParcelDesk} from './parcel-guide.js?v=60.0.0';
-import {associateTrip,consultationTrip,returnAssociateTrip,requestStatus} from './associate-service.js?v=66.0.0';
-import {buildRetailDetails} from './retail-details.js?v=66.0.0';
+import {associateTrip,consultationTrip,returnAssociateTrip,requestStatus} from './associate-service.js?v=67.0.0';
+import {buildRetailDetails} from './retail-details.js?v=67.0.0';
 import {restoreFloatingLabels,layoutFloatingLabels} from './scene-labels.js?v=57.0.0';
 import {writingPose,createWritingProp,updateWritingProp} from './writing-motion.js?v=55.0.0';
 import {createBrush} from './brush-model.js?v=54.0.0';
@@ -23,14 +23,14 @@ import {createFragrance} from './fragrance-model.js?v=53.0.0';
 import {fragranceHold} from './fragrance-tools.js?v=53.0.0';
 import {restoreInspectionActors,focusInspectionActors} from './inspection-focus.js?v=61.0.0';
 import {storageHold} from './storage-tools.js?v=53.0.0';
-import {createStorage} from './storage-model.js?v=66.0.0';
+import {createStorage} from './storage-model.js?v=67.0.0';
 import {createWrappingProp,updateWrappingProp} from './wrapping-tools.js?v=53.0.0';
 import {buildServiceCounterDetails} from './service-counter-details.js?v=60.0.0';
 import {updateNoticeDetails} from './notice-details.js?v=50.0.0';
 import {updateWaterDetails} from './water-details.js?v=49.0.0';
-import {createCeramic} from './ceramic-model.js?v=66.0.0';
+import {createCeramic} from './ceramic-model.js?v=67.0.0';
 import {ceramicHold} from './ceramic-tools.js?v=53.0.0';
-import {createPlush} from './plush-model.js?v=66.0.0';
+import {createPlush} from './plush-model.js?v=67.0.0';
 import {collectibleGesture} from './collectible-tools.js?v=47.0.0';
 import {consumptionPose} from './consumption-motion.js?v=65.0.0';
 import {updateTeaLounges} from './tea-lounge.js?v=46.0.0';
@@ -40,52 +40,52 @@ import {updatePhotoKiosks} from './photo-kiosk.js?v=44.0.0';
 import {isVerifiedWatch,watchGesture,watchPose} from './watch-tools.js?v=62.0.0';
 import {placeWatch} from './watch-model.js?v=62.0.0';
 import {updateSculptureDetails} from './sculpture-details.js?v=55.0.0';
-import {updateStudioStudy} from './studio-details.js?v=63.0.0';
+import {updateStudioStudy} from './studio-details.js?v=67.0.0';
 import {updateMosaicStudy} from './mosaic-details.js?v=47.0.0';
 import {fittingTurn,focusCamera} from './fitting-motion.js?v=41.0.0';
 import {isVerifiedFrame,frameGesture,framePose} from './eyewear-tools.js?v=56.0.0';
 import {placeFrame} from './eyewear-model.js?v=56.0.0';
 import {updateGardenStudies} from './garden-details.js?v=48.0.0';
 import {isReadingProduct} from './book-tools.js?v=50.0.0';
-import {placeBook,createReadingProp,updateReadingProp} from './book-model.js?v=66.0.0';
-import {hasCollectionDesk} from './collection-guide.js?v=63.0.0';
+import {placeBook,createReadingProp,updateReadingProp} from './book-model.js?v=67.0.0';
+import {hasCollectionDesk} from './collection-guide.js?v=67.0.0';
 import {updateReadingDetails} from './reading-details.js?v=42.0.0';
-import {buildPlanningLounge,buildCollectionStudio} from './planning-lounge.js?v=63.0.0';
+import {buildPlanningLounge,buildCollectionStudio} from './planning-lounge.js?v=67.0.0';
 import {smoothSeatBlend,ambientStrideSpeed,crowdStep,benchSeatTarget} from './ambient-motion.js?v=36.0.0';
-import {buildCourtLife,updateCourtLife} from './court-life.js?v=65.0.0';
+import {buildCourtLife,updateCourtLife} from './court-life.js?v=67.0.0';
 import {installLighting,beveledBox,cameraComposition,buildSceneAccents,updateSceneAccents,surfaceTexture} from './scene-finish.js?v=57.0.0';
-import {canTry} from './engine.js?v=66.0.0';
+import {canTry} from './engine.js?v=67.0.0';
 import {patchAmbientLighting} from './render-compat.js?v=31.0.0';
 import {daylightAt,adultAppearance} from './mall-atmosphere.js?v=64.0.0';
-import {createShopper,applyCharacterPose} from './character-rig.js?v=65.0.0';
-import {updateAttachmentFrames,updateOutfitPose,releasePersonResources,trackMerchandise} from './merchandise-fit.js?v=66.0.0';
+import {createShopper,applyCharacterPose} from './character-rig.js?v=67.0.0';
+import {updateAttachmentFrames,updateOutfitPose,releasePersonResources,trackMerchandise} from './merchandise-fit.js?v=67.0.0';
 import {buildWindowDisplay,buildSignatureInterior} from './retail-scenes.js?v=64.0.0';
-import {buildStoreFitout} from './store-fitout.js?v=66.0.0';
-import {buildStoreLife,drawStoreLife} from './store-life.js?v=66.0.0';
-import {productAppearance} from './product-appearance.js?v=66.0.0';
-import {physicalProduct,placeMerchandise} from './merchandise-3d.js?v=66.0.0';
-import {dressPerson,syncCarriedMerchandise,poseCarriedMerchandise,stowHandhelds} from './merchandise-carry.js?v=66.0.0';
-import {brandSign} from './mall-environment.js?v=65.0.0';
+import {buildStoreFitout} from './store-fitout.js?v=67.0.0';
+import {buildStoreLife,drawStoreLife} from './store-life.js?v=67.0.0';
+import {productAppearance} from './product-appearance.js?v=67.0.0';
+import {physicalProduct,placeMerchandise} from './merchandise-3d.js?v=67.0.0';
+import {dressPerson,syncCarriedMerchandise,poseCarriedMerchandise,stowHandhelds} from './merchandise-carry.js?v=67.0.0';
+import {brandSign} from './mall-environment.js?v=67.0.0';
 import {shopperPlan,fixtureStop} from './mall-neighborhood.js?v=59.0.0';
-import {buildMallGround,buildStorefronts,buildPublicRealm,buildAnchor,buildRetailConnections,buildMallEntrance,buildLandscapeTree} from './mall-environment.js?v=65.0.0';
+import {buildMallGround,buildStorefronts,buildPublicRealm,buildAnchor,buildRetailConnections,buildMallEntrance,buildLandscapeTree} from './mall-environment.js?v=67.0.0';
 import {themeFor,facadeFrame,cameraCutaway,overviewFraming} from './mall-design.js?v=35.0.0';
-import {buildDiningGallery,buildFoodHallCounter,foodHallSeat} from './dining-interior.js?v=65.0.0';
+import {buildDiningGallery,buildFoodHallCounter,foodHallSeat} from './dining-interior.js?v=67.0.0';
 import {diningSeat} from './dining-presentation.js?v=65.0.0';
 import {buildInteriorArchitecture,buildProductFixture,buildCollectionGallery} from './interior-art.js?v=64.0.0';
 import {onSurface} from './free-navigation.js?v=25.0.0';
-import {shopProfile,departmentOf,displaySelection,displayPoint} from './shop-interiors.js?v=63.0.0';
+import {shopProfile,departmentOf,displaySelection,displayPoint} from './shop-interiors.js?v=67.0.0';
 import * as T from './vendor/three.module.js';
-import {MallWorld} from './world.js?v=66.0.0';
-import {spatialLayout,interiorLayout} from './spatial-layout.js?v=63.0.0';
+import {MallWorld} from './world.js?v=67.0.0';
+import {spatialLayout,interiorLayout} from './spatial-layout.js?v=67.0.0';
 import {walkable,closestFloor,freeRoute,freeMove,clearWalk,personStop} from './free-navigation.js?v=25.0.0';
-import {isPlanningStore,isServiceStore,serviceMenu,STORES,PRODUCTS,CLOSE,mallOf,equippedLook,slotForProduct,money,price,savedBags} from './engine.js?v=66.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=66.0.0';
+import {isPlanningStore,isServiceStore,serviceMenu,STORES,PRODUCTS,CLOSE,mallOf,equippedLook,slotForProduct,money,price,savedBags} from './engine.js?v=67.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=67.0.0';
 import {windowSelection,LOCALS} from './mall-life.js?v=26.0.0';
 import {stepToward,facingFor,turnToward,yieldToPlayer,cameraBlend} from './motion.js?v=34.0.0';
-import {VENUE_LABELS} from './mall-art.js?v=65.0.0';
+import {VENUE_LABELS} from './mall-art.js?v=67.0.0';
 
 patchAmbientLighting(T.ShaderChunk);
-export const ANIMATION_REVISION='66';
+export const ANIMATION_REVISION='67';
 export class MallWorld3D extends MallWorld{
  constructor(canvas,state,onEnter,onMove){
   const renderer=new T.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'low-power'});
@@ -108,13 +108,13 @@ export class MallWorld3D extends MallWorld{
  tag(obj,interaction,point){obj.userData={...obj.userData,interaction,point};this.clickables.push(obj);if(obj.isSprite&&this.inside&&isPlanningStore(this.layout.store))this.nearLabels.push({object:obj,x:point.x,z:point.y,radius:220,directory:true});if(obj.isSprite&&/^(product|serviceoffer|checkout|returns|fitting|associate|rack|commons|collection):/.test(interaction))this.sceneLabels?.push({object:obj,point,id:interaction,product:interaction.startsWith('product:')});return obj;}
  photo(p,x,y,z,width=34,height=40,parent=this.scene){
   if(isVerifiedWatch(p))return placeWatch(this,p,x,y,z,width,height,parent);if(isVerifiedFrame(p))return placeFrame(this,p,x,y,z,width,height,parent);if(isReadingProduct(p))return placeBook(this,p,x,y,z,width,height,parent);
-  if(physicalProduct(p)){const model=placeMerchandise(this,p,x,y,z,width,height,parent);if(p.plushProfile||p.ceramicProfile||p.storageProfile||p.fragranceProfile||p.brushProfile||p.recorderProfile||p.phoneProfile)model.position.y=y-height/2;return model;}
+  if(physicalProduct(p)){const limit=p.toyProfile&&{tower:28,cube:17,letters:23}[p.toyProfile.kind],model=placeMerchandise(this,p,x,y,z,limit?Math.min(width,limit):width,limit?Math.min(height,limit):height,parent);if(p.plushProfile||p.ceramicProfile||p.storageProfile||p.fragranceProfile||p.brushProfile||p.recorderProfile||p.phoneProfile||p.toyProfile)model.position.y=y-height/2;return model;}
   const plate=this.box(x,y,z,width+2,height+2,2,'#f9f7ed',parent),data=PRODUCT_PHOTOS[p.id];if(!data)return plate;
   let tx=this.textures.get(data.path);if(!tx){tx=new T.TextureLoader().load(data.path);tx.colorSpace=T.SRGBColorSpace;this.textures.set(data.path,tx);this.resources.add(tx);}
   const m=new T.MeshBasicMaterial({map:tx,side:T.DoubleSide});this.resources.add(m);const board=this.mesh(new T.PlaneGeometry(width,height),m,parent);board.position.set(x,y,z+1.2);board.castShadow=false;
   const fit=()=>{const image=tx.image;if(!image?.width)return;const k=Math.min(width/image.width,height/image.height);board.scale.set(image.width*k/width,image.height*k/height,1);};if(tx.image?.width)fit();else{const previous=tx.onUpdate;tx.onUpdate=()=>{previous?.();fit();};}return plate;
  }
- initScene(){this.cinemaDisplay=null;this.parcelDesk=null;this.pavilionDesk=null;for(const key of ['diningRoomRevision','diningTables','foodHallRevision','diningSeat','promenadeRevision','pavingStyle','groundedFixtures','windowDisplayRevision','luggageStudio','cinemaRevision','cinemaFilm','cinemaScene','cinemaCompleted','cinemaLift','cinemaTicket','diveWatchStudio','pavilionRevision','pavilionEvent','pavilionDay','pavilionStamped','phoneStudio','coffeeCounterRevision','consumptionReach','cafeProp','recordingStudio','parcelDeskRevision','checkedParcelCount','studioGuideStage','studioGuideX','studioGuideY','studioBlend','benchPlanningRevision','associateStage','associateX','associateY','physicalPriceCards','retailDetailRevision','materialStudy','materialStudyGroup','planningDetailRevision','mosaicTurns','mosaicYaw','mosaicDetailRevision','mosaicCourtRevision','mosaicNotebook','ceramicStudio','ceramicTurn','gardenDetailRevision','gardenObservation','tablewareStudio','waterDetailRevision','waterReadyIn','ceramicReach','fragranceStudio','restLoungeRevision','brushStudio','directoryKioskRevision'])delete this.canvas.dataset[key];this.finishTextures=new Map();this.shopSurfaces=new Map();this.starterTrouserGeometries=null;this.floatingLabels=[];this.anatomyEnvelope=null;this.anatomyGeometries=null;this.anatomyTextures=new Map();this.humanSharedResources=new Set();this.cutawayAssets=new Map();this.cutawayDummy=new T.Object3D();this.mallRoofTexture=null;this.mallRoofRelief=null;this.scene=new T.Scene();this.scene.background=new T.Color('#d7e5e1');this.scene.fog=new T.Fog('#d7e5e1',1100,2300);this.sceneFog=this.scene.fog;this.ambientLight=new T.HemisphereLight('#fff8e2','#9eafa5',1.4);this.scene.add(this.ambientLight);this.daylightMinute=null;this.windowMaterials=new Set();const sun=new T.DirectionalLight('#fff3d5',2.2);sun.position.set(250,800,450);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);Object.assign(sun.shadow.camera,{left:-620,right:620,top:620,bottom:-620,near:100,far:1900});sun.shadow.bias=-.001;this.sun=sun;this.scene.add(sun,sun.target);this.entryDoors=[];this.courtVisitors=[];this.clickables=[];this.windowDisplays=new Map();this.waterFeatures=[];this.carousel=null;this.steps=[];this.npcs=[];this.roofParts=[];this.escalatorLabel=null;this.benchLabel=null;this.nearLabels=[];this.localActors=[];document.querySelector('#play-assistance')?.remove();this.storeStaff=[];this.associateRequest=null;this.associateReturnTrip=null;this.studioGuide=null;this.storeCustomers=null;this.fittingCurtains=[];this.cinemaDisplay=null;this.studioStudy=null;this.studioPreview=null;this.mosaicStudy=null;this.commonsPreview=null;this.merchandiseCache=new Map();this.merchandiseRecords=[];this.carrySignature=null;this.carryVisual=null;this.previewingMerchandise=false;installLighting(this,!!this.inside||this.layout.campus?.outdoor===false);}
+ initScene(){this.cinemaDisplay=null;this.parcelDesk=null;this.pavilionDesk=null;for(const key of ['diningRoomRevision','diningTables','foodHallRevision','diningSeat','promenadeRevision','planningWorkbenchRevision','studioHostLift','tableToyStudio','pavingStyle','groundedFixtures','windowDisplayRevision','luggageStudio','cinemaRevision','cinemaFilm','cinemaScene','cinemaCompleted','cinemaLift','cinemaTicket','diveWatchStudio','pavilionRevision','pavilionEvent','pavilionDay','pavilionStamped','phoneStudio','coffeeCounterRevision','consumptionReach','cafeProp','recordingStudio','parcelDeskRevision','checkedParcelCount','studioGuideStage','studioGuideX','studioGuideY','studioBlend','benchPlanningRevision','associateStage','associateX','associateY','physicalPriceCards','retailDetailRevision','materialStudy','materialStudyGroup','planningDetailRevision','mosaicTurns','mosaicYaw','mosaicDetailRevision','mosaicCourtRevision','mosaicNotebook','ceramicStudio','ceramicTurn','gardenDetailRevision','gardenObservation','tablewareStudio','waterDetailRevision','waterReadyIn','ceramicReach','fragranceStudio','restLoungeRevision','brushStudio','directoryKioskRevision'])delete this.canvas.dataset[key];this.finishTextures=new Map();this.shopSurfaces=new Map();this.starterTrouserGeometries=null;this.floatingLabels=[];this.anatomyEnvelope=null;this.anatomyGeometries=null;this.anatomyTextures=new Map();this.humanSharedResources=new Set();this.cutawayAssets=new Map();this.cutawayDummy=new T.Object3D();this.mallRoofTexture=null;this.mallRoofRelief=null;this.scene=new T.Scene();this.scene.background=new T.Color('#d7e5e1');this.scene.fog=new T.Fog('#d7e5e1',1100,2300);this.sceneFog=this.scene.fog;this.ambientLight=new T.HemisphereLight('#fff8e2','#9eafa5',1.4);this.scene.add(this.ambientLight);this.daylightMinute=null;this.windowMaterials=new Set();const sun=new T.DirectionalLight('#fff3d5',2.2);sun.position.set(250,800,450);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);Object.assign(sun.shadow.camera,{left:-620,right:620,top:620,bottom:-620,near:100,far:1900});sun.shadow.bias=-.001;this.sun=sun;this.scene.add(sun,sun.target);this.entryDoors=[];this.courtVisitors=[];this.clickables=[];this.windowDisplays=new Map();this.waterFeatures=[];this.carousel=null;this.steps=[];this.npcs=[];this.roofParts=[];this.escalatorLabel=null;this.benchLabel=null;this.nearLabels=[];this.localActors=[];document.querySelector('#play-assistance')?.remove();this.storeStaff=[];this.associateRequest=null;this.associateReturnTrip=null;this.studioGuide=null;this.storeCustomers=null;this.fittingCurtains=[];this.cinemaDisplay=null;this.studioStudy=null;this.studioPreview=null;this.mosaicStudy=null;this.commonsPreview=null;this.merchandiseCache=new Map();this.merchandiseRecords=[];this.carrySignature=null;this.carryVisual=null;this.previewingMerchandise=false;installLighting(this,!!this.inside||this.layout.campus?.outdoor===false);}
  tree(x,z,palm=false){buildLandscapeTree(this,x,z,themeFor(this.state.mallId),palm);}
  bench(x,z,parent=this.scene){this.box(x,12,z,88,6,24,'#b38761',parent);this.box(x,27,z-10,88,23,4,'#c29a74',parent);for(const dx of [-30,30])this.box(x+dx,6,z,5,12,20,'#536c67',parent);}
  person(color='#e1a36a',appearance={},equipment={}){return createShopper(this,color,appearance,equipment,dressPerson);}
@@ -204,7 +204,7 @@ export class MallWorld3D extends MallWorld{
   const rebuilding=this.inside===id,oldPosition=rebuilding?{...this.avatar}:null;this.clearInput();this.cancelRoute();this.moving=false;
   if(!rebuilding){this.mallAngle=this.angle;this.mallZoom=this.zoom;this.mallPosition={...this.avatar};this.interiorDepartment='all';this.interiorPage=0;}
   this.inside=id;document.querySelector('.map-stage')?.classList?.add('interior-scene');this.clearScene();const st=STORES.find(s=>s.id===id),profile=shopProfile(st,PRODUCTS),chosen=displaySelection(PRODUCTS,id,this.interiorDepartment||'all',this.interiorPage||0);this.layout=interiorLayout(st,this.layout.plan,isServiceStore(st)?serviceMenu(st).length:chosen.items.length||6);this.avatar=oldPosition&&walkable(oldPosition,this.layout.nav)?oldPosition:{...this.layout.spawn};this.initScene();this.scene.background=new T.Color('#cddbd6');
-  buildInteriorArchitecture(this,profile,this.layout);buildSignatureInterior(this,profile,this.layout,PRODUCTS);const studio=isPlanningStore(st)||[42,43,44,45,46,47,48,49,50,51,53,54,55,56,60,61,62,63].includes(st.collectionEdition);brandSign(this,st,600,studio?92:98,124,studio?180:260,studio?24:34);if(!studio)this.label(profile.title,600,75,147,220,profile.accent,profile.wall);this.interiorStops=[];
+  buildInteriorArchitecture(this,profile,this.layout);buildSignatureInterior(this,profile,this.layout,PRODUCTS);const studio=isPlanningStore(st)||[42,43,44,45,46,47,48,49,50,51,53,54,55,56,60,61,62,63,67].includes(st.collectionEdition);brandSign(this,st,600,studio?92:98,124,studio?180:260,studio?24:34);if(!studio)this.label(profile.title,600,75,147,220,profile.accent,profile.wall);this.interiorStops=[];
   this.fixtureHeights=[];const selection=chosen;this.interiorPage=selection.page;this.interiorSelection=selection;
   selection.items.forEach((p,i)=>{const r=this.layout.displays[i],x=r.x+r.width/2,z=r.y+r.height/2,height=buildProductFixture(this,p,r,profile);this.fixtureHeights.push(height);
    const cloth=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type),plate=this.photo(p,x,cloth?53.5:height+(p.watchProfile?.diveReference?5:p.plushProfile?9.5:27),z+16,cloth?45:p.watchProfile?.diveReference?10:p.plushProfile?28:50,cloth?45:p.watchProfile?.diveReference?8:p.plushProfile?19:54),point=displayPoint(r),key='product:'+p.id;this.tag(plate,key,point);const name=this.label(p.name.length>35?p.name.slice(0,32)+'…':p.name,x,height+(p.luggageProfile?40:p.watchProfile?.diveReference?18:p.phoneProfile?24:p.plushProfile?36:69),z,132,st.color);this.tag(name,key,point);this.nearLabels.push({object:name,x,z,radius:260});this.tag(this.label(money(price(this.state,p)),x,height+3,z+36,70),'product:'+p.id,point);this.interiorStops.push({point,id:key,name:p.name,label:'Inspect · '+money(price(this.state,p))});
@@ -218,7 +218,7 @@ export class MallWorld3D extends MallWorld{
   const fitX=fitting.x+fitting.width/2,fitZ=fitting.y+45;
   const wearable=st.products.some(canTry),fittingLabel=isServiceStore(st)?'Service lounge':!st.count?(st.businessKind==='food'?'Dining menu':'Material study nook'):st.products.some(isVerifiedFrame)?'Frame fitting & widths':wearable?'Fitting & try-on':'Menu & product demos',fittingAction=wearable?'fitting:'+id:!st.count?(st.businessKind==='food'?'dining:':'study:')+id:'rack:'+id;this.tag(this.label(fittingLabel,fitX,84,fitZ,150),fittingAction,this.layout.services.fitting);this.interiorStops.push({point:this.layout.services.fitting,id:fittingAction,name:fittingLabel,label:wearable?'Choose a real item to try':'Browse this location'});
   const railX=rail.x+rail.width/2,railZ=rail.y+20;
-  this.tag(this.label(isServiceStore(st)?'Services & my bookings':st.count?'Full collection · '+st.products.length+' real '+(st.products.length===1?'item':'items'):'Shop guide · Collection in research',railX,85,railZ,[42,43,44,45,46,47,48,49,50,51,53,54,55,56,60,61,62,63].includes(st.collectionEdition)?120:180),'rack:'+id,{x:railX,y:225});
+  this.tag(this.label(isServiceStore(st)?'Services & my bookings':st.count?'Full collection · '+st.products.length+' real '+(st.products.length===1?'item':'items'):'Shop guide · Collection in research',railX,85,railZ,[42,43,44,45,46,47,48,49,50,51,53,54,55,56,60,61,62,63,67].includes(st.collectionEdition)?120:180),'rack:'+id,{x:railX,y:225});
   const associate=this.person(st.color);associate.position.set(this.layout.services.associate.x,0,this.layout.services.associate.y);this.tag(associate,'associate:'+id,this.layout.services.associate);const associateLabel=this.label(st.npc+' · Shop associate',this.layout.services.associate.x,66,this.layout.services.associate.y,132);this.tag(associateLabel,'associate:'+id,this.layout.services.associate);this.storeStaff.push({mesh:associate,label:associateLabel,kind:'associate',home:{...this.layout.services.associate}});this.interiorStops.push({point:this.layout.services.associate,id:'associate:'+id,name:st.npc+' · Associate',label:'Advice & store services'});
   if(!st.count&&!isServiceStore(st)){if(st.businessKind==='food')buildDiningGallery(this,st,profile,this.layout);else buildPlanningLounge(this,st,profile,this.layout);}else {buildStoreFitout(this,st,profile,this.layout,selection.items);if(st.count)buildRetailDetails(this,st,profile,this.layout,selection.items);}if(hasCollectionDesk(st))buildCollectionStudio(this,st,profile);buildStoreLife(this,st);buildGrounding(this,this.layout,true);
   const exitSprite=this.label('EXIT ↓ MALL',600,.3,765,92),exitSign=this.mesh(new T.PlaneGeometry(92,20),new T.MeshBasicMaterial({map:exitSprite.material.map,transparent:true,depthWrite:false}));this.resources.add(exitSign.material);exitSign.position.copy(exitSprite.position);exitSign.rotation.x=-Math.PI/2;exitSign.castShadow=false;exitSprite.removeFromParent();this.player=this.person(this.state.appearance.shirt,this.state.appearance,equippedLook(this.state));this.playerLabel=this.label(this.state.playerName,600,60,730,74);this.overview=false;this.zoom=1;this.angle=0;buildSceneAccents(this);this.lastNearby=null;this.setCamera(true);this.publishPosition();
@@ -229,7 +229,7 @@ export class MallWorld3D extends MallWorld{
  revealProduct(id){const st=STORES.find(s=>s.id===this.inside);if(!st?.products.some(p=>p.id===id))throw Error('Choose a product from this shop.');let index=this.interiorSelection.items.findIndex(p=>p.id===id);if(index<0){if(this.associateRequest)throw Error('Finish or cancel your current size check before changing displays.');this.interiorDepartment='all';this.interiorPage=Math.floor(st.products.findIndex(p=>p.id===id)/6);this.enterInterior(st.id);index=this.interiorSelection.items.findIndex(p=>p.id===id);}return index;}
  locateProduct(id,size=null){const index=this.revealProduct(id),p=STORES.find(s=>s.id===this.inside).products.find(p=>p.id===id);this.navigate(displayPoint(this.layout.displays[index]),{interaction:'product:'+id,...p.sizes.includes(size)?{productSelection:{id,size}}:{}});}
  beginStudioGuide(){const st=STORES.find(s=>s.id===this.inside);if(!isPlanningStore(st))return false;const staff=this.storeStaff.find(a=>a.kind==='associate');this.studioGuide=consultationTrip(this.layout,displayPoint(this.layout.displays[1]),staff?{x:staff.mesh.position.x,y:staff.mesh.position.z}:null);this.associateReturnTrip=null;return true;}
- endStudioGuide(){if(this.studioGuide)this.associateReturnTrip=returnAssociateTrip(this.studioGuide,this.layout);this.studioGuide=null;delete this.canvas.dataset.studioGuideStage;delete this.canvas.dataset.studioGuideX;delete this.canvas.dataset.studioGuideY;}
+ endStudioGuide(){if(this.studioGuide)this.associateReturnTrip=returnAssociateTrip(this.studioGuide,this.layout);this.studioGuide=null;delete this.canvas.dataset.studioGuideStage;delete this.canvas.dataset.studioGuideX;delete this.canvas.dataset.studioGuideY;delete this.canvas.dataset.studioHostLift;}
  beginAssociateCheck(request){if(!this.inside||this.inside!==request.product.store)return false;if(this.associateRequest)throw Error('Finish or cancel your current size check first.');const displayIndex=this.revealProduct(request.id);const staff=this.storeStaff.find(a=>a.kind==='associate'),origin=staff?{x:staff.mesh.position.x,y:staff.mesh.position.z}:null;this.associateRequest=associateTrip(this.layout,request,{displayIndex,origin});this.associateReturnTrip=null;this.renderAssociateStatus();return true;}
  cancelAssociateCheck(){if(this.associateRequest&&this.associateRequest.stage!=='ready')this.associateReturnTrip=returnAssociateTrip(this.associateRequest,this.layout);this.associateRequest=null;this.renderAssociateStatus();}
  renderAssociateStatus(){const menu=document.querySelector('.play-menu');let shortcut=menu?.querySelector('#play-assistance');if(this.associateRequest&&menu){if(!shortcut){shortcut=document.createElement('button');shortcut.id='play-assistance';shortcut.dataset.action='associate-status';menu.append(shortcut);}shortcut.textContent=this.associateRequest.stage==='ready'?'Size check ready':'Size check…';}else shortcut?.remove();const ui=document.querySelector('#scene-location');if(!ui)return;let panel=ui.querySelector('.associate-service');if(!this.associateRequest){panel?.remove();return;}if(!panel){panel=document.createElement('div');panel.className='associate-service';panel.innerHTML='<p role="status"></p><div><button data-action="associate-collect">Meet associate</button><button data-action="associate-cancel">Cancel check</button></div>';ui.append(panel);}const trip=this.associateRequest,st=STORES.find(s=>s.id===this.inside),text=requestStatus(trip,st.npc);if(panel.firstElementChild.textContent!==text)panel.firstElementChild.textContent=text;panel.querySelector('[data-action="associate-collect"]').disabled=trip.stage!=='ready';}

@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
-import {departmentOf,displayPoint} from './shop-interiors.js?v=63.0.0';
-import {money,price} from './engine.js?v=66.0.0';
+import {departmentOf,displayPoint} from './shop-interiors.js?v=67.0.0';
+import {money,price} from './engine.js?v=67.0.0';
 import {shopSurface} from './shop-surfaces.js?v=57.0.0';
 
 export function displayCard(state,p,index){return {number:String(index+1).padStart(2,'0'),department:departmentOf(p),name:p.name,price:money(price(state,p)),note:'Game price · inspect for sizes'};}

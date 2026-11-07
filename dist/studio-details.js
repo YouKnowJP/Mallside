@@ -1,5 +1,6 @@
+import {detailBoxes} from './detail-instances.js?v=48.0.0';
 import * as T from './vendor/three.module.js';
-import {STUDY_PALETTES,studyFor,studioGroup} from './studio-study.js?v=63.0.0';
+import {STUDY_PALETTES,studyFor,studioGroup} from './studio-study.js?v=67.0.0';
 import {surfaceTexture} from './scene-finish.js?v=57.0.0';
 
 // Joinery, tools and samples remain inside the lounge's reserved display/rail footprints.
@@ -23,7 +24,26 @@ export function buildStudyStation(w,st,style,r){
   w.box(x+dx,32,z+23,14,.6,4,paper);
  }
  w.box(x+39,33,z+9,3,2,27,'#c8aa72');for(let i=0;i<6;i++)w.box(x+39,34.1,z-1+i*4,2,.2,.3,style.trim);
+ const brass='#a18359',ink='#334841',light='#fbe0a8';
+ const fixtures=[
+  [x,29.7,z+7,81,1.1,45,'#756958'],
+  [x,33,z-6,83,2.4,3,brass],
+  [x-38,34,z-19,6,5,7,brass],
+  [x-38,50,z-19,1.8,32,1.8,ink],
+  [x-32,65,z-19,14,2.2,2.6,ink],
+  [x,68,z-19,70,3.3,6.5,ink],
+  [x,66.1,z-18,66,1.3,4.2,light],
+  [x,50,z-12.8,76,.6,.5,brass],
+  [x-40,51,z-12.5,1,29,.6,brass],
+  [x+40,51,z-12.5,1,29,.6,brass]
+ ];
+ for(const dx of [-25,0,25]){
+  fixtures.push([x+dx,32.2,z+23,13,.4,3,'#eee0c1']);
+  for(let j=0;j<4;j++)fixtures.push([x+dx-4+j*2.5,32.45,z+23,.6,.16,1.6,brass]);
+ }
+ detailBoxes(w,w.scene,fixtures);
  w.studioStudy={store:st.id,samples,signature:null,group};updateStudioStudy(w);
+ w.canvas.dataset.planningWorkbenchRevision='67';
 }
 export function updateStudioStudy(w,dt=0){
  const study=w.studioStudy;if(!study)return;const d=w.studioPreview?.store===study.store?w.studioPreview:studyFor(w.state,study.store),signature=d.palette+':'+d.finish;
@@ -39,7 +59,7 @@ export function buildPlanningDetails(w,st,style,layout){
   // Slatted aprons, recessed handles and workbench foot rails add readable construction.
   for(const dz of [-26,26]){w.box(x,24,z+dz,84,7,2,timber);w.box(x,24,z+dz*1.04,17,1,1,style.trim);}
   for(const dx of [-35,35])w.box(x+dx,7,z,3,2,43,style.trim);
-  if(i===0||i===1){w.box(x+37,42,z-20,1.5,24,1.5,style.trim);w.box(x+31,54,z-20,13,1.5,3,style.trim);w.box(x+25,52,z-20,12,3,9,'#d7c8a9');for(let n=0;n<3;n++)w.box(x-25+n*13,31.4,z+22,10,.3,3,['#9d7b65','#7b9584','#b6a16e'][n]);}if(i===1)continue;
+  if(i===0){w.box(x+37,42,z-20,1.5,24,1.5,style.trim);w.box(x+31,54,z-20,13,1.5,3,style.trim);w.box(x+25,52,z-20,12,3,9,'#d7c8a9');for(let n=0;n<3;n++)w.box(x-25+n*13,31.4,z+22,10,.3,3,['#9d7b65','#7b9584','#b6a16e'][n]);}if(i===1)continue;
   w.box(x-34,32,z+16,14,1.6,18,'#8b9e8a');w.box(x-34,33,z+16,12,.5,16,paper);for(let j=0;j<4;j++)w.box(x-34,33.3,z+11+j*3,9,.2,.3,style.trim);
  }
  const r=layout.rail,x=r.x+r.width/2,z=r.y+r.height/2;

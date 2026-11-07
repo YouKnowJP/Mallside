@@ -1,5 +1,5 @@
 import {paintPromenadePaving,paintPromenadeCourt,leafyCanopyGeometry,planterGeometry} from './promenade-materials.js?v=64.0.0';
-import {buildBenchPlanningDetails} from './planning-visit.js?v=63.0.0';
+import {buildBenchPlanningDetails} from './planning-visit.js?v=67.0.0';
 import {buildDirectoryKiosk} from './directory-kiosk.js?v=57.0.0';
 import {buildNoticeDetail} from './notice-details.js?v=50.0.0';
 import {buildWaterDetail} from './water-details.js?v=49.0.0';

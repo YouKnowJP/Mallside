@@ -15,7 +15,7 @@ const hash=(value,replacer)=>createHash('sha256').update(JSON.stringify(value,re
 const normalizeGeometry=(_,v)=>typeof v==='number'?Number(v.toFixed(6)):v;
 const prior=JSON.parse(readFileSync(new URL('../docs/research-v64/compatibility-before.json',import.meta.url)));
 test('the new visual layer preserves complete v63 catalog data, saves and all 23 navigation floors',()=>{
- assert.equal(hash(E.PRODUCTS.filter(p=>p.collectionReference!==66)),prior.productRecordsSHA256);
+ assert.equal(hash(E.PRODUCTS.filter(p=>(p.collectionReference??0)<66)),prior.productRecordsSHA256);
  assert.equal(hash(E.STORES.map(s=>s.id)),prior.shopIdsSHA256);
  const state=E.validateImport(JSON.stringify(E.createState()));
  assert.equal(state.version,prior.schema);assert.equal(state.mapRevision,prior.mapRevision);

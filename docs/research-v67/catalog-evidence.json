@@ -1,0 +1,124 @@
+{
+  "checkedOn": "2026-11-07",
+  "qualifier": "Catalog identity and reference price evidence. All in-game stock and payments are simulated.",
+  "caveats": [
+    "Jenga uses the Macy’s standard comparison price, which can appear alongside a temporary sale. The licensed tower photo depicts classic blocks in play.",
+    "The original 3×3 Macy’s reference is archived. GameStop’s non-member price corresponds to the older Spin Master 6063964 model, UPC 778988419533. The licensed image shows the exterior of the original-format stickerless cube.",
+    "The archived Scrabble Macy’s box and contents match the F4204 manufacturer montage on Target and Kohl’s. Kohl’s publishes the F4204 price. The component photograph shows the 100 English tiles.",
+    "Verizon’s exact Silverblue SKU is out of stock on the selected source. Samsung’s carrier variant documents the 256 GB format and its B2B sheet provides body dimensions."
+  ],
+  "products": [
+    {
+      "id": "delamo-tenant-toysrusatmacys-Mainlevel::v67-jenga-classic",
+      "store": "delamo-tenant-toysrusatmacys-Mainlevel",
+      "name": "Jenga Classic · 54 hardwood blocks",
+      "sku": "Macy’s 23636310",
+      "format": "54-block set",
+      "offer": {
+        "product": "https://www.macys.com/shop/product/hasbro-gaming-jenga-classic-puzzle-game?ID=23636310",
+        "priceSource": "https://www.macys.com/shop/product/hasbro-gaming-jenga-classic-puzzle-game?ID=23636310",
+        "branch": "https://www.simon.com/mall/del-amo-fashion-center/stores/toys-r-us-at-macys",
+        "usd": 14.99,
+        "note": "Macy’s published $14.99 comparison price checked 7 November 2026. The same page showed a temporary discount. Game stock and discounts are simulated."
+      },
+      "photo": {
+        "path": "assets/photos/v67-jenga-classic.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Jenga_tower_1.JPG",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Jenga_tower_1.JPG",
+        "description": "A Jenga Classic hardwood tower in play",
+        "author": "Joshjrowe",
+        "rightsHolder": "Joshjrowe",
+        "license": "CC-BY-SA-3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Orientation normalized, resized to 900 × 1200 and encoded as WebP without cropping.",
+        "group": "v67-game-table",
+        "sha256": "ab40ff2028d61f8ddefd3113a2fff8672226bf916100c23dc930f2fb6dd13fc6",
+        "sourceBytesSHA256": "7dfc08acfe8ba436ed33f45f0def092cad8899a80e64a2e2474f926876a3c258"
+      }
+    },
+    {
+      "id": "delamo-tenant-toysrusatmacys-Mainlevel::v67-rubiks-3x3",
+      "store": "delamo-tenant-toysrusatmacys-Mainlevel",
+      "name": "Rubik’s Cube · Original 3×3",
+      "sku": "Spin Master 6063964",
+      "format": "3×3 cube",
+      "offer": {
+        "product": "https://www.macys.com/shop/product/rubiks-cube-the-original-3x3-color-matching-puzzle-classic-problem-solving-challenging-brain-teaser-fidget-toy-for-adults-kids-ages-8-up?ID=13923353",
+        "priceSource": "https://www.gamestop.com/toys-games/puzzles/products/rubiks-3x3-cube/316739.html?a=1",
+        "branch": "https://www.simon.com/mall/del-amo-fashion-center/stores/toys-r-us-at-macys",
+        "usd": 10.99,
+        "note": "Macy’s product page is unavailable for purchase. $10.99 is GameStop’s non-member US price for Spin Master 6063964, checked 7 November 2026. Game stock and discounts are simulated."
+      },
+      "photo": {
+        "path": "assets/photos/v67-rubiks-3x3.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Rubik%27s_Cube_3x3.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Rubik%27s_Cube_3x3.jpg",
+        "description": "A scrambled black Rubik’s 3×3 cube with six tile colors",
+        "author": "Thenror",
+        "rightsHolder": "Thenror",
+        "license": "CC-BY-SA-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Resized to 1200 × 1002 and encoded as WebP without cropping.",
+        "group": "v67-game-table",
+        "sha256": "d5baa9ec59378ec3678cdd68c24ef29424b4ffdd5a2560f54375cf4dab389c01",
+        "sourceBytesSHA256": "f351547e1243f463a9f0a91d617a98ac6972c9d91b59cb1b9a8e5d0378c3eeb6"
+      }
+    },
+    {
+      "id": "delamo-tenant-toysrusatmacys-Mainlevel::v67-scrabble-classic",
+      "store": "delamo-tenant-toysrusatmacys-Mainlevel",
+      "name": "Scrabble Classic · 100 wooden tiles",
+      "sku": "Hasbro F4204",
+      "format": "English board game",
+      "offer": {
+        "product": "https://www.macys.com/shop/product/hasbro-gaming-scrabble-classic-board-game?ID=16955736",
+        "priceSource": "https://www.kohls.com/product/prd-5588392/hasbro-scrabble-game.jsp",
+        "branch": "https://www.simon.com/mall/del-amo-fashion-center/stores/toys-r-us-at-macys",
+        "usd": 24.99,
+        "note": "Macy’s archived box and contents match the F4204 edition. $24.99 is Kohl’s US price for F4204, checked 7 November 2026. Game stock and discounts are simulated."
+      },
+      "photo": {
+        "path": "assets/photos/v67-scrabble-classic.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Scrabble_tiles_en.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Scrabble_tiles_en.jpg/1280px-Scrabble_tiles_en.jpg",
+        "description": "All 100 English-language Scrabble tiles",
+        "author": "Agentsoo",
+        "rightsHolder": "Agentsoo",
+        "license": "PD-self",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File:Scrabble_tiles_en.jpg",
+        "changes": "1280-pixel source preview resized to 1200 × 1155 and encoded as WebP.",
+        "group": "v67-game-table",
+        "sha256": "8d3541242ec1bace9fd91c9a21de9585125058ed3ddc6f7b3e1ee7ed7cb91779",
+        "sourceBytesSHA256": "73b23c5adfea1aa8bb8bbcfe32275d6d834b489733eb90a72cabe4e87d506698"
+      }
+    },
+    {
+      "id": "spectrum-tenant-verizonwireless::v67-galaxy-s25-ultra",
+      "store": "spectrum-tenant-verizonwireless",
+      "name": "Galaxy S25 Ultra · 256 GB · Titanium Silverblue",
+      "sku": "sku6019387",
+      "format": "256GB",
+      "offer": {
+        "product": "https://indirect-soe-nsd2.verizon.com/smartphones/samsung-galaxy-s25-ultra/?sku=sku6019387",
+        "priceSource": "https://www.samsung.com/us/smartphones/galaxy-s25-ultra/buy/galaxy-s25-ultra-256gb-verizon-sm-s938uzbavzw/",
+        "branch": "https://www.irvinespectrumcenter.com/shopping/stores/verizon-wireless",
+        "usd": 1299.99,
+        "note": "Verizon published a $1,299.99 full retail reference for Titanium Silverblue and marked it out of stock. Manufacturer variant SM-S938UZBAVZW documents the 256 GB finish. Game stock and payments are simulated."
+      },
+      "photo": {
+        "path": "assets/photos/v67-galaxy-s25-ultra.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Samsung_Galaxy_S25_Ultra_Titanium_Silverblue.jpg",
+        "description": "The back of a Samsung Galaxy S25 Ultra in Titanium Silverblue",
+        "author": "Alvis Jean",
+        "rightsHolder": "Alvis Jean",
+        "license": "CC-BY-SA-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Orientation normalized, resized to 900 × 1200 and encoded as WebP without cropping.",
+        "group": "v67-game-table",
+        "sha256": "237de028c89a28cc32d0e15136ea979bfe2f72829583e0066644d065371babe3",
+        "sourceBytesSHA256": "475c82ca1a29bda129ababf6fb0e68a0344ae57ab1b4e20f29d389274c1288c4"
+      }
+    }
+  ]
+}

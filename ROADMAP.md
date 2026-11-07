@@ -2,6 +2,13 @@
 
 Updated 7 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v67
+
+- Stock Del Amo’s Toys R Us at Macy’s and Irvine Spectrum’s Verizon store with four documented products.
+- Add a 3D play table and free samples for Jenga, Rubik’s Cube, and Scrabble. Add the Galaxy S25 Ultra handset inspection.
+- Improve workbench detail and host gestures across the remaining 285 planning lounges.
+- Preserve earlier saves, products and navigation. [Gameplay](docs/GAMEPLAY-v67.md) · [Catalog sources](docs/research-v67/catalog-evidence.json).
+
 ## Completed in v66
 
 - Standardize dropdowns across shopping, settings, the shop finder, and activities.
@@ -372,7 +379,7 @@ Updated 7 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,087 stocked identities, 133 service identities and 378 identities awaiting catalog research**. The remaining 287 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,089 stocked identities, 133 service identities and 376 identities awaiting catalog research**. The remaining 285 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

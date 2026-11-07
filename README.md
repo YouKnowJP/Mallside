@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v67 — play tables and workbenches
+
+Del Amo’s toy shop has a play table for Jenga, Rubik’s Cube, and Scrabble. Irvine Spectrum’s Verizon store has a Samsung handset display and two-handed inspection. Planning hosts respond when you change the materials on their improved workbenches. [Gameplay](docs/GAMEPLAY-v67.md) · [Product sources](docs/research-v67/catalog-evidence.json).
+
 ## v66 — easier browsing and more to shop
 
 Find items by saved size, exact format, price with tax, stock, or wishlist. A shared in-game picker works across the catalog, stores, settings and activities. Browse 27 additional Apple and TUDOR listings by mall or group matching branches. [Gameplay](docs/GAMEPLAY-v66.md) · [QA](docs/qa-v66.md).

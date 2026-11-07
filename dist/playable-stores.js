@@ -1,3 +1,4 @@
+import {workshopListings} from './store-product-additions-v67.js?v=67.0.0';
 import {shoppingEditListings} from './store-product-additions-v66.js?v=66.0.0';
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {MALLS} from './malls.js?v=56.0.0';
@@ -93,5 +94,13 @@ export function installPlayableStores(stores,products,photos){
   st.catalogStatus=selected.length?'verified':'pending';st.assortmentBasis='verified-brand-reference';st.sub=selected.length?'REAL PRODUCT COLLECTION':'CATALOG RESEARCH IN PROGRESS';st.greeting=selected.length?'Browse this store’s real products and documented carried brands. Every label links to its source. Game prices, stock, fit and return policies are simulated.':'Welcome inside. This store’s verified photographed catalog is still being researched. Earlier purchases can still be returned here under their original game terms.';
  }
  products.push(...shoppingEditListings(stores,associationFor));
+ const workshop=workshopListings(stores,associationFor);
+ const workshops=new Set(workshop.map(p=>p.store));
+ for(const st of stores)if(workshops.has(st.id)){
+  st.catalogStatus='verified';st.collectionEdition=67;st.sub='REAL PRODUCT COLLECTION';
+  st.greeting='Try an original Mallside demonstration and browse the documented assortment. Game inventory and payments are simulated.';
+ }
+ products.push(...workshop);
+
  return {core,seeds};
 }

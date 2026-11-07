@@ -1,7 +1,7 @@
 import * as T from './vendor/three.module.js';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
 import {surfaceTexture,beveledBox} from './scene-finish.js?v=57.0.0';
-import {updateStudioStudy} from './studio-details.js?v=63.0.0';
+import {updateStudioStudy} from './studio-details.js?v=67.0.0';
 // Original joinery and light studies; branch architecture and samples are adapted game art.
 export function buildOpticalStudio(w,st,style){
  const wood=w.mat('#ad9a7b',{map:surfaceTexture(w,'timber'),roughness:.72}),paper=w.mat('#eee9dc'),trim='#536b70',parts=[],samples=[];

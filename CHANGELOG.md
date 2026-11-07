@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v67 · 7 November 2026
+
+- Stock two formerly unfinished shops with four verified products and reuse-licensed photographs.
+- Add three free toy-table previews, a furnished 3D toy shop, and a Samsung handset inspection at Verizon.
+- Refine planning workbenches and animate the host’s response to palette and finish changes.
+- Preserve earlier saves, shopping plans, material notes, and purchases. [Gameplay](docs/GAMEPLAY-v67.md) · [QA](docs/qa-v67.md).
+
 ## v66 · 7 November 2026
 
 - Use a shared keyboard- and touch-friendly picker for every dropdown in the game.

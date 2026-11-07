@@ -1,7 +1,7 @@
 import * as T from './vendor/three.module.js';
 import {facadeFrame} from './mall-design.js?v=35.0.0';
 import {surfaceTexture} from './scene-finish.js?v=57.0.0';
-import {displayPoint} from './shop-interiors.js?v=63.0.0';
+import {displayPoint} from './shop-interiors.js?v=67.0.0';
 import {diningMealIds} from './district-life.js?v=35.0.0';
 import {buildMealSample} from './cafe-props.js?v=65.0.0';
 import {DINING_SEATS,diningSeat} from './dining-presentation.js?v=65.0.0';
