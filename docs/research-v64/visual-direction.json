@@ -1,0 +1,133 @@
+{
+  "schema": "mallside-v64-visual-research-1",
+  "reviewedOn": "2026-11-06",
+  "scope": "Read-only source audit and bounded primary-source design research. No new retail product, merchant-stock, exact footprint, current hours or accessibility-compliance claim is made. No external images or textures were downloaded.",
+  "recommendedDirection": "A cohesive California retail promenade: warm mineral floors, readable storefront depth, mature but restrained planting, grounded furniture and a quieter shopping interface. Preserve each mall family's identity. This is original game art direction informed by references, not a reproduction of the cited properties.",
+  "audit": {
+    "existingStrengths": [
+      "All ten mall families already have distinct palette and architectural-style data.",
+      "Shared Details instancing batches storefront and public-realm geometry.",
+      "Existing architecture already includes recessed glazing, layered sills, cornices, door handles, roof relief and canopy posts.",
+      "Existing public furniture already has detailed benches, directories, fountains and usable approaches.",
+      "Lighting already uses a generated filtered environment, time-of-day states, surface-specific roughness and one shadow-casting directional light.",
+      "Ground navigation and fixture footprints already protect shop doors, spines, landings, services and interactive approaches."
+    ],
+    "mainGaps": [
+      "The ground canvas applies nearly the same square tile grid and circular medallion logic across mall families, so very large areas read as one repetitive flat surface.",
+      "Most visual layering is micro joinery. The camera sees large floor areas and large building silhouettes, so another small trim pass would be hard to notice.",
+      "Storefronts remain an opaque rectangular mass with shallow glazing and many flat product-photo cards. The display-room depth is weaker than the number of details suggests.",
+      "Palm and shrub silhouettes are still dominated by cylinders and repeated clustered volumes; large planter bases and repeated trunk bands can read as stacked primitives.",
+      "Soft contact shadows are applied to people, while many planter/furniture/building bases have little low-cost grounding beyond the single sun shadow.",
+      "The shopping scene contains repeated top buttons, scene shortcuts, guide actions, a location chip, mini map and mission detours competing with the world view."
+    ],
+    "sourcePointers": [
+      "dist/mall-environment.js: createMallGroundCanvas, buildMallGround, plant, buildStorefronts, buildPublicRealm",
+      "dist/mall-design.js: MALL_THEMES, facadeFrame, furnishCampus",
+      "dist/scene-finish.js: surfaceTexture, cameraComposition, palmFrondGeometry",
+      "dist/mall-atmosphere.js: buildSceneAccents, updateSceneAccents, daylightAt, surfaceFinish",
+      "dist/retail-scenes.js: buildWindowDisplay, buildSignatureInterior",
+      "dist/shop-surfaces.js: shopSurface",
+      "dist/retail-details.js: displayCard, buildRetailDetails",
+      "dist/interior-blueprints.js: makeInteriorPlan",
+      "dist/app.js: shopping guide and mall header layout",
+      "dist/life-styles.css: mall-shell, play-sidebar, expanded-play rules"
+    ]
+  },
+  "primaryReferences": [
+    {
+      "title": "Santa Monica Place tenant design criteria, General Information, October 2010",
+      "publisher": "Macerich",
+      "url": "https://www.macerich.com/FileManager/Property/TenantPackage/SantaMonicaPlaceTwo/Design/SMP_TCM_General_oct10.pdf",
+      "evidenceLocation": "PDF pages 3-4, printed g3-g4",
+      "verifiedFacts": [
+        "The document describes an open-air streetscape with shopping, dining and gathering areas and an uncluttered central plaza connecting four entrances.",
+        "Its storefront guidance encourages three-dimensional forms, recesses, angles, curves and material changes rather than predominantly linear or box-like fronts.",
+        "It treats common areas and individual tenant storefronts as complementary parts of the overall retail setting and encourages individual tenant expression."
+      ],
+      "gameInference": "Use visibly deeper window bays, coherent shared public paving and clear open court centers. Vary large facade forms by the existing identity/family data instead of adding arbitrary clutter.",
+      "limits": "Historical general design guidance. Do not use the old tenant map, hours, dimensions or renderings as current mall facts, and do not copy its drawings."
+    },
+    {
+      "title": "About Irvine Company Retail",
+      "publisher": "Irvine Company Retail",
+      "url": "https://www.irvinecompanyretail.com/about/",
+      "evidenceLocation": "Coastal California Lifestyle and Community-Connected sections",
+      "verifiedFacts": [
+        "The owner describes open-air destinations with coastal architecture, broad paseos, landscaping and park-like gathering space.",
+        "It presents the centers as places for connection and a mix of shopping, dining and entertainment."
+      ],
+      "gameInference": "Improve planting silhouettes, outdoor materials and the spatial grouping of existing seats and amenities while keeping promenade centers clear. Outdoor character should come from a cohesive composition rather than filling every spare tile.",
+      "limits": "Owner-level design description, not evidence of exact geometry or a universal species/finish at all ten game destinations."
+    },
+    {
+      "title": "Apple Brompton Road opening, 26 July 2022",
+      "publisher": "Apple Newsroom",
+      "url": "https://www.apple.com/newsroom/2022/07/apple-brompton-road-opens-july-28-in-london/",
+      "evidenceLocation": "The Store and Team; Sustainability",
+      "verifiedFacts": [
+        "The release describes trees beside large windows, seating around tree planters, a central arcade, demonstration tables and a dedicated pickup area.",
+        "It identifies terrazzo flooring and a curved timber ceiling."
+      ],
+      "gameInference": "Readable fixture hierarchy and tactile material contrast can make shared shop interiors feel like a place to browse. Group warm timber, matte pale floor, dark slim metal and localized warm display light, with room around the shopper.",
+      "limits": "Brompton Road flagship reference only; not a claim that every Apple or mall shop has this design. No Apple product assortment or artwork is being copied."
+    },
+    {
+      "title": "Irvine Company Office Properties wayfinding",
+      "publisher": "RSM Design",
+      "url": "https://rsmdesign.com/work/irvine-company-properties-various-locations",
+      "evidenceLocation": "Project description and icon/map standards",
+      "verifiedFacts": [
+        "The designer describes one adaptable family of icons, directional signs and directory-map standards to make amenities more discoverable across varied properties.",
+        "The system was intended to work on light and dark backgrounds and across print and digital contexts."
+      ],
+      "gameInference": "Use the same simple visual language in the HUD, floor-map destinations and physical amenity signs. Prefer a small number of legible destination categories to repeated floating labels and duplicate menus.",
+      "limits": "Workplace and mixed-use campus project, used as a general information-design reference rather than retail-branch evidence. Do not copy its logos or pictograms."
+    },
+    {
+      "title": "Del Amo Fashion Center redevelopment",
+      "publisher": "Whiting-Turner",
+      "url": "https://www.whiting-turner.com/projects/retail/del-amo-fashion-center-redevelopment/",
+      "verifiedFacts": [
+        "The contractor identifies a multi-phase operating-mall redevelopment, including upgraded interior common areas and a new food court intended as a focal space."
+      ],
+      "gameInference": "Indoor and outdoor centers should have distinct floor/soffit/light cues, with public focal areas readable from the approach rather than a uniform decoration density everywhere.",
+      "limits": "Historical construction project description, not an as-built survey or evidence for adding exact current store geometry."
+    }
+  ],
+  "implementationRecommendations": [
+    {
+      "priority": 1,
+      "name": "A large-scale material and grounding pass",
+      "change": "Replace the universal repeated grid/medallion appearance with restrained family-dependent paving: light large-format stone indoors, warmer smaller pavers for outdoor arcades, quieter pale aggregate/terrazzo courts and subtle bounded inlays. Add original low-contrast joint, grain and color variation at useful world-space scale. Ground existing buildings and heavy furniture with a restrained static base-shadow treatment, keeping the sun/contact shadows readable rather than making the scene darker.",
+      "constraints": "Reuse original procedural pixels and cached textures; distinguish color maps from data maps. Do not create a texture or material per floor tile. Keep map topology, nav obstacles, doors and every public approach unchanged. A clear walking spine should remain visually simpler than its edges.",
+      "whyVisible": "The ground occupies a large part of every camera frame, so this affects the whole game immediately."
+    },
+    {
+      "priority": 2,
+      "name": "Believable storefront depth and shop material hierarchy",
+      "change": "Use the existing facadeFrame and merchant identity to form deeper-looking display bays, cleaner glazing, slim frames, a readable entrance recess, organized plinths and limited warm under-canopy/display light. Make the large structural masses less uniformly box-like with restrained setbacks, curved/recessed corner forms or layered canopy silhouettes keyed to established facade types. Inside, give major counters and display tops a tactile material contrast and keep label cards physically supported rather than visually floating.",
+      "constraints": "Respect existing facade/decor envelopes and cutaway ownership. Keep doors, hit targets and product IDs stable. Pending stores may gain original architecture, neutral display furniture or clear research signage, but no invented merchandise. Use only actual own-store catalog products in windows. Do not replace researched product materials with the public-realm material system."
+    },
+    {
+      "priority": 3,
+      "name": "Mature planting and finer furniture silhouettes",
+      "change": "Refine planter body/rim/soil proportions, taper trunks, reduce stacked-ring appearance and create varied leaf clusters or frond silhouettes at a scale visible from the game camera. Use two or three coherent species families rather than a random plant catalogue. Keep seating, bins, lamps and rails grounded through slim profiles, muted metal, warm timber and carefully placed detail within existing footprints.",
+      "constraints": "Batch repeated trunks, foliage and furniture through shared instancing or merged geometry. Avoid many transparent crossed planes and expensive shadow-casting foliage. Preserve fixture interaction tags, named bench seats, nav bounds and all current approach positions. No per-frame allocations or geometry rebuilds. Reduced motion must remain still."
+    },
+    {
+      "priority": 4,
+      "name": "A quieter shopping interface that lets the world show",
+      "change": "Keep a short persistent loop visible: current place, nearby action, bag/checkout and map. Make the current shopping step clear and place longer progression detours behind the existing menu or a collapsible guide. Reduce repeated button groups without removing keyboard routes or discoverability. Use one coherent icon/category family in the map, scene signs and HUD.",
+      "constraints": "Preserve important controls and accessible labels, visible focus, 44px minimum targets, close/escape behavior and current show-guide preference semantics. Do not silently hide essential actions or make the world dependent on steering. Update native tests to follow equivalent meaningful actions if markup changes."
+    }
+  ],
+  "acceptancePriorities": [
+    "The same fixed camera/scene fixtures should show a clearly larger visual change than a single product studio: at least an outdoor promenade, an indoor court and two distinct existing shop families.",
+    "All ten mall families should be represented by deterministic data/geometry checks; inspect several actual renders rather than treating a new revision counter as proof.",
+    "Keep every prior catalog record, shop identity, save schema/map revision and economy rule unchanged unless a separate observed issue requires a documented fix.",
+    "Verify all 23 floor layouts retain reachable doors, landings, public amenities, bench seats and shops after the render-only changes.",
+    "Measure added drawables, triangle count, shared texture/material ownership and repeated teardown behavior. The existing Details and detailBoxes batching patterns should be reused, not replaced by hundreds of independent meshes.",
+    "Check warm outdoor daylight, indoor/evening contrast, camera cutaways, photo/portrait capture, both graphics modes, reduced motion and 320px/short-landscape layouts before browser release validation.",
+    "A full-size native Safari screenshot is visual evidence; a macOS Stage Manager thumbnail is not. Record and exclude invalid captures without treating a DOM visibility flag alone as proof of presentation."
+  ]
+}

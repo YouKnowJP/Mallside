@@ -1,11 +1,14 @@
 # Mallside documentation
 
-Current release: [v61 gameplay](GAMEPLAY-v61.md) and [v61 QA](qa-v61.md).
+Current update: [v64 gameplay](GAMEPLAY-v64.md) and [v64 QA](qa-v64.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Promenade, shop interiors and play interface | [v64 guide](GAMEPLAY-v64.md), [visual research](research-v64/visual-direction.json), [v64 QA](qa-v64.md) |
+| Travel gallery and picture houses | [v63 guide](GAMEPLAY-v63.md), [v63 QA](qa-v63.md) |
+| Watch salon and pop-up pavilions | [v62 guide](GAMEPLAY-v62.md), [v62 QA](qa-v62.md) |
 | Handset studios, detailed coffee terraces and smoother consumption | [v61 guide](GAMEPLAY-v61.md), [source evidence](research-v61/catalog-evidence.json), [v61 QA](qa-v61.md) |
 | Recording studio, clearer parcel collection and smooth return starts | [v60 guide](GAMEPLAY-v60.md), [source evidence](research-v60/catalog-evidence.json), [v60 QA](qa-v60.md) |
 | Guided material visits, useful public benches and eased host movement | [v59 guide](GAMEPLAY-v59.md), [primary research](research-v59/shopping-services-evidence.json), [v59 QA](qa-v59.md) |

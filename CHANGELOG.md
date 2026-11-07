@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v64 · 6 November 2026
+
+- Refine the ten malls with original paving, court details, planting, soft fixture shadows and foreground camera cutaways.
+- Display own-store products in recessed windows, with finer materials and lighting detail inside shops.
+- Add a wider play view, quieter guide, compact walk and camera dock, and shop-only Browse and Exit controls.
+- Preserve the catalog, entrances, navigation and saved progress. [Gameplay](docs/GAMEPLAY-v64.md) · [QA](docs/qa-v64.md).
+
 ## v63 · 6 November 2026
 
 - Add the historical RIMOWA Original Cabin reference with licensed photography, original casework, dimension study and smooth physical handling.

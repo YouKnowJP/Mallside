@@ -1,0 +1,151 @@
+{
+  "version": "63.0.0",
+  "commit": "d4c2f991b9d9a023a04254d9234ca7b8a3912bd9",
+  "products": 8863,
+  "productRecordsSHA256": "d0abee81363fdb48b3ff4ecc37609db2474c97e00a941bee77e401ae69739faf",
+  "shopCount": 1598,
+  "shopIdsSHA256": "499e350c23c8da8be1a6c2ca80cb490f7c024eaa06b0ae4aaa32c2ac919f1b0d",
+  "schema": 6,
+  "mapRevision": 10,
+  "layouts": [
+    {
+      "mallId": "orange",
+      "floor": 0,
+      "navSHA256": "7f5d6ff49f4da0871516d89c01050eafe7f1c2417215aae5d58193491abddbda",
+      "doorsSHA256": "cab0f8d62c631feadaaffa3e4be4a8593bb6c607964dc118f2f6601162beffdf"
+    },
+    {
+      "mallId": "citadel",
+      "floor": 0,
+      "navSHA256": "41cac16db13aa4e0ff91935722941f5626b7b29379449270900e023e8703999f",
+      "doorsSHA256": "571215d6d9e7463e7710af32d13ec23876ae033496edc7818bf2f647cb75ba5d"
+    },
+    {
+      "mallId": "spectrum",
+      "floor": 0,
+      "navSHA256": "05197b298505c8973fb49375aab99ff161d6f0002fa9e9d459269eafc4c88a0c",
+      "doorsSHA256": "c8d7290776a1399a643614769b7321cdb0d544cf03f57420d79b463a9b003cec"
+    },
+    {
+      "mallId": "brea",
+      "floor": 0,
+      "navSHA256": "548df43f817e2a0ab2d95ac196a2b8433fc32da3ef843ab395cbb1efe8a4646e",
+      "doorsSHA256": "3bfa67fa2c3969a0fa87e15ce0fffb37e3ab8bd93c09c2718ed8c76da0015a7b"
+    },
+    {
+      "mallId": "brea",
+      "floor": 1,
+      "navSHA256": "bbefde55ef42ae1cad8f9eaaf69f1b83e0d9b5ff7dc44964013a26dcb688ade6",
+      "doorsSHA256": "dd4e038b5a4f4eefd955f84d96e6c123ed3cf9d1c803177747e4d2d6bcfd6884"
+    },
+    {
+      "mallId": "delamo",
+      "floor": 0,
+      "navSHA256": "8457fdd8ff7076735102790a1d9fee80c53acf1fece95e80ab8626946cc6dd15",
+      "doorsSHA256": "5111612928f6b223157aab6cd96c2a5ee6d10114269b2c597200fb7461940165"
+    },
+    {
+      "mallId": "delamo",
+      "floor": 1,
+      "navSHA256": "5036df8be8c5e92b77ebb66225f4ccf53e54acaa90ab45c8bc932075b983f99d",
+      "doorsSHA256": "986dc1d2977b7d4919bed9da8da73e4f1c90d14d8633664acf1f7c6f8e9126e9"
+    },
+    {
+      "mallId": "delamo",
+      "floor": 2,
+      "navSHA256": "581e4a529ef92d00e6cbf4003b44629e252273fedd3f545c09250332f4a8328d",
+      "doorsSHA256": "903e42bd41b6ac74fc2f8abd448f4a09d4b4aeb6e552acfd9245dcb55fe89083"
+    },
+    {
+      "mallId": "desert",
+      "floor": 0,
+      "navSHA256": "2357a346046d803fd406237ad40a023a376d567711c5c294595306ba9c682196",
+      "doorsSHA256": "ee5db29e978593493a6a227bd212b203d5dfc8e3053ff251b2018e815103158a"
+    },
+    {
+      "mallId": "island",
+      "floor": 0,
+      "navSHA256": "2d65a130ccab12a885d17645f42d503eb471a5323dfd4b0180cf30cf7d7ad047",
+      "doorsSHA256": "9daacef326dbaf9da4c2e6903d55efbf207682e5d08c31fcf8faa793281fb5d6"
+    },
+    {
+      "mallId": "island",
+      "floor": 1,
+      "navSHA256": "89c76be17db712cd704b2a43fef4e10b6d32a41e77e5849fb0f0392949027cbd",
+      "doorsSHA256": "3d6271ba75c1880384ac7e1186a6468ea32932159bffab0b33bbb34d2f323e52"
+    },
+    {
+      "mallId": "island",
+      "floor": 2,
+      "navSHA256": "bff979ad6df10dd3b1713f5ef6d8f3e55c264cdf879dbb31a75a3012551ac2f2",
+      "doorsSHA256": "e53b48157da94c5e8e2028757fa0ca3bcdf510d0d4809000f61e7caa19cf08d1"
+    },
+    {
+      "mallId": "island",
+      "floor": 3,
+      "navSHA256": "1578f109e69b23ef6eacd9076d5b261ce85c88013cc161bd8c9eccfa49271551",
+      "doorsSHA256": "5a11be6c31f3a827b83efba05c69d3cea683e49323f90d16364cfd5ccb014300"
+    },
+    {
+      "mallId": "century",
+      "floor": 0,
+      "navSHA256": "2ae1781808faf0b9289a92c7b67fe8511590f5bfd5b617489b41f7742176dba9",
+      "doorsSHA256": "6da7d0c33c3186da1e6026b66ec1dab517e89f7372ceb52e9c2dee61f7cd7a1b"
+    },
+    {
+      "mallId": "century",
+      "floor": 1,
+      "navSHA256": "f1c3075056c5d4159aec0edac7ae78396d9445b025087ee680cc04bde5044bf6",
+      "doorsSHA256": "21aad02698b24101445fd8308ee528b82dfa452b8798fe084ceab1d7a115a326"
+    },
+    {
+      "mallId": "century",
+      "floor": 2,
+      "navSHA256": "d8af04fd503707e23831f199e0549917304ba7cf089f7ef3ea9d618eb9dc7585",
+      "doorsSHA256": "08ebd37cb5e014985e012c0c461a77320493df50a3fb6fcc77878f357b8e0f53"
+    },
+    {
+      "mallId": "beverly",
+      "floor": 0,
+      "navSHA256": "02e1f41f615d84be1f5bb997003cbad1a9de65ba4deb5e308a6a44f604cdf02e",
+      "doorsSHA256": "7073126f1330eb3af636b4cfc3656399af98450f4c08d6977c0077485f0332e2"
+    },
+    {
+      "mallId": "beverly",
+      "floor": 1,
+      "navSHA256": "467131ff399570789098e408a8535cc21d2f3301f73a28865a396c98e8416040",
+      "doorsSHA256": "9b45294ececee1ad7d5a7a554e03f8099c6149092cc7be2f1afab110b856c251"
+    },
+    {
+      "mallId": "beverly",
+      "floor": 2,
+      "navSHA256": "c0f83a8ddcd9afb61750036173fa4f67074a65db48aefda6e0ede7856639f64e",
+      "doorsSHA256": "96e2e4bf05480326b0a369864d23b5ea1e79190117179ac78d58020596348d0e"
+    },
+    {
+      "mallId": "beverly",
+      "floor": 3,
+      "navSHA256": "e55afdd9a834af17a9a180dfafd0770dbdebd2a12f9d45872059a170a93810a9",
+      "doorsSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "mallId": "southcoast",
+      "floor": 0,
+      "navSHA256": "6130006f6d3031a2248cf9ecaffe96e9eac91b19ed6fbae5ac2b799e0429de5e",
+      "doorsSHA256": "811b976fb2664620f0c1da2242232184c28561bf5a5ecc90bb09746d64fde33d"
+    },
+    {
+      "mallId": "southcoast",
+      "floor": 1,
+      "navSHA256": "77dd32949f55b8a4b7c7371e3361ddd35239d9ded36ed0715ff5d30069b65f41",
+      "doorsSHA256": "a91fe1529493e7c6c13ab89b02b1eb3b01523af1ca609b58054877a7c67f68fc"
+    },
+    {
+      "mallId": "southcoast",
+      "floor": 2,
+      "navSHA256": "fc42578a89c7e74031e49dfd86514386951ab34fafa9b76fc637408ab1387af4",
+      "doorsSHA256": "280591359ea856326f8b099b6a58c10288a9f641a50c9321815fe80c7d298691"
+    }
+  ],
+  "hashFormat": "SHA-256 of JSON.stringify(value). Door records are [shop ID, door] pairs in legacy-then-directory render order."
+}

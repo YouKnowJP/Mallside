@@ -26,6 +26,7 @@ for(const path of files){
  }
 }
 for(const p of Object.values(PRODUCT_PHOTOS))assert.ok(existsSync(resolve(site,p.path)),'Missing photographed product: '+p.path);
+assert.match(readFileSync(resolve(site,'index.html'),'utf8'),/href="promenade-ui-[a-f0-9]{12}\.css"/,'Missing content-hashed promenade stylesheet');
 const bundle=readFileSync(resolve(site,release.bundle),'utf8');
 assert.ok(bundle.startsWith('/*! Mallside original material: Copyright (c) 2026 Jackson Pham (YouKnowJP).'),'Missing generated-game ownership notice');
 assert.ok(!bundle.includes('sourceMappingURL='));

@@ -1,0 +1,485 @@
+{
+  "browser": "Chromium 156.0.8078.80",
+  "release": "64.0.0",
+  "bundle": "app-CXCLGZSP.js",
+  "scope": [
+    "touch walking targets, Stop and camera dock",
+    "focus return from bag",
+    "fullscreen canvas bounds",
+    "shop browse and explicit exit",
+    "inline dialog notifications",
+    "no document overflow or captured errors"
+  ],
+  "contexts": [
+    {
+      "width": 320,
+      "height": 900,
+      "graphics": "2d",
+      "initial": {
+        "overflow": false,
+        "width": 302,
+        "height": 680,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 320,
+        "height": 802,
+        "bottom": 900,
+        "iw": 320,
+        "ih": 900
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 731.3046875,
+        "bottom": 775.5,
+        "hit": true,
+        "vh": 900
+      }
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "graphics": "2d",
+      "initial": {
+        "overflow": false,
+        "width": 372,
+        "height": 680,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 390,
+        "height": 802,
+        "bottom": 900,
+        "iw": 390,
+        "ih": 900
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 729.3046875,
+        "bottom": 773.5,
+        "hit": true,
+        "vh": 900
+      }
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "graphics": "2d",
+      "initial": {
+        "overflow": false,
+        "width": 750,
+        "height": 675,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 768,
+        "height": 791,
+        "bottom": 900,
+        "iw": 768,
+        "ih": 900
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 756.8046875,
+        "bottom": 801,
+        "hit": true,
+        "vh": 900
+      }
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "graphics": "2d",
+      "initial": {
+        "overflow": false,
+        "width": 826,
+        "height": 450,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 844,
+        "height": 337,
+        "bottom": 390,
+        "iw": 844,
+        "ih": 390
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 246.8046875,
+        "bottom": 291,
+        "hit": true,
+        "vh": 390
+      }
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "graphics": "2d",
+      "initial": {
+        "overflow": false,
+        "width": 302,
+        "height": 418,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 320,
+        "height": 470,
+        "bottom": 568,
+        "iw": 320,
+        "ih": 568
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 399.3046875,
+        "bottom": 443.5,
+        "hit": true,
+        "vh": 568
+      }
+    },
+    {
+      "width": 320,
+      "height": 900,
+      "graphics": "3d",
+      "initial": {
+        "overflow": false,
+        "width": 302,
+        "height": 680,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 320,
+        "height": 802,
+        "bottom": 900,
+        "iw": 320,
+        "ih": 900
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 731.3046875,
+        "bottom": 775.5,
+        "hit": true,
+        "vh": 900
+      }
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "graphics": "3d",
+      "initial": {
+        "overflow": false,
+        "width": 372,
+        "height": 680,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 390,
+        "height": 802,
+        "bottom": 900,
+        "iw": 390,
+        "ih": 900
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 729.3046875,
+        "bottom": 773.5,
+        "hit": true,
+        "vh": 900
+      }
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "graphics": "3d",
+      "initial": {
+        "overflow": false,
+        "width": 750,
+        "height": 675,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 768,
+        "height": 791,
+        "bottom": 900,
+        "iw": 768,
+        "ih": 900
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 756.8046875,
+        "bottom": 801,
+        "hit": true,
+        "vh": 900
+      }
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "graphics": "3d",
+      "initial": {
+        "overflow": false,
+        "width": 826,
+        "height": 450,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 844,
+        "height": 337,
+        "bottom": 390,
+        "iw": 844,
+        "ih": 390
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 246.8046875,
+        "bottom": 291,
+        "hit": true,
+        "vh": 390
+      }
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "graphics": "3d",
+      "initial": {
+        "overflow": false,
+        "width": 302,
+        "height": 418,
+        "guide": true,
+        "targets": [
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ]
+      },
+      "expanded": {
+        "width": 320,
+        "height": 470,
+        "bottom": 568,
+        "iw": 320,
+        "ih": 568
+      },
+      "exit": {
+        "h": 44.1953125,
+        "top": 399.3046875,
+        "bottom": 443.5,
+        "hit": true,
+        "vh": 568
+      }
+    }
+  ]
+}

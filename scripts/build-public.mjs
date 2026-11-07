@@ -12,7 +12,7 @@ const entry=Object.entries(result.metafile.outputs).find(([,v])=>v.entryPoint===
 if(!entry)throw Error('Missing browser bundle');
 const js=basename(entry[0]);
 const cssNames={};
-for(const name of ['styles.css','life-styles.css','legal.css']){
+for(const name of ['styles.css','life-styles.css','promenade-ui.css','legal.css']){
  const {code}=await transform(readFileSync(resolve(dist,name),'utf8'),{loader:'css',minify:true,legalComments:'eof'});
  const hash=createHash('sha256').update(code).digest('hex').slice(0,12),filename=name.replace('.css',`-${hash}.css`);
  writeFileSync(resolve(output,filename),code);cssNames[name]=filename;
@@ -20,7 +20,7 @@ for(const name of ['styles.css','life-styles.css','legal.css']){
 for(const name of ['index.html','legal.html']){
  let html=readFileSync(resolve(dist,name),'utf8');
  html=html.replace(/app\.js\?v=[^"']+/g,js);
- html=html.replace(/href=(["'])(styles\.css|life-styles\.css|legal\.css)(?:\?[^"']*)?\1/g,(_,quote,name)=>'href='+quote+cssNames[name]+quote);
+ html=html.replace(/href=(["'])(styles\.css|life-styles\.css|promenade-ui\.css|legal\.css)(?:\?[^"']*)?\1/g,(_,quote,name)=>'href='+quote+cssNames[name]+quote);
  writeFileSync(resolve(output,name),html);
 }
 for(const name of ['icon.svg','LICENSE.txt','PERMISSIONS.txt','THIRD_PARTY_NOTICES.txt','PRIVACY.txt','.nojekyll'])cpSync(resolve(dist,name),resolve(output,name));

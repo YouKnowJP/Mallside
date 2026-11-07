@@ -2,6 +2,14 @@
 
 Updated 6 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v64
+
+- Give all ten centers distinct ground finishes, court inlays, more natural foliage and grounded fixtures; keep the same 23 walkable floors.
+- Present existing products in recessed displays and refine the shop floor, trim and casework while retaining current interactions.
+- Make room for the play scene and simplify the HUD. Keep direct access to browsing, exit, map, bag and camera controls.
+- Preserve all 8,863 complete catalog records, 1,598 shop identities, 23 navigation floors, save schema 6 and map revision 10.
+- [Gameplay](docs/GAMEPLAY-v64.md) · [visual research](docs/research-v64/visual-direction.json) · [QA](docs/qa-v64.md).
+
 ## Completed in v63
 
 - Stock the unfinished South Coast Plaza RIMOWA shop with one exact earlier-generation 92553004 Cabin reference and a licensed natural photograph. Use the dated 2 May 2026 US price and exclude current 926 pricing/stock claims.

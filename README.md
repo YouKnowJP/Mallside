@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v64 — a more inviting promenade
+
+New mall finishes, leafy planting, recessed windows and richer shop interiors give each center a clearer look. A wider play view, simpler guide and compact controls make it easier to walk, browse, check the bag and return to the mall. Existing products, routes and saves remain compatible. See [gameplay](docs/GAMEPLAY-v64.md), [visual references](docs/research-v64/visual-direction.json) and [QA](docs/qa-v64.md).
+
 ## v63 — travel gallery and picture-house foyers
 
 The unfinished RIMOWA boutique gains a clearly historical Original Cabin reference, licensed photograph, original rolling-case geometry, free dimension notes and smooth two-hand inspection. All ten cinemas gain finer foyers and original illustrated programmes, clear seat selection and a fixed finish/payment bar. A seated programme-handling animation and entrance-based cameras improve the screening view. Tablet guides stay in one readable column, and nonwearable pickup text now points to inspection and checkout. Earlier products and saves remain compatible. See [gameplay](docs/GAMEPLAY-v63.md), [sources](docs/research-v63/catalog-evidence.json), [QA](docs/qa-v63.md) and the [roadmap](ROADMAP.md).

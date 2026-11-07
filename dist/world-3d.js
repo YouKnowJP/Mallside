@@ -1,3 +1,4 @@
+import {buildGrounding} from './promenade-materials.js?v=64.0.0';
 import {createLuggage,updateLuggage} from './luggage-model.js?v=63.0.0';
 import {luggageHold} from './luggage-tools.js?v=63.0.0';
 import {buildCinemaDetails,updateCinemaDetails} from './cinema-details.js?v=63.0.0';
@@ -51,39 +52,39 @@ import {hasCollectionDesk} from './collection-guide.js?v=63.0.0';
 import {updateReadingDetails} from './reading-details.js?v=42.0.0';
 import {buildPlanningLounge,buildCollectionStudio} from './planning-lounge.js?v=63.0.0';
 import {smoothSeatBlend,ambientStrideSpeed,crowdStep,benchSeatTarget} from './ambient-motion.js?v=36.0.0';
-import {buildCourtLife,updateCourtLife} from './court-life.js?v=63.0.0';
+import {buildCourtLife,updateCourtLife} from './court-life.js?v=64.0.0';
 import {installLighting,beveledBox,cameraComposition,buildSceneAccents,updateSceneAccents,surfaceTexture} from './scene-finish.js?v=57.0.0';
 import {canTry} from './engine.js?v=63.0.0';
 import {patchAmbientLighting} from './render-compat.js?v=31.0.0';
-import {daylightAt,adultAppearance} from './mall-atmosphere.js?v=33.0.0';
+import {daylightAt,adultAppearance} from './mall-atmosphere.js?v=64.0.0';
 import {createShopper,applyCharacterPose} from './character-rig.js?v=63.0.0';
 import {updateAttachmentFrames,updateOutfitPose,releasePersonResources,trackMerchandise} from './merchandise-fit.js?v=63.0.0';
-import {buildWindowDisplay,buildSignatureInterior} from './retail-scenes.js?v=63.0.0';
+import {buildWindowDisplay,buildSignatureInterior} from './retail-scenes.js?v=64.0.0';
 import {buildStoreFitout} from './store-fitout.js?v=63.0.0';
-import {buildStoreLife,drawStoreLife} from './store-life.js?v=63.0.0';
+import {buildStoreLife,drawStoreLife} from './store-life.js?v=64.0.0';
 import {productAppearance} from './product-appearance.js?v=63.0.0';
 import {physicalProduct,placeMerchandise} from './merchandise-3d.js?v=63.0.0';
 import {dressPerson,syncCarriedMerchandise,poseCarriedMerchandise,stowHandhelds} from './merchandise-carry.js?v=63.0.0';
-import {brandSign} from './mall-environment.js?v=63.0.0';
+import {brandSign} from './mall-environment.js?v=64.0.0';
 import {shopperPlan,fixtureStop} from './mall-neighborhood.js?v=59.0.0';
-import {buildMallGround,buildStorefronts,buildPublicRealm,buildAnchor,buildRetailConnections,buildMallEntrance} from './mall-environment.js?v=63.0.0';
+import {buildMallGround,buildStorefronts,buildPublicRealm,buildAnchor,buildRetailConnections,buildMallEntrance,buildLandscapeTree} from './mall-environment.js?v=64.0.0';
 import {themeFor,facadeFrame,cameraCutaway,overviewFraming} from './mall-design.js?v=35.0.0';
 import {buildDiningGallery} from './dining-interior.js?v=63.0.0';
-import {buildInteriorArchitecture,buildProductFixture,buildCollectionGallery} from './interior-art.js?v=57.0.0';
+import {buildInteriorArchitecture,buildProductFixture,buildCollectionGallery} from './interior-art.js?v=64.0.0';
 import {onSurface} from './free-navigation.js?v=25.0.0';
 import {shopProfile,departmentOf,displaySelection,displayPoint} from './shop-interiors.js?v=63.0.0';
 import * as T from './vendor/three.module.js';
-import {MallWorld} from './world.js?v=63.0.0';
+import {MallWorld} from './world.js?v=64.0.0';
 import {spatialLayout,interiorLayout} from './spatial-layout.js?v=63.0.0';
 import {walkable,closestFloor,freeRoute,freeMove,clearWalk,personStop} from './free-navigation.js?v=25.0.0';
 import {isPlanningStore,isServiceStore,serviceMenu,STORES,PRODUCTS,CLOSE,mallOf,equippedLook,slotForProduct,money,price,savedBags} from './engine.js?v=63.0.0';
 import {PRODUCT_PHOTOS} from './product-photos.js?v=63.0.0';
 import {windowSelection,LOCALS} from './mall-life.js?v=26.0.0';
 import {stepToward,facingFor,turnToward,yieldToPlayer,cameraBlend} from './motion.js?v=34.0.0';
-import {VENUE_LABELS} from './mall-art.js?v=63.0.0';
+import {VENUE_LABELS} from './mall-art.js?v=64.0.0';
 
 patchAmbientLighting(T.ShaderChunk);
-export const ANIMATION_REVISION='63';
+export const ANIMATION_REVISION='64';
 export class MallWorld3D extends MallWorld{
  constructor(canvas,state,onEnter,onMove){
   const renderer=new T.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'low-power'});
@@ -112,11 +113,10 @@ export class MallWorld3D extends MallWorld{
   const m=new T.MeshBasicMaterial({map:tx,side:T.DoubleSide});this.resources.add(m);const board=this.mesh(new T.PlaneGeometry(width,height),m,parent);board.position.set(x,y,z+1.2);board.castShadow=false;
   const fit=()=>{const image=tx.image;if(!image?.width)return;const k=Math.min(width/image.width,height/image.height);board.scale.set(image.width*k/width,image.height*k/height,1);};if(tx.image?.width)fit();else{const previous=tx.onUpdate;tx.onUpdate=()=>{previous?.();fit();};}return plate;
  }
- initScene(){this.cinemaDisplay=null;this.parcelDesk=null;this.pavilionDesk=null;for(const key of ['luggageStudio','cinemaRevision','cinemaFilm','cinemaScene','cinemaCompleted','cinemaLift','cinemaTicket','diveWatchStudio','pavilionRevision','pavilionEvent','pavilionDay','pavilionStamped','phoneStudio','coffeeCounterRevision','consumptionReach','cafeProp','recordingStudio','parcelDeskRevision','checkedParcelCount','studioGuideStage','studioGuideX','studioGuideY','studioBlend','benchPlanningRevision','associateStage','associateX','associateY','physicalPriceCards','retailDetailRevision','materialStudy','materialStudyGroup','planningDetailRevision','mosaicTurns','mosaicYaw','mosaicDetailRevision','mosaicCourtRevision','mosaicNotebook','ceramicStudio','ceramicTurn','gardenDetailRevision','gardenObservation','tablewareStudio','waterDetailRevision','waterReadyIn','ceramicReach','fragranceStudio','restLoungeRevision','brushStudio','directoryKioskRevision'])delete this.canvas.dataset[key];this.finishTextures=new Map();this.shopSurfaces=new Map();this.starterTrouserGeometries=null;this.floatingLabels=[];this.anatomyEnvelope=null;this.anatomyGeometries=null;this.anatomyTextures=new Map();this.humanSharedResources=new Set();this.cutawayAssets=new Map();this.cutawayDummy=new T.Object3D();this.mallRoofTexture=null;this.mallRoofRelief=null;this.scene=new T.Scene();this.scene.background=new T.Color('#d7e5e1');this.scene.fog=new T.Fog('#d7e5e1',1100,2300);this.sceneFog=this.scene.fog;this.ambientLight=new T.HemisphereLight('#fff8e2','#9eafa5',1.4);this.scene.add(this.ambientLight);this.daylightMinute=null;this.windowMaterials=new Set();const sun=new T.DirectionalLight('#fff3d5',2.2);sun.position.set(250,800,450);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);Object.assign(sun.shadow.camera,{left:-620,right:620,top:620,bottom:-620,near:100,far:1900});sun.shadow.bias=-.001;this.sun=sun;this.scene.add(sun,sun.target);this.entryDoors=[];this.courtVisitors=[];this.clickables=[];this.windowDisplays=new Map();this.waterFeatures=[];this.carousel=null;this.steps=[];this.npcs=[];this.roofParts=[];this.escalatorLabel=null;this.benchLabel=null;this.nearLabels=[];this.localActors=[];document.querySelector('#play-assistance')?.remove();this.storeStaff=[];this.associateRequest=null;this.associateReturnTrip=null;this.studioGuide=null;this.storeCustomers=null;this.fittingCurtains=[];this.cinemaDisplay=null;this.studioStudy=null;this.studioPreview=null;this.mosaicStudy=null;this.commonsPreview=null;this.merchandiseCache=new Map();this.merchandiseRecords=[];this.carrySignature=null;this.carryVisual=null;this.previewingMerchandise=false;installLighting(this,!!this.inside||this.layout.campus?.outdoor===false);}
- tree(x,z,palm=false){this.cyl(x,7,z,17,14,'#e4d3ba');this.cyl(x,32,z,3,50,'#a28665');if(palm){for(let i=0;i<7;i++){const leaf=this.ball(x+Math.cos(i)*12,61,z+Math.sin(i)*12,14,'#759a7d');leaf.scale.set(1.7,.25,.7);leaf.rotation.y=-i;}}else {this.ball(x,60,z,23,'#8eae86');this.ball(x-12,53,z,13,'#abc297');}}
+ initScene(){this.cinemaDisplay=null;this.parcelDesk=null;this.pavilionDesk=null;for(const key of ['promenadeRevision','pavingStyle','groundedFixtures','windowDisplayRevision','luggageStudio','cinemaRevision','cinemaFilm','cinemaScene','cinemaCompleted','cinemaLift','cinemaTicket','diveWatchStudio','pavilionRevision','pavilionEvent','pavilionDay','pavilionStamped','phoneStudio','coffeeCounterRevision','consumptionReach','cafeProp','recordingStudio','parcelDeskRevision','checkedParcelCount','studioGuideStage','studioGuideX','studioGuideY','studioBlend','benchPlanningRevision','associateStage','associateX','associateY','physicalPriceCards','retailDetailRevision','materialStudy','materialStudyGroup','planningDetailRevision','mosaicTurns','mosaicYaw','mosaicDetailRevision','mosaicCourtRevision','mosaicNotebook','ceramicStudio','ceramicTurn','gardenDetailRevision','gardenObservation','tablewareStudio','waterDetailRevision','waterReadyIn','ceramicReach','fragranceStudio','restLoungeRevision','brushStudio','directoryKioskRevision'])delete this.canvas.dataset[key];this.finishTextures=new Map();this.shopSurfaces=new Map();this.starterTrouserGeometries=null;this.floatingLabels=[];this.anatomyEnvelope=null;this.anatomyGeometries=null;this.anatomyTextures=new Map();this.humanSharedResources=new Set();this.cutawayAssets=new Map();this.cutawayDummy=new T.Object3D();this.mallRoofTexture=null;this.mallRoofRelief=null;this.scene=new T.Scene();this.scene.background=new T.Color('#d7e5e1');this.scene.fog=new T.Fog('#d7e5e1',1100,2300);this.sceneFog=this.scene.fog;this.ambientLight=new T.HemisphereLight('#fff8e2','#9eafa5',1.4);this.scene.add(this.ambientLight);this.daylightMinute=null;this.windowMaterials=new Set();const sun=new T.DirectionalLight('#fff3d5',2.2);sun.position.set(250,800,450);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);Object.assign(sun.shadow.camera,{left:-620,right:620,top:620,bottom:-620,near:100,far:1900});sun.shadow.bias=-.001;this.sun=sun;this.scene.add(sun,sun.target);this.entryDoors=[];this.courtVisitors=[];this.clickables=[];this.windowDisplays=new Map();this.waterFeatures=[];this.carousel=null;this.steps=[];this.npcs=[];this.roofParts=[];this.escalatorLabel=null;this.benchLabel=null;this.nearLabels=[];this.localActors=[];document.querySelector('#play-assistance')?.remove();this.storeStaff=[];this.associateRequest=null;this.associateReturnTrip=null;this.studioGuide=null;this.storeCustomers=null;this.fittingCurtains=[];this.cinemaDisplay=null;this.studioStudy=null;this.studioPreview=null;this.mosaicStudy=null;this.commonsPreview=null;this.merchandiseCache=new Map();this.merchandiseRecords=[];this.carrySignature=null;this.carryVisual=null;this.previewingMerchandise=false;installLighting(this,!!this.inside||this.layout.campus?.outdoor===false);}
+ tree(x,z,palm=false){buildLandscapeTree(this,x,z,themeFor(this.state.mallId),palm);}
  bench(x,z,parent=this.scene){this.box(x,12,z,88,6,24,'#b38761',parent);this.box(x,27,z-10,88,23,4,'#c29a74',parent);for(const dx of [-30,30])this.box(x+dx,6,z,5,12,20,'#536c67',parent);}
  person(color='#e1a36a',appearance={},equipment={}){return createShopper(this,color,appearance,equipment,dressPerson);}
- shop(r){buildStorefronts(this,[r],themeFor(this.layout.family));this.addWindowDisplay(r);}
  addWindowDisplay(r){if(this.windowDisplays.has(r.id)||this.windowDisplays.size>=64)return;this.windowDisplays.set(r.id,buildWindowDisplay(this,r,PRODUCTS,PRODUCT_PHOTOS));}
 
  venue(v){const x=v.x+v.width/2,z=v.y+v.height/2;let obj;
@@ -138,8 +138,8 @@ export class MallWorld3D extends MallWorld{
  buildMall(){this.initScene();const l=this.layout,c=l.campus,mall=mallOf(this.state),theme=themeFor(mall);this.camera.far=10000;this.camera.updateProjectionMatrix();buildMallGround(this,l);
   for(const n of c.courts){const label=this.label(n.label,n.x,7,n.y,110,theme.accent,'#f4edde');this.nearLabels.push({object:label,x:n.x,z:n.y,radius:0,zone:true});}
   if(mall.id==='southcoast'){this.box(1300,-1,1250,160,3,2300,'#84928d');for(let z=200;z<2300;z+=110)this.box(1300,1,z,3,1,45,'#e5d6ac');this.label('BEAR STREET',1300,6,1750,150);if((this.state.floor||0)===1){const a=c.nodes[2],b=c.nodes[4],dx=b.x-a.x,dz=b.y-a.y,len=Math.hypot(dx,dz),bridge=this.box((a.x+b.x)/2,5,(a.y+b.y)/2,180,10,len,'#d8c49b');bridge.rotation.y=Math.atan2(dx,dz);for(const side of [-1,1]){const rail=this.box((a.x+b.x)/2+side*92,27,(a.y+b.y)/2,4,4,len,'#6c8c77');rail.rotation.y=Math.atan2(dx,dz);}this.label('Bridge of Gardens · Level 2',(a.x+b.x)/2,85,(a.y+b.y)/2,240);}}
-  buildRetailConnections(this,l,theme);this.referenceBuildings(l.units);l.rects.forEach(r=>this.shop(r));l.venues.forEach(v=>this.venue(v));
-  l.anchors.forEach(a=>buildAnchor(this,a,theme));buildPublicRealm(this,l,theme);buildMallEntrance(this,l,theme);
+  buildRetailConnections(this,l,theme);this.referenceBuildings(l.units);buildStorefronts(this,l.rects,theme);l.rects.forEach(r=>this.addWindowDisplay(r));l.venues.forEach(v=>this.venue(v));
+  l.anchors.forEach(a=>buildAnchor(this,a,theme));buildPublicRealm(this,l,theme);buildMallEntrance(this,l,theme);buildGrounding(this,l);
   l.planters.forEach((p,i)=>{const x=p.x+p.width/2,z=p.y+p.height/2;if(!i){this.cyl(x,8,z,25,16,'#b2c6c1');this.cyl(x,17,z,22,2,'#87b7c3');this.fountain={x,z};}else this.tree(x,z,c.outdoor);});
   if(mall.id==='spectrum'){const n=c.nodes.find(n=>/SunWheel/.test(n.label))||c.nodes[3];this.ferris(n.x+100,n.y-100);}
   this.steps=[];this.escalatorLabels=[];for(const r of l.escalators)this.escalator(r);
@@ -206,7 +206,7 @@ export class MallWorld3D extends MallWorld{
   const railX=rail.x+rail.width/2,railZ=rail.y+20;
   this.tag(this.label(isServiceStore(st)?'Services & my bookings':st.count?'Full collection · '+st.products.length+' real '+(st.products.length===1?'item':'items'):'Shop guide · Collection in research',railX,85,railZ,[42,43,44,45,46,47,48,49,50,51,53,54,55,56,60,61,62,63].includes(st.collectionEdition)?120:180),'rack:'+id,{x:railX,y:225});
   const associate=this.person(st.color);associate.position.set(this.layout.services.associate.x,0,this.layout.services.associate.y);this.tag(associate,'associate:'+id,this.layout.services.associate);const associateLabel=this.label(st.npc+' · Shop associate',this.layout.services.associate.x,66,this.layout.services.associate.y,132);this.tag(associateLabel,'associate:'+id,this.layout.services.associate);this.storeStaff.push({mesh:associate,label:associateLabel,kind:'associate',home:{...this.layout.services.associate}});this.interiorStops.push({point:this.layout.services.associate,id:'associate:'+id,name:st.npc+' · Associate',label:'Advice & store services'});
-  if(!st.count&&!isServiceStore(st)){if(st.businessKind==='food')buildDiningGallery(this,st,profile,this.layout);else buildPlanningLounge(this,st,profile,this.layout);}else {buildStoreFitout(this,st,profile,this.layout,selection.items);if(st.count)buildRetailDetails(this,st,profile,this.layout,selection.items);}if(hasCollectionDesk(st))buildCollectionStudio(this,st,profile);buildStoreLife(this,st);
+  if(!st.count&&!isServiceStore(st)){if(st.businessKind==='food')buildDiningGallery(this,st,profile,this.layout);else buildPlanningLounge(this,st,profile,this.layout);}else {buildStoreFitout(this,st,profile,this.layout,selection.items);if(st.count)buildRetailDetails(this,st,profile,this.layout,selection.items);}if(hasCollectionDesk(st))buildCollectionStudio(this,st,profile);buildStoreLife(this,st);buildGrounding(this,this.layout,true);
   const exitSprite=this.label('EXIT ↓ MALL',600,.3,765,92),exitSign=this.mesh(new T.PlaneGeometry(92,20),new T.MeshBasicMaterial({map:exitSprite.material.map,transparent:true,depthWrite:false}));this.resources.add(exitSign.material);exitSign.position.copy(exitSprite.position);exitSign.rotation.x=-Math.PI/2;exitSign.castShadow=false;exitSprite.removeFromParent();this.player=this.person(this.state.appearance.shirt,this.state.appearance,equippedLook(this.state));this.playerLabel=this.label(this.state.playerName,600,60,730,74);this.overview=false;this.zoom=1;this.angle=0;buildSceneAccents(this);this.lastNearby=null;this.setCamera(true);this.publishPosition();
   if(!rebuilding){this.flashStoreTransition(st.name);this.onEnter('interior:'+id);}if(this.inside!==id)return;this.hint('Inside '+st.name+(isServiceStore(st)?' · Services and booking management':st.count?' · Browse the displays or visit the counters':' · Explore the interior · Collection in research'));this.renderInteriorControls(st,profile,selection);this.onSceneChange?.();
  }

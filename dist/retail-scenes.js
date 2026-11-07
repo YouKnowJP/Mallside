@@ -2,18 +2,24 @@ import {retailIdentity,windowAssortment} from './retail-identity.js?v=63.0.0';
 import {facadeFrame} from './mall-design.js?v=35.0.0';
 import * as T from './vendor/three.module.js';
 
+function windowLabel(w,p){
+ if(typeof document==='undefined')return null;const c=document.createElement('canvas');c.width=512;c.height=128;const g=c.getContext('2d');g.fillStyle='#f4f0e7';g.fillRect(0,0,512,128);g.fillStyle='#30483e';g.font='600 28px Arial';g.textAlign='center';g.fillText(p.brand||p.name,256,48,460);g.font='20px Arial';g.fillStyle='#6c715f';g.fillText('EXPLORE THE COLLECTION',256,91,460);const t=new T.CanvasTexture(c);t.colorSpace=T.SRGBColorSpace;w.resources.add(t);return t;
+}
 export function buildWindowDisplay(w,store,products,photos){
  const identity=retailIdentity(store),style=identity.design,f=facadeFrame(store),group=new T.Group();group.position.set(f.x,0,f.z);group.rotation.y=f.turn;w.scene.add(group);w.cutawayAssets.get(store.id)?.objects.push(group);
- const items=windowAssortment(products,store.id,w.state.day,photos),width=Math.min(27,f.width*.28);
- for(const [i,p]of items.entries()){
-  const x=(i?1:-1)*f.width*.29,z=f.depth/2-9,wearable=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type),jewelry=['ring','bracelet','watch','necklace','earrings'].includes(p.type);
-  w.box(x,5,z,width,10,14,style.fixture,group);w.box(x,10.5,z,width+1,1,15,style.trim,group);
-  if(wearable){const mannequin=new T.Group();mannequin.position.set(x-6,11,z);group.add(mannequin);w.cyl(0,17,0,1,34,'#b7afa0',mannequin);w.box(0,22,0,9,16,5,p.color||style.accent,mannequin);w.ball(0,34,0,4,'#ddd9cd',mannequin);for(const dx of [-3,3])w.box(dx,8,0,3,16,4,'#ded9cb',mannequin);w.photo(p,x+6,30,z+3,width*.58,27,group);}
-  else{if(jewelry)w.box(x,14,z,18,5,12,style.accent,group);const display=w.photo(p,x,p.plushProfile||p.ceramicProfile||p.fragranceProfile?20.5:32,z+3,width-2,p.plushProfile||p.ceramicProfile||p.fragranceProfile?19:34,group);if(p.plushProfile||p.ceramicProfile||p.fragranceProfile)display.position.y=11;}
-  const glass=w.box(x,33,z+5,width+2,43,1,w.mat('#c7e2dc',{transparent:true,opacity:.075,depthWrite:false}),group);glass.castShadow=false;
-  w.box(x,57,z+3,width,2,4,'#ead8b1',group);
+ const items=windowAssortment(products,store.id,w.state.day,photos),width=Math.min(27,f.width*.28),metal=w.mat(style.trim,{metalness:.48,roughness:.34}),stone=w.mat(style.fixture,{roughness:.72});
+ for(const[i,p]of items.entries()){
+  const x=(i?1:-1)*f.width*.29,z=f.depth/2-10,wearable=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type);
+  // A real own-store reference is supported by original display furniture. No placeholder stock.
+  w.box(x,5,z,width,8,16,stone,group);w.box(x,10,z,width+1,2,17,metal,group);w.box(x,31,z-7,width+1,40,1,style.wall,group);
+  if(wearable){w.cyl(x,31,z-4,.65,40,metal,group);w.box(x,51,z-3,13,1,5,metal,group);}
+  const display=new T.Group();group.add(display);w.photo(p,x,wearable?35:29,z+1,width-4,wearable?34:31,display);
+  const bounds=new T.Box3().setFromObject(display);if(!bounds.isEmpty())display.position.y+=wearable?52-bounds.max.y:11.2-bounds.min.y;
+  const card=w.mesh(new T.PlaneGeometry(width*.83,width*.21),w.mat('#ffffff',{map:windowLabel(w,p),roughness:.9}),group);card.position.set(x,7,z+8.15);card.castShadow=false;
+  const glass=w.box(x,34,z+8.5,width+2,47,.35,w.mat('#d9e5e0',{transparent:true,opacity:.07,depthWrite:false,roughness:.12,envMapIntensity:1.2}),group);glass.castShadow=false;
+  w.box(x,58,z+1,width+1,1.4,7,w.mat('#e7d4af',{emissive:'#d7bc82',emissiveIntensity:.14}),group);
  }
- group.userData.models=items.map(p=>p.id);group.userData.store=store.id;return group;
+ group.userData.models=items.map(p=>p.id);group.userData.store=store.id;group.userData.windowRevision='64';w.canvas&&(w.canvas.dataset.windowDisplayRevision='64');return group;
 }
 
 export function buildSignatureInterior(w,profile,layout,products){

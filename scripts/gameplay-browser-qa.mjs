@@ -561,6 +561,37 @@ try{
  await check('v63 compact reduced and lighter cinema funding gate, keyboard posters, luggage guide and explicit exit',async()=>{
   await resize(390,844);for(const graphics of ['3d','2d']){const s=fixture(null,0,graphics),l=spatialLayout(E.mallOf(s),0,E.STORES);s.cash=0;s.mapPosition={...l.venues.find(v=>v.id==='cinema').door,mallId:s.mallId,floor:0};await seed(s);await click('[data-action=resume-game]');await click('.play-menu [data-action=center-map]');await click('.map-public-stops [data-id=cinema]');assert.equal(await js("return document.querySelector('[data-action=enjoy-activity]').disabled"),true);await js("document.querySelector('.cinema-poster-archive>summary').focus()");await key('\uE007');assert.equal(await js("return document.querySelector('.cinema-poster-archive').open"),true);assert.equal(await js('return document.documentElement.scrollWidth>innerWidth'),false);assert.equal(await js("const b=document.querySelector('[data-action=enjoy-activity]'),r=b.getBoundingClientRect();return r.height>=44&&r.top>=0&&r.bottom<=innerHeight"),true);assert.equal((await stored()).cash,0);await screenshot('v63-'+graphics+'-compact-cinema');const st=E.STORES.find(st=>st.collectionEdition===63),c=fixture(null,0,graphics);c.mallId=st.mallId;c.floor=E.storeFloor(E.mallOf(c),st.id);const map=spatialLayout(E.mallOf(c),c.floor,E.STORES);c.mapPosition={...[...map.rects,...map.units].find(u=>u.id===st.id).door,mallId:c.mallId,floor:c.floor};await seed(c);await click('[data-action=resume-game]');await enterCollection(st,graphics);if(graphics==='3d')await click('#play-browse');await click('[data-action=collection-open]');await click('[data-action=luggage-notes]');assert.equal(await js('return document.documentElement.scrollWidth>innerWidth'),false);assert.match(await js("return document.querySelector('.luggage-notebook').textContent"),/earlier 92553004/);assert.equal((await stored()).cash,c.cash);await screenshot('v63-'+graphics+'-compact-luggage');await click('.store-exit-strip [data-action=leave-shop]');assert.equal(await exists('.modal-overlay'),false);}await resize(1400,1000);
  });
+ await check('v64 promenade finishes, camera dock and reachable storefronts',async()=>{
+  for(const mallId of ['orange','brea']){
+   const s=fixture(null,0,'3d');s.mallId=mallId;s.floor=0;const l=spatialLayout(E.mallOf(s),0,E.STORES);
+   s.mapPosition={...l.spawn,mallId,floor:0};await seed(s);await click('[data-action=resume-game]');
+   await wait(()=>js("const d=document.querySelector('#mall-canvas').dataset;return d.promenadeRevision==='64'&&d.windowDisplayRevision==='64'&&Number(d.drawCalls)>0"),'finished scene and window art');
+   const scene=await js("const d=document.querySelector('#mall-canvas').dataset;return [d.pavingStyle,+d.groundedFixtures,document.querySelector('#play-location').textContent]");
+   assert.equal(scene[0],mallId==='orange'?'pavers':'terrazzo');assert.ok(scene[1]>100);assert.equal(scene[2],E.mallOf(s).name);
+   assert.equal(await existsVisible('#play-browse'),false);assert.equal(await existsVisible('#play-exit'),false);
+   await click('.map-tools>summary');await click('.map-tools [data-action=camera-right]');await click('.map-tools [data-action=map-zoom-in]');await click('.map-tools>summary');
+   assert.equal(await js("return document.querySelector('.map-tools').open"),false);
+   await click('.guide-more>summary');assert.ok(await existsVisible('.play-detours button'));
+   await click('.guide-more>summary');await screenshot('v64-'+mallId+'-promenade');
+   await click('.play-menu [data-action=center-map]');assert.ok(await exists('.campus-plan [data-action=center-unit]'));await key('\uE00C');
+  }
+ });
+ await check('v64 compact scene HUD, map and bag focus in both graphics modes',async()=>{
+  await resize(390,844);
+  for(const graphics of ['3d','2d']){
+   await seed(fixture(null,0,graphics));await click('[data-action=resume-game]');
+   assert.equal(await js("return document.documentElement.scrollWidth>innerWidth"),false);
+   await click('.map-tools>summary');await click('.map-tools [data-action=map-zoom-out]');await click('.map-tools>summary');
+   await click('[data-action=stop-walking]');await click('#play-bag');
+   assert.ok(await exists('#modal-root .close-button'));await key('\uE00C');
+   assert.equal(await js("return document.activeElement.id"),'play-bag');
+   await click('#play-fullscreen');await wait(()=>js("return document.body.classList.contains('expanded-play')"),'compact expanded play');
+   assert.ok(await js("const r=document.querySelector('#mall-canvas').getBoundingClientRect();return r.width>=innerWidth-2&&r.height>=innerHeight*.55&&r.bottom<=innerHeight+2"));
+   await screenshot('v64-'+graphics+'-compact');await click('#play-fullscreen');
+   await wait(()=>js("return !document.body.classList.contains('expanded-play')"),'compact fullscreen exits');
+  }
+  await resize(1400,1000);
+ });
  await check('no captured game exceptions or unexpected console errors',async()=>{assert.deepEqual(errors,[]);});
  writeFileSync(`build/qa/${browser}-gameplay-report.json`,JSON.stringify({browser,capabilities,release,passed:results.length,results,viewports,errors,resourceWarnings,inputRetries},null,2)+'\n');console.log(JSON.stringify({browser,passed:results.length,errors,resourceWarnings:resourceWarnings.length,inputRetries:inputRetries.length}));
 }catch(error){console.error(error.stack);console.error(JSON.stringify({visibility:await js('return {visibility:document.visibilityState,focus:document.hasFocus(),canvas:document.querySelector("#mall-canvas")?.dataset}').catch(()=>null),saved:await stored().then(s=>({xp:s.xp,visit:s.companionVisit,memories:s.companionMemories})).catch(()=>null),clicks:await js('return (window.__qaClicks||[]).slice(-12)').catch(()=>[])}));writeFileSync(`build/qa/${browser}-gameplay-failure.json`,JSON.stringify({browser,capabilities,release,results,errors,error:error.stack},null,2));try{await screenshot('failure');console.error((await js('return document.body.innerText')).slice(-6000));}catch{}process.exitCode=1;}finally{ws?.close();if(session&&args.keep!=='true')await call('DELETE','').catch(()=>{});}

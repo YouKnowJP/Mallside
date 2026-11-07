@@ -8,15 +8,16 @@ export function interiorFloor(world,style){
  const canvas=document.createElement('canvas');canvas.width=canvas.height=512;const c=canvas.getContext('2d');
  c.fillStyle=style.key==='prada'?'#f3f1e7':style.floor;c.fillRect(0,0,512,512);c.lineWidth=2;
  if(['wood','parquet'].includes(style.pattern)){
-  for(let row=0;row<8;row++){const y=row*64,offset=row%2?128:0;for(let x=-256+offset;x<512;x+=256){c.fillStyle=row%2?style.floor:style.fixture;c.globalAlpha=.16;c.fillRect(x,y,254,62);c.globalAlpha=1;c.strokeStyle='#594f3c35';c.strokeRect(x,y,256,64);for(let n=0;n<3;n++){c.strokeStyle='#fff8e414';c.beginPath();c.moveTo(x+8,y+12+n*17);c.lineTo(x+240,y+10+n*17);c.stroke();}}}
+  for(let row=0;row<32;row++){const y=row*16,offset=row%3*64;for(let x=-192+offset;x<512;x+=192){c.fillStyle=row%3?style.floor:style.fixture;c.globalAlpha=.08;c.fillRect(x,y,191,15);c.globalAlpha=1;c.strokeStyle='#594f3c22';c.lineWidth=.65;c.strokeRect(x,y,192,16);for(let n=0;n<3;n++){c.strokeStyle=n%2?'#fff8e416':'#725e4210';c.beginPath();c.moveTo(x+5,y+3+n*4);c.bezierCurveTo(x+54,y+4+n*4,x+128,y+2+n*4,x+187,y+4+n*4);c.stroke();}}}
  }else if(['checker','gingham'].includes(style.pattern)){
   for(let y=0;y<8;y++)for(let x=0;x<8;x++){c.fillStyle=style.pattern==='checker'?'#202820':style.accent;c.globalAlpha=style.pattern==='checker'?1:(x%2&&y%2?.28:(x+y)%2?.12:0);if((x+y)%2||style.pattern==='gingham')c.fillRect(x*64,y*64,64,64);}c.globalAlpha=1;
  }else if(style.pattern==='terrazzo'||style.pattern==='concrete'){
-  let seed=19;for(let i=0;i<250;i++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const x=seed%512;seed=(Math.imul(seed,1664525)+1013904223)>>>0;const y=seed%512;c.fillStyle=i%2?'#fffbed35':'#535f5320';c.fillRect(x,y,2+i%4,2+i%3);}
+  let seed=19;for(let i=0;i<1800;i++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const x=seed%512;seed=(Math.imul(seed,1664525)+1013904223)>>>0;const y=seed%512;c.fillStyle=i%2?'#fffbed35':'#535f5320';c.fillRect(x,y,.6+i%3*.35,.5+i%2*.4);}
  }else if(style.pattern==='track'){
   c.strokeStyle='#f3ecda';c.lineWidth=8;for(const x of [80,256,432]){c.beginPath();c.moveTo(x,0);c.lineTo(x,512);c.stroke();}
  }else{
-  c.strokeStyle='#65736222';for(let x=0;x<=512;x+=128){c.beginPath();c.moveTo(x,0);c.lineTo(x,512);c.stroke();c.beginPath();c.moveTo(0,x);c.lineTo(512,x);c.stroke();}
+  for(let row=0;row<8;row++)for(let col=0;col<8;col++){const i=(row*17+col*31+row*col*13)%7;c.fillStyle=i<3?'#786349':i>4?'#fff8e6':'#b5bdab';c.globalAlpha=.024+i*.006;c.fillRect(col*64,row*64,64,64);}
+  c.globalAlpha=1;c.lineWidth=1;c.strokeStyle='#65736233';for(let x=0;x<=512;x+=64){c.beginPath();c.moveTo(x,0);c.lineTo(x,512);c.stroke();c.beginPath();c.moveTo(0,x);c.lineTo(512,x);c.stroke();}
  }
  const texture=new T.CanvasTexture(canvas);texture.colorSpace=T.SRGBColorSpace;texture.wrapS=texture.wrapT=T.RepeatWrapping;texture.repeat.set(3.2,2.7);world.resources.add(texture);
  world.box(600,-3,450,840,6,690,world.mat('#ffffff',{map:texture,roughness:['wood','parquet'].includes(style.pattern)?.57:style.pattern==='concrete'?.8:.42,bumpMap:surfaceTexture(world,'stone',true),bumpScale:.06,envMapIntensity:.8}));
@@ -27,7 +28,19 @@ export function buildInteriorArchitecture(w,style,layout){
  const theme=themeFor(w.state?.mallId),apron=w.box(600,-4,850,1600,6,1200,w.mat(theme.floor,{roughness:.64,bumpMap:surfaceTexture(w,'stone',true),bumpScale:.045}));apron.castShadow=false;
  interiorFloor(w,style);
  for(const x of [360,840]){const pane=w.box(x,20,793,275,40,2,w.mat('#a9c5bf',{transparent:true,opacity:.15,roughness:.2,metalness:.1,envMapIntensity:1.25,depthWrite:false}));pane.castShadow=false;w.box(x,2,794,280,3,4,style.trim);for(const dx of [-138,138])w.box(x+dx,23,794,3,46,4,style.trim);}
- w.box(600,.1,783,90,.3,18,style.trim);
+ // Fine metal threshold, inset floor perimeter and casework toe kicks share the room's finish.
+ const edge=w.mat(style.trim,{roughness:.43,metalness:.22});
+ for(const x of [207,993])w.box(x,.08,449,2,.12,650,edge).castShadow=false;
+ for(const z of [124,772])w.box(600,.08,z,788,.12,2,edge).castShadow=false;
+ w.box(600,.1,783,90,.3,18,edge).castShadow=false;
+ for(const r of [layout.checkout,layout.returns]){
+  const x=r.x+r.width/2,z=r.y+r.height/2,h=r===layout.checkout?44:38;
+  w.box(x,3,z+r.height/2+.23,r.width-7,6,.46,edge);
+  w.box(x,h-3,z+r.height/2+.23,r.width-5,1,.46,edge);
+ }
+ // A continuous warm band lifts the wall from the fittings without adding any live lights.
+ const glow=w.mat('#e0c89a',{emissive:'#e4bd7c',emissiveIntensity:.16,roughness:.55});
+ for(const x of [325,600,875])w.box(x,101.5,121,265,1.2,3,glow).castShadow=false;
 
  w.box(600,52,112,840,104,7,style.wall);for(const x of [192,1008]){w.box(x,19,450,5,38,680,style.wall);w.box(x,64,265,5,128,310,style.wall);w.box(x,39,450,7,3,680,style.trim);}
  w.box(600,8,119,826,8,4,style.trim);w.box(600,100,117,830,4,4,style.trim);

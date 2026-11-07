@@ -1,0 +1,266 @@
+{
+  "status": "validated-for-release",
+  "version": "64.0.0",
+  "bundle": "app-CXCLGZSP.js",
+  "testedBaseCommit": "d4c2f991b9d9a023a04254d9234ca7b8a3912bd9",
+  "publicFileCount": 2078,
+  "publicManifestSHA256": "83fb54081520113e2d0db04e2bb29d23b4b31074c665d484b9d62f0b64cf3a0a",
+  "bundleSHA256": "d5e94268d9cd8669baf73c0ecc65ff84bfe31693e016bd619b7121a698e10387",
+  "styles": [
+    {
+      "file": "styles-08c80ca023b6.css",
+      "sha256": "08c80ca023b61a8dcb6e19df6ed966f2b77a01e41f1c6173588dbbf778ddaaf3"
+    },
+    {
+      "file": "life-styles-f7a431267e63.css",
+      "sha256": "f7a431267e6394a428896ee7f78b4239bd71ad48a1ea6ed7e4dc3a9d976e8653"
+    },
+    {
+      "file": "promenade-ui-3d177d19977c.css",
+      "sha256": "3d177d19977c9a78627c7b0957385e343fc5ca6183fc56f563f133b804d9cc12"
+    }
+  ],
+  "runnerSHA256": "f2a5da0e661acff27e5269406e2a212a57a3a8b986e01b6c00b8ba8198c26091",
+  "matrixSHA256": "a88e8223c6db1bbc26c7b14c59456f2beaf048c168d52d9fc851ae4f16cc0ab4",
+  "local": {
+    "sourceTests": 801,
+    "compactContexts": 10,
+    "releaseChecks": "passed"
+  },
+  "native": {
+    "firefox": {
+      "version": "159.0.1",
+      "headless": true,
+      "selectedScenarios": 17,
+      "passedChecks": 18,
+      "sessions": 1,
+      "errors": [],
+      "resourceWarnings": [],
+      "inputRetries": [],
+      "results": [
+        {
+          "name": "v64 compact scene HUD, map and bag focus in both graphics modes",
+          "status": "passed",
+          "ms": 7762
+        },
+        {
+          "name": "no captured game exceptions or unexpected console errors",
+          "status": "passed",
+          "ms": 5
+        },
+        {
+          "name": "v64 promenade finishes, camera dock and reachable storefronts",
+          "status": "passed",
+          "ms": 10210
+        },
+        {
+          "name": "v63 alternate foyer portrait camera, all three scenes and existing Film Friday bonus",
+          "status": "passed",
+          "ms": 22635
+        },
+        {
+          "name": "v63 cinema free posters, seat changes and cancellation, final payment, paper animation and saved daily limit",
+          "status": "passed",
+          "ms": 18140
+        },
+        {
+          "name": "v63 compact reduced and lighter cinema funding gate, keyboard posters, luggage guide and explicit exit",
+          "status": "passed",
+          "ms": 56660
+        },
+        {
+          "name": "v63 historical luggage gallery, free format guide, smooth inspection, saved unpaid bag and exact refund",
+          "status": "passed",
+          "ms": 43501
+        },
+        {
+          "name": "v57 contained scene labels, native walking and readable original shop casework",
+          "status": "passed",
+          "ms": 6677
+        },
+        {
+          "name": "v56 floor-map zoom, pan, keyboard destination reveal, free state and actual mapped rest route",
+          "status": "passed",
+          "ms": 4324
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "status": "passed",
+          "ms": 4351
+        },
+        {
+          "name": "v33 real portrait capture and dressed collection-room close-up",
+          "status": "passed",
+          "ms": 5266
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "status": "passed",
+          "ms": 8475
+        },
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "status": "passed",
+          "ms": 7519
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "status": "passed",
+          "ms": 7208
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "status": "passed",
+          "ms": 5838
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "status": "passed",
+          "ms": 6532
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "status": "passed",
+          "ms": 3736
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "status": "passed",
+          "ms": 2594
+        }
+      ],
+      "cleanup": {
+        "temporaryFirefoxRootRemoved": true,
+        "driverStopped": true,
+        "originalLibraryEntriesVerified": 14,
+        "newCrashOrTelemetryFilesRemoved": 4,
+        "verifiedAppleSignatureBeforeAndAfter": true
+      }
+    },
+    "safari": {
+      "version": "26.6.2",
+      "selectedScenarios": 17,
+      "passedChecks": 18,
+      "sessions": 1,
+      "headless": false,
+      "foregroundVerified": true,
+      "errors": [],
+      "resourceWarnings": [],
+      "inputRetries": [],
+      "results": [
+        {
+          "name": "v64 compact scene HUD, map and bag focus in both graphics modes",
+          "status": "passed",
+          "ms": 25034
+        },
+        {
+          "name": "no captured game exceptions or unexpected console errors",
+          "status": "passed",
+          "ms": 3
+        },
+        {
+          "name": "v64 promenade finishes, camera dock and reachable storefronts",
+          "status": "passed",
+          "ms": 13018
+        },
+        {
+          "name": "v63 alternate foyer portrait camera, all three scenes and existing Film Friday bonus",
+          "status": "passed",
+          "ms": 6636
+        },
+        {
+          "name": "v63 cinema free posters, seat changes and cancellation, final payment, paper animation and saved daily limit",
+          "status": "passed",
+          "ms": 11914
+        },
+        {
+          "name": "v63 compact reduced and lighter cinema funding gate, keyboard posters, luggage guide and explicit exit",
+          "status": "passed",
+          "ms": 26471
+        },
+        {
+          "name": "v63 historical luggage gallery, free format guide, smooth inspection, saved unpaid bag and exact refund",
+          "status": "passed",
+          "ms": 31287
+        },
+        {
+          "name": "v57 contained scene labels, native walking and readable original shop casework",
+          "status": "passed",
+          "ms": 8709
+        },
+        {
+          "name": "v56 floor-map zoom, pan, keyboard destination reveal, free state and actual mapped rest route",
+          "status": "passed",
+          "ms": 6902
+        },
+        {
+          "name": "v33 indoor evening lighting and compact focused-play layouts",
+          "status": "passed",
+          "ms": 5433
+        },
+        {
+          "name": "v33 real portrait capture and dressed collection-room close-up",
+          "status": "passed",
+          "ms": 7819
+        },
+        {
+          "name": "v33 reflected lighting, camera presets, focused play and visible route feedback",
+          "status": "passed",
+          "ms": 11417
+        },
+        {
+          "name": "3D shop entry, route interruption, exit and repeat entry",
+          "status": "passed",
+          "ms": 10383
+        },
+        {
+          "name": "browse, choose size, fitting, carry to checkout, pay and receipt",
+          "status": "passed",
+          "ms": 10397
+        },
+        {
+          "name": "full viewport gameplay and visible exit control",
+          "status": "passed",
+          "ms": 9611
+        },
+        {
+          "name": "interactive court map leaves an interior before routing",
+          "status": "passed",
+          "ms": 9801
+        },
+        {
+          "name": "keyboard walking moves and stops on release without a stale route",
+          "status": "passed",
+          "ms": 5933
+        },
+        {
+          "name": "phone/tablet layouts, shop search and keyboard modal containment",
+          "status": "passed",
+          "ms": 4319
+        }
+      ],
+      "visualCaptures": [
+        {
+          "label": "v64-orange-promenade",
+          "width": 2800,
+          "height": 1464,
+          "sha256": "0e5abaebd8b8bdcdf20b29efa504baf78d84f12aabfdcad456f3f1fd8bd98c53"
+        },
+        {
+          "label": "v64-brea-promenade",
+          "width": 2800,
+          "height": 1464,
+          "sha256": "50630a44a3ac1a106d8fd6e5ed1f7dd881eb38161a7595a981e15ef817ec7fab"
+        }
+      ],
+      "automationOffVerified": true
+    },
+    "selectionPattern": "^v64 |^v63 |^v61 .*dining|^v59 .*planning|^v57 contained|^v56 floor-map|^v33 |^3D shop entry|^browse, choose size|^interactive court map|^keyboard walking|^full viewport|^phone/tablet"
+  },
+  "deployment": {
+    "host": "GitHub Pages",
+    "workflow": ".github/workflows/pages.yml",
+    "previousLiveVersion": "63.0.0",
+    "previousLiveCommit": "d4c2f991b9d9a023a04254d9234ca7b8a3912bd9"
+  }
+}

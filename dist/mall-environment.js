@@ -1,3 +1,4 @@
+import {paintPromenadePaving,paintPromenadeCourt,leafyCanopyGeometry,planterGeometry} from './promenade-materials.js?v=64.0.0';
 import {buildBenchPlanningDetails} from './planning-visit.js?v=63.0.0';
 import {buildDirectoryKiosk} from './directory-kiosk.js?v=57.0.0';
 import {buildNoticeDetail} from './notice-details.js?v=50.0.0';
@@ -11,7 +12,7 @@ import {buildMosaicStudy} from './mosaic-details.js?v=47.0.0';
 import {buildWaystationDetails} from './waystation-details.js?v=50.0.0';
 import {buildGardenStudy} from './garden-details.js?v=48.0.0';
 import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=57.0.0';
-import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
+import {surfaceFinish} from './mall-atmosphere.js?v=64.0.0';
 import {retailIdentity,drawRetailSign} from './retail-identity.js?v=63.0.0';
 import * as T from './vendor/three.module.js';
 import {themeFor,facadeFrame} from './mall-design.js?v=35.0.0';
@@ -19,16 +20,17 @@ import {brandDesign} from './brand-designs.js?v=63.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
 class Details{
- constructor(w){this.w=w;this.parts={box:[],timber:[],metal:[],roof:[],light:[],glass:[],cylinder:[],foliage:[],frond:[],round:[],water:[],ripple:[]};this.owner=null;}
+ constructor(w){this.w=w;this.parts={box:[],timber:[],metal:[],roof:[],light:[],glass:[],cylinder:[],foliage:[],bud:[],planter:[],frond:[],round:[],water:[],ripple:[]};this.owner=null;}
  box(x,y,z,width,height,depth,color,rotation=0,finish='box'){this.parts[finish].push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
  glass(x,y,z,width,height,depth,color,rotation=0){this.parts.glass.push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
  roof(x,y,z,width,height,depth,color,rotation=0){this.parts.roof.push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
  light(x,y,z,width,height,depth,color,rotation=0){this.parts.light.push({x,y,z,sx:width,sy:height,sz:depth,color,rotation,owner:this.owner});}
  cylinder(x,y,z,radius,height,color){this.parts[radius>=10?'round':'cylinder'].push({x,y,z,sx:radius,sy:height,sz:radius,color,rotation:0,owner:this.owner});}
- leaf(x,y,z,radius,color,sx=1,sy=1,sz=1,rotation=0){this.parts.foliage.push({x,y,z,sx:radius*sx,sy:radius*sy,sz:radius*sz,color,rotation,owner:this.owner});}
+ leaf(x,y,z,radius,color,sx=1,sy=1,sz=1,rotation=0){this.parts[radius>=8?'foliage':'bud'].push({x,y,z,sx:radius*sx,sy:radius*sy,sz:radius*sz,color,rotation,owner:this.owner});}
+ planter(x,z,radius,height,color){this.parts.planter.push({x,y:height/2,z,sx:radius,sy:height,sz:radius,color,rotation:0,owner:this.owner});}
  water(x,y,z,radius){this.parts.water.push({x,y,z,sx:radius,sy:1,sz:radius,color:'#83aaa2',rotation:0,owner:null});for(const r of [.28,.56,.82])this.parts.ripple.push({x,y:y+.55,z,sx:radius*r,sy:1,sz:radius*r,color:'#dcece2',rotation:0,owner:null});}
  frond(x,y,z,length,width,color,rotation){this.parts.frond.push({x,y,z,sx:length,sy:length,sz:width,color,rotation,owner:this.owner});}
- flush(){let count=0;const w=this.w,dummy=new T.Object3D();for(const [kind,parts]of Object.entries(this.parts)){if(!parts.length)continue;const geometry=['box','timber','metal','roof','light','glass'].includes(kind)?beveledBox():kind==='frond'?palmFrondGeometry():kind==='cylinder'?new T.CylinderGeometry(1,1,1,12):kind==='round'||kind==='water'?new T.CylinderGeometry(1,1,1,kind==='water'?48:24):kind==='ripple'?new T.RingGeometry(.97,1,48).rotateX(-Math.PI/2):new T.SphereGeometry(1,12,8),material=w.mat('#ffffff',{...surfaceFinish(kind),...['box','timber','metal'].includes(kind)?{map:surfaceTexture(w,kind==='timber'?'timber':'stone'),bumpMap:surfaceTexture(w,kind==='timber'?'timber':'stone',true),bumpScale:.035}:kind==='frond'?{side:T.DoubleSide,roughness:.9}:kind==='glass'?{transparent:true,opacity:.22,depthWrite:false,envMapIntensity:1.45}:kind==='water'?{roughness:.14,metalness:.22,envMapIntensity:1.5,transparent:true,opacity:.86,depthWrite:false}:kind==='ripple'?{transparent:true,opacity:.38,depthWrite:false,roughness:.3}:kind==='roof'?{map:roofTexture(w),bumpMap:roofRelief(w),bumpScale:.38}:kind==='light'?{emissive:'#b59046',emissiveIntensity:.6}:{}}),mesh=new T.InstancedMesh(geometry,material,parts.length);if(kind==='light')w.windowMaterials?.add(material);w.resources.add(geometry);mesh.castShadow=!['glass','water','ripple'].includes(kind);mesh.receiveShadow=true;for(let i=0;i<parts.length;i++){const p=parts[i];dummy.position.set(p.x,p.y,p.z);dummy.rotation.set(0,p.rotation,0);dummy.scale.set(p.sx,p.sy,p.sz);dummy.updateMatrix();mesh.setMatrixAt(i,dummy.matrix);mesh.setColorAt(i,new T.Color(p.color));}mesh.instanceMatrix.needsUpdate=true;mesh.computeBoundingSphere();if(parts.some(p=>p.owner)){mesh.userData.instanceUnits=parts.map(p=>p.owner);if(parts.some(p=>p.owner&&!p.owner.structure))w.clickables.push(mesh);parts.forEach((p,index)=>{if(!p.owner)return;let entry=w.cutawayAssets.get(p.owner.id);if(!entry){entry={unit:p.owner,parts:[],objects:[],cut:false};w.cutawayAssets.set(p.owner.id,entry);}entry.parts.push({mesh,index,p});});}w.scene.add(mesh);count+=parts.length;}return count;}
+ flush(){let count=0;const w=this.w,dummy=new T.Object3D();for(const [kind,parts]of Object.entries(this.parts)){if(!parts.length)continue;const geometry=['box','timber','metal','roof','light','glass'].includes(kind)?beveledBox():kind==='foliage'?leafyCanopyGeometry():kind==='planter'?planterGeometry():kind==='frond'?palmFrondGeometry():kind==='cylinder'?new T.CylinderGeometry(1,1,1,12):kind==='round'||kind==='water'?new T.CylinderGeometry(1,1,1,kind==='water'?48:24):kind==='ripple'?new T.RingGeometry(.97,1,48).rotateX(-Math.PI/2):new T.SphereGeometry(1,12,8),material=w.mat('#ffffff',{...surfaceFinish(kind),...['box','timber','metal'].includes(kind)?{map:surfaceTexture(w,kind==='timber'?'timber':'stone'),bumpMap:surfaceTexture(w,kind==='timber'?'timber':'stone',true),bumpScale:.035}:kind==='foliage'?{side:T.DoubleSide,vertexColors:true,roughness:.88}:kind==='frond'?{side:T.DoubleSide,roughness:.9}:kind==='glass'?{transparent:true,opacity:.12,depthWrite:false,envMapIntensity:1.25}:kind==='water'?{roughness:.14,metalness:.22,envMapIntensity:1.5,transparent:true,opacity:.86,depthWrite:false}:kind==='ripple'?{transparent:true,opacity:.38,depthWrite:false,roughness:.3}:kind==='roof'?{map:roofTexture(w),bumpMap:roofRelief(w),bumpScale:.38}:kind==='light'?{emissive:'#b59046',emissiveIntensity:.6}:{}}),mesh=new T.InstancedMesh(geometry,material,parts.length);if(kind==='light')w.windowMaterials?.add(material);w.resources.add(geometry);mesh.castShadow=!['glass','water','ripple'].includes(kind);mesh.receiveShadow=true;for(let i=0;i<parts.length;i++){const p=parts[i];dummy.position.set(p.x,p.y,p.z);dummy.rotation.set(0,p.rotation,0);dummy.scale.set(p.sx,p.sy,p.sz);dummy.updateMatrix();mesh.setMatrixAt(i,dummy.matrix);mesh.setColorAt(i,new T.Color(p.color));}mesh.instanceMatrix.needsUpdate=true;mesh.computeBoundingSphere();if(parts.some(p=>p.owner)){mesh.userData.instanceUnits=parts.map(p=>p.owner);if(parts.some(p=>p.owner&&!p.owner.structure))w.clickables.push(mesh);parts.forEach((p,index)=>{if(!p.owner)return;let entry=w.cutawayAssets.get(p.owner.id);if(!entry){entry={unit:p.owner,parts:[],objects:[],cut:false};w.cutawayAssets.set(p.owner.id,entry);}entry.parts.push({mesh,index,p});});}w.scene.add(mesh);count+=parts.length;}return count;}
 }
 function facadeLabel(w,text,x,y,z,width,color,bg,rotation=0,height=18){const sprite=w.label(text,x,y,z,width,color,bg),material=new T.MeshBasicMaterial({map:sprite.material.map});w.resources.add(material);const sign=w.mesh(new T.PlaneGeometry(width,height),material);sign.position.copy(sprite.position);sign.rotation.y=rotation;sign.castShadow=false;sprite.removeFromParent();return sign;}
 export function brandSign(w,store,x,y,z,width,height=22,rotation=0){const identity=retailIdentity(store),c=document.createElement('canvas');c.width=1024;c.height=224;drawRetailSign(c.getContext('2d'),identity,c.width,c.height);const texture=new T.CanvasTexture(c);texture.colorSpace=T.SRGBColorSpace;texture.anisotropy=4;w.resources.add(texture);const material=new T.MeshBasicMaterial({map:texture});w.resources.add(material);const sign=w.mesh(new T.PlaneGeometry(width,height),material);sign.position.set(x,y,z);sign.rotation.y=rotation;sign.castShadow=false;sign.userData.brandIdentity=identity.key;return sign;}
@@ -37,20 +39,15 @@ function roofRelief(w){if(!w.mallRoofRelief){const t=roofTexture(w).clone();t.co
 
 function path(c,s){if(s.kind==='court'){c.moveTo(s.x+s.radius,s.y);c.arc(s.x,s.y,s.radius,0,Math.PI*2);return;}const dx=s.b.x-s.a.x,dy=s.b.y-s.a.y,angle=Math.atan2(dy,dx),r=s.width/2;c.moveTo(s.a.x+Math.cos(angle-Math.PI/2)*r,s.a.y+Math.sin(angle-Math.PI/2)*r);c.lineTo(s.b.x+Math.cos(angle-Math.PI/2)*r,s.b.y+Math.sin(angle-Math.PI/2)*r);c.arc(s.b.x,s.b.y,r,angle-Math.PI/2,angle+Math.PI/2);c.lineTo(s.a.x+Math.cos(angle+Math.PI/2)*r,s.a.y+Math.sin(angle+Math.PI/2)*r);c.arc(s.a.x,s.a.y,r,angle+Math.PI/2,angle+Math.PI*1.5);c.closePath();}
 function stroke(c,a,b,width,color){c.strokeStyle=color;c.lineWidth=width;c.lineCap='round';c.beginPath();c.moveTo(a.x,a.y);c.lineTo(b.x,b.y);c.stroke();}
-function medallion(c,n,theme,index){
- const radius=n.radius-13;c.fillStyle=theme.inlay;c.beginPath();c.arc(n.x,n.y,radius,0,7);c.fill();c.fillStyle=theme.floor;c.beginPath();c.arc(n.x,n.y,radius-5,0,7);c.fill();c.strokeStyle=theme.inlay;c.lineWidth=2;c.beginPath();c.arc(n.x,n.y,53,0,7);c.stroke();
- for(let i=0;i<8;i++){const a=i*Math.PI/4+(index%2?Math.PI/8:0);c.fillStyle=i%2?theme.stone:theme.inlay;c.beginPath();c.moveTo(n.x,n.y);c.lineTo(n.x+Math.cos(a-.12)*23,n.y+Math.sin(a-.12)*23);c.lineTo(n.x+Math.cos(a)*47,n.y+Math.sin(a)*47);c.lineTo(n.x+Math.cos(a+.12)*23,n.y+Math.sin(a+.12)*23);c.closePath();c.fill();}
- c.fillStyle=theme.floor;c.beginPath();c.arc(n.x,n.y,11,0,7);c.fill();
-}
 export function createMallGroundCanvas(l,createCanvas=()=>document.createElement('canvas')){
  const c=l.campus,theme=themeFor(l.family),canvas=createCanvas();canvas.width=2048;canvas.height=Math.round(2048*c.height/c.width);const g=canvas.getContext('2d'),scale=canvas.width/c.width;g.scale(scale,scale);g.fillStyle=c.outdoor?'#abbba2':'#aab8ad';g.fillRect(0,0,c.width,c.height);
  // Continuous building podiums bind the shop rows into complete wings.
  for(const h of c.halls){const a=c.nodes[Number(h.a)],b=c.nodes[Number(h.b)];stroke(g,a,b,h.width+322,c.outdoor?'#cfccb6':'#d7d6cb');}
  for(const n of c.courts){g.fillStyle=c.outdoor?'#c6c9b1':'#d7d6cb';g.beginPath();g.arc(n.x,n.y,n.radius+102,0,7);g.fill();}
  g.save();g.beginPath();for(const s of l.nav.surfaces)path(g,s);g.clip();g.fillStyle=theme.floor;g.fillRect(0,0,c.width,c.height);
- const size=c.outdoor?48:72;g.lineWidth=.75;for(let y=0;y<c.height;y+=size)for(let x=0;x<c.width;x+=size){g.fillStyle=(Math.floor(x/size)+Math.floor(y/size))%5===0?'#ffffff12':'#665a4310';g.fillRect(x,y,size,size);g.strokeStyle='#7a735326';g.strokeRect(x,y,size,size);if(!c.outdoor){g.strokeStyle='#ffffff27';g.beginPath();g.moveTo(x+9,y+18);g.lineTo(x+size-9,y+size-22);g.stroke();}}
+ paintPromenadePaving(g,c.width,c.height,l.family);
  for(const h of c.halls){const a=c.nodes[Number(h.a)],b=c.nodes[Number(h.b)],dx=b.x-a.x,dy=b.y-a.y,length=Math.hypot(dx,dy),nx=-dy/length,ny=dx/length;for(const sign of [-1,1]){const d=h.width/2-13,aa={x:a.x+nx*d*sign,y:a.y+ny*d*sign},bb={x:b.x+nx*d*sign,y:b.y+ny*d*sign};stroke(g,aa,bb,6,theme.inlay);stroke(g,aa,bb,2,'#f5eddc');}}
- c.courts.forEach((n,i)=>medallion(g,n,theme,i));g.restore();
+ c.courts.forEach((n,i)=>paintPromenadeCourt(g,n,theme,i,l.family));g.restore();
  // Small planted borders replace the former featureless ground beyond the shopping wings.
  for(const p of l.environment.edgePlanting){g.fillStyle='#536d5129';g.beginPath();g.ellipse(p.x+34,p.y+38,37,23,0,0,7);g.fill();}
  return canvas;
@@ -71,7 +68,7 @@ export function buildMallGround(w,l){
  return theme;
 }
 function plant(b,x,z,theme,palm=false,small=false){
- b.cylinder(x,6,z,small?12:23,12,theme.stone);b.cylinder(x,12.5,z,small?10:20,2,'#5a5844');
+ b.planter(x,z,small?12:22,12,theme.stone);b.cylinder(x,12.1,z,small?10.6:19.4,.8,'#5a5844');
  if(small){for(let i=0;i<7;i++){const a=i*2.4;b.leaf(x+Math.cos(a)*8,14,z+Math.sin(a)*8,2.1,'#b9ae92',1,.45,.7);}b.leaf(x,23,z,14,theme.plant,1,.65,1);for(let i=0;i<4;i++)b.leaf(x+Math.cos(i*1.6)*8,30,z+Math.sin(i*1.6)*8,4,theme.flowers);return;}
  b.cylinder(x,palm?43:32,z,palm?3:4,palm?74:52,'#8a7658');
  if(palm){for(let y=15;y<78;y+=6)b.cylinder(x,y,z,3.35,.65,'#a18b69');for(let i=0;i<11;i++){const a=i*Math.PI*2/11;b.frond(x,81+(i%3)*2,z,37+i%3*4,12,i%2?theme.plant:'#73906a',-a);}}
@@ -124,8 +121,8 @@ function directoryTexture(w,theme,l,position){
 }
 export function buildPublicRealm(w,l,theme){
  const d=l.environment,b=new Details(w),mainCourt=l.campus.courts.find(n=>/Jewel|Atrium/.test(n.label))||l.campus.courts.reduce((a,n)=>Math.hypot(a.x-l.spawn.x,a.y-l.spawn.y)<Math.hypot(n.x-l.spawn.x,n.y-l.spawn.y)?a:n),portals=d.portals.filter(p=>l.campus.outdoor||Math.hypot(p.x-mainCourt.x,p.y-mainCourt.y)>190);w.waterFeatures=[];
- for(const p of d.edgePlanting){const x=p.x+p.width/2,z=p.y+p.height/2;if(p.kind==='garden'){b.box(x,4,z,p.width,8,p.height,theme.stone);b.box(x,8,z,p.width-8,1,p.height-8,'#687850');for(const dx of [-23,0,23])for(const dz of [-17,17]){b.leaf(x+dx,18,z+dz,15,theme.plant,1,.65,.8);b.leaf(x+dx+3,25,z+dz-3,4,theme.flowers);}plant(b,x, z,theme,false,true);}else{plant(b,x,z,theme,p.palm);b.box(x,3,z,63,6,63,theme.stone);}}
- for(const p of portals.flatMap(p=>[-1,1].map(sign=>({x:p.x+Math.cos(p.angle)*sign*p.width/2,y:p.y-Math.sin(p.angle)*sign*p.width/2,height:p.height})))){b.box(p.x,4,p.y,22,8,22,theme.stone);b.box(p.x,p.height/2,p.y,9,p.height,9,theme.wall);b.box(p.x,p.height-3,p.y,19,6,19,theme.trim);}
+ for(const p of d.edgePlanting){const x=p.x+p.width/2,z=p.y+p.height/2;if(p.kind==='garden'){b.box(x,4,z,p.width,8,p.height,theme.stone);b.box(x,8,z,p.width-8,1,p.height-8,'#687850');for(const dx of [-23,0,23])for(const dz of [-17,17]){b.leaf(x+dx,18,z+dz,15,theme.plant,1,.65,.8);b.leaf(x+dx+3,25,z+dz-3,4,theme.flowers);}plant(b,x, z,theme,false,true);}else{plant(b,x,z,theme,p.palm);b.box(x,1.3,z,47,2.6,47,theme.stone);}}
+ for(const [i,p]of portals.flatMap(p=>[-1,1].map(sign=>({x:p.x+Math.cos(p.angle)*sign*p.width/2,y:p.y-Math.sin(p.angle)*sign*p.width/2,height:p.height}))).entries()){b.owner={id:'promenade-column:'+i,x:p.x-12,y:p.y-12,width:24,height:24,structure:true,overhead:true,cutHeight:p.height+8};b.box(p.x,3,p.y,18,6,18,theme.stone);b.box(p.x,p.height/2,p.y,7,p.height,7,theme.wall);b.box(p.x,p.height-3,p.y,15,4,15,theme.trim);}b.owner=null;
  // Original stone inlays articulate the broad courts without adding obstacles.
  for(const [i,n]of l.campus.courts.entries()){
   const rim=w.mesh(new T.RingGeometry(29,31,32),w.mat(theme.inlay,{roughness:.95}));rim.rotation.x=-Math.PI/2;rim.position.set(n.x,.22,n.y);rim.castShadow=false;
@@ -222,3 +219,5 @@ export function buildMallEntrance(w,l,theme){
  const label=facadeLabel(w,'MALL ENTRANCE',p.x,115,p.y+24,130,'#faf4df',theme.trim);w.nearLabels.push({object:label,x:p.x,z:p.y,radius:420,directory:true,physicalSign:true});w.entryDoors=[];
  for(const sign of [-1,1]){const door=w.box(p.x+sign*20,41,p.y,38,80,2,w.mat('#9cbbb2',{transparent:true,opacity:.36,depthWrite:false}));door.castShadow=false;w.entryDoors.push({mesh:door,x:p.x,sign,z:p.y});}
 }
+
+export function buildLandscapeTree(w,x,z,theme,palm=false){const b=new Details(w);plant(b,x,z,theme,palm);return b.flush();}

@@ -1,9 +1,9 @@
 // Palette and adult appearance variation without extra lights, assets or actors.
 const STOPS=[
- {minute:600,name:'morning',sky:[.82,.89,.89],sun:[1,.95,.84],sunPower:2.0,ambient:1.45,window:.28},
- {minute:840,name:'afternoon',sky:[.82,.89,.91],sun:[1,.97,.89],sunPower:2.15,ambient:1.5,window:.22},
- {minute:1050,name:'golden hour',sky:[.86,.81,.74],sun:[1,.80,.56],sunPower:1.65,ambient:1.30,window:.65},
- {minute:1200,name:'evening',sky:[.45,.54,.64],sun:[1,.72,.48],sunPower:.7,ambient:1.12,window:1.05}
+ {minute:600,name:'morning',sky:[.82,.89,.89],sun:[1,.95,.84],sunPower:2.3,ambient:1.17,window:.28},
+ {minute:840,name:'afternoon',sky:[.82,.89,.91],sun:[1,.97,.89],sunPower:2.4,ambient:1.22,window:.22},
+ {minute:1050,name:'golden hour',sky:[.86,.81,.74],sun:[1,.80,.56],sunPower:1.9,ambient:1.15,window:.65},
+ {minute:1200,name:'evening',sky:[.45,.54,.64],sun:[1,.72,.48],sunPower:.85,ambient:1.08,window:1.05}
 ];
 export function daylightAt(minutes=600,indoor=false){
  const m=Math.max(600,Math.min(1200,Number.isFinite(minutes)?minutes:600));let i=1;while(i<STOPS.length-1&&m>STOPS[i].minute)i++;
