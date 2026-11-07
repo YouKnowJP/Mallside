@@ -1,9 +1,11 @@
+import {retailLight} from './retail-light.js?v=68.0.0';
+import {detailBoxes} from './detail-instances.js?v=48.0.0';
 import * as T from './vendor/three.module.js';
 import {departmentOf,displayPoint} from './shop-interiors.js?v=67.0.0';
-import {money,price} from './engine.js?v=67.0.0';
+import {money,price} from './engine.js?v=68.0.0';
 import {shopSurface} from './shop-surfaces.js?v=57.0.0';
 
-export function displayCard(state,p,index){return {number:String(index+1).padStart(2,'0'),department:departmentOf(p),name:p.name,price:money(price(state,p)),note:'Game price · inspect for sizes'};}
+export function displayCard(state,p,index){return {number:String(index+1).padStart(2,'0'),department:departmentOf(p),name:p.name,price:money(price(state,p)),note:(p.sizes.length===1?p.sizes[0]:p.sizes.length+' listed options')+' · Game price'};}
 function cardTexture(w,card){
  if(typeof document==='undefined')return null;
  const canvas=document.createElement('canvas');canvas.width=512;canvas.height=256;const c=canvas.getContext('2d');
@@ -18,5 +20,16 @@ export function buildRetailDetails(w,store,profile,layout,selection){
  selection.forEach((p,i)=>{const r=layout.displays[i],x=r.x+r.width/2,z=r.y+r.height-3,apparel=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type),height=apparel?3.5:(w.fixtureHeights?.[i]??32)+.5,group=new T.Group();group.position.set(x,height,z);root.add(group);w.box(0,-3,-1,34,2,9,metal,group);w.box(0,apparel?16:2,-3,1,apparel?34:10,1,metal,group);const card=displayCard(w.state,p,i),plane=w.mesh(new T.PlaneGeometry(32,16),w.mat('#ffffff',{map:cardTexture(w,card),roughness:.85,metalness:0,side:T.DoubleSide}),group);plane.position.set(0,apparel?34:8,0);plane.rotation.x=-.22;w.tag(group,'product:'+p.id,displayPoint(r));group.userData.card=card;});
  for(const r of layout.stockFixtures.filter(r=>r.kind==='wall')){const x=r.x+r.width/2,z=r.y+r.height/2,side=r.side;for(const h of [10,35,60,85])w.box(x-side*8,h,z,1.2,1.4,r.height-10,metal,root);w.box(x-side*7,89,z,2,1.2,r.height-8,w.mat('#eddfbd',{emissive:'#d2b77d',emissiveIntensity:.08,roughness:.8}),root);}
  for(const r of [layout.checkout,layout.returns]){const x=r.x+r.width/2,z=r.y+r.height/2;w.box(x,8,z+28,r.width-6,9,1.5,wood,root);for(let dx=-r.width/2+13;dx<r.width/2;dx+=18)w.box(x+dx,25,z+30,1.1,28,1.1,metal,root);w.box(x+46,51,z+10,21,1,15,'#eee8d9',root);for(let n=0;n<5;n++)w.box(x+46,51.6,z+7+n*1.8,12-n%2*3,.1,.35,'#748174',root);}
+ const r=layout.checkout,x=r.x+r.width/2,z=r.y+r.height/2;
+ const ink='#30433f',bronze='#a48860',linen='#ead9b5';
+ detailBoxes(w,root,[
+  [x-27,49,z+6,30,2,21,ink],[x-27,50.2,z+6,25,.6,15,'#c2b293'],
+  [x-47,52,z-8,21,7,16,ink],[x-47,55.9,z-8,17,.7,12,'#657a6e'],
+  [x+21,50,z-7,12,2,10,bronze],[x+21,55,z-7,2,10,2,ink],
+  [x+21,62,z-7,20,8,4,ink],[x+21,62,z-4.8,17,5,.4,'#8db5a0'],
+  [x,100,z-6,77,3,7,ink],[x,98.2,z-6,70,.7,4,linen]
+ ]);
+ retailLight(w,root,x,48.2,z+4,96,42,true);
+ w.canvas.dataset.tillRevision='68';
  w.canvas.dataset.retailDetailRevision='58';w.canvas.dataset.physicalPriceCards=String(selection.length);return root;
 }

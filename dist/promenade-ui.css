@@ -255,3 +255,49 @@ body.in-mall .play-map:has(#floor-study-controls) #map-nearby{display:none}
 @media(min-width:1001px){
  body.in-mall .mall-shell .play-layout:has(#floor-study-controls)>.play-sidebar{display:none}
 }
+
+/* v68 window edit and till */
+.window-intro{padding:19px 24px 16px;background:linear-gradient(120deg,#e1ebdf,#f5eddb);border-bottom:1px solid #d7dfce}
+.window-intro h3{margin:5px 0 6px;font:500 clamp(23px,3vw,32px)/1.1 Georgia,serif;color:#294d40}
+.window-intro p{margin:0;color:#405a50}
+.window-grid{padding:15px 20px 20px;gap:12px}
+.window-product{min-width:0;background:#fffdf4;border:1px solid #d7dfcd;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px #34493a12}
+.window-product .product-art{height:auto;aspect-ratio:4/3;background:radial-gradient(ellipse at 50% 0,#f9f6ec,#e8e7d8)}
+.window-product>div:not(.product-art){padding:13px;display:grid;gap:6px}
+.window-product .window-card-label{margin-bottom:3px;color:#3c6353;font-size:10px;font-weight:750;letter-spacing:.09em}
+.window-product h3{margin:0;font:600 16px/1.3 var(--sans)}
+.window-product p{margin:0;color:#4d6758}
+.window-product .button,.window-wish{min-height:44px}
+.window-product .window-wish.liked{color:#8f4c3c}
+.window-actions{gap:8px}
+.till-review{display:grid;gap:12px;padding:14px 20px}
+.till-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:9px;border-bottom:1px solid #cad5c6;color:#365747}
+.till-heading>span:last-child{font-size:12px}
+.till-lines,.till-totals,.till-wallet{list-style:none;margin:0;padding:0}
+.till-lines li{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid #e4e7da}
+.till-lines li.till-line{grid-template-columns:46px minmax(0,1fr) auto 44px}
+.till-lines li>div:not(.mini-art){min-width:0;overflow-wrap:anywhere}
+.till-lines small{display:block;margin-top:2px;color:#536e60}
+.till-lines .mini-art{width:46px;height:46px;background:#eef0e3;border-radius:7px;overflow:hidden}
+.till-lines .mini-art img{width:100%;height:100%;object-fit:contain}
+.till-line .remove{width:44px;min-height:44px;border:1px solid #d7dfcf;border-radius:8px;background:#fffdf4;color:#635b48;font-size:20px}
+.till-totals{display:grid;gap:6px;padding:10px 12px;border:1px solid #d6dece;border-radius:9px;background:#edf2e7}
+.till-totals>div,.till-wallet>div{display:flex;justify-content:space-between;gap:12px}
+.till-totals dd,.till-wallet dd{margin:0;font-variant-numeric:tabular-nums;font-weight:700}
+.till-totals .till-total{padding-top:7px;border-top:1px solid #c4d3c3;font-size:1.06rem;font-weight:750;color:#284d3e}
+.till-wallet{display:grid;gap:4px}
+.till-blocker{margin:0}
+.till-actions{gap:8px;justify-content:space-between}
+.till-actions button{min-height:44px}
+.till-receipt{display:grid;gap:8px;text-align:left;background:#fffdf2}
+.till-receipt .till-heading{border-bottom-style:dashed}
+.till-review p{margin:0}
+@media(max-width:420px){
+ .window-intro,.window-grid,.till-review{padding-left:12px;padding-right:12px}
+ .window-actions,.till-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .window-actions .button,.till-actions .button{min-width:0;white-space:normal;padding:8px}
+ .till-lines li.till-line{grid-template-columns:37px minmax(0,1fr) auto 44px;gap:5px}
+ .till-lines .mini-art{width:37px;height:42px}
+}
+body.in-mall .map-nearby.has-window-action{display:grid;gap:4px}
+body.in-mall .map-nearby button.nearby-window{min-height:44px;background:#f7f3e6;color:#284d3e;border:1px solid #a9beab;text-align:center;font-weight:750}

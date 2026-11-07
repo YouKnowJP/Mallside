@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v68 — from the window to the till
+
+Browse the same pieces you see in a shop window and follow an item to its display. Shelves have clearer format labels, and the till shows what you’re paying, what you’ll have left, and what needs to change if payment is blocked. [Gameplay](docs/GAMEPLAY-v68.md) · [QA](docs/qa-v68.md).
+
 ## v67 — play tables and workbenches
 
 Del Amo’s toy shop has a play table for Jenga, Rubik’s Cube, and Scrabble. Irvine Spectrum’s Verizon store has a Samsung handset display and two-handed inspection. Planning hosts respond when you change the materials on their improved workbenches. [Gameplay](docs/GAMEPLAY-v67.md) · [Product sources](docs/research-v67/catalog-evidence.json).

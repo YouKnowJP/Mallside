@@ -1,11 +1,14 @@
 # Mallside documentation
 
-Current update is [v65 gameplay](GAMEPLAY-v65.md) and [v65 QA](qa-v65.md).
+Current update is [v68 gameplay](GAMEPLAY-v68.md) and [v68 QA](qa-v68.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Shop windows, exact display routes and itemized checkout | [v68 guide](GAMEPLAY-v68.md), [v68 QA](qa-v68.md) |
+| Play tables, handset inspection and material workbenches | [v67 guide](GAMEPLAY-v67.md), [v67 QA](qa-v67.md) |
+| Catalog filters and in-game option pickers | [v66 guide](GAMEPLAY-v66.md), [v66 QA](qa-v66.md) |
 | Dining rooms and food halls | [v65 guide](GAMEPLAY-v65.md), [v65 QA](qa-v65.md) |
 | Promenade, shop interiors and play interface | [v64 guide](GAMEPLAY-v64.md), [visual research](research-v64/visual-direction.json), [v64 QA](qa-v64.md) |
 | Travel gallery and picture houses | [v63 guide](GAMEPLAY-v63.md), [v63 QA](qa-v63.md) |

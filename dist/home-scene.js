@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
 import {ROOM_STYLES} from './home-life.js?v=26.0.0';
-import {owned,byId} from './engine.js?v=67.0.0';
+import {owned,byId} from './engine.js?v=68.0.0';
 import {placeMerchandise} from './merchandise-3d.js?v=67.0.0';
 import {buildHomeDetails} from './home-details.js?v=57.0.0';
 import {HOME_FURNITURE} from './home-navigation.js?v=53.0.0';

@@ -1,3 +1,4 @@
+import {windowSelection} from './mall-life.js?v=26.0.0';
 import {merchantIdentity} from './merchant-identity.js?v=23.0.0';
 import {brandDesign} from './brand-designs.js?v=63.0.0';
 
@@ -26,6 +27,11 @@ export function retailIdentity(store){const key=merchantIdentity(store.name),des
  if(chosen.caseStyle==='upper')name=name.toUpperCase();else if(chosen.caseStyle==='lower')name=name.toLowerCase();
  return {...chosen,ink,name,key,design,source:design.source||store.source||store.products?.[0]?.source||'',branchName:store.name};}
 export function windowAssortment(products,storeId,day,photos){const own=products.filter(p=>p.store===storeId&&photos[p.id]&&!p.archived);if(!own.length)return [];const first=own[((day-1)*2)%own.length],others=own.filter(p=>p.id!==first.id),second=others.find(p=>p.type!==first.type)||others[0];return second?[first,second]:[first];}
+export function windowEdit(products,storeId,day,photos){
+ const featured=windowAssortment(products,storeId,day,photos);
+ const extra=windowSelection(products,storeId,day).find(p=>!p.archived&&photos[p.id]&&!featured.some(q=>q.id===p.id));
+ return {featured,extra};
+}
 export function drawRetailSign(c,identity,width,height){c.fillStyle=identity.background;c.fillRect(0,0,width,height);c.textAlign='center';c.textBaseline='middle';const fonts={serif:'Georgia',script:'cursive',sport:'Arial',block:'Arial',round:'Trebuchet MS',sans:'Arial'},weight=identity.font==='serif'?'500':'700';let size=Math.min(height*.59,width*.17),name=identity.name;
  const set=()=>{c.font=(identity.font==='sport'?'italic ':'')+weight+' '+size+'px '+fonts[identity.font];};set();while(c.measureText(name).width+(name.length-1)*identity.tracking>width*.9&&size>12){size--;set();}
  c.fillStyle=identity.ink;if(identity.tracking){let x=(width-c.measureText(name).width-(name.length-1)*identity.tracking)/2;c.textAlign='left';for(const char of name){c.fillText(char,x,height/2);x+=c.measureText(char).width+identity.tracking;}}else c.fillText(name,width/2,height/2);

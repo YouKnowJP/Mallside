@@ -2,6 +2,12 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v68 · 7 November 2026
+
+- Match storefront windows to the browse panel and route featured finds to their actual shop displays.
+- Add layered window lighting, format-aware shelf labels, and a furnished till.
+- Explain blocked payments before checkout and show an itemized receipt after purchase. [Gameplay](docs/GAMEPLAY-v68.md).
+
 ## v67 · 7 November 2026
 
 - Stock two formerly unfinished shops with four verified products and reuse-licensed photographs.

@@ -13,7 +13,7 @@ import {buildWaystationDetails} from './waystation-details.js?v=50.0.0';
 import {buildGardenStudy} from './garden-details.js?v=48.0.0';
 import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=57.0.0';
 import {surfaceFinish} from './mall-atmosphere.js?v=64.0.0';
-import {retailIdentity,drawRetailSign} from './retail-identity.js?v=63.0.0';
+import {retailIdentity,drawRetailSign} from './retail-identity.js?v=68.0.0';
 import * as T from './vendor/three.module.js';
 import {themeFor,facadeFrame} from './mall-design.js?v=35.0.0';
 import {brandDesign} from './brand-designs.js?v=63.0.0';

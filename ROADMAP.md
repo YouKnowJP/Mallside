@@ -2,6 +2,12 @@
 
 Updated 7 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v68
+
+- Connect 3D storefront windows and the window panel to the exact products inside the shop.
+- Refine window accent lighting, shelf labels, and counter detail within existing geometry.
+- Preview checkout eligibility and wallet balance, then provide an itemized receipt. [Gameplay](docs/GAMEPLAY-v68.md).
+
 ## Completed in v67
 
 - Stock Del Amo’s Toys R Us at Macy’s and Irvine Spectrum’s Verizon store with four documented products.

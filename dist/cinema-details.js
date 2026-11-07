@@ -1,5 +1,5 @@
 import * as T from './vendor/three.module.js';
-import {experienceSpec,CINEMA_SHORTS} from './engine.js?v=67.0.0';
+import {experienceSpec,CINEMA_SHORTS} from './engine.js?v=68.0.0';
 import {paintCinemaArt,cinemaPalette} from './cinema-art.js?v=63.0.0';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
 export function buildCinemaDetails(w,v){const root=new T.Group();root.position.set(v.x+v.width/2,0,v.y+v.height/2);w.scene.add(root);const W=v.width,D=v.height,parts=[],box=(...a)=>parts.push(a),wood='#71634f',fabric='#9d6f60',ink='#3c5c61',paper='#e6dcc2';box(0,2,0,W-2,4,D-2,ink);box(0,35,-D/2+3,W-6,66,4,wood);box(0,43,-D/2+6,W-12,46,2,ink);box(0,69,-D/2+5,W-10,2,8,paper);

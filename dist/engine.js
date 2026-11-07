@@ -97,17 +97,41 @@ export function inspect(s,id){const p=byId(id);if(!p)throw Error('Product not fo
 export function compare(s,id){const p=byId(id);if(!p)throw Error('Product not found.');const matches=PRODUCTS.filter(q=>q.brand===p.brand&&q.name===p.name&&q.id!==id);if(!matches.length)throw Error('There is no matching product elsewhere in the mall.');act(s,4,1);const identity=p.brand+' · '+p.name;if(!s.compared.includes(identity)&&!s.compared.includes(p.name)){s.compared.push(identity);addXP(s,12);}return matches;}
 export function idealSize(s,p){if(p.sizes.length===1)return p.sizes[0];if(p.frameProfile)return p.sizes.includes('Medium')?'Medium':p.sizes[0];const sourceSize=referenceSize(s,p);if(sourceSize)return sourceSize;const candidate=['shoes','sandals'].includes(p.type)?s.shoeSize:p.type==='pants'?s.waist:p.type==='belt'?'90 cm':p.type==='bracelet'?(p.sizes.includes('PM')?'PM':'M'):p.type==='ring'?(s.ringSize||'7'):s.size;if(p.sizes.includes(candidate))return candidate;const numeric=['pants','shoes','sandals','belt','ring'].includes(p.type)&&Number.isFinite(Number(candidate))?p.sizes.find(size=>Number.parseFloat(size)===Number(candidate)):null;return numeric||p.sizes[Math.floor(p.sizes.length/2)];}
 export function fit(s,id,size){const p=byId(id);if(!p||!p.sizes.includes(size))throw Error('Choose an available size.');if(!canTry(p))throw Error('Use the product demo for this type of product.');if(stock(s,id,size)<=0)throw Error('That size is sold out.');act(s,10,7);const key=id+':'+size;if(!s.tried.includes(key)){s.tried.push(key);addXP(s,12);}const fits=size===idealSize(s,p);if(fits){progress(s,'try',id);s.metrics.fits++;}return {fits,text:p.bagReference?'Virtual carry styling preview. Source bag dimensions are approximate; capacity and body fit are not measured.':p.watchProfile?'Virtual wrist styling preview. The 41 mm case diameter is not a wrist measurement; bracelet fit is not verified.':p.frameProfile?'Virtual styling preview in '+size+' width. Game fit is simulated; compare the source photograph before choosing.':p.sizes.length===1?'Easy to carry and comfortable to wear.':fits?'A comfortable fit. You can move freely.':'This fit feels off. Try your usual size: '+idealSize(s,p)+'.'};}
-export function checkout(s,storeId,cart){
+function checkoutPrice(s,p){
+ const value=price(s,p),tax=Math.round(value*TAX);
+ return {price:value,tax,total:value+tax};
+}
+export function basketTotals(s,items){
+ return items.reduce((totals,item)=>{
+  const line=checkoutPrice(s,byId(item.id));
+  totals.subtotal+=line.price;totals.tax+=line.tax;totals.total+=line.total;
+  return totals;
+ },{subtotal:0,tax:0,total:0});
+}
+export function quoteCheckout(s,storeId,cart){
  const st=storeById(storeId);if(!st)throw Error('Store not found.');if(levelOf(s)<st.tier)throw Error(`Unlock Level ${st.tier+1}: ${LEVELS[st.tier].name} to buy here.`);
  if(!Array.isArray(cart))throw Error('Your bag is invalid.');if(carried(s).length+cart.length>8)throw Error('Your arms are full. Leave today’s purchases at guest services before buying more.');
  if(!cart.length)throw Error('Your shopping bag is empty.');if(cart.length>8)throw Error('Carry up to eight items at once.');
- const duration=8+cart.length*2+queueMinutes(s);canAct(s,duration,5);let total=0;const counts={};
- const lines=cart.map(item=>{const p=byId(item.id);if(!p||p.archived||p.store!==storeId)throw Error('Pay for each store’s items at its own checkout.');if(!p.sizes.includes(item.size))throw Error('Choose a valid size.');const key=p.id+':'+item.size;counts[key]=(counts[key]||0)+1;if(counts[key]>stock(s,p.id,item.size))throw Error(p.name+' is sold out in that size.');const paid=price(s,p),tax=Math.round(paid*TAX);total+=paid+tax;return {productId:p.id,size:item.size,price:paid,tax,total:paid+tax};});
+ const duration=8+cart.length*2+queueMinutes(s);canAct(s,duration,5);const counts=new Map();
+ const lines=cart.map(item=>{
+  const p=byId(item.id);
+  if(!p||p.archived||p.store!==storeId)throw Error('Pay for each store’s items at its own checkout.');
+  if(!p.sizes.includes(item.size))throw Error('Choose a valid size.');
+  const key=p.id+':'+item.size,count=(counts.get(key)||0)+1;
+  counts.set(key,count);
+  if(count>stock(s,p.id,item.size))throw Error(p.name+' is sold out in that size.');
+  return {productId:p.id,size:item.size,...checkoutPrice(s,p)};
+ });
+ const subtotal=lines.reduce((sum,line)=>sum+line.price,0),tax=lines.reduce((sum,line)=>sum+line.tax,0),total=subtotal+tax;
  if(total>s.cash)throw Error(`You need ${money(total-s.cash)} more, including tax.`);
+ return {lines,duration,subtotal,tax,total};
+}
+export function checkout(s,storeId,cart){
+ const {lines,duration,subtotal,tax,total}=quoteCheckout(s,storeId,cart);
  s.cash-=total;advance(s,duration,5);s.lifetimeSpent+=total;const id=`D${s.day}-${s.orders.length+1}`;
  lines.forEach((line,i)=>{const p=byId(line.productId);s.stock[`${s.day}:${p.id}:${line.size}`]=stock(s,p.id,line.size)-1;s.totalSaved+=Math.max(0,p.retail-line.price);s.purchases.push({...line,id:id+'-'+i,orderId:id,store:storeId,day:s.day,returned:false,worn:false,tags:true});if(line.price<p.retail)s.metrics.discounts++;if(!s.seen.includes('bought:'+p.id)){s.seen.push('bought:'+p.id);addXP(s,30);}});
  if(s.coupon?.store===storeId&&s.coupon.day===s.day)s.coupon=null;
- const order={id,day:s.day,minutes:s.minutes,store:storeId,total,subtotal:lines.reduce((a,l)=>a+l.price,0),tax:lines.reduce((a,l)=>a+l.tax,0),items:lines.length};s.orders.unshift(order);progress(s,'buy',id);s.metrics.checkouts++;return order;
+ const order={id,day:s.day,minutes:s.minutes,store:storeId,total,subtotal,tax,items:lines.length};s.orders.unshift(order);progress(s,'buy',id);s.metrics.checkouts++;return order;
 }
 export function returnEligibility(s,item){const p=byId(item.productId),st=storeById(item.store);if(!p||!st)return {ok:false,reason:'Retired demo item'};if(item.delivered)return {ok:false,reason:item.deliveredTo?'Given to '+item.deliveredTo:'Delivered as a shopping request'};if(item.giftWrap)return {ok:false,reason:'Unwrap at guest services before returning'};if(item.checked)return {ok:false,reason:'Collect from guest services first'};if(item.returned)return {ok:false,reason:'Already refunded'};if(p.finalSale)return {ok:false,reason:'Final sale'};if(item.worn||!item.tags)return {ok:false,reason:'Used · tags or packaging removed'};const days=st.policy-(s.day-item.day);return days<0?{ok:false,reason:'Return period expired'}:{ok:true,reason:days===0?'Return today':days+' days to return'};}
 export function returnItem(s,id,atStore){const item=s.purchases.find(p=>p.id===id);if(!item)throw Error('Receipt not found.');if(!storeById(atStore))throw Error('Store not found.');if(item.store!==atStore)throw Error('Return this to '+storeById(item.store).name+'.');const eligibility=returnEligibility(s,item);if(!eligibility.ok)throw Error(eligibility.reason);act(s,10,3);item.returned=true;s.cash+=item.total;s.stock[`${s.day}:${item.productId}:${item.size}`]=stock(s,item.productId,item.size)+1;s.totalSaved-=Math.max(0,byId(item.productId).retail-item.price);s.lifetimeSpent-=item.total;s.metrics.returns++;if(s.outfit===id)s.outfit=null;return item.total;}

@@ -1,0 +1,7 @@
+# Mallside v68 release checks
+
+The release uses `app-2Q2ABNRP.js`. All 816 source tests passed. New tests cover matching branch-specific window items, pure checkout quotes, exact receipt totals, stock and wallet validation, and reuse of procedural lighting resources.
+
+- **Safari 26.6.2** used a private window and disposable saves. The Ross window identified its displayed products and opened the exact Nike item in lightweight mode. The size 8 purchase produced a $54.13 itemized receipt, and the $74,945.87 wallet survived exiting and reloading. A separate save showed a $274.23 shortfall, disabled Pay, then allowed a $73.61 purchase after an item was removed. The final wallet was $0.00. A local WebDriver session check confirmed remote automation was off.
+- **Firefox 159.0.1** followed the Ross window to the exact display in 3D, picked up the blouse, walked to the till, paid $274.23, and exited. The compact short-wallet scenario also passed and kept the purchase after reload. Regression checks passed for the toy play table and the full physical associate size check, pickup, payment, reload, and refund. The runs captured no game errors, failed resource requests, or input retries.
+- **Responsive checks** exercised the short-wallet flow at 320 × 568, 390 × 844, 844 × 390, 768 × 1024, and 1440 × 950. The checkout fit without horizontal overflow, its payment controls remained in view, and the affordable item could be paid for at every size.

@@ -1,5 +1,5 @@
 import {consultationLift} from './studio-gesture.js?v=67.0.0';
-import {updateAssociateTrip} from './associate-service.js?v=67.0.0';
+import {updateAssociateTrip} from './associate-service.js?v=68.0.0';
 import {curtainWidth} from './fitting-motion.js?v=41.0.0';
 import {staffGesture,staffTarget} from './staff-motion.js?v=37.0.0';
 import {turnToward} from './motion.js?v=34.0.0';

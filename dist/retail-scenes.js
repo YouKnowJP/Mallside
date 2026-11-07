@@ -1,4 +1,5 @@
-import {retailIdentity,windowAssortment} from './retail-identity.js?v=63.0.0';
+import {retailLight} from './retail-light.js?v=68.0.0';
+import {retailIdentity,windowAssortment} from './retail-identity.js?v=68.0.0';
 import {facadeFrame} from './mall-design.js?v=35.0.0';
 import * as T from './vendor/three.module.js';
 
@@ -12,14 +13,19 @@ export function buildWindowDisplay(w,store,products,photos){
   const x=(i?1:-1)*f.width*.29,z=f.depth/2-10,wearable=['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type);
   // A real own-store reference is supported by original display furniture. No placeholder stock.
   w.box(x,5,z,width,8,16,stone,group);w.box(x,10,z,width+1,2,17,metal,group);w.box(x,31,z-7,width+1,40,1,style.wall,group);
+  w.box(x,32,z-6.3,width*.73,37,.8,style.fixture,group);
+  for(const sign of [-1,1])w.box(x+sign*width*.46,33,z-5.8,.65,42,.9,metal,group);
+  retailLight(w,group,x,36,z-5.8,width*.95,40);
+  retailLight(w,group,x,11.06,z+.6,width*.88,12,true);
   if(wearable){w.cyl(x,31,z-4,.65,40,metal,group);w.box(x,51,z-3,13,1,5,metal,group);}
   const display=new T.Group();group.add(display);w.photo(p,x,wearable?35:29,z+1,width-4,wearable?34:31,display);
   const bounds=new T.Box3().setFromObject(display);if(!bounds.isEmpty())display.position.y+=wearable?52-bounds.max.y:11.2-bounds.min.y;
   const card=w.mesh(new T.PlaneGeometry(width*.83,width*.21),w.mat('#ffffff',{map:windowLabel(w,p),roughness:.9}),group);card.position.set(x,7,z+8.15);card.castShadow=false;
   const glass=w.box(x,34,z+8.5,width+2,47,.35,w.mat('#d9e5e0',{transparent:true,opacity:.07,depthWrite:false,roughness:.12,envMapIntensity:1.2}),group);glass.castShadow=false;
+  if(w.tag&&store.door){w.tag(glass,'window:'+store.id,store.door);glass.userData.windowDisplay=true;}
   w.box(x,58,z+1,width+1,1.4,7,w.mat('#e7d4af',{emissive:'#d7bc82',emissiveIntensity:.14}),group);
  }
- group.userData.models=items.map(p=>p.id);group.userData.store=store.id;group.userData.windowRevision='64';w.canvas&&(w.canvas.dataset.windowDisplayRevision='64');return group;
+ group.userData.models=items.map(p=>p.id);group.userData.store=store.id;group.userData.windowRevision='64';if(w.canvas){w.canvas.dataset.windowDisplayRevision='64';w.canvas.dataset.windowFinishRevision='68';}return group;
 }
 
 export function buildSignatureInterior(w,profile,layout,products){
