@@ -1,5 +1,5 @@
 import {surfaceTexture} from './scene-finish.js?v=57.0.0';
-import {updateStudioStudy} from './studio-details.js?v=62.0.0';
+import {updateStudioStudy} from './studio-details.js?v=63.0.0';
 // Original seam, cuff and button studies, separate from merchandise.
 export function buildTailoringStudio(w,st,style){
  const samples=[],paper='#eee6d6',ink='#7b897c';

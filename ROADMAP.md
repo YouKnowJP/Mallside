@@ -2,6 +2,16 @@
 
 Updated 6 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v63
+
+- Stock the unfinished South Coast Plaza RIMOWA shop with one exact earlier-generation 92553004 Cabin reference and a licensed natural photograph. Use the dated 2 May 2026 US price and exclude current 926 pricing/stock claims.
+- Add an original travel gallery, closed-case geometry, free dimensions, stable physical carrying and smoothly tracked two-hand inspection while retaining saved material notes and plans.
+- Refine all ten cinema foyers with original screens/posters, six-seat construction, ticket desks and saved-memory markers on their existing footprints.
+- Improve the existing original-short programme with free seat selection, illustrated scenes, cancellation/restart and a fixed finish/payment review. Preserve its daily/economy rules and calendar bonus.
+- Add finite seated programme handling and clear cinema camera views from the actual entrance.
+- Preserve 8,862 earlier complete records, 1,598 shop IDs, schema 6/map 10. Current counts: 8,863 listings, 1,087 verified shops, 378 pending identities and 287 retail planning lounges.
+- [Gameplay](docs/GAMEPLAY-v63.md) · [evidence](docs/research-v63/catalog-evidence.json) · [QA](docs/qa-v63.md). Remaining research, assortments, mall geometry and broader animation work stay unfinished.
+
 ## Completed in v62
 
 - Give the South Coast Plaza Tudor | Bucherer 1888 research lounge one exact Black Bay 54 reference, a dated US price and a separately licensed matching photograph.
@@ -340,7 +350,7 @@ Updated 6 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,086 stocked identities, 133 service identities and 379 identities awaiting catalog research**. The remaining 288 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,087 stocked identities, 133 service identities and 378 identities awaiting catalog research**. The remaining 287 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

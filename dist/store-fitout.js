@@ -1,9 +1,10 @@
-import {buildDiveWatchStockCase} from './dive-watch-studio.js?v=62.0.0';
+import {buildLuggageStock} from './luggage-studio.js?v=63.0.0';
+import {buildDiveWatchStockCase} from './dive-watch-studio.js?v=63.0.0';
 import {isReadingProduct} from './book-tools.js?v=50.0.0';
 import * as T from './vendor/three.module.js';
-import {productAppearance} from './product-appearance.js?v=62.0.0';
-import {slotForProduct,money,price} from './engine.js?v=62.0.0';
-import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=62.0.0';
+import {productAppearance} from './product-appearance.js?v=63.0.0';
+import {slotForProduct,money,price} from './engine.js?v=63.0.0';
+import {addInstancedMerchandise,finishMerchandiseInstances} from './merchandise-3d.js?v=63.0.0';
 
 const clothes=new Set(['shirt','hoodie','cardigan','jacket','pants','shorts']);
 const bags=new Set(['bag','crossbody','backpack','duffel','wallet']);
@@ -47,7 +48,8 @@ export function buildStoreFitout(w,store,profile,layout,selection){
  for(const [i,r]of layout.stockFixtures.entries()){
   const p=r.kind==='island'&&apparel.length?apparel[i%apparel.length]:r.kind==='feature'&&apparel.length?apparel[(i+w.state.day)%apparel.length]:own[(i*3+w.state.day)%Math.max(1,own.length)];if(!p)continue;
   const cx=r.x+r.width/2,cz=r.y+r.height/2,turn=r.kind==='wall'?(r.side<0?Math.PI/2:-Math.PI/2):0;
-  if(p.watchProfile?.diveReference){buildDiveWatchStockCase(w,p,r,profile);}
+  if(p.luggageProfile){buildLuggageStock(w,p,r,profile);}
+  else if(p.watchProfile?.diveReference){buildDiveWatchStockCase(w,p,r,profile);}
   else if(r.kind==='feature'){
    w.box(cx,27,cz,r.width,6,r.height,profile.fixture);for(const dx of [-r.width/2+10,r.width/2-10])w.box(cx+dx,13,cz,4,26,r.height-8,profile.trim);
    if(p.phoneProfile){for(const dx of [-45,0,45]){w.box(cx+dx,30.5,cz,7,1,6,profile.trim);w.photo(p,cx+dx,34.25,cz,4,6.5);}}
@@ -63,7 +65,7 @@ export function buildStoreFitout(w,store,profile,layout,selection){
   else if(apparel.length)rail(w,batch,cx,cz,r.height-8,r.width-6,apparel[i%apparel.length],profile,Math.PI/2);
   else{w.box(cx,20,cz,r.width,40,r.height,profile.fixture);for(const z of [cz-48,cz+48]){if(p.phoneProfile)w.photo(p,cx,43.25,z,4,6.5);else if(p.storageProfile)batch.model(p,cx,40,z,Math.min(19,28*p.storageProfile.heightIn/p.storageProfile.widthIn),0);else if(p.ceramicProfile)batch.model(p,cx,40,z,Math.min(19,28*p.ceramicProfile.heightIn/p.ceramicProfile.diameterIn),0);else if(p.plushProfile)batch.model(p,cx,40,z,19,0);else w.photo(p,cx,59,z,34,39);}}
   const group=new T.Group();group.position.set(cx,0,cz);group.rotation.y=turn;w.scene.add(group);
-  if(r.kind==='wall'&&!p.watchProfile?.diveReference&&!p.phoneProfile&&!p.plushProfile&&!p.ceramicProfile&&!p.storageProfile)w.photo(p,0,108,8,38,37,group);
+  if(r.kind==='wall'&&!p.luggageProfile&&!p.watchProfile?.diveReference&&!p.phoneProfile&&!p.plushProfile&&!p.ceramicProfile&&!p.storageProfile)w.photo(p,0,108,8,38,37,group);
   const key='product:'+p.id;w.tag(group,key,r.approach);const hit=w.box(cx,45,cz,r.width,90,r.height,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,r.approach);const label=w.label(money(price(w.state,p)),r.approach.x,28,r.approach.y,52);w.tag(label,key,r.approach);
   w.interiorStops.push({point:r.approach,id:key,name:p.name,label:'Browse stocked display · '+money(price(w.state,p))});
  }

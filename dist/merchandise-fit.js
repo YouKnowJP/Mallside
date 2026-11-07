@@ -3,10 +3,10 @@ import {smoothBagSway} from './bag-motion.js?v=44.0.0';
 import {bodySectionRadius} from './garment-clearance.js?v=40.0.0';
 import * as T from './vendor/three.module.js';
 import {poseHumanHands,maskSleevedSkin} from './human-anatomy.js?v=40.0.0';
-import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=62.0.0';
-import {productAppearance} from './product-appearance.js?v=62.0.0';
+import {applyCharacterPose,retargetGarmentGroup,retargetLimbGroup,solveArmToGrip} from './character-rig.js?v=63.0.0';
+import {productAppearance} from './product-appearance.js?v=63.0.0';
 import {referenceMaterial} from './merchandise-materials.js?v=23.0.0';
-import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=62.0.0';
+import {merchandiseTemplate,physicalProduct} from './merchandise-3d.js?v=63.0.0';
 import {addGarmentBrand,strapGeometry,addChainLinks} from './merchandise-details.js?v=23.0.0';
 
 export function fitScaleForSize(size,usual){const canonical=v=>({XXS:'2XS',XXL:'2XL',XXXL:'3XL','2X':'2XL','3X':'3XL'}[v]||v),sizes=['2XS','XS','S','M','L','XL','2XL','3XL'],a=sizes.indexOf(canonical(size)),b=sizes.indexOf(canonical(usual));if(a>=0&&b>=0)return 1+(a-b)*.035;const n=Number(size)||Number(/^W(\d+)L\d+$/.exec(size)?.[1]),u=Number(usual)||Number(/^W(\d+)L\d+$/.exec(usual)?.[1]);return n&&u?Math.max(.9,Math.min(1.1,Math.sqrt(n/u))):1;}
@@ -78,7 +78,7 @@ export function attachWornGarment(w,g,p,slot){
 }
 
 export function attachHeldProduct(w,g,p,limbIndex=1,{offset=0}={}){
- const limb=g.userData.limbs[limbIndex],holder=new T.Group(),template=merchandiseTemplate(w,p,['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type)),model=template.clone(true),scale=Math.min(.29,(g.userData.rig?42:22.5)/template.userData.size.y),anchor=limb.userData.grip||limb;
+ const limb=g.userData.limbs[limbIndex],holder=new T.Group(),template=merchandiseTemplate(w,p,['shirt','hoodie','cardigan','jacket','pants','shorts'].includes(p.type)),model=template.clone(true),scale=p.luggageProfile?.reviewed?.35:Math.min(.29,(g.userData.rig?42:22.5)/template.userData.size.y),anchor=limb.userData.grip||limb;
  holder.userData={productId:p.id,role:'held',limbIndex,baseLimbIndex:limbIndex,model,anchor,offset};holder.position.set(offset,g.userData.rig?0:-18,offset*.45);anchor.add(holder);holder.add(model);model.scale.setScalar(scale);model.position.y=-template.userData.size.y*scale;
  if(p.brushProfile?.reviewed){model.rotation.z=Math.PI;model.position.y=0;model.userData.heldAt='handle';}
  g.userData.gravityAttachments??=[];g.userData.gravityAttachments.push({holder,limb,anchor});updateAttachmentFrames(g);return {holder,model};

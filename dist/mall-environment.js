@@ -1,4 +1,4 @@
-import {buildBenchPlanningDetails} from './planning-visit.js?v=62.0.0';
+import {buildBenchPlanningDetails} from './planning-visit.js?v=63.0.0';
 import {buildDirectoryKiosk} from './directory-kiosk.js?v=57.0.0';
 import {buildNoticeDetail} from './notice-details.js?v=50.0.0';
 import {buildWaterDetail} from './water-details.js?v=49.0.0';
@@ -12,10 +12,10 @@ import {buildWaystationDetails} from './waystation-details.js?v=50.0.0';
 import {buildGardenStudy} from './garden-details.js?v=48.0.0';
 import {beveledBox,surfaceTexture,palmFrondGeometry} from './scene-finish.js?v=57.0.0';
 import {surfaceFinish} from './mall-atmosphere.js?v=33.0.0';
-import {retailIdentity,drawRetailSign} from './retail-identity.js?v=62.0.0';
+import {retailIdentity,drawRetailSign} from './retail-identity.js?v=63.0.0';
 import * as T from './vendor/three.module.js';
 import {themeFor,facadeFrame} from './mall-design.js?v=35.0.0';
-import {brandDesign} from './brand-designs.js?v=62.0.0';
+import {brandDesign} from './brand-designs.js?v=63.0.0';
 
 // Shared instances keep the extra architectural detail affordable on tablets and phones.
 class Details{

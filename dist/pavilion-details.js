@@ -1,6 +1,6 @@
 import * as T from './vendor/three.module.js';
-import {currentPopup,byId} from './engine.js?v=62.0.0';
-import {PRODUCT_PHOTOS} from './product-photos.js?v=62.0.0';
+import {currentPopup,byId} from './engine.js?v=63.0.0';
+import {PRODUCT_PHOTOS} from './product-photos.js?v=63.0.0';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
 
 // Original exhibition furniture and photographic cards, inside the existing counter footprint.

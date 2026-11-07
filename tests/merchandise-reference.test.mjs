@@ -22,7 +22,7 @@ function all(g,role){const found=[];g.traverse(o=>{if(o.userData.role===role)fou
 
 test('every photo-sampled physical listing uses an existing-photo palette whose checksum matches its local reference',()=>{
  const photos=new Set();let listings=0;
- for(const p of E.PRODUCTS.filter(p=>physicalProduct(p)&&!p.recorderProfile&&!p.phoneProfile)){const path=PRODUCT_PHOTOS[p.id]?.path,a=productAppearance(p);assert.ok(PHOTO_PALETTES[path],p.id);assert.match(a.color,/^#[0-9a-f]{6}$/);assert.ok(['reviewed-photograph','photo-sample'].includes(a.colorEvidence));photos.add(path);listings++;}
+ for(const p of E.PRODUCTS.filter(p=>physicalProduct(p)&&!p.recorderProfile&&!p.phoneProfile&&!p.luggageProfile)){const path=PRODUCT_PHOTOS[p.id]?.path,a=productAppearance(p);assert.ok(PHOTO_PALETTES[path],p.id);assert.match(a.color,/^#[0-9a-f]{6}$/);assert.ok(['reviewed-photograph','photo-sample'].includes(a.colorEvidence));photos.add(path);listings++;}
  assert.equal(listings,3162);assert.equal(photos.size,821);
  for(const path of photos){const sha=createHash('sha256').update(readFileSync(new URL('../dist/'+path,import.meta.url))).digest('hex').slice(0,16);assert.equal(PHOTO_PALETTES[path].sha256,sha,path);}
 });

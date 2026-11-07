@@ -1,4 +1,4 @@
-import {equippedLook} from './engine.js?v=62.0.0';
+import {equippedLook} from './engine.js?v=63.0.0';
 import {paintPerson} from './sprites.js?v=56.0.0';
 import {nightFrame} from './motion.js?v=34.0.0';
 export class HomeJourney{

@@ -1,5 +1,5 @@
 import {surfaceTexture} from './scene-finish.js?v=57.0.0';
-import {updateStudioStudy} from './studio-details.js?v=62.0.0';
+import {updateStudioStudy} from './studio-details.js?v=63.0.0';
 
 // Original creative sample/care fixtures, separate from verified merchant stock.
 export function buildActiveStudio(w,st,style){

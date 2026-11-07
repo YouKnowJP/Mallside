@@ -2,6 +2,13 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v63 · 6 November 2026
+
+- Add the historical RIMOWA Original Cabin reference with licensed photography, original casework, dimension study and smooth physical handling.
+- Furnish all ten picture houses and clarify their free programme/seat stages, cancellation and final game payment.
+- Add original illustrated stills, stable ticket handling, clearer cinema cameras and readable tablet guides; correct nonwearable pickup guidance while preserving existing products, saves and economy.
+- [Gameplay](docs/GAMEPLAY-v63.md) · [QA](docs/qa-v63.md) · [sources](docs/research-v63/catalog-evidence.json).
+
 ## v62 · 6 November 2026
 
 - Complete one exact TUDOR reference with licensed photography, original no-date geometry, lined-tray salon and free case/bezel notes.

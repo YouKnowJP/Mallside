@@ -8,7 +8,11 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
-## v62 — a watch salon and a livelier pavilion
+## v63 — travel gallery and picture-house foyers
+
+The unfinished RIMOWA boutique gains a clearly historical Original Cabin reference, licensed photograph, original rolling-case geometry, free dimension notes and smooth two-hand inspection. All ten cinemas gain finer foyers and original illustrated programmes, clear seat selection and a fixed finish/payment bar. A seated programme-handling animation and entrance-based cameras improve the screening view. Tablet guides stay in one readable column, and nonwearable pickup text now points to inspection and checkout. Earlier products and saves remain compatible. See [gameplay](docs/GAMEPLAY-v63.md), [sources](docs/research-v63/catalog-evidence.json), [QA](docs/qa-v63.md) and the [roadmap](ROADMAP.md).
+
+## Previous update · v62 — a watch salon and a livelier pavilion
 
 The unfinished South Coast Plaza TUDOR boutique gains an exact Black Bay 54 reference, a licensed photograph, original no-date watch geometry, lined-tray interiors and a free case/bezel study. All ten pop-up pavilions gain photographic exhibit cards, finer furniture, free comparisons and clear daily stamp/coupon status. Wrist previews now lift and lower smoothly from actual resting hands. Existing saves and product records remain compatible. See [v62 gameplay](docs/GAMEPLAY-v62.md), [sources](docs/research-v62/catalog-evidence.json), [QA](docs/qa-v62.md) and the [roadmap](ROADMAP.md).
 

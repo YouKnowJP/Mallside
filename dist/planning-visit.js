@@ -1,4 +1,4 @@
-import {STUDY_PALETTES,STUDY_FINISHES} from './studio-study.js?v=62.0.0';
+import {STUDY_PALETTES,STUDY_FINISHES} from './studio-study.js?v=63.0.0';
 
 export function floorStudyHTML(st,draft,{esc}){
  const palette=STUDY_PALETTES.find(p=>p.id===draft.palette);

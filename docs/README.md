@@ -57,6 +57,10 @@ Start with the [project README](../README.md) or [play the game](https://youknow
 | Contribution and security reports | [Contributing](../CONTRIBUTING.md), [security](../SECURITY.md) |
 | Research/conversion tooling | [Scripts guide](../scripts/README.md) |
 
+## Current update · v63
+
+[Gameplay](GAMEPLAY-v63.md) · [QA](qa-v63.md) · [source evidence](research-v63/catalog-evidence.json) · [compatibility](research-v63/compatibility.json)
+
 ## Current update · v62
 
 [Gameplay](GAMEPLAY-v62.md) · [QA](qa-v62.md) · [product evidence](research-v62/catalog-evidence.json) · [compatibility](research-v62/compatibility.json)

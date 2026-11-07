@@ -1,0 +1,152 @@
+{
+  "schema": "mallside-v63-bounded-rimowa-research-1",
+  "reviewedOn": "2026-11-06",
+  "recommendation": "Adopt one clearly historical earlier-generation92553004 Original Cabin Silver at southcoast-tenant-rimowa-2. Use the archived USD1,525 amount dated2May2026. Do not substitute the later indexed amount or current926 generation.",
+  "products": [
+    {
+      "id": "v63-real-rimowa-original-cabin-silver",
+      "tenantId": "southcoast-tenant-rimowa-2",
+      "merchant": "Rimowa",
+      "brand": "RIMOWA",
+      "name": "Original Cabin \u00b7 Silver \u00b7 92553004 (earlier generation)",
+      "referenceSKU": "92553004",
+      "referenceEAN": "4003743024124",
+      "format": "Cabin",
+      "color": "Silver",
+      "typeSuggestion": "luggage",
+      "source": "https://web.archive.org/web/20260502152254/https://www.rimowa.com/us/en/luggage/colour/silver/cabin/92553004.html",
+      "rawSnapshotURL": "https://web.archive.org/web/20260502152254id_/https://www.rimowa.com/us/en/luggage/colour/silver/cabin/92553004.html",
+      "originalPrimaryURL": "https://www.rimowa.com/us/en/luggage/colour/silver/cabin/92553004.html",
+      "referenceAmount": 1525,
+      "referenceCurrency": "USD",
+      "referencePriceDate": "2026-05-02",
+      "primarySnapshotAt": "2026-05-02T15:22:54Z",
+      "checkedOn": "2026-11-06",
+      "sourceRetailer": "RIMOWA US \u2014 preserved earlier-generation product page",
+      "sourceEvidenceKind": "Exact preserved US manufacturer HTML: Product.sku92553004, Offer.priceCurrencyUSD, Offer.price1525.00 and visible USD1,525.00 price agree.",
+      "manufacturerFacts": {
+        "heightCM": 55,
+        "widthCM": 40,
+        "depthCM": 23,
+        "weightKG": 4.3,
+        "capacityL": 35,
+        "measurementBasis": "Overall measurements include wheels and handles.",
+        "exterior": "Anodized aluminum",
+        "interior": "Polyester",
+        "handles": "Plastic",
+        "wheels": "Hard plastic",
+        "dividers": "Polyester",
+        "handle": "Stage-free telescopic handle; exact extended height/stroke not established",
+        "closure": "Framed clamshell with TSA-approved locks",
+        "divider": "Adjustable Flex Divider"
+      },
+      "sourceOfferNote": "Historical RIMOWA US outright reference of USD1,525 from the preserved2May2026 product page for92553004. Current prices, current availability and South Coast Plaza branch stock are not established. The original product URL now redirects to the silver category; current92653004 is a different generation. Tax, final checkout, shipping, real warranty/returns and accessories are excluded. Game stock, pricing and returns are simulated.",
+      "sizeBasis": "Manufacturer overall55\u00d740\u00d723cm includes wheels and handles. Photograph does not measure size, handle extension or physical fit. Cabin is the manufacturer's format designation; airline acceptance and current restrictions are not verified or guaranteed. Do not reuse the historical airline-allowance table as current guidance.",
+      "branchEvidence": {
+        "url": "https://www.southcoastplaza.com/directory/rimowa/",
+        "directoryURL": "https://www.southcoastplaza.com/directory?category=luggage&view=list",
+        "name": "RIMOWA",
+        "floor": "Level2",
+        "location": "Carousel Court",
+        "phone": "657.444.8472",
+        "qualification": "Primary mall directory establishes store identity/location only, not local925 inventory."
+      },
+      "photo": {
+        "source": "https://commons.wikimedia.org/wiki/File:RIMOWA_Photo.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/RIMOWA_Photo.jpg",
+        "width": 640,
+        "height": 640,
+        "bytes": 57934,
+        "sha1": "514a6b5295fe43f172f4b64b4a822f283cf4dc2e",
+        "sha256": "e81cb106f910bdfab09337173ebeb9f83052e92de435c8db7e65bfc02d2e3f63",
+        "commonsRevision": 1154302244,
+        "photoDate": "2019-08-07",
+        "uploadedAt": "2019-11-18T10:49:50Z",
+        "author": "Andermann (Commons uploader Steve.rimowa)",
+        "authorURL": "https://commons.wikimedia.org/wiki/User:Steve.rimowa",
+        "license": "CC-BY-SA-4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceClaim": "Own work; self-published CC BY-SA4.0. Inspected current wikitext has no permission-warning or deletion templates.",
+        "caption": "Suitcase RIMOWA Original Cabin",
+        "visualReview": "Natural room photograph with wood floor/window and a retail paper hangtag/carton; not copied catalog art. Silver grooved framed shell, rounded corner caps, plastic grab handle and four twin-wheel caster assemblies agree with the earlier Original Cabin design.",
+        "identityQualification": "Commons author explicitly identifies Original Cabin. The2019 photograph predates current926 and is used only for the earlier925 reference. A readable photographed SKU/serial, independent authenticity, measured dimensions and airline eligibility are not established. CabinS/Plus, Classic and current926 are excluded.",
+        "excluded": "Paper hangtag, carton/print, floor, window and room background are not included. Source dimensions come from the manufacturer. Original3D geometry should omit brand artwork and copied photo pixels.",
+        "requiredAttribution": "Andermann (Commons uploader Steve.rimowa), RIMOWA Photo.jpg, CC BY-SA4.0; link source/licence and state encoding/resizing/cropping changes. Adapted photograph remains CC BY-SA4.0 independently of game code."
+      },
+      "corroboratingPrimaryCatalog": {
+        "url": "https://showroom.rimowa.com/accounts/rimowa/public/media/info/file_1_7623_66f152.pdf",
+        "page": 3,
+        "row": {
+          "articleNo": "92553004",
+          "EAN": "4003743024124",
+          "description": "ORIGINAL CABIN SILVER"
+        },
+        "distinctFormats": {
+          "92552004": "ORIGINAL CABIN S SILVER",
+          "92556004": "ORIGINAL CABIN PLUS SILVER"
+        },
+        "acquisition": "Primary PDF text/page3 inspected through web tool; direct host download returned403."
+      },
+      "privateEvidenceFiles": [
+        {
+          "path": "rimowa925-20260502.html",
+          "bytes": 354124,
+          "sha256": "2f62f36d3f0b61555cde54a26b06c76b16f9d87a29ea8320b079a611947ca506"
+        },
+        {
+          "path": "rimowa925-20260414.html",
+          "bytes": 351989,
+          "sha256": "a4919b27522546f8cf08d1484f2036f3486646853c894b7a3f1166c248d327ec"
+        },
+        {
+          "path": "rimowa925-archived-product-state.json",
+          "bytes": 4216,
+          "sha256": "0ef7b0e57e6a81ab4552a2da36462dc78a3625b41e62beac957791e73d93e1c5"
+        },
+        {
+          "path": "rimowa-photo-imageinfo.json",
+          "bytes": 4270,
+          "sha256": "a3a5b0161bc1a8130999f9c43716ff76714f1bc33079b17d7d52894f078cae88"
+        },
+        {
+          "path": "wayback925-cdx.json",
+          "bytes": 1389,
+          "sha256": "cebf2a12fc7066b28fac48cf9a497b3b5a5012350e966e3b3abeb38753938d6d"
+        },
+        {
+          "path": "primary-index-results.json",
+          "bytes": 12858,
+          "sha256": "8c196b4be08af8f2f933bfee6e2f665af4645f606d3249d727f1b1e3523cc001"
+        }
+      ],
+      "runtimePhoto": {
+        "path": "assets/photos/v63-real-rimowa-original-cabin-silver.webp",
+        "bytes": 51998,
+        "sha256": "14187f833ce240b2ae513f731f051df866df69a199b4382bfe6a5eaeba7460e0",
+        "changes": "Encoded JPEG as WebP at original640\u00d7640 dimensions; no crop, resize, rotation or semantic edit."
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "reference": "92653004",
+      "source": "https://www.rimowa.com/us/en/luggage/colour/silver/cabin/92653004.html",
+      "reason": "Distinct current generation with soft-return/customization details. Its USD1550 price is not assigned to the2019 photograph."
+    },
+    {
+      "reference": "92553004 later search-index display",
+      "amount": 1550,
+      "currency": "USD",
+      "reason": "Later indexed amount lacks a stable precise capture date; use the preserved dated2May2026 USD1525 snapshot."
+    },
+    {
+      "reference": "CabinS/CabinPlus/Classic/Topas/Hybrid",
+      "reason": "Distinct format, generation or material; not interchangeable with selected Original Cabin."
+    }
+  ],
+  "retrievalNotes": [
+    "Direct live RIMOWA/South Coast host fetches returned403. No authentication or anti-bot bypass attempted; live facts inspected through web tool.",
+    "Internet Archive CDX and preserved exact US primary HTML fetched successfully. Offer JSON-LD and visible price/SKU agree.",
+    "Only this private research directory was written. No runtime, tests, Git, browser settings, booking or publishing actions."
+  ]
+}

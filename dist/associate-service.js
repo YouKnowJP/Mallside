@@ -1,7 +1,7 @@
 import {crowdStep} from './ambient-motion.js?v=36.0.0';
 import {freeRoute,walkable,freeMove,personStop} from './free-navigation.js?v=25.0.0';
 import {stepToward} from './motion.js?v=34.0.0';
-import {stock,byId,storeById,levelOf,CLOSE} from './engine.js?v=62.0.0';
+import {stock,byId,storeById,levelOf,CLOSE} from './engine.js?v=63.0.0';
 
 // A check is a per-visit conversation, never a reservation or a purchase.
 export function checkRequest(state,storeId,bags,productId,size){

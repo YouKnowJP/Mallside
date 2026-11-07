@@ -1,3 +1,4 @@
+import {VERIFIED_LUGGAGE_ADDITIONS} from './store-product-additions-v63.js?v=63.0.0';
 import {VERIFIED_DIVE_WATCH_ADDITIONS as V62} from './store-product-additions-v62.js?v=62.0.0';
 import {VERIFIED_PHONE_ADDITIONS as V61} from './store-product-additions-v61.js?v=61.0.0';
 import {VERIFIED_RECORDER_ADDITIONS as V60} from './store-product-additions-v60.js?v=60.0.0';
@@ -21,4 +22,4 @@ import {VERIFIED_TAILORING_ADDITIONS as V46} from './store-product-additions-v46
 import {VERIFIED_COLLECTIBLE_ADDITIONS as V47} from './store-product-additions-v47.js?v=47.0.0';
 import {VERIFIED_PAPER_ADDITIONS as V50} from './store-product-additions-v50.js?v=50.0.0';
 import {VERIFIED_FRAGRANCE_ADDITIONS as V53} from './store-product-additions-v53.js?v=53.0.0';
-export const STORE_PRODUCT_SEEDS=[...V62,...V61,...V60,...V56,...V55,...V54,...V53,...V51,...V50,...V11,...V12,...V37,...V38,...V39,...V40,...V42,...V43,...V44,...V45,...V46,...V47,...V48,...V49];
+export const STORE_PRODUCT_SEEDS=[...VERIFIED_LUGGAGE_ADDITIONS,...V62,...V61,...V60,...V56,...V55,...V54,...V53,...V51,...V50,...V11,...V12,...V37,...V38,...V39,...V40,...V42,...V43,...V44,...V45,...V46,...V47,...V48,...V49];

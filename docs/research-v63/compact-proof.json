@@ -1,0 +1,111 @@
+{
+  "browser": "Chromium",
+  "browserVersion": "156.0.8078.80",
+  "version": "63.0.0",
+  "status": "passed",
+  "bundle": "app-OGI7JDDZ.js",
+  "results": [
+    {
+      "width": 320,
+      "height": 900,
+      "graphics": "3d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 900,
+      "graphics": "2d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "graphics": "3d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "graphics": "2d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "graphics": "3d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "graphics": "2d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "graphics": "3d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "graphics": "2d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "graphics": "3d",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "graphics": "2d",
+      "status": "passed",
+      "errors": []
+    }
+  ],
+  "scriptsSHA256": {
+    "build/qa/v63-compact-0.js": "145343c7e5e9d2e0b0fdc602099fce9ab6b03b7145d52b148cf2085b79eee5c2",
+    "build/qa/v63-compact-1.js": "a100b22b005ec8316a6f6d211e3f6e027deeb1fe2a6c2b3a2f4aec226db6b03f"
+  },
+  "publicTreeSHA256": "d7f6cf0b2203728604b52541b362f7474960dd9c0ec64936458f7564c240f62f",
+  "captureSHA256": {
+    "v63-compact-320x568-2d-cinema.png": "945897a91db669dd58cf0aaaf42bf25b1bd0da7c0cff748899e74b7ae4c31ad6",
+    "v63-compact-320x568-2d-luggage.png": "bf5f5eb3e211262415a71a5ce840718bb38e22e23a83bc1886530e9d40c3c22f",
+    "v63-compact-320x568-3d-cinema.png": "c1167aec3dc61fad0ef1062847ca94b2acbde6a62d448aea974bce92796e1e9e",
+    "v63-compact-320x568-3d-luggage.png": "2309e923f245c9214075b9d3f92cefecaa24b08be2c31aa92fe6609ee76fbede",
+    "v63-compact-320x900-2d-cinema.png": "8851853e881b3f718f2cd5345e76856afbeff61e50a00f0e7c9052bbb99a393a",
+    "v63-compact-320x900-2d-luggage.png": "249f713d4e333b5d6a320e3436becd6dfb54fbaedcaa5684853adafda58d14a3",
+    "v63-compact-320x900-3d-cinema.png": "3d85a08cedfef65dcf29e0829044aed31d0f8732770ee57de857ec83d6743a51",
+    "v63-compact-320x900-3d-luggage.png": "536a2a3d8473b6f833d5be5d3aabb51f7fa394d1b39ac256ac8584fcbc44bf4d",
+    "v63-compact-390x900-2d-cinema.png": "81f4aeff467a7202f07409c4c9ea89ad00bebb57388fef18ccbdfe4ab7f21333",
+    "v63-compact-390x900-2d-luggage.png": "8dbea9d9b212ad01ac59e86a3ee06c10c0f3c97f314bba480a60347d7b07438c",
+    "v63-compact-390x900-3d-cinema.png": "c319ee1fa9a57874c687c0dd536b53e4253dc0ba8e4c9c21f383eb6b356f89ac",
+    "v63-compact-390x900-3d-luggage.png": "139327b44320d11353f752019069937319f7a1bd55c8f2f91a67ffffbd1dc882",
+    "v63-compact-768x900-2d-cinema.png": "ac398c5d88f6016119c88993b736b0d37266617d43269e20d361fc652640e710",
+    "v63-compact-768x900-2d-luggage.png": "07d9508c5d26c9515a2f1c6a1228a13ef761594b56954632ccd24762187b8874",
+    "v63-compact-768x900-3d-cinema.png": "ac398c5d88f6016119c88993b736b0d37266617d43269e20d361fc652640e710",
+    "v63-compact-768x900-3d-luggage.png": "f1174bb37252d80740fc93acfd3ab277fb6e9042a0425db92b60c91e6ac8d1c2",
+    "v63-compact-844x390-2d-cinema.png": "a0f4d4e5931d903d68a57b68d61cb384e9a11a1403f74a57bd9fc780a55632e5",
+    "v63-compact-844x390-2d-luggage.png": "b660b9f5f40351bb619e9459df09276b913d2efa41929242cccc79324142adb7",
+    "v63-compact-844x390-3d-cinema.png": "86e9a133128e55beaf8f86e150f49caf63f6f4a2d3917ccb6abe863d746fc84e",
+    "v63-compact-844x390-3d-luggage.png": "33e9a21c8bde52197be4aeb8bfc960a943801a546e546e66cfc746a0a6740d7a"
+  },
+  "reviewedImages": {
+    "v63-compact-320x568-3d-cinema.png": "c1167aec3dc61fad0ef1062847ca94b2acbde6a62d448aea974bce92796e1e9e",
+    "v63-compact-844x390-2d-luggage.png": "b660b9f5f40351bb619e9459df09276b913d2efa41929242cccc79324142adb7"
+  },
+  "limitations": "Owned desktop Chromium contexts emulate the stated viewports and reduced motion, in 3D and lighter mode. This is not physical-device or assistive-technology certification."
+}

@@ -1,5 +1,5 @@
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
-import {updateStudioStudy} from './studio-details.js?v=62.0.0';
+import {updateStudioStudy} from './studio-details.js?v=63.0.0';
 
 // An original watch salon: lined trays, glass-edge casework, storage and neutral reflection samples.
 export function buildDiveWatchStudio(w,st,style){

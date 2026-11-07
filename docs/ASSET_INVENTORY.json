@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "release": "62.0.0",
+  "release": "63.0.0",
   "notice": "Provenance and clearance worklist only. Source URLs and inclusion do not establish reproduction, redistribution or commercial permission. No exclusive Mallside ownership is asserted for these photographs.",
   "characterAssets": {
     "license": "CC0-1.0",
     "provenance": "dist/assets/character/provenance.json",
     "notice": "Independent public-domain graphical assets; see THIRD_PARTY_NOTICES.md."
   },
-  "runtimePhotoEntries": 2033,
-  "uniqueRuntimePhotoFiles": 2011,
+  "runtimePhotoEntries": 2034,
+  "uniqueRuntimePhotoFiles": 2012,
   "photos": [
     {
       "id": "adidas-v4-1",
@@ -20055,6 +20055,20 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "author": "EMore98",
       "changes": "JPEG encoded as WebP at original 823 × 932 dimensions; no cropping, resizing, rotation or semantic edit."
+    },
+    {
+      "id": "v63-real-rimowa-original-cabin-silver",
+      "path": "assets/photos/v63-real-rimowa-original-cabin-silver.webp",
+      "sha256": "14187f833ce240b2ae513f731f051df866df69a199b4382bfe6a5eaeba7460e0",
+      "source": "https://commons.wikimedia.org/wiki/File:RIMOWA_Photo.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/RIMOWA_Photo.jpg",
+      "description": "Earlier RIMOWA Original Cabin in Silver · licensed natural room photograph.",
+      "rightsHolder": "Andermann (Commons uploader Steve.rimowa)",
+      "permissionStatus": "licensed",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "author": "Andermann (Commons uploader Steve.rimowa)",
+      "changes": "Encoded JPEG as WebP at original640×640 dimensions; no crop, resize, rotation or semantic edit."
     },
     {
       "id": "ysl-v4-1",
