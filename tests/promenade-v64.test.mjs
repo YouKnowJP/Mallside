@@ -10,7 +10,9 @@ import {buildWindowDisplay} from '../dist/retail-scenes.js';
 import {PRODUCT_PHOTOS} from '../dist/product-photos.js';
 import {MallWorld3D} from '../dist/world-3d.js';
 
-const hash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+const hash=(value,replacer)=>createHash('sha256').update(JSON.stringify(value,replacer)).digest('hex');
+// V8 math can differ in its last bits across architectures. Keep six decimal places of layout precision.
+const normalizeGeometry=(_,v)=>typeof v==='number'?Number(v.toFixed(6)):v;
 const prior=JSON.parse(readFileSync(new URL('../docs/research-v64/compatibility-before.json',import.meta.url)));
 test('the new visual layer preserves complete v63 catalog data, saves and all 23 navigation floors',()=>{
  assert.equal(hash(E.PRODUCTS),prior.productRecordsSHA256);
@@ -19,8 +21,8 @@ test('the new visual layer preserves complete v63 catalog data, saves and all 23
  assert.equal(state.version,prior.schema);assert.equal(state.mapRevision,prior.mapRevision);
  for(const {mallId,floor,navSHA256,doorsSHA256} of prior.layouts){
   const l=spatialLayout(E.mallById(mallId),floor,E.STORES);
-  assert.equal(hash(l.nav),navSHA256,mallId+' floor '+floor+' navigation');
-  assert.equal(hash([...l.rects,...l.units].map(s=>[s.id,s.door])),doorsSHA256,mallId+' floor '+floor+' entrances');
+  assert.equal(hash(l.nav,normalizeGeometry),navSHA256,mallId+' floor '+floor+' navigation');
+  assert.equal(hash([...l.rects,...l.units].map(s=>[s.id,s.door]),normalizeGeometry),doorsSHA256,mallId+' floor '+floor+' entrances');
  }
  assert.equal(new Set(E.MALLS.map(m=>promenadeFinish(m.id).name)).size,E.MALLS.length);
 });
