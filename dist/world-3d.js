@@ -86,7 +86,7 @@ import {stepToward,facingFor,turnToward,yieldToPlayer,cameraBlend} from './motio
 import {VENUE_LABELS} from './mall-art.js?v=68.0.0';
 
 patchAmbientLighting(T.ShaderChunk);
-export const ANIMATION_REVISION='70';
+export const ANIMATION_REVISION='71';
 export class MallWorld3D extends MallWorld{
  constructor(canvas,state,onEnter,onMove){
   const renderer=new T.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'low-power'});

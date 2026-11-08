@@ -330,5 +330,30 @@ body.in-mall .map-nearby button.nearby-window{min-height:44px;background:#f7f3e6
 .staff-handsets .mini-art{width:60px;height:58px}
 .staff-handsets h3{margin:0;font-size:1rem;overflow-wrap:anywhere}
 .staff-item-actions{grid-column:2}
-.staff-table-note{margin:0;padding:12px;border-left:3px solid #8da78f;background:#f6f3e8}
 @media(max-width:480px){.staff-item-actions{grid-column:1/-1}.staff-item-actions .button{flex:1 1 120px}}
+
+.game-chest-library,.game-chest-demo{display:grid;gap:12px}
+.game-chest-library{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.game-chest-library article{display:grid;grid-template-columns:60px minmax(0,1fr);align-content:start;gap:12px;padding:12px;border:1px solid #d7deca;border-radius:12px;background:#f9f6ec}
+.game-chest-library h3{margin:3px 0;font-size:1rem}
+.game-chest-library p{margin:3px 0;font-size:.85rem;line-height:1.45}
+.game-chest-library small{color:#345c49;font-weight:700}
+.game-chest-library .button{grid-column:1/-1;min-height:44px;white-space:normal}
+.chest-cover{display:flex;align-items:center;justify-content:center;gap:3px;width:60px;height:70px;border:2px solid #e6cb93;border-radius:7px;background:#8e493a;box-shadow:inset 0 0 0 3px #fff3d43a}
+.chest-cover i{width:12px;height:14px;background:#fae5ab;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.chest-cover.lorcana{background:#493e67}
+.chest-cover.lorcana i{height:19px;border:1px solid #fae5ab;border-radius:2px;background:#8d769b;clip-path:none;transform:rotate(12deg)}
+.chest-map,.chest-card-mat{border:1px solid #d7deca;border-radius:12px;padding:12px;background:#f6f3e8}
+.chest-map svg{display:block;width:min(100%,280px);margin:auto}
+.chest-pieces,.chest-sources{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px}
+.chest-pieces span,.chest-lore{padding:4px 8px;border-radius:6px;background:#e5eadb;color:#28483d}
+.chest-card-mat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center;color:#33284b}
+.chest-card-mat strong,.chest-card-mat small{display:block;line-height:1.3}
+.chest-card{display:grid;place-items:center;width:min(36px,78%);height:46px;margin:4px auto 9px;border:1px solid #f8ddad;border-radius:5px;background:#57436f;color:#fff0c7}
+.chest-card.empty{border:1px dashed #857692;background:transparent;color:transparent}
+.chest-card.turned{transform:rotate(75deg)}
+.chest-lore{grid-column:1/-1}
+.chest-lore strong{display:inline}
+.game-chest-demo .staff-reply,.game-chest-demo button,.game-chest-library button{scroll-margin-block:110px 12px}
+.game-chest-demo .hint{margin:0}
+.chest-sources a{color:#345c49;text-underline-offset:.2em}

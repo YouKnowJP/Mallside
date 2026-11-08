@@ -1,3 +1,5 @@
+import {gameChestLibrary} from './game-chest.js?v=71.0.0';
+
 export const PHONE_COUNTER_STORE='spectrum-tenant-att';
 export const GAME_NIGHT_STORE='delamo-tenant-thegamechest-Upperlevel';
 export const SHOP_STAFF_EDITION=70;
@@ -13,9 +15,9 @@ const phoneTopics={
  pen:['A built-in pen','The Galaxy S25 Ultra has a built-in S Pen. You can inspect its shape and the handset edges at the display.']
 };
 const gameTopics={
- pair:['Two players','Start with a game designed for two. Try a short practice turn together so both players can see how a round works.'],
- beginner:['New players','Pick a game you can explain with one example turn. A short first round gives everyone time to try it before you teach the rest.'],
- group:['A larger group','Count everyone who wants to play before choosing. Look for a game that supports the whole group, or split into two tables so nobody has to wait.']
+ pair:['Two players','I’d start with Disney Lorcana for two. Try an ink-and-quest turn together so both players can see how a round works.','lorcana'],
+ beginner:['New players','Teach one example turn first. Try Lorcana’s ink, play, and quest actions before you introduce deckbuilding or challenges.','lorcana'],
+ group:['A larger group','CATAN’s base game seats three or four. For five or six, use the matching 5–6 player extension, or split into two tables.','catan']
 };
 
 export function phoneCounterPicks(st,topic){
@@ -46,8 +48,8 @@ export function phoneCounterHTML(s,st,topic,{E,esc,picture}){
 export function gameNightHTML(st,topic,esc){
  const selected=Object.hasOwn(gameTopics,topic)?gameTopics[topic]:null;
  return `<div class="modal-body shop-staff-counter"><span class="eyebrow">GAME-NIGHT TABLE · FREE TO EXPLORE</span>
-  <div class="staff-reply" role="status"><strong>${esc(st.npc)} · Shop associate</strong><p>${esc(selected?.[1]||'Who’s joining you for game night? I can help you think through the table size and how much time to leave for learning a new game.')}</p></div>
+  <div class="staff-reply" role="status"><strong>${esc(st.npc)} · Shop associate</strong><p>${esc(selected?.[1]||'Who’s joining you for game night? Try a free practice turn here, or tell me how many people are playing and who’s new.')}</p></div>
   ${topicButtons(gameTopics,topic,esc)}
-  ${selected?`<p class="staff-table-note">For your table · ${esc(selected[0])}</p>`:''}
-  <p class="hint">This is an original Mallside consultation. The shop’s product catalog is in research.</p></div>`;
+  ${gameChestLibrary(selected?.[2],esc)}
+  <p class="hint">The publisher records document earlier play at this branch. These free Mallside demos do not use store inventory.</p></div>`;
 }

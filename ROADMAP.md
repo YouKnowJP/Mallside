@@ -1,6 +1,10 @@
 # Mallside development roadmap
 
-Updated 7 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+Updated 8 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
+
+## Completed in v71
+
+- Add two verified games to The Game Chest’s practice table, with free guided turns and recommendations from Taylor. [Gameplay and publisher sources](docs/GAMEPLAY-v71.md).
 
 ## Completed in v70
 

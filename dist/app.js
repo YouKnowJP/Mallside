@@ -1,4 +1,5 @@
-import {GAME_NIGHT_STORE,PHONE_COUNTER_STORE,staffButton,phoneCounterHTML,gameNightHTML} from './shop-staff.js?v=70.0.0';
+import {GAME_NIGHT_STORE,PHONE_COUNTER_STORE,staffButton,phoneCounterHTML,gameNightHTML} from './shop-staff.js?v=71.0.0';
+import {startGameChest,moveGameChest,gameChestDemoHTML,gameChestDemoTitle} from './game-chest.js?v=71.0.0';
 import {toyTableHTML,toyTableMove} from './toy-table.js?v=67.0.0';
 import {filterShoppingItems,oneListingPerModel,shoppingFiltersHTML,usualShoppingSize} from './shopping-filters.js?v=70.0.0';
 import {luggageFactsHTML,luggageNotebookHTML} from './luggage-tools.js?v=63.0.0';
@@ -34,7 +35,7 @@ import {shoppingPlanHTML,shoppingPlanNotebook} from './shopping-plan-ui.js?v=37.
 import {diningRoom,mealReview,sculptureAlcove,artNotebook} from './district-ui.js?v=65.0.0';
 import {diningSeat,mealAnimation,mealArtwork,mealEffects} from './dining-presentation.js?v=65.0.0';
 import {fixtureStop} from './mall-neighborhood.js?v=59.0.0';
-import {savedShopButton,pendingCollection} from './shop-options-ui.js?v=70.0.0';
+import {savedShopButton,pendingCollection} from './shop-options-ui.js?v=71.0.0';
 import {dialogFocusables} from './dialog-focus.js?v=32.0.0';
 import {gameSelectButton,installGameSelects} from './game-select.js?v=66.0.0';
 installGameSelects();
@@ -53,7 +54,7 @@ import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {tenantFloor,zoneOf} from './campus-model.js?v=23.0.0';
 import {storePortrait,loadPortrait,deletePortrait} from './portrait-store.js?v=23.0.0';
 import {spatialLayout} from './spatial-layout.js?v=70.0.0';
-import {MallWorld3D} from './world-3d.js?v=70.0.0';
+import {MallWorld3D} from './world-3d.js?v=71.0.0';
 import {PRODUCT_PHOTOS} from './product-photos.js?v=67.0.0';
 import {sourceLabel} from './catalog-links-v7.js?v=23.0.0';
 import {windowEdit} from './retail-identity.js?v=68.0.0';
@@ -81,7 +82,7 @@ let walkPad=null,mapPanelOpener=null;
 let commonsTiles=[1,2,3],commonsContext=null,studioDraft=null,studioFloor=false,pendingCheckout=null;
 let mapPanel=null,pendingStore=null,pendingWindow=null,nativeFullscreenWasActive=false;
 let view='menu',world=null,store=null,filter='all',selectedProduct=null,selectedSize=null,fitResult=null;
-let storeFilters={},catalogFilters={},toyTable=null;
+let storeFilters={},catalogFilters={},toyTable=null,gameChestPractice=null;
 let storeQuery='',storeSort='featured',catalogQuery='',catalogStore='all',catalogMall='current',catalogCategory='all',catalogSort='featured',catalogLimit=24,affordableOnly=false,pendingProduct=null,pendingDisplay=null;
 let guestbookSelection={};
 let pendingNeighborhood=null;
@@ -212,12 +213,13 @@ async function toggleFullscreen(){if(view==='menu')showView('mall');const doc=do
 
 function updateMapOverlay(){const root=$('#map-overlay');if(!root)return;root.innerHTML=s.minutes>=E.CLOSE?`<div class="map-overlay"><div><strong>That’s the day.</strong><p>The mall is closed. Your bed is calling.</p><button class="button orange" data-action="end-day">Head home & sleep</button></div></div>`:s.paused?`<div class="map-overlay"><div><strong>A little pause.</strong><p>Your clock and needs are paused.</p><button class="button" data-action="pause">Resume the day ▶</button></div></div>`:'';}
 function modal(title,subtitle,body,{small=false,type='detail',footer=''}={}){
+ if(type!=='game-chest-demo')gameChestPractice=null;
  if(world){if(type!=='material-study'&&!studioFloor)world.studioPreview=null;if(type!=='commons')world.commonsPreview=null;}
  if(!$('#modal-root').children.length)lastFocus=document.activeElement;walkPad?.cancel();world?.clearInput();modalType=type;document.body.style.overflow='hidden';setGameInert(true);
  const notices=$('#toasts');
  $('#modal-root').innerHTML=`<div class="modal-overlay"><section class="modal ${small?'small':''}" role="dialog" aria-modal="true" aria-label="${escapeHTML(title)}"><header class="modal-header"><div><h2>${escapeHTML(title)}</h2>${subtitle?`<small>${subtitle}</small>`:''}</div><button class="close-button" data-action="close" aria-label="Close dialog">${icon('close')}</button></header>${body}${footer}</section></div>`;$('.modal-header').after(notices);icons($('#modal-root'));$('.close-button').focus({preventScroll:true});hud();
 }
-function closeModal(){toyTable=null;if(world){world.studioPreview=studioFloor&&studioDraft?{...studioDraft}:null;world.commonsPreview=null;}if(['experience','cinema-screening'].includes(modalType))experienceSession=null;const wasOpen=!!$('#modal-root').children.length;document.body.style.overflow='';if(wasOpen)document.body.append($('#toasts'));$('#modal-root').innerHTML='';modalType=null;selectedProduct=null;if(!journeyBusy&&!activityBusy){setGameInert(false);}if(wasOpen&&lastFocus?.isConnected)lastFocus.focus({preventScroll:true});hud();}
+function closeModal(){toyTable=null;gameChestPractice=null;if(world){world.studioPreview=studioFloor&&studioDraft?{...studioDraft}:null;world.commonsPreview=null;}if(['experience','cinema-screening'].includes(modalType))experienceSession=null;const wasOpen=!!$('#modal-root').children.length;document.body.style.overflow='';if(wasOpen)document.body.append($('#toasts'));$('#modal-root').innerHTML='';modalType=null;selectedProduct=null;if(!journeyBusy&&!activityBusy){setGameInert(false);}if(wasOpen&&lastFocus?.isConnected)lastFocus.focus({preventScroll:true});hud();}
 function redrawMall(){endFloorStudy(false);world?.destroy();world=null;renderView();hud();}
 function chooseDistrict(id){pendingProduct=null;pendingReturn=null;const result=perform(()=>E.travel(s,id));if(!result.ok)return;redrawMall();}
 function shopperChat(id){const n=Number(id.split('-').at(-1))||0,names=['Avery','Jordan','Casey','Riley','Morgan','Alex'],lines=['I start with a lap of the shop windows. It helps me choose what I really want.','A coffee break is part of my shopping routine. There is always time to slow down.','I keep the tags and receipt until I have decided. Returns are easier that way.','I like seeing a whole outfit come together. An outfit portrait helps me remember my favorites.','I am making a little memory today. An outfit portrait would be lovely.','I like a small detour between shops. The flower studio is my next stop.'];modal('A moment in the mall.',names[n%6]+' · Fellow shopper',`<div class="success-body"><p>${lines[n%6]}</p><button class="button orange" data-action="venue" data-id="${['popup','coffee','services','photo','photo','flowers'][n%6]}">Walk to my next stop</button><button class="button secondary" data-action="close">Enjoy your shopping</button></div>`,{small:true});}
@@ -289,6 +291,24 @@ function openStaffCounter(id,topic=null){
   phone?phoneCounterHTML(s,st,topic,{E,esc:escapeHTML,picture}):gameNightHTML(st,topic,escapeHTML),
   {type:'staff-counter',footer:'<div class="store-exit-strip"><button class="button secondary" data-action="back-store">Back to the shop</button><button class="button secondary" data-action="close">Done talking</button></div>'});
  if(topic)$('[data-action="staff-topic"][aria-pressed="true"]')?.focus({preventScroll:true});
+}
+function openGameChestSample(id){
+ if(modalType!=='staff-counter'||store!==GAME_NIGHT_STORE)return;
+ const sample=startGameChest(id);
+ if(!sample)return;
+ gameChestPractice={sample,topic:$('[data-action="staff-topic"][aria-pressed="true"]')?.dataset.id};
+ renderGameChestSample();
+}
+function renderGameChestSample(action){
+ const {sample}=gameChestPractice,st=E.storeById(GAME_NIGHT_STORE);
+ const top=action?$('.modal').scrollTop:0;
+ modal(gameChestDemoTitle(sample),'Free demo · Clock paused',gameChestDemoHTML(sample,st.npc,escapeHTML),
+  {type:'game-chest-demo',small:true,footer:'<div class="store-exit-strip"><button class="button secondary" data-action="game-chest-back">Back to game-night table</button></div>'});
+ if(action){
+  $('.modal').scrollTop=top;
+  const next=$('.game-chest-demo .staff-topics .orange');
+  (sample.retry||!next?$('.game-chest-demo .staff-reply'):next).focus();
+ }
 }
 function walkToStaffCounter(id){
  if(id!==PHONE_COUNTER_STORE&&id!==GAME_NIGHT_STORE)return;
@@ -659,6 +679,20 @@ const actions={
  'locate-product':b=>{try{world.locateProduct(b.dataset.id,selectedSize);closeModal();s.paused=false;hud();focusMap();}catch(e){toast(e.message,true);}},
  'staff-open':b=>walkToStaffCounter(b.dataset.id),
  'staff-topic':b=>openStaffCounter(store,b.dataset.id),
+ 'game-chest-open':b=>openGameChestSample(b.dataset.id),
+ 'game-chest-move':b=>{
+  if(modalType!=='game-chest-demo'||!gameChestPractice)return;
+  const sample=moveGameChest(gameChestPractice.sample,b.dataset.id);
+  if(sample===gameChestPractice.sample)return;
+  gameChestPractice.sample=sample;
+  renderGameChestSample(b.dataset.id);
+ },
+ 'game-chest-back':()=>{
+  if(modalType!=='game-chest-demo'||!gameChestPractice)return;
+  const {sample,topic}=gameChestPractice;
+  openStaffCounter(GAME_NIGHT_STORE,topic);
+  $(`[data-action="game-chest-open"][data-id="${sample.id}"]`)?.focus();
+ },
  'staff-stock':b=>{
   const p=E.byId(b.dataset.id);
   if(store===PHONE_COUNTER_STORE&&p?.store===store)requestAssociateCheck(p.id,p.sizes[0]);

@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v71 — play a turn at The Game Chest
+
+Visit The Game Chest on Del Amo’s upper level and choose **Plan a game night**. Ask Taylor what fits your group, then try a free turn of CATAN or Disney Lorcana at the table. [Gameplay and publisher sources](docs/GAMEPLAY-v71.md).
+
 ## v70 — ask the shop staff
 
 Compare three verified handsets with Riley at Irvine Spectrum’s AT&T, or ask Taylor to help plan game night at The Game Chest in Del Amo. Both shops have furnished counters. [Gameplay and product sources](docs/GAMEPLAY-v70.md).

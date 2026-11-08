@@ -2,6 +2,11 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v71 · 8 November 2026
+
+- Add CATAN and Disney Lorcana to The Game Chest’s free practice table, with publisher rules and Torrance play records.
+- Give Taylor a recommendation for two players, newcomers, or a larger group. [Gameplay and publisher sources](docs/GAMEPLAY-v71.md).
+
 ## v70 · 7 November 2026
 
 - Add three exact AT&T handset references and a furnished comparison counter at Irvine Spectrum.
