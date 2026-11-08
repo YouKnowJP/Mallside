@@ -1,8 +1,8 @@
 import {retailLight} from './retail-light.js?v=68.0.0';
 import {detailBoxes} from './detail-instances.js?v=48.0.0';
 import * as T from './vendor/three.module.js';
-import {departmentOf,displayPoint} from './shop-interiors.js?v=67.0.0';
-import {money,price} from './engine.js?v=68.0.0';
+import {departmentOf,displayPoint} from './shop-interiors.js?v=70.0.0';
+import {money,price} from './engine.js?v=70.0.0';
 import {shopSurface} from './shop-surfaces.js?v=57.0.0';
 
 export function displayCard(state,p,index){return {number:String(index+1).padStart(2,'0'),department:departmentOf(p),name:p.name,price:money(price(state,p)),note:(p.sizes.length===1?p.sizes[0]:p.sizes.length+' listed options')+' · Game price'};}

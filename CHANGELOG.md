@@ -2,6 +2,12 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v70 · 7 November 2026
+
+- Add three exact AT&T handset references and a furnished comparison counter at Irvine Spectrum.
+- Let shoppers ask staff about width, storage, and the built-in pen, then request an exact stock check.
+- Furnish The Game Chest’s advice table and add game-night guidance for different groups. [Gameplay and product sources](docs/GAMEPLAY-v70.md).
+
 ## v69 · 7 November 2026
 
 - Add a fitting-room tray for unpaid selections and an exact-size swap after a try-on.

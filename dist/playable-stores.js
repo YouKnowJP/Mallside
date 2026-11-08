@@ -1,4 +1,6 @@
 import {workshopListings} from './store-product-additions-v67.js?v=67.0.0';
+import {phoneCounterListings} from './store-product-additions-v70.js?v=70.0.0';
+import {PHONE_COUNTER_STORE,SHOP_STAFF_EDITION} from './shop-staff.js?v=70.0.0';
 import {shoppingEditListings} from './store-product-additions-v66.js?v=66.0.0';
 import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {MALLS} from './malls.js?v=56.0.0';
@@ -101,6 +103,13 @@ export function installPlayableStores(stores,products,photos){
   st.greeting='Try an original Mallside demonstration and browse the documented assortment. Game inventory and payments are simulated.';
  }
  products.push(...workshop);
+
+ const phoneCounter=stores.find(st=>st.id===PHONE_COUNTER_STORE);
+ products.push(...phoneCounterListings(phoneCounter,products,associationFor));
+ phoneCounter.catalogStatus='verified';
+ phoneCounter.collectionEdition=SHOP_STAFF_EDITION;
+ phoneCounter.sub='HANDSET COUNTER';
+ phoneCounter.greeting='Tell me what matters to you in a handset. We can compare the formats or check game stock together.';
 
  return {core,seeds};
 }

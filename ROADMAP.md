@@ -2,6 +2,11 @@
 
 Updated 7 November 2026. The game is playable and under active development; this is a record of remaining work, not a claim that the whole game is finished.
 
+## Completed in v70
+
+- Stock the unfinished Irvine Spectrum AT&T with three carrier selections and add a staffed comparison counter.
+- Furnish Del Amo’s Game Chest and add game-night advice for different groups. [Gameplay and product sources](docs/GAMEPLAY-v70.md).
+
 ## Completed in v69
 
 - Make try-ons easier to find from the shop floor and show the exact items and sizes in the shopper’s fitting tray.
@@ -391,7 +396,7 @@ Updated 7 November 2026. The game is playable and under active development; this
 
 ## Catalog and mall fidelity
 
-The current source snapshot has **1,089 stocked identities, 133 service identities and 376 identities awaiting catalog research**. The remaining 285 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
+The current source snapshot has **1,090 stocked identities, 133 service identities and 375 identities awaiting catalog research**. The remaining 284 retail locations retain planning lounges. Of those pending catalogs, 91 food locations now also offer clearly labeled original game dining; their real menus and merchandise remain unverified. Pending stores must not receive invented merchandise or undocumented guest assortments. Complete them with real-model evidence, exact photographs and individually reviewed image permissions. Existing photo citations are provenance, not blanket commercial clearance.
 
 Continue refining each adapted whole-center footprint and interior against primary mall/retailer references. Current maps are original condensed game layouts; exact unit geometry, every floor connection and manufacturer product construction are not universally reproduced. Prioritize observed playability problems over simply adding more directory entries.
 

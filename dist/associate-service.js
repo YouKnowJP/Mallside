@@ -1,7 +1,8 @@
+import {PHONE_COUNTER_STORE} from './shop-staff.js?v=70.0.0';
 import {crowdStep} from './ambient-motion.js?v=36.0.0';
 import {freeRoute,walkable,freeMove,personStop} from './free-navigation.js?v=25.0.0';
 import {stepToward} from './motion.js?v=34.0.0';
-import {stock,byId,storeById,levelOf,CLOSE} from './engine.js?v=68.0.0';
+import {stock,byId,storeById,levelOf,CLOSE} from './engine.js?v=70.0.0';
 
 // A check is a per-visit conversation, never a reservation or a purchase.
 export function checkRequest(state,storeId,bags,productId,size){
@@ -33,5 +34,5 @@ export function updateAssociateTrip(trip,seconds,{paused=false,reducedMotion=fal
  else if(trip.stage==='returning'){trip.stage='ready';trip.walkSpeed=0;}
 }
 export function requestStatus(trip,name='Your associate'){
- return trip.stage==='ready'?name+' is ready with your size check.':trip.stage==='checking'?name+' is checking '+trip.size+' at the display.':trip.stage==='returning'?name+' is returning to the help point.':name+' is checking the display for you.';
+ return trip.stage==='ready'?name+' is ready with your '+(trip.product?.store===PHONE_COUNTER_STORE?'stock':'size')+' check.':trip.stage==='checking'?name+' is checking '+trip.size+' at the display.':trip.stage==='returning'?name+' is returning to the help point.':name+' is checking the display for you.';
 }

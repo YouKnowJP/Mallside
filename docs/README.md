@@ -1,11 +1,12 @@
 # Mallside documentation
 
-Current development update is [v69 gameplay](GAMEPLAY-v69.md) and [v69 QA](qa-v69.md).
+Current development update is [v70 gameplay and product sources](GAMEPLAY-v70.md) and [v70 QA](qa-v70.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).
 
 | Topic | Document |
 | --- | --- |
+| Handset comparisons and game-night advice | [v70 guide](GAMEPLAY-v70.md), [v70 QA](qa-v70.md) |
 | Fitting rooms, try-on trays and size swaps | [v69 guide](GAMEPLAY-v69.md), [v69 QA](qa-v69.md) |
 | Shop windows, exact display routes and itemized checkout | [v68 guide](GAMEPLAY-v68.md), [v68 QA](qa-v68.md) |
 | Play tables, handset inspection and material workbenches | [v67 guide](GAMEPLAY-v67.md), [v67 QA](qa-v67.md) |

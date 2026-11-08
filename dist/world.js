@@ -10,7 +10,7 @@ import {walkable,freeMove,freeRoute,closestFloor,personStop} from './free-naviga
 import {paintMallGround,paintFacade,paintVenue,paintPublicFixture,VENUE_LABELS} from './mall-art.js?v=68.0.0';
 import {LOCALS} from './mall-life.js?v=26.0.0';
 import {paintPerson} from './sprites.js?v=56.0.0';
-import {STORES,PRODUCTS,VENUES,mallOf,CLOSE,equippedLook,productsForStore} from './engine.js?v=68.0.0';
+import {STORES,PRODUCTS,VENUES,mallOf,CLOSE,equippedLook,productsForStore} from './engine.js?v=70.0.0';
 import {layoutFor} from './map-layout.js?v=36.0.0';
 import {pointAt,MAP_WIDTH,MAP_HEIGHT} from './mall-plans.js?v=23.0.0';
 import {mapRoute,moveOnMap,projectToMap,onCorridor} from './map-navigation.js?v=23.0.0';

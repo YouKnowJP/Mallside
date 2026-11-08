@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v70 — ask the shop staff
+
+Compare three verified handsets with Riley at Irvine Spectrum’s AT&T, or ask Taylor to help plan game night at The Game Chest in Del Amo. Both shops have furnished counters. [Gameplay and product sources](docs/GAMEPLAY-v70.md).
+
 ## v69 — a proper fitting room
 
 Take exact bag selections to the fitting room, try a different size, and swap it into your bag before checkout. Mirrors, lighting, benches and privacy curtains give the rooms a clearer purpose. [Gameplay](docs/GAMEPLAY-v69.md).

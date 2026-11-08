@@ -1,3 +1,6 @@
+import {collectionProducts} from './collection-guide.js?v=70.0.0';
+import {GAME_NIGHT_STORE,PHONE_COUNTER_STORE} from './shop-staff.js?v=70.0.0';
+import {buildHandsetCounter,buildGameNightTable} from './staff-fixtures.js?v=70.0.0';
 import {furnishFittingBay} from './fitting-room.js?v=69.0.0';
 import {buildToyStudio} from './toy-studio.js?v=67.0.0';
 import {buildLuggageStudio} from './luggage-studio.js?v=67.0.0';
@@ -21,7 +24,7 @@ import {buildStudyStation,buildPlanningDetails} from './studio-details.js?v=67.0
 import {isReadingProduct} from './book-tools.js?v=50.0.0';
 import {buildKnitStudio} from './knit-studio.js?v=67.0.0';
 import {buildTextileStudio} from './textile-studio.js?v=40.0.0';
-import {displayPoint} from './shop-interiors.js?v=67.0.0';
+import {displayPoint} from './shop-interiors.js?v=70.0.0';
 import {surfaceTexture} from './scene-finish.js?v=57.0.0';
 
 // All props are original planning materials, never merchant merchandise or purchasable samples.
@@ -45,7 +48,9 @@ export function buildPlanningLounge(w,st,style,layout){
  buildLoungeBench(w,st);buildPlanningDetails(w,st,style,layout);
  // Existing partition footprints become a small planning studio with a framed reflective panel.
  const f=layout.fitting,x=f.x+f.width/2;
- if(group==='textile'){
+ if(st.id===GAME_NIGHT_STORE){
+  buildGameNightTable(w,layout,style);
+ }else if(group==='textile'){
   w.box(x,44,f.y+5,88,88,3,style.wall);
   furnishFittingBay(w,w.scene,x,f.y+8,style);
   w.canvas.dataset.fittingPlanning='69';
@@ -62,11 +67,12 @@ export function buildLoungeBench(w,st){
 
 // An original material/source desk and rest corner accompany newly verified collections.
 export function buildCollectionStudio(w,st,style){
- const toys=st.products.some(p=>p.toyProfile),timber=w.mat(style.fixture,{map:surfaceTexture(w,'timber'),roughness:.8}),paper=w.mat('#f5eddb',{roughness:.95}),items=st.products.filter(p=>p.collectionReference===67||/^v(?:37-real|38-book|39-real|40-real|42-real|43-real|44-real|45-real|46-real|47-real|48-real|49-real|50-real|51-real|53-real|54-real|55-real|56-real|60-real|61-real|62-real|63-real)-/.test(p.modelId||'')).slice(0,3);
+ const toys=st.products.some(p=>p.toyProfile),timber=w.mat(style.fixture,{map:surfaceTexture(w,'timber'),roughness:.8}),paper=w.mat('#f5eddb',{roughness:.95}),items=collectionProducts(st).slice(0,3);
  w.box(600,29,147,120,5,44,timber);for(const x of [550,650])w.box(x,13,147,4,26,34,style.trim);
  for(const [i,p]of items.entries()){const x=563+i*36;if(p.toyProfile||p.brushProfile||p.recorderProfile||p.phoneProfile||p.watchProfile?.diveReference||p.luggageProfile)continue;if(p.ceramicProfile||p.storageProfile||p.fragranceProfile){w.box(x,33,150,28,2,22,paper);continue;}if(p.bagReference){const model=w.photo(p,x,47,149,25,31);model.rotation.y=(i-1)*.12;continue;}if(p.watchProfile){const model=w.photo(p,x,49,149,23,33);model.rotation.y=(i-1)*.12;continue;}if(p.frameProfile){w.box(x,33,150,27,3,22,style.trim);const frame=w.photo(p,x,40,149,23,31);frame.rotation.y=(i-1)*.12;continue;}if(isReadingProduct(p)){const book=w.photo(p,x,47,st.collectionEdition===50?137:149,23,31);book.rotation.y=(i-1)*.08;continue;}w.box(x,33+i*.4,150,28,3,24,w.mat(p.color,{bumpMap:surfaceTexture(w,'fabric',true),bumpScale:.025}));w.box(x,35+i*.4,153,13,.3,10,paper);}
  w.box(600,60,130,102,47,3,style.trim);w.box(600,60,132,96,41,1,paper);for(const x of [570,600,630])w.box(x,60,133,22,28,.5,style.accent);
  w.cyl(649,42,137,3,25,style.trim);w.cyl(649,57,137,10,9,'#dfcfaa');
+ if(st.id===PHONE_COUNTER_STORE)buildHandsetCounter(w,st,style);
  const key='collection:'+st.id,point={x:600,y:210},hit=w.box(600,51,147,120,55,45,w.mat('#ffffff',{transparent:true,opacity:0,depthWrite:false}));hit.castShadow=false;w.tag(hit,key,point);const label=w.label(toys?'Play table ↗':'Collection desk ↗',600,98,140,[42,43,44,45,46,47,48,49,50,51,53,54,55,56,60,61,62,63,67].includes(st.collectionEdition)?90:140,style.accent);w.tag(label,key,point);w.interiorStops.push({point,id:key,name:toys?'Play table':'Collection desk',label:toys?'Try a tabletop sample for free':st.collectionEdition===60?'Explore microphone layouts, published specifications & virtual stock':st.collectionEdition===54?'Compare full-size & mini brush dimensions and offers':st.collectionEdition===53?'Compare bottle formats, published notes & source prices':st.collectionEdition===51?'Compare selected formats, dimensions & single-item offers':st.collectionEdition===50?'Compare paper formats, exact references & prices':st.collectionEdition===49?'Compare tableware formats, capacity & source prices':st.collectionEdition===48?'Compare ceramic formats, dimensions & source prices':st.collectionEdition===38?'Compare physical editions, ISBNs & prices':st.collectionEdition===44?'Compare bag formats, dimensions & source prices':st.collectionEdition===43?'Compare case, dial, strap & source prices':st.products.some(p=>p.frameProfile)?'Compare frame colors, widths & source prices':'Compare source colors, fabrics, sizes & prices'});
  buildLoungeBench(w,st);if(st.collectionEdition===38){for(let i=0;i<3;i++)w.box(630,17+i*2,630,17,1.5,11,['#547d75','#c39a66','#8e7086'][i]);w.box(626,23,631,9,.2,6,'#f2ead8');w.canvas.dataset.bookshopStudio='38';}if(st.collectionEdition===39)w.canvas.dataset.verifiedStudio=st.businessKind==='eyewear'?'frames':'apparel';if(st.collectionEdition===40)buildTextileStudio(w,st,style);if(st.collectionEdition===42)buildKnitStudio(w,st,style);if(st.collectionEdition===43)buildWatchStudio(w,st,style);if(st.collectionEdition===44)buildBagStudio(w,st,style);if(st.collectionEdition===45)buildActiveStudio(w,st,style);if(st.collectionEdition===46)buildTailoringStudio(w,st,style);if(st.collectionEdition===47)buildCollectibleStudio(w,st,style);if(st.collectionEdition===48)buildCeramicStudio(w,st,style);if(st.collectionEdition===49)buildTablewareStudio(w,st,style);if(st.collectionEdition===50)buildPaperStudio(w,st,style);if(st.collectionEdition===51)buildGardenStorageStudio(w,st,style);if(st.collectionEdition===53)buildFragranceStudio(w,st);if(st.collectionEdition===54)buildBrushStudio(w,st);if(st.collectionEdition===55)buildCoastalStudio(w,st,style);if(st.collectionEdition===56)buildOpticalStudio(w,st,style);if(st.collectionEdition===60)buildRecordingStudio(w,st,style);if(st.collectionEdition===61)buildPhoneStudio(w,st,style);if(st.collectionEdition===62)buildDiveWatchStudio(w,st,style);if(st.collectionEdition===63)buildLuggageStudio(w,st,style);if(st.collectionEdition===67)(toys?buildToyStudio:buildPhoneStudio)(w,st,style);w.canvas.dataset.collectionStudio=String(items.length);
 }

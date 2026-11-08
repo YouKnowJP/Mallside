@@ -1,5 +1,6 @@
-import {hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=67.0.0';
+import {hasCollectionDesk,hasLoungeBench} from './collection-guide.js?v=70.0.0';
 import {brandDesign} from './brand-designs.js?v=63.0.0';
+import {GAME_NIGHT_STORE} from './shop-staff.js?v=70.0.0';
 
 // Six display stations keep every model reachable; their arrangement and furnishings vary by brand.
 const plans={
@@ -38,6 +39,7 @@ export function makeInteriorPlan(store,plan,visibleCount=Math.min(6,store.count|
  const stockFixtures=visibleCount&&!noProductStock?[-1,1].flatMap(side=>[275,410,550].map((y,i)=>({id:'wall-'+side+'-'+i,kind:'wall',side,x:side<0?198:974,y,width:28,height:i===2?60:90}))):[];
  const collectionDesk=hasCollectionDesk(store)?[{x:540,y:125,width:120,height:45}]:[];
  const fixtures=[...collectionDesk,...displays.slice(0,visibleCount),checkout,returns,...fittingWalls,rail,...seating,...decor,...stockFixtures];
+ if(store.id===GAME_NIGHT_STORE)fixtures.push({x:fitting.x+20,y:fitting.y+5.5,width:100,height:25});
  const services={checkout:{x:checkout.x+checkout.width/2,y:734},returns:{x:returns.x+returns.width/2,y:734},fitting:{x:fitting.x+fitting.width/2,y:246},associate:{x:mirrored?745:445,y:630}};
  // Extra double-sided rails/islands fill the gaps between display columns, never their approaches.
  const overlaps=(a,b,pad=16)=>a.x<b.x+b.width+pad&&a.x+a.width>b.x-pad&&a.y<b.y+b.height+pad&&a.y+a.height>b.y-pad;

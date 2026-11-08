@@ -1,4 +1,4 @@
-import {NEW_COLLECTION_REFERENCE} from './store-product-additions-v67.js?v=67.0.0';
+import {SHOP_STAFF_EDITION} from './shop-staff.js?v=70.0.0';
 import {referenceSize} from './verified-sizing.js';
 
 const PRICE_LIMITS = [25, 50, 100, 250, 500, 1000, 2500, 5000];
@@ -25,7 +25,7 @@ export function filterShoppingItems(items, s, filters, E, affordable = false) {
  const cap = Math.min(filters.price ? Number(filters.price) * 100 : Infinity, affordable ? s.cash : Infinity);
  return items.filter(p => {
   if (wishlist && !wishlist.has(p.id)) return false;
-  if (filters.availability === 'new' && p.collectionReference !== NEW_COLLECTION_REFERENCE) return false;
+  if (filters.availability === 'new' && p.collectionReference !== SHOP_STAFF_EDITION) return false;
   if (cap < Infinity) {
    const price = E.price(s, p);
    if (price + Math.round(price * E.TAX) > cap) return false;
