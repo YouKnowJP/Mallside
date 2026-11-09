@@ -1,5 +1,6 @@
 # Mallside documentation
 
+- [v72 · Solo matches and saved progress at The Game Chest](GAMEPLAY-v72.md)
 Current development update is [v71 gameplay and publisher sources](GAMEPLAY-v71.md).
 
 Start with the [project README](../README.md) or [play the game](https://youknowjp.github.io/Mallside/).

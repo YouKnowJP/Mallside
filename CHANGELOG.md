@@ -2,6 +2,11 @@
 
 The newest entry describes the current setup. Older entries record the hosting arrangements used at that release.
 
+## v72 · 8 November 2026
+
+- Furnish The Game Chest with game shelves and a lit 3D table. Add solo matches with interactive boards and cards and six replayable challenges.
+- Save and resume CATAN and Lorcana independently. Improve CATAN road planning and robber choices, and teach Taylor to play stronger card combinations and plan challenges. [Gameplay and sources](docs/GAMEPLAY-v72.md).
+
 ## v71 · 8 November 2026
 
 - Add CATAN and Disney Lorcana to The Game Chest’s free practice table, with publisher rules and Torrance play records.

@@ -8,6 +8,10 @@ Play directly from the link. Players do not need GitHub, an account, a download,
 
 **Free to play · Proprietary source available · No commercial redistribution without written permission.** Sharing the official play link is welcome. See the [permissions guide](PERMISSIONS.md) and [full license](LICENSE).
 
+## v72 — solo matches at The Game Chest
+
+Walk past the shelves to Taylor’s table on Del Amo’s upper level. Play full solo matches of CATAN and Disney Lorcana, or start with a guided turn and three challenges per game. Each solo match saves as you play, so you can leave and resume it from Taylor’s table. [Gameplay and publisher sources](docs/GAMEPLAY-v72.md).
+
 ## v71 — play a turn at The Game Chest
 
 Visit The Game Chest on Del Amo’s upper level and choose **Plan a game night**. Ask Taylor what fits your group, then try a free turn of CATAN or Disney Lorcana at the table. [Gameplay and publisher sources](docs/GAMEPLAY-v71.md).

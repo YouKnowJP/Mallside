@@ -1,6 +1,6 @@
 import {collectionProducts} from './collection-guide.js?v=70.0.0';
 import {GAME_NIGHT_STORE,PHONE_COUNTER_STORE} from './shop-staff.js?v=70.0.0';
-import {buildHandsetCounter,buildGameNightTable} from './staff-fixtures.js?v=70.0.0';
+import {buildHandsetCounter,buildGameNightTable,buildGameChestShelf} from './staff-fixtures.js?v=70.0.0';
 import {furnishFittingBay} from './fitting-room.js?v=69.0.0';
 import {buildToyStudio} from './toy-studio.js?v=67.0.0';
 import {buildLuggageStudio} from './luggage-studio.js?v=67.0.0';
@@ -34,6 +34,7 @@ export function buildPlanningLounge(w,st,style,layout){
   const x=r.x+r.width/2,z=r.y+r.height/2,p=displayPoint(r),key=(i===5?'associate:':i===4?'shopfinder:':i===3?'planner-budget:':i===2?'planner-route:':i===1?'study:':'planner:')+st.id;
   w.box(x,.2,z,r.width-2,.3,r.height-2,'#d8d1b8');w.box(x,28,z,r.width-8,4,r.height-8,timber);for(const dx of [-35,35])w.box(x+dx,13,z,4,26,r.height-15,style.trim);
   if(i===1){buildStudyStation(w,st,style,r);}
+  else if(st.id===GAME_NIGHT_STORE){buildGameChestShelf(w,x,z,i);}
   else if(i===0){w.box(x,47,z-15,69,34,4,style.trim);w.box(x,47,z-12.7,63,28,1,paper);for(const [j,a]of [[-21,4],[-4,-5],[19,6]].entries()){const [dx,dy]=a;w.cyl(x+dx,33,z+dy,3,3,colors[j]);w.box(x+dx,49+j*3,z-11.8,5,5,1,colors[j]);}w.box(x,31,z+9,65,1,19,paper);}
   else if(group==='textile'&&i<4){w.box(x,51,z-14,75,42,4,style.trim);for(let j=0;j<4;j++){const mat=w.mat(colors[(j+i)%4],{bumpMap:surfaceTexture(w,'fabric',true),bumpScale:.03});w.box(x-27+j*18,51,z-11,15,34,1.5,mat);w.cyl(x-27+j*18,70,z-10,1,2,style.trim);}for(let j=0;j<3;j++)w.box(x-25+j*24,32+j*.4,z+8,20,3,20,colors[(j+i)%4]);}
   else if(group==='light'&&i<4){w.box(x,33,z,70,6,35,'#e4d8bd');for(const [j,dx]of [-22,0,22].entries()){w.ball(x+dx,44+j%2*3,z,7,w.mat(colors[(i+j)%4],{roughness:.18,metalness:.2,transparent:true,opacity:.72}));w.cyl(x+dx,37,z,8,2,style.trim);}w.box(x,51,z-18,64,38,3,'#b4c4bd');for(const dx of [-33,33])w.box(x+dx,51,z-17,2,42,3,style.trim);}
@@ -49,7 +50,7 @@ export function buildPlanningLounge(w,st,style,layout){
  // Existing partition footprints become a small planning studio with a framed reflective panel.
  const f=layout.fitting,x=f.x+f.width/2;
  if(st.id===GAME_NIGHT_STORE){
-  buildGameNightTable(w,layout,style);
+  buildGameNightTable(w,layout);
  }else if(group==='textile'){
   w.box(x,44,f.y+5,88,88,3,style.wall);
   furnishFittingBay(w,w.scene,x,f.y+8,style);

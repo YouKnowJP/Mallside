@@ -332,28 +332,143 @@ body.in-mall .map-nearby button.nearby-window{min-height:44px;background:#f7f3e6
 .staff-item-actions{grid-column:2}
 @media(max-width:480px){.staff-item-actions{grid-column:1/-1}.staff-item-actions .button{flex:1 1 120px}}
 
-.game-chest-library,.game-chest-demo{display:grid;gap:12px}
-.game-chest-library{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
-.game-chest-library article{display:grid;grid-template-columns:60px minmax(0,1fr);align-content:start;gap:12px;padding:12px;border:1px solid #d7deca;border-radius:12px;background:#f9f6ec}
-.game-chest-library h3{margin:3px 0;font-size:1rem}
-.game-chest-library p{margin:3px 0;font-size:.85rem;line-height:1.45}
-.game-chest-library small{color:#345c49;font-weight:700}
-.game-chest-library .button{grid-column:1/-1;min-height:44px;white-space:normal}
-.chest-cover{display:flex;align-items:center;justify-content:center;gap:3px;width:60px;height:70px;border:2px solid #e6cb93;border-radius:7px;background:#8e493a;box-shadow:inset 0 0 0 3px #fff3d43a}
-.chest-cover i{width:12px;height:14px;background:#fae5ab;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
-.chest-cover.lorcana{background:#493e67}
-.chest-cover.lorcana i{height:19px;border:1px solid #fae5ab;border-radius:2px;background:#8d769b;clip-path:none;transform:rotate(12deg)}
-.chest-map,.chest-card-mat{border:1px solid #d7deca;border-radius:12px;padding:12px;background:#f6f3e8}
-.chest-map svg{display:block;width:min(100%,280px);margin:auto}
-.chest-pieces,.chest-sources{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px}
-.chest-pieces span,.chest-lore{padding:4px 8px;border-radius:6px;background:#e5eadb;color:#28483d}
-.chest-card-mat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center;color:#33284b}
-.chest-card-mat strong,.chest-card-mat small{display:block;line-height:1.3}
-.chest-card{display:grid;place-items:center;width:min(36px,78%);height:46px;margin:4px auto 9px;border:1px solid #f8ddad;border-radius:5px;background:#57436f;color:#fff0c7}
-.chest-card.empty{border:1px dashed #857692;background:transparent;color:transparent}
-.chest-card.turned{transform:rotate(75deg)}
-.chest-lore{grid-column:1/-1}
-.chest-lore strong{display:inline}
-.game-chest-demo .staff-reply,.game-chest-demo button,.game-chest-library button{scroll-margin-block:110px 12px}
-.game-chest-demo .hint{margin:0}
+/* The Game Chest shares its art and color cues between the library and play mats. */
+.game-chest-library,.game-chest-demo{display:grid;gap:16px;min-width:0}
+.game-chest-library{grid-template-columns:repeat(2,minmax(0,1fr))}
+.modal:has(.chest-counter) .modal-header{padding:16px 24px}
+.chest-counter{padding:clamp(12px,2.7vw,24px)}
+.chest-advice{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:9px;align-items:center}
+.chest-advice .staff-reply{padding:9px 12px}
+.chest-advice .staff-topics{gap:5px}
+.chest-advice .staff-topics .button{padding-inline:8px}
+.chest-progress{grid-column:1/-1;padding:12px 16px;border:1px solid #d1d7bf;border-radius:12px;background:#eaeedc;color:#344e3d}
+.chest-progress p{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;margin:0 0 8px}
+.chest-progress-track{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px}
+.chest-progress-track i{height:5px;border-radius:5px;background:#ccd6bc}
+.chest-progress-track .is-complete{background:#426951}
+.chest-edition{--table-ink:#244f48;min-width:0;border:1px solid #d3d2b9;border-radius:15px;overflow:hidden;background:#fcf8e9;box-shadow:0 5px 14px #38342a15}
+.chest-edition[data-game=lorcana]{--table-ink:#413752}
+.chest-edition-art{position:relative;min-height:126px;isolation:isolate;overflow:hidden;color:#fff4d8;background:var(--table-ink)}
+.chest-edition-art::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#162f35 1%,#192c3766 59%,transparent 90%)}
+.chest-edition[data-game=lorcana] .chest-edition-art::after{background:linear-gradient(0deg,#28213d 1%,#28213d77 65%,transparent 95%)}
+.chest-cover{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.chest-cover.catan svg{width:100%;height:100%;object-fit:cover;min-width:360px;transform:scale(1.17)}
+.chest-cover.lorcana{display:flex;justify-content:center;align-items:center;gap:6px;padding-bottom:12px;background:radial-gradient(ellipse at 52% 35%,#6b5676,#372c4c 75%)}
+.chest-cover.lorcana span{display:block;width:67px;overflow:hidden;border:1px solid #d8b87d;border-radius:8px;box-shadow:0 7px 15px #1b13269e}
+.chest-cover.lorcana span:nth-child(1){transform:translateY(2px) rotate(-15deg)}
+.chest-cover.lorcana span:nth-child(2){transform:translateY(-6px)}
+.chest-cover.lorcana span:nth-child(3){transform:translateY(2px) rotate(15deg)}
+.chest-cover.lorcana svg{display:block;width:100%}
+.chest-edition-name{position:absolute;inset:auto 16px 12px}
+.chest-edition-name h3{margin:2px 0 0;color:inherit;font:700 clamp(1.38rem,3.3vw,2rem)/1.1 var(--serif)}
+.chest-edition-name small{font-size:.75rem;color:#f3d99f}
+.chest-edition-intro{margin:12px 14px;color:#4d5141;font-size:.9rem;line-height:1.45}
+.chest-library-actions{display:grid;gap:5px;padding:0 10px 10px}
+.chest-library-actions .button{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;min-height:48px;text-align:left;white-space:normal;padding:7px 10px;background:#fffdf4;border-color:#d8d9c5;color:var(--table-ink);box-shadow:none}
+.chest-library-actions .button:hover{background:#f2eee0}
+.chest-table-number{color:#675d4e;font-variant-numeric:tabular-nums;font-size:.8rem}
+.chest-table-name small{display:block;color:#5e6451;font-size:.69rem;font-weight:600}
+.chest-table-arrow{font-size:1.1rem}
+.modal:has(.game-chest-demo){width:920px}
+.game-chest-demo{grid-template-columns:minmax(0,1.9fr) minmax(230px,1fr);align-items:start}
+.chest-table-strip,.chest-sources{grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:5px 14px}
+.chest-table-strip{padding:7px 11px;border-radius:8px;background:#e9e7d5;color:#4b5544;font-weight:650;font-size:.78rem}
+.chest-sources{justify-content:flex-start;font-size:.79rem;color:#56604c}
 .chest-sources a{color:#345c49;text-underline-offset:.2em}
+.chest-instructions,.chest-instructions .staff-topics{display:grid;gap:9px;min-width:0}
+.chest-instructions .staff-reply{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;padding:12px;border-radius:10px;font-size:.9rem}
+.chest-taylor{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#405f4d;color:#fff3cd;font-family:var(--serif);font-weight:800}
+.game-chest-demo[data-result=won] .staff-reply{background:#e3ebd0;border-color:#b8c99a}
+.game-chest-demo[data-result=lost] .staff-reply{background:#f3e6d2;border-color:#dec1a0;color:#61483a}
+.game-chest-demo .staff-reply,.game-chest-demo button,.game-chest-library button{scroll-margin-block:100px 12px}
+.chest-map,.chest-card-mat{min-width:0;overflow:hidden;border:1px solid #365b58;border-radius:13px;background:#214b4e;color:#fff3d5;box-shadow:0 5px 14px #27312922}
+.chest-terrain{display:block;width:100%;height:auto}
+.chest-pieces,.chest-fields{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 8px;padding:8px}
+.chest-pieces{background:#183b3d;border-top:1px solid #53716a}
+.chest-pieces span,.chest-fields span{padding:4px 7px;border:1px solid #57736d;border-radius:6px;background:#244b4b;font-size:.78rem;color:#f4ebd4}
+.chest-pieces strong,.chest-fields strong{color:#ffdb96;font-variant-numeric:tabular-nums}
+.chest-pieces [data-resource=brick]{border-left:3px solid #e6a17f}
+.chest-pieces [data-resource=lumber]{border-left:3px solid #95c7a1}
+.chest-pieces [data-resource=grain]{border-left:3px solid #efc369}
+.chest-pieces [data-resource=wool]{border-left:3px solid #d9dfa9}
+.chest-pieces [data-resource=ore]{border-left:3px solid #b3c8d5}
+.chest-card-mat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:12px;text-align:center;background:radial-gradient(ellipse at top,#584268,#2a233e 75%);border-color:#625379}
+.chest-card-mat.chest-duel{grid-template-columns:repeat(2,minmax(0,1fr))}
+.chest-board-note{grid-column:1/-1;text-align:left;padding:2px 4px;color:#f7e7c9;font-size:.79rem}
+.chest-card-slot{min-width:0;display:grid;grid-template-rows:auto auto auto 1fr;align-items:start;gap:2px;padding:8px 4px 5px;border:1px solid #f8e4bc42;border-radius:9px;background:#1d182d4d}
+.chest-card-slot strong,.chest-card-slot small{display:block;line-height:1.32;overflow-wrap:anywhere}
+.chest-card-slot small{font-size:.72rem;color:#e0d7e7}
+.chest-card-slot .chest-card-status{color:#ffdb94}
+.chest-card{display:block;width:min(72px,70%);aspect-ratio:7/9;margin:6px auto 12px;overflow:hidden;border:1px solid #f0d09a;border-radius:7px;box-shadow:0 5px 10px #171124a6}
+.chest-card svg{display:block;width:100%;height:100%}
+.chest-card.empty{border:1px dashed #b8a5cb;background:#231c36;box-shadow:none}
+.chest-card.turned{transform:rotate(15deg);outline:1px solid #c58896;outline-offset:2px}
+.chest-lore{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:stretch;gap:8px}
+.chest-lore>span{flex:1 1 0;min-width:95px;display:block;padding:6px 9px;border-radius:6px;background:#20192f;color:#f7e7c9;font-size:.83rem}
+.chest-lore strong{color:#ffe2a1;font-variant-numeric:tabular-nums}
+.chest-lore small{padding-left:4px;color:#e0d7e7}
+.chest-lore i{display:block;height:3px;margin:3px 0 0;border-radius:4px;background:linear-gradient(to right,#f2c775 var(--lore),#60506e var(--lore))}
+@media(max-width:670px){
+ .game-chest-library,.game-chest-demo,.chest-advice{grid-template-columns:minmax(0,1fr);gap:11px}
+ .chest-edition-art{min-height:125px}
+ .chest-card-mat{padding:8px;gap:5px}
+ .chest-instructions .staff-topics{grid-template-columns:repeat(auto-fit,minmax(min(100%,145px),1fr))}
+}
+
+.chest-library-actions [data-mode=match]{background:var(--table-ink);color:#fff3d8;border-color:transparent}
+.chest-library-actions [data-mode=match]:hover{filter:brightness(1.14)}
+.chest-library-actions [data-mode=match] :is(.chest-table-number,small){color:#edcf94}
+.modal:has(.game-chest-demo[data-mode=match]){width:1080px}
+.modal:has(.game-chest-demo[data-mode=match]) .modal-header{padding-block:14px}
+.game-chest-demo[data-mode=match]{grid-template-columns:minmax(0,1.95fr) minmax(220px,1fr)}
+.chest-board-scroll{overflow:auto}
+.chest-match-island{position:relative;min-width:318px;max-width:clamp(350px,calc(78dvh - 170px),510px);margin:auto}
+.chest-match-scores{display:flex;flex-wrap:wrap;justify-content:space-between;gap:5px 12px;padding:10px;background:#173a3d;font-size:.8rem}
+.chest-match-scores i{display:inline-block;width:8px;height:8px;margin-right:4px;border-radius:50%;background:var(--player)}
+.chest-match-scores strong{color:#ffdc9d}
+.chest-board-hit{position:absolute;left:var(--x);top:var(--y);z-index:1;transform:translate(-50%,-50%);width:27px;height:27px;display:grid;place-items:center;padding:0;border:2px solid #402d35;border-radius:50%;background:#ffe096;color:#372933;font-weight:800;font-size:.72rem;box-shadow:0 0 0 2px #ffecb668;cursor:pointer}
+.chest-board-hit:hover,.chest-board-hit:focus-visible{z-index:2;background:#fff0bf;outline:2px solid white;outline-offset:2px}
+.chest-match-dice{position:absolute;right:8px;bottom:8px;display:flex;gap:5px;padding:5px;border:1px solid #8ea694;border-radius:8px;background:#183e42;pointer-events:none}
+.chest-match-dice span{display:grid;place-items:center;width:25px;height:25px;border-radius:5px;background:#fff0cc;color:#3e2f38;font-weight:800;box-shadow:0 2px #a48c66}
+.chest-trade{border:1px solid #c8ccb5;border-radius:9px;background:#fffbee;padding:0 8px}
+.chest-trade summary{cursor:pointer;padding:10px 2px;font-weight:650}
+.chest-trade-options{display:flex;flex-wrap:wrap;gap:6px;padding:0 0 8px}
+.chest-match-log{margin:0;padding:9px 10px;border-radius:8px;background:#e9e7d6;color:#464e40;font-size:.78rem}
+.chest-match-log:empty{display:none}
+ul.chest-match-log{padding-left:24px}
+.chest-lorcana-match{display:grid;gap:9px;min-width:0;padding:10px;border:1px solid #716082;border-radius:13px;background:radial-gradient(ellipse at top,#543e61,#272038 72%);color:#fff0d5}
+.chest-lorcana-match .chest-lore{grid-column:auto}
+.chest-card-lane{min-width:0;padding:7px;border:1px solid #9d8cac66;border-radius:8px;background:#1c162b5c}
+.chest-card-lane h4{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:3px 8px;margin:0 0 4px;color:#fff0d5;font-size:.88rem}
+.chest-card-lane h4 small,.chest-match-ink small{color:#ded3e8;font-size:.72rem;font-weight:400}
+.chest-card-row{display:flex;overflow:auto;gap:7px;align-items:stretch;padding:4px 3px 7px;scrollbar-color:#a78db1 #241c35}
+.chest-empty-lane{padding:8px;color:#d6c6df;font-size:.77rem}
+.chest-match-card{flex:0 0 112px;display:grid;justify-items:center;align-content:start;gap:3px;padding:7px 4px;border:1px solid #a48ab175;border-radius:8px;background:#3c304e;color:#fff1d4;text-align:center;line-height:1.25}
+button.chest-match-card{cursor:pointer}
+button.chest-match-card:hover,button.chest-match-card[aria-pressed=true],.chest-match-card.is-target{border-color:#f4d18b;background:#5b4768}
+.chest-match-card:focus-visible{outline:2px solid #ffe6aa;outline-offset:2px}
+.chest-match-card-art{position:relative;width:42px;margin:0 0 3px;filter:drop-shadow(0 2px 3px #1b1327a0)}
+.chest-match-card-art svg{display:block;width:100%;border:1px solid #ead2a3;border-radius:5px}
+.chest-match-card-art i{position:absolute;left:-7px;top:-4px;display:grid;place-items:center;width:17px;height:17px;border:1px solid #e8c49a;border-radius:50%;background:#281d39;color:#fff2d1;font:700 10px var(--sans)}
+.chest-match-card.is-exerted .chest-match-card-art{transform:rotate(13deg)}
+.chest-match-card strong{font-size:.77rem}
+.chest-match-card small{color:#eeddf0;font-size:.65rem}
+.chest-match-ink{display:flex;justify-content:space-between;gap:5px 10px;flex-wrap:wrap;padding:5px 7px;color:#ffdc9f;font-size:.78rem}
+.chest-lorcana-match .staff-topics{padding:0 3px}
+.chest-lorcana-match .staff-topics button{padding-inline:10px}
+.match-dice-new span{animation:chest-dice .36s ease-out both}
+.match-dice-new span+span{animation-delay:.07s}
+.match-road-new,.match-piece-new{transform-box:fill-box;transform-origin:center;animation:chest-place .34s ease-out}
+.match-card-play,.match-ink-new{animation:chest-card-in .34s ease-out}
+.match-card-quest,.match-card-hit,.match-turn-new .chest-match-ink{animation:chest-match-pulse .45s ease-out}
+.chest-lorcana-match[data-effect=quest] .chest-lore>span:first-child,.chest-lorcana-match[data-effect=hit] .chest-rival-lane{animation:chest-match-pulse .45s ease-out}
+@keyframes chest-dice{from{opacity:.45;transform:translateY(-12px) rotate(-32deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+@keyframes chest-place{from{opacity:.5;transform:scale(.68)}65%{transform:scale(1.12)}to{opacity:1;transform:scale(1)}}
+@keyframes chest-card-in{from{opacity:.48;transform:translateY(-9px)}to{opacity:1;transform:translateY(0)}}
+@keyframes chest-match-pulse{from{box-shadow:inset 0 0 0 2px #ffe09b}to{box-shadow:inset 0 0 0 2px transparent}}
+.reduced-motion .game-chest-demo[data-mode=match] *{animation:none}
+@media(prefers-reduced-motion:reduce){.game-chest-demo[data-mode=match] *{animation:none}}
+@media(max-width:670px){
+ .game-chest-demo[data-mode=match]{grid-template-columns:minmax(0,1fr)}
+ .game-chest-demo[data-mode=match][data-game=catan] .chest-instructions{grid-row:2}
+}

@@ -1,5 +1,5 @@
-import {GAME_NIGHT_STORE,PHONE_COUNTER_STORE,staffButton,phoneCounterHTML,gameNightHTML} from './shop-staff.js?v=71.0.0';
-import {startGameChest,moveGameChest,gameChestDemoHTML,gameChestDemoTitle} from './game-chest.js?v=71.0.0';
+import {GAME_NIGHT_STORE,PHONE_COUNTER_STORE,staffButton,phoneCounterHTML,gameNightHTML} from './shop-staff.js?v=72.0.0';
+import {startGameChest,moveGameChest,gameChestDemoHTML,gameChestDemoTitle,gameChestOutcome,recordGameChestCompletion,checkpointGameChestMatch,resumeGameChestMatch} from './game-chest.js?v=72.0.0';
 import {toyTableHTML,toyTableMove} from './toy-table.js?v=67.0.0';
 import {filterShoppingItems,oneListingPerModel,shoppingFiltersHTML,usualShoppingSize} from './shopping-filters.js?v=70.0.0';
 import {luggageFactsHTML,luggageNotebookHTML} from './luggage-tools.js?v=63.0.0';
@@ -40,7 +40,7 @@ import {dialogFocusables} from './dialog-focus.js?v=32.0.0';
 import {gameSelectButton,installGameSelects} from './game-select.js?v=66.0.0';
 installGameSelects();
 import {commonsActivity,commonsNotebook,publicStops} from './commons-ui.js?v=38.0.0';
-import {shopRows,shoppingGuide,campusMapSVG,shopFinderShortcuts,playNeeds} from './play-ui.js?v=70.0.0';
+import {shopRows,shoppingGuide,campusMapSVG,shopFinderShortcuts,playNeeds} from './play-ui.js?v=72.0.0';
 import {companionBoard,companionCard,companionSession,companionMemory} from './companion-ui.js?v=30.0.0';
 import {communityNoticeHTML,lostPropertyHTML,homeRoutineHTML} from './neighborhood-ui.js?v=50.0.0';
 import {communityBoard,localChapterCard,wrappingDesk} from './community-ui.js?v=30.0.0';
@@ -54,7 +54,7 @@ import {CENTER_DIRECTORIES} from './full-center-data.js?v=23.0.0';
 import {tenantFloor,zoneOf} from './campus-model.js?v=23.0.0';
 import {storePortrait,loadPortrait,deletePortrait} from './portrait-store.js?v=23.0.0';
 import {spatialLayout} from './spatial-layout.js?v=70.0.0';
-import {MallWorld3D} from './world-3d.js?v=71.0.0';
+import {MallWorld3D} from './world-3d.js?v=72.0.0';
 import {PRODUCT_PHOTOS} from './product-photos.js?v=67.0.0';
 import {sourceLabel} from './catalog-links-v7.js?v=23.0.0';
 import {windowEdit} from './retail-identity.js?v=68.0.0';
@@ -62,7 +62,7 @@ import {layoutFor} from './map-layout.js?v=36.0.0';
 import {paintPerson} from './sprites.js?v=56.0.0';
 import {ActivityScene} from './activity-scene.js?v=70.0.0';
 import {HomeJourney} from './journey.js?v=70.0.0';
-import * as E from './engine.js?v=70.0.0';
+import * as E from './engine.js?v=72.0.0';
 import {createSaveStorage} from './save-storage.js?v=28.0.0';
 import {recoveryHTML,backupSummary,saveSummary,modeLabel} from './save-recovery-ui.js?v=28.0.0';
 import {icon} from './art.js?v=23.0.0';
@@ -288,26 +288,43 @@ function openStaffCounter(id,topic=null){
  const st=E.storeById(id),phone=id===PHONE_COUNTER_STORE;
  store=id;
  modal(phone?'Compare handsets with '+st.npc:'Plan a game night with '+st.npc,escapeHTML(st.name)+' · Shop associate',
-  phone?phoneCounterHTML(s,st,topic,{E,esc:escapeHTML,picture}):gameNightHTML(st,topic,escapeHTML),
+  phone?phoneCounterHTML(s,st,topic,{E,esc:escapeHTML,picture}):gameNightHTML(st,topic,escapeHTML,s.gameChestProgress,s.gameChestMatches),
   {type:'staff-counter',footer:'<div class="store-exit-strip"><button class="button secondary" data-action="back-store">Back to the shop</button><button class="button secondary" data-action="close">Done talking</button></div>'});
  if(topic)$('[data-action="staff-topic"][aria-pressed="true"]')?.focus({preventScroll:true});
 }
-function openGameChestSample(id){
+function openGameChestSample(id,mode){
  if(modalType!=='staff-counter'||store!==GAME_NIGHT_STORE)return;
- const sample=startGameChest(id);
+ const resumed=mode==='match'&&resumeGameChestMatch(s.gameChestMatches,id);
+ const sample=resumed||startGameChest(id,mode);
  if(!sample)return;
- gameChestPractice={sample,topic:$('[data-action="staff-topic"][aria-pressed="true"]')?.dataset.id};
- renderGameChestSample();
+ gameChestPractice={sample,topic:$('[data-action="staff-topic"][aria-pressed="true"]')?.dataset.id,saved:!!resumed&&!$('#save-warning')};
+ if(!resumed&&checkpointGameChestMatch(s,sample))saveGameChestMatch();
+ if(gameChestPractice)renderGameChestSample();
+}
+function saveGameChestMatch(){
+ const saved=save();
+ if(gameChestPractice)gameChestPractice.saved=saved;
 }
 function renderGameChestSample(action){
  const {sample}=gameChestPractice,st=E.storeById(GAME_NIGHT_STORE);
  const top=action?$('.modal').scrollTop:0;
- modal(gameChestDemoTitle(sample),'Free demo · Clock paused',gameChestDemoHTML(sample,st.npc,escapeHTML),
-  {type:'game-chest-demo',small:true,footer:'<div class="store-exit-strip"><button class="button secondary" data-action="game-chest-back">Back to game-night table</button></div>'});
+ const match=sample.mode==='match',scrollers='.chest-board-scroll,.chest-card-row';
+ const positions=match&&action?$$(scrollers).map(element=>element.scrollLeft):[];
+ const active=match&&!gameChestOutcome(sample);
+ const checkpoint=match?'<span class="hint">'+(gameChestPractice.saved?active?'Match saved on this device':'Result saved on this device':'Progress could not be saved')+'</span>':'';
+ modal(gameChestDemoTitle(sample),match?'Free solo match · Mall clock paused':'Free demo · Clock paused',gameChestDemoHTML(sample,st.npc,escapeHTML,s.gameChestMatches),
+  {type:'game-chest-demo',footer:'<div class="store-exit-strip">'+checkpoint+'<button class="button secondary" data-action="game-chest-back">'+(active?(gameChestPractice.saved?'Save & return to table':'Retry save & return'):'Back to game-night table')+'</button></div>'});
  if(action){
   $('.modal').scrollTop=top;
   const next=$('.game-chest-demo .staff-topics .orange');
-  (sample.retry||!next?$('.game-chest-demo .staff-reply'):next).focus();
+  if(match){
+   $$(scrollers).forEach((element,index)=>{element.scrollLeft=positions[index]||0;});
+   const pressed=$(`.game-chest-demo [data-action="game-chest-move"][data-id="${CSS.escape(action)}"]:not(details:not([open]) *)`);
+   const focus=gameChestOutcome(sample)?$('.game-chest-demo .staff-reply'):pressed||next||$('.game-chest-demo .staff-reply');
+   focus.focus({preventScroll:true});
+   return;
+  }
+  (sample.retry||gameChestOutcome(sample)||!next?$('.game-chest-demo .staff-reply'):next).focus();
  }
 }
 function walkToStaffCounter(id){
@@ -679,19 +696,27 @@ const actions={
  'locate-product':b=>{try{world.locateProduct(b.dataset.id,selectedSize);closeModal();s.paused=false;hud();focusMap();}catch(e){toast(e.message,true);}},
  'staff-open':b=>walkToStaffCounter(b.dataset.id),
  'staff-topic':b=>openStaffCounter(store,b.dataset.id),
- 'game-chest-open':b=>openGameChestSample(b.dataset.id),
+ 'game-chest-open':b=>openGameChestSample(b.dataset.id,b.dataset.mode),
  'game-chest-move':b=>{
   if(modalType!=='game-chest-demo'||!gameChestPractice)return;
-  const sample=moveGameChest(gameChestPractice.sample,b.dataset.id);
+  const sample=moveGameChest(gameChestPractice.sample,b.dataset.id,s.gameChestMatches);
   if(sample===gameChestPractice.sample)return;
   gameChestPractice.sample=sample;
-  renderGameChestSample(b.dataset.id);
+  const completed=recordGameChestCompletion(s,sample);
+  if(checkpointGameChestMatch(s,sample))saveGameChestMatch();
+  else if(completed)save();
+  if(gameChestPractice)renderGameChestSample(b.dataset.id);
  },
  'game-chest-back':()=>{
   if(modalType!=='game-chest-demo'||!gameChestPractice)return;
   const {sample,topic}=gameChestPractice;
+  if(sample.mode==='match'&&!gameChestPractice.saved){
+   saveGameChestMatch();
+   if(!gameChestPractice)return;
+  }
   openStaffCounter(GAME_NIGHT_STORE,topic);
-  $(`[data-action="game-chest-open"][data-id="${sample.id}"]`)?.focus();
+  const modeSelector=sample.mode==='sample'?':not([data-mode])':`[data-mode="${sample.mode}"]`;
+  $(`[data-action="game-chest-open"][data-id="${sample.id}"]${modeSelector}`)?.focus();
  },
  'staff-stock':b=>{
   const p=E.byId(b.dataset.id);

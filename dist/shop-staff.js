@@ -1,4 +1,4 @@
-import {gameChestLibrary} from './game-chest.js?v=71.0.0';
+import {gameChestLibrary} from './game-chest.js?v=72.0.0';
 
 export const PHONE_COUNTER_STORE='spectrum-tenant-att';
 export const GAME_NIGHT_STORE='delamo-tenant-thegamechest-Upperlevel';
@@ -45,11 +45,13 @@ export function phoneCounterHTML(s,st,topic,{E,esc,picture}){
   <p class="hint">The associate checks game stock at this shop. Looking and asking are free.</p></div>`;
 }
 
-export function gameNightHTML(st,topic,esc){
+export function gameNightHTML(st,topic,esc,progress,matches){
  const selected=Object.hasOwn(gameTopics,topic)?gameTopics[topic]:null;
- return `<div class="modal-body shop-staff-counter"><span class="eyebrow">GAME-NIGHT TABLE · FREE TO EXPLORE</span>
-  <div class="staff-reply" role="status"><strong>${esc(st.npc)} · Shop associate</strong><p>${esc(selected?.[1]||'Who’s joining you for game night? Try a free practice turn here, or tell me how many people are playing and who’s new.')}</p></div>
-  ${topicButtons(gameTopics,topic,esc)}
-  ${gameChestLibrary(selected?.[2],esc)}
+ return `<div class="modal-body shop-staff-counter chest-counter">
+  <div class="chest-advice">
+   <div class="staff-reply" role="status"><strong>${esc(st.npc)} · Shop associate</strong><p>${esc(selected?.[1]||'Who’s joining you for game night? Pick a free table, or ask me what suits your group.')}</p></div>
+   ${topicButtons(gameTopics,topic,esc)}
+  </div>
+  ${gameChestLibrary(selected?.[2],esc,progress,matches)}
   <p class="hint">The publisher records document earlier play at this branch. These free Mallside demos do not use store inventory.</p></div>`;
 }
